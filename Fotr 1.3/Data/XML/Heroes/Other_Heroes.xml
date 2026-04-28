@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<Other_Heroes>
+
+	<HeroUnit Name="Hondo_Ohnaka">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<LOD_Bias>4</LOD_Bias>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_HONDO_OHNAKA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_HONDO_OHNAKA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_HONDO_OHNAKA_HEALTH
+		TEXT_TOOLTIP_HONDO_OHNAKA_MOVE
+		TEXT_TOOLTIP_HONDO_OHNAKA_WEAP1
+		TEXT_TOOLTIP_HONDO_OHNAKA_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PIRATE </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_HONDO_OHNAKA.TGA</Icon_Name>
+		<Land_Model_Name>weequay_hero.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>grenadier.ALO</Land_Model_Anim_Override_Name>
+
+		<Tactical_Health>185</Tactical_Health>
+
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.2 </OverrideAcceleration>
+		<OverrideDeceleration> 1.2 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union, Empire, Hutt_Cartels</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>HP_Hero_DL44_Pistol</HardPoints>
+
+		<!-- Grenade throw  -->
+		<Projectile_Types>HeroProj_Thrown_Thermal_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<Fire_Weapon_When_In_Rocket_Attack_Mode>No</Fire_Weapon_When_In_Rocket_Attack_Mode>
+		<Fire_Weapon_When_In_Normal_Attack_Mode>Yes</Fire_Weapon_When_In_Normal_Attack_Mode>
+
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Move></SFXEvent_Move>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Attack></SFXEvent_Attack>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+		<SFXEvent_Group_Move></SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack></SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+
+		<Death_Persistence_Duration> 5.0 </Death_Persistence_Duration>
+		<Death_Fade_Time>3.0</Death_Fade_Time>
+		
+		<CategoryMask> LandHero </CategoryMask>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<AI_Combat_Power>37</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+  			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Expiration_Seconds> 15.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.25</Damage_Percent_When_Activated>
+			</Unit_Ability>
+
+			<!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Recharge_Seconds>120.0</Recharge_Seconds>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 15</Mod_Multiplier>
+				<Projectile_Types_Override />
+				<GUI_Activated_Ability_Name> Hondo_Assassin </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>  </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+				
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ASSASSIN_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ASSASSIN_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_MINOR_DRAIN_LIFE.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Lucky_Shot_Attack_Ability Name="Hondo_Assassin">
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We only consider the following unit types "valid targets" : -->
+				<Applicable_Unit_Categories>LandHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<!-- <SFXEvent_Activate>Unit_Flamethrower_Fire</SFXEvent_Activate> -->
+			</Lucky_Shot_Attack_Ability>
+		</Abilities>
+		
+	</HeroUnit>
+
+	<HeroCompany Name="Hondo_Ohnaka_Team">
+		<Text_ID>TEXT_HERO_HONDO_OHNAKA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_HONDO_OHNAKA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_HONDO_OHNAKA_HEALTH
+		TEXT_TOOLTIP_HONDO_OHNAKA_MOVE
+		TEXT_TOOLTIP_HONDO_OHNAKA_WEAP1
+		TEXT_TOOLTIP_HONDO_OHNAKA_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PIRATE </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_HONDO_OHNAKA.TGA</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Combat_Power_Value>0</Combat_Power_Value>
+
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Required_Planets></Required_Planets>
+		<Tech_Level>99</Tech_Level>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Required_Special_Structures>AI_Category_Dummy | Non_Capital_Category_Dummy</Required_Special_Structures>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Hondo_Ohnaka_Firespray</Company_Transport_Unit>
+
+		<Company_Units>Hondo_Ohnaka</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+		<Available_In_Skirmish>No</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>165</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+
+	</HeroCompany>
+
+	<UniqueUnit Name="Hondo_Ohnaka_Firespray">
+		<Variant_Of_Existing_Type>Generic_Firespray_Hero</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_HONDO_OHNAKA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_HONDO_OHNAKA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_HONDO_OHNAKA_HEALTH
+		TEXT_TOOLTIP_HONDO_OHNAKA_MOVE
+		TEXT_TOOLTIP_HONDO_OHNAKA_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PIRATE </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_HONDO_OHNAKA.TGA</Icon_Name>
+
+		<SFXEvent_Fire>Unit_Slave_1_Fire</SFXEvent_Fire>
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Move></SFXEvent_Move>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Attack></SFXEvent_Attack>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Deploy></SFXEvent_Deploy>
+		<SFXEvent_Health_Low_Warning>  </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>  </SFXEvent_Health_Critical_Warning>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Behavior>DUMMY_STARSHIP, TRANSPORT </Behavior>
+		<LandBehavior>REVEAL, HIDE_WHEN_FOGGED, IDLE</LandBehavior> 
+
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Hover_Offset>30.0</Hover_Offset>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+		<Display_Contained_Hero_Grab_Bars>True</Display_Contained_Hero_Grab_Bars>
+		
+		<Landing_Transport_Variant>Hondo_Ohnaka_Firespray_Landing</Landing_Transport_Variant>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
+		<Space_Override_Population_Value>1</Space_Override_Population_Value>
+	</UniqueUnit>
+
+	<TransportUnit Name="Hondo_Ohnaka_Firespray_Landing">
+		<Variant_Of_Existing_Type>Hondo_Ohnaka_Firespray</Variant_Of_Existing_Type>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Scale_Factor>1.2</Scale_Factor>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</TransportUnit>
+
+	<HeroUnit Name="Cham_Syndulla">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<LOD_Bias>4</LOD_Bias>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_CHAM_SYNDULLA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_CHAM_SYNDULLA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CHAM_SYNDULLA_HEALTH
+		TEXT_TOOLTIP_CHAM_SYNDULLA_MOVE
+		TEXT_TOOLTIP_CHAM_SYNDULLA_WEAP1
+		TEXT_TOOLTIP_CHAM_SYNDULLA_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FREEDOM_FIGHTER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_cham_syndulla.tga</Icon_Name>
+		<Land_Model_Name>NI_TWILEK_F.ALO</Land_Model_Name>
+
+		<Tactical_Health>145</Tactical_Health>
+
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.0 </OverrideAcceleration>
+		<OverrideDeceleration> 1.0 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union, Empire, Hutt_Cartels</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>HP_Hero_Pistol_NoArt</HardPoints>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>HeroProj_Thrown_Proton_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+
+
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Move></SFXEvent_Move>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Attack></SFXEvent_Attack>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+		<SFXEvent_Group_Move></SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack></SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+
+		<Death_Persistence_Duration> 5.0 </Death_Persistence_Duration>
+		<Death_Fade_Time>3.0</Death_Fade_Time>
+		
+		<CategoryMask> LandHero </CategoryMask>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<AI_Combat_Power>32</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			 <Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.25f</Mod_Multiplier>
+				<Recharge_Seconds>40</Recharge_Seconds>
+				<Expiration_Seconds>7</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_OVERCHARGE_BLASTER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_OVERCHARGE_BLASTER_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>UNTARGETED_STICKY_BOMB</Type>
+				<Recharge_Seconds>64</Recharge_Seconds>
+				<Spawned_Object_Type>Proj_Speeder_Bomb_Proton_Hero</Spawned_Object_Type>
+				<Bomb_Countdown_Seconds>4</Bomb_Countdown_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Scout_Trooper_Bomb</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_UNTARGETED_STICKY_BOMBP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_UNTARGETED_STICKY_BOMBP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_DROP_BOMB1.tga</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+		</Abilities>
+		
+	</HeroUnit>
+
+	<HeroCompany Name="Cham_Syndulla_Team">
+		<Text_ID>TEXT_HERO_CHAM_SYNDULLA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_CHAM_SYNDULLA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CHAM_SYNDULLA_HEALTH
+		TEXT_TOOLTIP_CHAM_SYNDULLA_MOVE
+		TEXT_TOOLTIP_CHAM_SYNDULLA_WEAP1
+		TEXT_TOOLTIP_CHAM_SYNDULLA_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FREEDOM_FIGHTER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_cham_syndulla.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Combat_Power_Value>0</Combat_Power_Value>
+
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Required_Planets></Required_Planets>
+		<Tech_Level>99</Tech_Level>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Required_Special_Structures>AI_Category_Dummy | Non_Capital_Category_Dummy</Required_Special_Structures>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Alliance_Shuttle_Landing_Craft_Hero</Company_Transport_Unit>
+
+		<Company_Units>Cham_Syndulla</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+		<Available_In_Skirmish>No</Available_In_Skirmish>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>165</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+
+	</HeroCompany>
+
+</Other_Heroes>

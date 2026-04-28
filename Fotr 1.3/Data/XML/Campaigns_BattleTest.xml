@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<Campaigns>
+
+	<Campaign Name="Sandbox_BattleTest_Oceanforest">
+		<Campaign_Set> Sandbox_BattleTest_Oceanforest </Campaign_Set>
+		<Sort_Order>30</Sort_Order>
+
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_BATTLETEST </Text_ID>
+		<Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_INSTANTACTION </Description_Text>
+
+		<Camera_Shift_X> 40.0 </Camera_Shift_X>
+		<Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Is_Listed>false</Is_Listed>
+		<Tutorial>true</Tutorial>
+
+		<Locations> 
+			Galaxy_Core_Art_Model,
+			BattleLand
+		</Locations>
+
+		<Trade_Routes>
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Nespis </Home_Location>
+		<Home_Location> Empire, Byss </Home_Location>
+
+		<Starting_Active_Player> Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name></Rebel_Story_Name>
+		<Empire_Story_Name>StoryEvents\IA_Plot_Battleland_Oceanforest.xml</Empire_Story_Name>
+
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Underworld, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<!-- Special Case Planets for Cantinas and Hutt Palaces -->
+
+		<!-- Rebel Starting Forces -->
+		<Starting_Credits> Rebel, 900 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+
+		<!-- Empire Starting Forces -->
+		<Starting_Credits> Empire, 900 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+	</Campaign>	
+
+	<Campaign Name="Sandbox_BattleTest_Ice">
+		<Campaign_Set> Sandbox_BattleTest_Ice </Campaign_Set>
+		<Sort_Order>30</Sort_Order>
+
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_BATTLETEST_ICE </Text_ID>
+		<Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_INSTANTACTION </Description_Text>
+
+		<Camera_Shift_X> 40.0 </Camera_Shift_X>
+		<Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Is_Listed>false</Is_Listed>
+		<Tutorial>true</Tutorial>
+
+		<Locations> 
+			Galaxy_Core_Art_Model, 
+			BattleLand
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+
+		<Home_Location> Rebel, Nespis </Home_Location>
+		<Home_Location> Empire, Byss </Home_Location>
+
+		<Starting_Active_Player> Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name></Rebel_Story_Name>
+		<Empire_Story_Name>StoryEvents\IA_Plot_Battleland_Ice.xml</Empire_Story_Name>
+
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Underworld, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<!-- Special Case Planets for Cantinas and Hutt Palaces -->
+
+		<!-- Rebel Starting Forces -->
+		<Starting_Credits> Rebel, 900 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+
+		<!-- Empire Starting Forces -->
+		<Starting_Credits> Empire, 900 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+	</Campaign>	
+
+	<Campaign Name="Sandbox_BattleTest_Ecumenopolis">
+		<Campaign_Set> Sandbox_BattleTest_Ecumenopolis </Campaign_Set>
+		<Sort_Order>30</Sort_Order>
+
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_BATTLETEST_ECUMENOPOLIS </Text_ID>
+		<Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_INSTANTACTION </Description_Text>
+
+		<Camera_Shift_X> 40.0 </Camera_Shift_X>
+		<Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Is_Listed>false</Is_Listed>
+		<Tutorial>true</Tutorial>
+
+		<Locations> 
+			Galaxy_Core_Art_Model, 
+			BattleLand
+		</Locations>
+
+		<Trade_Routes> 
+		</Trade_Routes> 	
+
+		<Home_Location> Rebel, Nespis </Home_Location>
+		<Home_Location> Empire, Byss </Home_Location>
+
+		<Starting_Active_Player> Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name></Rebel_Story_Name>
+		<Empire_Story_Name>StoryEvents\IA_Plot_Battleland_Ecumenopolis.xml</Empire_Story_Name>
+
+		<AI_Player_Control> Hapes_Consortium, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Underworld, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+		<Human_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<!-- Special Case Planets for Cantinas and Hutt Palaces -->
+
+		<!-- Rebel Starting Forces -->
+		<Starting_Credits> Rebel, 900 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+
+		<!-- Empire Starting Forces -->
+		<Starting_Credits> Empire, 900 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+	</Campaign>	
+
+</Campaigns>

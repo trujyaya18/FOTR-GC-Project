@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<Projectiles>
+	<!-- PLEASE do not mix and match projectiles from different categories. Use the   -->
+	<!-- correct projectile type for the unit type you are working on - this helps    -->
+	<!-- with balance issues.  THANKS!	                                              -->
+
+<!-- ************************************************************************************** -->
+<!-- ********************                  Red Stuff                         ************** -->
+<!-- ************************************************************************************** -->	
+
+	<!-- Normal Anti Infantry: -->
+
+	<Projectile Name="Proj_Light_AI_Blaster_Red">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>PROJ_LASER_RED_G.ALO</Land_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+		<Max_Speed>25.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>800.0</Projectile_Max_Flight_Distance>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Small_Damage_Land_Red</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Small_Damage_Land_Red</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Medium_Damage_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Projectile_Dirt_Collide_Red</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE</Projectile_Ground_Detonation_SurfaceFX>
+		<Projectile_SFXEvent_Detonate>SFX_Land_Blaster_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Damage>4.0</Projectile_Damage>
+		<Damage_Type> DamageL_AntiInfantryBlaster </Damage_Type>
+		<AI_Combat_Power>80</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_AI_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_Light_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Scale_Factor>0.125</Scale_Factor>
+		<Projectile_Object_Detonation_Particle>Small_Damage_Land_Red</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Small_Damage_Land_Red</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Projectile_Dirt_Collide_Red</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Projectile_Dirt_Collide_Red</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Damage>6.0</Projectile_Damage>
+		<AI_Combat_Power>80</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_AI_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_Light_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Scale_Factor>0.2</Scale_Factor>
+		<Projectile_Object_Detonation_Particle>Small_Damage_Land_Red</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Small_Damage_Land_Red</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Projectile_Dirt_Collide_Red</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Projectile_Dirt_Collide_Red</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Damage>10.0</Projectile_Damage>
+		<AI_Combat_Power>80</AI_Combat_Power>
+	</Projectile>
+
+
+
+	<!-- Splash Anti Infantry: -->
+
+	<Projectile Name="Proj_AOE_AI_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_Light_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_RED_INF.ALO</Land_Model_Name>
+		<Scale_Factor>0.15</Scale_Factor>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>3.0</Projectile_Blast_Area_Damage>
+		<Projectile_Damage>3.0</Projectile_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle>Medium_Damage_Space</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Medium_Damage_Space</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Large_Damage_Land</Projectile_Ground_Detonation_Particle>
+		<AI_Combat_Power>80</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_AOE_Heavy_AI_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_AOE_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Scale_Factor>0.225</Scale_Factor>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>4.0</Projectile_Blast_Area_Damage>
+		<Projectile_Damage>4.0</Projectile_Damage>
+		<AI_Combat_Power>120</AI_Combat_Power>
+	</Projectile>
+
+
+	<!-- Normal Anti Vehicle: -->
+
+	<Projectile Name="Proj_Light_AV_Blaster_Red">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>PROJ_LASER_RED_AV.ALO</Land_Model_Name>
+		<Scale_Factor>0.15</Scale_Factor>
+		<Damage_Type> DamageL_AntiVehicleBlaster </Damage_Type>
+		<Max_Speed>35.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>1200.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>5.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>5</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Medium_Damage_Space</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Medium_Damage_Space</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Large_Damage_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>160</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Land_Blaster_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+
+	<Projectile Name="Proj_VeryLight_AV_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_Light_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Scale_Factor>0.12</Scale_Factor>
+		<Projectile_Damage>4.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="Proj_AV_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_Light_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Scale_Factor>0.25</Scale_Factor>
+		<Projectile_Damage>12.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_AV_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_Light_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Scale_Factor>0.35</Scale_Factor>
+		<Projectile_Damage>20.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="Proj_SuperHeavy_AV_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_Light_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Scale_Factor>0.45</Scale_Factor>
+		<Projectile_Object_Detonation_Particle>Large_LaserHit_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_LaserHit_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Damage>30.0</Projectile_Damage>
+	</Projectile>
+
+
+	<Projectile Name="Proj_AV_Turbolaser_Red">
+		<Projectile_Texture_Slot>0,3</Projectile_Texture_Slot>
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Proj_Space_TurboLaser_Red_Single.alo</Land_Model_Name>
+		<Scale_Factor>0.4</Scale_Factor>
+		<Damage_Type> DamageL_AntiVehicleBlaster </Damage_Type>
+		<Max_Speed>45.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>1200.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>60.0</Projectile_Blast_Area_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Ground_Turbo_Impact</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Ground_Turbo_Impact</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Large_Damage_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Land_Blaster_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+
+<!-- ************************************************************************************** -->
+<!-- ********************                  Green Stuff                       ************** -->
+<!-- ************************************************************************************** -->	
+
+	<!-- Normal Anti Infantry: -->
+
+	<Projectile Name="Proj_Light_AI_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_Light_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_G.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_AI_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_G.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_AI_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_Heavy_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_G.ALO</Land_Model_Name>
+	</Projectile>
+
+
+	<!-- Splash Anti Infantry: -->
+
+	<Projectile Name="Proj_AOE_AI_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_AOE_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_INF.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_AOE_Heavy_AI_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_AOE_Heavy_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_INF.ALO</Land_Model_Name>
+	</Projectile>
+
+
+	<!-- Normal Anti Vehicle: -->
+
+	<Projectile Name="Proj_Light_AV_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_Light_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_VeryLight_AV_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_VeryLight_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_AV_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_AV_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_Heavy_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_SuperHeavy_AV_Blaster_Green">
+		<Variant_Of_Existing_Type>Proj_SuperHeavy_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+
+	<Projectile Name="Proj_AV_Turbolaser_Green">
+		<Variant_Of_Existing_Type>Proj_AV_Turbolaser_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_Space_TurboLaser_Green_Single.alo</Land_Model_Name>
+	</Projectile>
+
+
+<!-- ************************************************************************************** -->
+<!-- ********************                  Blue Stuff                        ************** -->
+<!-- ************************************************************************************** -->	
+
+	<!-- Normal Anti Infantry: -->
+
+	<Projectile Name="Proj_Light_AI_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_Light_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_G.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_AI_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_G.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_AI_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_Heavy_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_G.ALO</Land_Model_Name>
+	</Projectile>
+
+
+	<!-- Splash Anti Infantry: -->
+
+	<Projectile Name="Proj_AOE_AI_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_AOE_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_INF.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_AOE_Heavy_AI_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_AOE_Heavy_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_INF.ALO</Land_Model_Name>
+	</Projectile>
+
+
+
+	<!-- Normal Anti Vehicle: -->
+
+	<Projectile Name="Proj_Light_AV_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_Light_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_VeryLight_AV_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_VeryLight_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_AV_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_AV_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_Heavy_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_SuperHeavy_AV_Blaster_Blue">
+		<Variant_Of_Existing_Type>Proj_SuperHeavy_AV_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_BLUE_AV.ALO</Land_Model_Name>
+	</Projectile>
+
+
+
+	<!-- Turbolaser: -->
+
+	<Projectile Name="Proj_AV_Turbolaser_Blue">
+		<Variant_Of_Existing_Type>Proj_AV_Turbolaser_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_Space_TurboLaser_Blue_Single.alo</Land_Model_Name>
+	</Projectile>
+
+
+	
+</Projectiles>

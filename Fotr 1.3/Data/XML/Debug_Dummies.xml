@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<DebugDummies>
+
+	<!-- Referenced by an object that exists, but what it references isn't in FotR -->
+	<Debug_Dummy Name="Darth_Vader">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Obi_Wan_Kenobi">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Boba_Fett">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Han_Solo">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Chewbacca">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="TIE_Bomber_Bombing_Run">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Swift_Assault_5">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Chrysalide_Hostile">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Pentastar">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Zsinj_Empire">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Eriadu_Authority">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Greater_Maldrood">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Corporate_Sector">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Skirmish_NR_Star_Base_Early">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Skirmish_NR_Star_Base_Late">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Skirmish_CSA_Star_Base_1">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Skirmish_Delvardus_Star_Base_1">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Skirmish_Teradoc_Star_Base_1">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Skirmish_Zsinj_Star_Base_1">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Skirmish_EotH_Star_Base_1">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Skirmish_Pentastar_Star_Base_1">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Skirmish_Hapan_Star_Base_1">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="U_Ground_Palace">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Hapan_Palace">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Art_of_War_Unit_Squadron_Init">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Fighter_Shield_Unit_Squadron_Init">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="EX_F_Unit_Squadron_Init">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Cronal_Unit_Squadron_Init">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Inspire_Fear_Unit_Squadron_Init">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Noda_AT_PT_Walker_Escort">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Imperial_AT_RT_Walker">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Lightning_Squadron_AT_RT_Walker">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="MPTL_Spotter">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Veers_AT_AT_Walker">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Carvin">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Melvar_Juggernaut">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Shockwave_Star_Destroyer">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Bell_Endurance">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Cronal_Singularity">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Chimera">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Turr_Phennir_TIE_Interceptor">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Katana_Dreadnaught">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="World_Devastator_Frigate">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="World_Devastator_Capital">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="World_Devastator_Battlecruiser">
+	</Debug_Dummy>
+	
+	<!-- AI needs these -->
+	
+	<Debug_Dummy Name="Mando_Capital">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Mando_Palace">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="M_Ground_Barracks">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="M_Ground_Light_Vehicle_Factory">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="M_Ground_Heavy_Vehicle_Factory">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="UC_Underworld_Buildable_Anti_Aircraft_Turret">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="UC_Underworld_Palace">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="UC_Underworld_Buildable_Anti_Vehicle_Turret">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="UC_Underworld_Buildable_Repair_Facility">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="UC_U_Ground_Merc_Outpost">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="UC_Underworld_Buildable_Bacta_Tank">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="UC_U_Ground_Droid_Works">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="UC_U_Ground_Arms_Depot">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="UC_Underworld_Buildable_Flame_Turret">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Ground_Infiltrator_Facility">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="NR_Mon_Cal_Shielding">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="NR_Fighter_Supremacy">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="IR_Superweapon_Desires">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="IR_Pondering_Giant">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="EOTH_Skirmish_Tactics">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="EOTH_Enhanced_Mobility">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="CSA_Corporate_Focus">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="CSA_Cutting_Corners">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="PA_Corporate_Allies">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="PA_Isolationism">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Zsinj_Friends_In_Low_Places">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Zsinj_Warlordism">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Malrood_The_Crimson_Fleet">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Malrood_Constant_Raids">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Eriadu_Experimental_focus">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Eriadu_Reckless">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="RC_Early_Roster">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="RC_Late_Roster">
+	</Debug_Dummy>
+	
+	
+<!-- ************************************************************************************** -->
+<!-- ************************************************************************************** -->
+<!-- ***************************** DO NOT REMOVE ****************************************** -->
+<!-- ************************************************************************************** -->
+<!-- ************************************************************************************** -->
+	
+	<Debug_Dummy Name="Field_Com_Rebel_Team"> <!-- Crashes if removed -->
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Field_Com_Empire_Team"> <!-- Crashes if removed -->
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Fleet_Com_Rebel_Team"> <!-- Crashes if removed -->
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Fleet_Com_Empire_Team"> <!-- Crashes if removed -->
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Generic_Smuggler_E">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Generic_Smuggler_R">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Generic_Smuggler_R_Tutorial">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Generic_Bounty_Hunter_E">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Generic_Bounty_Hunter_R">
+	</Debug_Dummy>
+		
+	<Debug_Dummy Name="Generic_Field_Commander_Rebel">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Squad_Generic_Field_Commander_Rebel">
+	</Debug_Dummy>
+
+    <Debug_Dummy Name="Generic_Commander_00">
+    </Debug_Dummy>
+
+	<Debug_Dummy Name="Generic_Field_Commander_Empire">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Squad_Generic_Field_Commander_Empire">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Generic_Fleet_Commander_Rebel">
+	</Debug_Dummy>
+
+	<Debug_Dummy Name="Generic_Fleet_Commander_Empire">
+	</Debug_Dummy>
+	
+	<Debug_Dummy Name="Rebel_Refugee">
+	</Debug_Dummy>
+	
+</DebugDummies>

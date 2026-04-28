@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<Deconstruction_Dummies>
+
+	<DummyStructure Name="Deconstruct_Economic">
+	
+		<Variant_Of_Existing_Type>Template_Deconstruct</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_DECONSTRUCT_STRUCTURE_ECONOMIC</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DOWNGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NONE 
+		</Encyclopedia_Text>
+		
+		<Lua_Script>Deconstruction</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<GUI_Row> 0 </GUI_Row>
+		<CategoryMask> AntiStructure</CategoryMask>
+		
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		
+		<Required_Special_Structures>
+		Generic_TradeStation |
+		Generic_Colony_One |
+		Generic_Colony_Two,
+		AI_Category_Dummy | Structure_Category_Dummy
+		</Required_Special_Structures>
+		<Affiliation>Empire, Rebel, Banking_Clan, Trade_Federation, Techno_Union, Commerce_Guild, Sector_Forces</Affiliation>
+		<Icon_Name>i_button_scrap_economic.tga</Icon_Name>
+
+		<Population_Value>0</Population_Value>
+
+	</DummyStructure>
+
+	<DummyStructure Name="Deconstruct_Construction">
+	
+		<Variant_Of_Existing_Type>Template_Deconstruct</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_DECONSTRUCT_STRUCTURE_CONSTRUCTION</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DOWNGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NONE 
+		</Encyclopedia_Text>
+		
+		<Lua_Script>Deconstruction</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<GUI_Row> 0 </GUI_Row>
+		<CategoryMask> AntiStructure</CategoryMask>
+		
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		
+		<Required_Special_Structures>
+		Generic_Shipyard_Level_One | 
+									Republic_Shipyard_Level_One | 
+									CIS_Shipyard_Level_One | 
+		Generic_Shipyard_Level_Two | 
+									Republic_Shipyard_Level_Two | 
+									CIS_Shipyard_Level_Two | 
+									Pirate_Base | 
+		Generic_Shipyard_Level_Three | 
+									Republic_Shipyard_Level_Three | 
+									CIS_Shipyard_Level_Three | 
+		Generic_Shipyard_Level_Four | 
+									Republic_Shipyard_Level_Four | 
+									CIS_Shipyard_Level_Four,
+		AI_Category_Dummy | Structure_Category_Dummy
+		</Required_Special_Structures>
+		<Affiliation>Empire, Rebel, Banking_Clan, Trade_Federation, Techno_Union, Commerce_Guild, Sector_Forces</Affiliation>
+		<Icon_Name>i_button_scrap_production.tga</Icon_Name>
+		
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Deconstruct_Defense">
+	
+		<Variant_Of_Existing_Type>Template_Deconstruct</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_DECONSTRUCT_STRUCTURE_DEFENSE</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DOWNGRADE </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NONE 
+		</Encyclopedia_Text>
+		
+		<Lua_Script>Deconstruction</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<GUI_Row> 0 </GUI_Row>
+		<CategoryMask> AntiStructure</CategoryMask>
+		
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		
+		<Required_Special_Structures>
+		Secondary_Haven |
+		Secondary_TF_Outpost |
+		Secondary_Golan_One |
+		Secondary_Golan_Two,
+		AI_Category_Dummy | Structure_Category_Dummy
+		</Required_Special_Structures>
+		<Affiliation>Empire, Rebel, Banking_Clan, Trade_Federation, Techno_Union, Commerce_Guild, Sector_Forces</Affiliation>
+		<Icon_Name>i_button_scrap_secondary.tga</Icon_Name>
+		
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+</Deconstruction_Dummies>

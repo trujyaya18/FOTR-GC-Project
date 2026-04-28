@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+	<Planets HintSet="Galactic_Hints">
+		<!-- CIS Planets -->
+		<Serenno>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Serenno>
+
+		<Tythe>
+			<PriorityTarget>1.0</PriorityTarget>
+		</Tythe>
+
+		<!-- Republic Planets -->
+		<Coruscant>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Coruscant>
+
+		<Tythe>
+			<PriorityTarget>1.0</PriorityTarget>
+		</Tythe>
+
+		<Belderone>
+			<PriorityTarget>1.0</PriorityTarget>
+		</Belderone>
+	</Planets>
+</Galactic_Markup>

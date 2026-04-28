@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--***** Operation Durge's Lance: Shipyard Struggle ****-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Shipyard_Struggle</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Shipyard_Struggle.XML</Active_Plot>
+
+</Story_Mode_Plots>

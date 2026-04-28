@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<!--****************************************************-->
+<!--****   Fall of the Republic: Foerost Campaign   ****-->
+<!--****************************************************-->
+
+<Story_Mode_Plots>
+	<Lua_Script>GCPlayerAgnosticFoerost</Lua_Script>
+	<Active_Plot>Conquests\Player_Agnostic_Plot.xml</Active_Plot>
+
+	<Lua_Script>GCFoerost</Lua_Script>
+	<Active_Plot>Conquests\CloneWarsFoerost\Story_Sandbox_Foerost_Republic.XML</Active_Plot>
+	<Active_Plot>Conquests\Story_Sandbox_Starting_Phase_II.xml</Active_Plot>
+	<Active_Plot>Conquests\Story_Sandbox_Universal_Lock_Rep.xml</Active_Plot>
+	
+	<Active_Plot>Conquests\Story_Sandbox_Government_Rep.xml</Active_Plot>
+
+	<Active_Plot>Conquests\Factional_Buildable_EMPIRE.xml</Active_Plot>
+
+	<Active_Plot>Conquests\Events\MissionRepository_EMPIRE.xml</Active_Plot>
+</Story_Mode_Plots>

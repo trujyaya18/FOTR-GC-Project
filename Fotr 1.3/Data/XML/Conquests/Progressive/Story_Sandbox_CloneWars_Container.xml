@@ -1,0 +1,215 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+	<!-- *************************************************************** -->
+	<!--********************* Protection from Swaps *********************-->
+	<!-- *************************************************************** -->
+	
+	<Event Name="Death_Event_Disable">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DISABLE_HERO_DEATH_EVENTS</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Death_Event_Enable">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_HERO_DEATH_EVENTS</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Hero_Death_Events</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+	
+	
+	
+	<!-- *************************************************************** -->
+	<!--**************** Time Based PRogression Checks *****************-->
+	<!-- *************************************************************** -->	
+	
+	<Event Name="Progressive_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<!-- <Reward_Type>MULTIMEDIA</Reward_Type> -->
+		<!-- <Reward_Param1>DEBUG_TEXT_PROGRESSIVE_INITIALIZED</Reward_Param1> -->
+		<!-- <Reward_Param2>15</Reward_Param2> -->
+		<Branch>Start_Branch</Branch>
+	</Event>
+	
+	<Event Name="Disable_Start_Event">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Progressive_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Setup_Finished">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<!-- <Reward_Type>MULTIMEDIA</Reward_Type> -->
+		<!-- <Reward_Param1>DEBUG_TEXT_PROGRESSIVE_INITIALIZED</Reward_Param1> -->
+		<!-- <Reward_Param2>15</Reward_Param2> -->
+	</Event>
+	
+	<Event Name="GC_Starts_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Era_Start_Checker</Branch>
+		<!-- <Reward_Type>MULTIMEDIA</Reward_Type> -->
+		<!-- <Reward_Param1>DEBUG_TEXT_PROGRESSIVE_START_ONE</Reward_Param1> -->
+		<!-- <Reward_Param2>15</Reward_Param2> -->
+	</Event>		
+	
+	<Event Name="GC_Starts_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Era_One</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Era_Start_Checker</Branch>
+	</Event>
+	
+	<Event Name="GC_Starts_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Era_Two</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Era_Start_Checker</Branch>
+	</Event>
+	
+	<Event Name="GC_Starts_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Era_Three</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Era_Start_Checker</Branch>
+	</Event>
+	
+	<Event Name="GC_Starts_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Era_Four</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Era_Start_Checker</Branch>
+	</Event>
+	
+   	<Event Name="Level_Check">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Era_Start_Checker</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<!-- **************************************************** -->
+	<!-- ******* LUA Tells the script which era started *****-->
+	<!-- **************************************************** -->
+	
+	<Event Name="GC_Start_Force_Level_One">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_LEVEL_01</Event_Param2>
+	</Event>
+	
+	<Event Name="GC_Start_Force_Level_Two">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_LEVEL_02</Event_Param2>
+	</Event>
+	
+	<Event Name="GC_Start_Force_Level_Three">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_LEVEL_03</Event_Param2>
+	</Event>	
+	
+	<Event Name="GC_Start_Force_Level_Four">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_LEVEL_04</Event_Param2>
+	</Event>
+	
+	<Event Name="GC_Start_Force_Level_Five">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_LEVEL_05</Event_Param2>
+	</Event>
+	
+	<!-- ************************************************** -->
+	<!-- ************************************************** -->
+	<!-- ************************************************** -->
+	
+	
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Progressive_Story_Start</Prereq>
+	</Event>
+  	
+	<!--***********************************************************-->
+	<!--***********************************************************-->
+	<!--******************** UNIVERSAL EVENTS *********************-->
+	<!--***********************************************************-->	
+	<!--***********************************************************-->	
+		
+	
+		
+	<!-- Gizor Dellso -->
+	
+	<Event Name="Dooku_Dies">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Dooku</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+	</Event>
+	 
+	<Event Name="Trench_Dies">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Trench_Invulnerable</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+	</Event>
+	
+	<Event Name="Ningo_Dies">
+  		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+  		<Event_Param1>Dua_Ningo_Unrepentant</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+	</Event>
+	
+	<Event Name="Dellso_Era_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>400</Event_Param1>
+		<Prereq>GC_Starts_04</Prereq>
+		<Prereq>C_Level_Four</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Dellso">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>40</Event_Param1>
+		<Prereq>Dooku_Dies, Trench_Dies, Dellso_Era_Timer</Prereq>
+		<Prereq>Dooku_Dies, Ningo_Dies, Dellso_Era_Timer</Prereq>
+	</Event>
+	
+	<Event Name="Dellso_Speech">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DELLSO_APPEARANCE</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Geonosian_Speech</Reward_Param8>
+		<Reward_Param9>Geonosian_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Faction_Branch_Enabler_CIS, Spawn_Dellso</Prereq>
+		<Branch>Faction_Branch_CIS</Branch>
+	</Event>
+</Story>

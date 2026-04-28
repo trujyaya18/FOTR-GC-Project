@@ -1,0 +1,676 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<Tactical_Multiplayer_Should_Build_Generic>
+		(Game.IsCampaignGame == 0)
+		*
+		(
+			15.0 * (Variable_Enemy.Force >= (0.8 * Variable_Self.Force))
+			+
+			5.0
+		)	
+	</Tactical_Multiplayer_Should_Build_Generic>
+
+
+	<Should_Purchase_Ability_Generic>
+		(Game.Age > 120)
+		*
+		(Variable_Self.FriendlyForce > (0.33 * Variable_Self.EnemyForce))
+		*
+		(
+			(Game.IsCampaignGame == 0)
+			*
+			(
+				1.0
+				+
+				10.0 * (Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} >= (0.8 * Variable_Enemy.ForceUnnormalized{Parameter_Attenuator = 1.0}))
+				+
+				(5.0 * (0#1>0.5))
+			)
+			+
+			(Game.IsCampaignGame)
+		)
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Purchase_Ability_Generic>
+
+	<!-- Space -->
+	
+	<Is_Flagship_Mode>
+		Variable_Self.HasUnit{ 	Parameter_Type = "Skirmish_NR_Flagship_1",
+							Parameter_Type = "Skirmish_NR_Flagship_2",
+							Parameter_Type = "Skirmish_NR_Flagship_3",
+							Parameter_Type = "Skirmish_NR_Flagship_4",
+							Parameter_Type = "Skirmish_NR_Flagship_5",
+							Parameter_Type = "Skirmish_Remnant_Flagship_1",
+							Parameter_Type = "Skirmish_Remnant_Flagship_2",
+							Parameter_Type = "Skirmish_Remnant_Flagship_3",
+							Parameter_Type = "Skirmish_Remnant_Flagship_4",
+							Parameter_Type = "Skirmish_Remnant_Flagship_5",
+							Parameter_Type = "Skirmish_CSA_Flagship_1",
+							Parameter_Type = "Skirmish_CSA_Flagship_2",
+							Parameter_Type = "Skirmish_CSA_Flagship_3",
+							Parameter_Type = "Skirmish_CSA_Flagship_4",
+							Parameter_Type = "Skirmish_CSA_Flagship_5",
+							Parameter_Type = "Skirmish_EOTH_Flagship_1",
+							Parameter_Type = "Skirmish_EOTH_Flagship_2",
+							Parameter_Type = "Skirmish_EOTH_Flagship_3",
+							Parameter_Type = "Skirmish_EOTH_Flagship_4",
+							Parameter_Type = "Skirmish_EOTH_Flagship_5",
+							Parameter_Type = "Skirmish_EA_Flagship_1",
+							Parameter_Type = "Skirmish_EA_Flagship_2",
+							Parameter_Type = "Skirmish_EA_Flagship_3",
+							Parameter_Type = "Skirmish_EA_Flagship_4",
+							Parameter_Type = "Skirmish_EA_Flagship_5",
+							Parameter_Type = "Skirmish_GM_Flagship_1",
+							Parameter_Type = "Skirmish_GM_Flagship_2",
+							Parameter_Type = "Skirmish_GM_Flagship_3",
+							Parameter_Type = "Skirmish_GM_Flagship_4",
+							Parameter_Type = "Skirmish_GM_Flagship_5",
+							Parameter_Type = "Skirmish_Pentastar_Flagship_1",
+							Parameter_Type = "Skirmish_Pentastar_Flagship_2",
+							Parameter_Type = "Skirmish_Pentastar_Flagship_3",
+							Parameter_Type = "Skirmish_Pentastar_Flagship_4",
+							Parameter_Type = "Skirmish_Pentastar_Flagship_5",
+							Parameter_Type = "Skirmish_Hapan_Flagship_1",
+							Parameter_Type = "Skirmish_Hapan_Flagship_2",
+							Parameter_Type = "Skirmish_Hapan_Flagship_3",
+							Parameter_Type = "Skirmish_Hapan_Flagship_4",
+							Parameter_Type = "Skirmish_Hapan_Flagship_5",
+							Parameter_Type = "Skirmish_Zsinj_Flagship_1",
+							Parameter_Type = "Skirmish_Zsinj_Flagship_2",
+							Parameter_Type = "Skirmish_Zsinj_Flagship_3",
+							Parameter_Type = "Skirmish_Zsinj_Flagship_4",
+							Parameter_Type = "Skirmish_Zsinj_Flagship_5"
+							}
+	</Is_Flagship_Mode>
+
+	<Need_To_Secure_Contestable>
+		Variable_Target.IsContestable
+		*
+		(
+			5 * (1 - Variable_Target.Location.EnemyForce)
+			+
+			5 * clamp( (10000 / Script_GetDistanceToFirstWithProperty.Evaluate {Parameter_Script_String = "IsStarbase", Parameter_Script_String = "FRIENDLY"}), 0, 4)
+			-
+			5.0 * Variable_Target.HasBuiltObject
+			+
+			1
+		)
+	</Need_To_Secure_Contestable>
+
+
+	<Need_To_Secure_Contestable_Space>
+		(1 - Function_Should_Firesale_Space.Evaluate)
+		*
+		Function_Allowed_As_Defender_Space.Evaluate
+		*
+		Function_Need_To_Secure_Contestable.Evaluate
+		*
+		(Script_GetDistanceToFirstWithProperty.Evaluate {Parameter_Script_String = "IsStarbase", Parameter_Script_String = "ENEMY"} > 4000)
+		*
+		(
+			(Game.IsCampaignGame == 0.0)
+			*
+			(
+				2.0 * Function_Is_Refinery_Pad_Space.Evaluate
+				+
+				Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Merchant_Dock"}
+				*
+				(Function_Number_Resource_Structures_Space.Evaluate > 1)
+				+
+				0.5
+				*
+				Variable_Target.Type.IsType {Parameter_Type = "Defense_Satellite_Laser_Pad"}
+				*
+				(Function_Number_Resource_Structures_Space.Evaluate > 2)
+			)
+		)
+	</Need_To_Secure_Contestable_Space>
+	
+	
+	<Number_Resource_Structures_Space>
+		Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Mineral_Extractor"
+													,Parameter_Type = "FS_Mineral_Extractor"
+													}
+	</Number_Resource_Structures_Space>
+
+
+	<Need_To_Build_Structure_Space>
+		10.0
+		*
+		(1 - Function_Is_Saving_For_Refineries_Space.Evaluate)
+		*
+		((1 - Function_Skirmish_Needs_New_Space_Station.Evaluate) + (Variable_Self.CreditsUnnormalized > 1400))
+		*
+		(
+			0.2 >
+			(
+				Variable_Target.Location.EnemyForce /
+				(Variable_Target.Location.EnemyForce + Variable_Target.Location.FriendlyForce )
+			)
+		)
+	</Need_To_Build_Structure_Space>
+
+
+	<Need_To_Build_Refinery_Space>
+		50.0
+		*
+		(
+			0.2 >
+			(
+				Variable_Target.Location.EnemyForce /
+				(Variable_Target.Location.EnemyForce + Variable_Target.Location.FriendlyForce )
+			)
+		)
+		*
+		(Script_GetDistanceToFirstWithProperty.Evaluate {Parameter_Script_String = "IsStarbase", Parameter_Script_String = "ENEMY"} > 4000)
+		*
+		(1.0 + 5.0 * (4000 > Script_GetDistanceToFirstWithProperty.Evaluate {Parameter_Script_String = "IsStarbase", Parameter_Script_String = "FRIENDLY"}))
+		*
+		Function_Is_Refinery_Pad_Space.Evaluate
+		*
+		(1 - Function_Is_Flagship_Mode.Evaluate)
+	</Need_To_Build_Refinery_Space>
+	
+	
+	<Need_To_Build_Flagship_Refinery_Space>
+		50.0
+		*
+		(
+			0.2 >
+			(
+				Variable_Target.Location.EnemyForce /
+				(Variable_Target.Location.EnemyForce + Variable_Target.Location.FriendlyForce )
+			)
+		)
+		*
+		Function_Is_Refinery_Pad_Space.Evaluate
+		*
+		Function_Is_Flagship_Mode.Evaluate
+	</Need_To_Build_Flagship_Refinery_Space>
+
+	
+	<Is_Saving_For_Refineries_Space>
+		(Variable_Self.OpenBuildPadCount{Parameter_Type = "Mineral_Extractor_Pad"
+										,Parameter_Type = "Ranger_Test_Mineral_Extractor_Pad"
+										} > 0)
+		*
+		(850 > Variable_Self.CreditsUnnormalized)
+	</Is_Saving_For_Refineries_Space>
+
+
+	<Is_Refinery_Pad_Space>
+		Variable_Target.Type.IsType {
+									Parameter_Type = "Mineral_Extractor_Pad"
+									,Parameter_Type = "Ranger_Test_Mineral_Extractor_Pad"
+									} 
+	</Is_Refinery_Pad_Space>
+
+	
+	<Tactical_Multiplayer_Should_Build_Generic_Space>
+		(1 - Function_Is_Saving_For_Refineries_Space.Evaluate)
+		*
+		Function_Tactical_Multiplayer_Should_Build_Generic.Evaluate
+		*
+		(1 - Function_Is_Flagship_Mode.Evaluate)
+	</Tactical_Multiplayer_Should_Build_Generic_Space>
+
+	
+	<Should_Purchase_Ability_Generic_Space>
+		(Game.IsCampaignGame == 0)
+		*
+		(1 - Function_Is_Saving_For_Refineries_Space.Evaluate)
+		*
+		Function_Number_Resource_Structures_Space.Evaluate
+		*
+		(
+			1.0
+			+
+			10.0 * (Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} >= (0.8 * Variable_Enemy.ForceUnnormalized{Parameter_Attenuator = 1.0}))
+		)
+		+
+		(Game.IsCampaignGame)
+	</Should_Purchase_Ability_Generic_Space>
+	
+	
+	<Should_Purchase_Special_Weapon_Space>
+		(Game.IsCampaignGame == 0)
+		*
+		(1 - Function_Is_Saving_For_Refineries_Space.Evaluate)
+		*
+		Function_Number_Resource_Structures_Space.Evaluate
+		*
+		(Variable_Self.EnemyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Capital|SuperCapital]} > 2500)
+	</Should_Purchase_Special_Weapon_Space>
+
+	
+	<Skirmish_Needs_New_Space_Station>
+		(Game.IsCampaignGame == 0.0)
+		*
+		(
+			(Function_Number_Resource_Structures_Space.Evaluate >= 4) * 4
+			+
+			(Function_Number_Resource_Structures_Space.Evaluate == 3) * 2
+			+
+			(Function_Number_Resource_Structures_Space.Evaluate == 2)
+			+
+			(Function_Number_Resource_Structures_Space.Evaluate == 1) * 0.5
+			+
+			Function_Is_Flagship_Mode.Evaluate
+		)
+		*
+		(
+			(1 # 2) * (Game.Age > 60) * Function_Number_Resource_Structures_Space.Evaluate
+			+
+			(0 # 1) * (Game.Age > 30) * Function_Number_Resource_Structures_Space.Evaluate
+			+
+			(
+				(1.0 + 9.0 * ((0 # 1) > 0.9)) 
+				* 
+				(30 > Game.Age) 
+				* 
+				Function_Number_Resource_Structures_Space.Evaluate 
+				* 
+				(Variable_Self.TechLevel == 1.0)
+			)
+			+
+			Function_Is_Flagship_Mode.Evaluate
+		)
+		*
+		(
+			(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Fighter | Bomber | Corvette | Frigate]} > 500.0) * (Variable_Self.TechLevel == 1.0)
+			+
+			(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Fighter | Bomber | Corvette | Frigate]} > 1500.0) * (Variable_Self.TechLevel == 2.0)
+			+
+			(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Fighter | Bomber | Corvette | Frigate | Capital]} > 2500.0) * (Variable_Self.TechLevel >= 3.0)
+		)
+		*
+		(1 - Function_Is_Saving_For_Refineries_Space.Evaluate)
+		*
+		(
+			(Game.Age > 180.0) * (Variable_Self.TechLevel == 1.0)
+			+
+			(Game.Age > 300.0) * (Variable_Self.TechLevel == 2.0)
+			+
+			(Game.Age > 420.0) * (Variable_Self.TechLevel == 3.0)
+			+
+			(Game.Age > 600.0) * (Variable_Self.TechLevel == 4.0)
+			+
+			(5.0 > Variable_Self.TechLevel) * (Variable_Self.FriendlyForce > (2.0 * Variable_Self.EnemyForce))
+			+
+			(5.0 > Variable_Self.TechLevel) * (Variable_Self.EnemyForce > (2.0 * Variable_Self.FriendlyForce))
+		)
+	</Skirmish_Needs_New_Space_Station>
+	
+	
+	<Skirmish_Needs_New_Space_Station_With_Multiplier>
+		50.0 * Function_Skirmish_Needs_New_Space_Station.Evaluate
+	</Skirmish_Needs_New_Space_Station_With_Multiplier>
+
+	
+	<Tactical_Multiplayer_Should_Build_Space_Units_Flagship>
+		(1 - Function_Is_Saving_For_Refineries_Space.Evaluate)
+		*
+		Function_Tactical_Multiplayer_Should_Build_Generic.Evaluate
+		*
+		5.0
+		*
+		Function_Is_Flagship_Mode.Evaluate
+	</Tactical_Multiplayer_Should_Build_Space_Units_Flagship> 
+
+
+	<Need_Reinforce_Flagship_Mode>
+		50
+		*
+		(Variable_Self.ReinforcementsUnnormalized > 0)
+		*
+		Variable_Self.UnitSpaceAvailable
+		*
+		Function_Is_Flagship_Mode.Evaluate
+	</Need_Reinforce_Flagship_Mode>
+	
+	
+	<!-- Land -->
+	
+
+	<Is_Outpost_Pad>
+		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Outpost_Pad",
+									Parameter_Type = "Skirmish_Alternative_Recruitment_Structure"
+									}
+	</Is_Outpost_Pad>
+
+	<Is_Groundwar_Point>
+		Variable_Target.Type.IsType {Parameter_Type = "GroundWar_Reinforcement_Point"}
+	</Is_Groundwar_Point>
+	
+	<Tactical_Multiplayer_Should_Build_Units_Generic_Land>
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+		*
+		Function_Is_Initial_Skirmish_State_Established.Evaluate
+		*
+		Function_Tactical_Multiplayer_Should_Build_Generic.Evaluate
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+		*
+		(1.0 - Game.IsCampaignGame)
+	</Tactical_Multiplayer_Should_Build_Units_Generic_Land>
+	
+	<Tactical_Multiplayer_Should_Build_Units_Groundwar_Land>
+		5.0
+		*
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+		*
+		Function_Tactical_Multiplayer_Should_Build_Generic.Evaluate
+	</Tactical_Multiplayer_Should_Build_Units_Groundwar_Land>
+
+
+	<Tactical_Multiplayer_Should_Build_Structure_Generic_Land>
+		(1 - Function_Want_To_Retreat_From_Land.Evaluate)
+		*
+		(1 - Function_Is_Refinery_Pad.Evaluate)
+		*
+		(1 - Function_Is_Outpost_Pad.Evaluate)
+		*
+		(1 - Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Build_Pad"
+											,Parameter_Type = "Rebel_Build_Pad" 
+											,Parameter_Type = "Empire_Build_Pad"
+											,Parameter_Type = "Rebel_Build_Pad_Offensive"
+											,Parameter_Type = "Empire_Build_Pad_Offensive"
+											,Parameter_Type = "Rebel_Build_Pad_Defensive"
+											,Parameter_Type = "Empire_Build_Pad_Defensive"})
+		*
+		(1 - Variable_Target.HasBuiltObject)
+		*
+		(
+			1
+			+
+			20
+			* 
+			(Function_Num_Refineries.Evaluate > 0)
+			*
+			(Variable_Target.Type.IsType {Parameter_Type = "Generic_Power_Generator_Build_Pad"})
+			+
+			(1.0 - Function_Skirmish_Upgrade_Tech.Evaluate)
+			*
+			(30 * (Variable_Target.Location.EnemyForce == 0.0))
+			-
+			10 * (Variable_Target.Type.IsType {Parameter_Type = "Generic_Ground_Research_Facility_Build_Pad"})
+		)
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+		*
+		(1.0 - Game.IsCampaignGame)		
+	</Tactical_Multiplayer_Should_Build_Structure_Generic_Land>
+
+	
+	<Tactical_Multiplayer_Should_Build_Basic_Structure>
+		Function_Tactical_Multiplayer_Should_Build_Structure_Generic_Land.Evaluate
+		*
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Variable_Target.Type.IsType {Parameter_Type = "E_Ground_Barracks_Build_Pad",
+											Parameter_Type = "R_Ground_Barracks_Build_Pad",
+											Parameter_Type = "U_Ground_Merc_Outpost_Build_Pad",
+											Parameter_Type = "Imperial_Command_Center_Build_Pad",
+											Parameter_Type = "Rebel_Command_Center_Build_Pad",
+											Parameter_Type = "Imperial_GroundWar_Center_Build_Pad",
+											Parameter_Type = "Rebel_GroundWar_Center_Build_Pad",
+											Parameter_Type = "Underworld_Palace_Build_Pad"})
+		*
+		Function_Is_Initial_Skirmish_State_Established.Evaluate						
+	</Tactical_Multiplayer_Should_Build_Basic_Structure>
+	
+	
+	<Tactical_Multiplayer_Should_Build_Barracks>
+		Function_Tactical_Multiplayer_Should_Build_Structure_Generic_Land.Evaluate
+		*
+		Variable_Target.Type.IsType {Parameter_Type = "E_Ground_Barracks_Build_Pad",
+										Parameter_Type = "R_Ground_Barracks_Build_Pad",
+										Parameter_Type = "U_Ground_Merc_Outpost_Build_Pad",
+										Parameter_Type = "Imperial_GroundWar_Barracks_Build_Pad",
+										Parameter_Type = "Rebel_GroundWar_Barracks_Build_Pad",
+										Parameter_Type = "Skirmish_Alternative_Recruitment_Structure"}
+		*
+		25.0
+		*
+		(1 + (Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Hero]} == 0.0))
+	</Tactical_Multiplayer_Should_Build_Barracks>
+	
+	
+	<Tactical_Multiplayer_Should_Build_Command_Center>
+		50.0
+		*
+		Function_Tactical_Multiplayer_Should_Build_Structure_Generic_Land.Evaluate
+		*
+		Variable_Target.Type.IsType {Parameter_Type = "Imperial_Command_Center_Build_Pad",
+										Parameter_Type = "Rebel_Command_Center_Build_Pad",
+										Parameter_Type = "Hapan_Command_Center_Build_Pad",
+										Parameter_Type = "Rebel_GroundWar_Center_Build_Pad",
+										Parameter_Type = "Imperial_GroundWar_Center_Build_Pad"}
+	</Tactical_Multiplayer_Should_Build_Command_Center>
+
+	
+	<Is_Saving_For_Refineries_Land>
+		(
+			(Variable_Self.OpenBuildPadCount{Parameter_Type = "Skirmish_Mineral_Processor_Pad"} > 0)
+			*
+			(800 > Variable_Self.CreditsUnnormalized)
+			+
+			(Variable_Self.OpenBuildPadCount{Parameter_Type = "Skirmish_Outpost_Pad"} > 0)
+			*
+			(1300 > Variable_Self.CreditsUnnormalized)
+			+
+			(Variable_Self.OpenBuildPadCount{Parameter_Type = "GroundWar_Reinforcement_Point"} > 0)
+			*
+			(300 > Variable_Self.CreditsUnnormalized)
+		)
+		*
+		(4 > Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Mineral_Processor"
+														,Parameter_Type = "Skirmish_Ground_Mining_Facility"
+														,Parameter_Type = "GroundWar_Reinforcement_Point_Defensive_Upgrade"
+														,Parameter_Type = "GroundWar_Reinforcement_Point_Economic_Upgrade"
+														})
+		*
+		Function_Want_More_Resource_Structures_Land.Evaluate
+	</Is_Saving_For_Refineries_Land>
+
+
+	<Num_Refineries>
+		Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Mineral_Processor"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility"
+													,Parameter_Type = "GroundWar_Reinforcement_Point_Defensive_Upgrade"
+													,Parameter_Type = "GroundWar_Reinforcement_Point_Economic_Upgrade"}
+	</Num_Refineries>
+
+	
+	<Is_Refinery_Pad>
+		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Mineral_Processor_Pad"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "GroundWar_Reinforcement_Point"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Ground_Mining_Facility_Build_Pad"}
+	</Is_Refinery_Pad>
+
+
+	<Need_To_Build_Refinery_Land>
+		25.0 
+		*
+		(Function_Is_Refinery_Pad.Evaluate + Function_Is_Outpost_Pad.Evaluate + Function_Is_Groundwar_Point.Evaluate)
+		*
+		(
+			0.2 >
+			(
+				Variable_Target.Location.EnemyForce /
+				(Variable_Target.Location.EnemyForce + Variable_Target.Location.FriendlyForce )
+			)
+		)
+		*
+		(Variable_Target.DistanceToNearestEnemy{Parameter_Category = GameObjectCategoryType[Structure]} > 500)
+	</Need_To_Build_Refinery_Land>
+
+	
+	<Skirmish_Upgrade_Tech>
+		50
+		*
+		(1 - Function_Is_Skirmish_Tech_Maxed.Evaluate)
+		*
+		(
+			Function_Should_Burn_Units_Land.Evaluate
+			+
+			Function_Is_Initial_Skirmish_State_Established.Evaluate
+			*
+			(Function_Non_Structure_Force_Unnormalized.Evaluate > 400) 
+			* 
+			(
+				(Variable_Self.FriendlyForce{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]} > (0.5 * Variable_Self.EnemyForce{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]}))
+				*
+				(1 - Variable_Self.HasUnit{Parameter_Type = "Ground_Level_Two_Tech_Upgrade"})
+				*
+				Variable_Self.HasUnit{Parameter_Type = "Command_Center_Increased_Supplies_L1_Upgrade"}
+				*
+				Variable_Self.HasUnit{Parameter_Type = "Mining_Increased_Supplies_L1_Upgrade"}
+				+
+				(Variable_Self.FriendlyForce{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]} > 0.6 * Variable_Self.EnemyForce{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]})
+				* 
+				(1 - Variable_Self.HasUnit{Parameter_Type = "Ground_Level_Three_Tech_Upgrade"})
+				*
+				(
+					Variable_Self.HasUnit{Parameter_Type = "Command_Center_Increased_Supplies_L2_Upgrade"}
+					+
+					Variable_Self.HasUnit{Parameter_Type = "Mining_Increased_Supplies_L2_Upgrade"}
+				)
+				+
+				(Variable_Self.FriendlyForce{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]} > 0.8 * Variable_Self.EnemyForce{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]})
+				* 
+				(1 - Variable_Self.HasUnit{Parameter_Type = "Ground_Level_Four_Tech_Upgrade"})
+				*
+				(
+					Variable_Self.HasUnit{Parameter_Type = "Command_Center_Increased_Supplies_L3_Upgrade"}
+					+
+					Variable_Self.HasUnit{Parameter_Type = "Mining_Increased_Supplies_L3_Upgrade"}
+				)
+				+
+				(Variable_Self.FriendlyForce{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]} > 0.9 * Variable_Self.EnemyForce{Parameter_Category = GameObjectCategoryType[Infantry|Vehicle|Air]})
+				* 
+				(1 - Variable_Self.HasUnit{Parameter_Type = "Ground_Level_Five_Tech_Upgrade"})
+				*
+				(
+					Variable_Self.HasUnit{Parameter_Type = "Command_Center_Increased_Supplies_L4_Upgrade"}
+					+
+					Variable_Self.HasUnit{Parameter_Type = "Mining_Increased_Supplies_L4_Upgrade"}
+				)
+			)
+		)
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+		> 0
+	</Skirmish_Upgrade_Tech>
+
+	
+	<Skirmish_Upgrade_Tech_With_Multiplier>
+		50.0 * Function_Skirmish_Upgrade_Tech.Evaluate
+	</Skirmish_Upgrade_Tech_With_Multiplier>
+
+
+	<Is_Skirmish_Tech_Maxed>
+		Variable_Self.HasUnit{Parameter_Type = "Ground_Level_Five_Tech_Upgrade",
+							Parameter_Type = "Space_Level_Five_Tech_Upgrade"}
+	</Is_Skirmish_Tech_Maxed>
+	
+	
+	<May_Lose_Land_Control_Game>
+		(Variable_Self.HasUnit {Parameter_Type = "Reinforcement_Point"} == 0)
+		*
+		Game.IsLandControlGame
+	</May_Lose_Land_Control_Game>
+	
+	
+	<Should_Purchase_Early_Land_Upgrades>
+		Function_ReallyBig.Evaluate
+		*
+		Function_Is_Initial_Skirmish_State_Established.Evaluate
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+	</Should_Purchase_Early_Land_Upgrades>
+	
+	
+	<Is_Initial_Skirmish_State_Established>
+		Variable_Self.HasUnit {Parameter_Type = "E_Ground_Barracks", 
+								Parameter_Type = "R_Ground_Barracks", 
+								Parameter_Type = "U_Ground_Barracks",
+								Parameter_Type = "M_Ground_Barracks",
+								Parameter_Type = "Rebel_GroundWar_Barracks", 
+								Parameter_Type = "Imperial_GroundWar_Barracks"}
+		*
+		Variable_Self.HasUnit {Parameter_Type = "Imperial_Command_Center", 
+								Parameter_Type = "Rebel_Command_Center",
+								Parameter_Type = "U_Ground_Palace",
+								Parameter_Type = "Hapan_Palace",
+								Parameter_Type = "Rebel_GroundWar_Center",
+								Parameter_Type = "Imperial_GroundWar_Center"}
+		*
+		(Function_Non_Structure_Force_Unnormalized.Evaluate > 0.0)
+		*
+		(Function_Number_Resource_Structures_Land.Evaluate > 1)
+		+
+		Variable_Self.HasUnit{Parameter_Type = "Ground_Level_Two_Tech_Upgrade", 
+											Parameter_Type = "Ground_Level_Three_Tech_Upgrade",
+											Parameter_Type = "Ground_Level_Four_Tech_Upgrade",
+											Parameter_Type = "Ground_Level_Five_Tech_Upgrade"}	
+	</Is_Initial_Skirmish_State_Established>
+
+	
+	<Should_Build_Infantry_Emergency>
+		100.0
+		*
+		((400 > Function_Non_Structure_Force_Unnormalized.Evaluate)
+		*
+		(Function_Is_Initial_Skirmish_State_Established.Evaluate == 0)
+		+
+		Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Build_Infantry_Emergency>
+	
+	
+	<Should_Secure_Victory_Control_Point>
+		Game.IsLandControlGame
+		*
+		Variable_Target.Type.IsType {Parameter_Type = "Reinforcement_Point"} 
+		*
+		(30.0 + 30.0 * Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Secure_Victory_Control_Point>	
+
+	
+	<Num_Open_Land_Econ_Structure_Build_Locations>
+		(Variable_Self.OpenBuildPadCount{Parameter_Type = "Skirmish_Mineral_Processor_Pad"
+											,Parameter_Type = "Ground_Mining_Facility_Build_Pad"
+											,Parameter_Type = "GroundWar_Reinforcement_Point"
+											,Parameter_Type = "Skirmish_Outpost_Pad"})
+	</Num_Open_Land_Econ_Structure_Build_Locations>
+
+
+	<Want_More_Resource_Structures_Land>
+		(1 - Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})
+		+
+		(Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})
+		*
+		(2 > Function_Number_Resource_Structures_Land.Evaluate)
+	</Want_More_Resource_Structures_Land>
+
+	
+	<Should_Purchase_Ability_Generic_Land>
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+		*
+		Function_Should_Purchase_Ability_Generic.Evaluate
+		*
+		(Function_Num_Refineries.Evaluate > 0)
+	</Should_Purchase_Ability_Generic_Land>
+
+</Equations>

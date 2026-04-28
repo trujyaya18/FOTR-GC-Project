@@ -1,0 +1,318 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--******* Outer Rim Sieges: Breaking Belderone ********-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Autoresolve_Off">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Enable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_Commence_Retreat</Prereq>
+	</Event>
+
+
+	<Event Name="Prevent_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Allow_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>REBEL</Event_Param1>
+	</Event>
+
+	<Event Name="Rep_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>EMPIRE</Event_Param1>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Trigger_Commence_Retreat">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>COMMENCE_RETREAT</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Convoy_Escaped">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONVOY_ESCAPED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Convoy_Destroyed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONVOY_DESTROYED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Allow_Retreat">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>SUPER_TRANSPORT_XI_CONVOY</Event_Param1>
+		<Event_Param3>6</Event_Param3>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Trapped_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRAPPED_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_SPEECH_01</Reward_Param1>
+		<Reward_Param2>9.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Trapped_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRAPPED_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_SPEECH_02</Reward_Param1>
+		<Reward_Param2>9.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Trapped_Speech_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRAPPED_03</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_SPEECH_03</Reward_Param1>
+		<Reward_Param2>9.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Trapped_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRAPPED_04</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_SPEECH_04</Reward_Param1>
+		<Reward_Param2>9.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Trapped_Speech_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRAPPED_05</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_SPEECH_05</Reward_Param1>
+		<Reward_Param2>9.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Munificent_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>GRIEVOUS_MUNIFICENT</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>CIS_Goal_03</Prereq>
+	</Event>
+
+	<Event Name="Renitor_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>GRIEVOUS_RECUSANT</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>CIS_Goal_03</Prereq>
+	</Event>
+
+	<Event Name="Invisible_Hand_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>INVISIBLE_HAND</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>CIS_Goal_03</Prereq>
+	</Event>
+
+	<Event Name="Malevolence_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>GRIEVOUS_MALEVOLENCE</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>CIS_Goal_03</Prereq>
+	</Event>
+
+	<Event Name="Grievous_Killed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Munificent_Destroyed</Prereq>
+		<Prereq>Renitor_Destroyed</Prereq>
+		<Prereq>Invisible_Hand_Destroyed</Prereq>
+		<Prereq>Malevolence_Destroyed</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_CIS_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_I</Event_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_02</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_02, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_03, Trigger_Convoy_Destroyed</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Grievous_Killed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_02, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BREAKING_BELDERONE_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_03, Trigger_Convoy_Escaped</Prereq>
+	</Event>
+
+</Story>

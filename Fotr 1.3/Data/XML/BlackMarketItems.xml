@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<BlackMarketItems>
+
+	<BlackMarketItem Name= "BlackMarketItem_Null">	<!-- BlackMarketItems.xml gets pulled in from base game so something needs to exist -->
+	</BlackMarketItem>
+
+</BlackMarketItems>

@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<InfluenceRewards>
+
+	<!-- ******************************************************************** -->
+	<!-- *************************** Space ********************************** -->
+	<!-- ******************************************************************** -->	
+
+	<SpaceUnit Name="Geonosian_Cruiser_Influence">
+		<Variant_Of_Existing_Type>Geonosian_Cruiser</Variant_Of_Existing_Type>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<GUI_Row> 0 </GUI_Row>
+		<Required_Special_Structures>
+		Republic_Shipyard_Level_Four |
+		CIS_Shipyard_Level_Four,
+		INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN,
+		AI_Category_Dummy | Non_Capital_Category_Dummy	
+		</Required_Special_Structures>
+		<Required_Planets>Geonosis</Required_Planets>
+		<Affiliation>Rebel, Empire, Commerce_Guild, Trade_Federation, Techno_Union, Banking_Clan</Affiliation>
+		<Tech_Level>0</Tech_Level>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Komrk_Gunship_Squadron_Influence">
+		<Variant_Of_Existing_Type>Komrk_Gunship_Squadron</Variant_Of_Existing_Type>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<GUI_Row> 0 </GUI_Row>
+		<Required_Special_Structures>
+		Republic_Shipyard_Level_Three |
+		CIS_Shipyard_Level_Three,
+		INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN,
+		AI_Category_Dummy | Non_Capital_Category_Dummy	
+		</Required_Special_Structures>
+		<Required_Planets>Mandalore</Required_Planets>
+		<Affiliation>Rebel, Empire, Commerce_Guild, Trade_Federation, Techno_Union, Banking_Clan</Affiliation>
+		<Tech_Level>0</Tech_Level>
+	</SpaceUnit>
+
+	<!-- ******************************************************************** -->
+	<!-- *************************** Ground ********************************* -->
+	<!-- ******************************************************************** -->	
+
+	<GroundCompany Name="Storm_Cloud_Car_Company">
+		<Variant_Of_Existing_Type>Storm_Cloud_Car_Group</Variant_Of_Existing_Type>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Rebel, Empire, Commerce_Guild, Trade_Federation, Techno_Union, Banking_Clan</Affiliation>
+		<Required_Special_Structures> INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
+		<Required_Planets>Bespin</Required_Planets>
+
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>480</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	</GroundCompany>
+
+	<GroundCompany Name="Mandalorian_Soldier_Company">
+		<Variant_Of_Existing_Type>Mandalorian_Soldier_Team</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel, Empire, Commerce_Guild, Trade_Federation, Techno_Union, Banking_Clan</Affiliation>
+		<Required_Special_Structures> INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
+		<Required_Planets>Mandalore</Required_Planets>
+
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Company_Transport_Unit>Komrk_Landing_Craft_Commando</Company_Transport_Unit>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>210</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	</GroundCompany>
+
+	<GroundCompany Name="Mandalorian_Commando_Company">
+		<Variant_Of_Existing_Type>Mandalorian_Commando_Team</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel, Empire, Commerce_Guild, Trade_Federation, Techno_Union, Banking_Clan</Affiliation>
+		<Required_Special_Structures> INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT </Required_Special_Structures>
+		<Required_Planets>Mandalore</Required_Planets>
+
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Company_Transport_Unit>Komrk_Landing_Craft_Commando</Company_Transport_Unit>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>150</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>7</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	</GroundCompany>
+
+	<GroundCompany Name="LR_57_Droid_Company">
+		<Variant_Of_Existing_Type>LR_57_Combat_Droid_Company</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel, Empire, Commerce_Guild, Trade_Federation, Techno_Union, Banking_Clan</Affiliation>
+		<Required_Special_Structures> INFLUENCE_TEN | INFLUENCE_NINE | INFLUENCE_EIGHT | INFLUENCE_SEVEN </Required_Special_Structures>
+		<Required_Planets>Christophsis</Required_Planets>
+		
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+	</GroundCompany>
+
+</InfluenceRewards>

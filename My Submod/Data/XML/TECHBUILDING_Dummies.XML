@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<TechBuildings>
+
+
+	<TechBuilding Name="Dummy_Tech_0">
+
+		<Is_Dummy>yes</Is_Dummy>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>10</Required_Ground_Base_Level>
+
+		<GUI_Row>0</GUI_Row>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>yes</Build_Tab_Special_Structures>
+		<Build_Initially_Locked>yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</TechBuilding>
+
+
+	<TechBuilding Name="Dummy_Tech_1">
+
+		<Is_Dummy>yes</Is_Dummy>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>10</Required_Ground_Base_Level>
+
+		<GUI_Row>0</GUI_Row>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>yes</Build_Tab_Special_Structures>
+		<Build_Initially_Locked>yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</TechBuilding>
+
+
+	<TechBuilding Name="Dummy_Tech_2">
+
+		<Is_Dummy>yes</Is_Dummy>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>10</Required_Ground_Base_Level>
+
+		<GUI_Row>0</GUI_Row>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>yes</Build_Tab_Special_Structures>
+		<Build_Initially_Locked>yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</TechBuilding>
+
+
+	<TechBuilding Name="Dummy_Tech_3">
+
+		<Is_Dummy>yes</Is_Dummy>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>10</Required_Ground_Base_Level>
+
+		<GUI_Row>0</GUI_Row>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>yes</Build_Tab_Special_Structures>
+		<Build_Initially_Locked>yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</TechBuilding>
+
+
+	<TechBuilding Name="Dummy_Tech_4">
+
+		<Is_Dummy>yes</Is_Dummy>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tech_Level>4</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>10</Required_Ground_Base_Level>
+
+		<GUI_Row>0</GUI_Row>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>yes</Build_Tab_Special_Structures>
+		<Build_Initially_Locked>yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</TechBuilding>
+
+
+	<TechBuilding Name="Dummy_Tech_5">
+
+		<Is_Dummy>yes</Is_Dummy>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tech_Level>5</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>10</Required_Ground_Base_Level>
+
+		<GUI_Row>0</GUI_Row>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>yes</Build_Tab_Special_Structures>
+		<Build_Initially_Locked>yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</TechBuilding>
+
+
+</TechBuildings>

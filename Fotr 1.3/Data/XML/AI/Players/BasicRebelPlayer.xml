@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name> BasicRebel </Name>
+
+
+	<Personality>
+		<Focus> .5 </Focus>
+		<Aggressiveness> .5 </Aggressiveness>
+	</Personality>
+	
+    <GalacticFreeStoreScript>GalacticFreeStore</GalacticFreeStoreScript>
+    <SpaceFreeStoreScript>BusyTacticalFreeStore</SpaceFreeStoreScript>
+    <LandFreeStoreScript>LandTacticalFreeStore</LandFreeStoreScript>
+	
+	<GoalProposalFunctionSets>
+		SystemFunctions
+		BasicOffensiveGalacticSet
+		BasicDefensiveGalacticSet
+		BasicInfrastructureGalacticSet
+		BasicOffensiveSpaceSet
+		BasicLandGoalSet
+	</GoalProposalFunctionSets>
+	
+	<Templates>
+        <Space>
+            Generic_Space
+        </Space>
+        <Land>
+            Generic_Land
+        </Land>
+		<Galactic>
+			Generic_AI_Default
+		</Galactic>
+	</Templates>
+
+	<Difficulty_Adjustments>
+		<Easy>Easy_Default</Easy>
+		<Normal>Normal_Default</Normal>
+		<Hard>Hard_Default</Hard>
+	</Difficulty_Adjustments>
+	
+</AIPlayerType>

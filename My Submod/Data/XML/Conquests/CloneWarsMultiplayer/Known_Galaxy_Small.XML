@@ -1,0 +1,1111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Campaigns>
+  <Campaign Name="Clone_Wars_Multiplayer_Rebel">
+    <Campaign_Set>Clone_Wars_Multiplayer</Campaign_Set>
+    <Sort_Order>3</Sort_Order>
+    <Is_Listed>True</Is_Listed>
+    <Supports_Custom_Settings>False</Supports_Custom_Settings>
+    <Show_Completed_Tab>True</Show_Completed_Tab>
+    <Text_ID>Clone Wars Multiplayer</Text_ID>
+    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_CWSMALL</Description_Text>
+    <Era_Start>2</Era_Start>
+    <Use_Default_Forces>True</Use_Default_Forces>
+    <Camera_Shift_X>0.0</Camera_Shift_X>
+    <Camera_Shift_Y>0.0</Camera_Shift_Y>
+    <Camera_Distance>1000.0</Camera_Distance>
+    <Locations>
+			Aargonar,
+			Abregado_Rae,
+			Agamar,
+			Alderaan,
+			Anaxes,
+			Arkania,
+			Azure,
+			Balmorra,
+			Barlok,
+			Belderone,
+			Bestine,
+			Bomis_Koori,
+			Bothawui,
+			Boz_Pity,
+			Carida,
+			Cato_Neimoidia,
+			Charros,
+			Christophsis,
+			Ciutric,
+			Corellia,
+			Corsin,
+			Coruscant,
+			Dantooine,
+			Dathomir,
+			Deko_Neimoidia,
+			Denon,
+			Devaron,
+			Druckenwell,
+			Eriadu,
+			Felucia,
+			Florrum,
+			Foerost,
+			Fondor,
+			Galaxy_Core_Art_Model,
+			Geonosis,
+			Humbarine,
+			Hypori,
+			Jabiim,
+			Kaikielius,
+			Kamino,
+			Kashyyyk,
+			Kirima,
+			Korda,
+			Krant,
+			Kuat,
+			Lola_Sayu,
+			Malastare,
+			Mandalore,
+			Maridun,
+			Mimban,
+			Mon_Calamari,
+			Mustafar,
+			Muunilinst,
+			Mygeeto,
+			Naboo,
+			Nal_Hutta,
+			Onderon,
+			Ord_Mantell,
+			Pammant,
+			Pantora,
+			Praesitlyn,
+			Raxus_Second,
+			Rendili,
+			Rhen_Var,
+			Rishi,
+			Rodia,
+			Ronyards,
+			Rothana,
+			Ruusan,
+			Ryndellia,
+			Saleucami,
+			Scipio,
+			Serenno,
+			Sullust,
+			Thule,
+			Tibrin,
+			Toydaria,
+			Umbara,
+			Utapau,
+			YagDhul,
+			Yavin,
+</Locations>
+    <Trade_Routes>
+			Aargonar_Azure,
+			Aargonar_Belderone,
+			Aargonar_Charros,
+			Aargonar_Mandalore,
+			Aargonar_Maridun,
+			Aargonar_Saleucami,
+			Abregado_Rae_Corellia,
+			Abregado_Rae_Fondor,
+			Abregado_Rae_Kaikielius,
+			Agamar_Ciutric,
+			Agamar_Corsin,
+			Agamar_Dathomir,
+			Agamar_Ord_Mantell,
+			Agamar_Scipio,
+			Alderaan_Coruscant,
+			Alderaan_Kaikielius,
+			Alderaan_Kuat,
+			Alderaan_Rendili,
+			Anaxes_Arkania,
+			Anaxes_Barlok,
+			Anaxes_Coruscant,
+			Arkania_Barlok,
+			Arkania_Carida,
+			Azure_Charros,
+			Azure_Korda,
+			Balmorra_Carida,
+			Balmorra_Deko_Neimoidia,
+			Balmorra_Kuat,
+			Balmorra_Onderon,
+			Barlok_Coruscant,
+			Barlok_Ord_Mantell,
+			Belderone_Jabiim,
+			Belderone_Pammant,
+			Belderone_Rhen_Var,
+			Bestine_Devaron,
+			Bestine_Kirima,
+			Bestine_Ronyards,
+			Bestine_YagDhul,
+			Bomis_Koori_Fondor,
+			Bomis_Koori_Tibrin,
+			Bomis_Koori_YagDhul,
+			Bothawui_Christophsis,
+			Bothawui_Druckenwell,
+			Bothawui_Kamino,
+			Bothawui_Krant,
+			Bothawui_Mimban,
+			Boz_Pity_Charros,
+			Boz_Pity_Nal_Hutta,
+			Boz_Pity_Saleucami,
+			Carida_Corsin,
+			Carida_Coruscant,
+			Carida_Korda,
+			Cato_Neimoidia_Deko_Neimoidia,
+			Cato_Neimoidia_Denon,
+			Cato_Neimoidia_Humbarine,
+			Cato_Neimoidia_Rendili,
+			Charros_Kashyyyk,
+			Charros_Toydaria,
+			Christophsis_Druckenwell,
+			Christophsis_Rodia,
+			Christophsis_Ryndellia,
+			Ciutric_Dantooine,
+			Ciutric_Dathomir,
+			Ciutric_Serenno,
+			Corellia_Denon,
+			Corellia_Devaron,
+			Corellia_Kaikielius,
+			Corellia_Rendili,
+			Corsin_Korda,
+			Corsin_Mandalore,
+			Corsin_Ord_Mantell,
+			Coruscant_Foerost,
+			Dantooine_Muunilinst,
+			Dantooine_Mygeeto,
+			Dathomir_Mandalore,
+			Dathomir_Yavin,
+			Deko_Neimoidia_Mimban,
+			Deko_Neimoidia_Onderon,
+			Denon_Devaron,
+			Denon_Druckenwell,
+			Denon_Mimban,
+			Denon_Ronyards,
+			Devaron_Fondor,
+			Druckenwell_Kirima,
+			Eriadu_Praesitlyn,
+			Eriadu_Sullust,
+			Eriadu_Tibrin,
+			Felucia_Florrum,
+			Felucia_Lola_Sayu,
+			Felucia_Raxus_Second,
+			Felucia_Rhen_Var,
+			Florrum_Raxus_Second,
+			Florrum_Thule,
+			Foerost_Kaikielius,
+			Fondor_YagDhul,
+			Geonosis_Hypori,
+			Geonosis_Rodia,
+			Humbarine_Kuat,
+			Humbarine_Rendili,
+			Hypori_Kamino,
+			Hypori_Rothana,
+			Jabiim_Pammant,
+			Jabiim_Saleucami,
+			Kamino_Rishi,
+			Kamino_Rodia,
+			Kashyyyk_Korda,
+			Kashyyyk_Ruusan,
+			Kashyyyk_Umbara,
+			Kirima_Malastare,
+			Kirima_Naboo,
+			Kirima_Ronyards,
+			Kirima_Ryndellia,
+			Korda_Mandalore,
+			Korda_Onderon,
+			Krant_Rishi,
+			Krant_Toydaria,
+			Lola_Sayu_Maridun,
+			Lola_Sayu_Rhen_Var,
+			Lola_Sayu_Thule,
+			Malastare_Sullust,
+			Malastare_YagDhul,
+			Mandalore_Maridun,
+			Maridun_Yavin,
+			Mimban_Ruusan,
+			Mimban_Umbara,
+			Mon_Calamari_Pammant,
+			Mon_Calamari_Raxus_Second,
+			Mon_Calamari_Rhen_Var,
+			Mustafar_Tibrin,
+			Mustafar_Utapau,
+			Muunilinst_Mygeeto,
+			Mygeeto_Scipio,
+			Naboo_Pantora,
+			Naboo_Praesitlyn,
+			Naboo_Ryndellia,
+			Naboo_Sullust,
+			Nal_Hutta_Rishi,
+			Nal_Hutta_Toydaria,
+			Onderon_Umbara,
+			Ord_Mantell_Scipio,
+			Pantora_Ryndellia,
+			Pantora_Utapau,
+			Praesitlyn_Utapau,
+			Rishi_Rothana,
+			Ruusan_Toydaria,
+			Ruusan_Umbara,
+			Serenno_Thule,
+			Serenno_Yavin,
+			Sullust_Tibrin,
+			Thule_Yavin,
+</Trade_Routes>
+    <Starting_Active_Player>Empire</Starting_Active_Player>
+    <Is_Multiplayer> Yes </Is_Multiplayer>
+   
+    <Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+    <Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+    
+    <Human_Victory_Conditions>Galactic_All_Planets_Controlled</Human_Victory_Conditions>
+    <AI_Victory_Conditions>Galactic_All_Planets_Controlled</AI_Victory_Conditions>
+	
+     <Rebel_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_CloneWars_CIS.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml</Empire_Story_Name>
+
+    <Starting_Credits>Empire, 80000</Starting_Credits>
+    <Starting_Tech_Level>Empire, 2</Starting_Tech_Level>
+    <Max_Tech_Level>Empire, 5</Max_Tech_Level>
+    <Starting_Credits>Rebel, 80000</Starting_Credits>
+    <Starting_Tech_Level>Rebel, 2</Starting_Tech_Level>
+    <Max_Tech_Level>Rebel, 5</Max_Tech_Level> 
+    <Starting_Forces>Rebel, Raxus_Second, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, CIS_Shipyard_Level_One</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Secondary_Golan_One</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Lucid_Voice</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Grievous_Team_Malevolence</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Recusant</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, NewRep_Senate</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, R_Ground_Barracks</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, R_Ground_Light_Vehicle_Factory</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Ground_Ion_Cannon</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, B1_Droid_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, B1_Droid_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, B1_Droid_Marine_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, BX_Commando_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, PAC_Company</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, GAT_Group</Starting_Forces>
+	<Starting_Forces>Rebel, Raxus_Second, Dooku_Team</Starting_Forces>
+	<Starting_Forces>Rebel, Raxus_Second, Trench_Invincible</Starting_Forces>
+	<Starting_Forces>Rebel, Raxus_Second, Ventress_Team</Starting_Forces>
+	<Starting_Forces>Rebel, Raxus_Second, Durge_Team</Starting_Forces>
+	<Starting_Forces>Rebel,Dathomir, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Dathomir, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Dathomir, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Serenno, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Serenno, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Serenno, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Yavin, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Yavin, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Yavin, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Maridun, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Maridun, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Maridun, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Thule, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Thule, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Thule, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Lola_Sayu, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Lola_Sayu, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Lola_Sayu, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Aargonar, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Aargonar, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Aargonar, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Florrum, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Florrum, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Florrum, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Felucia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Felucia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Felucia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Muunilinst, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Muunilinst, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Muunilinst, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Mygeeto, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Mygeeto, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Mygeeto, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Dantooine, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Dantooine, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Dantooine, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Agamar, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Agamar, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Agamar, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Ciutric, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Ciutric, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Ciutric, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Scipio, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Scipio, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Scipio, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Ord_Mantell, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Ord_Mantell, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Ord_Mantell, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Corsin, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Corsin, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Corsin, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Barlok, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Barlok, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Barlok, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Arkania, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Arkania, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Arkania, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Anaxes, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Anaxes, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Anaxes, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Carida, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Carida, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Carida, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Mandalore, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Mandalore, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Mandalore, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Azure, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Azure, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Azure, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Korda, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Korda, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Korda, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Coruscant, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Coruscant, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Coruscant, Tax_Agency</Starting_Forces>
+	\<Starting_Forces>Rebel,Foerost, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Foerost, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Foerost, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Kaikielius, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Kaikielius, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Kaikielius, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Alderaan, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Alderaan, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Alderaan, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Rendili, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Rendili, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Rendili, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Corellia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Corellia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Corellia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Kuat, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Kuat, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Kuat, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Humbarine, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Humbarine, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Humbarine, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Cato_Neimoidia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Cato_Neimoidia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Cato_Neimoidia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Denon, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Denon, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Denon, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Balmorra, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Balmorra, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Balmorra, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Deko_Neimoidia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Deko_Neimoidia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Deko_Neimoidia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Abregado_Rae, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Abregado_Rae, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Abregado_Rae, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Fondor, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Fondor, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Fondor, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Devaron, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Devaron, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Devaron, Tax_Agency</Starting_Forces>
+	
+	
+	<Starting_Forces>Empire, Kamino, Empire_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Republic_Shipyard_Level_One</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_TradeStation</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Secondary_Golan_One</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Acclamator_Assault_Ship_I</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Acclamator_Assault_Ship_I</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Dreadnaught_Lasers</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Carrack_Cruiser_Lasers</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Class_C_Frigate</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Class_C_Support</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, LAC</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, LAC</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Remnant_Capital</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Empire_MoffPalace</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Planetary_Shield</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Tax_Agency</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, E_Ground_Barracks</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, E_Ground_Light_Vehicle_Factory</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Rex_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Ahsoka_Delta_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Anakin_Delta_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Fordo_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Padme_Amidala_Team </Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Senate_Commando_Platoon</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Pestage_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Yoda_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Mace_Windu_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Kit_Fisto_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Rothana, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire, Rothana, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire, Rothana, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Hypori, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Hypori, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Hypori, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Geonosis, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Geonosis, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Geonosis, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Rodia, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Rodia, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Rodia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Rishi, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Rishi, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Rishi, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Krant, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Krant, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Krant, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Bothawui, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Bothawui, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Bothawui, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Nal_Hutta, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Nal_Hutta, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Nal_Hutta, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Toydaria, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Toydaria, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Toydaria, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Boz_Pity, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Boz_Pity, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Boz_Pity, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Charros, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Charros, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Charros, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Kashyyyk, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Kashyyyk, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Kashyyyk, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Saleucami, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Saleucami, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Saleucami, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Jabiim, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Jabiim, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Jabiim, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Pammant, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Pammant, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Pammant, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Mon_Calamari, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Mon_Calamari, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Mon_Calamari, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Belderone, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Belderone, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Belderone, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Rhen_Var, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Rhen_Var, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Rhen_Var, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Christophsis, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Christophsis, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Christophsis, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Druckenwell, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Druckenwell, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Druckenwell, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Ryndellia, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Ryndellia, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Ryndellia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Pantora, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Pantora, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Pantora, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Kirima, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Kirima, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Kirima, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Naboo, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Naboo, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Naboo, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Malastare, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Malastare, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Malastare, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Mustafar, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Mustafar, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Mustafar, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Tibrin, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Tibrin, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Tibrin, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Sullust, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Sullust, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Sullust, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Eriadu, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Eriadu, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Eriadu, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Praesitlyn, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Praesitlyn, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Praesitlyn, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Utapau, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Utapau, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Utapau, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Bomis_Koori, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Bomis_Koori, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Bomis_Koori, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,YagDhul, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,YagDhul, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,YagDhul, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Ruusan, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Ruusan, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Ruusan, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Umbara, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Umbara, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Umbara, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Onderon, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Onderon, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Onderon, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Mimban, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Mimban, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Mimban, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Bestine, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Bestine, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Bestine, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Ronyards, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Ronyards, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Ronyards, Tax_Agency</Starting_Forces>
+	
+	
+  </Campaign>
+  <Campaign Name="Clone_Wars_Multiplayer_Empire">
+    <Campaign_Set>Clone_Wars_Multiplayer</Campaign_Set>
+    <Sort_Order>3</Sort_Order>
+    <Is_Listed>False</Is_Listed>
+    <Supports_Custom_Settings>False</Supports_Custom_Settings>
+    <Show_Completed_Tab>True</Show_Completed_Tab>
+    <Text_ID>Clone Wars Multiplayer</Text_ID>
+    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_CWSMALL</Description_Text>
+    <Era_Start>2</Era_Start>
+    <Use_Default_Forces>True</Use_Default_Forces>
+    <Camera_Shift_X>0.0</Camera_Shift_X>
+    <Camera_Shift_Y>0.0</Camera_Shift_Y>
+    <Camera_Distance>1000.0</Camera_Distance>
+    <Locations>
+			Aargonar,
+			Abregado_Rae,
+			Agamar,
+			Alderaan,
+			Anaxes,
+			Arkania,
+			Azure,
+			Balmorra,
+			Barlok,
+			Belderone,
+			Bestine,
+			Bomis_Koori,
+			Bothawui,
+			Boz_Pity,
+			Carida,
+			Cato_Neimoidia,
+			Charros,
+			Christophsis,
+			Ciutric,
+			Corellia,
+			Corsin,
+			Coruscant,
+			Dantooine,
+			Dathomir,
+			Deko_Neimoidia,
+			Denon,
+			Devaron,
+			Druckenwell,
+			Eriadu,
+			Felucia,
+			Florrum,
+			Foerost,
+			Fondor,
+			Galaxy_Core_Art_Model,
+			Geonosis,
+			Humbarine,
+			Hypori,
+			Jabiim,
+			Kaikielius,
+			Kamino,
+			Kashyyyk,
+			Kirima,
+			Korda,
+			Krant,
+			Kuat,
+			Lola_Sayu,
+			Malastare,
+			Mandalore,
+			Maridun,
+			Mimban,
+			Mon_Calamari,
+			Mustafar,
+			Muunilinst,
+			Mygeeto,
+			Naboo,
+			Nal_Hutta,
+			Onderon,
+			Ord_Mantell,
+			Pammant,
+			Pantora,
+			Praesitlyn,
+			Raxus_Second,
+			Rendili,
+			Rhen_Var,
+			Rishi,
+			Rodia,
+			Ronyards,
+			Rothana,
+			Ruusan,
+			Ryndellia,
+			Saleucami,
+			Scipio,
+			Serenno,
+			Sullust,
+			Thule,
+			Tibrin,
+			Toydaria,
+			Umbara,
+			Utapau,
+			YagDhul,
+			Yavin,
+</Locations>
+    <Trade_Routes>
+			Aargonar_Azure,
+			Aargonar_Belderone,
+			Aargonar_Charros,
+			Aargonar_Mandalore,
+			Aargonar_Maridun,
+			Aargonar_Saleucami,
+			Abregado_Rae_Corellia,
+			Abregado_Rae_Fondor,
+			Abregado_Rae_Kaikielius,
+			Agamar_Ciutric,
+			Agamar_Corsin,
+			Agamar_Dathomir,
+			Agamar_Ord_Mantell,
+			Agamar_Scipio,
+			Alderaan_Coruscant,
+			Alderaan_Kaikielius,
+			Alderaan_Kuat,
+			Alderaan_Rendili,
+			Anaxes_Arkania,
+			Anaxes_Barlok,
+			Anaxes_Coruscant,
+			Arkania_Barlok,
+			Arkania_Carida,
+			Azure_Charros,
+			Azure_Korda,
+			Balmorra_Carida,
+			Balmorra_Deko_Neimoidia,
+			Balmorra_Kuat,
+			Balmorra_Onderon,
+			Barlok_Coruscant,
+			Barlok_Ord_Mantell,
+			Belderone_Jabiim,
+			Belderone_Pammant,
+			Belderone_Rhen_Var,
+			Bestine_Devaron,
+			Bestine_Kirima,
+			Bestine_Ronyards,
+			Bestine_YagDhul,
+			Bomis_Koori_Fondor,
+			Bomis_Koori_Tibrin,
+			Bomis_Koori_YagDhul,
+			Bothawui_Christophsis,
+			Bothawui_Druckenwell,
+			Bothawui_Kamino,
+			Bothawui_Krant,
+			Bothawui_Mimban,
+			Boz_Pity_Charros,
+			Boz_Pity_Nal_Hutta,
+			Boz_Pity_Saleucami,
+			Carida_Corsin,
+			Carida_Coruscant,
+			Carida_Korda,
+			Cato_Neimoidia_Deko_Neimoidia,
+			Cato_Neimoidia_Denon,
+			Cato_Neimoidia_Humbarine,
+			Cato_Neimoidia_Rendili,
+			Charros_Kashyyyk,
+			Charros_Toydaria,
+			Christophsis_Druckenwell,
+			Christophsis_Rodia,
+			Christophsis_Ryndellia,
+			Ciutric_Dantooine,
+			Ciutric_Dathomir,
+			Ciutric_Serenno,
+			Corellia_Denon,
+			Corellia_Devaron,
+			Corellia_Kaikielius,
+			Corellia_Rendili,
+			Corsin_Korda,
+			Corsin_Mandalore,
+			Corsin_Ord_Mantell,
+			Coruscant_Foerost,
+			Dantooine_Muunilinst,
+			Dantooine_Mygeeto,
+			Dathomir_Mandalore,
+			Dathomir_Yavin,
+			Deko_Neimoidia_Mimban,
+			Deko_Neimoidia_Onderon,
+			Denon_Devaron,
+			Denon_Druckenwell,
+			Denon_Mimban,
+			Denon_Ronyards,
+			Devaron_Fondor,
+			Druckenwell_Kirima,
+			Eriadu_Praesitlyn,
+			Eriadu_Sullust,
+			Eriadu_Tibrin,
+			Felucia_Florrum,
+			Felucia_Lola_Sayu,
+			Felucia_Raxus_Second,
+			Felucia_Rhen_Var,
+			Florrum_Raxus_Second,
+			Florrum_Thule,
+			Foerost_Kaikielius,
+			Fondor_YagDhul,
+			Geonosis_Hypori,
+			Geonosis_Rodia,
+			Humbarine_Kuat,
+			Humbarine_Rendili,
+			Hypori_Kamino,
+			Hypori_Rothana,
+			Jabiim_Pammant,
+			Jabiim_Saleucami,
+			Kamino_Rishi,
+			Kamino_Rodia,
+			Kashyyyk_Korda,
+			Kashyyyk_Ruusan,
+			Kashyyyk_Umbara,
+			Kirima_Malastare,
+			Kirima_Naboo,
+			Kirima_Ronyards,
+			Kirima_Ryndellia,
+			Korda_Mandalore,
+			Korda_Onderon,
+			Krant_Rishi,
+			Krant_Toydaria,
+			Lola_Sayu_Maridun,
+			Lola_Sayu_Rhen_Var,
+			Lola_Sayu_Thule,
+			Malastare_Sullust,
+			Malastare_YagDhul,
+			Mandalore_Maridun,
+			Maridun_Yavin,
+			Mimban_Ruusan,
+			Mimban_Umbara,
+			Mon_Calamari_Pammant,
+			Mon_Calamari_Raxus_Second,
+			Mon_Calamari_Rhen_Var,
+			Mustafar_Tibrin,
+			Mustafar_Utapau,
+			Muunilinst_Mygeeto,
+			Mygeeto_Scipio,
+			Naboo_Pantora,
+			Naboo_Praesitlyn,
+			Naboo_Ryndellia,
+			Naboo_Sullust,
+			Nal_Hutta_Rishi,
+			Nal_Hutta_Toydaria,
+			Onderon_Umbara,
+			Ord_Mantell_Scipio,
+			Pantora_Ryndellia,
+			Pantora_Utapau,
+			Praesitlyn_Utapau,
+			Rishi_Rothana,
+			Ruusan_Toydaria,
+			Ruusan_Umbara,
+			Serenno_Thule,
+			Serenno_Yavin,
+			Sullust_Tibrin,
+			Thule_Yavin,
+</Trade_Routes>
+    <Starting_Active_Player>Empire</Starting_Active_Player>
+    <Is_Multiplayer> Yes </Is_Multiplayer>
+   
+    <Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+    <Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+    
+    <Human_Victory_Conditions>Galactic_All_Planets_Controlled</Human_Victory_Conditions>
+    <AI_Victory_Conditions>Galactic_All_Planets_Controlled</AI_Victory_Conditions>
+	
+     <Rebel_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_CloneWars_CIS.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml</Empire_Story_Name>
+
+    <Starting_Credits>Empire, 80000</Starting_Credits>
+    <Starting_Tech_Level>Empire, 2</Starting_Tech_Level>
+    <Max_Tech_Level>Empire, 5</Max_Tech_Level>
+    <Starting_Credits>Rebel, 80000</Starting_Credits>
+    <Starting_Tech_Level>Rebel, 2</Starting_Tech_Level>
+    <Max_Tech_Level>Rebel, 5</Max_Tech_Level> 
+    <Starting_Forces>Rebel, Raxus_Second, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, CIS_Shipyard_Level_One</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Secondary_Golan_One</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Lucid_Voice</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Grievous_Team_Malevolence</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Recusant</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, NewRep_Senate</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, R_Ground_Barracks</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, R_Ground_Light_Vehicle_Factory</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, Ground_Ion_Cannon</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, B1_Droid_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, B1_Droid_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, B1_Droid_Marine_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, BX_Commando_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, PAC_Company</Starting_Forces>
+    <Starting_Forces>Rebel, Raxus_Second, GAT_Group</Starting_Forces>
+	<Starting_Forces>Rebel, Raxus_Second, Dooku_Team</Starting_Forces>
+	<Starting_Forces>Rebel, Raxus_Second, Trench_Invincible</Starting_Forces>
+	<Starting_Forces>Rebel, Raxus_Second, Ventress_Team</Starting_Forces>
+	<Starting_Forces>Rebel, Raxus_Second, Durge_Team</Starting_Forces>
+	<Starting_Forces>Rebel,Dathomir, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Dathomir, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Dathomir, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Serenno, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Serenno, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Serenno, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Yavin, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Yavin, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Yavin, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Maridun, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Maridun, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Maridun, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Thule, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Thule, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Thule, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Lola_Sayu, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Lola_Sayu, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Lola_Sayu, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Aargonar, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Aargonar, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Aargonar, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Florrum, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Florrum, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Florrum, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Felucia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Felucia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Felucia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Muunilinst, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Muunilinst, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Muunilinst, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Mygeeto, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Mygeeto, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Mygeeto, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Dantooine, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Dantooine, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Dantooine, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Agamar, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Agamar, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Agamar, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Ciutric, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Ciutric, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Ciutric, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Scipio, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Scipio, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Scipio, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Ord_Mantell, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Ord_Mantell, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Ord_Mantell, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Corsin, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Corsin, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Corsin, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Barlok, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Barlok, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Barlok, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Arkania, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Arkania, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Arkania, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Anaxes, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Anaxes, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Anaxes, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Carida, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Carida, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Carida, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Mandalore, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Mandalore, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Mandalore, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Azure, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Azure, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Azure, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Korda, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Korda, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Korda, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Coruscant, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Coruscant, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Coruscant, Tax_Agency</Starting_Forces>
+	\<Starting_Forces>Rebel,Foerost, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Foerost, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Foerost, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Kaikielius, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Kaikielius, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Kaikielius, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Alderaan, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Alderaan, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Alderaan, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Rendili, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Rendili, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Rendili, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Corellia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Corellia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Corellia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Kuat, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Kuat, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Kuat, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Humbarine, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Humbarine, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Humbarine, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Cato_Neimoidia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Cato_Neimoidia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Cato_Neimoidia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Denon, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Denon, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Denon, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Balmorra, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Balmorra, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Balmorra, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Deko_Neimoidia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Deko_Neimoidia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Deko_Neimoidia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Abregado_Rae, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Abregado_Rae, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Abregado_Rae, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Fondor, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Fondor, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Fondor, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Devaron, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Devaron, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Devaron, Tax_Agency</Starting_Forces>
+	
+	
+	<Starting_Forces>Empire, Kamino, Empire_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Republic_Shipyard_Level_One</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_TradeStation</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Secondary_Golan_One</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Acclamator_Assault_Ship_I</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Acclamator_Assault_Ship_I</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Dreadnaught_Lasers</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Carrack_Cruiser_Lasers</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Class_C_Frigate</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Class_C_Support</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, LAC</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, LAC</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Remnant_Capital</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Empire_MoffPalace</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Planetary_Shield</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Tax_Agency</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, E_Ground_Barracks</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, E_Ground_Light_Vehicle_Factory</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Rex_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Ahsoka_Delta_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Anakin_Delta_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Fordo_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Padme_Amidala_Team </Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Senate_Commando_Platoon</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Pestage_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Yoda_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Mace_Windu_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Kit_Fisto_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Rothana, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire, Rothana, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire, Rothana, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Hypori, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Hypori, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Hypori, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Geonosis, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Geonosis, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Geonosis, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Rodia, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Rodia, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Rodia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Rishi, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Rishi, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Rishi, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Krant, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Krant, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Krant, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Bothawui, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Bothawui, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Bothawui, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Nal_Hutta, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Nal_Hutta, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Nal_Hutta, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Toydaria, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Toydaria, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Toydaria, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Boz_Pity, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Boz_Pity, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Boz_Pity, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Charros, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Charros, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Charros, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Kashyyyk, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Kashyyyk, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Kashyyyk, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Saleucami, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Saleucami, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Saleucami, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Jabiim, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Jabiim, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Jabiim, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Pammant, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Pammant, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Pammant, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Mon_Calamari, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Mon_Calamari, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Mon_Calamari, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Belderone, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Belderone, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Belderone, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Rhen_Var, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Rhen_Var, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Rhen_Var, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Christophsis, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Christophsis, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Christophsis, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Druckenwell, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Druckenwell, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Druckenwell, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Ryndellia, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Ryndellia, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Ryndellia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Pantora, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Pantora, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Pantora, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Kirima, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Kirima, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Kirima, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Naboo, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Naboo, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Naboo, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Malastare, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Malastare, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Malastare, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Mustafar, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Mustafar, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Mustafar, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Tibrin, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Tibrin, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Tibrin, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Sullust, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Sullust, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Sullust, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Eriadu, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Eriadu, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Eriadu, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Praesitlyn, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Praesitlyn, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Praesitlyn, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Utapau, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Utapau, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Utapau, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Bomis_Koori, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Bomis_Koori, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Bomis_Koori, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,YagDhul, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,YagDhul, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,YagDhul, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Ruusan, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Ruusan, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Ruusan, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Umbara, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Umbara, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Umbara, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Onderon, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Onderon, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Onderon, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Mimban, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Mimban, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Mimban, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Bestine, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Bestine, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Bestine, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Ronyards, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Ronyards, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Ronyards, Tax_Agency</Starting_Forces>
+	
+	
+  </Campaign>
+</Campaigns>

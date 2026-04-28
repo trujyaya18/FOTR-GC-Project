@@ -1,0 +1,536 @@
+<?xml version="1.0" ?>
+
+<!--******************************************************-->
+<!--********  Campaign: Hunt for the Malevolence  ********-->
+<!--******************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Rep_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Rep_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Anakin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Anakin_Delta_Team</Reward_Param1>
+		<Reward_Param2>Naboo</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Ahsoka">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Ahsoka_Delta_Team</Reward_Param1>
+		<Reward_Param2>Naboo</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Rex">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Rex_Team</Reward_Param1>
+		<Reward_Param2>Naboo</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Yularen">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Yularen_Resolute</Reward_Param1>
+		<Reward_Param2>Naboo</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Coburn">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Coburn_Triumphant</Reward_Param1>
+		<Reward_Param2>Bormus</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<Event Name="Republic_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Republic_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="Republic_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="Republic_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+
+	<Event Name="Lock_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Victory_Destroyer</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Lock_Pelta_Support">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Pelta_Support</Reward_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Lock_Pelta_Assault">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Pelta_Assault</Reward_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Unlock_Class_C">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Class_C_Frigate</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Class_C_Support">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Class_C_Support</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Venator">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Venator</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Invincible">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Invincible_Cruiser</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Abregado_Ambush_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Abregado_Rae</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_ABREGADO_AMBUSH.TED</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Abregado_Ambush.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_AI</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Plo_Koon_Checker">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_01</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Jump_Camera_Kaliida_Nebula">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Kaliida_Nebula</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>Rep_Malevolence_Hunt_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Flash_Kaliida_Nebula">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+        <Reward_Param1>Kaliida_Nebula</Reward_Param1>
+        <Reward_Param2>FLASH_PLANET</Reward_Param2>
+        <Reward_Param4>Kaliida_Nebula_GUI_Flash</Reward_Param4>
+        <Reward_Param5>True</Reward_Param5>
+        <Prereq>Rep_Jump_Camera_Kaliida_Nebula</Prereq>
+	</Event>
+
+	<Event Name="Rep_Remove_Flash_Kaliida_Nebula">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>8</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Kaliida_Nebula_GUI_Flash</Reward_Param1>
+        <Prereq>Rep_Flash_Kaliida_Nebula</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_Rep</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_Rep_Act_I</Story_Tag>
+		<Prereq>Rep_Malevolence_Hunt_Speech_01</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Mission_Malevolence_I_Tactical">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Mission_Malevolence_I.XML</Event_Param1>
+		<Prereq>Rep_Malevolence_Hunt_Speech_01</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Rep_Mission_Malevolence_I_Disabled">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PART_II_ACTIVE</Event_Param2>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Rep_Mission_Malevolence_I_Tactical</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+	</Event>
+
+	<Event Name="Rep_Mission_Malevolence_II_Tactical">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Mission_Malevolence_II.XML</Event_Param1>
+		<Prereq>Rep_Mission_Malevolence_I_Disabled</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Rep_Grievous_Enter_Kaliida">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Kaliida_Nebula</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Event_Param3>Grievous_Malevolence_Hunt_Campaign</Event_Param3>
+		<Prereq>Rep_Malevolence_Hunt_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Medical_Madness_Tactical_Map">
+		<Event_Type>STORY_LOAD_TACTICAL_MAP</Event_Type>
+		<Event_Param1>Kaliida_Nebula</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>SPACE</Event_Param3>
+		<Reward_Type>SET_TACTICAL_MAP</Reward_Type>
+		<Reward_Param1>_FOTG_SPACE_MEDICAL_MADNESS.TED</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>EMPIRE</Reward_Param3>
+		<Prereq>Rep_Grievous_Enter_Kaliida</Prereq>
+	</Event>
+
+	<Event Name="Rep_Medical_Madness_Tactical">
+		<Event_Type>STORY_LAND_TACTICAL</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Medical_Madness.XML</Event_Param1>
+		<Event_Param2>Duro</Event_Param2>
+		<Prereq>Rep_Grievous_Enter_Kaliida</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Malevolence_Hunt_Speech_07">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_KALIIDA_FALL</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_07</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Rep_Subjugator_Sabotage_Tactical_Lost">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Subjugator_Sabotage.XML</Event_Param1>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Rep_Mission_Malevolence_II_Tactical</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Grievous_Malevolence_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Grievous_Malevolence_Hunt_Campaign</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Rep_Mission_Malevolence_II_Tactical</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>Rep_Malevolence_Hunt_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Mission_Malevolence_Win">
+		<Event_Type>STORY_FLAG</Event_Type>
+		<Event_Param1>Mission_Malevolence_Win</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>GREATER_THAN_EQUAL_TO</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Rep_Mission_Malevolence_II_Tactical</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>Rep_Malevolence_Hunt_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Act_I_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_RIMWARD_GC</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Malevolence_Hunt_Rep_Act_I</Reward_Param1>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Malevolence_Hunt_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>40</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_02</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Malevolence_Hunt_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Speech_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>14</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_03</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Malevolence_Hunt_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_Rep</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_Rep_Act_II</Story_Tag>
+		<Prereq>Rep_Malevolence_Hunt_Speech_03</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Malevolence_Hunt_Anakin_Bormus">
+		<Event_Type>STORY_DEPLOY</Event_Type>
+		<Event_Param1>Anakin_Delta_Team</Event_Param1>
+		<Event_Param2>Bormus</Event_Param2>
+		<Prereq>Rep_Malevolence_Hunt_Act_II_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Act_II_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Malevolence_Hunt_Rep_Act_II</Reward_Param1>
+		<Prereq>Rep_Malevolence_Hunt_Anakin_Bormus</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act III *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Malevolence_Hunt_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_BORMUS_NEGOTIATIONS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_04</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Speech_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_05</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Collector_Droid_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Malevolence_Hunt_Speech_04</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_Rep</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_Rep_Act_III</Story_Tag>
+		<Prereq>Rep_Malevolence_Hunt_Speech_05</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Malevolence_Hunt_Y_Wing_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Research_Ywing</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Act_III_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rep_Malevolence_Hunt_Y_Wing_Research</Reward_Param1>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Speech_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_YWINGS_RESEARCHED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_06</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act IV **************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Malevolence_Hunt_Speech_08">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_08</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Malevolence_Hunt_Act_I_Completed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Malevolence_Hunt_Act_IV_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_Rep</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_Rep_Act_IV</Story_Tag>
+		<Prereq>Rep_Malevolence_Hunt_Speech_08</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Unlock_GC_Progression_Rimward">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Rep_Malevolence_Hunt_Speech_08</Prereq>
+	</Event>
+
+	<Event Name="Rep_GC_Progression_Rimward_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>GC_Progression_Dummy</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_GC_Progression_Rimward">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_AU_Rimward_Republic</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Rep_GC_Progression_Rimward_Research</Prereq>
+	</Event>
+
+</Story>

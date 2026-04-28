@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Origin of Corruption (Rebel)	******-->
+<!--******************************************************-->
+
+
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Show_Screen_Text">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SHOW_SCREEN_TEXT</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+		<Branch>Screen_Text_Events</Branch>
+	</Event>
+
+  <Event Name="Capture_Victory_Speech">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>CAPTURE_POINT_PRESENT</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+	<Reward_Param1>TEXT_TACTICAL_EVENT_VICTORYPOINT</Reward_Param1>
+	<Reward_Param7>Task</Reward_Param7><!-- TASK color coding - Blue -->
+	<Reward_Param2>20</Reward_Param2>
+	<Prereq>Battle_Start</Prereq>
+  </Event>
+  
+   <Event Name="Destroy_Enemy_Speech">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>CAPTURE_POINT_NOT_PRESENT</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+	<Reward_Param1>TEXT_TACTICAL_EVENT_DESTROYALL</Reward_Param1>
+	<Reward_Param7>Task</Reward_Param7><!-- TASK color coding - Blue -->
+	<Reward_Param2>20</Reward_Param2>
+	<Prereq>Battle_Start</Prereq>
+  </Event>  
+  
+   <Event Name="Capture_Victory_Speech_Defender">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>CAPTURE_POINT_PRESENT_DEFENDER</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+	<Reward_Param1>TEXT_TACTICAL_EVENT_VICTORYPOINT_DEFENDER</Reward_Param1>
+	<Reward_Param7>Task</Reward_Param7><!-- TASK color coding - Blue -->
+	<Reward_Param2>20</Reward_Param2>
+	<Prereq>Battle_Start</Prereq>
+  </Event>
+  
+   <Event Name="Destroy_Enemy_Speech_Defender">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>CAPTURE_POINT_NOT_PRESENT_DEFENDER</Event_Param2>
+    <Reward_Type>SCREEN_TEXT</Reward_Type>
+	<Reward_Param1>TEXT_TACTICAL_EVENT_DESTROYALL_DEFENDER</Reward_Param1>
+	<Reward_Param7>Task</Reward_Param7><!-- TASK color coding - Blue -->
+	<Reward_Param2>20</Reward_Param2>
+	<Prereq>Battle_Start</Prereq>
+  </Event> 
+  
+	<Event Name="VP_Objective_Attacker_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_VICTORY_POINT_CAPTURE_DESCRIPTION</Reward_Param1>
+		<Prereq>Set_Victor_Rebel</Prereq>
+		<Prereq>Set_Victor_Empire</Prereq>
+		<Prereq>Set_Victor_EotH</Prereq>
+		<Prereq>Set_Victor_Eriadu</Prereq>
+		<Prereq>Set_Victor_Pentastar</Prereq>
+		<Prereq>Set_Victor_Zsinj</Prereq>
+		<Prereq>Set_Victor_Teradoc</Prereq>
+	<!--<Prereq>Set_Victor_Yevetha</Prereq>-->
+		<Prereq>Set_Victor_CSA</Prereq>
+		<Prereq>Set_Victor_Hapes</Prereq>
+		<Prereq>Set_Victor_Commerce_Guild</Prereq>
+		<Prereq>Set_Victor_Banking_Clan</Prereq>
+		<Prereq>Set_Victor_Techno_Union</Prereq>
+		<Prereq>Set_Victor_Trade_Federation</Prereq>
+		<Prereq>Set_Victor_Sector_Forces</Prereq>
+	</Event>
+	
+	<Event Name="VP_Objective_Defender_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_VICTORY_POINT_DEFEND_DESCRIPTION</Reward_Param1>
+		<Prereq>Set_Victor_Rebel</Prereq>
+		<Prereq>Set_Victor_Empire</Prereq>
+		<Prereq>Set_Victor_EotH</Prereq>
+		<Prereq>Set_Victor_Eriadu</Prereq>
+		<Prereq>Set_Victor_Pentastar</Prereq>
+		<Prereq>Set_Victor_Zsinj</Prereq>
+		<Prereq>Set_Victor_Teradoc</Prereq>
+	<!--<Prereq>Set_Victor_Yevetha</Prereq>-->
+		<Prereq>Set_Victor_CSA</Prereq>
+		<Prereq>Set_Victor_Hapes</Prereq>
+		<Prereq>Set_Victor_Commerce_Guild</Prereq>
+		<Prereq>Set_Victor_Banking_Clan</Prereq>
+		<Prereq>Set_Victor_Techno_Union</Prereq>
+		<Prereq>Set_Victor_Trade_Federation</Prereq>
+		<Prereq>Set_Victor_Sector_Forces</Prereq>
+	</Event>
+  
+   <Event Name="Set_Victor_Rebel">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_REBEL_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Rebel</Reward_Param1>
+  </Event>
+     
+   <Event Name="Set_Victor_Empire">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_EMPIRE_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Empire</Reward_Param1>
+  </Event>
+  
+   <Event Name="Set_Victor_EotH">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_EMPIREOFTHEHAND_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>EmpireoftheHand</Reward_Param1>
+  </Event>
+     
+   <Event Name="Set_Victor_Eriadu">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_ERIADU_AUTHORITY_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Eriadu_Authority</Reward_Param1>
+  </Event>
+  
+   <Event Name="Set_Victor_Pentastar">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_PENTASTAR_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Pentastar</Reward_Param1>
+  </Event>
+     
+   <Event Name="Set_Victor_Zsinj">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_ZSINJ_EMPIRE_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Zsinj_Empire</Reward_Param1>
+  </Event>
+  
+   <Event Name="Set_Victor_Teradoc">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_GREATER_MALDROOD_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Greater_Maldrood</Reward_Param1>
+  </Event>
+     
+   <Event Name="Set_Victor_CSA">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_CORPORATE_SECTOR_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Corporate_Sector</Reward_Param1>
+  </Event>
+  
+  <Event Name="Set_Victor_Hapes">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_HAPES_CONSORTIUM_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Hapes_Consortium</Reward_Param1>
+  </Event>
+
+	 <Event Name="Set_Victor_Commerce_Guild">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_COMMERCE_GUILD_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Commerce_Guild</Reward_Param1>
+  </Event>
+     
+   <Event Name="Set_Victor_Trade_Federation">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_TRADE_FEDERATION_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Trade_Federation</Reward_Param1>
+  </Event>
+  
+   <Event Name="Set_Victor_Banking_Clan">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_BANKING_CLAN_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Banking_Clan</Reward_Param1>
+  </Event>
+  
+  <Event Name="Set_Victor_Techno_Union">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_TECHNO_UNION_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Techno_Union</Reward_Param1>
+  </Event>
+     
+   <Event Name="Set_Victor_Sector_Forces">
+    <Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+    <Event_Param2>SET_VICTOR_SECTOR_FORCES_FLAG</Event_Param2>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Sector_Forces</Reward_Param1>
+  </Event>
+
+</Story>
+

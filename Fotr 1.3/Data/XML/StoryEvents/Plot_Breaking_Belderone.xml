@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--******* Outer Rim Sieges: Breaking Belderone ********-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Breaking_Belderone</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Breaking_Belderone.XML</Active_Plot>
+
+</Story_Mode_Plots>

@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+
+<!--*****************************************************-->
+<!--********  Campaign: Operation Durge's Lance  ********-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Progressive_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Progressive_Story_Start</Prereq>
+	</Event>
+
+	<!--******************************************************-->
+	<!--***************	Faction Determiners	******************-->
+	<!--******************************************************-->
+
+	<Event Name="Faction_Branch_Disabler_CIS">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_CIS</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Disabler_Republic">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Republic</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="Determine_Faction_LUA">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Initialize">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_CIS_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Faction_Branch_Enabler_Republic">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BRANCH_GAR_FLAG</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Faction_Branch_Republic</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<!--***********************************************************-->
+	<!--******************** Universal Events *********************-->
+	<!--***********************************************************-->
+
+	<Event Name="Durge_Returns_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DURGE_RESPAWNS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_DURGE_RETURNS</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Durge_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+		<!--<Branch>Faction_Branch_CIS</Branch> Republic player should actually know -->
+	</Event>
+
+	<Event Name="Durge_Dies_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DURGE_GONE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_DURGE_GONE</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+		<!--<Branch>Faction_Branch_CIS</Branch> Republic player should actually know -->
+	</Event>
+
+
+	<Event Name="Invisible_Hand_Dies_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GRIEVOUS_RESPAWN_MUNIFICENT</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_GRIEVOUS_RETURNS_MUNIFICENT</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+		<!--<Branch>Faction_Branch_CIS</Branch> Republic player should actually know -->
+	</Event>
+
+	<Event Name="Malevolence_Dies_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GRIEVOUS_RESPAWN_INVISIBLE_HAND</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_GRIEVOUS_RETURNS_INVISIBLE_HAND</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+		<!--<Branch>Faction_Branch_CIS</Branch> Republic player should actually know -->
+	</Event>
+
+	<Event Name="Malevolence_Dies_Recu_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GRIEVOUS_RESPAWN_RECUSANT</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_GRIEVOUS_RETURNS_RECUSANT</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+		<!--<Branch>Faction_Branch_CIS</Branch> Republic player should actually know -->
+	</Event>
+
+	<!--***********************************************************-->
+	<!--******************* Republic Storyline ********************-->
+	<!--***********************************************************-->
+
+	<!--***********************************************************-->
+	<!--********************** CIS Storyline **********************-->
+	<!--***********************************************************-->
+
+</Story>

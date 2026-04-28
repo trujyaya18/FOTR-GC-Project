@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Campaigns>
+
+<!--******************************************************-->
+<!--***********  Campaign: Christophsis Clash  ***********-->
+<!--******************************************************-->
+
+	<Campaign Name="Sandbox_HB_Christophsis_Clash_Republic">
+		<Campaign_Set>Sandbox_HB_Christophsis_Clash</Campaign_Set>
+		<Sort_Order>30</Sort_Order>
+
+		<Text_ID> TEXT_CAMPAIGN_SINGLE_HB_CHRISTOPHSIS_CLASH </Text_ID>
+		<Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_HB_CHRISTOPHSIS_CLASH_REP </Description_Text>
+
+		<Camera_Shift_X> 40.0 </Camera_Shift_X>
+		<Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Is_Listed>false</Is_Listed>
+		<Tutorial>true</Tutorial>
+
+		<Locations> 
+			Galaxy_Core_Art_Model,
+			BattleLand
+		</Locations>
+
+		<Trade_Routes>
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Sanrafsix </Home_Location>
+        <Home_Location> Empire, Naboo </Home_Location>
+
+        <Starting_Active_Player> Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name></Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\HistoricalBattles\Story_Plots_Sandbox_HB_Christophsis_Clash.xml</Underworld_Story_Name>
+
+		<AI_Player_Control> Rebel, SmallGCAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Commerce_Guild, None </AI_Player_Control> <!-- Commerce Guild -->
+		<AI_Player_Control> Techno_Union, None </AI_Player_Control> <!-- Techno Union -->
+		<AI_Player_Control> Trade_Federation, None </AI_Player_Control> <!-- Trade Federation -->
+		<AI_Player_Control> Sector_Forces, None</AI_Player_Control>
+		<AI_Player_Control> Banking_Clan, None</AI_Player_Control>
+		<AI_Player_Control> Underworld, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Warlords, None </AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Trade_Federation, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Commerce_Guild, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Banking_Clan, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Techno_Union, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Sector_Forces, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+
+		<Supports_Custom_Settings>False</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<Starting_Credits> Rebel,  10000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 1 </Max_Tech_Level>
+
+		<Starting_Credits> Empire,  10000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 2 </Max_Tech_Level>	
+	</Campaign>
+
+</Campaigns>

@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<Equations>
+	<CISOffensiveBudgetAllocation>
+		(10.0 + Variable_Self.PlanetsControlled)
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+		+
+		5.0 * (1 - Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+	</CISOffensiveBudgetAllocation>
+	
+	<CISMajorItemBudgetAllocation>
+		Variable_Self.PlanetsControlled
+		+
+		(
+			(1 - Function_Player_Has_Capital_Building.Evaluate)
+			* 
+			10
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+			+
+			(1 - Function_Player_Has_Company.Evaluate)
+			*
+			2
+			+
+			(1.0 - Variable_Self.HasStarbaseOfLevel {Parameter_Level = 5, Parameter_Count = 1})
+			*
+			2
+			+
+			Function_Allow_SuperCapital_Production.Evaluate
+			*
+			4
+		)
+	</CISMajorItemBudgetAllocation>
+</Equations>

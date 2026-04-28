@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<Skirmish_starbases>
+
+	<StarBase Name="Skirmish_NR_Flagship_1">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base></Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Flagship_2</Next_Level_Base>
+		
+		<Mass>0.999</Mass>
+		<Max_Speed>0</Max_Speed>
+		<Max_Thrust>0</Max_Thrust>
+		<OverrideAcceleration> 0 </OverrideAcceleration>
+		<OverrideDeceleration> 0 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>4200</Shield_Points>
+		<Tactical_Health>20160</Tactical_Health>
+		<Shield_Refresh_Rate>95</Shield_Refresh_Rate>
+		<AI_Combat_Power>2574</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_MANDATOR_FLAGSHIP_LEVEL_ONE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_MANDATOR
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_MANDATOR_HULL_FS_1
+			TEXT_TOOLTIP_MANDATOR_SHIELD_FS_1
+			TEXT_TOOLTIP_MANDATOR_MOVE_FS_1
+			TEXT_TOOLTIP_MANDATOR_WEAP3
+			TEXT_TOOLTIP_MANDATOR_WEAP5
+		</Encyclopedia_Text>
+		
+		<Icon_Name>i_button_mandator.tga</Icon_Name>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			Flagship_CIS_AAA,
+			Flagship_CIS_AAB,
+			Flagship_CIS_AAC,
+			Flagship_CIS_AAD,
+			Flagship_CIS_AAE,
+			Flagship_CIS_AAF,
+			Flagship_Level_Two_Starbase_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Mandator_1_MTL_01, HP_Mandator_1_MTL_02, HP_Mandator_1_MTL_03, HP_Mandator_1_MTL_04, HP_Mandator_1_MTL_05, HP_Mandator_1_MTL_06, HP_Mandator_1_MTL_07, HP_Mandator_1_MTL_08, HP_Mandator_1_MTL_09, HP_Mandator_1_MTL_10,	HP_Mandator_1_MTL_11, HP_Mandator_1_MTL_12, HP_Mandator_1_MTL_13, HP_Mandator_1_MTL_14, 
+			HP_Mandator_1_MIC_01, HP_Mandator_1_MIC_02, HP_Mandator_1_MIC_03, HP_Mandator_1_MIC_04, HP_Mandator_1_MIC_05, HP_Mandator_1_MIC_06,	HP_Mandator_1_MIC_07, HP_Mandator_1_MIC_08, HP_Mandator_1_MIC_09, HP_Mandator_1_MIC_10, HP_Mandator_1_MIC_11, HP_Mandator_1_MIC_12, HP_Mandator_1_MIC_13, HP_Mandator_1_MIC_14, 
+			HP_Mandator_1_Bay_01, HP_Mandator_1_Bay_02, HP_Mandator_1_Bay_03, HP_Mandator_1_Bay_04,
+			HP_Mandator_1_UHTL_01_Dummy, HP_Mandator_1_UHTL_02_Dummy, HP_Mandator_1_UHTL_03_Dummy, HP_Mandator_1_UHTL_04_Dummy, HP_Mandator_1_UHTL_05_Dummy, HP_Mandator_1_UHTL_06_Dummy, HP_Mandator_1_UHTL_07_Dummy, HP_Mandator_1_UHTL_08_Dummy, HP_Mandator_1_UHTL_09_Dummy, HP_Mandator_1_UHTL_10_Dummy,
+			HP_Mandator_1_QHIC_01_Dummy, HP_Mandator_1_QHIC_02_Dummy, HP_Mandator_1_QHIC_03_Dummy, HP_Mandator_1_QHIC_04_Dummy, HP_Mandator_1_QHIC_05_Dummy,
+			HP_Mandator_1_DHTL_01_Dummy, HP_Mandator_1_DHTL_02_Dummy, HP_Mandator_1_DHTL_03_Dummy, HP_Mandator_1_DHTL_04_Dummy, HP_Mandator_1_DHTL_05_Dummy, HP_Mandator_1_DHTL_06_Dummy, HP_Mandator_1_DHTL_07_Dummy, HP_Mandator_1_DHTL_08_Dummy,
+			HP_Mandator_1_Assault_01_Dummy, HP_Mandator_1_Assault_02_Dummy, HP_Mandator_1_Assault_03_Dummy, HP_Mandator_1_Assault_04_Dummy, HP_Mandator_1_Assault_05_Dummy,
+			HP_Mandator_1_Engines_01_Dummy, HP_Mandator_1_Engines_02_Dummy, HP_Mandator_1_Engines_03_Dummy, HP_Mandator_1_Engines_04_Dummy,
+		</HardPoints>
+		<Space_Model_Name>REP_Mandator.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Mandator_Death_Clone</Death_Clone>
+
+	
+		<Scale_Factor>0.375</Scale_Factor>
+		<Select_Box_Scale>5500</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Size_Value>360</Size_Value>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>15</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Flagship_2">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base>Skirmish_NR_Flagship_1</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Flagship_3</Next_Level_Base>
+		
+		<Mass>0.999</Mass>
+		<Max_Speed>0</Max_Speed>
+		<Max_Thrust>0</Max_Thrust>
+		<OverrideAcceleration> 0 </OverrideAcceleration>
+		<OverrideDeceleration> 0 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>5250</Shield_Points>
+		<Tactical_Health>28350</Tactical_Health>
+		<Shield_Refresh_Rate>95</Shield_Refresh_Rate>
+		<AI_Combat_Power>5148</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_MANDATOR_FLAGSHIP_LEVEL_TWO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_MANDATOR
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_MANDATOR_HULL_FS_2
+			TEXT_TOOLTIP_MANDATOR_SHIELD_FS_2
+			TEXT_TOOLTIP_MANDATOR_MOVE_FS_2
+			TEXT_TOOLTIP_MANDATOR_WEAP2
+			TEXT_TOOLTIP_MANDATOR_WEAP3
+			TEXT_TOOLTIP_MANDATOR_WEAP5
+		</Encyclopedia_Text>
+		
+		<Icon_Name>i_button_mandator.tga</Icon_Name>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			Flagship_CIS_AAA,
+			Flagship_CIS_AAB,
+			Flagship_CIS_AAC,
+			Flagship_CIS_AAD,
+			Flagship_CIS_AAE,
+			Flagship_CIS_AAF,
+			Flagship_CIS_AAG,
+			Flagship_CIS_AAH,
+			Flagship_CIS_AAI,
+			Flagship_CIS_AAJ,
+			Flagship_CIS_AAK,
+			Flagship_CIS_AAL,
+			Flagship_CIS_AAM,
+			Flagship_CIS_AAN,
+			Flagship_Level_Three_Starbase_Upgrade,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Mandator_1_DHTL_01, HP_Mandator_1_DHTL_02, HP_Mandator_1_DHTL_03, HP_Mandator_1_DHTL_04, HP_Mandator_1_DHTL_05, HP_Mandator_1_DHTL_06, HP_Mandator_1_DHTL_07, HP_Mandator_1_DHTL_08,
+			HP_Mandator_1_MTL_01, HP_Mandator_1_MTL_02, HP_Mandator_1_MTL_03, HP_Mandator_1_MTL_04, HP_Mandator_1_MTL_05, HP_Mandator_1_MTL_06, HP_Mandator_1_MTL_07, HP_Mandator_1_MTL_08, HP_Mandator_1_MTL_09, HP_Mandator_1_MTL_10,	HP_Mandator_1_MTL_11, HP_Mandator_1_MTL_12, HP_Mandator_1_MTL_13, HP_Mandator_1_MTL_14, 
+			HP_Mandator_1_MIC_01, HP_Mandator_1_MIC_02, HP_Mandator_1_MIC_03, HP_Mandator_1_MIC_04, HP_Mandator_1_MIC_05, HP_Mandator_1_MIC_06,	HP_Mandator_1_MIC_07, HP_Mandator_1_MIC_08, HP_Mandator_1_MIC_09, HP_Mandator_1_MIC_10, HP_Mandator_1_MIC_11, HP_Mandator_1_MIC_12, HP_Mandator_1_MIC_13, HP_Mandator_1_MIC_14, 
+			HP_Mandator_1_Assault_01, HP_Mandator_1_Assault_02, HP_Mandator_1_Assault_03, HP_Mandator_1_Assault_04, HP_Mandator_1_Assault_05,
+			HP_Mandator_1_Bay_01, HP_Mandator_1_Bay_02, HP_Mandator_1_Bay_03, HP_Mandator_1_Bay_04,
+			HP_Mandator_1_UHTL_01_Dummy, HP_Mandator_1_UHTL_02_Dummy, HP_Mandator_1_UHTL_03_Dummy, HP_Mandator_1_UHTL_04_Dummy, HP_Mandator_1_UHTL_05_Dummy, HP_Mandator_1_UHTL_06_Dummy, HP_Mandator_1_UHTL_07_Dummy, HP_Mandator_1_UHTL_08_Dummy, HP_Mandator_1_UHTL_09_Dummy, HP_Mandator_1_UHTL_10_Dummy,
+			HP_Mandator_1_QHIC_01_Dummy, HP_Mandator_1_QHIC_02_Dummy, HP_Mandator_1_QHIC_03_Dummy, HP_Mandator_1_QHIC_04_Dummy, HP_Mandator_1_QHIC_05_Dummy,
+			HP_Mandator_1_Engines_01_Dummy, HP_Mandator_1_Engines_02_Dummy, HP_Mandator_1_Engines_03_Dummy, HP_Mandator_1_Engines_04_Dummy,
+		</HardPoints>
+		<Space_Model_Name>REP_Mandator.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Mandator_Death_Clone</Death_Clone>
+
+		<Scale_Factor>0.375</Scale_Factor>
+		<Select_Box_Scale>5500</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Size_Value>360</Size_Value>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>25</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Flagship_3">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base>Skirmish_NR_Flagship_2</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Flagship_4</Next_Level_Base>
+		
+		<Mass>0.995</Mass>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<OverrideAcceleration> .005 </OverrideAcceleration>
+		<OverrideDeceleration> .01 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0.025</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.025</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0.05</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>8400</Shield_Points>
+		<Tactical_Health>28800</Tactical_Health>
+		<Shield_Refresh_Rate>105</Shield_Refresh_Rate>
+		<AI_Combat_Power>7721</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_MANDATOR2_FLAGSHIP_LEVEL_THREE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_MANDATOR2
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_MANDATOR2_HULL_FS_3
+			TEXT_TOOLTIP_MANDATOR2_SHIELD_FS_3
+			TEXT_TOOLTIP_MANDATOR2_MOVE_FS_3
+			TEXT_TOOLTIP_MANDATOR2_WEAP2
+			TEXT_TOOLTIP_MANDATOR2_WEAP3
+			TEXT_TOOLTIP_MANDATOR2_WEAP5
+			TEXT_TOOLTIP_MANDATOR2_WEAP6
+		</Encyclopedia_Text>
+		
+		<Icon_Name>i_button_mandator2.tga</Icon_Name>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			
+			Flagship_CIS_AAA,
+			Flagship_CIS_AAB,
+			Flagship_CIS_AAP,
+			Flagship_CIS_AAD,
+			Flagship_CIS_AAE,
+			Flagship_CIS_AAF,
+			Flagship_CIS_AAG,
+			Flagship_CIS_AAH,
+			Flagship_CIS_AAI,
+			Flagship_CIS_AAJ,
+			Flagship_CIS_AAK,
+			Flagship_CIS_AAL,
+			Flagship_CIS_AAM,
+			Flagship_CIS_AAN,
+			Flagship_CIS_AAQ,
+			Flagship_CIS_AAR,
+			Flagship_CIS_AAS,
+			Flagship_CIS_AAT,
+			Flagship_CIS_AAU,
+			Flagship_Level_Four_Starbase_Upgrade,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Mandator_2_DHTL_01, HP_Mandator_2_DHTL_02, HP_Mandator_2_DHTL_03, HP_Mandator_2_DHTL_04, HP_Mandator_2_DHTL_05, HP_Mandator_2_DHTL_06, HP_Mandator_2_DHTL_07, HP_Mandator_2_DHTL_08, HP_Mandator_2_DHTL_09, HP_Mandator_2_DHTL_10, HP_Mandator_2_DHTL_11, HP_Mandator_2_DHTL_12, HP_Mandator_2_DHTL_13, HP_Mandator_2_DHTL_14, HP_Mandator_2_DHTL_15, HP_Mandator_2_DHTL_16, HP_Mandator_2_DHTL_17, HP_Mandator_2_DHTL_18, HP_Mandator_2_DHTL_19, HP_Mandator_2_DHTL_20, HP_Mandator_2_DHTL_21, HP_Mandator_2_DHTL_22,
+			HP_Mandator_2_MTL_01, HP_Mandator_2_MTL_02, HP_Mandator_2_MTL_03, HP_Mandator_2_MTL_04, HP_Mandator_2_MTL_05, HP_Mandator_2_MTL_06, HP_Mandator_2_MTL_07, HP_Mandator_2_MTL_08, HP_Mandator_2_MTL_09, HP_Mandator_2_MTL_10,	HP_Mandator_2_MTL_11, HP_Mandator_2_MTL_12, HP_Mandator_2_MTL_13, HP_Mandator_2_MTL_14,
+			HP_Mandator_2_MIC_01, HP_Mandator_2_MIC_02, HP_Mandator_2_MIC_03, HP_Mandator_2_MIC_04, HP_Mandator_2_MIC_05, HP_Mandator_2_MIC_06,	HP_Mandator_2_MIC_07, HP_Mandator_2_MIC_08, HP_Mandator_2_MIC_09, HP_Mandator_2_MIC_10, HP_Mandator_2_MIC_11, HP_Mandator_2_MIC_12, HP_Mandator_2_MIC_13, HP_Mandator_2_MIC_14,
+			HP_Mandator_1_Assault_01, HP_Mandator_1_Assault_02, HP_Mandator_1_Assault_03, HP_Mandator_1_Assault_04, HP_Mandator_1_Assault_05,
+			HP_Mandator_2_Engines_01, 
+			HP_Mandator_2_Bay_01, HP_Mandator_2_Bay_02, HP_Mandator_2_Bay_03, HP_Mandator_2_Bay_04,
+			HP_Mandator_2_Engines_02_Dummy, HP_Mandator_2_Engines_03_Dummy, HP_Mandator_2_Engines_04_Dummy,
+			HP_Mandator_2_QHIC_01_Dummy, HP_Mandator_2_QHIC_02_Dummy, HP_Mandator_2_QHIC_03_Dummy, HP_Mandator_2_QHIC_04_Dummy, HP_Mandator_2_QHIC_05_Dummy,
+			HP_Mandator_2_UHTL_01_Dummy, HP_Mandator_2_UHTL_02_Dummy, HP_Mandator_2_UHTL_03_Dummy, HP_Mandator_2_UHTL_04_Dummy, HP_Mandator_2_UHTL_05_Dummy, HP_Mandator_2_UHTL_06_Dummy, HP_Mandator_2_UHTL_07_Dummy, HP_Mandator_2_UHTL_08_Dummy, HP_Mandator_2_UHTL_09_Dummy, HP_Mandator_2_UHTL_10_Dummy, HP_Mandator_2_UHTL_11_Dummy, HP_Mandator_2_UHTL_12_Dummy, HP_Mandator_2_UHTL_13_Dummy, HP_Mandator_2_UHTL_14_Dummy, HP_Mandator_2_UHTL_15_Dummy, HP_Mandator_2_UHTL_16_Dummy, HP_Mandator_2_UHTL_17_Dummy, HP_Mandator_2_UHTL_18_Dummy, HP_Mandator_2_UHTL_19_Dummy, HP_Mandator_2_UHTL_20_Dummy
+		</HardPoints>
+		<Space_Model_Name>REP_MandatorII.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Mandator_II_Death_Clone</Death_Clone>
+
+	
+		<Scale_Factor>0.375</Scale_Factor>
+		<Select_Box_Scale>5500</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Size_Value>360</Size_Value>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>50</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Flagship_4">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base>Skirmish_NR_Flagship_3</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_NR_Flagship_5</Next_Level_Base>
+		
+		<Mass>0.995</Mass>
+		<Max_Speed>0.5</Max_Speed>
+		<Max_Thrust>0.1</Max_Thrust>
+		<OverrideAcceleration> .01 </OverrideAcceleration>
+		<OverrideDeceleration> .02 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0.05</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.05</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>14000</Shield_Points>
+		<Tactical_Health>31680</Tactical_Health>
+		<Shield_Refresh_Rate>105</Shield_Refresh_Rate>
+		<AI_Combat_Power>10295</AI_Combat_Power>
+		
+				<Text_ID>TEXT_UNIT_MANDATOR2_FLAGSHIP_LEVEL_FOUR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_MANDATOR2
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_MANDATOR2_HULL_FS_4
+			TEXT_TOOLTIP_MANDATOR2_SHIELD_FS_4
+			TEXT_TOOLTIP_MANDATOR2_MOVE_FS_4
+			TEXT_TOOLTIP_MANDATOR2_WEAP2
+			TEXT_TOOLTIP_MANDATOR2_WEAP3
+			TEXT_TOOLTIP_MANDATOR2_WEAP4
+			TEXT_TOOLTIP_MANDATOR2_WEAP5
+			TEXT_TOOLTIP_MANDATOR2_WEAP6
+		</Encyclopedia_Text>
+		
+		<Icon_Name>i_button_mandator2.tga</Icon_Name>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			
+			Flagship_CIS_AAA,
+			Flagship_CIS_AAB,
+			Flagship_CIS_AAP,
+			Flagship_CIS_AAD,
+			Flagship_CIS_AAE,
+			Flagship_CIS_AAF,
+			Flagship_CIS_AAG,
+			Flagship_CIS_AAH,
+			Flagship_CIS_AAI,
+			Flagship_CIS_AAJ,
+			Flagship_CIS_AAK,
+			Flagship_CIS_AAL,
+			Flagship_CIS_AAM,
+			Flagship_CIS_AAN,
+			Flagship_CIS_AAQ,
+			Flagship_CIS_AAR,
+			Flagship_CIS_AAS,
+			Flagship_CIS_AAT,
+			Flagship_CIS_AAU,
+			Flagship_CIS_AAV,
+			Flagship_CIS_AAW,
+			Flagship_CIS_AAX,
+			
+			Flagship_Level_Five_Starbase_Upgrade,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Mandator_2_DHTL_01, HP_Mandator_2_DHTL_02, HP_Mandator_2_DHTL_03, HP_Mandator_2_DHTL_04, HP_Mandator_2_DHTL_05, HP_Mandator_2_DHTL_06, HP_Mandator_2_DHTL_07, HP_Mandator_2_DHTL_08, HP_Mandator_2_DHTL_09, HP_Mandator_2_DHTL_10, HP_Mandator_2_DHTL_11, HP_Mandator_2_DHTL_12, HP_Mandator_2_DHTL_13, HP_Mandator_2_DHTL_14, HP_Mandator_2_DHTL_15, HP_Mandator_2_DHTL_16, HP_Mandator_2_DHTL_17, HP_Mandator_2_DHTL_18, HP_Mandator_2_DHTL_19, HP_Mandator_2_DHTL_20, HP_Mandator_2_DHTL_21, HP_Mandator_2_DHTL_22,
+			HP_Mandator_2_MTL_01, HP_Mandator_2_MTL_02, HP_Mandator_2_MTL_03, HP_Mandator_2_MTL_04, HP_Mandator_2_MTL_05, HP_Mandator_2_MTL_06, HP_Mandator_2_MTL_07, HP_Mandator_2_MTL_08, HP_Mandator_2_MTL_09, HP_Mandator_2_MTL_10,	HP_Mandator_2_MTL_11, HP_Mandator_2_MTL_12, HP_Mandator_2_MTL_13, HP_Mandator_2_MTL_14, 
+			HP_Mandator_2_MIC_01, HP_Mandator_2_MIC_02, HP_Mandator_2_MIC_03, HP_Mandator_2_MIC_04, HP_Mandator_2_MIC_05, HP_Mandator_2_MIC_06,	HP_Mandator_2_MIC_07, HP_Mandator_2_MIC_08, HP_Mandator_2_MIC_09, HP_Mandator_2_MIC_10, HP_Mandator_2_MIC_11, HP_Mandator_2_MIC_12, HP_Mandator_2_MIC_13, HP_Mandator_2_MIC_14,
+			HP_Mandator_1_Assault_01, HP_Mandator_1_Assault_02, HP_Mandator_1_Assault_03, HP_Mandator_1_Assault_04, HP_Mandator_1_Assault_05,
+			HP_Mandator_2_QHIC_01, HP_Mandator_2_QHIC_02, HP_Mandator_2_QHIC_03, HP_Mandator_2_QHIC_04, HP_Mandator_2_QHIC_05,
+			HP_Mandator_2_Engines_01, 
+			HP_Mandator_2_Bay_01, HP_Mandator_2_Bay_02, HP_Mandator_2_Bay_03, HP_Mandator_2_Bay_04,
+			HP_Mandator_2_Engines_02_Dummy, HP_Mandator_2_Engines_03_Dummy, HP_Mandator_2_Engines_04_Dummy,
+			HP_Mandator_2_UHTL_01_Dummy, HP_Mandator_2_UHTL_02_Dummy, HP_Mandator_2_UHTL_03_Dummy, HP_Mandator_2_UHTL_04_Dummy, HP_Mandator_2_UHTL_05_Dummy, HP_Mandator_2_UHTL_06_Dummy, HP_Mandator_2_UHTL_07_Dummy, HP_Mandator_2_UHTL_08_Dummy, HP_Mandator_2_UHTL_09_Dummy, HP_Mandator_2_UHTL_10_Dummy, HP_Mandator_2_UHTL_11_Dummy, HP_Mandator_2_UHTL_12_Dummy, HP_Mandator_2_UHTL_13_Dummy, HP_Mandator_2_UHTL_14_Dummy, HP_Mandator_2_UHTL_15_Dummy, HP_Mandator_2_UHTL_16_Dummy, HP_Mandator_2_UHTL_17_Dummy, HP_Mandator_2_UHTL_18_Dummy, HP_Mandator_2_UHTL_19_Dummy, HP_Mandator_2_UHTL_20_Dummy,
+		</HardPoints>
+		<Space_Model_Name>REP_MandatorII.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Mandator_II_Death_Clone</Death_Clone>		
+
+		<Scale_Factor>0.375</Scale_Factor>
+		<Select_Box_Scale>5500</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Size_Value>360</Size_Value>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>75</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	
+	<StarBase Name="Skirmish_NR_Flagship_5">
+		<Variant_Of_Existing_Type>Generic_Skirmish_Star_Base_Flagship</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Prev_Level_Base>Skirmish_NR_Flagship_4</Prev_Level_Base>
+        <Next_Level_Base></Next_Level_Base>
+		
+		<Mass>0.995</Mass>
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Thrust>0.2</Max_Thrust>
+		<OverrideAcceleration> .02 </OverrideAcceleration>
+		<OverrideDeceleration> .04 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>0.1</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.1</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+
+		
+		<Shield_Points>42000</Shield_Points>
+		<Tactical_Health>42240</Tactical_Health>
+		<Shield_Refresh_Rate>105</Shield_Refresh_Rate>
+		<AI_Combat_Power>12869</AI_Combat_Power>
+
+				<Text_ID>TEXT_UNIT_MANDATOR2_FLAGSHIP_LEVEL_FIVE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_MANDATOR2
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_MANDATOR2_HULL
+			TEXT_TOOLTIP_MANDATOR2_SHIELD
+			TEXT_TOOLTIP_MANDATOR2_MOVE
+			TEXT_TOOLTIP_MANDATOR2_WEAP1
+			TEXT_TOOLTIP_MANDATOR2_WEAP2
+			TEXT_TOOLTIP_MANDATOR2_WEAP3
+			TEXT_TOOLTIP_MANDATOR2_WEAP4
+			TEXT_TOOLTIP_MANDATOR2_WEAP5
+			TEXT_TOOLTIP_MANDATOR2_WEAP6
+		</Encyclopedia_Text>
+		
+		<Icon_Name>i_button_mandator2.tga</Icon_Name>
+		
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>70000.0</Space_FOW_Reveal_Range>
+	<Reinforcement_Prevention_Radius>4000 </Reinforcement_Prevention_Radius>
+		
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		
+		
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			REBEL,
+			
+			Flagship_CIS_AAA,
+			Flagship_CIS_AAB,
+			Flagship_CIS_AAP,
+			Flagship_CIS_AAD,
+			Flagship_CIS_AAE,
+			Flagship_CIS_AAF,
+			Flagship_CIS_AAG,
+			Flagship_CIS_AAH,
+			Flagship_CIS_AAI,
+			Flagship_CIS_AAJ,
+			Flagship_CIS_AAK,
+			Flagship_CIS_AAL,
+			Flagship_CIS_AAM,
+			Flagship_CIS_AAN,
+			Flagship_CIS_AAQ,
+			Flagship_CIS_AAR,
+			Flagship_CIS_AAS,
+			Flagship_CIS_AAT,
+			Flagship_CIS_AAU,
+			Flagship_CIS_AAV,
+			Flagship_CIS_AAW,
+			Flagship_CIS_AAX,
+			Flagship_CIS_AAY,
+			Flagship_CIS_AAZ,
+			
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+		<HardPoints>
+			HP_Mandator_2_DHTL_01, HP_Mandator_2_DHTL_02, HP_Mandator_2_DHTL_03, HP_Mandator_2_DHTL_04, HP_Mandator_2_DHTL_05, HP_Mandator_2_DHTL_06, HP_Mandator_2_DHTL_07, HP_Mandator_2_DHTL_08, HP_Mandator_2_DHTL_09, HP_Mandator_2_DHTL_10, HP_Mandator_2_DHTL_11, HP_Mandator_2_DHTL_12, HP_Mandator_2_DHTL_13, HP_Mandator_2_DHTL_14, HP_Mandator_2_DHTL_15, HP_Mandator_2_DHTL_16, HP_Mandator_2_DHTL_17, HP_Mandator_2_DHTL_18, HP_Mandator_2_DHTL_19, HP_Mandator_2_DHTL_20, HP_Mandator_2_DHTL_21, HP_Mandator_2_DHTL_22,
+			HP_Mandator_2_UHTL_01, HP_Mandator_2_UHTL_02, HP_Mandator_2_UHTL_03, HP_Mandator_2_UHTL_04, HP_Mandator_2_UHTL_05, HP_Mandator_2_UHTL_06, HP_Mandator_2_UHTL_07, HP_Mandator_2_UHTL_08, HP_Mandator_2_UHTL_09, HP_Mandator_2_UHTL_10, HP_Mandator_2_UHTL_11, HP_Mandator_2_UHTL_12, HP_Mandator_2_UHTL_13, HP_Mandator_2_UHTL_14, HP_Mandator_2_UHTL_15, HP_Mandator_2_UHTL_16, HP_Mandator_2_UHTL_17, HP_Mandator_2_UHTL_18, HP_Mandator_2_UHTL_19, HP_Mandator_2_UHTL_20,
+			HP_Mandator_2_MTL_01, HP_Mandator_2_MTL_02, HP_Mandator_2_MTL_03, HP_Mandator_2_MTL_04, HP_Mandator_2_MTL_05, HP_Mandator_2_MTL_06, HP_Mandator_2_MTL_07, HP_Mandator_2_MTL_08, HP_Mandator_2_MTL_09, HP_Mandator_2_MTL_10,	HP_Mandator_2_MTL_11, HP_Mandator_2_MTL_12, HP_Mandator_2_MTL_13, HP_Mandator_2_MTL_14, 
+			HP_Mandator_2_MIC_01, HP_Mandator_2_MIC_02, HP_Mandator_2_MIC_03, HP_Mandator_2_MIC_04, HP_Mandator_2_MIC_05, HP_Mandator_2_MIC_06,	HP_Mandator_2_MIC_07, HP_Mandator_2_MIC_08, HP_Mandator_2_MIC_09, HP_Mandator_2_MIC_10, HP_Mandator_2_MIC_11, HP_Mandator_2_MIC_12, HP_Mandator_2_MIC_13, HP_Mandator_2_MIC_14,
+			HP_Mandator_2_QHIC_01, HP_Mandator_2_QHIC_02, HP_Mandator_2_QHIC_03, HP_Mandator_2_QHIC_04, HP_Mandator_2_QHIC_05, 
+			HP_Mandator_2_Assault_01, HP_Mandator_2_Assault_02, HP_Mandator_2_Assault_03, HP_Mandator_2_Assault_04, HP_Mandator_2_Assault_05,		
+			HP_Mandator_2_Engines_01, HP_Mandator_2_Engines_02, HP_Mandator_2_Engines_03, HP_Mandator_2_Engines_04, 
+			HP_Mandator_2_Bay_01, HP_Mandator_2_Bay_02, HP_Mandator_2_Bay_03, HP_Mandator_2_Bay_04
+		</HardPoints>
+		<Space_Model_Name>REP_MandatorII.ALO</Space_Model_Name>
+
+		<Death_Clone>Damage_Normal, Mandator_II_Death_Clone</Death_Clone>
+
+		<Scale_Factor>0.375</Scale_Factor>
+		<Select_Box_Scale>5500</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Size_Value>360</Size_Value>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>100</Base_Income_Value>
+				<Base_Interval_In_Secs>1</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="R_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="R_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+</Skirmish_starbases>

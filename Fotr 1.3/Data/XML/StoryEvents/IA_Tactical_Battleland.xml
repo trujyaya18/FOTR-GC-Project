@@ -1,0 +1,182 @@
+<?xml version="1.0" ?>
+
+<Story>
+
+	<Event Name="Setup_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Instructions">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_INSTANT_ACTION_BEGIN</Reward_Param1>
+		<Reward_Param7>Task</Reward_Param7><!-- TASK color coding - Blue -->
+	</Event>
+	
+	<Event Name="Flash_Movie_Button">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Reward_Type>FLASH_GUI</Reward_Type>
+		<Reward_Param1>b_camera_t</Reward_Param1>
+		<Prereq>Instructions</Prereq>
+	</Event>
+	
+	<Event Name="Instructions_2">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_camera_t</Event_Param1>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_INSTANT_ACTION_BATTLE</Reward_Param1>
+		<Reward_Param7>Task</Reward_Param7><!-- TASK color coding - Blue -->
+	</Event>
+
+	<Event Name="Remove_Flash_Movie_Button">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Prereq>Instructions_2</Prereq>
+	</Event>
+	
+	
+
+	<Event Name="SWITCH_CONTROL_EVENT">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_EVENT_HAPES">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_EVENT_EOTH">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_EVENT_PENTASTAR">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_EVENT_ZSINJ">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_EVENT_MALDROOD">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_EVENT_ERIADU">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_EVENT_CSA">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Setup_Start</Prereq>
+	</Event>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_camera_t</Event_Param1>
+	</Event>
+
+
+	<!--<Event Name="Set_Skirmish_Rules">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SKIRMISH_RULES</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>-->
+
+	<Event Name="Remove_FoW">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_FOW</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Disable_Retreat">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Disable_Retreat_Player">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Disable_Reinforcements">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_REINFORCEMENTS</Event_Param2>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Close_Reinforcement_Window">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>r_close</Reward_Param1>
+		<Prereq>Disable_Reinforcements</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Enable_Reinforcements">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_REINFORCEMENTS</Event_Param2>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="ENABLE_VICTORY_0">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<!--<Event Name="ENABLE_VICTORY_1">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event> -->
+
+</Story>

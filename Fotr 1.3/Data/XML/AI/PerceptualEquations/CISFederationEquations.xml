@@ -1,0 +1,164 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	
+	<CIS_Federation_Should_Reconnect_Islands>
+		Function_Need_To_Reconnect_Islands.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Rebel"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Trade_Federation"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Banking_Clan"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Techno_Union"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Commerce_Guild"})
+	</CIS_Federation_Should_Reconnect_Islands>
+	
+	
+	<CIS_Federation_Should_Crush_Opponent_Planet>
+		Function_Should_Crush_Opponent_Planet.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Rebel"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Trade_Federation"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Banking_Clan"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Techno_Union"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Commerce_Guild"})
+		*
+		Function_Is_Connected_To_Me.Evaluate
+	</CIS_Federation_Should_Crush_Opponent_Planet>
+	
+	
+	<CIS_Federation_Should_Perform_Unrestricted_Grab_Space>
+		Function_Should_Perform_Unrestricted_Grab_Space.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Rebel"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Trade_Federation"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Banking_Clan"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Techno_Union"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Commerce_Guild"})
+		*
+		Variable_Self.IsFaction{Parameter_Faction = "Rebel"}
+	</CIS_Federation_Should_Perform_Unrestricted_Grab_Space>
+	
+	
+	<CIS_Federation_Should_Perform_Unrestricted_Grab_Land>
+		Function_Should_Perform_Unrestricted_Grab_Land.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Rebel"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Trade_Federation"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Banking_Clan"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Techno_Union"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Commerce_Guild"})
+		*
+		Variable_Self.IsFaction{Parameter_Faction = "Rebel"}
+	</CIS_Federation_Should_Perform_Unrestricted_Grab_Land>
+
+
+	<CIS_Federation_Should_Conquer_Pirate_Planet>
+		Function_Should_Conquer_Pirate_Planet.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Rebel"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Trade_Federation"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Banking_Clan"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Techno_Union"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Commerce_Guild"})
+		*
+		Function_Is_Connected_To_Me.Evaluate
+		*
+		Variable_Human.IsFaction{Parameter_Faction = "Empire"}
+	</CIS_Federation_Should_Conquer_Pirate_Planet>
+
+	
+	<CIS_Federation_Should_Conquer_Opponent_Planet>
+		Function_Should_Conquer_Opponent_Planet.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Rebel"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Trade_Federation"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Banking_Clan"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Techno_Union"})
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Commerce_Guild"})
+		*
+		Function_Is_Connected_To_Me.Evaluate
+	</CIS_Federation_Should_Conquer_Opponent_Planet>
+	
+	
+	<CIS_Federation_Trapped_Fleet>
+		50.0
+		*
+		Variable_Target.FriendlyForce.HasSpaceForce
+		*
+		(1 - Function_Is_Connected_To_Me.Evaluate)
+		*
+		Function_Is_Connected_To_Enemy.Evaluate
+		*
+		(1 - Variable_Target.IsFaction {Parameter_Faction = "Neutral"})
+		*
+		Function_First_Attack_Allowed.Evaluate
+	</CIS_Federation_Trapped_Fleet>
+
+
+	<CIS_Federation_Needs_Defensive_Fleet>
+		(5000 > Function_Friendly_Space_Unit_Raw_Total.Evaluate) *
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * 
+		Function_Is_Connected_To_Me.Evaluate *
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0) *
+		Function_GenericPlanetValue.Evaluate 
+		*
+		Variable_Target.EnemyForce.NearbySpaceTotal
+		*
+		(0 # 1)
+	</CIS_Federation_Needs_Defensive_Fleet>
+	
+
+	<Allow_Blind_Ground_Production_CISFederation>
+		(
+			0.5
+			*
+			(Variable_Enemy.GroundTotalUnnormalized {Parameter_Faction = "Empire"}  > (1.1 * Function_Friendly_Global_Land_Unit_Raw_Total.Evaluate))
+			+
+			0.01
+		)
+		*
+		(Script_AnyFreeLandSlots.Evaluate)
+		*
+		(Variable_Self.MaxedGroundbases > 0.5)
+	</Allow_Blind_Ground_Production_CISFederation>
+
+
+	<Allow_Blind_Space_Production_CISFederation>
+		0.01
+		+
+		(Function_Maxed_Shipyards.Evaluate > 0.5)
+		*
+		(
+			1.0
+			+
+			(Variable_Enemy.SpaceTotalUnnormalized {Parameter_Faction = "Empire"} > (2.0 * Function_Friendly_Global_Space_Unit_Raw_Total.Evaluate))
+			+
+			Function_Needs_More_Space_Force_Globally.Evaluate
+		)
+	</Allow_Blind_Space_Production_CISFederation>
+
+</Equations>

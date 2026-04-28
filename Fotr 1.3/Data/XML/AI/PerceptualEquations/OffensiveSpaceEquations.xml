@@ -1,0 +1,920 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+
+	<Distance_To_Nearest_Friendly_Starbase>
+	Variable_Target.DistanceToNearestFriendly {	Parameter_Type = "NewRepublic_Star_Base_1",
+												Parameter_Type = "NewRepublic_Star_Base_2",
+												Parameter_Type = "NewRepublic_Star_Base_3",
+												Parameter_Type = "NewRepublic_Star_Base_4",
+												Parameter_Type = "NewRepublic_Star_Base_5",
+												Parameter_Type = "Skirmish_NR_Star_Base_Early",
+												Parameter_Type = "Skirmish_NR_Star_Base_Late",
+												Parameter_Type = "CSA_Star_Base_1",
+												Parameter_Type = "CSA_Star_Base_2",
+												Parameter_Type = "CSA_Star_Base_3",
+												Parameter_Type = "CSA_Star_Base_4",
+												Parameter_Type = "CSA_Star_Base_5",
+												Parameter_Type = "Empire_Star_Base_1",
+												Parameter_Type = "Empire_Star_Base_2",
+												Parameter_Type = "Empire_Star_Base_3",
+												Parameter_Type = "Empire_Star_Base_4",
+												Parameter_Type = "Empire_Star_Base_5",
+												Parameter_Type = "Brask_Starbase",
+												Parameter_Type = "EotH_Star_Base_2",
+												Parameter_Type = "EotH_Star_Base_3",
+												Parameter_Type = "Visvia_Starbase",
+												Parameter_Type = "Oto_Starbase",
+												Parameter_Type = "Hapan_Star_Base_1",
+												Parameter_Type = "Hapan_Star_Base_2",
+												Parameter_Type = "Hapan_Star_Base_3",
+												Parameter_Type = "Hapan_Star_Base_4",
+												Parameter_Type = "Hapan_Star_Base_5",
+												Parameter_Type = "Skirmish_NR_Star_Base_1",
+												Parameter_Type = "Skirmish_Remnant_Star_Base_1",
+												Parameter_Type = "Skirmish_EotH_Star_Base_1",
+												Parameter_Type = "Skirmish_Delvardus_Star_Base_1",
+												Parameter_Type = "Skirmish_Pentastar_Star_Base_1",
+												Parameter_Type = "Skirmish_Zsinj_Star_Base_1",
+												Parameter_Type = "Skirmish_CSA_Star_Base_1",
+												Parameter_Type = "Skirmish_Teradoc_Star_Base_1",
+												Parameter_Type = "Skirmish_Hapan_Star_Base_1",
+												Parameter_Type = "Skirmish_Remnant_Flagship_1",
+												Parameter_Type = "Skirmish_Remnant_Flagship_2",
+												Parameter_Type = "Skirmish_Remnant_Flagship_3",
+												Parameter_Type = "Skirmish_Remnant_Flagship_4",
+												Parameter_Type = "Skirmish_Remnant_Flagship_5",
+												Parameter_Type = "Skirmish_NR_Flagship_1",
+												Parameter_Type = "Skirmish_NR_Flagship_2",
+												Parameter_Type = "Skirmish_NR_Flagship_3",
+												Parameter_Type = "Skirmish_NR_Flagship_4",
+												Parameter_Type = "Skirmish_NR_Flagship_5",
+												Parameter_Type = "Skirmish_CSA_Flagship_1",
+												Parameter_Type = "Skirmish_CSA_Flagship_2",
+												Parameter_Type = "Skirmish_CSA_Flagship_3",
+												Parameter_Type = "Skirmish_CSA_Flagship_4",
+												Parameter_Type = "Skirmish_CSA_Flagship_5",
+												Parameter_Type = "Skirmish_EOTH_Flagship_1",
+												Parameter_Type = "Skirmish_EOTH_Flagship_2",
+												Parameter_Type = "Skirmish_EOTH_Flagship_3",
+												Parameter_Type = "Skirmish_EOTH_Flagship_4",
+												Parameter_Type = "Skirmish_EOTH_Flagship_5",
+												Parameter_Type = "Skirmish_EA_Flagship_1",
+												Parameter_Type = "Skirmish_EA_Flagship_2",
+												Parameter_Type = "Skirmish_EA_Flagship_3",
+												Parameter_Type = "Skirmish_EA_Flagship_4",
+												Parameter_Type = "Skirmish_EA_Flagship_5",
+												Parameter_Type = "Skirmish_GM_Flagship_1",
+												Parameter_Type = "Skirmish_GM_Flagship_2",
+												Parameter_Type = "Skirmish_GM_Flagship_3",
+												Parameter_Type = "Skirmish_GM_Flagship_4",
+												Parameter_Type = "Skirmish_GM_Flagship_5",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_1",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_2",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_3",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_4",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_5",
+												Parameter_Type = "Skirmish_Hapan_Flagship_1",
+												Parameter_Type = "Skirmish_Hapan_Flagship_2",
+												Parameter_Type = "Skirmish_Hapan_Flagship_3",
+												Parameter_Type = "Skirmish_Hapan_Flagship_4",
+												Parameter_Type = "Skirmish_Hapan_Flagship_5",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_1",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_2",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_3",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_4",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_5"
+												}
+	</Distance_To_Nearest_Friendly_Starbase>
+
+	
+	<Distance_To_Nearest_Enemy_Starbase>
+	Variable_Target.DistanceToNearestEnemy {	Parameter_Type = "NewRepublic_Star_Base_1",
+												Parameter_Type = "NewRepublic_Star_Base_2",
+												Parameter_Type = "NewRepublic_Star_Base_3",
+												Parameter_Type = "NewRepublic_Star_Base_4",
+												Parameter_Type = "NewRepublic_Star_Base_5",
+												Parameter_Type = "Skirmish_NR_Star_Base_Early",
+												Parameter_Type = "Skirmish_NR_Star_Base_Late",
+												Parameter_Type = "CSA_Star_Base_1",
+												Parameter_Type = "CSA_Star_Base_2",
+												Parameter_Type = "CSA_Star_Base_3",
+												Parameter_Type = "CSA_Star_Base_4",
+												Parameter_Type = "CSA_Star_Base_5",
+												Parameter_Type = "Empire_Star_Base_1",
+												Parameter_Type = "Empire_Star_Base_2",
+												Parameter_Type = "Empire_Star_Base_3",
+												Parameter_Type = "Empire_Star_Base_4",
+												Parameter_Type = "Empire_Star_Base_5",
+												Parameter_Type = "Brask_Starbase",
+												Parameter_Type = "EotH_Star_Base_2",
+												Parameter_Type = "EotH_Star_Base_3",
+												Parameter_Type = "Visvia_Starbase",
+												Parameter_Type = "Oto_Starbase",
+												Parameter_Type = "Hapan_Star_Base_1",
+												Parameter_Type = "Hapan_Star_Base_2",
+												Parameter_Type = "Hapan_Star_Base_3",
+												Parameter_Type = "Hapan_Star_Base_4",
+												Parameter_Type = "Hapan_Star_Base_5",
+												Parameter_Type = "Skirmish_NR_Star_Base_1",
+												Parameter_Type = "Skirmish_Remnant_Star_Base_1",
+												Parameter_Type = "Skirmish_EotH_Star_Base_1",
+												Parameter_Type = "Skirmish_Delvardus_Star_Base_1",
+												Parameter_Type = "Skirmish_Pentastar_Star_Base_1",
+												Parameter_Type = "Skirmish_Zsinj_Star_Base_1",
+												Parameter_Type = "Skirmish_CSA_Star_Base_1",
+												Parameter_Type = "Skirmish_Teradoc_Star_Base_1",
+												Parameter_Type = "Skirmish_Hapan_Star_Base_1",
+												Parameter_Type = "Skirmish_Remnant_Flagship_1",
+												Parameter_Type = "Skirmish_Remnant_Flagship_2",
+												Parameter_Type = "Skirmish_Remnant_Flagship_3",
+												Parameter_Type = "Skirmish_Remnant_Flagship_4",
+												Parameter_Type = "Skirmish_Remnant_Flagship_5",
+												Parameter_Type = "Skirmish_NR_Flagship_1",
+												Parameter_Type = "Skirmish_NR_Flagship_2",
+												Parameter_Type = "Skirmish_NR_Flagship_3",
+												Parameter_Type = "Skirmish_NR_Flagship_4",
+												Parameter_Type = "Skirmish_NR_Flagship_5",
+												Parameter_Type = "Skirmish_CSA_Flagship_1",
+												Parameter_Type = "Skirmish_CSA_Flagship_2",
+												Parameter_Type = "Skirmish_CSA_Flagship_3",
+												Parameter_Type = "Skirmish_CSA_Flagship_4",
+												Parameter_Type = "Skirmish_CSA_Flagship_5",
+												Parameter_Type = "Skirmish_EOTH_Flagship_1",
+												Parameter_Type = "Skirmish_EOTH_Flagship_2",
+												Parameter_Type = "Skirmish_EOTH_Flagship_3",
+												Parameter_Type = "Skirmish_EOTH_Flagship_4",
+												Parameter_Type = "Skirmish_EOTH_Flagship_5",
+												Parameter_Type = "Skirmish_EA_Flagship_1",
+												Parameter_Type = "Skirmish_EA_Flagship_2",
+												Parameter_Type = "Skirmish_EA_Flagship_3",
+												Parameter_Type = "Skirmish_EA_Flagship_4",
+												Parameter_Type = "Skirmish_EA_Flagship_5",
+												Parameter_Type = "Skirmish_GM_Flagship_1",
+												Parameter_Type = "Skirmish_GM_Flagship_2",
+												Parameter_Type = "Skirmish_GM_Flagship_3",
+												Parameter_Type = "Skirmish_GM_Flagship_4",
+												Parameter_Type = "Skirmish_GM_Flagship_5",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_1",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_2",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_3",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_4",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_5",
+												Parameter_Type = "Skirmish_Hapan_Flagship_1",
+												Parameter_Type = "Skirmish_Hapan_Flagship_2",
+												Parameter_Type = "Skirmish_Hapan_Flagship_3",
+												Parameter_Type = "Skirmish_Hapan_Flagship_4",
+												Parameter_Type = "Skirmish_Hapan_Flagship_5",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_1",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_2",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_3",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_4",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_5"
+												}
+	</Distance_To_Nearest_Enemy_Starbase>
+
+	
+	<Is_Starbase>
+			Variable_Target.Type.IsType {	Parameter_Type = "NewRepublic_Star_Base_1",
+												Parameter_Type = "NewRepublic_Star_Base_2",
+												Parameter_Type = "NewRepublic_Star_Base_3",
+												Parameter_Type = "NewRepublic_Star_Base_4",
+												Parameter_Type = "NewRepublic_Star_Base_5",
+												Parameter_Type = "Skirmish_NR_Star_Base_Early",
+												Parameter_Type = "Skirmish_NR_Star_Base_Late",
+												Parameter_Type = "CSA_Star_Base_1",
+												Parameter_Type = "CSA_Star_Base_2",
+												Parameter_Type = "CSA_Star_Base_3",
+												Parameter_Type = "CSA_Star_Base_4",
+												Parameter_Type = "CSA_Star_Base_5",
+												Parameter_Type = "Empire_Star_Base_1",
+												Parameter_Type = "Empire_Star_Base_2",
+												Parameter_Type = "Empire_Star_Base_3",
+												Parameter_Type = "Empire_Star_Base_4",
+												Parameter_Type = "Empire_Star_Base_5",
+												Parameter_Type = "Brask_Starbase",
+												Parameter_Type = "EotH_Star_Base_2",
+												Parameter_Type = "EotH_Star_Base_3",
+												Parameter_Type = "Visvia_Starbase",
+												Parameter_Type = "Oto_Starbase",
+												Parameter_Type = "Hapan_Star_Base_1",
+												Parameter_Type = "Hapan_Star_Base_2",
+												Parameter_Type = "Hapan_Star_Base_3",
+												Parameter_Type = "Hapan_Star_Base_4",
+												Parameter_Type = "Hapan_Star_Base_5",
+												Parameter_Type = "Skirmish_NR_Star_Base_1",
+												Parameter_Type = "Skirmish_Remnant_Star_Base_1",
+												Parameter_Type = "Skirmish_EotH_Star_Base_1",
+												Parameter_Type = "Skirmish_Delvardus_Star_Base_1",
+												Parameter_Type = "Skirmish_Pentastar_Star_Base_1",
+												Parameter_Type = "Skirmish_Zsinj_Star_Base_1",
+												Parameter_Type = "Skirmish_CSA_Star_Base_1",
+												Parameter_Type = "Skirmish_Teradoc_Star_Base_1",
+												Parameter_Type = "Skirmish_Hapan_Star_Base_1",
+												Parameter_Type = "Skirmish_Remnant_Flagship_1",
+												Parameter_Type = "Skirmish_Remnant_Flagship_2",
+												Parameter_Type = "Skirmish_Remnant_Flagship_3",
+												Parameter_Type = "Skirmish_Remnant_Flagship_4",
+												Parameter_Type = "Skirmish_Remnant_Flagship_5",
+												Parameter_Type = "Skirmish_NR_Flagship_1",
+												Parameter_Type = "Skirmish_NR_Flagship_2",
+												Parameter_Type = "Skirmish_NR_Flagship_3",
+												Parameter_Type = "Skirmish_NR_Flagship_4",
+												Parameter_Type = "Skirmish_NR_Flagship_5",
+												Parameter_Type = "Skirmish_CSA_Flagship_1",
+												Parameter_Type = "Skirmish_CSA_Flagship_2",
+												Parameter_Type = "Skirmish_CSA_Flagship_3",
+												Parameter_Type = "Skirmish_CSA_Flagship_4",
+												Parameter_Type = "Skirmish_CSA_Flagship_5",
+												Parameter_Type = "Skirmish_EOTH_Flagship_1",
+												Parameter_Type = "Skirmish_EOTH_Flagship_2",
+												Parameter_Type = "Skirmish_EOTH_Flagship_3",
+												Parameter_Type = "Skirmish_EOTH_Flagship_4",
+												Parameter_Type = "Skirmish_EOTH_Flagship_5",
+												Parameter_Type = "Skirmish_EA_Flagship_1",
+												Parameter_Type = "Skirmish_EA_Flagship_2",
+												Parameter_Type = "Skirmish_EA_Flagship_3",
+												Parameter_Type = "Skirmish_EA_Flagship_4",
+												Parameter_Type = "Skirmish_EA_Flagship_5",
+												Parameter_Type = "Skirmish_GM_Flagship_1",
+												Parameter_Type = "Skirmish_GM_Flagship_2",
+												Parameter_Type = "Skirmish_GM_Flagship_3",
+												Parameter_Type = "Skirmish_GM_Flagship_4",
+												Parameter_Type = "Skirmish_GM_Flagship_5",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_1",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_2",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_3",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_4",
+												Parameter_Type = "Skirmish_Pentastar_Flagship_5",
+												Parameter_Type = "Skirmish_Hapan_Flagship_1",
+												Parameter_Type = "Skirmish_Hapan_Flagship_2",
+												Parameter_Type = "Skirmish_Hapan_Flagship_3",
+												Parameter_Type = "Skirmish_Hapan_Flagship_4",
+												Parameter_Type = "Skirmish_Hapan_Flagship_5",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_1",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_2",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_3",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_4",
+												Parameter_Type = "Skirmish_Zsinj_Flagship_5"
+												}
+	</Is_Starbase>
+
+
+	<Allowed_As_Defender_Space>
+		(Game.IsCampaignGame == 0)
+		+
+		(Game.IsCampaignGame == 1)
+		*
+		(
+			(1 - Variable_Self.IsDefender)
+			+
+			(Variable_Self.IsDefender) * (Variable_Self.BaseLevel == 0.0)
+			+
+			(Variable_Self.IsDefender) * (Variable_Self.BaseLevel > 0) 
+			*
+			(Game.Age > (120 # 150))
+			*
+			(
+				(
+					Function_Enemy_Outnumbered.Evaluate
+					+
+					(
+						(6000 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Frigate|Capital|SuperCapital|SpaceHero|SpaceStructure]}) 
+						*
+						Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Frigate|Capital|SuperCapital|SpaceHero]}
+					)
+				)
+				> 0
+			)
+		)
+		*
+		(1.0 - Function_Want_To_Retreat_From_Space.Evaluate)
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Warlords", Parameter_Faction = "Hostile", Parameter_Faction = "Independent_Forces"}
+	</Allowed_As_Defender_Space>
+
+	
+	<Allowed_As_Defender_Space_Untargeted>
+		(Game.IsCampaignGame == 0)
+		+
+		(Game.IsCampaignGame == 1)
+		*
+		(
+			(1 - Variable_Self.IsDefender)
+			+
+			(Variable_Self.IsDefender) * (Variable_Self.BaseLevel == 0.0)
+			+
+			(Variable_Self.IsDefender) * (3 > Variable_Self.BaseLevel) * (Game.Age > (120 # 240)) 
+			* 
+			(Function_Enemy_Outnumbered.Evaluate > 0)
+		)
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Warlords", Parameter_Faction = "Hostile", Parameter_Faction = "Independent_Forces"}
+	</Allowed_As_Defender_Space_Untargeted>
+	
+
+	<Enemy_Outnumbered>
+		Function_Aggressive_Personality.Evaluate
+		*
+		(Function_FriendlyForce_No_SpaceStructures.Evaluate >= (1.5 * Variable_Self.EnemyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized))
+		+
+		(Function_FriendlyForce_No_SpaceStructures.Evaluate >= (2.5 * Variable_Self.EnemyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized))
+		+
+		(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[SuperCapital]} > 0)
+	</Enemy_Outnumbered>
+	
+	
+	<Should_Move_Up_Fleet>
+		(Game.IsCampaignGame == 1)
+		*
+		(
+			(1.0 - Variable_Self.IsDefender)
+			*
+			((30 # 120) / Game.Age)
+			+
+			Variable_Self.IsDefender
+			* 
+			(3 > Variable_Self.BaseLevel)
+			*
+			(Variable_Self.EnemyForceUnnormalized > (8000 # 12000))
+			*
+			(
+				(
+				Function_Enemy_Outnumbered.Evaluate 
+				+ 
+				(1.0 - Function_Have_Fighter_Superiority.Evaluate)
+				)
+				> 0
+			)
+			*
+			(Game.Age > (60 # 120))
+		)
+		*
+		(1.0 - (Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Transport]} > 0))
+	</Should_Move_Up_Fleet>
+	
+	
+	<Current_Enemy_Location_Space>
+		Variable_Target.EnemyUnitConcentration * (Variable_Target.EnemyForceUnnormalized > 1000)
+	</Current_Enemy_Location_Space>
+	
+	
+	<FriendlyForce_No_SpaceStructures>
+		Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Corvette|Frigate|Capital|SuperCapital|SpaceHero]} + Variable_Self.ReinforcementsUnnormalized
+	</FriendlyForce_No_SpaceStructures>
+	
+	
+	<EnemyForce_No_Shipyard>
+		(Variable_Self.EnemyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized)
+		-
+		(
+		1500 
+		*
+		Variable_Enemy.HasUnit {Parameter_Type = "Generic_Shipyard_Level_One",
+								Parameter_Type = "Republic_Shipyard_Level_One",
+								Parameter_Type = "Sith_Shipyard_Level_One",
+								Parameter_Type = "Mandalorian_Shipyard_Level_One",
+								Parameter_Type = "CIS_Shipyard_Level_One",
+								Parameter_Type = "NewRepublic_Shipyard_Level_One",
+								Parameter_Type = "Empire_Shipyard_Level_One",
+								Parameter_Type = "Pentastar_Shipyard_Level_One",
+								Parameter_Type = "Zsinj_Shipyard_Level_One",
+								Parameter_Type = "Eriadu_Shipyard_Level_One",
+								Parameter_Type = "Greater_Maldrood_Shipyard_Level_One",
+								Parameter_Type = "CSA_Shipyard_Level_One",
+								Parameter_Type = "Chiss_Shipyard_Level_One",
+								Parameter_Type = "EotH_Shipyard_Level_One"}
+		+
+		2500
+		*
+		Variable_Enemy.HasUnit {Parameter_Type = "Generic_Shipyard_Level_Two",
+								Parameter_Type = "Republic_Shipyard_Level_Two",
+								Parameter_Type = "Sith_Shipyard_Level_Two",
+								Parameter_Type = "Mandalorian_Shipyard_Level_Two",
+								Parameter_Type = "CIS_Shipyard_Level_Two",
+								Parameter_Type = "NewRepublic_Shipyard_Level_Two",
+								Parameter_Type = "Empire_Shipyard_Level_Two",
+								Parameter_Type = "Pentastar_Shipyard_Level_Two",
+								Parameter_Type = "Zsinj_Shipyard_Level_Two",
+								Parameter_Type = "Pirate_Base",
+								Parameter_Type = "Eriadu_Shipyard_Level_Two",
+								Parameter_Type = "Greater_Maldrood_Shipyard_Level_Two",
+								Parameter_Type = "CSA_Shipyard_Level_Two",
+								Parameter_Type = "Chiss_Shipyard_Level_Two",
+								Parameter_Type = "EotH_Shipyard_Level_Two"}
+		+
+		6000
+		*
+		Variable_Enemy.HasUnit {Parameter_Type = "Generic_Shipyard_Level_Three",
+								Parameter_Type = "Republic_Shipyard_Level_Three",
+								Parameter_Type = "Sith_Shipyard_Level_Three",
+								Parameter_Type = "Mandalorian_Shipyard_Level_Three",
+								Parameter_Type = "CIS_Shipyard_Level_Three",
+								Parameter_Type = "NewRepublic_Shipyard_Level_Three",
+								Parameter_Type = "Empire_Shipyard_Level_Three",
+								Parameter_Type = "Pentastar_Shipyard_Level_Three",
+								Parameter_Type = "Zsinj_Shipyard_Level_Three",
+								Parameter_Type = "Eriadu_Shipyard_Level_Three",
+								Parameter_Type = "Greater_Maldrood_Shipyard_Level_Three",
+								Parameter_Type = "CSA_Shipyard_Level_Three",
+								Parameter_Type = "CSA_Ship_Market",
+								Parameter_Type = "Chiss_Shipyard_Level_Three",
+								Parameter_Type = "EotH_Shipyard_Level_Three"}
+		+
+		8500
+		*
+		Variable_Enemy.HasUnit {Parameter_Type = "Generic_Shipyard_Level_Four",
+								Parameter_Type = "Republic_Shipyard_Level_Four",
+								Parameter_Type = "Sith_Shipyard_Level_Four",
+								Parameter_Type = "Mandalorian_Shipyard_Level_Four",
+								Parameter_Type = "CIS_Shipyard_Level_Four",
+								Parameter_Type = "NewRepublic_Shipyard_Level_Four",
+								Parameter_Type = "Empire_Shipyard_Level_Four",
+								Parameter_Type = "Pentastar_Shipyard_Level_Four",
+								Parameter_Type = "Zsinj_Shipyard_Level_Four",
+								Parameter_Type = "Rancor_Base",
+								Parameter_Type = "Eriadu_Shipyard_Level_Four",
+								Parameter_Type = "Greater_Maldrood_Shipyard_Level_Four",
+								Parameter_Type = "CSA_Shipyard_Level_Four",
+								Parameter_Type = "Chiss_Shipyard_Level_Four",
+								Parameter_Type = "EotH_Shipyard_Level_Four"}
+		+
+		5000
+		*
+		Variable_Enemy.HasUnit {Parameter_Type = "Hapan_Shipyard_Royal",
+								Parameter_Type = "Hapan_Shipyard_Requud",
+								Parameter_Type = "Hapan_Shipyard_AlGray",
+								Parameter_Type = "Hapan_Shipyard_Galney",
+								Parameter_Type = "Hapan_Shipyard_Thane",
+								Parameter_Type = "Hapan_Shipyard_Corr",
+								Parameter_Type = "Hapan_Shipyard_Maluri"}
+		)
+	</EnemyForce_No_Shipyard>
+	
+	
+	<Is_Empty_Zone_Near_Base>
+		Variable_Self.IsDefender
+		*
+		(4000 > Function_Distance_To_Nearest_Friendly_Starbase.Evaluate)
+		*
+		(1 - Variable_Target.FriendlyForce {Parameter_Category = GameObjectCategoryType[Fighter | Bomber | Corvette]})
+	</Is_Empty_Zone_Near_Base>
+
+
+	<Is_Space_Structure_Indestructable>
+		Variable_Target.Type.IsType { Parameter_Type = "N_Orbital_Construction_Pod"
+									,Parameter_Type = "N_Remote_Sensor_Pod"
+									,Parameter_Type = "Asteroid Huge" 
+									,Parameter_Type = "Asteroid Medium" 
+									,Parameter_Type = "Asteroid Large"
+									,Parameter_Type = "InstantAction_Marker_Empire"
+									,Parameter_Type = "InstantAction_Marker_NewRep"
+									,Parameter_Type = "InstantAction_Marker_Hapans"
+									,Parameter_Type = "InstantAction_Marker_EotH"
+									,Parameter_Type = "InstantAction_Marker_CSA"
+									,Parameter_Type = "InstantAction_Marker_Pentastar"
+									}
+	</Is_Space_Structure_Indestructable>
+
+	
+	<Unit_Needs_To_Be_Destroyed>
+		Function_Allowed_As_Defender_Space.Evaluate
+		*
+		(1 - Function_Is_Space_Structure_Indestructable.Evaluate)
+		*
+		(
+			4.0 * ((Variable_Target.Location.FriendlyForce - Variable_Target.Location.EnemyForce) > 0.0)
+			+
+			3.0 * (1.0 - Variable_Target.Location.EnemyForce)
+			+
+			2.0 * (0.66 > Variable_Target.Shield)
+			+
+			4.0 * (1.0 - Variable_Target.Health)
+			+
+			(1.0 * Variable_Target.ForceNBTD)
+			+
+			2.0 * Variable_Target.ContainsHero
+			+
+			2.0 * Script_TargetHasProperty.Evaluate{Parameter_Script_String = "HealsVehicles"}
+			+
+			1.0
+		)
+	</Unit_Needs_To_Be_Destroyed>
+	
+	<Unit_Needs_To_Be_Destroyed_Survival>
+		(1 - Function_Is_Space_Structure_Indestructable.Evaluate)
+		*
+		(
+			4.0 * ((Variable_Target.Location.FriendlyForce - Variable_Target.Location.EnemyForce) > 0.0)
+			+
+			3.0 * (1.0 - Variable_Target.Location.EnemyForce)
+			+
+			2.0 * (0.66 > Variable_Target.Shield)
+			+
+			4.0 * (1.0 - Variable_Target.Health)
+			+
+			(1.0 * Variable_Target.ForceNBTD)
+			+
+			2.0 * Variable_Target.ContainsHero
+			+
+			2.0 * Script_TargetHasProperty.Evaluate{Parameter_Script_String = "HealsVehicles"}
+			+
+			1.0
+		)
+	</Unit_Needs_To_Be_Destroyed_Survival>
+
+
+	<Unit_Needs_To_Be_Disabled>
+		Function_Allowed_As_Defender_Space.Evaluate
+		*
+		(1 - Function_Is_Space_Structure_Indestructable.Evaluate)
+		*
+		(
+			4.0 * ((Variable_Target.Location.FriendlyForce - Variable_Target.Location.EnemyForce) > 0.0)
+			+
+			3.0 * (1.0 - Variable_Target.Location.EnemyForce)
+			+
+			3.0 * (Variable_Target.HardPointHealth {Parameter_Hard_Point_Type = HardPointType[Shield_Generator]} > 0.0)
+			+
+			2.0 * (Variable_Target.Shield > 0.66)
+			+
+			2.0 * Variable_Target.ForceNBTD
+			+
+			1.0 * Variable_Target.Health
+		)
+	</Unit_Needs_To_Be_Disabled>
+	
+	<SuperCapital_Engines_Disabled>
+		(Variable_Target.HardPointHealth {Parameter_Hard_Point_Type = HardPointType[Engine]} == 0)
+		*
+		(
+			(Variable_Target.Force {Parameter_Category = GameObjectCategoryType[SuperCapital | SpaceHero]} > 0)
+			+
+			Variable_Target.ContainsHero
+		)
+	</SuperCapital_Engines_Disabled>
+
+
+	<Unit_Needs_To_Be_Bombed>
+		(Game.Age > (60 # 120))
+		*
+		Function_Have_Fighter_Superiority.Evaluate
+		*
+		(
+			((Game.IsCampaignGame == 0) * Function_Is_Starbase.Evaluate)
+			+
+			Function_Unit_Needs_To_Be_Disabled.Evaluate
+			+
+			Function_Aggressive_Personality.Evaluate
+		)
+		*
+		(
+			1.0
+			+
+			1.0 * (Variable_Target.Location.EnemyForce {Parameter_Category = GameObjectCategoryType[AntiBomber | Corvette]} == 0)
+			+
+			2.0 * (Variable_Target.Location.FriendlyForce {Parameter_Category = GameObjectCategoryType[Fighter|Corvette|Frigate|Capital|SuperCapital|SpaceHero]} > Variable_Target.Location.EnemyForce)
+			+
+			0.5 * (2000 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Fighter|Corvette|Frigate|Capital|SuperCapital|SpaceHero|SpaceStructure]})
+			+
+			2.0 * Variable_Target.Location.EnemyForce {Parameter_Category = GameObjectCategoryType[SuperCapital|SpaceHero]}
+		)
+		*
+		(1.0 - (Variable_Target.Force {Parameter_Category = GameObjectCategoryType[AntiBomber | Corvette]} > 0))
+	</Unit_Needs_To_Be_Bombed>
+
+	
+    <Unit_Needs_Escort>
+        (20.0 + 10.0 * (1 - Variable_Target.Health))
+		* 
+        (Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Capital|SuperCapital]} + Variable_Target.ContainsHero)
+		*
+		(1.0 + 5.0 * Function_Cautious_Personality.Evaluate)
+    </Unit_Needs_Escort>
+	
+	<Frigate_Needs_Escort>
+        (20.0 + 10.0 * (1 - Variable_Target.Health))
+		* 
+        (Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Frigate]})
+		*
+		(1.0 + 5.0 * Function_Cautious_Personality.Evaluate)
+    </Frigate_Needs_Escort>
+
+
+	<Space_Area_Is_Friendly>
+	  	(1.0 - 3.0 * Variable_Target.EnemyForce) *
+		(1.0 + Variable_Target.FriendlyForce)
+	</Space_Area_Is_Friendly>
+
+	
+	<Need_To_Hide_Units>
+		Game.IsCampaignGame
+		*
+		5 * Function_Space_Area_Is_Hidden.Evaluate
+	</Need_To_Hide_Units>
+
+
+	<Desire_To_Hide_At_Location>
+		(1 - Function_Should_Burn_Units_Space.Evaluate)
+		*
+		(Variable_Target.EnemyForce == 0.0)
+		*
+		(1 - Variable_Target.FriendlyForce)
+		*
+		(
+			1.0
+			+
+			(0#1>0.5) * 5 * (1000 > Script_GetDistanceToNearestSpaceField.Evaluate{Parameter_Script_String = "ASTEROID"})
+			+
+			(0#1>0.5) * 5 * (1000 > Script_GetDistanceToNearestSpaceField.Evaluate{Parameter_Script_String = "NEBULA"})
+		)
+		*
+		(60 > Game.Age)
+	</Desire_To_Hide_At_Location>
+
+
+	<Space_Area_Is_Hidden>
+		0.001
+		+
+		1 * (Function_Distance_To_Nearest_Enemy_Starbase.Evaluate > 4000)
+		+
+		1 * (Function_Distance_To_Nearest_Enemy_Starbase.Evaluate > 600)
+		+
+		2 * (Function_Distance_To_Nearest_Enemy_Starbase.Evaluate > 10000)
+		+
+		2 * (6000 > Function_Distance_To_Nearest_Friendly_Starbase.Evaluate)
+		+
+		2 * (Variable_Target.EnemyForce == 0.0) * (1.0 - Variable_Target.FriendlyForce)
+		+
+		1 * (1500 > Script_GetDistanceToNearestSpaceField.Evaluate{Parameter_Script_String = "ASTEROID"})
+		+
+		1 * (1500 > Script_GetDistanceToNearestSpaceField.Evaluate{Parameter_Script_String = "NEBULA"})
+	</Space_Area_Is_Hidden>
+
+
+	<Good_Space_Artillery_Area>
+		(Variable_Target.DistanceToNearestEnemy > 2000)
+		*
+		(
+			50.0
+			+
+			2.0 * Function_Space_Area_Is_Friendly.Evaluate
+			+
+			5.0 * (2000 > Script_GetDistanceToNearestSpaceField.Evaluate{Parameter_Script_String = "ASTEROID"})
+			+
+			5.0 * (2000 > Script_GetDistanceToNearestSpaceField.Evaluate{Parameter_Script_String = "NEBULA"})
+		)
+	</Good_Space_Artillery_Area>
+	
+	
+	<Good_Reinforce_Zone>
+		Function_Space_Area_Is_Friendly.Evaluate
+		*
+		(0.2 > Variable_Target.EnemyUnitConcentration)
+	</Good_Reinforce_Zone>
+
+
+	<Area_Needs_Sweeping>
+		(
+			(
+				(1 - Variable_Self.IsDefender * (Variable_Self.BaseLevel > 0)) 
+				* 
+				(Game.Age > (60 # 120))
+				+
+				(Game.IsCampaignGame == 0)
+			) > 0
+		)
+		*
+		Function_Fighter_Location_Isolated.Evaluate
+	</Area_Needs_Sweeping>
+
+
+	<Fighter_Location_Isolated>
+		Variable_Target.EnemyForce {Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Transport]}
+		/
+		(
+			Variable_Target.EnemyForce {Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Transport]}
+			+
+			Variable_Target.EnemyForce {Parameter_Category = GameObjectCategoryType[Corvette|Frigate|Capital|SpaceStructure]} 
+		)
+	</Fighter_Location_Isolated>
+	
+	
+	<Have_Fighter_Superiority>
+		Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Fighter|Bomber]} > Variable_Self.EnemyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Fighter|Bomber]}
+	</Have_Fighter_Superiority>
+
+
+	<Has_Space_Station>
+		(Variable_Target.StarbaseLevel > 0)
+	</Has_Space_Station>
+
+
+	<Has_Defense_Stations>
+		Variable_Self.HasUnit {
+			Parameter_Type = "Secondary_Golan_One",
+			Parameter_Type = "Secondary_Golan_Two",
+			Parameter_Type = "Secondary_Golan_Three",
+			Parameter_Type = "Valor_Station",
+			Parameter_Type = "Visvia",
+			Parameter_Type = "Brask"
+		}
+	</Has_Defense_Stations>
+
+
+	<Want_To_Retreat_From_Space>
+		50.0
+		*
+		(Variable_Enemy.FriendlyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Interdictor]} == 0.0)
+		*
+		(1.0 - Function_Has_Defense_Stations.Evaluate)
+		*
+		(1.0 - Script_UnitHasEnginesDisabled.Evaluate)
+		*
+		(Game.Age > 20)
+		*
+		(1 - Variable_Self.IsFaction{Parameter_Faction = "Hostile"})
+		*
+		(
+			(
+				Game.IsCampaignGame
+				*
+				(
+					(1.0 - Variable_Self.IsDefender) 
+					*
+					(
+						(
+							Function_EnemyForce_No_Shipyard.Evaluate > Variable_Self.FriendlyForceUnnormalized
+						)
+						+
+						(Function_Cautious_Personality.Evaluate + Function_Cowardly_Personality.Evaluate)
+						*
+						(
+							Function_EnemyForce_No_Shipyard.Evaluate > 0.85 * Variable_Self.FriendlyForceUnnormalized
+						)
+						+
+						5.0 * (Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Transport]} == Variable_Self.FriendlyForceUnnormalized)
+						+
+						(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Transport]} >= 100) *
+						(Function_EnemyForce_No_Shipyard.Evaluate > Variable_Self.FriendlyForceUnnormalized)
+					)
+					+
+					Variable_Self.IsDefender 
+					*
+					(
+						(
+							(2 >= Variable_Self.BaseLevel) 
+							*
+							(Variable_Enemy.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} >= (3.0 * Function_FriendlyForce_No_SpaceStructures.Evaluate))
+						)
+						+
+						(
+							(5 >= Variable_Self.BaseLevel) 
+							*
+							(Variable_Enemy.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} >= (4.0 * Function_FriendlyForce_No_SpaceStructures.Evaluate))
+						)
+						+
+						(	
+							3.0
+							*
+							(1 - Script_EvaluateInGalacticContext.Evaluate{Parameter_Script_String = "Self_Present"})
+							*
+							(Variable_Enemy.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} >= Function_FriendlyForce_No_SpaceStructures.Evaluate)
+						)
+						+
+						(
+							(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Transport]} >= 100)
+							*
+							(5 - Variable_Self.BaseLevel)
+							*
+							(Variable_Enemy.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} >= Function_FriendlyForce_No_SpaceStructures.Evaluate)
+						)
+						-
+						Function_Isolationist_Personality.Evaluate
+						-
+						(Script_EvaluateInGalacticContext.Evaluate{Parameter_Script_String = "GenericPlanetValue"} > 0.8)
+						-
+						Script_EvaluateInGalacticContext.Evaluate {Parameter_Script_String = "Has_Planetary_Weapon"}
+					)
+					+
+					(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Transport]} >= 200) *
+					(Variable_Enemy.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Corvette|Frigate|Capital|SuperCapital|SpaceHero]} > Function_FriendlyForce_No_SpaceStructures.Evaluate)
+				)
+			)
+			> 0
+		)
+	</Want_To_Retreat_From_Space>
+
+
+	<Allowed_To_Retreat_From_Space>
+		Game.IsCampaignGame
+		*
+		Variable_Self.CanRetreat
+	</Allowed_To_Retreat_From_Space>
+
+
+	<Should_Retreat_From_Space>
+		Function_Want_To_Retreat_From_Space.Evaluate
+		*
+		Function_Allowed_To_Retreat_From_Space.Evaluate
+	</Should_Retreat_From_Space>
+
+	<Needs_Hypervelocity_Shot>
+		(1 - (500 > Variable_Target.ForceUnnormalized))
+		*
+		Variable_Target.ForceNBTD
+		*
+		(1 - Function_Is_Starbase.Evaluate)
+	</Needs_Hypervelocity_Shot>
+
+	
+	<Needs_Ion_Shot>
+		(1 - (500 > Variable_Target.ForceUnnormalized))
+		*
+		(
+			2.5 * Variable_Target.ForceNBTD
+			+
+			Variable_Target.Shield
+			+
+			Variable_Target.AreEnginesOnline
+		)
+		*
+		(1 - Function_Is_Starbase.Evaluate)
+	</Needs_Ion_Shot>
+
+
+	<Unit_Isolation>
+		Variable_Target.Force / (Variable_Target.Location.EnemyForce + Variable_Target.Force)
+	</Unit_Isolation>
+
+
+	<Should_Firesale_Space>
+		Function_Want_To_Retreat_From_Space.Evaluate
+		*
+		(1 - Function_Allowed_To_Retreat_From_Space.Evaluate)
+		*
+		Game.IsCampaignGame
+	</Should_Firesale_Space>
+
+	
+	<Enemy_Retreating>
+		Variable_Enemy.IsRetreating
+	</Enemy_Retreating>
+
+	
+	<Self_Retreating>
+		Variable_Self.IsRetreating
+	</Self_Retreating>
+
+
+	<Is_Skirmish_Mode>
+		Game.IsCampaignGame == 0
+	</Is_Skirmish_Mode>
+
+
+	<Should_Burn_Units_Space>
+		50
+		*
+		(
+			Function_Want_To_Retreat_From_Space.Evaluate
+			*
+			(1 - Function_Allowed_To_Retreat_From_Space.Evaluate)
+		)
+		+
+		(
+			(Game.IsCampaignGame == 0)
+			*
+			(3 > Variable_Self.UnitSpaceAvailable)
+			*
+			(
+				(Variable_Self.ReinforcementsUnnormalized > Variable_Self.FriendlyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Corvette|Frigate]})
+				+
+				(Variable_Self.ReinforcementsUnnormalized > (Variable_Self.FriendlyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Corvette|Frigate]} * 0.25))
+				+
+				(Variable_Self.ReinforcementsUnnormalized > Variable_Self.EnemyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Corvette|Frigate]})
+			)
+			+
+			(Game.Age > 180.0)
+			*
+			(500.0 > Variable_Self.EnemyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Fighter | Bomber | Corvette | Frigate]})
+			+
+			(Game.Age > 300.0)
+			*
+			(Variable_Self.FriendlyForceUnnormalized > (4.0 * Variable_Self.EnemyForceUnnormalized))
+			*
+			((Function_Number_Resource_Structures_Space.Evaluate > 1) + Game.IsCampaignGame)
+		)
+	</Should_Burn_Units_Space>
+
+	
+	<Has_Hangar>
+		(Variable_Target.HardPointHealth {Parameter_Hard_Point_Type = HardPointType[Fighter_Bay]} > 0.0)
+	</Has_Hangar>
+	
+	
+	<Survival_Defeat>
+		Variable_Self.Force == 0.0
+	</Survival_Defeat>
+
+</Equations>

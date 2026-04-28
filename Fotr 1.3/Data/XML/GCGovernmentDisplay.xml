@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<Story>
+	<Event Name="Government_Setup">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Government_Display">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter01</Event_Param1>
+		<Story_Dialog>Dialog_Government_Display</Story_Dialog>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Chapter>0</Story_Chapter>
+		<Perpetual>true</Perpetual>
+		<Story_Tag>Government_Doc_Tag</Story_Tag>
+	</Event>
+	
+	
+	<Event Name="Influence_Doc_Close">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Government_Doc_Tag</Reward_Param1>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Government_Display</Prereq>		
+	</Event>
+
+</Story>

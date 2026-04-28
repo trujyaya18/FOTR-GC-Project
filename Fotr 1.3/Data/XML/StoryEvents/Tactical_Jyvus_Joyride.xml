@@ -1,0 +1,1016 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--******* Operation Durge's Lance: Jyvus Joyride ******-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Disable_Autoresolve">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Trigger_Keggle_Escaped">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Goal_01_25</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Keggle_Captured">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Keggle_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Disable_Keggle_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DISABLE_KEGGLE_DEATH</Event_Param2>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Keggle_Destroyed</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+	</Event>
+
+
+	<Event Name="Keggle_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>HOOLIDAN_KEGGLE</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_CIS_Act_I_Easy</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_I_Medium</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_I_Hard</Prereq>
+		<Prereq>Goal_Trigger_Rep_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Generator_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>GENERIC_POWER_GENERATOR</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Grievous_Respawn">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>General_Grievous, Grievous_Recusant_Ground, Grievous_Malevolence_Ground, Grievous_Munificent_Ground, Grievous_Soulless_One_Ground</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_CIS_Act_I_Easy</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_I_Medium</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_I_Hard</Prereq>
+	</Event>
+
+
+	<Event Name="Evacuation_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_01</Reward_Param1>
+		<Reward_Param2>5.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_02</Reward_Param1>
+		<Reward_Param2>7.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_03</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_03</Reward_Param1>
+		<Reward_Param2>5.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>60, 237, 71, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_04</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_04</Reward_Param1>
+		<Reward_Param2>7.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_05</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_05</Reward_Param1>
+		<Reward_Param2>8.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_06</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_06</Reward_Param1>
+		<Reward_Param2>9.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_07">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_07</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_07</Reward_Param1>
+		<Reward_Param2>10.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_08">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_08</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_08</Reward_Param1>
+		<Reward_Param2>7.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_09">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_09</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_09</Reward_Param1>
+		<Reward_Param2>10.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_10">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_10</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_10</Reward_Param1>
+		<Reward_Param2>6.3</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_11">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_11</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_11</Reward_Param1>
+		<Reward_Param2>6.7</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>60, 237, 71, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_12">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_12</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_12</Reward_Param1>
+		<Reward_Param2>11.8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_13">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_13</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_13</Reward_Param1>
+		<Reward_Param2>15.1</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_14">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_14</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_14</Reward_Param1>
+		<Reward_Param2>7.8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_15">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_15</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_15</Reward_Param1>
+		<Reward_Param2>3.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>60, 237, 71, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_16">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_16</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_16</Reward_Param1>
+		<Reward_Param2>9.9</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_17">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_17</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_17</Reward_Param1>
+		<Reward_Param2>7.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_18">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_18</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_18</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>60, 237, 71, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_19">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_19</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_19</Reward_Param1>
+		<Reward_Param2>7.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_20">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_20</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_20</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>60, 237, 71, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_21">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_21</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_21</Reward_Param1>
+		<Reward_Param2>10.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_22">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_22</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_22</Reward_Param1>
+		<Reward_Param2>12.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Evacuation_Speech_23">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EVACUATION_23</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_SPEECH_23</Reward_Param1>
+		<Reward_Param2>7.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_CIS_Act_I_Easy">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_I_EASY</Event_Param2>
+	</Event>
+
+	<Event Name="CIS_Goal_01_1_Easy">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_01</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_I_Easy</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_CIS_Act_I_Medium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_I_MEDIUM</Event_Param2>
+	</Event>
+
+	<Event Name="CIS_Goal_01_1_Medium">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_02</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_I_Medium</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_CIS_Act_I_Hard">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_I_HARD</Event_Param2>
+	</Event>
+
+	<Event Name="CIS_Goal_01_1_Hard">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_03</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_I_Hard</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_2">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>150</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_01</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_02</Reward_Param2>
+		<Prereq>CIS_Goal_01_1_Easy</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_3">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>100</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_02</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_03</Reward_Param2>
+		<Prereq>CIS_Goal_01_2</Prereq>
+		<Prereq>CIS_Goal_01_1_Medium</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_4">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>100</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_03</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_04</Reward_Param2>
+		<Prereq>CIS_Goal_01_3</Prereq>
+		<Prereq>CIS_Goal_01_1_Hard</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_5">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>100</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_04</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_05</Reward_Param2>
+		<Prereq>CIS_Goal_01_4</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_6">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>30</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_05</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_06</Reward_Param2>
+		<Prereq>CIS_Goal_01_5</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_7">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_06</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_07</Reward_Param2>
+		<Prereq>CIS_Goal_01_6</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_8">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_07</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_08</Reward_Param2>
+		<Prereq>CIS_Goal_01_7</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_9">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_08</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_09</Reward_Param2>
+		<Prereq>CIS_Goal_01_8</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_10">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_09</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_10</Reward_Param2>
+		<Prereq>CIS_Goal_01_9</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_11">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_10</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_11</Reward_Param2>
+		<Prereq>CIS_Goal_01_10</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_12">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_11</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_12</Reward_Param2>
+		<Prereq>CIS_Goal_01_11</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_13">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_12</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_13</Reward_Param2>
+		<Prereq>CIS_Goal_01_12</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_14">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_13</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_14</Reward_Param2>
+		<Prereq>CIS_Goal_01_13</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_15">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_14</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_15</Reward_Param2>
+		<Prereq>CIS_Goal_01_14</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_16">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_15</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_16</Reward_Param2>
+		<Prereq>CIS_Goal_01_15</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_17">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_16</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_17</Reward_Param2>
+		<Prereq>CIS_Goal_01_16</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_18">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_17</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_18</Reward_Param2>
+		<Prereq>CIS_Goal_01_17</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_19">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_18</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_19</Reward_Param2>
+		<Prereq>CIS_Goal_01_18</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_20">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_19</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_20</Reward_Param2>
+		<Prereq>CIS_Goal_01_19</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_21">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_20</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_21</Reward_Param2>
+		<Prereq>CIS_Goal_01_20</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_22">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_21</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_22</Reward_Param2>
+		<Prereq>CIS_Goal_01_21</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_23">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_22</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_23</Reward_Param2>
+		<Prereq>CIS_Goal_01_22</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_24">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_23</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_24</Reward_Param2>
+		<Prereq>CIS_Goal_01_23</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_25">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_24</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_25</Reward_Param2>
+		<Prereq>CIS_Goal_01_24</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_02_1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_01</Reward_Param1>
+		<Prereq>CIS_Goal_01_1_Easy</Prereq>
+		<Prereq>CIS_Goal_01_1_Medium</Prereq>
+		<Prereq>CIS_Goal_01_1_Hard</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_2">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>MISSION_CONTROL_PANEL</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_01</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_02</Reward_Param2>
+		<Prereq>CIS_Goal_02_1</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_3">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>MISSION_CONTROL_PANEL</Event_Param1>
+		<Event_Param3>2</Event_Param3>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_02</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_03</Reward_Param2>
+		<Prereq>CIS_Goal_02_1</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_4">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>MISSION_CONTROL_PANEL</Event_Param1>
+		<Event_Param3>3</Event_Param3>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_03</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_04</Reward_Param2>
+		<Prereq>CIS_Goal_02_1</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_01</Reward_Param1>
+		<Prereq>CIS_Goal_01_1, Trigger_Keggle_Captured</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_04</Reward_Param1>
+		<Prereq>CIS_Goal_02_4</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_01_ALT_25</Reward_Param1>
+		<Prereq>CIS_Goal_01_1, Trigger_Keggle_Escaped</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_CIS_02_ALT_01</Reward_Param1>
+		<Prereq>CIS_Goal_02_1, Trigger_Keggle_Escaped</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_Rep_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_I</Event_Param2>
+	</Event>
+
+	<Event Name="Rep_Goal_01_0">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_1">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>60</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_00</Reward_Param2>
+		<Prereq>Rep_Goal_01_0</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_2">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>60</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_00</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_01</Reward_Param2>
+		<Prereq>Rep_Goal_01_1</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_3">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>60</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_01</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_02</Reward_Param2>
+		<Prereq>Rep_Goal_01_2</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_4">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>30</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_02</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_03</Reward_Param2>
+		<Prereq>Rep_Goal_01_3</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_5">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_03</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_04</Reward_Param2>
+		<Prereq>Rep_Goal_01_4</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_6">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_04</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_05</Reward_Param2>
+		<Prereq>Rep_Goal_01_5</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_7">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_05</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_06</Reward_Param2>
+		<Prereq>Rep_Goal_01_6</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_8">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_06</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_07</Reward_Param2>
+		<Prereq>Rep_Goal_01_7</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_9">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_07</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_08</Reward_Param2>
+		<Prereq>Rep_Goal_01_8</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_10">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_08</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_09</Reward_Param2>
+		<Prereq>Rep_Goal_01_9</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_11">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_09</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_10</Reward_Param2>
+		<Prereq>Rep_Goal_01_10</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_12">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_10</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_11</Reward_Param2>
+		<Prereq>Rep_Goal_01_11</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_13">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_11</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_12</Reward_Param2>
+		<Prereq>Rep_Goal_01_12</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_14">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_12</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_13</Reward_Param2>
+		<Prereq>Rep_Goal_01_13</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_15">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_13</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_14</Reward_Param2>
+		<Prereq>Rep_Goal_01_14</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_16">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_14</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_15</Reward_Param2>
+		<Prereq>Rep_Goal_01_15</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_01_0</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_01_16, Trigger_Keggle_Escaped</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Victory_Rep</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_01_ALT_15</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_I, Trigger_Keggle_Captured</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_JYVUS_JOYRIDE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Victory_Rep</Prereq>
+	</Event>
+
+</Story>

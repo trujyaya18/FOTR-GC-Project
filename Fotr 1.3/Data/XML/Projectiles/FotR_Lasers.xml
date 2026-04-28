@@ -1,0 +1,417 @@
+<?xml version="1.0"?>
+<Projectiles>
+
+
+<!-- ************************************************************************************** -->
+<!-- ****** Blue Stuff, Used by the Galactic Republic: Quads, Duals, Singles ************** -->
+<!-- ************************************************************************************** -->
+
+
+	<!-- Laser Cannons: -->
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Light</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Dual_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Dual_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Dual_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Dual_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Dual_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Dual_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Quad_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Quad_Light_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Light_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Quad_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Quad_Medium_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Medium_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Quad_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Green_Blue_Quad_Heavy_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Heavy_Line</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Light</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Dual_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Dual_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Dual_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Dual_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Dual_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Dual_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Quad_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Quad_Light_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Light_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Quad_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Quad_Medium_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Medium_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Quad_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Green_Blue_Quad_Heavy_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Heavy_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<!-- Fighter Lasers: -->
+	<Projectile Name="Proj_Ship_Fighter_Laser_Cannon_Green_Blue">
+		<Variant_Of_Existing_Type>Proj_Ship_Fighter_Laser_Cannon_Blue</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Fighter_Laser_Cannon_Green_Blue_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Fighter_Laser_Cannon_Blue_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Fighter">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Fighter</Variant_Of_Existing_Type>
+	</Projectile>	
+		
+	<!-- Turbolasers: -->
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_UltraHeavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_UltraHeavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Dual_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Dual_Light</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Dual_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Dual_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Dual_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Dual_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Light_Line"> <!--even spacing-->
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Light_Line</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Light_Line2"> <!--2 pairs-->
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Light_Line2</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Medium_Line"> <!--even spacing-->
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Medium_Line</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Medium_Line2"> <!--2 pairs-->
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Medium_Line2</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Heavy_Line"> <!--even spacing-->
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Heavy_Line</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Quad_Heavy_Line2"> <!--2 pairs-->
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Heavy_Line2</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Triple_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Triple_Light_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Light_Line</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Triple_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Triple_Medium_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Medium_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Triple_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Green_Blue_Triple_Heavy_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Heavy_Line</Variant_Of_Existing_Type>
+	</Projectile>	
+	
+	
+
+	
+
+<!-- ************************************************************************************** -->
+<!-- ********** Red Stuff, Used by the Rebellion: Quads, Duals, Singles ******************* -->
+<!-- ************************************************************************************** -->
+
+	<!-- Laser Cannons: -->
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Light</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Dual_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Dual_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Dual_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Dual_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Dual_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Dual_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Quad_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Quad_Light_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Light_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Quad_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Quad_Medium_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Medium_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Quad_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Laser_Cannon_Red_Blue_Quad_Heavy_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Laser_Cannon_Blue_Quad_Heavy_Line</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Light</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Dual_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Dual_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Dual_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Dual_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Dual_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Dual_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Quad_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Quad_Light_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Light_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Quad_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Quad_Medium_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Medium_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Quad_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Rapid_Laser_Cannon_Red_Blue_Quad_Heavy_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Rapid_Laser_Cannon_Blue_Quad_Heavy_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<!-- Fighter Lasers: -->	
+	
+	<Projectile Name="Proj_Ship_Fighter_Laser_Cannon_Red_Blue">
+		<Variant_Of_Existing_Type>Proj_Ship_Fighter_Laser_Cannon_Blue</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Fighter_Laser_Cannon_Red_Blue_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Fighter_Laser_Cannon_Blue_Heavy</Variant_Of_Existing_Type>
+	</Projectile>	
+	
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Fighter">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Fighter</Variant_Of_Existing_Type>
+	</Projectile>	
+	
+	<!-- Turbolasers: -->
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Light">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Light</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Medium">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Medium</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Heavy">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Heavy</Variant_of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_UltraHeavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_UltraHeavy</Variant_Of_Existing_Type>
+	</Projectile>	
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Dual_Light">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Dual_Light</Variant_of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Dual_Medium">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Dual_Medium</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Dual_Heavy">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Dual_Heavy</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Light">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Light</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Light_Line"> <!--even spacing-->
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Light_Line</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Light_Line2"> <!--2 pairs-->
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Light_Line2</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Medium">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Medium</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Medium_Line"> <!--even spacing-->
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Medium_Line</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Medium_Line2"> <!--2 pairs-->
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Medium_Line2</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Heavy">
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Heavy</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Heavy_Line"> <!--even spacing-->
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Heavy_Line</Variant_of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Quad_Heavy_Line2"> <!--2 pairs-->
+		<Variant_of_Existing_Type>Proj_Ship_Turbolaser_Blue_Quad_Heavy_Line2</Variant_of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Triple_Light">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Light</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Triple_Light_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Light_Line</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Triple_Medium">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Medium</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Triple_Medium_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Medium_Line</Variant_Of_Existing_Type>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Triple_Heavy">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Heavy</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<Projectile Name="Proj_Ship_Turbolaser_Red_Blue_Triple_Heavy_Line">
+		<Variant_Of_Existing_Type>Proj_Ship_Turbolaser_Blue_Triple_Heavy_Line</Variant_Of_Existing_Type>
+	</Projectile>
+		
+</Projectiles>

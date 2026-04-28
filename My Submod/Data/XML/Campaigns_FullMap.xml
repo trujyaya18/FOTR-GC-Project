@@ -1,0 +1,1435 @@
+<?xml version="1.0"?>
+<Campaigns>
+
+	<Campaign Name="Sandbox_Full_Map">
+		<Campaign_Set> Sandbox_Full_Map </Campaign_Set>
+		<Sort_Order>30</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_FULL_MAP </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FULL_MAP </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		
+		<Is_Listed>false</Is_Listed>
+		<Tutorial>true</Tutorial>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Aargau,
+				Aargonar,
+				Abeloth_World,
+				Abhean,
+				Abregado_Rae,
+				Abridon,
+				Adumar,
+				Aeten,
+				Agamar,
+				Agomar,
+				Aguarl,
+				Ahch_To,
+				Ailon,
+				Ajan_Kloss,
+				Akuria,
+				Alagon,
+				Alaris,
+				Alashan,
+				Alderaan,
+				Alderaan_Graveyard,
+				Almania,
+				Alsakan,
+				Althir,
+				Alzoc,
+				Ambria,
+				Anaxes,
+				Ando,
+				Ando_Prime,
+				Annaj,
+				Ansion,
+				Antemeridias,
+				Anx_Minor,
+				Ardis,
+				Arized,
+				Arkania,
+				Aruza,
+				Atchorb,
+				Atravis,
+				Attahox,
+				Aturi,
+				Atzerri,
+				AX456,
+				Axxila,
+				Azure,
+				Bajic,
+				Bakura,
+				Balamak,
+				Balmorra,
+				Bandomeer,
+				Bannistar,
+				Barab,
+				Bardram_Scoft,
+				Barlok,
+				Basilisk,
+				Bassadro,
+				Bastion,
+				Batuu,
+				Bazaar,
+				Begeren,
+				Belderone,
+				Belgaroth,
+				Belkadan,
+				Belsavis,
+				Belsmuth,
+				Bescane,
+				Bespin,
+				Bestine,
+				Bilbringi,
+				Bimmiel,
+				Bimmisaari,
+				Bknos,
+				Black_Bantha_Nebula,
+				Bogo_Rai,
+				Bomis_Koori,
+				Bompreil,
+				Bonadan,
+				Boonta,
+				Borleias,
+				Bormter,
+				Bormus,
+				Borosk,
+				Botajef,
+				Bothawui,
+				Boz_Pity,
+				Bpfassh,
+				Brentaal,
+				Bresnia,
+				Brigia,
+				Byblos,
+				Byss,
+				Caamas,
+				Cal_Seti,
+				Calonica,
+				Cantonica,
+				Carida,
+				Carosi,
+				Carrivar,
+				Casfield,
+				Castell,
+				Cathar,
+				Catlia,
+				Cato_Neimoidia,
+				Cattamascar,
+				Cauldron_Nebula,
+				Cejansij,
+				Celanon,
+				Celwis,
+				Centares,
+				Cerea,
+				Champala,
+				Chandrila,
+				Chardaan,
+				Charros,
+				Charubah,
+				Chasin,
+				Chazwa,
+				Chorax,
+				Christophsis,
+				Chrondre,
+				Circumtore,
+				Ciutric,
+				Clakdor,
+				Codian_Moon,
+				Colla,
+				Columex,
+				Columus,
+				Comkin,
+				Commenor,
+				Comra,
+				Concord_Dawn,
+				Contruum,
+				Copero,
+				Cophrigin,
+				Corellia,
+				Cormit,
+				Corsin,
+				Corthenia,
+				Corulag,
+				Coruscant,
+				Corvis_Minor,
+				Crait,
+				Crakull,
+				Cron_Drift,
+				Crustai,
+				Csaus,
+				Csilla,
+				Cularin,
+				Da_Soocha,
+				Dagary_Minor,
+				Dagobah,
+				Dalron,
+				Daluuj,
+				Dantooine,
+				Danuta,
+				Darkon,
+				Datar,
+				Dathomir,
+				Deko_Neimoidia,
+				Delacrix,
+				Dellalt,
+				Denon,
+				Dentaal,
+				Derra,
+				Desevro,
+				Despayre,
+				Devaron,
+				Dioya,
+				Dkee,
+				Dolomar,
+				Doniphon,
+				Doornik,
+				DQar,
+				Dromund,
+				Druckenwell,
+				Dubrillion,
+				Durace,
+				Duro,
+				Durren,
+				Dxun,
+				Eadu,
+				Ebaq,
+				Eiattu,
+				Ejolus,
+				Elom,
+				Elrood,
+				Emberlene,
+				Emmer,
+				Empress_Teta,
+				Enarc,
+				Endor,
+				Entralla,
+				EolSha,
+				Eredenn,
+				Eres,
+				Eriadu,
+				Esfandia,
+				Essien,
+				Ession,
+				Etti,
+				Euceron,
+				Exegol,
+				Exocron,
+				Exodeen,
+				Exodo,
+				Explume_Minor,
+				Falleen,
+				Faras_Belt,
+				Farrfin,
+				Felucia,
+				Fenel,
+				Feriae_Junction,
+				Feswe_Prime,
+				Filve,
+				Flashpoint,
+				Florn,
+				Florrum,
+				Foerost,
+				Foless,
+				Fondor,
+				Formos,
+				Fresia,
+				Frunchettan,
+				Fwsen,
+		</Locations>
+		<Locations>
+				Gabredor,
+				Galantos,
+				Galidraan,
+				Gallinore,
+				Gamorr,
+				Ganath,
+				Gannaria,
+				Garos,
+				Garqi,
+				Gavryn,
+				Gelgelar,
+				Gendrah_Narvin,
+				Generis,
+				Genon,
+				Geonosis,
+				Geroon,
+				Gerrard,
+				Gestrex,
+				Gestron,
+				Ghorman,
+				Gizer,
+				Glee_Anselm,
+				Glom_Tho,
+				Glova,
+				Gobindi,
+				Gravan,
+				Gravlex_Med,
+				Grho,
+				Gymelo,
+				Gyndine,
+				Hakassi,
+				Halanit,
+				Halmad,
+				Halthor,
+				Handooine,
+				Hapes,
+				Haruun_Kal,
+				Hast,
+				Helska,
+				Herdessa,
+				Hewett,
+				Hijarna,
+				Hollastin,
+				Honoghr,
+				Hosnian_Prime,
+				Hoth,
+				Hoxim,
+				Huk,
+				Humbarine,
+				Hypori,
+				Iego,
+				Ilum,
+				Iol,
+				Iphigin,
+				Iridonia,
+				Iskadrell,
+				Ithor,
+				Ixtlar,
+				Jabiim,
+				Jaemus,
+				Jagas_Cluster,
+				Jakku,
+				Jaminere,
+				Jardeen,
+				Jazbina,
+				Jebble,
+				Jedha,
+				Jestan,
+				Jomark,
+				Jtptan,
+				Kaal,
+				Kabal,
+				Kafrene,
+				Kaikielius,
+				Kalaan,
+				Kalarba,
+				Kalee,
+				Kaliida_Nebula,
+				Kalist,
+				Kalla,
+				Kamino,
+				Kammia,
+				Kampe,
+				Kariek,
+				Kashyyyk,
+				Katana_Space,
+				Kattada,
+				Kauron,
+				Kayri,
+				Kem_Stor_Ai,
+				Keskin,
+				Kessel,
+				Ketal,
+				Ketaris,
+				Khomm,
+				Kile,
+				Kilji,
+				Kinoss,
+				Kirima,
+				Klatooine,
+				Kooriva,
+				Korda,
+				Korriban,
+				Koru_Neimoidia,
+				Kostra,
+				Kothlis,
+				Krant,
+				Kriselist,
+				Kuar,
+				Kuat,
+				Kwenn,
+				Laakteen,
+				Lakra,
+				Lantillies,
+				Latharra,
+				Levian,
+				Lianna,
+				Liinade,
+				Lioan,
+				Lizil,
+				Llanic,
+				Loedorvia,
+				Lok,
+				Lola_Sayu,
+				Lonnaw,
+				Loronar,
+				Lothal,
+				Lown,
+				Lucazec,
+				Lwhekk,
+				Lyran,
+				M293,
+				Makatak,
+				Makem_Te,
+				Malachor,
+				Malastare,
+				Maldra,
+				Manaan,
+				Manda,
+				Mandallia,
+				Mandalore,
+				Maridun,
+				Maryo,
+				Massoss,
+				Mechis,
+				Mendig,
+				Mephout,
+				Metalorn,
+				Metellos,
+				Mhaeli,
+				Mimban,
+				Mindor,
+				Minntooine,
+				MistOne,
+				MistThree,
+				MistTwo,
+				Miztoc,
+				Mon_Calamari,
+				Moonus_Mandel,
+				Moorja,
+				Morishim,
+				Movris,
+				Mrisst,
+				Mrlsst,
+				Mugg_Fallow,
+				Mulatan,
+				Mullan,
+				Munlali_Mafir,
+				Murgo,
+				Murkhana,
+				Mustafar,
+				Muunilinst,
+				Mygeeto,
+				Myrkr,
+				Mytus,
+				Naboo,
+				Nadiri,
+				Nal_Hutta,
+				Nam_Chorios,
+				Naporar,
+				Nar_Haaska,
+				Nar_Hekka,
+				Nar_Shaddaa,
+				Nath_Goordi,
+				Nazzri,
+				Nelvaan,
+				Nentan,
+				Nespis,
+				Nettehi,
+				New_Alderaan,
+				New_Bornalex,
+				New_Cov,
+				New_Plympto,
+				Nez_Peron,
+				Nihil,
+				Nimban,
+				Nirauan,
+				Nkllon,
+				Nocto,
+				Noonar,
+				Noquivzor,
+				Nouane,
+				Nubia,
+				Nulan,
+				Null_Zone,
+				Nzoth,
+				Obredaan,
+				Obroa_Skai,
+				Odik,
+				Ojom,
+				Omonoth,
+				Onderon,
+				Ord_Biniir,
+				Ord_Cantrell,
+				Ord_Cestus,
+				Ord_Mantell,
+				Ord_Pardron,
+				Ord_Radama,
+				Ord_Tiddell,
+				Ord_Trasi,
+				Ord_Vaug,
+				Ordo,
+				Oreen,
+				Orinda,
+				Orion,
+				Oristrom,
+				Orleon,
+				Orocco,
+				Orron,
+				Oslumpex,
+				Osseriton,
+				Ossus,
+				Paarin_Minor,
+				Pakrik_Minor,
+				Palanhi,
+				Pallaxides,
+				Pammant,
+				Pantolomin,
+				Pantora,
+				Parnassos,
+				Pashvi,
+				Perann_Nebula,
+				Peregrine,
+				Pesfavri,
+				Pesitiin,
+				Phaeda,
+				Phindar,
+				Pleknok,
+				Poderis,
+				Polis_Massa,
+				Poln_Major,
+				Polneye,
+				Polus,
+				Porchello,
+				Porus_Vida,
+				Praadost,
+				Praesitlyn,
+				Prakith,
+				Prefsbelt,
+				Prildaz,
+				Primea,
+				Qat_Chrystac,
+				Qiilura,
+				Qoribu,
+				Qretu,
+				Quelii,
+				Quell,
+				Quellor,
+				Quermia,
+				Quethold,
+				Ragmar,
+				Rago,
+				Rakata,
+				Ralltiir,
+				Randon,
+				Rapacc,
+				Rattatak,
+				Raxus,
+				Raxus_Second,
+				Rduba,
+				Reecee,
+				Relephon,
+				Rendili,
+				Rennek,
+				Rhand,
+				Rhen_Var,
+				Rhigar,
+				Rhommamool,
+				Riette,
+				Ringneldia,
+				Ringo_Vinda,
+				Rintonne,
+				Rion,
+				Rishi,
+				Roche,
+				Rodia,
+				Romin,
+				Ronyards,
+				Roqoo,
+				Rothana,
+				Roxuli,
+				Rudrig,
+				Ruusan,
+				Ryloth,
+				Ryndellia,
+				Ryvester,
+				RZ7,
+				Sacorria,
+				Saffalore,
+				Sagma,
+				Saijo,
+				Saleucami,
+				Salvara,
+				Sanjin,
+				Sanrafsix,
+				Sarapin,
+				Sarko,
+				Sarm,
+				Sarrish,
+				Sarvchi,
+				Scarif,
+				Scarl,
+				Schesa,
+				Scipio,
+				Selaggis,
+				Sellasas,
+				Serenno,
+				Sernpidal,
+				Serroco,
+				Seylott,
+				Shadren,
+				Shaylin,
+				Shedu_Maad,
+				Shner,
+				Shogun,
+				Shree,
+				Sifkric,
+				Siskeen,
+				Skye,
+				Sleheyron,
+				Sluis_Van,
+				Snevu,
+				Solaest,
+				Solem,
+				Solitair,
+				Stenos,
+				Stivic,
+				Storinal,
+				Stratos,
+				Sullust,
+				Sunrise,
+				Suurja,
+				Svivren,
+				Sy_Myrth,
+				Syca,
+				Syned,
+				Syni,
+				Taanab,
+				Talasea,
+				Talay,
+				Talcene,
+				Talfaglio,
+				Taloraan,
+				Talus_Tralus,
+				Tangrene,
+				Tar_Morden,
+				Taris,
+				Tartaglia,
+				Tatooine,
+				Tellanroaeg,
+				Telos,
+				Telti,
+				Tenupe,
+				Teptixii,
+				Terephon,
+				Teth,
+				Thanos,
+				The_Maw,
+				The_Redoubt,
+				The_Wheel,
+				Thila,
+				Thomork,
+				ThonBoka,
+				Thrago,
+				Thule,
+				Thustra,
+				Thyferra,
+				Tibrin,
+				Timora,
+				Tingel_Deepspace_Besh,
+				Togoria,
+				Ton_Falk,
+				Toola,
+				Toprawa,
+				Toydaria,
+				Trandosha,
+				Traval_Pacor,
+				Trian,
+				Triton,
+				Troukree,
+				Tsoss,
+				Tulpaa,
+				Tund,
+				Turak,
+				Turcan,
+				Turkana,
+				Tuskens_Eye,
+				Twilight_Void,
+				Tyan,
+				Tynna,
+				Tythe,
+				Ubrikkia,
+				Udray,
+				Ukio,
+				Ulda_Frav,
+				Ulicia,
+				Umarenk,
+				Umbara,
+				Urch,
+				Utapau,
+				Utegetu_Nebula,
+				Vagar_Praxut,
+				Vaklin,
+				Valahari,
+				Valc,
+				Vanquo,
+				Vassek,
+				Vena,
+				Vergesso,
+				Veroleem,
+				Vjun,
+				Volik,
+				Vondarc,
+				Vorpaya,
+				Vortex,
+				Vorzyd,
+				Vrosynri,
+				Vulpter,
+				VunHanna,
+				Wayland,
+				Wistril,
+				Woostri,
+				Woteba,
+				Wroona,
+				Wurrif,
+				Xa_Fel,
+				Xagobah,
+				Xeron,
+				Xo,
+				Yaga_Minor,
+				YagDhul,
+				Yashuvhu,
+				Yavin,
+				Yinchorr,
+				Ylesia,
+				Yoggoy,
+				Zaddja,
+				Zakuul,
+				Zanbar,
+				Zeltros,
+				Zfell,
+				Zonama,
+				Zonama_30BBY,
+				Zongorlu,
+				Zosha,
+				Zyzek,
+		</Locations>
+
+		<Trade_Routes>
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Mon_Calamari </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+        
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
+
+		<Rebel_Story_Name></Rebel_Story_Name>
+        <Empire_Story_Name></Empire_Story_Name>
+        
+		<AI_Player_Control> Empire, SkynetAI </AI_Player_Control>
+		
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel, 900 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+
+		<Starting_Forces>Rebel,Alagon,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Black_Bantha_Nebula,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Cauldron_Nebula,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Gavryn,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Alderaan_Graveyard,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Prildaz,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Kaliida_Nebula,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Katana_Space,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,M293,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,MistOne,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,MistThree,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,MistTwo,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Perann_Nebula,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Pesitiin,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Roche,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Scarl,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Selaggis,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Tellanroaeg,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,The_Redoubt,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Tsoss,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Tuskens_Eye,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Twilight_Void,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Utegetu_Nebula,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Vergesso,Generic_Star_Destroyer</Starting_Forces>
+		<Starting_Forces>Rebel,Roqoo,Generic_Star_Destroyer</Starting_Forces>
+
+		
+		<Starting_Forces> Rebel, Aargau, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Aargonar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Abhean, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Abregado_Rae, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Abridon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Adumar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Aeten, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Agamar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Agomar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Aguarl, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ahch_To, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ajan_Kloss, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Akuria, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Alagon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Alderaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Alderaan_Graveyard, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Alsakan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Althir, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Alzoc, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ambria, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Anaxes, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ando, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ando_Prime, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Annaj, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ansion, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Antemeridias, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Anx_Minor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ardis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Arized, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Atchorb, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Atravis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Aturi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Atzerri, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, AX456, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Axxila, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Azure, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bajic, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bakura, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Balamak, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Balmorra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bandomeer, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bannistar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Barab, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bardram_Scoft, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Barlok, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Basilisk, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bassadro, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bastion, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Batuu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bazaar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Begeren, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Belderone, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Belgaroth, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Belkadan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Belsavis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Belsmuth, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bescane, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bespin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bestine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bilbringi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bimmiel, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bimmisaari, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bknos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Black_Bantha_Nebula, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bogo_Rai, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bomis_Koori, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bompreil, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bonadan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Boonta, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Borleias, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bormter, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bormus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Borosk, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Botajef, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bothawui, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Boz_Pity, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bpfassh, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Brentaal, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Bresnia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Brigia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Byblos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Byss, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Caamas, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cal_Seti, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Calonica, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cantonica, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Carida, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Carosi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Carrivar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Casfield, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Castell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cathar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Catlia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cato_Neimoidia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cattamascar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cauldron_Nebula, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cejansij, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Celanon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Celwis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Centares, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cerea, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Champala, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Chandrila, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Chardaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Charros, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Charubah, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Chasin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Chazwa, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Chorax, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Christophsis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Chrondre, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Circumtore, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ciutric, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Clakdor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Codian_Moon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Colla, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Columex, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Columus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Comkin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Commenor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Comra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Concord_Dawn, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Contruum, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Copero, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cophrigin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Corellia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cormit, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Corsin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Corthenia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Corulag, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Coruscant, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Corvis_Minor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Crait, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Crakull, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cron_Drift, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Crustai, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Csaus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Csilla, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Cularin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Da_Soocha, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dagary_Minor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dagobah, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dalron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Daluuj, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dantooine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Danuta, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Darkon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Datar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dathomir, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Deko_Neimoidia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Delacrix, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dellalt, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Denon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dentaal, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Derra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Desevro, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Despayre, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Devaron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dioya, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dkee, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dolomar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Doniphon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Doornik, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, DQar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dromund, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Druckenwell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dubrillion, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Durace, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Duro, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Dxun, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Eadu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ebaq, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Eiattu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ejolus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Elom, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Elrood, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Emberlene, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Emmer, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Empress_Teta, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Enarc, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Endor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Entralla, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, EolSha, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Eres, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Eriadu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Esfandia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Essien, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ession, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Etti, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Euceron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Exegol, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Exocron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Exodeen, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Explume_Minor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Faras_Belt, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Farrfin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Felucia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Feriae_Junction, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Feswe_Prime, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Filve, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Flashpoint, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Florn, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Florrum, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Foerost, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Foless, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Fondor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Formos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Fresia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Frunchettan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Fwsen, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gabredor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Galantos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Galidraan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gallinore, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gamorr, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ganath, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gannaria, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Garos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Garqi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gavryn, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gelgelar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gendrah_Narvin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Generis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Geonosis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Geroon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gerrard, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gestrex, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gestron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ghorman, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gizer, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Glee_Anselm, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Glom_Tho, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Glova, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gravan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gravlex_Med, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Grho, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gymelo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Gyndine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hakassi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Halanit, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Halmad, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Halthor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Handooine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hapes, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hast, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Helska, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Herdessa, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hewett, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hijarna, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hollastin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Honoghr, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hosnian_Prime, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hoth, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hoxim, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Humbarine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Hypori, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Iego, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ilum, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Iol, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Iphigin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Iridonia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Iskadrell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ithor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ixtlar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jabiim, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jaemus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jagas_Cluster, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jakku, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jaminere, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jardeen, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jazbina, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jebble, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jedha, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jestan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jomark, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Jtptan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kaal, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kabal, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kafrene, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kaikielius, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kalaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kalarba, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kalee, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kaliida_Nebula, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kalist, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kalla, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kamino, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kammia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kampe, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kariek, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kashyyyk, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Katana_Space, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kattada, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kauron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kem_Stor_Ai, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Keskin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kessel, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ketal, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ketaris, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Khomm, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kile, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kilji, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kinoss, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kirima, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Klatooine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kooriva, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Korda, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Korriban, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Koru_Neimoidia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kostra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kothlis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Krant, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kriselist, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kuat, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Kwenn, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Laakteen, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lakra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lantillies, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Latharra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Levian, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lianna, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Liinade, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lioan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lizil, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Llanic, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lonnaw, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Loronar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lothal, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lown, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lucazec, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lwhekk, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Lyran, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, M293, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Makatak, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Makem_Te, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Malachor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Malastare, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Maldra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Manaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Manda, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mandalore, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Maridun, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Maryo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Massoss, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mechis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mephout, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Metalorn, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Metellos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mhaeli, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mimban, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mindor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Minntooine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, MistOne, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, MistThree, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, MistTwo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Miztoc, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mon_Calamari, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Moonus_Mandel, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Moorja, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Morishim, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Movris, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mrisst, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mrlsst, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mugg_Fallow, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mullan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Munlali_Mafir, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Murgo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Murkhana, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mustafar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Muunilinst, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mygeeto, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Myrkr, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Mytus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Naboo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nal_Hutta, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nam_Chorios, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Naporar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nar_Haaska, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nar_Shaddaa, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nath_Goordi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nazzri, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nelvaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nentan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nespis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nettehi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, New_Alderaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, New_Bornalex, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, New_Cov, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, New_Plympto, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nez_Peron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nihil, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nimban, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nirauan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nkllon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nocto, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Noonar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Noquivzor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nouane, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nubia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nulan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Nzoth, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Obredaan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Obroa_Skai, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Odik, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ojom, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Omonoth, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Onderon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Biniir, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Cantrell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Cestus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Mantell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Pardron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Radama, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Tiddell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Trasi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ord_Vaug, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ordo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Oreen, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orinda, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orion, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Oristrom, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orleon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orocco, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Orron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Oslumpex, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Osseriton, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ossus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Paarin_Minor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Pakrik_Minor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Palanhi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Pammant, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Pantolomin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Parnassos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Pashvi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Perann_Nebula, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Peregrine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Pesfavri, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Pesitiin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Phaeda, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Phindar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Pleknok, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Poderis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Polis_Massa, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Poln_Major, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Polneye, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Porchello, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Porus_Vida, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Praadost, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Praesitlyn, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Prakith, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Prefsbelt, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Prildaz, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Primea, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Qat_Chrystac, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Qiilura, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Qoribu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Qretu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Quelii, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Quell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Quellor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Quermia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Quethold, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ragmar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rago, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rakata, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ralltiir, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Randon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rapacc, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rattatak, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Raxus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Raxus_Second, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rduba, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Reecee, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Relephon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rendili, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rennek, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rhand, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rhen_Var, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rhigar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Riette, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ringneldia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ringo_Vinda, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rintonne, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rion, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rishi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Roche, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rodia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Romin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ronyards, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Roqoo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rothana, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Roxuli, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Rudrig, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ruusan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ryloth, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ryndellia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ryvester, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, RZ7, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sacorria, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Saffalore, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sagma, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Saijo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Saleucami, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Salvara, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sanjin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sanrafsix, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sarapin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sarko, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sarm, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sarrish, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sarvchi, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Scarif, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Scarl, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Schesa, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Scipio, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Selaggis, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sellasas, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sernpidal, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Serroco, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Seylott, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Shadren, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Shaylin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Shedu_Maad, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Shner, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Shree, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sifkric, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Siskeen, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Skye, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sleheyron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sluis_Van, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Snevu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Solaest, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Solem, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Solitair, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Stenos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Stivic, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Stratos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sullust, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sunrise, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Suurja, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Svivren, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Sy_Myrth, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Syca, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Syned, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Syni, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Taanab, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Talasea, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Talay, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Talcene, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Talfaglio, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Talus_Tralus, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tangrene, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tar_Morden, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Taris, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tartaglia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tatooine, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tellanroaeg, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Telos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Telti, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tenupe, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Teptixii, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Terephon, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Teth, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Thanos, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, The_Maw, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, The_Redoubt, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Thila, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Thomork, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Thrago, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Thule, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Thustra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Thyferra, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tibrin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Timora, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tingel_Deepspace_Besh, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Togoria, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ton_Falk, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Toola, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Toprawa, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Toydaria, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Traval_Pacor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Trian, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Triton, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Troukree, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tsoss, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tulpaa, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Turak, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Turcan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Turkana, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tuskens_Eye, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Twilight_Void, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tyan, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tynna, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Tythe, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ubrikkia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Udray, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ukio, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ulicia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Umarenk, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Umbara, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Urch, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Utapau, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Utegetu_Nebula, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vagar_Praxut, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vaklin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Valc, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vanquo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vassek, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vena, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vergesso, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Veroleem, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vjun, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Volik, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vondarc, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vorpaya, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vorzyd, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vrosynri, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Vulpter, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, VunHanna, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Wayland, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Wistril, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Woostri, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Woteba, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Wroona, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Wurrif, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Xa_Fel, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Xagobah, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Xeron, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Xo, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Yaga_Minor, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, YagDhul, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Yashuvhu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Yinchorr, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Ylesia, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Yoggoy, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zaddja, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zakuul, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zanbar, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zeltros, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zfell, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zonama, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zonama_30BBY, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zongorlu, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zosha, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Zyzek, NewRep_SenatorsOffice </Starting_Forces>
+
+		
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire, 900 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Empire, Coruscant, Generic_Venator</Starting_Forces>
+
+	</Campaign>	
+
+ </Campaigns>

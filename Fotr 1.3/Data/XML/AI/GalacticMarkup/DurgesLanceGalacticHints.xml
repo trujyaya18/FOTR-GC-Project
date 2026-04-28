@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+	<Planets HintSet="Galactic_Hints">
+		<!-- CIS Planets -->
+		<YagDhul>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</YagDhul>
+
+		<!-- Republic Planets -->
+		<Kuat>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>4.0</PriorityTarget>
+		</Kuat>
+
+		<Duro>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Duro>
+
+		<Byss>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Byss>
+
+		<Kaikielius>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Kaikielius>
+
+		<Humbarine>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Humbarine>
+	</Planets>
+</Galactic_Markup>

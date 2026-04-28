@@ -1,0 +1,672 @@
+<?xml version="1.0"?>
+<CommandBarComponents>
+	<CommandBarComponent Name="Text_Day_Counter">
+            <Type>TextButton</Type>
+            <Font_Name>Arial bold</Font_Name>
+            <Font_Point_Size>6</Font_Point_Size>
+            <Text_Color>255 212 33 255</Text_Color>
+            <Tooltip_Text />
+            <Text_Offset>0 0</Text_Offset>
+            <Left_Justified>True</Left_Justified>
+    </CommandBarComponent>
+	<CommandBarComponent Name="Text_Planetary_Income">
+            <Type>TextButton</Type>
+            <Font_Name>EmpireAtWar-Medium</Font_Name>
+            <Font_Point_Size>7</Font_Point_Size>
+            <Text_Color>255 255 255 255</Text_Color>
+            <Tooltip_Text>TEXT_TOOLTIP_CREDITS_CURRENT</Tooltip_Text>
+            <Right_Justified>True</Right_Justified>
+            <Text_Offset>0 0</Text_Offset>
+    </CommandBarComponent>
+	<CommandBarComponent Name="Planetary_Income_number">
+           <Type>TextButton</Type>
+           <Font_Name>EmpireAtWar-Medium</Font_Name>
+           <Font_Point_Size>7</Font_Point_Size>
+           <Text_Emboss>True</Text_Emboss>
+           <Text_Outline>False</Text_Outline>
+           <Text_Color>255 212 33 255</Text_Color>
+           <Base_Layer>3</Base_Layer>
+           <Right_Justified>True</Right_Justified>
+   </CommandBarComponent>
+   <CommandBarComponent Name="Text_Tech_Level">
+            <Type>TextButton</Type>
+            <Tooltip_Text>TEXT_TOOLTIP_TECH_LEVEL TEXT_TOOLTIP_TECH_LEVEL_REBEL TEXT_TOOLTIP_TECH_LEVEL_EMPIRE</Tooltip_Text>
+            <Group>Tech_Level</Group>
+            <Font_Name>Arial Bold</Font_Name>
+            <Font_Point_Size>8</Font_Point_Size>
+            <Text_Color>0 0 0 255</Text_Color>
+            <Left_Justified>True</Left_Justified>
+            <Scale>0.0</Scale>
+    </CommandBarComponent>
+	<CommandBarComponent Name="Text_Tactical_Tech">
+            <Type>TextButton</Type>
+            <Tooltip_Text>TEXT_TOOLTIP_TECH_LEVEL TEXT_TOOLTIP_TECH_LEVEL_REBEL TEXT_TOOLTIP_TECH_LEVEL_EMPIRE</Tooltip_Text>
+            <Group>Tactical_Tech_Level</Group>
+            <Font_Name>Arial Bold</Font_Name>
+            <Font_Point_Size>8</Font_Point_Size>
+            <Text_Color>0 0 0 255</Text_Color>
+            <Left_Justified>True</Left_Justified>
+            <Scale>0.0</Scale>
+    </CommandBarComponent>
+	 <CommandBarComponent Name="Text_Allegiance_A">
+            <Type>Icon</Type>
+            <Icon_Alternate_Texture_Name>
+			i_button_command_bar_rebel_symbol.tga 
+			i_button_command_bar_empire_symbol.tga 
+			i_button_command_bar_pirate_symbol.tga
+			I_BUTTON_COMMAND_BAR_FREESIDE_SYMBOL.tga
+			I_BUTTON_COMMAND_BAR_CIS_SYMBOL.TGA
+			I_BUTTON_COMMAND_BAR_REPUBLIC_SYMBOL.TGA
+			</Icon_Alternate_Texture_Name>
+            <Scale>1.0</Scale>
+            <Cross_Fade>True</Cross_Fade>
+    </CommandBarComponent>
+	<CommandBarComponent Name="g_planet_land_forces">
+            <Type>Button</Type>
+            <Blank_Texture_Name> fleet_empty.tga fleet_stacks_01.tga fleet_stacks_02.tga fleet_stacks_03.tga fleet_stacks_04.tga fleet_stacks_05.tga </Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_unknown.tga</Icon_Texture_Name>
+            <Icon_Alternate_Texture_Name>
+			i_button_command_bar_rebel_symbol.tga 
+			i_button_command_bar_empire_symbol.tga 
+			i_button_command_bar_pirate_symbol.tga
+			I_BUTTON_COMMAND_BAR_FREESIDE_SYMBOL.tga
+			I_BUTTON_COMMAND_BAR_CIS_SYMBOL.TGA
+			I_BUTTON_COMMAND_BAR_REPUBLIC_SYMBOL.TGA
+			</Icon_Alternate_Texture_Name>
+            <Mouse_Over_Texture_Name>i_icon_ground_units_select.tga i_button_unit_frame_space.tga</Mouse_Over_Texture_Name>
+            <No_Shell>True</No_Shell>
+            <Scale>1.0</Scale>
+            <Base_Layer>0</Base_Layer>
+            <Drag_And_Drop>True</Drag_And_Drop>
+            <Color>255 255 255 255</Color>
+            <Size>0.75 0</Size>      <!-- x = icon scale -->
+            <Offset>3 5</Offset>    <!-- x = pixels to offset per stack layer, y = y offset -->
+    </CommandBarComponent>
+		
+	 <CommandBarComponent Name="g_special_ability">
+            <Type>TextButton</Type>
+            <Blank_Texture_Name>i_button_unit_frame_dark.tga</Blank_Texture_Name>
+             <Icon_Alternate_Texture_Name>
+			i_button_command_bar_rebel_symbol.tga 
+			i_button_command_bar_empire_symbol.tga 
+			i_button_command_bar_pirate_symbol.tga
+			I_BUTTON_COMMAND_BAR_FREESIDE_SYMBOL.tga
+			I_BUTTON_COMMAND_BAR_CIS_SYMBOL.TGA
+			I_BUTTON_COMMAND_BAR_REPUBLIC_SYMBOL.TGA
+			</Icon_Alternate_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_unit_frame_space.tga i_button_unit_frame_space.tga i_button_unit_frame_space.tga i_button_unit_frame_space.tga</Mouse_Over_Texture_Name>
+            <No_Shell>True</No_Shell>
+            <Scale>0.55</Scale>
+            <Drag_And_Drop>True</Drag_And_Drop>
+            <Base_Layer>0</Base_Layer>
+            <Font_Name>EmpireAtWar-Medium</Font_Name>
+            <Font_Point_Size>6</Font_Point_Size>
+            <Text_Offset>-18 0</Text_Offset>
+            <Text_Color>247 170 70 255</Text_Color>
+            <Offset>-33 -20</Offset>                  <!-- x = offset to right of planet, y = offset to next ability -->
+            <Right_Justified>True</Right_Justified>
+    </CommandBarComponent>
+	
+	 <CommandBarComponent Name="g_radar_blip">
+            <Type>Button</Type>
+            <Icon_Texture_Name>i_radar_galactic_planet.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_radar_galactic_planet_hilite.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_radar_galactic_planet_selected.tga</Selected_Texture_Name>
+            <Flash_Texture_Name>i_radar_galactic_planet_flash.tga</Flash_Texture_Name>
+            <No_Shell>True</No_Shell>
+            <Scale>0.65</Scale>
+            <Base_Layer>3</Base_Layer>
+            <Tab>True</Tab>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_option_g">
+             <Type>TextButton</Type>
+             <Scale>0.75</Scale>
+			 <Icon_Texture_Name>i_button_command_bar_options.tga</Icon_Texture_Name>
+             <Mouse_Over_Texture_Name>i_button_command_bar_options_over.tga</Mouse_Over_Texture_Name>
+             <Selected_Texture_Name>i_button_command_bar_options_press.tga</Selected_Texture_Name>
+             <Disabled_Texture_Name>i_button_command_bar_options_disabled.tga</Disabled_Texture_Name>
+             <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+             <Click_SFX>GUI_Button_Press_2_SFX</Click_SFX>
+            <Selected_Alpha>True</Selected_Alpha>
+             <Tooltip_Text>TEXT_BUTTON_MAIN_MENU</Tooltip_Text>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters0">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+	<Tooltip_Text>TEXT_TOOLTIP_CREDIT_FILTER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_filter1.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_filter1_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter1.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_0</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+				<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+    <CommandBarComponent Name="b_filters1">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+	<Tooltip_Text>TEXT_TOOLTIP_BASE_LEVEL_FILTER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_filter2.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_filter2_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter2.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_1</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+				<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+    <CommandBarComponent Name="b_filters2">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+	<Tooltip_Text>TEXT_TOOLTIP_ABILITY_WEATHER_FILTER_02</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_filter3.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_filter3_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter3.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_2</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+				<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+    <CommandBarComponent Name="b_filters3">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_TOOLTIP_HERO_FILTER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_filter4.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_filter4_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_3</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+				<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters4">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_FIGHTER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_fighters.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_fighters_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter2.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+    <CommandBarComponent Name="b_filters5">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_CORVETTE</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_corvettes.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_corvettes_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter3.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+   
+	<CommandBarComponent Name="b_filters6">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_FRIGATE</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_frigates.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_frigates_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+    <CommandBarComponent Name="b_filters7">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_CRUISER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_cruisers.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_cruisers_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+    <CommandBarComponent Name="b_filters8">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_DESTROYER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_destroyers.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_destroyers_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+    <CommandBarComponent Name="b_filters9">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_HVY_CRUISER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_heavy_cruisers.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_heavy_cruisers_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+	<CommandBarComponent Name="b_filters10">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_HVY_BATTLECRUISER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_heavy_battle_cruisers.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_heavy_battle_cruisers_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters11">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_SSD</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_supers.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_supers_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+	<CommandBarComponent Name="b_filters12">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_INFANTRY</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_infantry_barracks.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_infantry_barracks_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+	<CommandBarComponent Name="b_filters13">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_LIGHT_VEHICLE</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_light_factory.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_light_factory_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+	<CommandBarComponent Name="b_filters14">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_HEAVY_VEHICLE</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_heavy_vehicle_factory.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_heavy_vehicle_factory_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+	<CommandBarComponent Name="b_filters15">
+           <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_HEAVY_WALKER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_WALKER.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_WALKER_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters16">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_SPEEDER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_SPEEDER.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_SPEEDER_PRESS.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters17">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_AIRCRAFT</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_AIRCRAFT.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_AIRCRAFT_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters18">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_STRUCTURES</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_STRUCTURES.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_STRUCTURES_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters19">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_SELL_UPGRADE</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_SELL_STRUCTURES.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_SELL_STRUCTURES_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters20">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_UPGRADES</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_UP.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_UP_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters21">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_RBUNITS</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_RB.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_RB_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters22">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_FLEETS</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_FLEET.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_FLEET_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	
+	<CommandBarComponent Name="b_filters23">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTON_FACTORYSHIP</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_FACTORY_SHIP.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_FACTORY_SHIP_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_5</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+		
+	<CommandBarComponent Name="b_camera_g">
+            <Type>TextButton</Type>
+			<Scale>0.5</Scale>
+            <Icon_Texture_Name>i_button_command_bar_camera.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_filter_over.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_camera_disabled.tga</Disabled_Texture_Name>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+            <Click_SFX>GUI_Button_Press_2_SFX</Click_SFX>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Tooltip_Text>TEXT_MOVIE_MODE</Tooltip_Text>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	<CommandBarComponent Name="b_option_g">
+             <Type>TextButton</Type>
+             <Scale>0.75</Scale>
+			 <Icon_Texture_Name>i_button_command_bar_options.tga</Icon_Texture_Name>
+             <Mouse_Over_Texture_Name>i_button_command_bar_options_over.tga</Mouse_Over_Texture_Name>
+             <Selected_Texture_Name>i_button_command_bar_options_press.tga</Selected_Texture_Name>
+             <Disabled_Texture_Name>i_button_command_bar_options_disabled.tga</Disabled_Texture_Name>
+             <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+             <Click_SFX>GUI_Button_Press_2_SFX</Click_SFX>
+            <Selected_Alpha>True</Selected_Alpha>
+             <Tooltip_Text>TEXT_BUTTON_MAIN_MENU</Tooltip_Text>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+	<CommandBarComponent Name="radar_galactic">
+            <Type>Button</Type>
+            <Size>65 65</Size>
+    </CommandBarComponent>
+	<CommandBarComponent Name="radar_galactic_adv_map">
+           <Type>Button</Type>
+           <Size>65 65</Size>
+   </CommandBarComponent>
+	<CommandBarComponent Name="g_planet_name">
+            <Type>TextButton</Type>
+            <Scale>1.0</Scale>
+            <Font_Name>EmpireAtWar-Bold</Font_Name>
+            <Alternate_Font_Name>EmpireAtWar-Medium, EmpireAtWar-Medium, EmpireAtWar-Bold</Alternate_Font_Name>
+            <Font_Point_Size>5</Font_Point_Size>
+            <Text_Offset>0 0</Text_Offset>
+            <Text_Offset2>0 -17</Text_Offset2>
+            <Text_Outline>True</Text_Outline>
+            <Text_Color2>255 255 255 180</Text_Color2>
+            <No_Shell>True</No_Shell>
+            <Left_Justified>True</Left_Justified>
+            <Base_Layer>0</Base_Layer>
+            <Offset>15 0</Offset>    <!-- x = pixels to offset planet name -->
+    </CommandBarComponent>
+	<CommandBarComponent Name="g_planet_fleet">
+            <Type>Button</Type>
+            <Blank_Texture_Name> fleet_empty.tga fleet_stacks_01.tga fleet_stacks_02.tga fleet_stacks_03.tga fleet_stacks_04.tga fleet_stacks_05.tga </Blank_Texture_Name>
+            <!-- Order of icons : Rebel, Empire, Pirate, Raid, Death Star -->
+            <Icon_Alternate_Texture_Name>i_encyclopedia_rebel_symbol.tga i_encyclopedia_empire_symbol.tga i_encyclopedia_pirates_symbol.tga i_encyclopedia_underworld_symbol.tga i_encyclopedia_hutt_symbol.tga i_button_command_bar_rebel_symbol_raid.tga i_button_command_bar_death_star_symbol.tga</Icon_Alternate_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_unit_frame_space.tga i_button_unit_frame_space.tga i_button_unit_frame_space.tga i_button_unit_frame_space.tga</Mouse_Over_Texture_Name>
+            <No_Shell>True</No_Shell>
+            <Scale>0.5</Scale>
+            <Drag_And_Drop>True</Drag_And_Drop>
+            <Base_Layer>0</Base_Layer>
+            <Group>Fleet Icon</Group>
+            <Size>0.5 5</Size>      <!-- x = icon scale, y = amount to y-offset icon in encyclopedia header -->
+            <Offset>3 37</Offset>    <!-- x = pixels to offset per stack layer, y = center fleet y offset -->
+            <Default_Offset>25 32</Default_Offset> <!-- x = left/right fleet x offset, y = left/right fleet y offset -->
+            <Drag_Back>True</Drag_Back> <!-- show the pancakes while dragging -->
+    </CommandBarComponent>
+	<CommandBarComponent Name="g_planet_land_forces">
+            <Type>Button</Type>
+            <Blank_Texture_Name> fleet_empty.tga fleet_stacks_01.tga fleet_stacks_02.tga fleet_stacks_03.tga fleet_stacks_04.tga fleet_stacks_05.tga </Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_unknown.tga</Icon_Texture_Name>
+            <Icon_Alternate_Texture_Name>i_button_command_bar_rebel_symbol.tga i_button_command_bar_empire_symbol.tga i_button_command_bar_pirate_symbol.tga</Icon_Alternate_Texture_Name>
+            <Mouse_Over_Texture_Name>i_icon_ground_units_select.tga i_button_unit_frame_space.tga</Mouse_Over_Texture_Name>
+            <No_Shell>True</No_Shell>
+            <Scale>0.5</Scale>
+            <Base_Layer>0</Base_Layer>
+            <Drag_And_Drop>True</Drag_And_Drop>
+            <Color>255 255 255 255</Color>
+            <Size>0.5 0</Size>      <!-- x = icon scale -->
+            <Offset>3 5</Offset>    <!-- x = pixels to offset per stack layer, y = y offset -->
+    </CommandBarComponent>
+	
+</CommandBarComponents>

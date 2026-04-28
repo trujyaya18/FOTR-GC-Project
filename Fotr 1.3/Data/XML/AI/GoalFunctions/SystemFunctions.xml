@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--   -->
+<FunctionSet>
+
+	 <AlwaysOff>
+		 <Goal>AlwaysOff</Goal>
+		 <Function>Zero</Function>
+	 </AlwaysOff>
+	 
+	 <Debug_Goal_Galactic>
+		 <Goal>Debug_Goal_Galactic</Goal>
+		 <Function>Player_Danger_Score</Function>
+	 </Debug_Goal_Galactic>
+
+</FunctionSet>

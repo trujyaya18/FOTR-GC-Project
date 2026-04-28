@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<FunctionSet>
+
+	<Hunt_Malevolence>
+		<Goal>Hunt_Malevolence</Goal>
+		<Function> Hunt_Malevolence </Function>
+	</Hunt_Malevolence>
+	
+</FunctionSet>

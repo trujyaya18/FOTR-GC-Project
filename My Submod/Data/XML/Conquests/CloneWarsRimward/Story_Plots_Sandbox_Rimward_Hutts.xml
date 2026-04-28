@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<!--******************************************************-->
+<!--*****   Fall of the Republic: Rimward Campaign   *****-->
+<!--******************************************************-->
+
+<Story_Mode_Plots>
+	<Lua_Script>GCPlayerAgnosticRimward</Lua_Script>
+	<Active_Plot>Conquests\Player_Agnostic_Plot.xml</Active_Plot>
+
+	<Lua_Script>GCRimward</Lua_Script>
+	<Active_Plot>Conquests\CloneWarsRimward\Story_Sandbox_Rimward_Hutts.XML</Active_Plot>
+</Story_Mode_Plots>

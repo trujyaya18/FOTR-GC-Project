@@ -1,0 +1,350 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--*** Hunt for the Malevolence: Subjugator Sabotage ***-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Disable_Autoresolve">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Prevent_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicMissionAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Trigger_Padme_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PADME_REACHED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Bridge_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BRIDGE_REACHED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Hyperdrive_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HYPERDRIVE_REACHED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Escape_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ESCAPE_REACHED</Event_Param2>
+	</Event>
+
+
+	<Event Name="Trigger_Refill_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REFILL_01</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_Refill_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REFILL_02</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_Refill_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REFILL_03</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_Refill_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REFILL_04</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Grievous_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>GENERAL_GRIEVOUS</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Anakin_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>ANAKIN2</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Obi_Wan_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>OBI_WAN</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Padme_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>PADME_AMIDALA</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Republic_Heroes_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Anakin_Destroyed</Prereq>
+		<Prereq>Obi_Wan_Destroyed</Prereq>
+		<Prereq>Padme_Destroyed</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Subjugator_Sabotage_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Abregado_Rae</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_SUBJUGATOR_SABOTAGE.TED</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Subjugator_Sabotage.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_PLAYER</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Republic_Heroes_Death</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_Trigger_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_I</Event_Param2>
+	</Event>
+
+	<Event Name="Rep_Goal_Trigger_Act_II">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_II</Event_Param2>
+	</Event>
+
+	<Event Name="Rep_Goal_Trigger_Act_III">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_III</Event_Param2>
+	</Event>
+
+	<Event Name="Rep_Goal_Trigger_Act_IV">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_IV</Event_Param2>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_Trigger_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Rep_Goal_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_04">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_04</Reward_Param1>
+		<Prereq>Rep_Goal_03</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_05</Reward_Param1>
+		<Prereq>Rep_Goal_Trigger_Act_II</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_06">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_06</Reward_Param1>
+		<Prereq>Rep_Goal_Trigger_Act_III</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_07">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_07</Reward_Param1>
+		<Prereq>Rep_Goal_Trigger_Act_IV</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_01, Trigger_Padme_Reached</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Rep_Goal_03, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_04_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_04</Reward_Param1>
+		<Prereq>Rep_Goal_04, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_05_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_05</Reward_Param1>
+		<Prereq>Rep_Goal_05, Trigger_Bridge_Reached</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_06_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_06</Reward_Param1>
+		<Prereq>Rep_Goal_06, Trigger_Hyperdrive_Reached</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_07_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_07</Reward_Param1>
+		<Prereq>Rep_Goal_07, Trigger_Escape_Reached</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_01, Victory_CIS</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Anakin_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Rep_Goal_03, Obi_Wan_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_04_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_04</Reward_Param1>
+		<Prereq>Rep_Goal_04, Padme_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_05_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_05</Reward_Param1>
+		<Prereq>Rep_Goal_05, Victory_CIS</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_06_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_06</Reward_Param1>
+		<Prereq>Rep_Goal_06, Victory_CIS</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_07_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SUBJUGATOR_SABOTAGE_OBJECTIVE_REP_07</Reward_Param1>
+		<Prereq>Rep_Goal_07, Victory_CIS</Prereq>
+	</Event>
+
+</Story>

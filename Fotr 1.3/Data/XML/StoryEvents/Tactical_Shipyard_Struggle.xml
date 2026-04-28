@@ -1,0 +1,924 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--***** Operation Durge's Lance: Shipyard Struggle ****-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Shipyard_Struggle</Reward_Param1>
+	</Event>
+
+	<Event Name="Disable_Autoresolve">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Enable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Victory_CIS</Prereq>
+		<Prereq>Victory_Rep</Prereq>
+		<Prereq>CIS_Victory</Prereq>
+		<Prereq>Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="Enable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Victory_CIS</Prereq>
+		<Prereq>Victory_Rep</Prereq>
+		<Prereq>CIS_Victory</Prereq>
+		<Prereq>Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="Prevent_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Republic">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="CIS_Shipyard_Showdown_Tactical">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_SHIPYARD_SHOWDOWN</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Kuat</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_SHIPYARD_SHOWDOWN.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Shipyard_Showdown.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_AI</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+	</Event>
+
+
+	<Event Name="Trigger_Generator_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GENERATOR_REACHED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Control_Room_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONTROL_ROOM_REACHED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Cover_Blown">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>COVER_BLOWN</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_CIS_Heroes_Death">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Bossk_Destroyed</Prereq>
+		<Prereq>Dengar_Destroyed</Prereq>
+		<Prereq>Mandrake_Destroyed</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Bossk_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Bossk</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>CIS_Goal_Trigger_Act_I</Prereq>
+		<Prereq>CIS_Goal_Trigger_Act_II</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Dengar_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Dengar</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>CIS_Goal_Trigger_Act_I</Prereq>
+		<Prereq>CIS_Goal_Trigger_Act_II</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Mandrake_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Vazus_Mandrake</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>CIS_Goal_Trigger_Act_I</Prereq>
+		<Prereq>CIS_Goal_Trigger_Act_II</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Intro_Crawl_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_CRAWL</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_INTRO_01</Reward_Param1>
+		<Reward_Param2>9.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Intro_Crawl_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_INTRO_02</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Intro_Crawl_01</Prereq>
+	</Event>
+
+
+	<Event Name="Infiltration_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_01</Reward_Param1>
+		<Reward_Param2>5.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Bossk_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Infiltration_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_02</Reward_Param1>
+		<Reward_Param2>7.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>195, 195, 195, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Infiltration_Speech_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_03</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_03</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>195, 195, 195, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Infiltration_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_04</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_04</Reward_Param1>
+		<Reward_Param2>7.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Infiltration_Speech_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_05</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_05</Reward_Param1>
+		<Reward_Param2>7.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Infiltration_Speech_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_06</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_06</Reward_Param1>
+		<Reward_Param2>3.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Bossk_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Infiltration_Speech_07">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_07</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_07</Reward_Param1>
+		<Reward_Param2>10.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Intruders_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRUDERS_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_08</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>237, 28, 36, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Sabotage_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SABOTAGE_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_09</Reward_Param1>
+		<Reward_Param2>4.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Bossk_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Sabotage_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SABOTAGE_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_10</Reward_Param1>
+		<Reward_Param2>7.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>237, 28, 36, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Sabotage_Speech_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SABOTAGE_03</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_11</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Sabotage_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SABOTAGE_04</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_12</Reward_Param1>
+		<Reward_Param2>6.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Sabotage_Speech_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SABOTAGE_05</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_13</Reward_Param1>
+		<Reward_Param2>10.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Sabotage_Speech_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SABOTAGE_06</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_14</Reward_Param1>
+		<Reward_Param2>10.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Bossk_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Last_Resort_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LAST_RESORT_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_15</Reward_Param1>
+		<Reward_Param2>7.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Last_Resort_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LAST_RESORT_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_16</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>195, 195, 195, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Last_Resort_Speech_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LAST_RESORT_03</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_17</Reward_Param1>
+		<Reward_Param2>8.0</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Banter_Phase_I_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BANTER_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_01</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Banter_Phase_I_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>9</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_02</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_I_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Banter_Phase_I_Speech_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>6</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_03</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_I_Speech_02</Prereq>
+	</Event>
+
+
+	<Event Name="Banter_Phase_II_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BANTER_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_04</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Banter_Phase_II_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_05</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_II_Speech_01</Prereq>
+	</Event>
+
+
+	<Event Name="Banter_Phase_III_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BANTER_03</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_06</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Banter_Phase_III_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_07</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_III_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Banter_Phase_III_Speech_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_08</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>90, 206, 234, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_III_Speech_02</Prereq>
+	</Event>
+
+
+	<Event Name="Banter_Phase_IV_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BANTER_04</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_09</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>237, 28, 36, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Banter_Phase_V_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BANTER_05</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_10</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Banter_Phase_V_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_11</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_V_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Banter_Phase_V_Speech_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_12</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_V_Speech_02</Prereq>
+	</Event>
+
+
+	<Event Name="Banter_Phase_VI_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BANTER_06</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_13</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Banter_Phase_VI_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_14</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_VI_Speech_01</Prereq>
+	</Event>
+
+
+	<Event Name="Banter_Phase_VII_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BANTER_07</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_15</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Banter_Phase_VII_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_SPEECH_BANTER_16</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6>255, 242, 0, 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Banter_Phase_VII_Speech_01</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_Trigger_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_I</Event_Param2>
+	</Event>
+
+	<Event Name="CIS_Goal_Trigger_Act_II">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_II</Event_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_Trigger_Act_I</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_02</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_04">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_04</Reward_Param1>
+		<Prereq>CIS_Goal_03</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_05</Reward_Param1>
+		<Prereq>CIS_Goal_04</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_06">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_06</Reward_Param1>
+		<Prereq>CIS_Goal_Trigger_Act_II</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_07">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_07</Reward_Param1>
+		<Prereq>CIS_Goal_06</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Trigger_Control_Room_Reached</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_02, Trigger_Generator_Reached</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_03, Trigger_Control_Room_Reached</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_04_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_04</Reward_Param1>
+		<Prereq>CIS_Goal_04, Trigger_Control_Room_Reached</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_05_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_05</Reward_Param1>
+		<Prereq>CIS_Goal_05, Trigger_Control_Room_Reached</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_06_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_06</Reward_Param1>
+		<Prereq>CIS_Goal_06, Trigger_Control_Room_Reached</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_07_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_07</Reward_Param1>
+		<Prereq>CIS_Goal_07, Victory_CIS</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Trigger_Cover_Blown</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_02, Victory_Republic</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_03, Bossk_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_04_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_04</Reward_Param1>
+		<Prereq>CIS_Goal_04, Dengar_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_05_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_05</Reward_Param1>
+		<Prereq>CIS_Goal_05, Mandrake_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_06_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_06</Reward_Param1>
+		<Prereq>CIS_Goal_06, Victory_Republic</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_07_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_07</Reward_Param1>
+		<Prereq>CIS_Goal_07, Victory_Republic</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_SHIPYARD_STRUGGLE_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, CIS_Goal_01_Failed</Prereq>
+		<Prereq>CIS_Goal_01, CIS_Goal_02_Complete</Prereq>
+	</Event>
+
+</Story>

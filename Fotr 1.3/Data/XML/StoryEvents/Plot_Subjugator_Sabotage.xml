@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--*** Hunt for the Malevolence: Subjugator Sabotage ***-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Subjugator_Sabotage</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Subjugator_Sabotage.XML</Active_Plot>
+
+</Story_Mode_Plots>

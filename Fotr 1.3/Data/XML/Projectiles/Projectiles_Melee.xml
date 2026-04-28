@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<Projectiles>
+
+
+<!-- ************************************************************************************** -->
+<!-- ********************                     Weapons                        ************** -->
+<!-- ************************************************************************************** -->
+
+
+	<!-- Lightsaber -->
+	<Projectile Name="Proj_Lightsaber">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_Lightsaber </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>11.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>35.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Blast_Area_Range>5.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Saber_Sparks</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>100</AI_Combat_Power>
+	</Projectile>
+	
+	<!-- Force Pike and related Weapons -->
+	<Projectile Name="Proj_Force_Pike">
+		<Variant_Of_Existing_Type>Proj_Lightsaber</Variant_Of_Existing_Type>
+		<Max_Speed>15.0</Max_Speed>
+		<Damage_Type> DamageL_ConcussionWarhead </Damage_Type>
+		<Projectile_Blast_Area_Range>5.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+	<!-- Force Pike and related Weapons -->
+	<Projectile Name="Proj_Electro_Blade">
+		<Variant_Of_Existing_Type>Proj_Lightsaber</Variant_Of_Existing_Type>
+		<Max_Speed>15.0</Max_Speed>
+		<Damage_Type> DamageL_Plasma </Damage_Type>
+		<Projectile_Damage>20.0</Projectile_Damage>
+		<Projectile_Blast_Area_Range>5.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+	<!-- Give whip some area damage once prepped -->
+
+	<!-- Lightsaber Whip -->	
+	<Projectile Name="Proj_Lightsaber_Whip">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_Lightsaber </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>11.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>35.0</Projectile_Max_Flight_Distance>
+		<Projectile_Blast_Area_Range>15.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle/>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>100</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Thrown_Light_Saber">
+		<!--Saber Throw-->
+		<!--Not currently used, but left in for future reference-->
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>RI_saber_spin.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Max_Speed>8.0</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>LIGHT_SABER</Projectile_Category>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Rocket_Straight_Distance>250</Projectile_Rocket_Straight_Distance>
+		<Projectile_Max_Flight_Distance>250.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>30.0</Projectile_Damage>
+		<Projectile_Stun_Radius>23</Projectile_Stun_Radius>
+		<Damage_Type> DamageL_Lightsaber </Damage_Type>
+		<Projectile_SFXEvent_Detonate>Unit_Light_Saber_Hit</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> Unit_Light_Saber_Hit </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                     Animals                        ************** -->
+<!-- ************************************************************************************** -->
+	
+	
+	<!-- Rancor default melee swing which uses the same invisible projectile as the lightsabers -->
+	<Projectile Name="Proj_Rancor_Hit">
+		<Variant_Of_Existing_Type>Proj_Lightsaber</Variant_Of_Existing_Type>
+		<Projectile_Max_Flight_Distance>100.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>400.0</Projectile_Damage>
+		<Damage_Type>DamageL_MassDriver</Damage_Type>
+		<Internal_Damage_Type> Damage_Force_Whirlwind </Internal_Damage_Type>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle/>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>100</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Nightsister_Rancor_Hit">
+		<Variant_Of_Existing_Type>Proj_Lightsaber</Variant_Of_Existing_Type>
+		<Projectile_Max_Flight_Distance>100.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>150.0</Projectile_Damage>
+		<Damage_Type>Damage_Rancor</Damage_Type>
+		<Internal_Damage_Type> Damage_Force_Whirlwind </Internal_Damage_Type>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle/>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>100</AI_Combat_Power>
+	</Projectile>
+	
+	<!-- Rancor default melee swing which uses the same invisible projectile as the lightsabers -->
+	<Projectile Name="Proj_Wampa_Hit">
+		<Variant_Of_Existing_Type>Proj_Lightsaber</Variant_Of_Existing_Type>
+		<Projectile_Max_Flight_Distance>50.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>70.0</Projectile_Damage>
+		<Damage_Type>DamageL_MassDriver</Damage_Type>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle/>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>100</AI_Combat_Power>
+	</Projectile>
+	
+	<!-- Used for the swamp bug swarms -->
+	<Projectile Name="Proj_Swamp_Bug_Bite">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>15.0</Max_Speed>
+		<Damage_Type>DamageL_InfantryBlaster</Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>10.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Lifetime>3.0</Projectile_Max_Lifetime>
+		<Projectile_Damage>1.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Tiny_Dud</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Tiny_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Tiny_Dud</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX/>
+		<AI_Combat_Power>40</AI_Combat_Power>
+		<Death_Explosions/>
+		<Death_SFXEvent_Start_Die/>
+		<AI_Combat_Power>1</AI_Combat_Power>
+	</Projectile>
+	
+	<!-- Used for spore spewing plant on Felucia -->
+	<Projectile Name="Proj_Felucia_Planet_Spores">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>1.3</Max_Speed>
+		<Damage_Type>Damage_BugBite</Damage_Type>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>75</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Lifetime>75</Projectile_Max_Lifetime>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Damage>0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 4 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 75</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle/>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle/>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<Projectile_Ground_Detonation_SurfaceFX/>
+		<Death_Explosions/>
+		<Death_SFXEvent_Start_Die/>
+	</Projectile>
+	
+	<!-- Used for spike throwing plant on Felucia -->
+	<Projectile Name="Proj_Felucia_Planet_Spikes">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>9.0</Max_Speed>
+		<Damage_Type>Damage_Plant_Spike</Damage_Type>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>75</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Lifetime>75</Projectile_Max_Lifetime>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Damage>0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 8 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 75 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle/>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle/>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<Projectile_Ground_Detonation_SurfaceFX/>
+		<Death_Explosions/>
+		<Death_SFXEvent_Start_Die/>
+	</Projectile>
+	
+	<Projectile Name="Proj_Vornskr_Bite">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Vornskr_Bite </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>11.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>20.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>5.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle/>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>100</AI_Combat_Power>
+	</Projectile>
+
+<!-- ************************************************************************************** -->
+<!-- ********************                  Defunct Clash                     ************** -->
+<!-- ************************************************************************************** -->
+
+
+	<Projectile Name="Proj_ObiWan_Lightsaber_Vs_BobaFett_Hero_Clash">
+		<Variant_Of_Existing_Type>Proj_Lightsaber</Variant_Of_Existing_Type>
+		<Projectile_Damage>15.0</Projectile_Damage>
+	</Projectile>
+	
+	<Projectile Name="Proj_BobaFett_Blaster_Vs_ObiWan_Hero_Clash">
+		<Variant_Of_Existing_Type>Proj_Rifle_Red</Variant_Of_Existing_Type>
+		<Projectile_Damage>20.0</Projectile_Damage>
+		<Projectile_Block_Chance_Modifier>0.70</Projectile_Block_Chance_Modifier>
+		<Projectile_Redirect_Chance_Modifier>0.40</Projectile_Redirect_Chance_Modifier>
+	</Projectile>
+	
+	<Projectile Name="Proj_BobaFett_Blaster_Vs_Han_And_Chewie_Hero_Clash">
+		<Variant_Of_Existing_Type>Proj_Rifle_Red</Variant_Of_Existing_Type>
+		<Projectile_Damage>15.0</Projectile_Damage>
+	</Projectile>
+	
+	<Projectile Name="Proj_HanSolo_Blaster_Vs_BobaFett_Hero_Clash">
+		<Variant_Of_Existing_Type>Proj_Rifle_Red</Variant_Of_Existing_Type>
+		<Projectile_Damage>5.0</Projectile_Damage>
+	</Projectile>
+	
+	<Projectile Name="Proj_Chewbacca_Blaster_Vs_BobaFett_Hero_Clash">
+		<Variant_Of_Existing_Type>Proj_Wookiee_Bowcaster</Variant_Of_Existing_Type>
+		<Projectile_Damage>9.0</Projectile_Damage>
+	</Projectile>
+	
+</Projectiles>

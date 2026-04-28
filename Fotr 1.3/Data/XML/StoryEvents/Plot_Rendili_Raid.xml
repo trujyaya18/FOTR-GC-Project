@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--********** Foerost Campaign: Rendili Raid ***********-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Rendili_Raid</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Rendili_Raid.XML</Active_Plot>
+
+</Story_Mode_Plots>

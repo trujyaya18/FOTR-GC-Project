@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" ?>
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Minute_Elapsed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>60</Event_Param1>
+	</Event>
+
+	<Event Name="Show_Screen_Text">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SHOW_SCREEN_TEXT</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+		<Branch>Screen_Text_Events</Branch>
+	</Event>
+
+	<Event Name="Remove_Screen_Text">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REMOVE_SCREEN_TEXT</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+		<Perpetual>true</Perpetual>
+		<Branch>Screen_Text_Events</Branch>
+	</Event>
+
+	<Event Name="Reset_AI">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESET_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hostile</Reward_Param1>
+		<Reward_Param2>None</Reward_Param2>
+	</Event>
+
+
+	<Event Name="Objective_Complete_Template">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>OBJECTIVE_COMPLETE</Event_Param2>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>	
+		<Reward_Param1></Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Objective_Failed_Template">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>OBJECTIVE_FAILED</Event_Param2>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>	
+		<Reward_Param1></Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Objective_Remove_Template">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REMOVE_OBJECTIVE</Event_Param2>
+		<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>	
+		<Reward_Param1></Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Link_Tactical_Template">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LINK_TACTICAL</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Reward_Param3></Reward_Param3>
+		<Reward_Param4></Reward_Param4>
+		<Reward_Param5></Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7></Reward_Param7>
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10></Reward_Param10>
+		<Reward_Param11></Reward_Param11>
+		<Reward_Param12></Reward_Param12>
+		<Reward_Param13></Reward_Param13>
+		<Reward_Param14></Reward_Param14>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="SWITCH_CONTROL_EVENT">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hostile</Reward_Param1>
+		<Reward_Param2>AI_Player_UnderworldStoryOpponent</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None1">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Rebel</Event_Param1>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None2">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Empire</Event_Param1>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None3">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>EmpireoftheHand</Event_Param1>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None4">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Pirates</Event_Param1>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None5">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Pentastar</Event_Param1>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None7">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Hapes_Consortium</Event_Param1>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None8">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Hostile</Event_Param1>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None9">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Hutts</Event_Param1>
+	</Event>
+
+	<Event Name="SWITCH_CONTROL_None10">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Teradoc</Event_Param1>
+	</Event>
+
+
+	<Event Name="Retreat_Complete">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>RETREAT_COMPLETE</Event_Param1>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hostile</Reward_Param1>
+		<Reward_Param2>None</Reward_Param2>
+	</Event>
+
+	<Event Name="Raid_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>START_SPEECH</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_DETECTED_FLEET</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="End_Raid_Speech">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>END_SPEECH</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_DETECTED_FLEET</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_NR">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Raid_Objective_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_SECONDARY_SPACE_RAID</Reward_Param1>
+		<Prereq>Enable_Retreat_NR</Prereq>
+		<Prereq>Enable_Retreat_Empire</Prereq>
+		<Prereq>Enable_Retreat_Teradoc</Prereq>
+		<Prereq>Enable_Retreat_EotH</Prereq>
+		<Prereq>Enable_Retreat_Pentastar</Prereq>
+		<Prereq>Enable_Retreat_Eriadu</Prereq>
+		<Prereq>Enable_Retreat_Zsinj</Prereq>
+		<!--<Prereq>Enable_Retreat_Yevetha</Prereq>-->
+		<Prereq>Enable_Retreat_CSA</Prereq>
+		<Prereq>Enable_Retreat_Hapes</Prereq>
+	</Event>
+
+	<Event Name="Flash_Retreat_Button">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Reward_Type>FLASH_GUI</Reward_Type>
+		<Reward_Param1>b_retreat</Reward_Param1>
+		<Prereq>Raid_Objective_Complete</Prereq>
+	</Event>
+
+	<Event Name="Remove_Flash_Retreat_Button">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Prereq>Flash_Retreat_Button</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Disable_Retreat_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Disable_Retreat_EotH">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Disable_Retreat_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Disable_Retreat_Eriadu">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Disable_Retreat_Zsinj">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- <Event Name="Disable_Retreat_Yevetha">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Yevetha</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event> -->
+
+	<Event Name="Disable_Retreat_CSA">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Disable_Retreat_Hapes">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Enable_Retreat_NR">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Enable_Retreat_Clairvoyant_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CLAIRVOYANT_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Enable_Retreat_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Enable_Retreat_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Retreat_EotH">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Enable_Retreat_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Enable_Retreat_Eriadu">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Enable_Retreat_Zsinj">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- <Event Name="Enable_Retreat_Yevetha">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Yevetha</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event> -->
+
+	<Event Name="Enable_Retreat_CSA">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event> 
+
+	<Event Name="Enable_Retreat_Hapes">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YES_RETREAT</Event_Param2>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event> 
+
+	<!-- HfM-only Malevolence -->
+	<Event Name="Select_GRIEVOUS_MALEVOLENCE_HUNT_CAMPAIGN">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GRIEVOUS_MALEVOLENCE_HUNT_CAMPAIGN</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GRIEVOUS_MALEVOLENCE_HUNT_CAMPAIGN</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Mandators -->
+	<Event Name="Select_GENERIC_MANDATOR">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GENERIC_MANDATOR</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GENERIC_MANDATOR</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_GENERIC_MANDATOR_II">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GENERIC_MANDATOR_II</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GENERIC_MANDATOR_II</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_ONARA_KUAT">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>ONARA_KUAT</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_ONARA_KUAT</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_GENERIC_MANDATOR_III">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GENERIC_MANDATOR_III</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GENERIC_MANDATOR_III</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_PELLAEON_MEGADOR">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>PELLAEON_MEGADOR</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_PELLAEON_MEGADOR</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_MEGADOR">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>MEGADOR</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_MEGADOR</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_PANTHAC">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>PANTHAC</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_PANTHAC</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_GRONN_ACULEUS">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GRONN_ACULEUS</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GRONN_ACULEUS</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Bellator and heroes -->
+	<Event Name="Select_GENERIC_BELLATOR">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GENERIC_BELLATOR</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GENERIC_BELLATOR</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_DOMINION">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>DOMINION</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_DOMINION</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_ROGRISS_DOMINION">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>ROGRISS_DOMINION</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_ROGRISS_DOMINION</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Aramadia and heroes-->
+	<Event Name="Select_GENERIC_ARAMADIA">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GENERIC_ARAMADIA</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GENERIC_ARAMADIA</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_SPAAR_ARAMADIA_SSD">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>SPAAR_ARAMADIA_SSD</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_SPAAR_ARAMADIA_SSD</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Vengeance and heroes -->
+	<Event Name="Select_GENERIC_VENGEANCE">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GENERIC_VENGEANCE</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GENERIC_VENGEANCE</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_VENGEANCE_JEREC">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>VENGEANCE_JEREC</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_VENGEANCE_JEREC</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_DANGOR_JAVELIN">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>DANGOR_JAVELIN</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_DANGOR_JAVELIN</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Executor and heroes -->
+	<Event Name="Select_GENERIC_EXECUTOR">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GENERIC_EXECUTOR</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GENERIC_EXECUTOR</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_LUSANKYA">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>LUSANKYA</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_LUSANKYA</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_LUSANKYA_NO_TRANSITION">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>LUSANKYA_NO_TRANSITION</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_LUSANKYA_NO_TRANSITION</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_PELLAEON_REAPER">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>PELLAEON_REAPER</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_PELLAEON_REAPER</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_KNIGHT_HAMMER">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>KNIGHT_HAMMER</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_KNIGHT_HAMMER</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_NIGHT_HAMMER">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>NIGHT_HAMMER</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_NIGHT_HAMMER</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_NIGHT_HAMMER_DELVARDUS">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>NIGHT_HAMMER_DELVARDUS</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_NIGHT_HAMMER_DELVARDUS</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_WEDGE_LUSANKYA">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>WEDGE_LUSANKYA</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_WEDGE_LUSANKYA</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_ACKBAR_GUARDIAN">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>ACKBAR_GUARDIAN</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_ACKBAR_GUARDIAN</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_REAPER_KAINE">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>REAPER_KAINE</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_REAPER_KAINE</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_IRON_FIST">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>IRON_FIST</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_IRON_FIST</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_RAZORS_KISS">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>RAZORS_KISS</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_RAZORS_KISS</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_GRUNGER_AGGRESSOR">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>GRUNGER_AGGRESSOR</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_GRUNGER_AGGRESSOR</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_DROMMEL_GUARDIAN">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>DROMMEL_GUARDIAN</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_DROMMEL_GUARDIAN</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Select_KIEZ_WHELM">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>KIEZ_WHELM</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_KIEZ_WHELM</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event> 
+	<Event Name="Select_X1_EXECUTOR">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>X1_EXECUTOR</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_X1_EXECUTOR</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event> 
+	<Event Name="Select_BILLE_PRIDE">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>BILLE_PRIDE</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_BILLE_PRIDE</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Sovereign -->
+	<Event Name="Select_SOVEREIGN">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>SOVEREIGN</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_SOVEREIGN</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Eclipse -->
+	<Event Name="Select_ECLIPSE_STAR_DESTROYER">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>ECLIPSE_STAR_DESTROYER</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_ECLIPSE_STAR_DESTROYER</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Assertor -->
+	<Event Name="Select_ASSERTOR">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>ASSERTOR</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_ASSERTOR</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!-- Viscount -->
+	<Event Name="Select_VISCOUNT">
+		<Event_Type>STORY_SELECT_UNIT</Event_Type>
+		<Event_Param1>VISCOUNT</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SELECTED_VISCOUNT</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+</Story>

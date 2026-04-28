@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+	<Planets HintSet="Galactic_Hints">
+		<!-- CIS Planets -->
+		<Fondor>
+			<Chokepoint>1.0</Chokepoint>
+			<PriorityTarget>2.0</PriorityTarget>
+		</Fondor>
+
+		<!-- Republic Planets -->
+		<Naboo>
+			<Chokepoint>1.5</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Naboo>
+
+		<Kaliida_Nebula>
+			<Chokepoint>1.0</Chokepoint>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Kaliida_Nebula>
+	</Planets>
+</Galactic_Markup>

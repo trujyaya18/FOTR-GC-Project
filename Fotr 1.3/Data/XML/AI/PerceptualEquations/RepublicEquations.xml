@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<Republic_Should_Reconnect_Islands>
+		Function_Need_To_Reconnect_Islands.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Sector_Forces"})
+	</Republic_Should_Reconnect_Islands>
+	
+	
+	<Republic_Should_Crush_Opponent_Planet>
+		Function_Should_Crush_Opponent_Planet.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Sector_Forces"})
+		*
+		Function_Is_Connected_To_Me.Evaluate
+	</Republic_Should_Crush_Opponent_Planet>
+	
+	
+	<Republic_Should_Perform_Unrestricted_Grab_Space>
+		Function_Should_Perform_Unrestricted_Grab_Space.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Sector_Forces"})
+		*
+		Variable_Self.IsFaction{Parameter_Faction = "Empire"}
+	</Republic_Should_Perform_Unrestricted_Grab_Space>
+	
+	
+	<Republic_Should_Perform_Unrestricted_Grab_Land>
+		Function_Should_Perform_Unrestricted_Grab_Land.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Sector_Forces"})
+		*
+		Variable_Self.IsFaction{Parameter_Faction = "Empire"}
+	</Republic_Should_Perform_Unrestricted_Grab_Land>
+
+
+	<Republic_Should_Conquer_Pirate_Planet>
+		Function_Should_Conquer_Pirate_Planet.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Sector_Forces"})
+		*
+		Function_Is_Connected_To_Me.Evaluate
+		*
+		Variable_Human.IsFaction{Parameter_Faction = "Rebel"}
+	</Republic_Should_Conquer_Pirate_Planet>
+
+	
+	<Republic_Should_Conquer_Opponent_Planet>
+		Function_Should_Conquer_Opponent_Planet.Evaluate
+		*
+		(1 - Variable_Target.IsFaction{Parameter_Faction = "Sector_Forces"})
+		*
+		Function_Is_Connected_To_Me.Evaluate
+	</Republic_Should_Conquer_Opponent_Planet>
+	
+	
+	<Republic_Trapped_Fleet>
+		50.0
+		*
+		Variable_Target.FriendlyForce.HasSpaceForce
+		*
+		(1 - Function_Is_Connected_To_Me.Evaluate)
+		*
+		Function_Is_Connected_To_Enemy.Evaluate
+		*
+		(1 - Variable_Target.IsFaction {Parameter_Faction = "Neutral"})
+		*
+		Function_First_Attack_Allowed.Evaluate
+	</Republic_Trapped_Fleet>
+	
+
+	<Hunt_Malevolence>
+		50 * (Variable_Target.EnemyForce.HasSpaceUnitsBitfield {Parameter_Type = "Grievous_Malevolence_Hunt_Campaign"} > 0.0)
+	</Hunt_Malevolence>
+
+</Equations>

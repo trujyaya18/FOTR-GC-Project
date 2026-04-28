@@ -1,0 +1,371 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--*** Hunt for the Malevolence: Mission Malevolence ***-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+
+	<Event Name="Trigger_Rep_Player">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PLAYER_REP</Event_Param2>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>REBEL</Event_Param1>
+	</Event>
+
+	<Event Name="Rep_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>EMPIRE</Event_Param1>
+	</Event>
+
+
+	<Event Name="Autoresolve_Off_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Trigger_Showdown_Malevolence</Prereq>
+	</Event>
+
+	<Event Name="Autoresolve_Off_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_AUTORESOLVE</Reward_Type>
+		<Prereq>Trigger_Showdown_Malevolence</Prereq>
+	</Event>
+
+	<Event Name="Autoresolve_Off_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DESTROY_AUTORESOLVE</Reward_Type>
+		<Prereq>Trigger_Showdown_Malevolence</Prereq>
+	</Event>
+
+
+	<Event Name="Prevent_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Trigger_Showdown_Malevolence</Prereq>
+	</Event>
+
+	<Event Name="Allow_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Prereq>Trigger_Malevolence_Escaped</Prereq>
+	</Event>
+
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Trigger_Engines_Offline</Prereq>
+	</Event>
+
+	<Event Name="Enable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_Allow_Stuff</Prereq>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicMissionAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Set_Flag_Mission_Malevolence_Win">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_FLAG</Reward_Type>
+		<Reward_Param1>Mission_Malevolence_Win</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Increment_Flag_Mission_Malevolence_Win">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>INCREMENT_FLAG</Reward_Type>
+		<Reward_Param1>Mission_Malevolence_Win</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Trigger_Subjugator_Sabotage</Prereq>
+	</Event>
+
+
+	<Event Name="Trigger_Prevent_Stuff">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PREVENT_STUFF</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Allow_Stuff">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ALLOW_STUFF</Event_Param2>
+	</Event>
+
+
+	<Event Name="Trigger_Malevolence_Escaped">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>MALEVOLENCE_ESCAPED</Event_Param2>
+	</Event>
+
+
+	<Event Name="Showdown_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SHOWDOWN</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_REP_SPEECH_01</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5>1</Reward_Param5>
+		<Reward_Param6>255 024 039 255</Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Coward_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>COWARD</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_REP_SPEECH_02</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Misjump_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>MISJUMP</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_REP_SPEECH_05</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Piett_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Emergency_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>EMERGENCY</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_REP_SPEECH_03</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Veers_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Emergency_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_REP_SPEECH_03</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Piett_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Emergency_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Protected_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PROTECTED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_REP_SPEECH_06</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Piett_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Killed_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>KILLED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_REP_SPEECH_07</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Piett_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Clean_Up_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CLEAN_UP</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_REP_SPEECH_08</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Piett_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="No_Escape_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_ESCAPE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_CIS_SPEECH_01</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Rep_Goal_00_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_PRIMARY_SPACE_ATTACK</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, Trigger_Malevolence_Defeated</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, Trigger_Malevolence_Defeated</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_04_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_04</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, Rep_Victory</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_00_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_PRIMARY_SPACE_ATTACK</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, CIS_Victory</Prereq>
+		<Prereq>Trigger_Rep_Player, Trigger_Malevolence_Escaped</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, CIS_Victory</Prereq>
+		<Prereq>Trigger_Rep_Player, Trigger_Malevolence_Escaped</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_04_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_04</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, Killed_Speech_01</Prereq>
+	</Event>
+
+</Story>

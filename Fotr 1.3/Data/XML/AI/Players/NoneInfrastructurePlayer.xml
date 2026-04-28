@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name>None_Infrastructure</Name>
+	
+	<GoalSetExtensionSize>5</GoalSetExtensionSize>
+
+	<Personality>
+		<Focus> .7 </Focus>
+		<Aggressiveness> .8 </Aggressiveness>
+	</Personality>
+
+	<SpaceFreeStoreScript>BusyTacticalFreeStore</SpaceFreeStoreScript>
+	<LandFreeStoreScript>LandTacticalFreeStore</LandFreeStoreScript>
+
+	<GoalProposalFunctionSets>
+		BasicInfrastructureGalacticSet
+		BasicDefensiveGalacticSet
+	</GoalProposalFunctionSets>
+    <Templates>
+        <Space>
+            Generic_Space
+        </Space>
+        <Land>
+            Generic_Land
+        </Land>
+        <Galactic>
+            None_Infrastructure_Template
+        </Galactic>
+    </Templates>
+	
+	<Difficulty_Adjustments>
+		<Easy>Easy_Infrastructure</Easy>
+		<Normal>Normal_Infrastructure</Normal>
+		<Hard>Hard_Infrastructure</Hard>
+	</Difficulty_Adjustments>	
+	
+</AIPlayerType>

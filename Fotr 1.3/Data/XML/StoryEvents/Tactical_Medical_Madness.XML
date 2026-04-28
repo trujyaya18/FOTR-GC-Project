@@ -1,0 +1,286 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--***** Hunt for the Malevolence: Medical Madness *****-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Prevent_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Autoresolve_Off">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>REBEL</Event_Param1>
+	</Event>
+
+	<Event Name="Rep_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>EMPIRE</Event_Param1>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicMissionAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Trigger_Malevolence_Defeated">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>MALEVOLENCE_DEFEATED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Malevolence_Survived">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>MALEVOLENCE_SURVIVED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Subjugator_Sabotage">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SUBJUGATOR_SABOTAGE</Event_Param2>
+	</Event>
+
+
+	<Event Name="Subjugator_Sabotage_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Abregado_Rae</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_SUBJUGATOR_SABOTAGE.TED</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Subjugator_Sabotage.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Trigger_Subjugator_Sabotage</Prereq>
+	</Event>
+
+
+	<Event Name="Kaliida_Shoals_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>GENERIC_HAVEN_STARBASE</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+
+	<Event Name="Cinematic_Crawl_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CINEMATIC_CRAWL_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_INTRO_01</Reward_Param1>
+		<Reward_Param2>8.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Cinematic_Crawl_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CINEMATIC_CRAWL_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_INTRO_02</Reward_Param1>
+		<Reward_Param2>5.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Enemy_Reinforcements_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REINFORCEMENTS</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_CIS_SPEECH_01</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_CIS_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_I</Event_Param2>
+	</Event>
+
+	<Event Name="Goal_Trigger_Rep_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_I</Event_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_02</Prereq>
+	</Event>
+
+	
+	<Event Name="CIS_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Kaliida_Shoals_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_02, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_03, CIS_Victory</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_02, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MEDICAL_MADNESS_OBJECTIVE_CIS_03</Reward_Param1>
+		<Prereq>CIS_Goal_03, Trigger_Malevolence_Defeated</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_01</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Trigger_Malevolence_Defeated</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_01, Victory_CIS</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_MISSION_MALEVOLENCE_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Victory_CIS</Prereq>
+	</Event>
+
+
+</Story>

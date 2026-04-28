@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+
+	<Event Name="Forces_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Branch>Start_Branch</Branch>
+	</Event>
+	
+	<Event Name="Disable_Start_Event">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Forces_Spawn</Prereq>
+	</Event>
+</Story>

@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+
+<FunctionSet>
+
+	<DevelopStarbase>
+		<Goal>Upgrade_Starbase</Goal>
+		<Function>Needs_Starbase_Upgrade</Function>
+	</DevelopStarbase>
+
+	<Build_Tradestation>
+		<Goal>Build_Tradestation</Goal>
+		<Function>Needs_Tradestation</Function>
+	</Build_Tradestation>
+	
+	<Build_Space_Defensive_Structure>
+		<Goal>Build_Space_Defensive_Structure</Goal>
+		<Function>Needs_Space_Defensive_Structure</Function>
+	</Build_Space_Defensive_Structure>
+	
+	<Build_Shipyard>
+		<Goal>Build_Shipyard</Goal>
+		<Function>Needs_Shipyard</Function>
+	</Build_Shipyard>
+
+	<Build_Space_Company>
+		<Goal>Build_Space_Company</Goal>
+		<Function>Need_Space_Company</Function>		
+	</Build_Space_Company>
+
+
+	<Build_Initial_Groundbase_Only>
+		<Goal>Build_Initial_Groundbase_Only</Goal>
+		<Function>Needs_Initial_Groundbase</Function>
+	</Build_Initial_Groundbase_Only>
+
+	<Build_Tax_Agency>
+		<Goal>Build_Tax_Agency</Goal>
+		<Function>Needs_Tax_Agency</Function>
+	</Build_Tax_Agency>
+	
+	<Build_Mining_Facility>
+		<Goal>Build_Mining_Facility</Goal>
+		<Function>Needs_Mining_Facility</Function>
+	</Build_Mining_Facility>
+	
+	<Build_Base_Component_Light_Vehicle_Factory>
+		<Goal>Build_Base_Component_Light_Vehicle_Factory</Goal>
+		<Function>Need_Light_Vehicle_Factory</Function>
+	</Build_Base_Component_Light_Vehicle_Factory>
+
+	<Build_Base_Component_Heavy_Vehicle_Factory>
+		<Goal>Build_Base_Component_Heavy_Vehicle_Factory</Goal>
+		<Function>Need_Heavy_Vehicle_Factory</Function>
+	</Build_Base_Component_Heavy_Vehicle_Factory>
+
+	<Build_Base_Component_Advanced_Vehicle_Factory>
+		<Goal>Build_Base_Component_Advanced_Vehicle_Factory</Goal>
+		<Function>Need_Advanced_Vehicle_Factory</Function>
+	</Build_Base_Component_Advanced_Vehicle_Factory>
+	
+	<Build_Base_Component_Barracks>
+		<Goal>Build_Base_Component_Barracks</Goal>
+		<Function>Need_Barracks</Function>		
+	</Build_Base_Component_Barracks>
+	
+	<Build_Ground_Company>
+		<Goal>Build_Ground_Company</Goal>
+		<Function>Need_Ground_Company</Function>		
+	</Build_Ground_Company>
+	
+	<Build_Capital>
+		<Goal>Build_Capital</Goal>
+		<Function>Need_Capital_Building</Function>		
+	</Build_Capital>
+	
+	<Build_Weapon>
+		<Goal>Build_Weapon</Goal>
+		<Function>Needs_Weapon</Function>
+	</Build_Weapon>
+
+	<Build_Planetary_Shield>
+	  	<Goal>Build_Planetary_Shield</Goal>
+		<Function>Needs_Planetary_Shield</Function>
+	</Build_Planetary_Shield>
+	 
+	<Build_Turbolasers>
+		<Goal>Build_Turbolasers</Goal>
+		<Function>Needs_Turbolasers</Function>
+	</Build_Turbolasers>
+	
+	
+</FunctionSet>

@@ -1,0 +1,708 @@
+<?xml version="1.0"?>
+<Campaigns>
+
+
+
+
+
+    
+<!-- *********************************************************************** -->
+<!-- ******************* SANDBOX CAMPAIGN "From The Ground Up" ************* -->
+<!-- *********************************************************************** -->
+
+
+
+
+	
+
+	<Campaign Name="Sandbox_FTGU_CIS">
+
+		<Campaign_Set> Sandbox_CloneWarsFTGU </Campaign_Set>
+		<Sort_Order>309</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_FTGU </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FTGU_CW </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Locations>
+			Alderaan,
+			Alsakan,
+			Anaxes,
+			Ando,
+			Aargau,
+			Balmorra,
+			Bandomeer,
+			Basilisk,
+			Belgaroth,
+			Bomis_Koori,
+			Boz_Pity,
+			Brentaal,
+			Caamas,
+			Ord_Cantrell,
+			Carida,
+			Castell,
+			Cato_Neimoidia,
+			Ord_Cestus,
+			Charros,
+			Christophsis,
+			Colla,
+			Corellia,
+			Coruscant,
+			Deko_Neimoidia,
+			Emberlene,
+			Eriadu,
+			Felucia,
+			Florrum,
+			Foerost,
+			Fondor,
+			Galaxy_Core_Art_Model,
+			Geonosis,
+			Ithor,
+			Jabiim,
+			Kamino,
+			Kashyyyk,
+			Khomm,
+			Krant,
+			Kuat,
+			Mandalore,
+			Ord_Mantell,
+			Mechis,
+			Minntooine,
+			Mon_Calamari,
+			Mustafar,
+			Muunilinst,
+			Mygeeto,
+			Naboo,
+			Nelvaan,
+			Pammant,
+			Ord_Pardron,
+			Praesitlyn,
+			Raxus,
+			Raxus_Second,
+			Rendili,
+			Rhen_Var,
+			Rishi,
+			Rothana,
+			Roxuli,
+			Saleucami,
+			Sarapin,
+			Serenno,
+			Sy_Myrth,
+			Thule,
+			Tibrin,
+			Ord_Trasi,
+			Umbara,
+			Utapau,
+		</Locations>
+
+		<Trade_Routes>
+			Aargau_Alderaan,
+			Aargau_Coruscant,
+			Alderaan_Brentaal,
+			Alderaan_Caamas,
+			Alderaan_Kuat,
+			Alderaan_Sarapin,
+			Alsakan_Anaxes,
+			Alsakan_Coruscant,
+			Anaxes_Basilisk,
+			Anaxes_Ord_Mantell,
+			Ando_Christophsis,
+			Ando_Emberlene,
+			Ando_Ord_Pardron,
+			Balmorra_Colla,
+			Balmorra_Deko_Neimoidia,
+			Balmorra_Kuat,
+			Bandomeer_Ord_Cestus,
+			Bandomeer_Ithor,
+			Bandomeer_Mandalore,
+			Basilisk_Caamas,
+			Belgaroth_Bomis_Koori,
+			Belgaroth_Fondor,
+			Belgaroth_Roxuli,
+			Brentaal_Carida,
+			Brentaal_Caamas,
+			Bomis_Koori_Mechis,
+			Bomis_Koori_Tibrin,
+			Boz_Pity_Charros,
+			Boz_Pity_Kashyyyk,
+			Boz_Pity_Pammant,
+			Boz_Pity_Rishi,
+			Ithor_Ord_Cantrell,
+			Ord_Cantrell_Ord_Mantell,
+			Mygeeto_Ord_Cantrell,
+			Ord_Cantrell_Ord_Trasi,
+			Carida_Castell,
+			Carida_Kuat,
+			Castell_Colla,
+			Cato_Neimoidia_Deko_Neimoidia,
+			Cato_Neimoidia_Corellia,
+			Cato_Neimoidia_Rendili,
+			Ord_Cestus_Serenno,
+			Charros_Saleucami,
+			Christophsis_Geonosis,
+			Christophsis_Naboo,
+			Christophsis_Nelvaan,
+			Colla_Mandalore,
+			Corellia_Fondor,
+			Corellia_Rendili,
+			Coruscant_Foerost,
+			Deko_Neimoidia_Emberlene,
+			Deko_Neimoidia_Umbara,
+			Emberlene_Kashyyyk,
+			Emberlene_Krant,
+			Eriadu_Naboo,
+			Eriadu_Praesitlyn,
+			Eriadu_Tibrin,
+			Felucia_Florrum,
+			Felucia_Raxus,
+			Felucia_Rhen_Var,
+			Felucia_Serenno,
+			Florrum_Thule,
+			Foerost_Khomm,
+			Fondor_Khomm,
+			Fondor_Mechis,
+			Geonosis_Nelvaan,
+			Geonosis_Ord_Pardron,
+			Ithor_Mandalore,
+			Ithor_Ord_Mantell,
+			Jabiim_Pammant,
+			Jabiim_Saleucami,
+			Jabiim_Sy_Myrth,
+			Kamino_Krant,
+			Kamino_Ord_Pardron,
+			Kamino_Rishi,
+			Kamino_Rothana,
+			Kashyyyk_Umbara,
+			Krant_Rishi,
+			Kuat_Sarapin,
+			Mandalore_Sy_Myrth,
+			Ord_Mantell_Roxuli,
+			Minntooine_Mon_Calamari,
+			Minntooine_Raxus,
+			Mon_Calamari_Pammant,
+			Mustafar_Tibrin,
+			Mustafar_Utapau,
+			Muunilinst_Mygeeto,
+			Muunilinst_Ord_Trasi,
+			Mygeeto_Ord_Trasi,
+			Praesitlyn_Utapau,
+			Nelvaan_Praesitlyn,
+			Raxus_Raxus_Second,
+			Rendili_Sarapin,
+			Rhen_Var_Sy_Myrth,
+			Rishi_Rothana,
+			Saleucami_Sy_Myrth,
+			Serenno_Thule,
+		</Trade_Routes>
+		
+        <Home_Location> Rebel, Raxus </Home_Location>
+		 <Home_Location> Empire, Coruscant </Home_Location>
+
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
+
+		<Rebel_Story_Name>Conquests\CloneWarsFTGU\Story_Plots_Sandbox_FTGU_Rebel.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Conquests\CloneWarsFTGU\Story_Plots_Sandbox_FTGU_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\CloneWarsFTGU\Story_Plots_Sandbox_FTGU_Container.xml</Underworld_Story_Name>
+
+		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Empire, GenericAI </AI_Player_Control>
+		
+		<AI_Player_Control> Underworld, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+		<AI_Player_Control> Banking_Clan, None</AI_Player_Control>
+		<AI_Player_Control> Trade_Federation, None </AI_Player_Control>
+		<AI_Player_Control> Commerce_Guild, None </AI_Player_Control>      
+		<AI_Player_Control> Techno_Union, None </AI_Player_Control>				
+		<AI_Player_Control> Sector_Forces, None </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>						
+		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>						
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>						
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Trade_Federation, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Commerce_Guild, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Banking_Clan, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Techno_Union, DefaultGalacticHints </Markup_Filename>				
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Sector_Forces, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Hostile, DefaultGalacticHints </Markup_Filename>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<Starting_Credits> Independent_Forces,  300000 </Starting_Credits>
+		
+		<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 4 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		
+		<!-- Serenno Space Forces -->
+		<Starting_Forces> Rebel, Serenno, CIS_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, NewRepublic_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, C9979_Carrier </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, Hardcell</Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, Hardcell </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, Munificent </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, Munificent </Starting_Forces>
+		<!-- Serenno Land Forces -->
+		<Starting_Forces> Rebel, Serenno, NewRep_SenatorsOffice </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, NewRep_Senate </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, B1_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, B1_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Serenno, Persuader_Company </Starting_Forces>
+		
+		<!-- Empire Starting Forces -->
+		
+		<Starting_Credits> Empire,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		
+		<!-- Coruscant Space Forces -->
+		<Starting_Forces> Empire, Coruscant, Republic_Shipyard_Level_Two </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, LAC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Dreadnaught_Lasers </Starting_Forces>
+		<!-- Coruscant Land Forces -->
+		<Starting_Forces> Empire, Coruscant, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Remnant_Capital </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_BARC_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_RT_Company </Starting_Forces>
+
+		<!-- Ord_Mantell Space Forces -->		
+		<Starting_Forces> Empire, Ord_Mantell, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Mantell, Dreadnaught_Lasers </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Mantell, Arquitens </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Mantell, LAC</Starting_Forces>
+		<Starting_Forces> Empire, Ord_Mantell, LAC </Starting_Forces>
+		<!-- Ord_Mantell Land Forces -->
+		<Starting_Forces> Empire, Ord_Mantell, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Mantell, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Mantell, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Ord_Mantell, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		
+		<!-- Alderaan Space Forces -->
+		<Starting_Forces> Empire, Alderaan, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, LAC </Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, Arquitens</Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, Carrack_Cruiser_Lasers </Starting_Forces>
+		<!-- Alderaan Land Forces -->
+		<Starting_Forces> Empire, Alderaan, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		
+		<!-- Tibrin Space Forces -->
+		<Starting_Forces> Empire, Tibrin, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Tibrin, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Tibrin, LAC </Starting_Forces>
+		<Starting_Forces> Empire, Tibrin, Arquitens</Starting_Forces>
+		<Starting_Forces> Empire, Tibrin, Carrack_Cruiser_Lasers </Starting_Forces>
+		<!-- Tibrin Land Forces -->
+		<Starting_Forces> Empire, Tibrin, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Tibrin, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Tibrin, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Tibrin, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		
+		<!-- Alsakan Space Forces -->
+		<Starting_Forces> Empire, Alsakan, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
+		<Starting_Forces> Empire, Alsakan, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
+		<Starting_Forces> Empire, Alsakan, LAC </Starting_Forces>
+		<Starting_Forces> Empire, Alsakan, Arquitens</Starting_Forces>
+		<Starting_Forces> Empire, Alsakan, Carrack_Cruiser_Lasers </Starting_Forces>
+		<!-- Alsakan Land Forces -->
+		<Starting_Forces> Empire, Alsakan, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Alsakan, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Alsakan, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Alsakan, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		
+		<!-- Rothana Space Forces -->
+		<Starting_Forces> Empire, Rothana, Dreadnaught_Lasers </Starting_Forces>
+		<Starting_Forces> Empire, Rothana, Dreadnaught_Lasers </Starting_Forces>
+		<Starting_Forces> Empire, Rothana, Dreadnaught_Lasers </Starting_Forces>
+		<Starting_Forces> Empire, Rothana, Arquitens</Starting_Forces>
+		<Starting_Forces> Empire, Rothana, LAC </Starting_Forces>
+		<!-- Rothana Land Forces -->
+		<Starting_Forces> Empire, Rothana, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Rothana, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Rothana, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Rothana, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		
+		<!-- Kuat Space Forces -->	
+		<Starting_Forces> Empire, Kuat, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Kuat, Dreadnaught_Lasers </Starting_Forces>
+		<Starting_Forces> Empire, Kuat, Generic_Acclamator_Assault_Ship_I</Starting_Forces>
+		<Starting_Forces> Empire, Kuat, LAC </Starting_Forces>
+		<!-- Kuat Land Forces -->
+		<Starting_Forces> Empire, Kuat, Empire_MoffPalace </Starting_Forces>
+		<Starting_Forces> Empire, Kuat, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Kuat, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Kuat, Clonetrooper_Phase_Two_Team </Starting_Forces>
+	</Campaign>	
+
+	
+	<Campaign Name="Sandbox_FTGU_Republic">
+
+		<Campaign_Set> Sandbox_CloneWarsFTGU </Campaign_Set>
+		<Sort_Order>309</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_FTGU </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_FTGU_CW </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+    <Locations>
+			Aargonar,
+			Abregado_Rae,
+			Agamar,
+			Alderaan,
+			Anaxes,
+			Arkania,
+			Azure,
+			Balmorra,
+			Barlok,
+			Belderone,
+			Bestine,
+			Bomis_Koori,
+			Bothawui,
+			Boz_Pity,
+			Carida,
+			Cato_Neimoidia,
+			Charros,
+			Christophsis,
+			Ciutric,
+			Corellia,
+			Corsin,
+			Coruscant,
+			Dantooine,
+			Dathomir,
+			Deko_Neimoidia,
+			Denon,
+			Devaron,
+			Druckenwell,
+			Eriadu,
+			Felucia,
+			Florrum,
+			Foerost,
+			Fondor,
+			Galaxy_Core_Art_Model,
+			Geonosis,
+			Humbarine,
+			Hypori,
+			Jabiim,
+			Kaikielius,
+			Kamino,
+			Kashyyyk,
+			Kirima,
+			Korda,
+			Krant,
+			Kuat,
+			Lola_Sayu,
+			Malastare,
+			Mandalore,
+			Maridun,
+			Mimban,
+			Mon_Calamari,
+			Mustafar,
+			Muunilinst,
+			Mygeeto,
+			Naboo,
+			Nal_Hutta,
+			Onderon,
+			Ord_Mantell,
+			Pammant,
+			Pantora,
+			Praesitlyn,
+			Raxus_Second,
+			Rendili,
+			Rhen_Var,
+			Rishi,
+			Rodia,
+			Ronyards,
+			Rothana,
+			Ruusan,
+			Ryndellia,
+			Saleucami,
+			Scipio,
+			Serenno,
+			Sullust,
+			Thule,
+			Tibrin,
+			Toydaria,
+			Umbara,
+			Utapau,
+			YagDhul,
+			Yavin,
+</Locations>
+    <Trade_Routes>
+			Aargonar_Azure,
+			Aargonar_Belderone,
+			Aargonar_Charros,
+			Aargonar_Mandalore,
+			Aargonar_Maridun,
+			Aargonar_Saleucami,
+			Abregado_Rae_Corellia,
+			Abregado_Rae_Fondor,
+			Abregado_Rae_Kaikielius,
+			Agamar_Ciutric,
+			Agamar_Corsin,
+			Agamar_Dathomir,
+			Agamar_Ord_Mantell,
+			Agamar_Scipio,
+			Alderaan_Coruscant,
+			Alderaan_Kaikielius,
+			Alderaan_Kuat,
+			Alderaan_Rendili,
+			Anaxes_Arkania,
+			Anaxes_Barlok,
+			Anaxes_Coruscant,
+			Arkania_Barlok,
+			Arkania_Carida,
+			Azure_Charros,
+			Azure_Korda,
+			Balmorra_Carida,
+			Balmorra_Deko_Neimoidia,
+			Balmorra_Kuat,
+			Balmorra_Onderon,
+			Barlok_Coruscant,
+			Barlok_Ord_Mantell,
+			Belderone_Jabiim,
+			Belderone_Pammant,
+			Belderone_Rhen_Var,
+			Bestine_Devaron,
+			Bestine_Kirima,
+			Bestine_Ronyards,
+			Bestine_YagDhul,
+			Bomis_Koori_Fondor,
+			Bomis_Koori_Tibrin,
+			Bomis_Koori_YagDhul,
+			Bothawui_Christophsis,
+			Bothawui_Druckenwell,
+			Bothawui_Kamino,
+			Bothawui_Krant,
+			Bothawui_Mimban,
+			Boz_Pity_Charros,
+			Boz_Pity_Nal_Hutta,
+			Boz_Pity_Saleucami,
+			Carida_Corsin,
+			Carida_Coruscant,
+			Carida_Korda,
+			Cato_Neimoidia_Deko_Neimoidia,
+			Cato_Neimoidia_Denon,
+			Cato_Neimoidia_Humbarine,
+			Cato_Neimoidia_Rendili,
+			Charros_Kashyyyk,
+			Charros_Toydaria,
+			Christophsis_Druckenwell,
+			Christophsis_Rodia,
+			Christophsis_Ryndellia,
+			Ciutric_Dantooine,
+			Ciutric_Dathomir,
+			Ciutric_Serenno,
+			Corellia_Denon,
+			Corellia_Devaron,
+			Corellia_Kaikielius,
+			Corellia_Rendili,
+			Corsin_Korda,
+			Corsin_Mandalore,
+			Corsin_Ord_Mantell,
+			Coruscant_Foerost,
+			Dantooine_Muunilinst,
+			Dantooine_Mygeeto,
+			Dathomir_Mandalore,
+			Dathomir_Yavin,
+			Deko_Neimoidia_Mimban,
+			Deko_Neimoidia_Onderon,
+			Denon_Devaron,
+			Denon_Druckenwell,
+			Denon_Mimban,
+			Denon_Ronyards,
+			Devaron_Fondor,
+			Druckenwell_Kirima,
+			Eriadu_Praesitlyn,
+			Eriadu_Sullust,
+			Eriadu_Tibrin,
+			Felucia_Florrum,
+			Felucia_Lola_Sayu,
+			Felucia_Raxus_Second,
+			Felucia_Rhen_Var,
+			Florrum_Raxus_Second,
+			Florrum_Thule,
+			Foerost_Kaikielius,
+			Fondor_YagDhul,
+			Geonosis_Hypori,
+			Geonosis_Rodia,
+			Humbarine_Kuat,
+			Humbarine_Rendili,
+			Hypori_Kamino,
+			Hypori_Rothana,
+			Jabiim_Pammant,
+			Jabiim_Saleucami,
+			Kamino_Rishi,
+			Kamino_Rodia,
+			Kashyyyk_Korda,
+			Kashyyyk_Ruusan,
+			Kashyyyk_Umbara,
+			Kirima_Malastare,
+			Kirima_Naboo,
+			Kirima_Ronyards,
+			Kirima_Ryndellia,
+			Korda_Mandalore,
+			Korda_Onderon,
+			Krant_Rishi,
+			Krant_Toydaria,
+			Lola_Sayu_Maridun,
+			Lola_Sayu_Rhen_Var,
+			Lola_Sayu_Thule,
+			Malastare_Sullust,
+			Malastare_YagDhul,
+			Mandalore_Maridun,
+			Maridun_Yavin,
+			Mimban_Ruusan,
+			Mimban_Umbara,
+			Mon_Calamari_Pammant,
+			Mon_Calamari_Raxus_Second,
+			Mon_Calamari_Rhen_Var,
+			Mustafar_Tibrin,
+			Mustafar_Utapau,
+			Muunilinst_Mygeeto,
+			Mygeeto_Scipio,
+			Naboo_Pantora,
+			Naboo_Praesitlyn,
+			Naboo_Ryndellia,
+			Naboo_Sullust,
+			Nal_Hutta_Rishi,
+			Nal_Hutta_Toydaria,
+			Onderon_Umbara,
+			Ord_Mantell_Scipio,
+			Pantora_Ryndellia,
+			Pantora_Utapau,
+			Praesitlyn_Utapau,
+			Rishi_Rothana,
+			Ruusan_Toydaria,
+			Ruusan_Umbara,
+			Serenno_Thule,
+			Serenno_Yavin,
+			Sullust_Tibrin,
+			Thule_Yavin,
+</Trade_Routes>
+        <Home_Location> Rebel, Raxus </Home_Location>
+		 <Home_Location> Empire, Coruscant </Home_Location>
+
+        <Starting_Active_Player> Empire </Starting_Active_Player>
+		
+		<Rebel_Story_Name>Conquests\CloneWarsFTGU\Story_Plots_Sandbox_FTGU_Rebel.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Conquests\CloneWarsFTGU\Story_Plots_Sandbox_FTGU_Empire.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\CloneWarsFTGU\Story_Plots_Sandbox_FTGU_Container.xml</Underworld_Story_Name>
+
+		<AI_Player_Control> Rebel, GenericAI </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+		
+		<AI_Player_Control> Underworld, None </AI_Player_Control>
+		<AI_Player_Control> Trade_Federation, None </AI_Player_Control>
+		<AI_Player_Control> Hapes_Consortium, None </AI_Player_Control>
+		<AI_Player_Control> Hostile, None </AI_Player_Control>
+		<AI_Player_Control> Banking_Clan, None</AI_Player_Control>
+		<AI_Player_Control> Commerce_Guild, None </AI_Player_Control>      
+		<AI_Player_Control> Techno_Union, None </AI_Player_Control>				
+		<AI_Player_Control> Sector_Forces, None </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>		
+		<AI_Player_Control> Hutt_Cartels, None </AI_Player_Control>		
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>		
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Trade_Federation, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Commerce_Guild, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Banking_Clan, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Techno_Union, DefaultGalacticHints </Markup_Filename>				
+		<Markup_Filename>Sector_Forces, DefaultGalacticHints </Markup_Filename>		
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hutt_Cartels, DefaultGalacticHints </Markup_Filename>			
+		<Markup_Filename>Hapes_Consortium, DefaultGalacticHints </Markup_Filename>
+		
+		<Markup_Filename>Hostile, DefaultGalacticHints </Markup_Filename>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+		
+		<Starting_Credits> Independent_Forces,  300000 </Starting_Credits>
+		
+		<!-- Empire Starting Forces -->
+		
+   
+	
+	<Starting_Forces>Empire, Kamino, Empire_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Republic_Shipyard_Level_One</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_TradeStation</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Secondary_Golan_One</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Acclamator_Assault_Ship_I</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Acclamator_Assault_Ship_I</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Dreadnaught_Lasers</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Carrack_Cruiser_Lasers</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Class_C_Frigate</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Class_C_Support</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, LAC</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, LAC</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Remnant_Capital</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Empire_MoffPalace</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Generic_Planetary_Shield</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Tax_Agency</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, E_Ground_Barracks</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, E_Ground_Light_Vehicle_Factory</Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Rex_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Ahsoka_Delta_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Anakin_Delta_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Fordo_Team </Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Padme_Amidala_Team </Starting_Forces>
+    <Starting_Forces>Empire, Kamino, Senate_Commando_Platoon</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Pestage_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Yoda_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Mace_Windu_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Kamino, Kit_Fisto_Delta_Team</Starting_Forces>
+	
+  </Campaign>
+ 
+ </Campaigns>

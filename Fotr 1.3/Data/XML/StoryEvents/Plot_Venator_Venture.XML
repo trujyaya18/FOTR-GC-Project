@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--************* Rimward: Venator Venture **************-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Venator_Venture</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Venator_Venture.XML</Active_Plot>
+
+</Story_Mode_Plots>

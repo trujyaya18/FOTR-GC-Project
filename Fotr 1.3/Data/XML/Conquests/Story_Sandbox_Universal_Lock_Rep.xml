@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--***********	Generic tech set for Repbublic  **********-->
+<!--******************************************************-->
+
+
+
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="GC_Progress_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="GC_Progress_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+	
+	<Event Name="GC_Progress_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+	
+	<Event Name="GC_Progress_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="GC_Progress_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+	
+		
+	<Event Name="Check_5_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_4</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>GC_Progress_05</Prereq>
+	</Event>
+	
+	<Event Name="Check_4_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_3</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>GC_Progress_04</Prereq>
+	</Event>
+	
+	<Event Name="Check_3_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_2</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>GC_Progress_03</Prereq>
+	</Event>
+	
+	<Event Name="Check_2_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_1</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>GC_Progress_02</Prereq>
+	</Event>
+	
+	<Event Name="Check_1_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Prereq>GC_Progress_01</Prereq>
+	</Event>
+	
+	<Event Name="Cancel_5_Check">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Start_Check_5</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>GC_Progress_01</Prereq>
+	</Event>
+
+	<Event Name="GC_Starts_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_1</Branch>
+		<Prereq>Check_1_Start</Prereq>
+	</Event>
+
+	<Event Name="GC_Starts_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_2</Branch>
+		<Prereq>Check_2_Start</Prereq>
+	</Event>
+	
+	<Event Name="GC_Starts_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_3</Branch>
+		<Prereq>Check_3_Start</Prereq>
+	</Event>
+	
+	<Event Name="GC_Starts_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_4</Branch>
+		<Prereq>Check_4_Start</Prereq>
+	</Event>
+
+	<Event Name="GC_Starts_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Branch>Start_Check_5</Branch>
+		<Prereq>Check_5_Start</Prereq>
+	</Event>
+	
+	<!-- Mandator limiting -->
+
+	<Event Name="Lock_Mandator">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Mandator_II_Upgrade</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>Empire</Event_Param3>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Mandator</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+</Story>

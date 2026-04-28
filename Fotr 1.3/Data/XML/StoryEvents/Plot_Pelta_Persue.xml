@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--****** Hunt for the Malevolence: Pelta Persue *******-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Pelta_Persue</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Pelta_Persue.XML</Active_Plot>
+
+</Story_Mode_Plots>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!--****************************************************-->
+<!--************** Rimward: Perfect Piracy *************-->
+<!--****************************************************-->
+
+<Story_Mode_Plots>
+	<Lua_Script>Story_Perfect_Piracy</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Perfect_Piracy.XML</Active_Plot>
+</Story_Mode_Plots>

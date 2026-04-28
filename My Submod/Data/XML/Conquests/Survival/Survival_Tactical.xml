@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	
+	<Event Name="SWITCH_CONTROL_EVENT">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Hostile</Reward_Param1>
+		<Reward_Param2>SurvivalAI</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Empire_Retreat">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+	  	<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	 </Event>
+	 <Event Name="Rebel_Retreat">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+	  <Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	 </Event>
+
+
+	<Event Name="Remove_FoW">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_FOW</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="ENABLE_VICTORY_0">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_SURVIVAL_CIS_STARBASE_1"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_CIS_STARBASE</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_SURVIVAL_CIS_STARBASE_2"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_CIS_STARBASE_2</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_SURVIVAL_CIS_STARBASE_3"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_CIS_STARBASE_3</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_SURVIVAL_CIS_STARBASE_4"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_CIS_STARBASE_4</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_SURVIVAL_CIS_STARBASE_5"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_CIS_STARBASE_5</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_Survival_REP_Starbase_1"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_REPUBLIC_STARBASE</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_Survival_REP_Starbase_2"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_REPUBLIC_STARBASE_2</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_Survival_REP_Starbase_3"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_REPUBLIC_STARBASE_3</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_Survival_REP_Starbase_4"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_REPUBLIC_STARBASE_4</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+
+	<!-- <Event Name="STORY_TACTICAL_DESTROY_Survival_REP_Starbase_5"> -->
+		<!-- <Event_Type>STORY_TACTICAL_DESTROY</Event_Type> -->
+		<!-- <Event_Param1>SURVIVAL_REPUBLIC_STARBASE_5</Event_Param1> -->
+		<!-- <Event_Param3>1</Event_Param3> -->
+		<!-- <Reward_Type>VICTORY</Reward_Type> -->
+		<!-- <Reward_Param1>Hostile</Reward_Param1> -->
+	<!-- </Event> -->
+
+	<Event Name="Disable_Reinforcements">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NO_REINFORCEMENTS</Event_Param2>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Close_Reinforcement_Window">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>r_close</Reward_Param1>
+		<Prereq>Disable_Reinforcements</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Enable_Reinforcements">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_REINFORCEMENTS</Event_Param2>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Show_Screen_Text">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SHOW_SCREEN_TEXT</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>
+		<Perpetual>true</Perpetual>
+		<Branch>Screen_Text_Events</Branch>
+	</Event>
+
+	<Event Name="30SecondWarning">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>30WARNING</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>Next Wave Begins In 30 Seconds</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="20SecondWarning">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>20WARNING</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>Next Wave Begins In 20 Seconds</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="10SecondWarning">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>10WARNING</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>Next Wave Begins In 10 Seconds</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Remove_Screen_Text">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REMOVE_SCREEN_TEXT</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+		<Perpetual>true</Perpetual>
+		<Branch>Screen_Text_Events</Branch>
+	</Event>
+	
+	<Event Name="Set_Victor_Hostile">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PLAYER_DEFEATED</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Hostile</Reward_Param1>
+	</Event>
+
+
+
+	<!--Testing-->
+
+	<Event Name="WaveMessage">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SHOW_WAVES</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CURRENT_WAVE</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>
+		<Reward_Param3></Reward_Param3>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="RemoveWaveMessage">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REMOVE_WAVES</Event_Param2>
+		<Reward_Type>SCREEN_TEXT</Reward_Type>
+		<Reward_Param1>TEXT_CURRENT_WAVE</Reward_Param1>
+		<Reward_Param4>remove</Reward_Param4>
+		<Perpetual>true</Perpetual>
+		<Branch>Screen_Text_Events</Branch>
+	</Event>
+
+
+
+
+
+
+
+</Story>

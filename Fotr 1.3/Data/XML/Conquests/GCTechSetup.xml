@@ -1,0 +1,1574 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Corporate_Sector)	******-->
+<!--******************************************************-->
+
+<Story>
+
+	<Event Name="Tech_Check">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+
+	</Event>
+	
+	
+	<Event Name="Set_Tech_1_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Hapes_Consortium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hapes_Consortium</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	 	
+	<Event Name="Set_Tech_1_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	
+	<Event Name="Set_Tech_1_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Corellia">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corellia</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	
+	<Event Name="Set_Tech_1_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	
+	<Event Name="Set_Tech_1_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Mandalorians">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Mandalorians</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	
+		
+	<Event Name="Set_Tech_1_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_EmpireoftheHand">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>EmpireoftheHand</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	 	
+	<Event Name="Set_Tech_1_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Empire">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_SsiRuuvi_Imperium">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>SsiRuuvi_Imperium</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	  
+	
+	 <Event Name="Set_Tech_11_Chiss">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Chiss</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+		
+	<Event Name="Set_Tech_1_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Hutts">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutts</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	
+	
+	<Event Name="Set_Tech_1_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 	
+	<Event Name="Set_Tech_1_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	
+		
+	<Event Name="Set_Tech_1_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Teradoc">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Teradoc</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	 	
+	<Event Name="Set_Tech_1_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pirates</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Hutt_Cartels">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Hutt_Cartels</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	 	
+	
+	<Event Name="Set_Tech_1_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Underworld">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	 	
+	<Event Name="Set_Tech_1_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Pentastar">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Pentastar</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+	
+	<Event Name="Set_Tech_1_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_4_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Corporate_Sector">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Corporate_Sector</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>	
+	</Event>
+	 
+		
+	<Event Name="Set_Tech_1_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_1</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>	
+	</Event>
+	
+	<Event Name="Set_Tech_2_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_2</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>	
+	</Event>
+	
+		<Event Name="Set_Tech_3_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_3</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_4_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_4</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_5_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_5</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>	
+	</Event>
+	 
+	 
+	 	<Event Name="Set_Tech_6_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_6</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_7_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_7</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_8_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_8</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_9_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_9</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>	
+	</Event>
+	 
+	 
+	<Event Name="Set_Tech_10_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_10</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>9</Reward_Param2>	
+	</Event>
+	 
+	 
+	 <Event Name="Set_Tech_11_Rebel">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_TECH_11</Event_Param2>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>	
+	</Event>
+	 
+	 
+
+</Story>

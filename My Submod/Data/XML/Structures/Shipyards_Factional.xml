@@ -1,0 +1,1273 @@
+﻿<?xml version="1.0"?>
+<Shipyards>
+
+	<SpecialStructure Name="CIS_Shipyard_Level_One">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_One</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_1
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_CIS_1_1
+		TEXT_TOOLTIP_SHIPYARD_CIS_1_2
+		TEXT_TOOLTIP_SHIPYARD_CIS_1_3
+		TEXT_TOOLTIP_SHIPYARD_CIS_1_4
+		TEXT_TOOLTIP_SHIPYARD_CIS_1_5
+		TEXT_TOOLTIP_SHIPYARD_CIS_1_6
+		</Encyclopedia_Text>
+		
+		<Affiliation>Rebel,  Banking_Clan, Commerce_Guild,  Trade_Federation,  Techno_Union</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Vulture_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Vulture_Squadron_Double, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Scarab_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Scarab_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hyena_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hyena_Squadron_Double, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Diamond_Frigate, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skirmish_Diamond_Frigate, 2</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Hardcell, 2</Starting_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Munifex, 1</Starting_Spawned_Units_Tech_0>
+		
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>CIS_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+    </SpecialStructure>
+	
+	<SpecialStructure Name="Ship_Market">
+		<Text_ID>Ship Market</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_SECONDARY_CONSTRUCTION</Encyclopedia_Unit_Class>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIP_MARKET
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_SHIELD 
+		TEXT_TOOLTIP_SHIPMARKET_WEAP1
+		TEXT_TOOLTIP_SHIPMARKET_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UNITS_SHIP_MARKET
+		</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_CSA_SHIPMARKET_SECONDARY.TGA</Icon_Name>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>30</Size_Value>
+		<Base_Position>Orbital</Base_Position>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>Ruusan, Mimban, Corsin, Arkania, Thule, Toydaria, Pantora, Praesitlyn, Kaikielius, Scipio</Required_Planets>
+		<Autoresolve_Health>4700</Autoresolve_Health>
+		<Reinforcement_Prevention_Radius> 4000 </Reinforcement_Prevention_Radius>
+		
+		<Shield_Points>2000</Shield_Points>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Tactical_Health>2700</Tactical_Health>
+		<Behavior>SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>SPACE_OBSTACLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Space_FOW_Reveal_Range>20000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Space_Model_Name>NV_CapitalShipyard.alo</Space_Model_Name>
+		<GUI_Row> 1 </GUI_Row>
+		<Select_Box_Scale>300</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<AI_Combat_Power>5000</AI_Combat_Power>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+
+		<Modifies_Reveal_Range>no</Modifies_Reveal_Range>
+		<Reveal_Range_Modifier>-.50</Reveal_Range_Modifier>
+
+		<CategoryMask> SpaceStructure </CategoryMask>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Space_Or_Garrison_Category>Frigate</Space_Or_Garrison_Category>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+
+
+		<HardPoints>
+			HP_Shipyard_Med_Turbo_01, HP_Shipyard_Med_Turbo_02, HP_Shipyard_Med_Turbo_03, HP_Shipyard_Med_Turbo_04, HP_Shipyard_Med_Turbo_05, HP_Shipyard_Med_Turbo_06, HP_Shipyard_Med_Turbo_07, HP_Shipyard_Med_Turbo_08, 
+			Shipyard_Hangar, HP_Shipyard_Med_Laser_01, HP_Shipyard_Med_Laser_02, HP_Shipyard_Med_Laser_03, HP_Shipyard_Med_Laser_04
+		</HardPoints>
+		
+
+		<Score_Cost_Credits> 1500 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Custom_Soft_Footprint_Radius> 50 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+		<Layer_Z_Adjust> -200 </Layer_Z_Adjust>
+		<Space_Layer> StaticObject </Space_Layer>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_3_Empire</Retreat_Self_Destruct_Explosion>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Damage>55</Damage>
+		<Death_Clone>Damage_Normal, Shipyard_Level_Three_Death_Clone</Death_Clone>
+
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Max_Thrust>1.5</Max_Thrust>
+		<Max_Speed>0.00001</Max_Speed>
+		<Max_Rate_Of_Roll>0.0</Max_Rate_Of_Roll>
+		<!--<Lua_Script>GenericGameObject</Lua_Script>-->
+					
+		<Affiliation>Rebel, Empire</Affiliation>
+	
+    </SpecialStructure>
+	
+	<SpecialStructure Name="CIS_Shipyard_Level_Two">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Two</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_CIS_2_1
+		TEXT_TOOLTIP_SHIPYARD_CIS_2_2
+		TEXT_TOOLTIP_SHIPYARD_CIS_2_3
+		TEXT_TOOLTIP_SHIPYARD_CIS_2_4
+		TEXT_TOOLTIP_SHIPYARD_CIS_2_5
+		TEXT_TOOLTIP_SHIPYARD_CIS_2_6
+		</Encyclopedia_Text>
+		
+		<Affiliation>Rebel,  Banking_Clan, Commerce_Guild,  Trade_Federation,  Techno_Union</Affiliation>
+ 		
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_0>Vulture_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Vulture_Squadron_Double, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Scarab_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Scarab_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hyena_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hyena_Squadron_Double, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skirmish_Diamond_Frigate, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skirmish_Diamond_Frigate, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Munifex, 2</Starting_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Munificent, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!-- Era 2-4 -->
+		<Starting_Spawned_Units_Tech_1>Vulture_Squadron_Double, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Vulture_Squadron_Double, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Scarab_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Scarab_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Hyena_Squadron_Double, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Hyena_Squadron_Double, 4</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Diamond_Frigate, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_Diamond_Frigate, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Munifex, 3</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Munificent, 1</Starting_Spawned_Units_Tech_1>
+		
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>CIS_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="CIS_Shipyard_Level_Three">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Three</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_3
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_CIS_3_1
+		TEXT_TOOLTIP_SHIPYARD_CIS_3_2
+		TEXT_TOOLTIP_SHIPYARD_CIS_3_3
+		TEXT_TOOLTIP_SHIPYARD_CIS_3_4
+		TEXT_TOOLTIP_SHIPYARD_CIS_3_5
+		TEXT_TOOLTIP_SHIPYARD_CIS_3_6
+		TEXT_TOOLTIP_SHIPYARD_CIS_3_7
+		TEXT_TOOLTIP_SHIPYARD_CIS_3_8
+		</Encyclopedia_Text>
+		
+		<Affiliation>Rebel,  Banking_Clan, Commerce_Guild,  Trade_Federation,  Techno_Union</Affiliation>
+		
+		<!-- Era 1-2 -->
+		<Starting_Spawned_Units_Tech_0>Vulture_Squadron_Double, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Vulture_Squadron_Double, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Scarab_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Scarab_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hyena_Squadron_Double, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hyena_Squadron_Double, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skirmish_Diamond_Frigate, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skirmish_Diamond_Frigate, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Munificent, 2</Starting_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Auxilia, 2</Starting_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Captor, 1</Starting_Spawned_Units_Tech_0>
+
+		
+		<!-- Era 3-4 -->
+		<Starting_Spawned_Units_Tech_2>Vulture_Squadron_Double, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Vulture_Squadron_Double, -1</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>TriFighter_Squadron, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TriFighter_Squadron, 2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Hyena_Squadron_Double, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Hyena_Squadron_Double, 6</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_Diamond_Frigate, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_Diamond_Frigate, 4</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Munificent, 2</Starting_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Auxilia, 2</Starting_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Captor, 1</Starting_Spawned_Units_Tech_2>
+		
+		<Space_Or_Garrison_Category>Frigate</Space_Or_Garrison_Category>
+		
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>CIS_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+    </SpecialStructure>
+	
+	<SpecialStructure Name="CIS_Shipyard_Level_Four">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Four</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_4
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP2
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_1
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_2
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_3
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_4
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_5
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_6
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_7
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_8
+		TEXT_TOOLTIP_SHIPYARD_CIS_4_9
+		</Encyclopedia_Text>
+		
+		<Affiliation>Rebel,  Banking_Clan, Commerce_Guild,  Trade_Federation,  Techno_Union</Affiliation>
+		
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_0>Vulture_Squadron_Double, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Vulture_Squadron_Double, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Scarab_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Scarab_Squadron_Double, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hyena_Squadron_Double, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hyena_Squadron_Double, 8</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skirmish_Diamond_Frigate, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skirmish_Diamond_Frigate, 3</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Munifex, 2</Starting_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Munificent, 1</Starting_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Skirmish_Captor, 1</Starting_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skirmish_Auxiliary_Lucrehulk, 1</Starting_Spawned_Units_Tech_0>
+		
+		
+		<!-- Era 2 -->
+		<Starting_Spawned_Units_Tech_1>Vulture_Squadron_Double, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Vulture_Squadron_Double, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Scarab_Squadron_Double, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Scarab_Squadron_Double, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Hyena_Squadron_Double, 4</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Hyena_Squadron_Double, 8</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Diamond_Frigate, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_Diamond_Frigate, 3</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Munifex, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Munificent, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Captor, 2</Starting_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Providence, 1</Starting_Spawned_Units_Tech_1>
+		
+		
+		<!-- Era 3-4 -->
+		<Starting_Spawned_Units_Tech_2>Vulture_Squadron_Double, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Vulture_Squadron_Double, -1</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>TriFighter_Squadron_Double, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TriFighter_Squadron_Double, 2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Hyena_Squadron_Double, 4</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Hyena_Squadron_Double, 8</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_Diamond_Frigate, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_Diamond_Frigate, 3</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Munifex, 2</Starting_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Munificent, 2</Starting_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Captor, 2</Starting_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_Providence, 1</Starting_Spawned_Units_Tech_2>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>CIS_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+    </SpecialStructure>
+	
+	
+	<SpecialStructure Name="Republic_Shipyard_Level_One">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_One</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_1
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_GAR_1_1
+		TEXT_TOOLTIP_SHIPYARD_GAR_1_2
+		TEXT_TOOLTIP_SHIPYARD_GAR_1_3
+		TEXT_TOOLTIP_SHIPYARD_GAR_1_4
+		TEXT_TOOLTIP_SHIPYARD_GAR_1_5
+		TEXT_TOOLTIP_SHIPYARD_GAR_1_6
+		TEXT_TOOLTIP_SHIPYARD_GAR_1_7
+		TEXT_TOOLTIP_SHIPYARD_GAR_1_8
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire</Affiliation>
+		
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_CR90, 2</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_DP20, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser_Lasers, 1</Starting_Spawned_Units_Tech_1>
+		
+		
+		<!-- Era 2 -->
+		<Starting_Spawned_Units_Tech_2>Generic_Z95_Headhunter_Squadron, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>BTLB_Y-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>BTLB_Y-Wing_Squadron_Double, 2</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_CR90, 2</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Pelta, 2</Starting_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Carrack_Cruiser_Lasers, 1</Starting_Spawned_Units_Tech_2>
+		
+		
+		<!-- Era 3 -->
+        <Starting_Spawned_Units_Tech_3>Torrent_Squadron, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Torrent_Squadron, -1</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>BTLB_Y-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>BTLB_Y-Wing_Squadron_Double, 2</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Skirmish_CR90, 2</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_Pelta, 2</Starting_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_Carrack_Cruiser_Lasers, 1</Starting_Spawned_Units_Tech_3>
+		
+		
+		<!-- Era 4 -->
+		<Starting_Spawned_Units_Tech_4>Twin_Ion_Engine_Starfighter_Squadron, 2</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Twin_Ion_Engine_Starfighter_Squadron, -1</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_4>
+
+		<Starting_Spawned_Units_Tech_4>BTLB_Y-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>BTLB_Y-Wing_Squadron_Double, 2</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Skirmish_CR90, 2</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Pelta, 2</Starting_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Carrack_Cruiser_Lasers, 1</Starting_Spawned_Units_Tech_4>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>REP_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+    </SpecialStructure>
+	
+	<SpecialStructure Name="Republic_Shipyard_Level_Two">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Two</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_1
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_2
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_3
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_4
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_5
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_6
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_7
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_8
+		TEXT_TOOLTIP_SHIPYARD_GAR_2_9
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire</Affiliation>
+ 		
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught_Lasers, 2</Starting_Spawned_Units_Tech_1>
+		
+		
+		<!-- Era 2 -->
+		<Starting_Spawned_Units_Tech_2>Generic_Z95_Headhunter_Squadron, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>BTLB_Y-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>BTLB_Y-Wing_Squadron_Double, 2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_2>
+		
+		
+		<!-- Era 3 -->
+        <Starting_Spawned_Units_Tech_3>Torrent_Squadron, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Torrent_Squadron, -1</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>BTLB_Y-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>BTLB_Y-Wing_Squadron_Double, 2</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_3>
+		
+		
+		<!-- Era 4 -->
+		<Starting_Spawned_Units_Tech_4>Twin_Ion_Engine_Starfighter_Squadron, 2</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Twin_Ion_Engine_Starfighter_Squadron, -1</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_4>
+
+		<Starting_Spawned_Units_Tech_4>BTLB_Y-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>BTLB_Y-Wing_Squadron_Double, 2</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_4>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>REP_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Republic_Shipyard_Level_Three">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Three</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_3
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_GAR_3_1
+		TEXT_TOOLTIP_SHIPYARD_GAR_3_2
+		TEXT_TOOLTIP_SHIPYARD_GAR_3_3
+		TEXT_TOOLTIP_SHIPYARD_GAR_3_4
+		TEXT_TOOLTIP_SHIPYARD_GAR_3_5
+		TEXT_TOOLTIP_SHIPYARD_GAR_3_6
+		TEXT_TOOLTIP_SHIPYARD_GAR_3_7
+		TEXT_TOOLTIP_SHIPYARD_GAR_3_8
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire</Affiliation>
+
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>2_Warpod_Squadron, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>2_Warpod_Squadron, 6</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught_Carrier, 2</Starting_Spawned_Units_Tech_1>
+		
+		
+		<!-- Era 2-3 -->
+		<Starting_Spawned_Units_Tech_2>Torrent_Squadron, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Torrent_Squadron, -1</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>BTLB_Y-Wing_Squadron, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>BTLB_Y-Wing_Squadron, 6</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Arquitens, 2</Starting_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Acclamator_Assault_Ship_I, 2</Starting_Spawned_Units_Tech_2>
+		
+		
+		<!-- Era 4 -->
+		<Starting_Spawned_Units_Tech_4>V-Wing_Squadron, 3</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>V-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_4>
+
+		<Starting_Spawned_Units_Tech_4>BTLB_Y-Wing_Squadron, 3</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>BTLB_Y-Wing_Squadron, 6</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Arquitens, 2</Starting_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Acclamator_Assault_Ship_I, 2</Starting_Spawned_Units_Tech_4>
+		
+		<Space_Or_Garrison_Category>Frigate</Space_Or_Garrison_Category>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>REP_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+    </SpecialStructure>
+	
+	<SpecialStructure Name="Republic_Shipyard_Level_Four">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Four</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_4
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP2
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_1
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_2
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_3
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_4
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_5
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_6
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_7
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_8
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_9
+		TEXT_TOOLTIP_SHIPYARD_GAR_4_10
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire</Affiliation>
+
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Cloakshape_Squadron_Double, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Cloakshape_Squadron_Double, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 4</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught_Carrier, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Invincible, 1</Starting_Spawned_Units_Tech_1>
+		
+		
+		<!-- Era 2 -->
+		<Starting_Spawned_Units_Tech_2>Generic_Z95_Headhunter_Squadron, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Cloakshape_Squadron_Double, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Cloakshape_Squadron_Double, 2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>BTLB_Y-Wing_Squadron_Double, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>BTLB_Y-Wing_Squadron_Double, 4</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Arquitens, 2</Starting_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_Acclamator_Assault_Ship_I, 2</Starting_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>Skirmish_Invincible, 1</Starting_Spawned_Units_Tech_2>
+		
+		
+		<!-- Era 3 -->
+        <Starting_Spawned_Units_Tech_3>Torrent_Squadron, 3</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Torrent_Squadron, -1</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Generic_ARC_170_Squadron_Double, 1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Generic_ARC_170_Squadron_Double, 2</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>BTLB_Y-Wing_Squadron_Double, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>BTLB_Y-Wing_Squadron_Double, 4</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_Arquitens, 2</Starting_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>Skirmish_Acclamator_Assault_Ship_I, 2</Starting_Spawned_Units_Tech_3>
+		
+		<Starting_Spawned_Units_Tech_3>Skirmish_Venator, 1</Starting_Spawned_Units_Tech_3>
+		
+		
+		<!-- Era 4 -->
+		<Starting_Spawned_Units_Tech_4>Twin_Ion_Engine_Starfighter_Squadron, 3</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Twin_Ion_Engine_Starfighter_Squadron, -1</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Generic_ARC_170_Squadron_Double, 1</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Generic_ARC_170_Squadron_Double, 2</Reserve_Spawned_Units_Tech_4>
+
+		<Starting_Spawned_Units_Tech_4>BTLB_Y-Wing_Squadron_Double, 2</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>BTLB_Y-Wing_Squadron_Double, 4</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_CR90, 2</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Skirmish_CR90, 4</Reserve_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Arquitens, 2</Starting_Spawned_Units_Tech_4>
+
+		<Starting_Spawned_Units_Tech_4>Skirmish_Acclamator_Assault_Ship_I, 2</Starting_Spawned_Units_Tech_4>
+		
+		<Starting_Spawned_Units_Tech_4>Skirmish_Venator, 1</Starting_Spawned_Units_Tech_4>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>REP_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+    </SpecialStructure>
+
+
+	<SpecialStructure Name="SF_Shipyard_Level_One">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_One</Variant_Of_Existing_Type>
+		
+		<Affiliation>Sector_Forces, Warlords, Independent_Forces</Affiliation>
+
+		<Starting_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_LAC, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_LAC, 2</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_DP20, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser_Lasers, 1</Starting_Spawned_Units_Tech_1>
+		
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_1
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_PDF_1_1
+		TEXT_TOOLTIP_SHIPYARD_PDF_1_2
+		TEXT_TOOLTIP_SHIPYARD_PDF_1_3
+		TEXT_TOOLTIP_SHIPYARD_PDF_1_4
+		TEXT_TOOLTIP_SHIPYARD_PDF_1_5
+		TEXT_TOOLTIP_SHIPYARD_PDF_1_6
+		</Encyclopedia_Text>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="SF_Shipyard_Level_Two">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Two</Variant_Of_Existing_Type>
+		
+		<Affiliation>Sector_Forces, Warlords, Independent_Forces</Affiliation>
+
+		<Starting_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_LAC, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_LAC, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught_Lasers, 2</Starting_Spawned_Units_Tech_1>
+		
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_PDF_2_1
+		TEXT_TOOLTIP_SHIPYARD_PDF_2_2
+		TEXT_TOOLTIP_SHIPYARD_PDF_2_3
+		TEXT_TOOLTIP_SHIPYARD_PDF_2_4
+		TEXT_TOOLTIP_SHIPYARD_PDF_2_5
+		TEXT_TOOLTIP_SHIPYARD_PDF_2_6
+		</Encyclopedia_Text>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="SF_Shipyard_Level_Three">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Three</Variant_Of_Existing_Type>
+		
+		<Affiliation>Sector_Forces, Warlords, Independent_Forces</Affiliation>
+
+		<Starting_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>2_Warpod_Squadron, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>2_Warpod_Squadron, 6</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_LAC, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_LAC, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught_Carrier, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Space_Or_Garrison_Category>Frigate</Space_Or_Garrison_Category>
+
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_3
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_PDF_3_1
+		TEXT_TOOLTIP_SHIPYARD_PDF_3_2
+		TEXT_TOOLTIP_SHIPYARD_PDF_3_3
+		TEXT_TOOLTIP_SHIPYARD_PDF_3_4
+		TEXT_TOOLTIP_SHIPYARD_PDF_3_5
+		TEXT_TOOLTIP_SHIPYARD_PDF_3_6
+		TEXT_TOOLTIP_SHIPYARD_PDF_3_7
+		</Encyclopedia_Text>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="SF_Shipyard_Level_Four">
+		<Variant_Of_Existing_Type>Generic_Shipyard_Level_Four</Variant_Of_Existing_Type>
+		
+		<Affiliation>Sector_Forces, Warlords, Independent_Forces</Affiliation>
+
+		<Starting_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Generic_Z95_Headhunter_Squadron, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Cloakshape_Squadron_Double, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Cloakshape_Squadron_Double, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>2_Warpod_Squadron_Double, 4</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_LAC, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_LAC, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser_Lasers, 2</Starting_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Dreadnaught_Carrier, 2</Starting_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Skirmish_Invincible, 1</Starting_Spawned_Units_Tech_1>
+
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_4
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP2
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_PDF_4_1
+		TEXT_TOOLTIP_SHIPYARD_PDF_4_2
+		TEXT_TOOLTIP_SHIPYARD_PDF_4_3
+		TEXT_TOOLTIP_SHIPYARD_PDF_4_4
+		TEXT_TOOLTIP_SHIPYARD_PDF_4_5
+		TEXT_TOOLTIP_SHIPYARD_PDF_4_6
+		TEXT_TOOLTIP_SHIPYARD_PDF_4_7
+		TEXT_TOOLTIP_SHIPYARD_PDF_4_8
+		</Encyclopedia_Text>
+
+	</SpecialStructure>
+	
+</Shipyards>

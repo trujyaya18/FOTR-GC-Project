@@ -1,0 +1,223 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--********** Foerost Campaign: Bulwark Brawl **********-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>SmallGCAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Trigger_CIS_Player">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PLAYER_CIS</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Rep_Player">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PLAYER_REP</Event_Param2>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>REBEL</Event_Param1>
+	</Event>
+
+	<Event Name="Rep_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>EMPIRE</Event_Param1>
+	</Event>
+
+
+	<Event Name="Trigger_Showdown_Screed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VALID_SCREED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Screed_Escaped">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SCREED_ESCAPED</Event_Param2>
+	</Event>
+	
+	<Event Name="Republic_Escape_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SCREED_RETREAT</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_SCREED_RETREAT</Reward_Param1>
+		<Reward_Param2>7.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Trigger_Showdown_Dodonna">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VALID_DODONNA</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Dodonna_Escaped">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DODONNA_ESCAPED</Event_Param2>
+	</Event>
+
+	<Event Name="Republic_Escape_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DODONNA_RETREAT</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_DODONNA_RETREAT</Reward_Param1>
+		<Reward_Param2>7.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Trigger_Showdown_Ningo">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VALID_NINGO</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Ningo_Escaped">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NINGO_ESCAPED</Event_Param2>
+	</Event>
+	
+	<Event Name="CIS_Escape_Speech_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>NINGO_ESCAPED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_NINGO_RETREAT</Reward_Param1>
+		<Reward_Param2>7.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Goal_00_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_PRIMARY_SPACE_ATTACK</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, Trigger_Screed_Escaped</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, Trigger_Dodonna_Escaped</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_00_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_PRIMARY_SPACE_ATTACK</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, Rep_Victory</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_00_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_PRIMARY_SPACE_ATTACK</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, Trigger_Ningo_Escaped</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_00_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_PRIMARY_SPACE_ATTACK</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_BULWARK_BRAWL_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Trigger_Rep_Player, CIS_Victory</Prereq>
+	</Event>
+
+</Story>

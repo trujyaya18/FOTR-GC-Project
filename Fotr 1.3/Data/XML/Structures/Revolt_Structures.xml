@@ -1,0 +1,880 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Revolt_Structures>
+	
+<!-- All of these are by mod regardless of shared buildings. Easier to keep track of, plus different spawns, eras and so on  -->
+
+	<SpecialStructure Name="Revolt_Rural_PDF_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_RURAL_BARRACKS_PDF1
+		TEXT_TOOLTIP_REVOLT_RURAL_BARRACKS_PDF2
+		TEXT_TOOLTIP_REVOLT_RURAL_BARRACKS_PDF3 
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>PDF_Soldier_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>PDF_Soldier_Heavy_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>PDF_Soldier_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>PDF_Soldier_Assault_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skiff, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skiff, 2</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Urban_PDF_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_URBAN_BARRACKS_PDF1
+		TEXT_TOOLTIP_REVOLT_URBAN_BARRACKS_PDF2
+		TEXT_TOOLTIP_REVOLT_URBAN_BARRACKS_PDF3_FOTR 
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>PDF_Soldier_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>PDF_Soldier_Heavy_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>PDF_Soldier_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>PDF_Soldier_Assault_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<!-- FotR Difference  -->
+		<!-- Flash Speeder Placeholder  -->
+		<Starting_Spawned_Units_Tech_0>Hailfire_Riot_Control, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hailfire_Riot_Control, 2</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Rural_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_RURAL_BARRACKS_1
+		TEXT_TOOLTIP_REVOLT_RURAL_BARRACKS_2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Espo_Walker_Early, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Espo_Walker_Early, 4</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Urban_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_URBAN_BARRACKS_1
+		TEXT_TOOLTIP_REVOLT_URBAN_BARRACKS_2 
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 4</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Light_Merc_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_Barracks.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_barracks.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_MERC_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_LIGHTMERC_BARRACKS_1
+		</Encyclopedia_Text>
+		
+		<Text_ID>TEXT_GROUND_BARRACKS_UNDERWORLD</Text_ID>
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Light_Mercenary_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Light_Mercenary_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Merc_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_Barracks.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_barracks.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Text_ID>TEXT_GROUND_BARRACKS_UNDERWORLD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_MERC_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_MERC_BARRACKS_1
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Mercenary_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Mercenary_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Elite_Merc_Barracks">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_Barracks.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_barracks.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Text_ID>TEXT_GROUND_BARRACKS_UNDERWORLD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_MERC_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_ELITEMERC_BARRACKS_1
+		TEXT_TOOLTIP_REVOLT_ELITEMERC_BARRACKS_2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Elite_Mercenary_Heavy_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Elite_Mercenary_Heavy_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Elite_Mercenary_Scout_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Elite_Mercenary_Scout_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Precinct_House">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_OfficerAcademy.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_officer_academy.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		
+		<Text_ID>TEXT_GROUND_PRECINCT_HOUSE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_PRECINCT_HOUSE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_PRECINCT_1
+		TEXT_TOOLTIP_REVOLT_PRECINCT_2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Police_Responder_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Police_Responder_Heavy_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Underground_Market">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_officer_academy.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		
+		<Text_ID>TEXT_GROUND_UMARKET</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_UMARKET
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_UMARKET_1
+		TEXT_TOOLTIP_REVOLT_UMARKET_2
+		TEXT_TOOLTIP_REVOLT_UMARKET_3
+		TEXT_TOOLTIP_REVOLT_UMARKET_4
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Mercenary_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Mercenary_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Elite_Mercenary_Heavy_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Elite_Mercenary_Heavy_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Scavenger_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Scavenger_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Scavenger_Outpost">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_PirateBase_Sml.alo</Land_Model_Name>
+		<Icon_Name>i_button_pirate_outpost.tga</Icon_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Text_ID>TEXT_GROUND_SCAVENGER_OUTPOST</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_SCAVENGER_OUTPOST
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_SCAVENGER_OUTPOST_1
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Scavenger_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Scavenger_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Scavenger_Base">
+		
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Nb_piratebase_01.alo</Land_Model_Name>
+		<Icon_Name>i_button_pirate_outpost.tga</Icon_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Text_ID>TEXT_GROUND_SCAVENGER_BASE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_SCAVENGER_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_OFFICE_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_SCAVENGER_BASE_1
+		TEXT_TOOLTIP_REVOLT_SCAVENGER_BASE_2
+		TEXT_TOOLTIP_REVOLT_SCAVENGER_BASE_3
+		TEXT_TOOLTIP_REVOLT_SCAVENGER_BASE_4
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Starting_Spawned_Units_Tech_0>Scavenger_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Scavenger_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Heavy_Scavenger_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Heavy_Scavenger_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X34_Technical, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X34_Technical, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, -1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_PDF_HQ">
+		
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_PALACE.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_palace.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Text_ID>TEXT_GROUND_PDF_HQ_BASE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_OFFICE_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE_1
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE_2
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE_3
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE_4
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Starting_Spawned_Units_Tech_0>Mercenary_Team_Deployed, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Mercenary_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Elite_Mercenary_Heavy_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Elite_Mercenary_Heavy_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X34_Technical, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X34_Technical, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, -1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Trade_Post">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_OfficerAcademy.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_officer_academy.tga</Icon_Name>
+		<Scale_Factor>1.4</Scale_Factor>
+
+		<Text_ID>TEXT_GROUND_TRADE_POST</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_TRADE_POST
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_TRADE_POST_1
+		TEXT_TOOLTIP_REVOLT_TRADE_POST_2
+		TEXT_TOOLTIP_REVOLT_TRADE_POST_3
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Destroyer_Droid, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, 4</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<!-- FotR Exclusive  -->
+	<SpecialStructure Name="Revolt_TDF_Deserter_Base">
+		
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Text_ID>TEXT_GROUND_TDF_DESERTER_CAMP</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_TDFDESERTER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_TDFDESERTER_1
+		TEXT_TOOLTIP_REVOLT_TDFDESERTER_2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>OOM_Security_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>OOM_Security_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<!-- FotR Exclusive  -->
+	<SpecialStructure Name="Revolt_Security_Droid_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_vehicle_factory.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Text_ID>TEXT_GROUND_SECURITYDROID_FACTORY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_SECURITYDROID_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_L_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_SECURITYDROID_FACTORY_1
+		TEXT_TOOLTIP_REVOLT_SECURITYDROID_FACTORY_2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Hailfire_Riot_Control, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hailfire_Riot_Control, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Persuader_Riot_Control, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Persuader_Riot_Control, 2</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_OldRep_Light_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_L_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_OLDREP_LIGHT_FACTORY_1
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 8</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Walker_Light_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_L_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_WALKER_LIGHT_FACTORY_1
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Espo_Walker_Early, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Espo_Walker_Early, 8</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<!-- FotR Exclusive  -->
+	<SpecialStructure Name="Revolt_UI_Light_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_L_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_UI_LIGHT_FACTORY_1
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Skiff, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skiff, 8</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<!-- FotR Exclusive  -->
+	<SpecialStructure Name="Revolt_AT_Light_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_L_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_AT_LIGHT_FACTORY_1
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>Arrow_23, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Arrow_23, 6</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Revolt_Illegal_Heavy_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_heavyfactory.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_H_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_H_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_ILLEGAL_HEAVY_FACTORY_1
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>MZ8_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>MZ8_Tank, 4</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<!-- FotR Exclusive  -->
+	<SpecialStructure Name="Revolt_Chop_Shop">
+		
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_heavyfactory.tga</Icon_Name>
+
+		<Text_ID>TEXT_GROUND_CHOP_SHOP</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REVOLT_CHOPSHOP
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_REVOLT_L_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_CHOPSHOP_FACTORY_1
+		TEXT_TOOLTIP_REVOLT_CHOPSHOP_FACTORY_2
+		TEXT_TOOLTIP_REVOLT_CHOPSHOP_FACTORY_3
+		TEXT_TOOLTIP_REVOLT_CHOPSHOP_FACTORY_4
+		</Encyclopedia_Text>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+
+		<Starting_Spawned_Units_Tech_0>AAT, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AAT, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Persuader, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Persuader, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Hailfire, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hailfire, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Heavy_Scavenger_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Heavy_Scavenger_Team_Deployed, -1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+
+	<SpecialStructure Name="Revolt_OldRep_Advanced_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Advanced_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_A_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_REVOLT_A_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_A_FACTORY_1_FOTR
+		</Encyclopedia_Text>
+		
+		<Obstacle_Proxy_Type> E_Ground_Advanced_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+		<Required_Special_Structures/>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Warlords,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Warlords,
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<!-- FotR Difference  -->
+		<Starting_Spawned_Units_Tech_0>A4_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A4_Juggernaut, 1</Reserve_Spawned_Units_Tech_0>
+		
+	</SpecialStructure>
+
+</Revolt_Structures>

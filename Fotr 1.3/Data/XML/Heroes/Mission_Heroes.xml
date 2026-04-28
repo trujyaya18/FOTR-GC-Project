@@ -1,0 +1,1168 @@
+<?xml version="1.0"?>
+<Mission_Heroes>
+
+	<!-- ********************************** -->
+	<!-- ************ Republic ************ -->
+	<!-- ********************************** -->
+
+	<UniqueUnit Name="Onara_Kuat">
+		<Variant_Of_Existing_Type>Generic_Mandator_II</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_ONARA_KUAT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_KUAT_OF_KUAT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_KUAT_OF_KUAT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_ONARA_KUAT
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_ONARA_KUAT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MANDATOR2_HULL
+		TEXT_TOOLTIP_MANDATOR2_SHIELD
+		TEXT_TOOLTIP_MANDATOR2_MOVE
+		TEXT_TOOLTIP_MANDATOR2_SQUADRON
+		TEXT_TOOLTIP_MANDATOR2_WEAP1
+		TEXT_TOOLTIP_MANDATOR2_WEAP2
+		TEXT_TOOLTIP_MANDATOR2_WEAP3
+		TEXT_TOOLTIP_MANDATOR2_WEAP4
+		TEXT_TOOLTIP_MANDATOR2_WEAP5
+		TEXT_TOOLTIP_MANDATOR2_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+
+		<Icon_Name>I_BUTTON_ONARA_KUAT.TGA</Icon_Name>
+		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
+		<Is_Named_Hero>Yes</Is_Named_Hero>	
+
+		<Affiliation>Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+
+		<Starting_Spawned_Units_Tech_0>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Torrent_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>BTLB_Y-WING_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_4>Twin_Ion_Engine_Starfighter_Squadron_Double, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>V-Wing_Squadron_Double, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>BTLB_Y-WING_Squadron_Double, 1</Starting_Spawned_Units_Tech_4>
+		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
+		<Reserve_Spawned_Units_Tech_0>Generic_ARC_170_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron_Double, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Torrent_Squadron_Double, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>BTLB_Y-WING_Squadron_Double, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_4>Twin_Ion_Engine_Starfighter_Squadron_Double, 3</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 3</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>V-Wing_Squadron_Double, 3</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>BTLB_Y-WING_Squadron_Double, 3</Reserve_Spawned_Units_Tech_4>
+		
+		<CategoryMask> SuperCapital | AntiCapital </CategoryMask>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			
+			<Reduce_Production_Price_Ability Name="Kuat_Reduce_Production_Price">
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types> 
+				Generic_Mandator, Generic_Mandator_II, Mandator_II_Upgrade, Generic_Praetor,
+				Generic_Secutor, Generic_Tector, Generic_Star_Destroyer,
+				Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Generic_Venator,
+				Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II, Generic_Gladiator, 
+				Arquitens, Pelta_Assault, Pelta_Support, Galleon,
+				Republic_AT_TE_Walker_Company, Republic_A6_Juggernaut_Company, Republic_AT_AP_Walker_Company, Republic_A5_Juggernaut_Company, Republic_A4_Juggernaut_Company,
+				Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company 
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.10</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+			
+			<Combat_Bonus_Ability Name="Kuat_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category> </Unit_Strength_Category>
+				<Applicable_Unit_Categories> </Applicable_Unit_Categories>
+				<Applicable_Unit_Types>
+				Generic_Mandator, Generic_Mandator_II, Generic_Praetor,
+				Generic_Secutor, Generic_Tector, Generic_Star_Destroyer,
+				Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Generic_Venator,
+				Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II, Generic_Gladiator, 
+				Arquitens, Pelta_Assault, Pelta_Support, Galleon
+				</Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+
+	</UniqueUnit>
+
+	<UniqueUnit Name="Venator_Defender">
+		<Variant_Of_Existing_Type>Generic_Venator</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_VENATOR_DEFENDER</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VENATOR_DEFENDER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VENATOR_HULL 
+		TEXT_TOOLTIP_VENATOR_SHIELD
+		TEXT_TOOLTIP_VENATOR_MOVE
+		TEXT_TOOLTIP_VENATOR_SQUADRON
+		TEXT_TOOLTIP_VENATOR_WEAP1
+		TEXT_TOOLTIP_VENATOR_WEAP2 
+		TEXT_TOOLTIP_VENATOR_WEAP3
+		TEXT_TOOLTIP_VENATOR_WEAP4
+		TEXT_TOOLTIP_VENATOR_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Space_Model_Name>Venator_Damaged.alo</Space_Model_Name>
+		<HardPoints>
+			HP_Venator_Turret_01,
+			HP_Venator_Turret_02,
+			HP_Venator_Turret_03,
+			HP_Venator_Turret_04,
+			HP_Venator_01,
+			HP_Venator_02,
+			HP_Venator_03,
+			HP_Venator_04,
+			HP_Venator_05,
+			HP_Venator_06,
+			HP_Venator_07,
+			HP_Venator_08,
+			Venator_Engines_Damaged,
+			Venator_Bay
+		</HardPoints>
+		<Layer_Z_Adjust> -215.0 </Layer_Z_Adjust>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<Tech_Level>99</Tech_Level>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Yularen_Ryloth_Ramming">
+		<Variant_Of_Existing_Type>Yularen_Resolute</Variant_Of_Existing_Type>
+		<Space_Model_Name>Venator_Yularen_Anim.alo</Space_Model_Name>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<Tech_Level>99</Tech_Level>
+	</UniqueUnit>
+	
+	<UniqueUnit Name="Venator_Tranquility">
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_VENATOR_TRANQUILITY</Text_ID>
+		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
+		<Icon_Name>i_button_gunray_venator.tga</Icon_Name>
+		<Prevents_Story_Campaign_Autoresolve>yes</Prevents_Story_Campaign_Autoresolve>
+		<Victory_Relevant>no</Victory_Relevant>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VENATOR_TRANQUILITY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VENATOR_HULL 
+		TEXT_TOOLTIP_VENATOR_SHIELD
+		TEXT_TOOLTIP_VENATOR_MOVE
+		TEXT_TOOLTIP_VENATOR_SQUADRON
+		TEXT_TOOLTIP_VENATOR_TRANQUILITY_FLEET
+		TEXT_TOOLTIP_VENATOR_WEAP1
+		TEXT_TOOLTIP_VENATOR_WEAP2 
+		TEXT_TOOLTIP_VENATOR_WEAP3
+		TEXT_TOOLTIP_VENATOR_WEAP4
+		TEXT_TOOLTIP_VENATOR_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA, SPAWN_SQUADRON</SpaceBehavior>
+		<Lua_Script>Story_Gunning_Gunray</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Starting_Spawned_Units_Tech_0>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Torrent_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>BTLB_Y-WING_SQUADRON, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>NTB_630_Squadron, 1</Starting_Spawned_Units_Tech_0> <!-- Put after all other bombers so iconic bombing run units happen instead -->
+
+		<Starting_Spawned_Units_Tech_0>LAC, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Arquitens, 2</Starting_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>Missile_Nimbus_Squadron, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>BTLB_Y-WING_SQUADRON, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>NTB_630_Squadron, 1</Starting_Spawned_Units_Tech_4> <!-- Put after all other bombers so iconic bombing run units happen instead -->
+
+		<Starting_Spawned_Units_Tech_4>LAC, 4</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>Arquitens, 2</Starting_Spawned_Units_Tech_4>
+
+		<Spawned_Squadron_Delay_Seconds>1</Spawned_Squadron_Delay_Seconds>
+
+		<Reserve_Spawned_Units_Tech_0>Generic_ARC_170_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Torrent_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>NTB_630_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>BTLB_Y-WING_SQUADRON, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Reserve_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Missile_Nimbus_Squadron, 4</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>NTB_630_Squadron, 3</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>BTLB_Y-WING_SQUADRON, 4</Reserve_Spawned_Units_Tech_4>
+
+		<Death_Clone>Damage_Normal, Venator_OFC_Death_Clone</Death_Clone>
+
+		<Score_Cost_Credits> 60000 </Score_Cost_Credits>
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		
+		<Abilities SubObjectList="Yes">
+			<Retreat_Prevention_Ability Name="Gunray_Retreat_Prevention">
+				<Activation_Style>Combat_Automatic</Activation_Style>
+			</Retreat_Prevention_Ability>
+		</Abilities>
+
+	</UniqueUnit>
+
+	<UniqueUnit Name="Jar_Jar_WLO5_Tank">
+		<Variant_Of_Existing_Type>WLO5_Tank</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_jar_jar.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>	
+		<Text_ID>TEXT_HERO_JAR_JAR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_JAR_JAR
+		TEXT_TOOLTIP_COMMANDS
+		TEXT_UNIT_WLO_5_SPEEDER_TANK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_WLO5_TANK_HEALTH
+		TEXT_TOOLTIP_WLO5_TANK_MOVE
+		TEXT_TOOLTIP_WLO5_TANK_WEAP1
+		TEXT_TOOLTIP_WLO5_TANK_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_FOOLS_LUCK
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SENATOR </Encyclopedia_Unit_Class>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Destruction_Survivors> 
+		Jar_Jar_Binks, 1
+		</Destruction_Survivors>
+
+		<CategoryMask> Vehicle | AntiVehicle </CategoryMask>
+
+	</UniqueUnit>
+
+	<Mission_Hero Name="R2_D2">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>RI_R2.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>RI_R2.ALO</Land_Model_Anim_Override_Name>
+		<Icon_Name>i_button_r2d2.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_DROID_R2D2</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DROID_R2D2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_DROID_R2D2_HEALTH
+		TEXT_TOOLTIP_DROID_R2D2_MOVE
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
+
+		<Tactical_Health>100</Tactical_Health>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>	
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> None </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .3 </FormationSpacing> 
+		<OverrideAcceleration> .075 </OverrideAcceleration>
+		<OverrideDeceleration> .075 </OverrideDeceleration>
+		<FormationOrder> 1 </FormationOrder>
+		<FormationRaggedness> .8 </FormationRaggedness>
+		<MaxJiggleDistance> 2.0 </MaxJiggleDistance>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+		<SurfaceFX_Name>R2D2_Footprint, Good_Ground</SurfaceFX_Name>
+
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Move></SFXEvent_Move>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Attacked></SFXEvent_Attacked>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<Death_SFXEvent_Start_Die>  </Death_SFXEvent_Start_Die> 
+
+		<SFXEvent_Engine_Moving_Loop> Unit_R2_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<AI_Combat_Power>66</AI_Combat_Power>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> R2D2_Hack_Ability </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Hack_Turret_C3PO </SFXEvent_Target_Ability> 
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>TARGETED_REPAIR</Type>
+				<Recharge_Seconds>50.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> R2D2_Repair_Ability </GUI_Activated_Ability_Name>
+				<Friendly_Ability> Yes </Friendly_Ability> <!-- Targeted ability to friendly units -->
+				<SFXEvent_Target_Ability> Unit_Hack_Turret_C3PO </SFXEvent_Target_Ability> 
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Hack_Ability Name="R2D2_Hack_Ability">
+				<Team_Member_With_Ability> R2_D2 </Team_Member_With_Ability>	<!-- REQUIRED: One team member -->
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories> </Applicable_Unit_Categories>
+			
+				<Applicable_Unit_Types>  
+					Generic_Ground_Turbolaser_Tower
+					Empire_Anti_Aircraft_Turret
+					Empire_Anti_Infantry_Turret
+					Empire_Anti_Vehicle_Turret
+				</Applicable_Unit_Types>
+				
+<!--	  		<Damage_Amount> 0.0 </Damage_Amount> -->
+<!--	  		<Damage_Application_Time_In_Secs> 2.3893 </Damage_Application_Time_In_Secs> -->
+				<Lightning_Effect_Name> Hack_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> B_Turret </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Hack_Ability>
+			<Repair_Ability Name="R2D2_Repair_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
+
+				<Lightning_Effect_Name> Repair_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Repair_Ability>
+		</Abilities>
+	</Mission_Hero>
+
+	<Mission_Hero Name="R3_S6">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>RI_R2D3.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>RI_R2.ALO</Land_Model_Anim_Override_Name>
+		<Icon_Name>i_button_R3S6.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_DROID_R3S6</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DROID_R3S6
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_DROID_R3S6_HEALTH
+		TEXT_TOOLTIP_DROID_R3S6_MOVE
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
+
+		<Tactical_Health>100</Tactical_Health>
+
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>	
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<Space_Layer> None </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<FormationSpacing> .3 </FormationSpacing> 
+		<OverrideAcceleration> .075 </OverrideAcceleration>
+		<OverrideDeceleration> .075 </OverrideDeceleration>
+		<FormationOrder> 1 </FormationOrder>
+		<FormationRaggedness> .8 </FormationRaggedness>
+		<MaxJiggleDistance> 2.0 </MaxJiggleDistance>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+		<SurfaceFX_Name>R2D2_Footprint, Good_Ground</SurfaceFX_Name>
+
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Move></SFXEvent_Move>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Attacked></SFXEvent_Attacked>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<Death_SFXEvent_Start_Die>  </Death_SFXEvent_Start_Die> 
+
+		<SFXEvent_Engine_Moving_Loop> Unit_R2_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<AI_Combat_Power>66</AI_Combat_Power>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> R2D2_Hack_Ability </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Hack_Turret_C3PO </SFXEvent_Target_Ability> 
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>TARGETED_REPAIR</Type>
+				<Recharge_Seconds>50.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> R2D2_Repair_Ability </GUI_Activated_Ability_Name>
+				<Friendly_Ability> Yes </Friendly_Ability> <!-- Targeted ability to friendly units -->
+				<SFXEvent_Target_Ability> Unit_Hack_Turret_C3PO </SFXEvent_Target_Ability> 
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Hack_Ability Name="R2D2_Hack_Ability">
+				<Team_Member_With_Ability> R2_D2 </Team_Member_With_Ability>	<!-- REQUIRED: One team member -->
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories> </Applicable_Unit_Categories>
+			
+				<Applicable_Unit_Types>  
+					Generic_Ground_Turbolaser_Tower
+					Empire_Anti_Aircraft_Turret
+					Empire_Anti_Infantry_Turret
+					Empire_Anti_Vehicle_Turret
+				</Applicable_Unit_Types>
+				
+<!--	  		<Damage_Amount> 0.0 </Damage_Amount> -->
+<!--	  		<Damage_Application_Time_In_Secs> 2.3893 </Damage_Application_Time_In_Secs> -->
+				<Lightning_Effect_Name> Hack_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> B_Turret </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Hack_Ability>
+			<Repair_Ability Name="R2D2_Repair_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
+
+				<Lightning_Effect_Name> Repair_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Repair_Ability>
+		</Abilities>
+	</Mission_Hero>
+
+
+	<!-- Generic clone subhero carbine stats for Fives -->
+	<Mission_Hero Name="Fives_Rookie">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>clone_phase1.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>i_button_fives.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_FIVES</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_FIVES
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FIVES_P1_HEALTH
+		TEXT_TOOLTIP_FIVES_P1_MOVE
+		TEXT_TOOLTIP_FIVES_WEAP1
+		TEXT_TOOLTIP_FIVES_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER </Encyclopedia_Unit_Class>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+		<Tactical_Health>125</Tactical_Health>
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.0 </OverrideAcceleration>
+		<OverrideDeceleration> 1.0 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.00</Land_FOW_Reveal_Range>
+
+		<HardPoints>HP_Hero_Clone_Carbine</HardPoints>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>HeroProj_Thrown_Ion_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+
+		<SFXEvent_Select>Unit_Select_clonetrooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_clonetrooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_clonetrooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_clonetrooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_clonetrooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_clonetrooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_clonetrooper</SFXEvent_Guard>
+
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_ARC_Trooper </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Death_SFXEvent_Start_Die>Unit_Death_clonetrooper</Death_SFXEvent_Start_Die>
+		<Death_Clone>Damage_Normal</Death_Clone>
+       	<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<AI_Combat_Power>34</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 8.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Mission_Hero>
+
+	<!-- Generic clone subhero rifle stats for Echo -->
+	<Mission_Hero Name="Echo_Rookie">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>clone_phase1_generic_echo.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>i_button_echo.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_ECHO</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ECHO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ECHO_P1_HEALTH
+		TEXT_TOOLTIP_ECHO_P1_MOVE
+		TEXT_TOOLTIP_ECHO_WEAP1
+		TEXT_TOOLTIP_ECHO_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER </Encyclopedia_Unit_Class>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+		<Tactical_Health>125</Tactical_Health>
+
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.0 </OverrideAcceleration>
+		<OverrideDeceleration> 1.0 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>HP_Hero_Clone_Rifle</HardPoints>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>HeroProj_Thrown_Thermal_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+
+		<SFXEvent_Select>Unit_Select_clonetrooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_clonetrooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_clonetrooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_clonetrooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_clonetrooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_clonetrooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_clonetrooper</SFXEvent_Guard>
+
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_ARC_Trooper </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Death_SFXEvent_Start_Die>Unit_Death_clonetrooper</Death_SFXEvent_Start_Die>
+		<Death_Clone>Damage_Normal</Death_Clone>
+       	<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<AI_Combat_Power>35</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 8.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Mission_Hero>
+
+	<!-- Generic clone subhero gunner stats for Hevy -->
+	<Mission_Hero Name="Hevy_Rookie">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>clone_phase1.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>Underslung.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>i_button_hevy_rookie.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_HEVY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_HEVY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_HEVY_P1_HEALTH
+		TEXT_TOOLTIP_HEVY_P1_MOVE
+		TEXT_TOOLTIP_HEVY_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER </Encyclopedia_Unit_Class>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+		<Tactical_Health>125</Tactical_Health>
+
+		<Max_Speed>0.9</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 0.9 </OverrideAcceleration>
+		<OverrideDeceleration> 0.9 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>HP_Hero_Clone_LMG</HardPoints>
+
+		<SFXEvent_Select>Unit_Select_clonetrooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_clonetrooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_clonetrooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_clonetrooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_clonetrooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_clonetrooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_clonetrooper</SFXEvent_Guard>
+
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_ARC_Trooper </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Death_SFXEvent_Start_Die>Unit_Death_clonetrooper</Death_SFXEvent_Start_Die>
+		<Death_Clone>Damage_Normal</Death_Clone>
+       	<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<AI_Combat_Power>48</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+			<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Delta_Boss_Take_Cover</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Delta_Boss_Exit_Cover</SFXEvent_GUI_Unit_Ability_Deactivated>						
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Mission_Hero>
+
+	<!-- Generic clone subhero carbine stats for Waxer -->
+	<Mission_Hero Name="Waxer">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>clone_phase1_212th_waxer.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>i_button_waxer.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_WAXER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WAXER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_WAXER_P1_HEALTH
+		TEXT_TOOLTIP_WAXER_P1_MOVE
+		TEXT_TOOLTIP_WAXER_WEAP1
+		TEXT_TOOLTIP_WAXER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER </Encyclopedia_Unit_Class>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+		<Tactical_Health>125</Tactical_Health>
+
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.0 </OverrideAcceleration>
+		<OverrideDeceleration> 1.0 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.00</Land_FOW_Reveal_Range>
+
+		<HardPoints>HP_Hero_Clone_Carbine</HardPoints>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>HeroProj_Thrown_Ion_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+
+		<SFXEvent_Select>Unit_Select_clonetrooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_clonetrooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_clonetrooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_clonetrooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_clonetrooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_clonetrooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_clonetrooper</SFXEvent_Guard>
+
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_ARC_Trooper </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Death_SFXEvent_Start_Die>Unit_Death_clonetrooper</Death_SFXEvent_Start_Die>
+		<Death_Clone>Damage_Normal</Death_Clone>
+       	<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<AI_Combat_Power>34</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 8.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Mission_Hero>
+
+	<!-- Generic clone subhero carbine stats for Boil -->
+	<Mission_Hero Name="Boil">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>clone_phase1_212th_boil.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>i_button_boil.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_BOIL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_BOIL
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BOIL_P1_HEALTH
+		TEXT_TOOLTIP_BOIL_P1_MOVE
+		TEXT_TOOLTIP_BOIL_WEAP1
+		TEXT_TOOLTIP_BOIL_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER </Encyclopedia_Unit_Class>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+		<Tactical_Health>125</Tactical_Health>
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.0 </OverrideAcceleration>
+		<OverrideDeceleration> 1.0 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.00</Land_FOW_Reveal_Range>
+
+		<HardPoints>HP_Hero_Clone_Carbine</HardPoints>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>HeroProj_Thrown_Ion_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+
+		<SFXEvent_Select>Unit_Select_clonetrooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_clonetrooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_clonetrooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_clonetrooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_clonetrooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_clonetrooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_clonetrooper</SFXEvent_Guard>
+
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_ARC_Trooper </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<Death_SFXEvent_Start_Die>Unit_Death_clonetrooper</Death_SFXEvent_Start_Die>
+		<Death_Clone>Damage_Normal</Death_Clone>
+       	<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<AI_Combat_Power>34</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 8.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Mission_Hero>
+
+
+	<Mission_Hero Name="Mad_Clone_of_Kaikielius">
+		<Variant_Of_Existing_Type>Hero_Commando_Shielded_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_MAD_CLONE</Text_ID>
+		<Land_Model_Name>clone_commando.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_CLONE_COMMANDO.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_MAD_CLONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MAD_CLONE_HEALTH
+		TEXT_TOOLTIP_MAD_CLONE_SHIELD
+		TEXT_TOOLTIP_MAD_CLONE_MOVE
+		TEXT_TOOLTIP_MAD_CLONE_WEAP1
+		TEXT_TOOLTIP_MAD_CLONE_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFANTRY_SELF_HEAL
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDO </Encyclopedia_Unit_Class>
+
+		<No_Colorization_Color> 69, 155, 212, 255 </No_Colorization_Color>
+
+		<Tactical_Health>155</Tactical_Health>
+		<Shield_Points>50</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.0 </OverrideAcceleration>
+		<OverrideDeceleration> 1.0 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>HP_Hero_DLT_20A_LMG</HardPoints>
+		
+		<!-- Grenade throw -->
+		<Projectile_Types>HeroProj_Thrown_Ion_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>5.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		
+    	<!-- Normal red blood for human-ish -->
+        <Death_Explosions>Organic_Infantry_Blood, Organic_Infantry_Blood_Alt, Tiny_Dud</Death_Explosions>
+
+		<Death_Clone>Damage_Force_Lightning, Infantry_Electric_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, Infantry_Electric_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_Disruptor, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_Disruptor, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_Flamer, Infantry_Fire_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_Flamer, Infantry_Fire_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_ProtonWarhead, Infantry_Fire_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_ProtonWarhead, Infantry_Fire_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Fire, Infantry_Fire_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Fire, Infantry_Fire_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_ARC_Trooper </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<SFXEvent_Select>Unit_Select_clonetrooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_clonetrooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_clonetrooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_clonetrooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_clonetrooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_clonetrooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_clonetrooper</SFXEvent_Guard>
+
+		<Death_SFXEvent_Start_Die>Unit_Death_clonetrooper</Death_SFXEvent_Start_Die>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+       	<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+		<AI_Combat_Power>55</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FANATICISM_REP.TGA</Alternate_Icon_Name>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.5f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.05f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.25</Damage_Percent_When_Activated>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>23.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Mad_Clone_Grenade_Attack </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Delta_Boss_Thermal_Detonator </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Grenade_Attack_Ability Name="Mad_Clone_Grenade_Attack">
+				<Activation_Style> User_Input </Activation_Style> <!-- Was Special_Attack -->
+				<!-- We need to be within this distance of the clicked target to consider throwing the grenade -->
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>300.0</Activation_Max_Range>
+				<Requires_Direct_Player_Command> No </Requires_Direct_Player_Command> <!-- Was NO -->
+
+				<Grenade_Type>Proj_Hero_Sticky_Bomb</Grenade_Type>
+				<Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+				<Grenade_Spawn_Frame>12.0</Grenade_Spawn_Frame>
+				<Grenade_Spawn_Bone>MuzzleA_00</Grenade_Spawn_Bone>
+				<Grenade_Explode_Timer_In_Secs>3.0</Grenade_Explode_Timer_In_Secs>
+				<!-- Percentage chance to activate given a certain number of valid targets in range. -->
+				<!-- First number in the pair is the number of valid targets, second is the chance to activate. -->
+				<Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Vehicle, Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Delta_Boss_Thermal_Detonator</SFXEvent_Activate>
+			</Grenade_Attack_Ability>
+
+			<Force_Healing_Ability Name="Mad_Clone_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.01 </Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Mad_Clone_of_Kaikielius</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+				
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+	</Mission_Hero>
+
+	<HeroCompany Name="Mad_Clone_of_Kaikielius_Team">
+		<Text_ID>TEXT_HERO_MAD_CLONE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_MAD_CLONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_DELTA_HEALTH
+		TEXT_TOOLTIP_DELTA_SHIELD
+		TEXT_TOOLTIP_DELTA_MOVE
+		TEXT_TOOLTIP_DELTA_WEAP1
+		TEXT_TOOLTIP_DELTA_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFANTRY_SELF_HEAL
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDO </Encyclopedia_Unit_Class>
+		
+		<Icon_Name>I_BUTTON_CLONE_COMMANDO.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>2</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>CR20_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>Mad_Clone_of_Kaikielius</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Score_Cost_Credits> 18000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Veers</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Veers</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Veers</SFXEvent_Fleet_Move>
+		
+		<Population_Value>1</Population_Value>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>860</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>   
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+	</HeroCompany>
+
+	<!-- ********************************* -->
+	<!-- ************** CIS ************** -->
+	<!-- ********************************* -->
+
+	<UniqueUnit Name="Tuuk_Procurer_Story">
+		<Variant_Of_Existing_Type>Tuuk_Procurer</Variant_Of_Existing_Type>
+		<Exclude_From_Distance_Fade>Yes</Exclude_From_Distance_Fade>
+		<Layer_Z_Adjust> -200.0 </Layer_Z_Adjust>
+	</UniqueUnit>
+
+</Mission_Heroes>

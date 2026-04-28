@@ -1,0 +1,574 @@
+<?xml version="1.0" ?>
+
+<!--****************************************************-->
+<!--****   Fall of the Republic: Foerost Campaign   ****-->
+<!--****************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Rep_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Rep_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Trachta">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Trachta_Venator</Reward_Param1>
+		<Reward_Param2>Anaxes</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Dodonna">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Dodonna_Ardent</Reward_Param1>
+		<Reward_Param2>Rendili</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Screed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Screed_Arlionne</Reward_Param1>
+		<Reward_Param2>Rendili</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<Event Name="Republic_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Republic_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="Republic_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="Republic_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+
+	<Event Name="Lock_Invincible">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Invincible_Cruiser</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Lock_CR90">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Corellian_Corvette</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Unlock_Venator">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Venator</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Victory_Destroyer</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Customs_Corvette">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Customs_Corvette</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Foerost_Fallen_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Foerost</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_FOEROST_FALLEN.TED</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Foerost_Fallen.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_PLAYER</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_REP_SPEECH_01</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11.1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_REP_SPEECH_02</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Antillies_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Foerost_Campaign_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Speech_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11.1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_REP_SPEECH_03</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Foerost_Campaign_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Jump_Camera_Rendili">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Rendili</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>Rep_Foerost_Campaign_Speech_03</Prereq>
+	</Event>
+
+	<Event Name="Rep_Flash_Rendili">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Rendili</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Rendili_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Rep_Jump_Camera_Rendili</Prereq>
+	</Event>
+
+	<Event Name="Rep_Select_Rendili">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SELECT_PLANET</Reward_Type>
+		<Reward_Param1>Rendili</Reward_Param1>
+		<Prereq>Rep_Flash_Rendili</Prereq>
+	</Event>
+
+	<Event Name="Rep_Zoom_In_Rendili">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>ZOOM_IN</Reward_Type>
+		<Prereq>Rep_Select_Rendili</Prereq>
+	</Event>
+
+	<Event Name="Rep_Select_Capital_Tab">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>b_space_filter02</Reward_Param1>
+		<Prereq>Rep_Select_Rendili</Prereq>
+	</Event>
+
+	<Event Name="Rep_Flash_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PRODUCTION_CHOICE</Reward_Type>
+		<Reward_Param1>Generic_Victory_Destroyer</Reward_Param1>
+		<Reward_Param2>VSD_GUI_Flash</Reward_Param2>
+		<Prereq>Rep_Select_Rendili</Prereq>
+	</Event>
+
+	<Event Name="Rep_Remove_Flash_Victory">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>VSD_GUI_Flash</Reward_Param1>
+		<Prereq>Rep_Flash_Victory</Prereq>
+	</Event>
+
+	<Event Name="Remove_Flash_Rendili">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Rendili_GUI_Flash</Reward_Param1>
+		<Prereq>Rep_Flash_Rendili</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Speech_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_REP_SPEECH_04</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Piett_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Foerost_Campaign_Speech_03</Prereq>
+	</Event>
+
+	<Event Name="Rep_Flash_Dodonna">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>FLASH_FLEET_WITH_UNIT</Reward_Type>
+		<Reward_Param1>Dodonna_Ardent</Reward_Param1>
+		<Reward_Param2>Dodonna_GUI_Flash</Reward_Param2>
+		<Prereq>Rep_Foerost_Campaign_Speech_04</Prereq>
+	</Event>
+
+	<Event Name="Rep_Remove_Flash_Dodonna">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Dodonna_GUI_Flash</Reward_Param1>
+		<Prereq>Rep_Flash_Dodonna</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>DIALOG_FOEROST_CAMPAIGN_REP</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_Rep_Act_I</Story_Tag>
+		<Story_Dialog_Popup>true</Story_Dialog_Popup>	
+		<Prereq>Rep_Foerost_Campaign_Speech_04</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Bulwark_Rampage_Tactical">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Bulwark_Brawl.XML</Event_Param1>
+		<Prereq>Rep_Foerost_Campaign_Speech_01</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Rep_Bulwark_Rampage_Disable">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Dua_Ningo_Unrepentant</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Rep_Bulwark_Rampage_Tactical</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>Rep_Foerost_Campaign_Speech_01</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act II **************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Foerost_Campaign_Speech_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>20</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_REP_SPEECH_05</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Foerost_Campaign_Speech_04</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>DIALOG_FOEROST_CAMPAIGN_REP</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_Rep_Act_II</Story_Tag>
+		<Story_Dialog_Popup>true</Story_Dialog_Popup>	
+		<Prereq>Rep_Foerost_Campaign_Speech_05</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Act_II_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_TARGET_PLANETS_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Foerost_Campaign_Rep_Act_II</Reward_Param1>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act III *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Foerost_Campaign_Speech_08">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_REP_SPEECH_08</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Bulwark_Rampage_Disable</Prereq>
+		<Branch>Rep_Bulwark_Rampage</Branch>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>DIALOG_FOEROST_CAMPAIGN_REP</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_Rep_Act_III</Story_Tag>
+		<Story_Dialog_Popup>true</Story_Dialog_Popup>	
+		<Prereq>Rep_Foerost_Campaign_Speech_08</Prereq>
+	</Event>
+
+	<Event Name="Rep_Trigger_Anaxes_Annexation">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Anaxes</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Event_Param4></Event_Param4>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Rep_Bulwark_Rampage_Tactical</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>Rep_Foerost_Campaign_Act_III_Dialog</Prereq>
+		<Branch>Rep_Bulwark_Rampage</Branch>
+	</Event>
+
+	<Event Name="Rep_Anaxes_Annexation_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Anaxes</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_ANAXES_ANNEXATION.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Anaxes_Annexation.xml</Reward_Param7>
+		<Reward_Param8>0</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Prereq>Rep_Trigger_Anaxes_Annexation</Prereq>
+		<Branch>Rep_Bulwark_Rampage</Branch>
+	</Event>
+
+	<Event Name="Rep_Anaxes_Annexation_Tactical_Failed">
+		<Event_Type>STORY_LOSE_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Rep_Anaxes_Annexation_Tactical</Prereq>
+		<Branch>Rep_Bulwark_Rampage</Branch>
+	</Event>
+
+	<Event Name="Rep_Anaxes_Annexation_Tactical_Completed">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Rep_Anaxes_Annexation_Tactical</Prereq>
+		<Branch>Rep_Bulwark_Rampage</Branch>
+	</Event>
+
+	<Event Name="Rep_Anaxes_Annexation_Tactical_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Rep_Anaxes_Annexation_Tactical</Prereq>
+		<Branch>Rep_Bulwark_Rampage</Branch>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Act_III_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Foerost_Campaign_Rep_Act_III</Reward_Param1>
+		<Prereq>Rep_Anaxes_Annexation_Tactical_Completed</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act IV **************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Victor_Initiative_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>150</Event_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Rep_Gladiator_Unleashed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Rep_Victor_Initiative_Timer</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Foerost_Campaign_Speech_07">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_GLADIATOR_UNLEASHED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_REP_SPEECH_07</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Antillies_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Act_IV">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>DIALOG_FOEROST_CAMPAIGN_REP</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_Rep_Act_IV</Story_Tag>
+		<Prereq>Rep_Foerost_Campaign_Speech_07</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Foerost_Gladiator_Researched">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Research_Gladiator</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Research_Gladiator</Reward_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Act_IV_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Foerost_Campaign_Rep_Act_IV</Reward_Param1>
+		<Prereq>Rep_Foerost_Gladiator_Researched</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act V ***************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Foerost_Campaign_Act_I_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Foerost_Campaign_Rep_Act_I</Reward_Param1>
+		<Prereq>Rep_Bulwark_Rampage_Disable</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Speech_06">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_REP_SPEECH_06</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Foerost_Campaign_Act_II_Completed, Rep_Foerost_Campaign_Act_III_Completed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Foerost_Campaign_Act_V">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>DIALOG_FOEROST_CAMPAIGN_REP</Story_Dialog>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_Rep_Act_V</Story_Tag>
+		<Prereq>Rep_Foerost_Campaign_Speech_06</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Unlock_GC_Progression_ORS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Rep_Foerost_Campaign_Speech_06</Prereq>
+	</Event>
+
+	<Event Name="Rep_GC_Progression_ORS_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>GC_Progression_Dummy</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_GC_Progression_ORS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_AU_1_OuterRimSieges_Republic</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Rep_GC_Progression_ORS_Research</Prereq>
+	</Event>
+
+</Story>

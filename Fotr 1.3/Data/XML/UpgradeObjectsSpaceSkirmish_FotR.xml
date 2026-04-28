@@ -1,0 +1,400 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+
+	<!-- ============================================================== Faction Unqiue Upgrades Space ============================================================== -->
+
+	<SpaceUnit Name="CIS_Secret_Hyperspace_Route">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Encyclopedia_Text> 
+			TEXT_UPGRADE_TOOLTIP_CIS_SECRET_HYPERSPACE_ROUTE
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UPGRADE_FLUFF_CIS_SECRET_HYPERSPACE_ROUTE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_UNIQUE_UPGRADES </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_CIS_SECRET_HYPERSPACE_ROUTE</Text_ID>
+		
+		<Space_Model_Name>INSTANTACTION_CIS.alo</Space_Model_Name>
+		<Icon_Name>i_multiplay_CIS.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>CIS_Secret_Fleet_Spawner, 1</Starting_Spawned_Units_Tech_0>
+
+		<Population_Value>100</Population_Value>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>11485</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Mod_Ability Name="CIS_Secret_hyperspace_Route">
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>-2.0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>1</Stacking_Category>
+				<Target_Stream_Source>Skirmish_NR_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+		</Abilities>
+			
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>180</Expiration_Seconds>
+				<Recharge_Seconds>180</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</SpaceUnit>
+	
+	<SpaceUnit Name="CIS_Secret_Fleet_Spawner">
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Space_Model_Name>INSTANTACTION_CIS.alo</Space_Model_Name>
+		<Destruction_Survivors> 
+			CIS_Secret_Fleet_1, 1
+			CIS_Secret_Fleet_2, 1
+			CIS_Secret_Fleet_3, 1
+		</Destruction_Survivors>
+		<Minimum_Destruction_Survivor_Count>1</Minimum_Destruction_Survivor_Count>
+		<Maximum_Destruction_Survivor_Count>1</Maximum_Destruction_Survivor_Count>	
+	</SpaceUnit>
+	
+	<SpaceUnit Name="CIS_Secret_Fleet_1">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Providence_Dreadnought, 2</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Providence, 4</Starting_Spawned_Units_Tech_0>
+			<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>15</Expiration_Seconds>
+				<Recharge_Seconds>15</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="CIS_Secret_Fleet_2">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Providence_Dreadnought, 1</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Providence, 2</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Munificent, 5</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Recusant, 3</Starting_Spawned_Units_Tech_0>
+			<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>15</Expiration_Seconds>
+				<Recharge_Seconds>15</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="CIS_Secret_Fleet_3">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Munificent, 8</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Recusant, 6</Starting_Spawned_Units_Tech_0>
+			<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>15</Expiration_Seconds>
+				<Recharge_Seconds>15</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+	
+	<UpgradeObject Name="CIS_Design_Trade_Offs">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1645 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1710</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Increments_Tech_Level> no </Tactical_Build_Increments_Tech_Level>
+		<Tactical_Destruction_Decrements_Tech_Level> no </Tactical_Destruction_Decrements_Tech_Level>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_For_All_Allies>1</Build_Limit_Lifetime_For_All_Allies>
+		<Previous_Upgrade_Level_Type></Previous_Upgrade_Level_Type>
+		<Next_Upgrade_Level_Type></Next_Upgrade_Level_Type>
+		<Destroy_Previous_Upgrade_Level>No</Destroy_Previous_Upgrade_Level>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multiplay_CIS.tga</Icon_Name>
+
+		<Encyclopedia_Text> 
+			TEXT_UPGRADE_TOOLTIP_CIS_DESIGN_TRADE_OFFS
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UPGRADE_FLUFF_CIS_DESIGN_TRADE_OFFS
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_UNIQUE_UPGRADES </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_CIS_DESIGN_TRADE_OFFS</Text_ID>
+
+		<SFXEvent_Build_Started>RHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="CIS_Design_Trade_Offs">
+				<Activation_Style>Space_Automatic</Activation_Style> 
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories><!--Unit Categories: All, Structure, Fighter, Bomber, Corvette, Frigate, Capital, SuperCapital, Vehicle, Infantry, Air, LandHero -->
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage> <!--1.5 means 150% increase which is 250% normal. 0.1 is 10% increase-->
+				<Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>-0.1</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.1</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category> <!--3,4,5 safe to use. 0- hero command bonus, 1- traits like warlord, 2- small ship command, 6-  Immobilizer Commander 3- Skirmish Unique, 4- Skirmish generic,5- Skirmish overflow,-->
+				
+			</Combat_Bonus_Ability>
+        </Abilities>
+	</UpgradeObject>
+
+	<SpaceUnit Name="Republic_Secret_Fleets">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Encyclopedia_Text> 
+			TEXT_UPGRADE_TOOLTIP_REPUBLIC_SECRET_FLEETS
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UPGRADE_FLUFF_REPUBLIC_SECRET_FLEETS
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_UNIQUE_UPGRADES </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_REPUBLIC_SECRET_FLEETS</Text_ID>
+		
+		<Space_Model_Name>INSTANTACTION_Republic.alo</Space_Model_Name>
+		<Icon_Name>i_multiplay_republic.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Venator, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Template_Flagship_Secutor, 2</Starting_Spawned_Units_Tech_0>
+		
+		<Population_Value>100</Population_Value>	
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>19960</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Mod_Ability Name="Republic_Secret_Fleets">
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>-2.0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>1</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Remnant_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+		</Abilities>
+			
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>180</Expiration_Seconds>
+				<Recharge_Seconds>180</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</SpaceUnit>
+	
+	<UpgradeObject Name="Republic_Ace_Cloning_Program">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 3360 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1710</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 35 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Increments_Tech_Level> no </Tactical_Build_Increments_Tech_Level>
+		<Tactical_Destruction_Decrements_Tech_Level> no </Tactical_Destruction_Decrements_Tech_Level>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_For_All_Allies>1</Build_Limit_Lifetime_For_All_Allies>
+		<Previous_Upgrade_Level_Type></Previous_Upgrade_Level_Type>
+		<Next_Upgrade_Level_Type></Next_Upgrade_Level_Type>
+		<Destroy_Previous_Upgrade_Level>No</Destroy_Previous_Upgrade_Level>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multiplay_republic.tga</Icon_Name>
+
+		<Encyclopedia_Text> 
+			TEXT_UPGRADE_TOOLTIP_REPUBLIC_ACE_CLONING_PROGRAM 
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UPGRADE_FLUFF_REPUBLIC_ACE_CLONING_PROGRAM 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_UNIQUE_UPGRADES </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_REPUBLIC_ACE_CLONING_PROGRAM </Text_ID>
+
+		<SFXEvent_Build_Started>RHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Republic_Ace_Cloning_Program">
+				<Activation_Style>Space_Automatic</Activation_Style> 
+				<Applicable_Unit_Categories>Fighter, Bomber</Applicable_Unit_Categories><!--Unit Categories: All, Structure, Fighter, Bomber, Corvette, Frigate, Capital, SuperCapital, Vehicle, Infantry, Air, LandHero -->
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage> <!--1.5 means 150% increase which is 250% normal. 0.1 is 10% increase-->
+				<Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.1</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category> <!--3,4,5 safe to use. 0- hero command bonus, 1- traits like warlord, 2- small ship command, 6-  Immobilizer Commander 3- Skirmish Unique, 4- Skirmish generic,5- Skirmish overflow,-->
+				
+			</Combat_Bonus_Ability>
+        </Abilities>
+	</UpgradeObject>  
+
+<!-- ============================================================== Removed Tech ============================================================== -->
+
+	<SpaceUnit Name="Republic_PDF_Fleets">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Encyclopedia_Text> 
+			TEXT_UPGRADE_TOOLTIP_REPUBLIC_PDF_FLEETS
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UPGRADE_FLUFF_REPUBLIC_PDF_FLEETS
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_UNIQUE_UPGRADES </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_REPUBLIC_PDF_FLEETS</Text_ID>
+		
+		<Space_Model_Name>INSTANTACTION_Republic.alo</Space_Model_Name>
+		<Icon_Name>i_multiplay_republic.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Starting_Spawned_Units_Tech_0>PDF_Fleet_Spawner, 1</Starting_Spawned_Units_Tech_0>
+		
+		<Population_Value>100</Population_Value>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>7045</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Mod_Ability Name="Republic_PDF_Fleets">
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>-1.0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>1</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Remnant_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+		</Abilities>
+			
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>120</Expiration_Seconds>
+				<Recharge_Seconds>120</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>	
+	</SpaceUnit>
+	
+	<SpaceUnit Name="PDF_Fleet_Spawner">
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Space_Model_Name>INSTANTACTION_Republic.alo</Space_Model_Name>
+		<Destruction_Survivors> 
+			PDF_Fleet_1, 1
+			PDF_Fleet_2, 1
+			PDF_Fleet_3, 1
+		</Destruction_Survivors>
+		<Minimum_Destruction_Survivor_Count>1</Minimum_Destruction_Survivor_Count>
+		<Maximum_Destruction_Survivor_Count>1</Maximum_Destruction_Survivor_Count>	
+	</SpaceUnit>
+	
+	<SpaceUnit Name="PDF_Fleet_1">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Invincible, 1</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Dreadnaught_Lasers, 3</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_LAC, 4</Starting_Spawned_Units_Tech_0>
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>15</Expiration_Seconds>
+				<Recharge_Seconds>15</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="PDF_Fleet_2">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Neutron_Star, 2</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Dreadnaught_Lasers, 3</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Dreadnaught_Carrier, 2</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_LAC, 4</Starting_Spawned_Units_Tech_0>
+			<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>15</Expiration_Seconds>
+				<Recharge_Seconds>15</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="PDF_Fleet_3">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_Carrack_Cruiser_Lasers, 6</Starting_Spawned_Units_Tech_0>
+			<Starting_Spawned_Units_Tech_0>Template_Flagship_DP20, 8</Starting_Spawned_Units_Tech_0>
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>15</Expiration_Seconds>
+				<Recharge_Seconds>15</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Splash_Wake </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+</UpgradeObjects>

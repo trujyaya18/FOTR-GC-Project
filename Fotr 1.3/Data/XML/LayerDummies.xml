@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<SpaceCorvettes>
+
+	<DummyStructure Name="ZLayer_Medium">
+		<Text_ID></Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<GUI_Model_Name>W_LASER_INVISIBLE.ALO</GUI_Model_Name>
+		<Select_Box_Scale>250</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.995</Mass>
+		<Scale_Factor>0.1</Scale_Factor>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+        <Ranking_In_Category>7</Ranking_In_Category>
+		<Max_Speed>0</Max_Speed> <!-- Was 3.25 -->
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn> <!-- was 1.50 -->
+		<MovementClass> Space </MovementClass>
+		<Space_Layer></Space_Layer>
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Armor_Type> Armor_Corellian_Corvette </Armor_Type>
+        <Shield_Armor_Type>Shield_Corvette</Shield_Armor_Type>
+		<Max_Thrust>0.5</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		<Min_Speed>2.0</Min_Speed>
+		<Max_Lift>0.0</Max_Lift>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+
+		<Affiliation>Rebel</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Tech_Level>99</Tech_Level>
+		<Autoresolve_Health>0</Autoresolve_Health>
+		<Damage>20</Damage>
+		<Tactical_Health>750</Tactical_Health>
+		<Energy_Capacity>1500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Ship_Class>corvette</Ship_Class>
+		<FormationPriority>3</FormationPriority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Transport_Capacity>4</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>1250</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+        <Slice_Cost_Credits>675</Slice_Cost_Credits>
+		<AI_Combat_Power>1250</AI_Combat_Power>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, POWERED</Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<CategoryMask></CategoryMask>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+		<Icon_Name>i_button_corellian_corvette.tga</Icon_Name>
+		<GUI_Model_Name>W_LASER_INVISIBLE.ALO</GUI_Model_Name>
+		<GUI_Distance>600</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		
+		
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		 
+		<MovementClass> Space </MovementClass>
+		
+
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="ZLayer_High4">
+		<Variant_Of_Existing_Type>ZLayer_Medium</Variant_Of_Existing_Type>
+		<Layer_Z_Adjust>240.0</Layer_Z_Adjust>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</DummyStructure>
+	
+	<DummyStructure Name="ZLayer_High3">
+		<Variant_Of_Existing_Type>ZLayer_Medium</Variant_Of_Existing_Type>
+		<Layer_Z_Adjust>180.0</Layer_Z_Adjust>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</DummyStructure>
+	
+	<DummyStructure Name="ZLayer_High2">
+		<Variant_Of_Existing_Type>ZLayer_Medium</Variant_Of_Existing_Type>
+		<Layer_Z_Adjust>120.0</Layer_Z_Adjust>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</DummyStructure>
+	
+	<DummyStructure Name="ZLayer_High1">
+		<Variant_Of_Existing_Type>ZLayer_Medium</Variant_Of_Existing_Type>
+		<Layer_Z_Adjust>60.0</Layer_Z_Adjust>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</DummyStructure>
+
+	<DummyStructure Name="ZLayer_Low1">
+		<Variant_Of_Existing_Type>ZLayer_Medium</Variant_Of_Existing_Type>
+		<Layer_Z_Adjust>-60.0</Layer_Z_Adjust>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</DummyStructure>
+	
+	<DummyStructure Name="ZLayer_Low2">
+		<Variant_Of_Existing_Type>ZLayer_Medium</Variant_Of_Existing_Type>
+		<Layer_Z_Adjust>-120.0</Layer_Z_Adjust>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</DummyStructure>
+	
+	<DummyStructure Name="ZLayer_Low3">
+		<Variant_Of_Existing_Type>ZLayer_Medium</Variant_Of_Existing_Type>
+		<Layer_Z_Adjust>-190.0</Layer_Z_Adjust>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</DummyStructure>
+	
+	<DummyStructure Name="ZLayer_Low4">
+		<Variant_Of_Existing_Type>ZLayer_Medium</Variant_Of_Existing_Type>
+		<Layer_Z_Adjust>-240.0</Layer_Z_Adjust>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</DummyStructure>
+
+
+</SpaceCorvettes>

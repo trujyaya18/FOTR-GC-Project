@@ -1,0 +1,1029 @@
+<?xml version="1.0" ?>
+
+<Story>
+
+	<!--************************************-->
+	<!--*******  Accumulate Credits  *******-->
+	<!--************************************-->
+
+	<Event Name="Accumulate_Credits_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACCUMULATE_ASSIGN</Event_Param2>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Accumulate_Credits_Act_I</Story_Tag>
+		<Branch>Accumulate_Credits</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Accumulate_Credits_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACCUMULATE_COMPLETE</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Accumulate_Credits_Act_I</Reward_Param1>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Accumulate_Credits_Act_II</Story_Tag>
+		<Branch>Accumulate_Credits</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Accumulate_Credits_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Accumulate_Credits_Act_II</Reward_Param1>
+		<Prereq>Accumulate_Credits_02</Prereq>
+		<Branch>Accumulate_Credits</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Accumulate_Credits_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACCUMULATE_FAILED</Event_Param2>
+		<Branch>Accumulate_Credits</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Accumulate_Credits_04">
+				<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Accumulate_Credits_Act_I</Reward_Param1>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Accumulate_Credits_Act_III</Story_Tag>
+		<Prereq>Accumulate_Credits_Failure_Timer</Prereq>
+		<Branch>Accumulate_Credits</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Accumulate_Credits_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Accumulate_Credits_Act_III</Reward_Param1>
+		<Prereq>Accumulate_Credits_04</Prereq>
+		<Branch>Accumulate_Credits</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Accumulate_Credits_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Accumulate_Credits</Reward_Param1>
+		<Prereq>Accumulate_Credits_03</Prereq>
+		<Prereq>Accumulate_Credits_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<!--************************************-->
+	<!--*********  Conquer Planet  *********-->
+	<!--************************************-->
+
+	<Event Name="Conquer_Planet_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONQUER_ASSIGN</Event_Param2>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Conquer_Planet_Act_I</Story_Tag>
+		<Branch>Conquer_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Conquer_Planet_Flash">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Conquer_Planet_01</Prereq>
+		<Branch>Conquer_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Conquer_Planet_Flash_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>17</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
+		<Prereq>Conquer_Planet_Flash</Prereq>
+		<Branch>Conquer_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Conquer_Planet_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONQUER_COMPLETE</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Conquer_Planet_Act_I</Reward_Param1>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Conquer_Planet_Act_II</Story_Tag>
+		<Branch>Conquer_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Conquer_Planet_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Conquer_Planet_Act_II</Reward_Param1>
+		<Prereq>Conquer_Planet_02</Prereq>
+		<Branch>Conquer_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Conquer_Planet_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONQUER_FAILED</Event_Param2>
+		<Branch>Conquer_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Conquer_Planet_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Conquer_Planet_Act_I</Reward_Param1>
+		<Story_Chapter>6</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Conquer_Planet_Act_III</Story_Tag>
+		<Prereq>Conquer_Planet_Failure_Timer</Prereq>
+		<Branch>Conquer_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Conquer_Planet_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Conquer_Planet_Act_III</Reward_Param1>
+		<Prereq>Conquer_Planet_04</Prereq>
+		<Branch>Conquer_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Conquer_Planet_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Conquer_Planet</Reward_Param1>
+		<Prereq>Conquer_Planet_03</Prereq>
+		<Prereq>Conquer_Planet_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<!--************************************-->
+	<!--******  Construct Structure  *******-->
+	<!--************************************-->
+
+	<Event Name="Construct_Structure_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONSTRUCT_ASSIGN</Event_Param2>
+		<Story_Chapter>7</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Construct_Structure_Act_I</Story_Tag>
+		<Branch>Construct_Structure</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Construct_Structure_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONSTRUCT_COMPLETE</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Construct_Structure_Act_I</Reward_Param1>
+		<Story_Chapter>8</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Construct_Structure_Act_II</Story_Tag>
+		<Branch>Construct_Structure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Structure_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Construct_Structure_Act_II</Reward_Param1>
+		<Prereq>Construct_Structure_02</Prereq>
+		<Branch>Construct_Structure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Structure_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONSTRUCT_FAILED</Event_Param2>
+		<Branch>Construct_Structure</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Construct_Structure_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Construct_Structure_Act_I</Reward_Param1>
+		<Story_Chapter>9</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Construct_Structure_Act_III</Story_Tag>
+		<Prereq>Construct_Structure_Failure_Timer</Prereq>
+		<Branch>Construct_Structure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Structure_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Construct_Structure_Act_III</Reward_Param1>
+		<Prereq>Construct_Structure_04</Prereq>
+		<Branch>Construct_Structure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Structure_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Construct_Structure</Reward_Param1>
+		<Prereq>Construct_Structure_03</Prereq>
+		<Prereq>Construct_Structure_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<!--************************************-->
+	<!--*******  Upgrade Structure  ********-->
+	<!--************************************-->
+
+	<Event Name="Upgrade_Structure_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UPGRADE_ASSIGN</Event_Param2>
+		<Story_Chapter>10</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Upgrade_Structure_Act_I</Story_Tag>
+		<Branch>Upgrade_Structure</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Upgrade_Structure_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UPGRADE_COMPLETE</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Upgrade_Structure_Act_I</Reward_Param1>
+		<Story_Chapter>11</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Upgrade_Structure_Act_II</Story_Tag>
+		<Branch>Upgrade_Structure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Upgrade_Structure_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Upgrade_Structure_Act_II</Reward_Param1>
+		<Prereq>Upgrade_Structure_02</Prereq>
+		<Branch>Upgrade_Structure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Upgrade_Structure_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UPGRADE_FAILED</Event_Param2>
+		<Branch>Upgrade_Structure</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Upgrade_Structure_04">
+				<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Upgrade_Structure_Act_I</Reward_Param1>
+		<Story_Chapter>12</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Upgrade_Structure_Act_III</Story_Tag>
+		<Prereq>Upgrade_Structure_Failure_Timer</Prereq>
+		<Branch>Upgrade_Structure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Upgrade_Structure_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Upgrade_Structure_Act_III</Reward_Param1>
+		<Prereq>Upgrade_Structure_04</Prereq>
+		<Branch>Upgrade_Structure</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Upgrade_Structure_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Upgrade_Structure</Reward_Param1>
+		<Prereq>Upgrade_Structure_03</Prereq>
+		<Prereq>Upgrade_Structure_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<!--************************************-->
+	<!--**********  Recon Planet  **********-->
+	<!--************************************-->
+
+	<Event Name="Recon_Planet_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RECON_ASSIGN</Event_Param2>
+		<Story_Chapter>13</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Recon_Planet_Act_I</Story_Tag>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Recon_Planet_I_Flash">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Recon_Planet_01</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Recon_Planet_I_Flash_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>17</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
+		<Prereq>Recon_Planet_I_Flash</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Recon_Planet_II_Flash">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Recon_Planet_01</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Recon_Planet_II_Flash_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>17</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
+		<Prereq>Recon_Planet_II_Flash</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Recon_Planet_I_Enter">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param5>1</Event_Param5>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>RECON_I_FULFILLED</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Prereq>Recon_Planet_01</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Recon_Planet_II_Enter">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param5>1</Event_Param5>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>RECON_II_FULFILLED</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Prereq>Recon_Planet_01</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Recon_Planet_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RECON_COMPLETE</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Recon_Planet_Act_I</Reward_Param1>
+		<Story_Chapter>14</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Recon_Planet_Act_II</Story_Tag>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Recon_Planet_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Recon_Planet_Act_II</Reward_Param1>
+		<Prereq>Recon_Planet_02</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Recon_Planet_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RECON_FAILED</Event_Param2>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Recon_Planet_04">
+				<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Recon_Planet_Act_I</Reward_Param1>
+		<Story_Chapter>15</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Recon_Planet_Act_III</Story_Tag>
+		<Prereq>Recon_Planet_Failure_Timer</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Recon_Planet_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Recon_Planet_Act_III</Reward_Param1>
+		<Prereq>Recon_Planet_04</Prereq>
+		<Branch>Recon_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Recon_Planet_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Recon_Planet</Reward_Param1>
+		<Prereq>Recon_Planet_03</Prereq>
+		<Prereq>Recon_Planet_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<!--************************************-->
+	<!--**********  Hunt Convoy  ***********-->
+	<!--************************************-->
+
+	<Event Name="Hunt_Convoy_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONVOY_ASSIGN</Event_Param2>
+		<Story_Chapter>16</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Convoy_Act_I</Story_Tag>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Convoy_Flash">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Hunt_Convoy_01</Prereq>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Convoy_Flash_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>17</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
+		<Prereq>Hunt_Convoy_Flash</Prereq>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Convoy_Fulfilled_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONVOY_COMPLETE</Event_Param2>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Convoy_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Convoy_Act_I</Reward_Param1>
+		<Story_Chapter>17</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Convoy_Act_II</Story_Tag>
+		<Prereq>Hunt_Convoy_Fulfilled_Timer</Prereq>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Convoy_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Hunt_Convoy_Act_II</Reward_Param1>
+		<Prereq>Hunt_Convoy_02</Prereq>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Convoy_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CONVOY_FAILED</Event_Param2>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Convoy_04">
+				<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Convoy_Act_I</Reward_Param1>
+		<Story_Chapter>18</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Convoy_Act_III</Story_Tag>
+		<Prereq>Hunt_Convoy_Failure_Timer</Prereq>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Convoy_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Convoy_Act_III</Reward_Param1>
+		<Prereq>Hunt_Convoy_04</Prereq>
+		<Branch>Hunt_Convoy</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Convoy_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Hunt_Convoy</Reward_Param1>
+		<Prereq>Hunt_Convoy_03</Prereq>
+		<Prereq>Hunt_Convoy_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<!--************************************-->
+	<!--********  Liberate Planet  *********-->
+	<!--************************************-->
+
+	<Event Name="Liberate_Planet_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LIBERATE_ASSIGN</Event_Param2>
+		<Story_Chapter>19</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Liberate_Planet_Act_I</Story_Tag>
+		<Branch>Liberate_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Liberate_Planet_Flash">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Liberate_Planet_01</Prereq>
+		<Branch>Liberate_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Liberate_Planet_Flash_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>17</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
+		<Prereq>Liberate_Planet_Flash</Prereq>
+		<Branch>Liberate_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Liberate_Planet_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LIBERATE_COMPLETE</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Liberate_Planet_Act_I</Reward_Param1>
+		<Story_Chapter>20</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Liberate_Planet_Act_II</Story_Tag>
+		<Branch>Liberate_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Liberate_Planet_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Liberate_Planet_Act_II</Reward_Param1>
+		<Prereq>Liberate_Planet_02</Prereq>
+		<Branch>Liberate_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Liberate_Planet_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LIBERATE_FAILED</Event_Param2>
+		<Branch>Liberate_Planet</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Liberate_Planet_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Liberate_Planet_Act_I</Reward_Param1>
+		<Story_Chapter>21</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Liberate_Planet_Act_III</Story_Tag>
+		<Prereq>Liberate_Planet_Failure_Timer</Prereq>
+		<Branch>Liberate_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Liberate_Planet_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Liberate_Planet_Act_III</Reward_Param1>
+		<Prereq>Liberate_Planet_04</Prereq>
+		<Branch>Liberate_Planet</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Liberate_Planet_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Liberate_Planet</Reward_Param1>
+		<Prereq>Liberate_Planet_03</Prereq>
+		<Prereq>Liberate_Planet_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<!--************************************-->
+	<!--*********  Rescue Senator  *********-->
+	<!--************************************-->
+
+	<Event Name="Rescue_Senator_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESCUE_ASSIGN</Event_Param2>
+		<Story_Chapter>22</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Rescue_Senator_Act_I</Story_Tag>
+		<Branch>Rescue_Senator</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Rescue_Senator_Flash_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Rescue_Senator_01</Prereq>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Rescue_Senator_Flash_01_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>17</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
+		<Prereq>Rescue_Senator_Flash_01</Prereq>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Rescue_Senator_Enter_01">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param5>1</Event_Param5>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3></Reward_Param3>
+		<Reward_Param4></Reward_Param4>
+		<Reward_Param5></Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Rescue_Senator.xml</Reward_Param7>
+		<Reward_Param8>0</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param13>1</Reward_Param13>
+		<Prereq>Rescue_Senator_01</Prereq>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Rescue_Senator_Checker">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>RESCUE_FULFILLED</Reward_Param1>
+		<Prereq>Rescue_Senator_Enter_01</Prereq>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Rescue_Senator_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESCUE_COMPLETE</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Rescue_Senator_Act_I</Reward_Param1>
+		<Story_Chapter>23</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rescue_Senator_Act_II</Story_Tag>
+		<Branch>Rescue_Senator</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Rescue_Senator_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rescue_Senator_Act_II</Reward_Param1>
+		<Prereq>Rescue_Senator_02</Prereq>
+		<Branch>Rescue_Senator</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Rescue_Senator_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESCUE_FAILED</Event_Param2>
+		<Branch>Rescue_Senator</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Rescue_Senator_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Rescue_Senator_Act_I</Reward_Param1>
+		<Story_Chapter>24</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rescue_Senator_Act_III</Story_Tag>
+		<Prereq>Rescue_Senator_Failure_Timer</Prereq>
+		<Branch>Rescue_Senator</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Rescue_Senator_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Rescue_Senator_Act_III</Reward_Param1>
+		<Prereq>Rescue_Senator_04</Prereq>
+		<Branch>Rescue_Senator</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Rescue_Senator_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Rescue_Senator</Reward_Param1>
+		<Prereq>Rescue_Senator_03</Prereq>
+		<Prereq>Rescue_Senator_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<!--************************************-->
+	<!--*********  Sabotage Base  **********-->
+	<!--************************************-->
+
+	<Event Name="Infiltration_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_ASSIGN</Event_Param2>
+		<Story_Chapter>25</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Infiltration_Act_I</Story_Tag>
+		<Branch>Infiltration</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Infiltration_Flash_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Planet_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Infiltration_01</Prereq>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Infiltration_Flash_01_Remove">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>17</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Planet_GUI_Flash</Reward_Param1>
+		<Prereq>Infiltration_Flash_01</Prereq>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Infiltration_Enter_01">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param5>1</Event_Param5>
+		<Prereq>Infiltration_01</Prereq>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>INFILTRATION_FULFILLED</Reward_Param1>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Infiltration_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_COMPLETE</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Infiltration_Act_I</Reward_Param1>
+		<Story_Chapter>26</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Infiltration_Act_II</Story_Tag>
+		<Branch>Infiltration</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Infiltration_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Infiltration_Act_II</Reward_Param1>
+		<Prereq>Infiltration_02</Prereq>
+		<Branch>Infiltration</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Infiltration_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INFILTRATION_FAILED</Event_Param2>
+		<Branch>Infiltration</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Infiltration_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Infiltration_Act_I</Reward_Param1>
+		<Story_Chapter>27</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Infiltration_Act_III</Story_Tag>
+		<Prereq>Infiltration_Failure_Timer</Prereq>
+		<Branch>Infiltration</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Infiltration_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Infiltration_Act_III</Reward_Param1>
+		<Prereq>Infiltration_04</Prereq>
+		<Branch>Infiltration</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Infiltration_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Infiltration</Reward_Param1>
+		<Prereq>Infiltration_03</Prereq>
+		<Prereq>Infiltration_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+
+	<!--************************************-->
+	<!--***********  Hunt Unit  ************-->
+	<!--************************************-->
+
+	<Event Name="Hunt_Unit_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HUNT_ASSIGN</Event_Param2>
+		<Story_Chapter>28</Story_Chapter>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Unit_Act_I</Story_Tag>
+		<Branch>Hunt_Unit</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Unit_Kill_Counter">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1></Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Event_Param4>FILTER_FRIENDLY_ONLY</Event_Param4>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>HUNT_UNIT_STATION_FULFILLED</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Prereq>Hunt_Unit_01</Prereq>
+		<Branch>Hunt_Unit</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Unit_Fulfilled_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HUNT_COMPLETE</Event_Param2>
+		<Branch>Hunt_Unit</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Unit_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Unit_Act_I</Reward_Param1>
+		<Story_Chapter>29</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Unit_Act_II</Story_Tag>
+		<Prereq>Hunt_Unit_Fulfilled_Timer</Prereq>
+		<Branch>Hunt_Unit</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Unit_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Hunt_Unit_Act_II</Reward_Param1>
+		<Prereq>Hunt_Unit_02</Prereq>
+		<Branch>Hunt_Unit</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Unit_Failure_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>HUNT_FAILED</Event_Param2>
+		<Branch>Hunt_Unit</Branch>
+		<Perpetual>false</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+	<Event Name="Hunt_Unit_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Unit_Act_I</Reward_Param1>
+		<Story_Chapter>30</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Hunt_Unit_Act_III</Story_Tag>
+		<Prereq>Hunt_Unit_Failure_Timer</Prereq>
+		<Branch>Hunt_Unit</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Unit_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Hunt_Unit_Act_III</Reward_Param1>
+		<Prereq>Hunt_Unit_04</Prereq>
+		<Branch>Hunt_Unit</Branch>
+		<Perpetual>false</Perpetual>
+	</Event>
+
+	<Event Name="Hunt_Unit_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Hunt_Unit</Reward_Param1>
+		<Prereq>Hunt_Unit_03</Prereq>
+		<Prereq>Hunt_Unit_05</Prereq>
+		<Perpetual>true</Perpetual>
+			<Multiplayer>True</Multiplayer>
+	</Event>
+
+</Story>

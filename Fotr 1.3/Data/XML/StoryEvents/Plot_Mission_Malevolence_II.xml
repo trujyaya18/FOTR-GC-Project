@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--*** Hunt for the Malevolence: Mission Malevolence ***-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Mission_Malevolence_II</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Mission_Malevolence_II.XML</Active_Plot>
+
+</Story_Mode_Plots>

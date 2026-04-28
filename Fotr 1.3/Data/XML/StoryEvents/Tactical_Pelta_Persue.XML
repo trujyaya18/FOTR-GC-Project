@@ -1,0 +1,179 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--****** Hunt for the Malevolence: Pelta Persue *******-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+
+	<Event Name="Trigger_CIS_Player">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PLAYER_CIS</Event_Param2>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CISUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>REBEL</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>EMPIRE</Event_Param1>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicMissionAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Trigger_Showdown_Yularen">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VALID_YULAREN</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Yularen_Escaped">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>YULAREN_ESCAPED</Event_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Haven_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>EMPIRE_STAR_BASE_1</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Trigger_CIS_Player</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_Haven_Kill_Counter">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Haven_Destroyed</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="CIS_Pelta_Assault_Destroyed">
+		<Event_Type>STORY_DESTROY</Event_Type>
+		<Event_Param1>PELTA_ASSAULT</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Trigger_CIS_Player</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_Pelta_Assault_Kill_Counter">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_EVENT</Reward_Type>
+		<Reward_Param1>CIS_Pelta_Assault_Destroyed</Reward_Param1>
+		<Prereq>CIS_Pelta_Assault_Destroyed</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Pelta_Support_Destroyed">
+		<Event_Type>STORY_DESTROY</Event_Type>
+		<Event_Param1>PELTA_SUPPORT</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Trigger_CIS_Player</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_Pelta_Support_Kill_Counter">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_EVENT</Reward_Type>
+		<Reward_Param1>Trigger_Pelta_Support_Kill_Counter</Reward_Param1>
+		<Prereq>CIS_Pelta_Support_Destroyed</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Pelta_Assault_Skirmish_Destroyed">
+		<Event_Type>STORY_DESTROY</Event_Type>
+		<Event_Param1>SKIRMISH_PELTA</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Trigger_CIS_Player</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_Pelta_Assault_Skirmish_Kill_Counter">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_EVENT</Reward_Type>
+		<Reward_Param1>CIS_Pelta_Assault_Skirmish_Destroyed</Reward_Param1>
+		<Prereq>CIS_Pelta_Assault_Skirmish_Destroyed</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Pelta_Support_Skirmish_Destroyed">
+		<Event_Type>STORY_DESTROY</Event_Type>
+		<Event_Param1>SKIRMISH_PELTA_SUPPORT</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Trigger_CIS_Player</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_Pelta_Support_Skirmish_Kill_Counter">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_EVENT</Reward_Type>
+		<Reward_Param1>CIS_Pelta_Support_Skirmish_Destroyed</Reward_Param1>
+		<Prereq>CIS_Pelta_Support_Skirmish_Destroyed</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="CIS_Goal_00_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_TACTICAL_PRIMARY_SPACE_ATTACK</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PELTA_PERSUE_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, Trigger_Yularen_Escaped</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PELTA_PERSUE_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>Trigger_CIS_Player, CIS_Haven_Destroyed</Prereq>
+	</Event>
+
+</Story>

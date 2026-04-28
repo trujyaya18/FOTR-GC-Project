@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+
+<Goals>
+	
+	<!-- Clear space force from a friendly planet -->
+	<Lift_Blockade>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 500.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>5.0</Build_Time_Delay_Tolerance>
+	</Lift_Blockade>
+	
+	<Defend_Planet>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 500.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>5.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Defend_Major_Planet
+		</Is_Like>
+	</Defend_Planet>
+
+	<Defend_Major_Planet>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 200.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Defend_Planet
+		</Is_Like>
+	</Defend_Major_Planet>
+	
+</Goals>

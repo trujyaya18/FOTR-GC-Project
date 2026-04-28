@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<!--*****************************************************-->
+<!--********  Campaign: Operation Durge's Lance  ********-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+	<Lua_Script>GCPlayerAgnosticDurge</Lua_Script>
+	<Active_Plot>Conquests\Player_Agnostic_Plot.xml</Active_Plot>
+
+	<Lua_Script>GCDurgesLance</Lua_Script>
+	<Active_Plot>Conquests\CloneWarsDurgesLance\Story_Sandbox_DurgesLance_Republic.XML</Active_Plot>
+	<Active_Plot>Conquests\Story_Sandbox_Universal_Lock_Rep.xml</Active_Plot>
+
+	
+	<Active_Plot>Conquests\Story_Sandbox_Government_Rep.xml</Active_Plot>
+
+	<Active_Plot>Conquests\Factional_Buildable_EMPIRE.xml</Active_Plot>
+
+	<Active_Plot>Conquests\Events\MissionRepository_EMPIRE.xml</Active_Plot>
+</Story_Mode_Plots>

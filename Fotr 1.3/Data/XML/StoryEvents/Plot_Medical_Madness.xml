@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--***** Hunt for the Malevolence: Abregado Ambush *****-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Medical_Madness</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Medical_Madness.XML</Active_Plot>
+
+</Story_Mode_Plots>

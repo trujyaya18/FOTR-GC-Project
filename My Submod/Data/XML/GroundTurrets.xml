@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<GroundStructures>
+
+	<GroundStructure Name="Empire_Anti_Aircraft_Turret">
+		<Variant_Of_Existing_Type> Template_Empire_Anti_Aircraft_Turret </Variant_Of_Existing_Type>
+		<Affiliation>Empire, Sector_Forces, Hutt_Cartels</Affiliation>
+
+		<Scale_Factor>0.95</Scale_Factor>
+		<Land_Model_Name>RB_AA-TURRET.ALO</Land_Model_Name>
+		<Icon_Name>i_button_r_anti_aircraft.tga</Icon_Name>
+
+		<Ranged_Target_Z_Adjust>6.0</Ranged_Target_Z_Adjust>
+		<!-- <Projectile_Types>Proj_Flak_Red</Projectile_Types> -->
+		
+		<Target_Bones> TURRET_00 </Target_Bones>
+
+		<Turret_Rotate_Speed>10.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel_00</Barrel_Bone_Name>
+
+		<Blob_Shadow_Scale>30.0, 30.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Rebel_Anti_Aircraft_Turret">
+		<Variant_Of_Existing_Type> Template_Rebel_Anti_Aircraft_Turret </Variant_Of_Existing_Type>
+		<Affiliation>Rebel, Trade_Federation, Commerce_Guild, Banking_Clan, Techno_Union</Affiliation>
+	</GroundStructure>
+
+
+
+
+
+	<GroundStructure Name="Empire_Anti_Infantry_Turret">
+		<Variant_Of_Existing_Type> Template_Empire_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+		<Affiliation>Empire, Sector_Forces, Hutt_Cartels</Affiliation>
+
+		<Land_Model_Name>RB_TURRET.ALO</Land_Model_Name>
+		<Icon_Name>i_button_r_anti_infantry.tga</Icon_Name>
+		
+		<Scale_Factor>1.3</Scale_Factor>
+
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+	</GroundStructure>
+	
+	<GroundStructure Name="Rebel_Anti_Infantry_Turret">
+		<Variant_Of_Existing_Type> Template_Rebel_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+		<Affiliation>Rebel, Trade_Federation, Commerce_Guild, Banking_Clan, Techno_Union</Affiliation>
+   </GroundStructure>
+
+
+	<GroundStructure Name="Empire_Anti_Vehicle_Turret">
+		<Variant_Of_Existing_Type> Template_Empire_Anti_Vehicle_Turret </Variant_Of_Existing_Type>
+		<Affiliation>Empire, Sector_Forces, Hutt_Cartels</Affiliation>
+
+		<Land_Model_Name>RB_VEHICLETURRET.ALO</Land_Model_Name>
+		<Icon_Name>i_button_r_anti_vehicle.tga</Icon_Name>
+		
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		
+		<Target_Bones>B_BARREL, P_SMOKE_SMALL_THIN_ALT2</Target_Bones>
+
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+	</GroundStructure>
+
+   <GroundStructure Name="Rebel_Anti_Vehicle_Turret">
+		<Variant_Of_Existing_Type> Template_Rebel_Anti_Vehicle_Turret </Variant_Of_Existing_Type>
+		<Affiliation>Rebel, Trade_Federation, Commerce_Guild, Banking_Clan, Techno_Union</Affiliation>
+   </GroundStructure>
+  
+
+
+	<!-- =========================================================== -->
+	<!-- GROUND-BASED BUILDABLE TACTICAL BASE STRUCTURES - DEFENSIVE -->
+	<!-- =========================================================== -->
+
+
+	<GroundStructure Name="Buildable_Repair_Facility">
+
+		<Variant_Of_Existing_Type> Abstract_Repair_Facility </Variant_Of_Existing_Type>
+
+		<Text_ID> TEXT_STRUCTURE_EMPIRE_BUILDABLE_REPAIR_FACILITY </Text_ID>
+		
+		<Land_FOW_Reveal_Range> 200.0 </Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier> 0.0 </Dense_FOW_Reveal_Range_Multiplier>
+		<SFXEvent_Sold_Tactical> EHD_Repair_Station_Sold </SFXEvent_Sold_Tactical>
+
+		<Affiliation> Empire, Sector_Forces, Hutt_Cartels, Rebel, Trade_Federation, Commerce_Guild, Banking_Clan, Techno_Union </Affiliation>
+		
+		<Icon_Name>i_button_e_repair_facility.tga</Icon_Name>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Buildable_Bacta_Tank">
+
+		<Variant_Of_Existing_Type> Abstract_Bacta_Tank </Variant_Of_Existing_Type>
+
+		<Text_ID> TEXT_STRUCTURE_EMPIRE_BUILDABLE_BACTA_TANK </Text_ID>
+
+		<Land_FOW_Reveal_Range> 200.0 </Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier> 0.0 </Dense_FOW_Reveal_Range_Multiplier>
+		<SFXEvent_Sold_Tactical> EHD_Bacta_Tank_Sold </SFXEvent_Sold_Tactical>
+		<Affiliation> Empire, Sector_Forces, Hutt_Cartels, Rebel, Trade_Federation, Commerce_Guild, Banking_Clan, Techno_Union </Affiliation>
+
+	</GroundStructure>
+
+
+<!-- **************************************************** --> 
+<!-- *****     MOBILE BUILD PAD TURRETS/OBJECTS     ***** -->
+<!-- **************************************************** --> 
+
+
+
+</GroundStructures>

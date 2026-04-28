@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" ?>
+
+<!--****************************************************-->
+<!--****   Fall of the Republic: Foerost Campaign   ****-->
+<!--****************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_CIS_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="CIS_Anaxes_Rendili_Bounces">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Anaxes, Rendili, Carida</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_07</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3></Reward_Param3>
+		<Reward_Param9></Reward_Param9>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Anaxes_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Anaxes</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Foerost_Campaign_Ningo_Death</Prereq>
+		<Prereq>CIS_Rendili_Raid_Tactical</Prereq>
+	</Event>
+	
+	<Event Name="CIS_Rendili_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Rendili</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Foerost_Campaign_Ningo_Death</Prereq>
+		<Prereq>CIS_Rendili_Raid_Tactical</Prereq>
+	</Event>
+
+	<Event Name="CIS_Bulwark_Rampage_Disable">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>CIS_Bulwark_Rampage</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Foerost_Campaign_Ningo_Death</Prereq>
+		<Prereq>CIS_Foerost_Campaign_Speech_02</Prereq>
+	</Event>
+	
+    <Event Name="CIS_Lock_Autoresolve_Rendili">
+        <Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>RESTRICT_AUTORESOLVE</Reward_Type>
+        <Reward_Param1>Rendili</Reward_Param1>
+        <Reward_Param2>1</Reward_Param2>
+        <Prereq>Trigger_CIS_Story_Start</Prereq>
+    </Event>
+
+    <Event Name="CIS_Unlock_Autoresolve_Rendili">
+        <Event_Type>STORY_WIN_BATTLES</Event_Type>
+        <Event_Param1>1</Event_Param1>
+        <Event_Param2>SPACE</Event_Param2>
+        <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+        <Reward_Type>RESTRICT_AUTORESOLVE</Reward_Type>
+        <Reward_Param1>Rendili</Reward_Param1>
+        <Reward_Param2>0</Reward_Param2>
+        <Prereq>CIS_Rendili_Raid_Tactical</Prereq>
+    </Event>
+
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<Event Name="CIS_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+
+	<Event Name="Unlock_Bulwark">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Bulwark_I</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Blockade_Breaking_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Foerost</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_BLOCKADE_BREAKING.TED</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Blockade_Breaking.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_PLAYER</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_01</Reward_Param1>
+		<Reward_Param2>7.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Flash_Ixtlar">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>6</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Ixtlar</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Ixtlar_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Foerost_Campaign_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Ixtlar">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Ixtlar_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Ixtlar</Prereq>
+	</Event>
+
+	<Event Name="CIS_Flash_Alsakan">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>6</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Alsakan</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Alsakan_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Foerost_Campaign_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Alsakan">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Alsakan_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Alsakan</Prereq>
+	</Event>
+
+	<Event Name="CIS_Flash_Basilisk">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>6</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Basilisk</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Basilisk_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Foerost_Campaign_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Basilisk">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Basilisk_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Basilisk</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Foerost_Campaign_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Story_Dialog>Dialog_Foerost_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_CIS_Act_I</Story_Tag>
+		<Prereq>CIS_Foerost_Campaign_Speech_01</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Bulwark_Rampage_Tactical">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Bulwark_Brawl.XML</Event_Param1>
+		<Prereq>CIS_Foerost_Campaign_Speech_01</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_VSD_Destroyed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Prereq>CIS_Foerost_Campaign_Act_I_Dialog</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Foerost_Campaign_Speech_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_TARGET_RENDILI</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_02</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Story_Dialog>DIALOG_FOEROST_CAMPAIGN_CIS</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_CIS_Act_II</Story_Tag>
+		<Prereq>CIS_Foerost_Campaign_Speech_02</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Foerost_Campaign_Speech_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_RENDILI_CONQUERED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_03</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Act_II_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_RENDILI_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Foerost_Campaign_CIS_Act_II</Reward_Param1>
+	</Event>
+
+
+	<Event Name="CIS_Rendili_Raid_Tactical">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Rendili</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Dua_Ningo_Unrepentant</Event_Param3>
+		<Event_Param4></Event_Param4>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Rendili</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_RENDILI_RAID.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Rendili_Raid.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_AI</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>CIS_Foerost_Campaign_Act_II_Dialog</Prereq>
+		<Branch>Rendili_Chain</Branch>
+	</Event>
+
+	<Event Name="CIS_Venator_Venting_Tactical_Epilogue">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Venator_Venting.XML</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Rendili_Chain</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act III *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Foerost_Campaign_Act_I_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_TARGET_PLANETS_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Foerost_Campaign_CIS_Act_I</Reward_Param1>
+	</Event>
+
+
+	<Event Name="CIS_Foerost_Campaign_Speech_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_04</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Foerost_Campaign_Act_I_Completed</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Flash_Anaxes">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Anaxes</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Anaxes_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Foerost_Campaign_Speech_04</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Anaxes">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Anaxes_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Anaxes</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>DIALOG_FOEROST_CAMPAIGN_CIS</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_CIS_Act_III</Story_Tag>
+		<Prereq>CIS_Foerost_Campaign_Speech_04</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Trigger_Anaxes_Annexation">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Anaxes</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Event_Param3>Dua_Ningo_Unrepentant</Event_Param3>
+		<Event_Param4></Event_Param4>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>CIS_Bulwark_Rampage_Tactical</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>CIS_Foerost_Campaign_Act_III_Dialog</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Anaxes_Annexation_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Anaxes</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_ANAXES_ANNEXATION.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Anaxes_Annexation.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Reward_Param12>RETREAT_PLAYER</Reward_Param12>
+		<Prereq>CIS_Trigger_Anaxes_Annexation</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Anaxes_Annexation_Tactical_Failed">
+		<Event_Type>STORY_LOSE_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>CIS_Anaxes_Annexation_Tactical</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Anaxes_Annexation_Tactical_Completed">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>CIS_Anaxes_Annexation_Tactical</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Anaxes_Annexation_Tactical_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>CIS_Anaxes_Annexation_Tactical</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Act_III_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Foerost_Campaign_CIS_Act_III</Reward_Param1>
+		<Prereq>CIS_Anaxes_Annexation_Tactical_Completed</Prereq>
+		<Branch>Ningo_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Anaxes_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Anaxes</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act IV **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Foerost_Campaign_Ningo_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Dua_Ningo_Unrepentant</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>CIS_Foerost_Campaign_Act_I_Dialog</Prereq>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Speech_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_05</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Foerost_Campaign_Ningo_Death</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Foerost_Campaign_Speech_06">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_06</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Foerost_Campaign_Act_I_Completed, CIS_Foerost_Campaign_Act_III_Completed</Prereq>
+		<Prereq>CIS_Foerost_Campaign_Act_I_Completed, CIS_Anaxes_Conquest</Prereq>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Act_IV_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Story_Dialog>DIALOG_FOEROST_CAMPAIGN_CIS</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_CIS_Act_IV</Story_Tag>
+		<Prereq>CIS_Foerost_Campaign_Speech_05</Prereq>
+		<Prereq>CIS_Foerost_Campaign_Speech_06</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Unlock_GC_Progression_ORS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>CIS_Foerost_Campaign_Speech_05</Prereq>
+		<Prereq>CIS_Foerost_Campaign_Speech_06</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ORS_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>GC_Progression_Dummy</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ORS_AU">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ORS_GC_PROGRESSION_AU</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_AU_3_OuterRimSieges_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ORS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ORS_GC_PROGRESSION</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_OuterRimSieges_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act V ***************-->
+	<!--************************************-->
+
+	<Event Name="Trigger_CIS_Foerost_Carida_Clysm">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_CARIDA_CLYSM_START</Event_Param2>
+	</Event>
+
+	<Event Name="CIS_Foerost_Carida_Clysm_Speech_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_08</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Foerost_Carida_Clysm</Prereq>
+	</Event>
+
+	<Event Name="CIS_Foerost_Carida_Clysm_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_08</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Foerost_Carida_Clysm_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Act_V_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>Dialog_Foerost_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Tag>Foerost_Campaign_CIS_Act_V</Story_Tag>
+		<Prereq>CIS_Foerost_Carida_Clysm_Speech_02</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Foerost_Campaign_Carida_Conquest">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_CARIDA_CONQUEST</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_FOEROST_CAMPAIGN_CIS_SPEECH_09</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8 />
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Foerost_Campaign_Act_V_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Foerost_Campaign_CIS_Act_V</Reward_Param1>
+		<Prereq>CIS_Foerost_Campaign_Carida_Conquest</Prereq>
+	</Event>
+
+</Story>

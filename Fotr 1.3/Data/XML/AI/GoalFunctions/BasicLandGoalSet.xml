@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+
+	<Clear_Infantry>
+		<Goal> Clear_Infantry </Goal>
+		<Function> Should_Clear_Infantry </Function>
+	</Clear_Infantry>
+
+	<Clear_Vehicles>
+		<Goal> Clear_Vehicles </Goal>
+		<Function> Should_Clear_Vehicles </Function>
+	</Clear_Vehicles>
+	
+	<Destroy_Land_Unit>
+		<Goal> Destroy_Land_Unit </Goal>
+		<Function> Should_Destroy_Land_Unit </Function>
+	</Destroy_Land_Unit>
+	
+	<Hold_Position>
+		<Goal> Hold_Position </Goal>
+		<Function> Should_Hold_Position </Function>
+	</Hold_Position>
+	
+	<Destroy_Structure>
+		<Goal> Destroy_Structure </Goal>
+		<Function> Should_Destroy_Structure </Function>
+	</Destroy_Structure>
+
+	<Destroy_Turbolaser>
+		<Goal> Destroy_Turbolaser </Goal>
+		<Function> Should_Destroy_Turbolaser </Function>
+	</Destroy_Turbolaser>
+
+	<Land_Retreat>
+		<Goal> Land_Retreat </Goal>
+		<Function> Should_Retreat_From_Land </Function>
+	</Land_Retreat>
+	
+	<Land_Bombing_Run>
+		<Goal>Land_Bombing_Run</Goal>
+		<Function>Should_Bomb</Function>
+	</Land_Bombing_Run>
+
+	<Build_AntiVehicle_Turret>
+		<Goal>Build_AntiVehicle_Turret</Goal>
+		<Function>Need_AntiVehicle_Turret</Function>
+	</Build_AntiVehicle_Turret>
+
+	<Build_AntiAir_Turret>
+		<Goal>Build_AntiAir_Turret</Goal>
+		<Function>Need_AntiAir_Turret</Function>
+	</Build_AntiAir_Turret>
+
+	<Build_AntiInfantry_Turret>
+		<Goal>Build_AntiInfantry_Turret</Goal>
+		<Function>Need_AntiInfantry_Turret</Function>
+	</Build_AntiInfantry_Turret>
+
+	<Build_Bacta_Tank>
+		<Goal>Build_Bacta_Tank</Goal>
+		<Function>Need_Bacta_Tank</Function>
+	</Build_Bacta_Tank>
+
+	<Build_Repair_Bay>
+		<Goal>Build_Repair_Bay</Goal>
+		<Function>Need_Repair_Bay</Function>
+	</Build_Repair_Bay>
+	
+	<Build_Field_Base>
+		<Goal>Build_Field_Base</Goal>
+		<Function>Need_Field_Base</Function>
+	</Build_Field_Base>
+
+	<Fund_Tactical_Structures>
+		<Goal>Fund_Tactical_Structures</Goal>
+		<Function>Need_For_Tactical_Funding</Function>
+	</Fund_Tactical_Structures>
+
+	<Sell_Tactical_Structure>
+		<Goal>Sell_Tactical_Structure</Goal>
+		<Function>Need_To_Sell_Tactical_Structure</Function>
+	</Sell_Tactical_Structure>
+
+	<Steal_Vehicle>
+		<Goal>Steal_Vehicle</Goal>
+		<Function>Need_To_Steal_Vehicle</Function>
+	</Steal_Vehicle>
+
+	<Flame_Infantry>
+		<Goal>Flame_Infantry</Goal>
+		<Function>ReallyBig</Function>
+	</Flame_Infantry>
+
+	<Defend_Structure>
+		<Goal>Defend_Structure</Goal>
+		<Function>Need_To_Defend_Structure</Function>
+	</Defend_Structure>
+
+	<Tactical_Multiplayer_Build_Land_Units_Generic>
+		<Goal>Tactical_Multiplayer_Build_Land_Units_Generic</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Units_Generic_Land</Function>
+	</Tactical_Multiplayer_Build_Land_Units_Generic>
+	
+	<Tactical_Multiplayer_Build_Land_Units_Groundwar>
+		<Goal>Tactical_Multiplayer_Build_Land_Units_Groundwar</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Units_Groundwar_Land</Function>
+	</Tactical_Multiplayer_Build_Land_Units_Groundwar>
+
+	<Tactical_Multiplayer_Build_Basic_Structure>
+		<Goal>Tactical_Multiplayer_Build_Basic_Structure</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Basic_Structure</Function>
+	</Tactical_Multiplayer_Build_Basic_Structure>
+	
+	<Tactical_Multiplayer_Build_Barracks>
+		<Goal>Tactical_Multiplayer_Build_Barracks</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Barracks</Function>
+	</Tactical_Multiplayer_Build_Barracks>
+
+	<Tactical_Multiplayer_Build_Command_Center>
+		<Goal>Tactical_Multiplayer_Build_Command_Center</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Command_Center</Function>
+	</Tactical_Multiplayer_Build_Command_Center>
+
+	<Purchase_Land_Upgrades_Generic>
+		<Goal>Purchase_Land_Upgrades_Generic</Goal>
+		<Function>Should_Purchase_Ability_Generic_Land</Function>
+	</Purchase_Land_Upgrades_Generic>
+
+	<Purchase_Early_Land_Upgrades>
+		<Goal>Purchase_Early_Land_Upgrades</Goal>
+		<Function>Should_Purchase_Early_Land_Upgrades</Function>
+	</Purchase_Early_Land_Upgrades>
+
+	<Secure_Contestable>
+		<Goal>Secure_Contestable</Goal>
+		<Function>Need_To_Secure_Contestable_Land</Function>
+	</Secure_Contestable>
+
+	<Secure_Build_Pad>
+		<Goal>Secure_Build_Pad</Goal>
+		<Function>Need_To_Secure_Build_Pad_Land</Function>
+	</Secure_Build_Pad>
+
+	<Build_Econ_Structure>
+		<Goal>Build_Econ_Structure</Goal>
+		<Function>Need_To_Build_Refinery_Land</Function>
+	</Build_Econ_Structure>
+
+	<Burn_Units_Land>
+		<Goal>Burn_Units_Land</Goal>
+		<Function>Should_Burn_Units_Land</Function>
+	</Burn_Units_Land>
+
+	<Tech_Upgrade_Emergency>
+		<Goal>Tech_Upgrade_Emergency</Goal>
+		<Function>Skirmish_Upgrade_Tech_With_Multiplier</Function>
+	</Tech_Upgrade_Emergency>
+
+	<Tactical_Multiplayer_Build_Infantry_Emergency>
+		<Goal>Tactical_Multiplayer_Build_Infantry_Emergency</Goal>
+		<Function>Should_Build_Infantry_Emergency</Function>
+	</Tactical_Multiplayer_Build_Infantry_Emergency>
+
+	<Secure_Victory_Control_Point>
+		<Goal>Secure_Victory_Control_Point</Goal>
+		<Function>Should_Secure_Victory_Control_Point</Function>
+	</Secure_Victory_Control_Point>
+
+	<Garrison_Bunker>
+		<Goal>Garrison_Bunker</Goal>
+		<Function>Should_Garrison_Bunker</Function>
+	</Garrison_Bunker>
+
+	<Orbital_Bombardment>
+		<Goal>Orbital_Bombardment</Goal>
+		<Function>Should_Fire_Orbital_Bombardment</Function>
+	</Orbital_Bombardment>
+
+	<Build_Bunker>
+		<Goal>Build_Bunker</Goal>
+		<Function>Should_Build_Bunker</Function>
+	</Build_Bunker>
+
+	<Land_Units_Groundwar>
+		<Goal>Land_Units_Groundwar</Goal>
+		<Function>Need_Units_Landed</Function>
+	</Land_Units_Groundwar>
+	
+	<Airstrike>
+		<Goal> Airstrike </Goal>
+		<Function> Should_Airstrike </Function>
+	</Airstrike>
+	
+</FunctionSet>

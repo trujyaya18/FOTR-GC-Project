@@ -1,0 +1,2610 @@
+<?xml version="1.0" ?>
+<Skirmish_Units>
+		
+	<GroundVehicle Name="GroundWar_Spawner">
+
+		<Text_ID>TEXT_UNIT_GROUND_WAR_SPAWNER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUND_WAR_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_GROUND_WAR_SPAWNER
+		</Encyclopedia_Text>
+		<Icon_Name>I_SA_DEPLOY_STORMTROOPERS.TGA</Icon_Name>
+
+		<Land_Model_Name>GROUNDWAR_CIS.ALO</Land_Model_Name>
+		<No_Colorization_Color />
+		<Scale_Factor>1.2</Scale_Factor>
+		<Select_Box_Scale>30</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Size_Value>75</Size_Value>
+
+		<Mass>1.0</Mass>
+		<Max_Speed>1.0</Max_Speed>
+		<Max_Thrust>1.0</Max_Thrust>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>0.1</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.1</Stopped_Rate_Of_Turn>
+		<Min_Speed_Fraction_For_Turn>0.0</Min_Speed_Fraction_For_Turn>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Hyperspace>yes</Hyperspace>
+		<Hyperspace_Speed>1.0</Hyperspace_Speed>
+
+		<Shield_Armor_Type></Shield_Armor_Type>
+		<Shield_Points>90000</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Armor_Type></Armor_Type>
+		<Tactical_Health>90000</Tactical_Health>
+
+		<Energy_Capacity>1</Energy_Capacity>
+		<Energy_Refresh_Rate>1</Energy_Refresh_Rate>	
+		
+		<AI_Combat_Power>1</AI_Combat_Power>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Damage>1</Damage>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		
+	
+		<Political_Control />
+		<Maintenance_Cost />
+		
+		<Type>Hover</Type>
+		<Weather_Category>Walker</Weather_Category>
+		
+		<Mass>1.0</Mass>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.1</Max_Thrust>
+		<OverrideAcceleration> .075 </OverrideAcceleration>
+		<OverrideDeceleration> .45 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+
+		<Ship_Class>infantry</Ship_Class>
+		<CategoryMask>Wall</CategoryMask>
+		<Ranking_In_Category />
+		<Property_Flags />
+		<Formation_Priority>1</Formation_Priority>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Is_Escort>no</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Surface_Bombardment_Capable>no</Surface_Bombardment_Capable>
+		<Squadron_Capacity />
+
+		<Tech_Level>99</Tech_Level>
+
+		<GUI_Row>1</GUI_Row>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Slice_Cost_Credits />
+		<Required_Special_Structures />
+		<Build_Time_Reduced_By_Multiple_Factories>yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Space_Units>yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>no</Build_Initially_Locked>
+		<Override_Bounty_SP></Override_Bounty_SP>
+		<Override_Bounty_MP></Override_Bounty_MP>
+		<Tactical_Bribe_Cost>1</Tactical_Bribe_Cost>
+		<Piracy_Value_Credits>1</Piracy_Value_Credits>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+		<Space_Override_Population_Value />
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<LandBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT, SPAWN_SQUADRON, LANDING, SURFACE_FX, WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+
+		<!--<Starting_Spawned_Units_Tech_0>MC40a, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Alliance_Assault_Frigate, 2</Starting_Spawned_Units_Tech_0>-->
+		
+		<Spawned_Squadron_Delay_Seconds>1</Spawned_Squadron_Delay_Seconds>
+
+		<HardPoints>GroundWar_Spawner_Spawn_00, GroundWar_Spawner_Spawn_01, GroundWar_Spawner_Spawn_02, GroundWar_Spawner_Spawn_03, GroundWar_Spawner_Spawn_04, GroundWar_Spawner_Spawn_05, GroundWar_Spawner_Spawn_06, GroundWar_Spawner_Spawn_07, GroundWar_Spawner_Spawn_08, GroundWar_Spawner_Spawn_09, GroundWar_Spawner_Spawn_10, GroundWar_Spawner_Spawn_11</HardPoints>
+		
+		<Lua_Script />
+		
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_FIGHTER_BAY, null</SFXEvent_Hardpoint_Destroyed>
+		
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<Target_Bones></Target_Bones>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Collidable_By_Projectile_Living>no</Collidable_By_Projectile_Living>
+		<Ground_Vehicle_Turret_Target>no</Ground_Vehicle_Turret_Target>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Death_Explosions></Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Death_Clone></Death_Clone>
+		
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+		<SFXEvent_Bombard_Select_Target/>
+		<SFXEvent_Bombard_Incoming/>
+
+		<SFXEvent_Select/>
+		<SFXEvent_Move/>
+		<SFXEvent_Fleet_Move/>
+		<SFXEvent_Attack/>
+		<SFXEvent_Guard/>
+		<SFXEvent_Barrage/>
+		<SFXEvent_Move_Into_Nebula/>
+		<SFXEvent_Move_Into_Asteroid_Field />
+		<SFXEvent_Health_Low_Warning/>
+		
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,  </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Assault_Frigate_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Assault_Frigate_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Assault_Frigate_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+		<SFXEvent_Damaged_By_Asteroid>SFX_Asteroid_Detonation</SFXEvent_Damaged_By_Asteroid>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<Selt_Destruct_SFXEvent_Start_Die> Unit_TIE_Mauler_Self_Destruct </Selt_Destruct_SFXEvent_Start_Die>
+
+		<Is_Visible_On_Radar>yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name></Radar_Icon_Name>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+
+		<Space_FOW_Reveal_Range>1.0</Space_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>0.1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Minimum_Follow_Distance>1000.0</Minimum_Follow_Distance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>0.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>1000.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+
+		<MovementClass>Hover</MovementClass>		
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Movement_Directions_Count>2</Movement_Directions_Count>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+		<OccupationStyle>1x1</OccupationStyle>
+		
+		<Space_Layer>Land</Space_Layer>
+		<Has_Space_Evaluator>true</Has_Space_Evaluator>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>1</Expiration_Seconds>
+				<Recharge_Seconds>1</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>		
+		
+
+
+		<!--<Destruction_Survivors> 
+			Skirmish_invincible, 3
+
+		</Destruction_Survivors>
+		<Minimum_Destruction_Survivor_Count>3</Minimum_Destruction_Survivor_Count>
+		<Maximum_Destruction_Survivor_Count>3</Maximum_Destruction_Survivor_Count>-->
+		
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Population_Value>1</Population_Value>
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+		<Company_Transport_Unit>CR20_Landing_Craft_Clones</Company_Transport_Unit>
+
+	</GroundVehicle>
+		
+		
+	<GroundVehicle Name="GroundWar_Spawner_Unit">
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Spawned_Squadron_Delay_Seconds>4</Spawned_Squadron_Delay_Seconds>
+	
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>61</Expiration_Seconds>
+				<Recharge_Seconds>61</Recharge_Seconds>
+                <Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type>  </Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+	
+	
+	<!--<GroundVehicle Name="Template_GroundWar_Spawner_">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		
+		</Destruction_Survivors>
+		
+	</GroundVehicle>-->
+
+	<!-- ============================================================== CIS Infantry ============================================================== -->
+
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_B1_Droid_Squad">
+		
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		B1_Droid_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Deployed_B1_Squad">
+		
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+				
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Deployed_B1_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_OOM_Security_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		OOM_Security_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_MTT_Deployed_B1_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		MTT_Deployed_B1_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_B1_Droid_Marine_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		B1_Droid_Marine_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_B1_Geo_Droid_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		B1_Geo_Droid_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Deployed_B1_Geo_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Deployed_B1_Geo_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_B1_RC_Droid_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		B1_RC_Droid_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Deployed_B1_RC_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Deployed_B1_RC_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_B2_Droid_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		B2_Droid_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_B2_Droid_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		B2_Droid_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_BX_Commando_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		BX_Commando_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_BX_Commando_Sniper_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar10</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		BX_Commando_Sniper_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_BX_Commando_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar11</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		BX_Commando_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Elite_Guard_BX_Commando_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar11</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Elite_Guard_BX_Commando_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Crab_Droid_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Crab_Droid_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Repair_Droid_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Repair_Droid_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Destroyer_Droid_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Destroyer_Droid_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Destroyer_Droid">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Destroyer_Droid, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Destroyer_Droid_II_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Destroyer_Droid_II_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Destroyer_Droid_II">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Destroyer_Droid_II, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_STAP_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		STAP_Squad,1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_STAP">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		STAP, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_CIS_STAP">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		CIS_STAP, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_CIS_STAP_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		CIS_STAP_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_LR_57_Combat_Droid_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		LR_57_Combat_Droid_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Dwarf_Spider_Droid_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Dwarf_Spider_Droid_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	
+		<!-- ============================================================== CIS Vehicles ============================================================== -->
+
+
+	<GroundVehicle Name="Template_GroundWar_Spawner_OG9_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		OG9_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_OG9">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		OG9, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Vulture_Land">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Vulture_Land, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_CA_Artillery">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		CA_Artillery, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Hailfire_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Hailfire_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Hailfire">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Hailfire, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_J1_Artillery_Corp">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		J1_Artillery_Corp, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_J1_Cannon">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		J1_Cannon, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_HAG_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		HAG_Company,1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+
+	<GroundVehicle Name="Template_GroundWar_Spawner_GAT_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		GAT_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_GAT">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		GAT, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_CIS_GAT_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+				
+		<Destruction_Survivors> 
+		CIS_GAT_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_CIS_GAT">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar10</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		CIS_GAT, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_AAT_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar11</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+				
+		<Destruction_Survivors> 
+		AAT_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_AAT">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		AAT, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_MTT_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		MTT_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_CIS_MTT_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		CIS_MTT_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Persuader_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Persuader_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Persuader">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Persuader, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_MAF_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		MAF_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_CIS_MAF_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		CIS_MAF_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_HMP_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		HMP_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_HMP">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		HMP, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Magna_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Magna_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Magna_Tri">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Spawned_Squadron_Location_Bones>Hangar10</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors> 
+		Magna_Tri, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_PAC_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar11</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+
+		
+		<Destruction_Survivors> 
+		PAC_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_PAC">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+    <Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+    
+		<Destruction_Survivors> 
+		PAC, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_HAML_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		HAML_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+
+		
+	<GroundVehicle Name="Template_GroundWar_Spawner_HAML">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		HAML, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Protodeka">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Protodeka, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<!-- ============================================================== Republic Infantry ============================================================== -->
+
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Assault_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Assault_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Heavy_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Heavy_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Team_Medic">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Team_Medic, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Team_Deployed,1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Assault_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Assault_Team_Deployed,1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Heavy_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Heavy_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Team_Medic">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Team_Medic, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Shock_Clonetrooper_Phase_One_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Shock_Clonetrooper_Phase_One_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Shock_Clonetrooper_Phase_Two_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar10</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Shock_Clonetrooper_Phase_Two_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Team_Skirmish">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar11</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Team_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Assault_Team_Deployed_Skirmish">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Assault_Team_Deployed_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Heavy_Team_Deployed_Skirmish">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Heavy_Team_Deployed_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_One_Team_Medic_Skirmish">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_One_Team_Medic_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Team_Skirmish">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Team_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Assault_Team_Deployed_Skirmish">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Assault_Team_Deployed_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Heavy_Team_Deployed_Skirmish">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Heavy_Team_Deployed_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clonetrooper_Phase_Two_Team_Medic_Skirmish">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clonetrooper_Phase_Two_Team_Medic_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_ARC_Phase_One_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		ARC_Phase_One_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_ARC_Phase_One_Heavy_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		ARC_Phase_One_Heavy_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_ARC_Phase_One_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		ARC_Phase_One_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_ARC_Phase_Two_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar10</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		ARC_Phase_Two_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_ARC_Phase_Two_Heavy_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar11</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		ARC_Phase_Two_Heavy_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_ARC_Phase_Two_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		ARC_Phase_Two_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Trooper_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_Trooper_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Trooper_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_Trooper_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Trooper_Medic_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_Trooper_Medic_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clone_Commando_Team">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clone_Commando_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clone_Commando_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clone_Commando_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Jedi_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_Jedi_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Jedi_Knight">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_Jedi_Knight, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Kotas_Militia_Trooper_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Kotas_Militia_Trooper_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clone_Jumptrooper_Phase_One_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clone_Jumptrooper_Phase_One_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Clone_Jumptrooper_Phase_Two_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clone_Jumptrooper_Phase_Two_Squad, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Heavy_Clone_Galactic_Marine_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Heavy_Clone_Galactic_Marine_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Assault_Clone_Galactic_Marine_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Assault_Clone_Galactic_Marine_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Heavy_Senate_Commando_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Heavy_Senate_Commando_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Assault_Senate_Commando_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Assault_Senate_Commando_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Navy_Trooper_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_Navy_Trooper_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Clone_Special_Ops_Team_Deployed">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Clone_Special_Ops_Team_Deployed, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+
+
+
+	<!-- ============================================================== Republic Vehicles ============================================================== -->
+
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_SD_6_Droid_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_SD_6_Droid_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_SD_6_Hulk_Infantry_Droid">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		SD_6_Hulk_Infantry_Droid, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_AT_RT_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_AT_RT_Company_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_AT_RT_Walker">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_AT_RT_Walker_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Imperial_ATPT_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_AT_PT_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_AT_PT_Walker">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_AT_PT_Walker, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Speeder_Bike_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_74Z_Bike_Company_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Speeder_Bike">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_74Z_Bike_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_BARC_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_BARC_Company_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_BARC_Speeder">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_BARC_Speeder_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Pentastar_Speeder_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar10</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_ISP_Company_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_ISP">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar11</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_ISP_Skirmish, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_ATXT_Squad">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_AT_XT_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_AT_XT_Walker">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Destruction_Survivors> 
+		Republic_AT_XT_Walker, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Imperial_IFTX_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Destruction_Survivors> 
+		Republic_TX130_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_TX130">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_TX130, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Artillery_Corp">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_AV7_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_LAAT_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_LAAT_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_A4_Juggernaut_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_A4_Juggernaut_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_A5_Juggernaut_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_A5_Juggernaut_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_AT_AP_Walker_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_AT_AP_Walker_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Heavy_Assault_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar09</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_AT_TE_Walker_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_UT_AT_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar10</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_UT_AT_Speeder_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_A6_Juggernaut_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar11</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Republic_A6_Juggernaut_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Gaba18_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Destruction_Survivors> 
+		Republic_Gaba18_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Gaba18">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Destruction_Survivors> 
+		Gaba18, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Flashblind_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+		
+		<Destruction_Survivors> 
+		Republic_Flashblind_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Flashblind">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Flashblind, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_UT_AA_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar04</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Republic_UT_AA_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_UTAA">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar05</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		UTAA, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_HAET_Group">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar06</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>300.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+  
+		<Destruction_Survivors> 
+		Republic_HAET_Group, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_AT_OT_Walker_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar07</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+  
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Republic_AT_OT_Walker_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_AT_OT_Walker">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Republic_AT_OT_Walker, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_Overracer_Speeder_Bike">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Republic_Overracer_Speeder_Bike, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_ULAV">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Republic_ULAV, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_VAAT">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Republic_VAAT, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Republic_RX200_Falchion">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar08</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Republic_RX200_Falchion, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<!-- ============================================================== Republic Hero ============================================================== -->
+
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Commander_Clone_P1_IV_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Commander_Clone_P1_IV_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Commander_Clone_P1_III_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Commander_Clone_P1_III_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Commander_Clone_P2_IV_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar02</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Commander_Clone_P2_IV_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Commander_Clone_P2_III_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar03</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+		
+		<Destruction_Survivors> 
+		Commander_Clone_P2_III_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<!-- ============================================================== Neutral Mercs ============================================================== -->
+
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Mandalorian_Soldier_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Mandalorian_Soldier_Skirmish_Team, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Template_GroundWar_Spawner_Storm_Cloud_Car_Company">
+	
+		<Variant_Of_Existing_Type>GroundWar_Spawner</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Spawned_Squadron_Location_Bones>Hangar01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>200.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<Destruction_Survivors> 
+		Storm_Cloud_Car_Company, 1
+		</Destruction_Survivors>
+		
+	</GroundVehicle>
+	
+</Skirmish_Units>

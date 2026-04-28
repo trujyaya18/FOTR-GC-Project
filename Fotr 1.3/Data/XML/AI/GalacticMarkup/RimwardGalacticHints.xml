@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+	<Planets HintSet="Galactic_Hints">
+		<!-- CIS Planets -->
+		<Raxus_Second>
+			<Chokepoint>1.0</Chokepoint>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Raxus_Second>
+
+		<Pammant>
+			<Chokepoint>3.0</Chokepoint>
+		</Pammant>
+
+		<Minntooine>
+			<Chokepoint>3.5</Chokepoint>
+		</Minntooine>
+
+		<Boz_Pity>
+			<Chokepoint>3.5</Chokepoint>
+		</Boz_Pity>
+
+		<Hypori>
+			<Chokepoint>3.0</Chokepoint>
+		</Hypori>
+
+		<Charros>
+			<Chokepoint>4.0</Chokepoint>
+		</Charros>
+
+		<Ryloth>
+			<PriorityTarget>2.0</PriorityTarget>
+		</Ryloth>
+
+		<!-- Hutt Planets -->
+		<Ubrikkia>
+			<Chokepoint>3.0</Chokepoint>
+		</Ubrikkia>
+
+		<Toydaria>
+			<Chokepoint>4.0</Chokepoint>
+		</Toydaria>
+
+		<!-- Neutral Planets -->
+		<Ruusan>
+			<PriorityTarget>1.0</PriorityTarget>
+		</Ruusan>
+
+		<Florrum>
+			<PriorityTarget>1.0</PriorityTarget>
+		</Florrum>
+
+		<!-- Republic Planets -->
+		<Kamino>
+			<Chokepoint>1.0</Chokepoint>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Kamino>
+
+		<Bothawui>
+			<Chokepoint>4.0</Chokepoint>
+		</Bothawui>
+
+		<Mon_Calamari>
+			<Chokepoint>4.0</Chokepoint>
+		</Mon_Calamari>
+
+		<Rothana>
+			<Chokepoint>4.0</Chokepoint>
+		</Rothana>
+
+		<Handooine>
+			<Chokepoint>4.0</Chokepoint>
+		</Handooine>
+
+		<Rodia>
+			<Chokepoint>3.5</Chokepoint>
+		</Rodia>
+
+		<Rishi>
+			<PriorityTarget>1.0</PriorityTarget>
+		</Rishi>
+	</Planets>
+</Galactic_Markup>

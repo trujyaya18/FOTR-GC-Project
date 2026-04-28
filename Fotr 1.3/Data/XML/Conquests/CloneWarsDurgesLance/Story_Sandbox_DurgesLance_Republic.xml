@@ -1,0 +1,399 @@
+<?xml version="1.0" ?>
+
+<!--*****************************************************-->
+<!--********  Campaign: Operation Durge's Lance  ********-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Rep_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Rep_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Gentis">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Gentis_Team</Reward_Param1>
+		<Reward_Param2>Thomork</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Grant">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Grant_Venator</Reward_Param1>
+		<Reward_Param2>Commenor</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Coy">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Coy_Imperator</Reward_Param1>
+		<Reward_Param2>Chardaan</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Yoda">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Yoda_Eta_Team</Reward_Param1>
+		<Reward_Param2>Sarapin</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Mace">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mace_Windu_Eta_Team</Reward_Param1>
+		<Reward_Param2>Abregado_Rae</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<Event Name="Republic_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Republic_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>	
+
+	<Event Name="Republic_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="Republic_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+
+	<Event Name="Unlock_Venator">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Venator</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Unlock_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Victory_Destroyer</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Laughing_Lance_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Vaklin</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_LAUGHING_LANCE.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Laughing_Lance.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_REP_SPEECH_01</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Durges_Lance_Rep_Act_I</Story_Tag>
+		<Prereq>Rep_Durges_Lance_Speech_01</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Durges_Lance_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10.0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_REP_SPEECH_02</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>Mace_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Durges_Lance_Act_I_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Durges_Lance_Rep_Act_II</Story_Tag>
+		<Prereq>Rep_Durges_Lance_Speech_02</Prereq>
+	</Event>
+
+
+	<Event Name="Trigger_Rep_Grievous_Destroyed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_GRIEVOUS_DEAD</Event_Param2>
+	</Event>
+
+	<Event Name="Rep_Grievous_Munificent_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Grievous_Munificent</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Rep_Durges_Lance_Act_II_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Grievous_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Grievous_Munificent_Ground</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Rep_Durges_Lance_Act_II_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Rep_Speech_04_Disabler">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>Rep_Durges_Lance_Speech_04</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>Trigger_Rep_Grievous_Destroyed, Rep_Durges_Lance_Act_I_Completed</Prereq>
+		<Prereq>Rep_Grievous_Munificent_Destroyed, Rep_Durges_Lance_Act_I_Completed</Prereq>
+		<Prereq>Rep_Grievous_Destroyed, Rep_Durges_Lance_Act_I_Completed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_Speech_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_REP_SPEECH_04</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Rep_Grievous_Destroyed</Prereq>
+		<Prereq>Rep_Grievous_Munificent_Destroyed</Prereq>
+		<Prereq>Rep_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_Act_II_Completed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Durges_Lance_Rep_Act_II</Reward_Param1>
+		<Prereq>Trigger_Rep_Grievous_Destroyed</Prereq>
+		<Prereq>Rep_Grievous_Munificent_Destroyed</Prereq>
+		<Prereq>Rep_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act III ************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Durges_Lance_Act_I_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_TARGET_PLANETS_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Durges_Lance_Rep_Act_I</Reward_Param1>
+	</Event>
+
+
+	<Event Name="Rep_Durges_Lance_Speech_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_REP_SPEECH_05</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Pellaeon_Intro_Speech</Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Durges_Lance_Act_I_Completed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Durges_Lance_Rep_Act_III</Story_Tag>
+		<Prereq>Rep_Durges_Lance_Speech_05</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Unlock_GC_Progression_Foerost">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Rep_Durges_Lance_Speech_05</Prereq>
+	</Event>
+
+	<Event Name="Rep_GC_Progression_Foerost_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>GC_Progression_Dummy</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_GC_Progression_Foerost">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Foerost_Republic</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Rep_GC_Progression_Foerost_Research</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act IV **************-->
+	<!--************************************-->
+
+	<!--************************************-->
+	<!--************** Act V ***************-->
+	<!--************************************-->
+
+	<!--************************************-->
+	<!--************ Intermezzo ************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Durges_Lance_HoloNet_Report_Act_00">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>10</Story_Chapter>
+		<Story_Tag>HoloNet_Report_Act_00</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_HoloNet_Report_Act_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_HOLONET_ACT_01</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>11</Story_Chapter>
+		<Story_Tag>HoloNet_Report_Act_01</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_HoloNet_Report_Act_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_HOLONET_ACT_02</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>12</Story_Chapter>
+		<Story_Tag>HoloNet_Report_Act_02</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_HoloNet_Report_Act_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_HOLONET_ACT_03</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>13</Story_Chapter>
+		<Story_Tag>HoloNet_Report_Act_03</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_HoloNet_Report_Act_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_HOLONET_ACT_04</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>14</Story_Chapter>
+		<Story_Tag>HoloNet_Report_Act_04</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_HoloNet_Report_Act_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_HOLONET_ACT_05</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>15</Story_Chapter>
+		<Story_Tag>HoloNet_Report_Act_05</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_HoloNet_Report_Act_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_HOLONET_ACT_06</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>16</Story_Chapter>
+		<Story_Tag>HoloNet_Report_Act_06</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="Rep_Durges_Lance_HoloNet_Report_Act_07">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_HOLONET_ACT_07</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_Rep</Story_Dialog>
+		<Story_Chapter>17</Story_Chapter>
+		<Story_Tag>HoloNet_Report_Act_07</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+</Story>

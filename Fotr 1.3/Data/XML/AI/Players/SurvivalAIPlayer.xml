@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name>SurvivalAI</Name>
+
+	<GoalSetExtensionSize>5</GoalSetExtensionSize>
+
+	<Personality>
+		<Focus> 1.0 </Focus>
+		<Aggressiveness> 1.0</Aggressiveness>
+	</Personality>
+	
+    <GalacticFreeStoreScript>GalacticFreeStore</GalacticFreeStoreScript>
+    <SpaceFreeStoreScript>SurvivalTacticalFreeStore</SpaceFreeStoreScript>
+    <LandFreeStoreScript>LandTacticalFreeStore</LandFreeStoreScript>
+	
+	<GoalProposalFunctionSets>
+		SurvivalOffensiveSpaceSet
+	</GoalProposalFunctionSets>
+	
+	<Templates>
+        <Space>
+            Generic_Space
+        </Space>
+        <Land>
+            Generic_Land
+        </Land>
+		<Galactic>
+			Generic_AI_Default
+		</Galactic>
+	</Templates>
+
+	<Difficulty_Adjustments>
+		<Easy>Easy_Default</Easy>
+		<Normal>Normal_Default</Normal>
+		<Hard>Hard_Default</Hard>
+	</Difficulty_Adjustments>
+	
+</AIPlayerType>

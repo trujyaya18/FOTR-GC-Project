@@ -1,0 +1,548 @@
+<?xml version="1.0" ?>
+<!-- Equations that define perception functions -->
+<Equations>
+
+	<Is_Connected_To_Player>
+		(Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Trade_Federation", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Techno_Union", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Banking_Clan", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Commerce_Guild", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Sector_Forces", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0}) > 0.0
+	</Is_Connected_To_Player>
+	
+	<Is_Connected_To_Enemy_Human>
+		(
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Sector_Forces", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Sector_Forces"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Sector_Forces", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Sector_Forces"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Trade_Federation", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Trade_Federation"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Techno_Union", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Techno_Union"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Banking_Clan", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Banking_Clan"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Commerce_Guild", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Commerce_Guild"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Sector_Forces", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Sector_Forces"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Underworld"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Trade_Federation", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Trade_Federation"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Techno_Union", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Techno_Union"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Banking_Clan", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Banking_Clan"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Commerce_Guild", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Commerce_Guild"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Sector_Forces", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Sector_Forces"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Trade_Federation"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Techno_Union"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Banking_Clan"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Commerce_Guild"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Trade_Federation", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Trade_Federation"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Techno_Union", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Techno_Union"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Banking_Clan", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Banking_Clan"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Commerce_Guild", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Commerce_Guild"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Sector_Forces", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Sector_Forces"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"} 
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Trade_Federation", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Trade_Federation"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Techno_Union", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Techno_Union"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Banking_Clan", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Banking_Clan"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Commerce_Guild", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Commerce_Guild"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Sector_Forces", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Sector_Forces"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hapes_Consortium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"} 
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Sector_Forces"}
+			+
+			(
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Rebel"} 
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Underworld"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Trade_Federation", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Trade_Federation"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Techno_Union", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Techno_Union"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Banking_Clan", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Banking_Clan"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Commerce_Guild", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Commerce_Guild"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Hutt_Cartels", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "SsiRuuvi_Imperium", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "EmpireoftheHand", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+			+ Variable_Target.IsConnectedTo {Parameter_Faction = "Sector_Forces", Parameter_Attenuator = 0.0} * Variable_Human.IsFaction {Parameter_Faction = "Sector_Forces"}
+			) 
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+		) > 0.0
+	</Is_Connected_To_Enemy_Human>
+
+	<Self_Present>
+		Variable_Target.IsFaction {Parameter_Faction = "Empire"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Rebel"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Underworld"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Underworld"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Trade_Federation"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Techno_Union"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Banking_Clan"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Commerce_Guild"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hutt_Cartels"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"} *
+		Variable_Self.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}			
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"} *
+		Variable_Self.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Chiss"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Chiss"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Corellia"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Corellia"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+	</Self_Present>
+
+	<Is_Owned_By_Ally>
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}) 
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}) 
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Rebel"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Rebel"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Rebel"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Techno_Union"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Rebel"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Rebel"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hutt_Cartels"}	
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"} *
+		Variable_Self.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}			
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"} *
+		Variable_Self.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Chiss"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Chiss"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Corellia"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Corellia"}
+		+
+		Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+	</Is_Owned_By_Ally>
+
+	<Is_Owned_By_Enemy>
+		(Variable_Target.IsFaction {Parameter_Faction = "Rebel"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Rebel"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Techno_Union"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Hutt_Cartels"}	
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}			
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Chiss"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Corellia"}
+		+
+		(Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Techno_Union"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"})
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+	</Is_Owned_By_Enemy>
+
+	<Player_Has_Capital_Building>
+				(Variable_Self.HasStructure{Parameter_Type = "Remnant_Capital", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Empire"})
+				+
+				Variable_Self.IsFaction{Parameter_Faction = "Banking_Clan"}
+				+
+				Variable_Self.IsFaction{Parameter_Faction = "Commerce_Guild"}
+				+
+				Variable_Self.IsFaction{Parameter_Faction = "Techno_Union"}
+				+
+				(Variable_Self.HasStructure{Parameter_Type = "NewRep_Senate", Parameter_Only_Consider_Complete = 1.0} * Variable_Self.IsFaction{Parameter_Faction = "Rebel"})
+				+
+				Variable_Self.IsFaction{Parameter_Faction = "Trade_Federation"}
+				+
+				Variable_Self.IsFaction{Parameter_Faction = "Sector_Forces"}
+	</Player_Has_Capital_Building>
+
+	<Is_Important_Planet>
+		(Variable_Target.Type.IsType {Parameter_Type = "Coruscant",
+									Parameter_Type = "Corellia",
+									Parameter_Type = "Anaxes",
+									Parameter_Type = "Alderaan",
+									Parameter_Type = "Kuat",
+									Parameter_Type = "Kamino",
+									Parameter_Type = "Raxus_Secundus",
+									Parameter_Type = "Geonosis",
+									Parameter_Type = "Serenno",
+									Parameter_Type = "Muunilinst",
+									Parameter_Type = "Cato_Neimoidia",
+									Parameter_Type = "Foerost",
+									Parameter_Type = "Nal_Hutta"
+		})
+		+
+		Variable_Target.Hints.Chokepoint
+		+ 
+		Variable_Target.Hints.PriorityTarget
+	</Is_Important_Planet>
+
+	<Is_Convoy_Planet>
+		(Function_Is_Connected_To_Player.Evaluate)
+		*
+		(Variable_Target.FriendlyForce.HasSpaceForce > 0.0)
+		*
+		((Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Super_Transport_XI_Convoy"} == 0)
+		+
+		(Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Venator_Tranquility"} == 0))
+	</Is_Convoy_Planet>
+
+	<Era_One>
+		(0 - 22) > Script_GetCurrentYear.Evaluate
+	</Era_One>
+	
+	<Era_Two>
+		Script_GetCurrentYear.Evaluate == (0 - 22)
+	</Era_Two>
+	
+	<Era_Three>
+		Script_GetCurrentYear.Evaluate == (0 - 21)
+	</Era_Three>
+	
+	<Era_Four>
+		Script_GetCurrentYear.Evaluate == (0 - 20)
+	</Era_Four>
+	
+	<Era_Five>
+		Script_GetCurrentYear.Evaluate >= (0 - 19)
+	</Era_Five>
+	
+	
+</Equations>
+	

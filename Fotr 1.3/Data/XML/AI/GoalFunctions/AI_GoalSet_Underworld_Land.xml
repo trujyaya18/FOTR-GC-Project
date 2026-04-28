@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<FunctionSet>
+
+	<Mine_Structure>
+		<Goal>Mine_Structure</Goal>
+		<Function>Zero</Function>
+	</Mine_Structure>
+
+	<Remote_Bomb_Friendly_Unit>
+		<Goal>Remote_Bomb_Friendly_Unit</Goal>
+		<Function>Zero</Function>
+	</Remote_Bomb_Friendly_Unit>
+
+	<Tyber_Manager_Land>
+		<Goal>Tyber_Manager_Land</Goal>
+		<Function>Zero</Function>
+	</Tyber_Manager_Land>
+
+	<Build_Ysalamiri_Cage>
+		<Goal>Build_Ysalamiri_Cage</Goal>
+		<Function>Zero</Function>
+	</Build_Ysalamiri_Cage>
+
+	<Build_Rocket_Pod>
+		<Goal>Build_Rocket_Pod</Goal>
+		<Function>Zero</Function>
+	</Build_Rocket_Pod>
+	
+	<Build_Sensor_Scrambler>
+		<Goal>Build_Sensor_Scrambler</Goal>
+		<Function>Zero</Function>
+	</Build_Sensor_Scrambler>
+
+</FunctionSet>

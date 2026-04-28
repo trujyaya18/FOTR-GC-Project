@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<Skirmish_starbases>
+
+<SpaceUnit Name="Defense_Station_Level_Static">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_UNIT_XQ5_STARBASE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire, Underworld, EmpireoftheHand, Rebel,  Banking_Clan, Trade_Federation, Hapes_Consortium, Techno_Union, Commerce_Guild, Sector_Forces, SsiRuuvi_Imperium</Affiliation>
+	
+		<Icon_Name>i_button_xq_platform.tga</Icon_Name>
+		<Space_Model_Name>xq5_platform.ALO</Space_Model_Name>
+		<GUI_Model_Name>xq5_platform.ALO</GUI_Model_Name>
+		
+		<CategoryMask> SpaceStructure | AntiFighter </CategoryMask>
+		<AI_Combat_Power>620</AI_Combat_Power>
+		
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		
+		<Armor_Type> ArmourS_HeavyFrigate </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>3000</Shield_Points>
+		<Shield_Refresh_Rate>22.5</Shield_Refresh_Rate>
+		<Tactical_Health>2520</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+			HP_XQ5_Hangar_01,
+			HP_XQ5_Hangar_02,
+			HP_XQ5_Hangar_03,
+			HP_XQ5_Laser01,
+			HP_XQ5_Laser02,
+			HP_XQ5_Laser03,
+			HP_XQ5_Turbo01,
+			HP_XQ5_Turbo02,
+			HP_XQ5_Turbo03
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, XQ5_Platform_Death_Clone</Death_Clone>	
+		
+				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1150</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		
+	</SpaceUnit>
+
+	<SpaceUnit Name="Defense_Station_Level_One">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_UNIT_XQ5_STARBASE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XQ5
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_XQ5_HULL
+		TEXT_TOOLTIP_XQ5_SHIELD 
+		TEXT_TOOLTIP_XQ5_WEAP1 
+		TEXT_TOOLTIP_XQ5_WEAP2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire, Underworld, EmpireoftheHand, Rebel,  Banking_Clan, Trade_Federation, Hapes_Consortium, Techno_Union, Commerce_Guild, Sector_Forces, SsiRuuvi_Imperium</Affiliation>
+		
+		<Icon_Name>i_button_xq_platform.tga</Icon_Name>
+		<Space_Model_Name>xq5_platform.ALO</Space_Model_Name>
+		<GUI_Model_Name>xq5_platform.ALO</GUI_Model_Name>
+		
+		<CategoryMask> SpaceStructure | AntiFighter </CategoryMask>
+		<AI_Combat_Power>620</AI_Combat_Power>
+		
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		
+		<Armor_Type> ArmourS_HeavyFrigate </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>3000</Shield_Points>
+		<Shield_Refresh_Rate>22.5</Shield_Refresh_Rate>
+		<Tactical_Health>2520</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+			HP_XQ5_Hangar_01,
+			HP_XQ5_Hangar_02,
+			HP_XQ5_Hangar_03,
+			HP_XQ5_Laser01,
+			HP_XQ5_Laser02,
+			HP_XQ5_Laser03,
+			HP_XQ5_Turbo01,
+			HP_XQ5_Turbo02,
+			HP_XQ5_Turbo03
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, XQ5_Platform_Death_Clone</Death_Clone>	
+		
+				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1150</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="Defense_Station_Level_Two">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_GOLAN_ONE_STATION_STARBASE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOLAN_ONE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOLAN_ONE_HULL
+		TEXT_TOOLTIP_GOLAN_ONE_SHIELD 
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP1
+		TEXT_TOOLTIP_GOLAN_ONE_WEAP2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire, Underworld, EmpireoftheHand, Rebel,  Banking_Clan, Trade_Federation, Hapes_Consortium, Techno_Union, Commerce_Guild, Sector_Forces, SsiRuuvi_Imperium</Affiliation>
+
+		<Icon_Name>i_button_golan_one.tga</Icon_Name>
+		<Space_Model_Name>NV_GolanOne.ALO</Space_Model_Name>
+		<GUI_Model_Name>NV_GolanOne.ALO</GUI_Model_Name>
+		
+		<CategoryMask> SpaceStructure | AntiFrigate </CategoryMask>
+		<AI_Combat_Power>1714</AI_Combat_Power>
+		
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>4600</Shield_Points>
+		<Shield_Refresh_Rate>34.5</Shield_Refresh_Rate>
+		<Tactical_Health>4620</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+			HP_Golan_One_One,
+			HP_Golan_One_Two,
+			HP_Golan_One_Three,
+			HP_Golan_One_Four,
+			HP_Golan_One_Five,
+			HP_Golan_One_Six,
+			HP_Golan_One_Seven,
+			HP_Golan_One_Eight,
+			HP_Golan_One_Nine,
+			HP_Golan_One_Ten,
+			HP_Golan_One_Fighter_Bay,
+			HP_Golan_One_Shield_Generator,
+			Generic_Untargetable_Tractor_Beam
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Golan_One_Death_Clone</Death_Clone>
+		
+				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2140</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Defense_Station_Level_Three">
+		<Variant_Of_Existing_Type>Template_Defence_Station</Variant_Of_Existing_Type>
+		
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_SURVIVAL_DEFENCE_STATION_GOLAN_TWO</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GOLAN_TWO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GOLAN_TWO_HULL
+		TEXT_TOOLTIP_GOLAN_TWO_SHIELD
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP1
+		TEXT_TOOLTIP_GOLAN_TWO_WEAP2
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire, Underworld, EmpireoftheHand, Rebel,  Banking_Clan, Trade_Federation, Hapes_Consortium, Techno_Union, Commerce_Guild, Sector_Forces, SsiRuuvi_Imperium</Affiliation>
+		
+		<Icon_Name>i_button_golan_two.tga</Icon_Name>
+		<Space_Model_Name>NV_GolanTwo.ALO</Space_Model_Name>
+		<GUI_Model_Name>NV_GolanTwo.ALO</GUI_Model_Name>
+		
+		<CategoryMask> SpaceStructure | AntiFrigate </CategoryMask>
+		<AI_Combat_Power>2869</AI_Combat_Power>
+		
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>11000</Shield_Points>
+		<Shield_Refresh_Rate>55</Shield_Refresh_Rate>
+		<Tactical_Health>11560</Tactical_Health>
+		
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+			HP_Golan_Two_One,
+			HP_Golan_Two_Two,
+			HP_Golan_Two_Three,
+			HP_Golan_Two_Four,
+			HP_Golan_Two_Five,
+			HP_Golan_Two_Six,
+			HP_Golan_Two_Seven,
+			HP_Golan_Two_Eight,
+			HP_Golan_Two_Nine,
+			HP_Golan_Two_Ten,
+			HP_Golan_Two_Eleven,
+			HP_Golan_Two_Twelve,
+			HP_Golan_Two_Thirteen,
+			HP_Golan_Two_Fourteen,
+			HP_Golan_Two_Fifteen,
+			HP_Golan_Two_Sixteen,
+			HP_Golan_Two_Fighter_Bay,
+			Generic_Untargetable_Tractor_Beam
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Golan_Two_Death_Clone</Death_Clone>
+		
+				<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3670</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>19</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Space_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+	</SpaceUnit>
+
+</Skirmish_starbases>

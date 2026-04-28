@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<Story>
+	
+	<Event Name="DISABLE_BUILDABLE_EMPIRE">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DISABLE_BUILDABLE_EMPIRE</Event_Param2>
+		<Reward_Type>DISABLE_BUILDABLE</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="ENABLE_BUILDABLE_EMPIRE">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BUILDABLE_EMPIRE</Event_Param2>
+		<Reward_Type>ENABLE_BUILDABLE</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

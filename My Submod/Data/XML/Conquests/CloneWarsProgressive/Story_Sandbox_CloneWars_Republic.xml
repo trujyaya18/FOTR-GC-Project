@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+
+
+
+<!--****************************************************-->
+<!--***** CAMPAIGN: Fractured Empire (Empire Version) *****-->
+<!--****************************************************-->
+
+
+
+<Story>
+
+	<!-- *************************************************************** -->
+	<!--**************** Time Based PRogression Checks *****************-->
+	<!-- *************************************************************** -->	
+	
+	<Event Name="Progressive_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<!-- <Reward_Type>MULTIMEDIA</Reward_Type> -->
+		<!-- <Reward_Param1>DEBUG_TEXT_PROGRESSIVE_INITIALIZED</Reward_Param1> -->
+		<!-- <Reward_Param2>15</Reward_Param2> -->
+		<Branch>Start_Branch</Branch>	</Event>
+	
+	
+
+	<!-- **************************************************** -->
+	<!-- ******* LUA Tells the script which era started *****-->
+	<!-- **************************************************** -->
+	
+	
+	
+		<!-- ************************************************** -->
+	<!-- ************************************************** -->
+	<!-- ************************************************** -->
+	
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Progressive_Story_Start</Prereq>
+		<Multiplayer>True</Multiplayer>
+	</Event>
+	
+<!--******************************************************-->
+<!--***************	Faction Determiners	******************-->
+<!--******************************************************-->
+
+	
+	
+	
+	<!-- **************************************************** -->
+	<!-- ******* LUA Tells the script which era started *****-->
+	<!-- **************************************************** -->
+
+ <Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Multiplayer>True</Multiplayer>
+
+ </Event>
+ 
+	
+	<!-- Venator Research -->
+	<!-- Venator Research -->
+	<!-- Venator Research -->
+	
+	<Event Name="Republic_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Multiplayer>True</Multiplayer>
+	</Event>
+	
+	<Event Name="Republic_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Multiplayer>True</Multiplayer>
+	</Event>
+	
+	<Event Name="Republic_Enters_Tech_03_AI">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Branch>Faction_Branch_CIS</Branch>
+		<Multiplayer>True</Multiplayer>
+	</Event>
+	
+	
+	<!--<Event Name="Spawn_Wieler">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Wieler_Resilient</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Unlock_Venator_Forced</Prereq>
+		<Prereq>Unlock_Venator_AI</Prereq>
+		<Prereq>Unlock_Venator</Prereq>
+		<Branch>Era_Two</Branch>
+			<Multiplayer>True</Multiplayer>
+	</Event> -->
+	
+
+
+	<!-- Victory Research -->
+	<!-- Victory Research -->
+	<!-- Victory Research -->
+	
+	
+</Story>

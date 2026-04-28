@@ -1,0 +1,765 @@
+<?xml version="1.0"?>
+<Dummy_Objects>
+
+	<SpaceUnit Name="Persistent_Damage_Shield_Heal">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		
+		<Space_Model_Name>INSTANTACTION_Rebel.alo</Space_Model_Name>
+		<Icon_Name>i_button_x_wing.tga</Icon_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+				
+		<Abilities SubObjectList="Yes">
+		
+			<Combat_Bonus_Ability Name="Shield_Replacement_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>SuperCapital</Unit_Strength_Category>
+				<Applicable_Unit_Categories>SuperCapital</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.67</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.3</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>100</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Self_Destruct">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Amount>-1.0</Heal_Amount>
+				<Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories>Wall</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected></SFXEvent_Target_Affected>
+				<Target_Particle_Effect></Target_Particle_Effect>
+				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>0.0, 0.0, 0.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.0</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>0.0, 0.0, 0.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.0</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+		</Abilities>
+
+
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="Persistent_Damage_Shield_Heal_Light">
+		<Variant_Of_Existing_Type>Template_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		
+		<Space_Model_Name>INSTANTACTION_Rebel.alo</Space_Model_Name>
+		<Icon_Name>i_button_x_wing.tga</Icon_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+				
+		<Abilities SubObjectList="Yes">
+		
+			<Combat_Bonus_Ability Name="Shield_Replacement_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>SuperCapital</Unit_Strength_Category>
+				<Applicable_Unit_Categories>SuperCapital</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.33</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.3</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>101</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Self_Destruct">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Amount>-1.0</Heal_Amount>
+				<Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories>Wall</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected></SFXEvent_Target_Affected>
+				<Target_Particle_Effect></Target_Particle_Effect>
+				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>0.0, 0.0, 0.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.0</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>0.0, 0.0, 0.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.0</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+		</Abilities>
+
+
+
+	</SpaceUnit>
+
+
+	<SpaceUnit Name="Interdiction_Mine">
+		<Text_ID>TEXT_UNIT_INTERDICTION_MINE</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_INTERDICTION_MINE</Encyclopedia_Text>
+		<Space_Model_Name>W_interdictor_mine.ALO</Space_Model_Name>
+		<Scale_Factor>.90</Scale_Factor>
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+
+				<Mouse_Collide_Override_Sphere_Radius> 5.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.985</Mass>
+		<Max_Speed>0.15</Max_Speed>
+		<Min_Speed>0.0</Min_Speed>
+		<Max_Rate_Of_Turn>5</Max_Rate_Of_Turn>
+		<Max_Lift>3.78</Max_Lift>
+		<Max_Thrust>3.78</Max_Thrust>
+		<Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<Hyperspace>no</Hyperspace>
+		<Hyperspace_Speed>0</Hyperspace_Speed>
+		<Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+		<Fires_Forward>no</Fires_Forward>
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Affiliation>Empire</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>10</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Ship_Class>fighter</Ship_Class>
+		<Armor_Type> Armor_Fighter </Armor_Type>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>12</Squadron_Capacity>
+		<Number_per_Squadron>12</Number_per_Squadron>
+		<Build_Cost_Credits>30</Build_Cost_Credits>
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+		<Size_Value>8</Size_Value>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+   		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+		<Death_Explosions>Tiny_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<CategoryMask> Fighter </CategoryMask>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Icon_Name>i_button_interdiction_mine.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Custom_Footprint_Radius> 15.0 </Custom_Footprint_Radius>
+		<MovementClass> Space </MovementClass>
+		<FormationOrder>1</FormationOrder>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>50.0</Minimum_Follow_Distance>
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>1</AI_Combat_Power>
+		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			
+		<Unit_Ability>
+				<Type>INTERDICT</Type>
+				<Disable_Movement>Yes</Disable_Movement>
+				<Supports_Autofire>True</Supports_Autofire>
+		</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Death_Clone>Damage_Normal, Big_Interdictor_Explosion_Space</Death_Clone>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Strafe_Distance>500.0</Strafe_Distance>
+		<Population_Value>0</Population_Value>
+	</SpaceUnit>
+
+	<Squadron Name="Interdiction_Minefield">
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Autoresolve_Health>120</Autoresolve_Health>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>300</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline />
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Interdiction_Mine</Squadron_Units>
+		<Squadron_Offsets>0.0,-30.0,15.0</Squadron_Offsets>
+ 		<Squadron_Offsets>0.0,30.0,5.0</Squadron_Offsets>
+  		<Squadron_Offsets>0.0,-30.0,-5.0</Squadron_Offsets>
+  		<Squadron_Offsets>0.0,30.0,-25.0</Squadron_Offsets>
+
+		<Create_Team_Type>Interdiction_Minefield_Container</Create_Team_Type>
+
+		<Max_Squad_Size> 4 </Max_Squad_Size>
+		<Icon_Name>i_button_interdiction_mine.tga</Icon_Name>
+		<GUI_Model_Name>EV_TieFighter.ALO</GUI_Model_Name>
+		<GUI_Distance>120</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>10.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>1200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>500.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>1200.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 420</Score_Cost_Credits>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			
+		<Unit_Ability>
+				<Type>INTERDICT</Type>
+				<Disable_Movement>Yes</Disable_Movement>
+				<Supports_Autofire>True</Supports_Autofire>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Interdictor_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+		</Unit_Ability>
+
+		</Unit_Abilities_Data>
+		
+		<Population_Value>0</Population_Value>
+	</Squadron>
+
+	<Container Name="Interdiction_Minefield_Container">
+		<Text_ID>TEXT_UNIT_INTERDICTION_MINE</Text_ID>
+		<Encyclopedia_Text> TEXT_TOOLTIP_INTERDICTION_MINE</Encyclopedia_Text>
+		<Icon_Name>i_button_interdiction_mine.tga</Icon_Name>
+	
+		<Max_Speed>0.15</Max_Speed>
+		<Min_Speed>0.0</Min_Speed>	
+		
+		<MovementClass>Space</MovementClass>
+		
+		<CategoryMask>Fighter | Interdictor</CategoryMask>
+		<Show_Name>no</Show_Name>
+		
+		<Formation_Priority>1</Formation_Priority>
+		<FormationOrder>3</FormationOrder>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		
+		<Behavior>TEAM, SELECTABLE, UNIT_AI, TEAM_LOCOMOTOR, TARGETING</Behavior>
+		<SpaceBehavior> REVEAL</SpaceBehavior>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Squadron_Offsets>0.0,-30.0,15.0</Squadron_Offsets>
+ 		<Squadron_Offsets>0.0,30.0,5.0</Squadron_Offsets>
+  		<Squadron_Offsets>0.0,-30.0,-5.0</Squadron_Offsets>
+  		<Squadron_Offsets>0.0,30.0,-25.0</Squadron_Offsets>
+
+		<Is_Visible_On_Radar>yes</Is_Visible_On_Radar>
+		<Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>0.1</Dense_FOW_Reveal_Range_Multiplier>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+
+		<Squadron_Formation_Error_Tolerance>25</Squadron_Formation_Error_Tolerance>
+		
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Guard_Chase_Range>0.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>0.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>0.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>INTERDICT</Type>
+				<Disable_Movement>Yes</Disable_Movement>
+				<Supports_Autofire>True</Supports_Autofire>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Interdictor_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+		</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<SpaceUnit Name="Microjump_Marker">
+
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>0.93</Scale_Factor>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+
+        <Ranking_In_Category>7</Ranking_In_Category>
+		<Max_Speed>0</Max_Speed>  <!-- was 3.0 -->
+		<Max_Rate_Of_Turn>1.2</Max_Rate_Of_Turn> <!-- was 1.6 -->
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Corvette </Space_Layer>
+		<Layer_Z_Adjust>-30.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Armor_Type> Armor_Frigate </Armor_Type>
+        <Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Max_Thrust>0.9</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+
+		<Death_Clone>Damage_Normal, Small_Explosion_Space</Death_Clone>
+		<Space_FOW_Reveal_Range>24000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200.0</Targeting_Max_Attack_Distance>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets />
+		<Shield_Points>700</Shield_Points>
+		<Tactical_Health>700</Tactical_Health>
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Energy_Capacity>1500</Energy_Capacity>
+		<Energy_Refresh_Rate>350</Energy_Refresh_Rate>
+		<Damage>25</Damage>
+		<Autoresolve_Health>1400</Autoresolve_Health>
+		<Ship_Class>corvette</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Transport_Capacity>6</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>1300</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<AI_Combat_Power>1350</AI_Combat_Power>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN,SIMPLE_SPACE_LOCOMOTOR, REVEAL, TARGETING, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Space_FOW_Reveal_Range>25000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+		<CategoryMask> Corvette | AntiCorvette </CategoryMask>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+
+		<Icon_Name>i_button_vigilance.tga</Icon_Name>
+		<GUI_Model_Name>diamond_planet.alo</GUI_Model_Name>
+		<GUI_Distance>600</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<MovementClass> Space </MovementClass>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>400.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+
+		<Population_Value>0</Population_Value>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Private_Microjump_Marker">
+
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>0.93</Scale_Factor>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+
+        <Ranking_In_Category>7</Ranking_In_Category>
+		<Max_Speed>0</Max_Speed>  <!-- was 3.0 -->
+		<Max_Rate_Of_Turn>1.2</Max_Rate_Of_Turn> <!-- was 1.6 -->
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Corvette </Space_Layer>
+		<Layer_Z_Adjust>-30.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Armor_Type> Armor_Frigate </Armor_Type>
+        <Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Max_Thrust>0.9</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+
+		<Death_Clone>Damage_Normal, Small_Explosion_Space</Death_Clone>
+		<Space_FOW_Reveal_Range>24000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200.0</Targeting_Max_Attack_Distance>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets />
+		<Shield_Points>700</Shield_Points>
+		<Tactical_Health>700</Tactical_Health>
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Energy_Capacity>1500</Energy_Capacity>
+		<Energy_Refresh_Rate>350</Energy_Refresh_Rate>
+		<Damage>25</Damage>
+		<Autoresolve_Health>1400</Autoresolve_Health>
+		<Ship_Class>corvette</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Transport_Capacity>6</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>1300</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<AI_Combat_Power>1350</AI_Combat_Power>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN,SIMPLE_SPACE_LOCOMOTOR, REVEAL, TARGETING, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Space_FOW_Reveal_Range>25000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+		<CategoryMask> Corvette | AntiCorvette </CategoryMask>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+
+		<Icon_Name>i_button_vigilance.tga</Icon_Name>
+		<GUI_Model_Name>diamond_planet.alo</GUI_Model_Name>
+		<GUI_Distance>600</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<MovementClass> Space </MovementClass>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>400.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+
+		<Population_Value>0</Population_Value>
+	</SpaceUnit>
+
+
+	<SpaceUnit Name="World_Devastator_Bonus_Dummy">
+
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>0.01</Scale_Factor>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<Max_Speed>0</Max_Speed>  <!-- was 3.0 -->
+		<Max_Rate_Of_Turn>1.2</Max_Rate_Of_Turn> <!-- was 1.6 -->
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Corvette </Space_Layer>
+		<Layer_Z_Adjust>-30.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Armor_Type> Armor_Frigate </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Max_Thrust>0.9</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200.0</Targeting_Max_Attack_Distance>
+
+		<Affiliation>Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets />
+		<Shield_Points>700</Shield_Points>
+		<Tactical_Health>700</Tactical_Health>
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Energy_Capacity>1500</Energy_Capacity>
+		<Energy_Refresh_Rate>350</Energy_Refresh_Rate>
+		<Damage>25</Damage>
+		<Autoresolve_Health>1400</Autoresolve_Health>
+		<Ship_Class>corvette</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Transport_Capacity>6</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>1300</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<AI_Combat_Power>1350</AI_Combat_Power>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Space_FOW_Reveal_Range>25000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+		<CategoryMask> Wall </CategoryMask>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+
+
+		<Icon_Name>i_button_vigilance.tga</Icon_Name>
+		<GUI_Model_Name>diamond_planet.alo</GUI_Model_Name>
+		<GUI_Distance>600</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<MovementClass> Space </MovementClass>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>400.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="World_Devastator_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types> World_Devastator_Frigate, World_Devastator_Capital, World_Devastator_Battlecruiser</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+
+		<Unit_Abilities_Data>
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+				<GUI_Activated_Ability_Name>Stealth_Vengeance</GUI_Activated_Ability_Name>
+				<Recharge_Seconds>15.0</Recharge_Seconds>
+				<Expiration_Seconds>-1</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Stealth_On_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Stealth_Off_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Population_Value>0</Population_Value>
+	</SpaceUnit>
+
+	<!-- Used by the Destroy_Planet function -->
+	<SpaceUnit Name="Dummy_Planet_Killer">
+		<Text_ID></Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>w_planet_deathstar.alo</Space_Model_Name>
+		<Galactic_Fleet_Override_Model_Name> w_planet_fleet_ds.alo </Galactic_Fleet_Override_Model_Name> <!-- Override for seeing DS icon as fleet icon in Galactic mode -->
+		<Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index> <!-- Override for seeing DS icon as fleet icon in Galactic mode -->
+		<Ranking_In_Category> 0 </Ranking_In_Category>
+		<Prevents_Story_Campaign_Autoresolve>No</Prevents_Story_Campaign_Autoresolve>
+
+		<Mass>0.9995</Mass>
+		<Scale_Factor>2.5</Scale_Factor>
+
+		<Max_Speed> 0.75 </Max_Speed>		<!-- Move speed used by Death Star to get into range in tactical space -->
+		<Max_Thrust> 0.02 </Max_Thrust>	<!-- Acceleration from stop (moving into attack range) and decelceration to stop (in attack range) for Death Star -->
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>0.25</Hyperspace_Speed>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+		
+		<Collision_Box_Modifier>250.0</Collision_Box_Modifier>
+
+		<Affiliation>Hostile</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>5</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+		<Build_Time_Seconds>310</Build_Time_Seconds> <!-- 310 = 5 minutes 10 seconds (to hear 5 minutes until complete V/O -->
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+
+		<Autoresolve_Health>5</Autoresolve_Health>
+		<Damage>50000</Damage>
+		<Shield_Points>5</Shield_Points>
+		<Tactical_Health>50000</Tactical_Health>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Energy_Capacity>50000</Energy_Capacity>
+		<Energy_Refresh_Rate>100</Energy_Refresh_Rate>
+		<Ship_Class>SuperCapital</Ship_Class>
+		<Formation_Priority>6</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Faction>Empire</Political_Faction>
+		<Squadron_Capacity>100</Squadron_Capacity>
+		<Transport_Capacity>100</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Size_Value>200</Size_Value>
+
+		<Space_Escort_Unit_Types>
+		</Space_Escort_Unit_Types>
+		
+		<Behavior> DUMMY_STARSHIP </Behavior>
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<!-- Death Star needs IDLE so that it can play it's attack anim for some strange reason -->
+		<!-- The Death Star does not use SIMPLE_SPACE_LOCOMOTOR to move into range, but rather TACTICAL_SUPER_WEAPON. The SSL is required so Design cas override max speed through scripts -->
+		<!-- MBL 11.21.2005: Removing SIMPLE_SPACE_LOCOMOTOR so the AI does not mess with the Death Star. We'll give it it's own, inert locomotor data so the max speed override can still be done -->
+		<SpaceBehavior> TACTICAL_SUPER_WEAPON, IDLE </SpaceBehavior>
+
+		<In_Background>Yes</In_Background>
+
+		<!-- The SFXEvent for the Death Star firing it's super weapon -->
+		<SFXEvent_Fire> Unit_Superlaser_Fire </SFXEvent_Fire>
+
+		<!-- Tactical Super Weapon specifics: Death Star attacking a planet prop (super weapon target) -->
+		<!-- Scale with 300x prop = 6500, 4000 -->
+		<TSW_Start_Distance_From_Target> 8000.0 </TSW_Start_Distance_From_Target>
+		<TSW_Start_Pos_Match_Targets_Z> Yes </TSW_Start_Pos_Match_Targets_Z>
+		<TSW_Attack_Distance_From_Target> 5800.0 </TSW_Attack_Distance_From_Target> 
+		<TSW_Power_Up_Countdown_Seconds> 9.0 </TSW_Power_Up_Countdown_Seconds>
+		<TSW_Attack_Anim_Duration_Seconds> 2.5 </TSW_Attack_Anim_Duration_Seconds>
+		<TSW_Explosion_Debris_Creation_Frame_Delay> 33 </TSW_Explosion_Debris_Creation_Frame_Delay>
+		<TSW_SFXEvent_GUI_Bttton_Press> GUI_Death_Star_Button_Press </TSW_SFXEvent_GUI_Bttton_Press>
+		<TSW_SFXEvent_Activate_Voice> EHD_Death_Star_Activate </TSW_SFXEvent_Activate_Voice>
+		<TSW_SFXEvent_Weapon_Power_Up> GUI_Death_Star_Activate </TSW_SFXEvent_Weapon_Power_Up>
+		<TSW_MusicEvent_Activation_Start> Space_Map_Activate_Death_Star_Music_Event </TSW_MusicEvent_Activation_Start>
+		<TSW_Post_Music_Wait_Frames> 1 </TSW_Post_Music_Wait_Frames> <!-- Now unused -->
+		<TSW_Post_Destruction_Wait_Frames> 350 </TSW_Post_Destruction_Wait_Frames> <!-- Music is 19.15 seconds: 19.15 * 30 FPS = 575 -->
+		<TSW_Z_Adjust_Relative_To_Target_Pos> 1200.0 </TSW_Z_Adjust_Relative_To_Target_Pos>
+
+		<Icon_Name>i_button_death_star_complete.tga</Icon_Name>
+
+		<Build_Countdown_Timer> Yes </Build_Countdown_Timer>
+		<Build_Countdown_Text_ID>  </Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA> 64, 128, 255, 255 </Build_Countdown_Text_RGBA>
+
+		<Build_Speech_Underway> Speech_Death_Star_Build_Underway </Build_Speech_Underway>
+		<Build_Speech_Completed> Speech_Death_Star_Build_Complete </Build_Speech_Completed>
+		<Build_Speech_Stopped> Speech_Death_Star_Build_Stopped </Build_Speech_Stopped>
+		<!-- Intentially called "Speech_Death_Star_Build_" (with trailing underscore)  for varied countdown references in SpeechEvents.xml -->
+		<Build_Speech_Countdowns> Speech_Death_Star_Build_ </Build_Speech_Countdowns>
+
+		<Build_Music_Completed> Galactic_Death_Star_Complete_Music_Event </Build_Music_Completed>
+		<Victory_Relevant>No</Victory_Relevant>
+
+		<CategoryMask> SuperCapital </CategoryMask>
+
+		<Abilities SubObjectList="Yes">
+			<!--<Base_Destruction_Ability Name="Death_Star_Base_Destruction">
+				<Destroy_Starbase>Yes</Destroy_Starbase>
+				<Destroy_Land_Base>No</Destroy_Land_Base>
+			</Base_Destruction_Ability>-->
+			<Planet_Destruction_Ability Name="Death_Star_Planet_Destruction">
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<SFXEvent_Target_Affected>Planet_Death_SFX</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Planet_Explosion_Galactic</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Planet_Destruction_Ability>
+		</Abilities>	
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>	
+		<Radar_Icon_Name>i_radar_death_star.tga</Radar_Icon_Name> 
+		<Radar_Icon_Size>0.2  0.2</Radar_Icon_Size>
+		<Radar_Register_As_Foreground_Object>Yes</Radar_Register_As_Foreground_Object>
+		<Radar_Clip_To_Visible_Region>Yes</Radar_Clip_To_Visible_Region>
+		
+		<Population_Value>0</Population_Value>
+		
+		<!-- It's important that the Death Star doesn't have a population value in space mode since -->
+		<!-- it's kind of a special case and we don't want to limit the number of 'real' space units -->
+		<!-- based on its presence in the background.  -->
+		<Space_Override_Population_Value>0</Space_Override_Population_Value>
+   </SpaceUnit>
+
+</Dummy_Objects>

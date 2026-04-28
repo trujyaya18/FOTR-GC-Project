@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='ASCII'?>
+<CIS_Structures>
+	
+	<SpecialStructure Name="Pirate_Base">
+		<Variant_Of_Existing_Type>Template_Pirate_Base</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_PIRATE_BASE
+		TEXT_TOOLTIP_PIRATE_TARIFF
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_PIRATE_BASE_HULL
+		TEXT_TOOLTIP_PIRATE_BASE_SHIELD 
+		TEXT_TOOLTIP_PIRATE_BASE_WEAP1
+		TEXT_TOOLTIP_PIRATE_BASE_WEAP2
+		TEXT_TOOLTIP_PIRATE_BASE_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_PIRATE_BASE_CIS_1
+		TEXT_TOOLTIP_PIRATE_BASE_CIS_2
+		TEXT_TOOLTIP_PIRATE_BASE_CIS_3
+		TEXT_TOOLTIP_PIRATE_BASE_CIS_4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UNITS_PIRATE_BASE
+		TEXT_TOOLTIP_INCOME_PIRATE_BASE
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_PIRATE_BASE_FOTR
+		</Encyclopedia_Text>
+		
+		<Affiliation>hutt_cartel</Affiliation>
+		
+		<Tech_Level>0</Tech_Level>
+
+		<Starting_Spawned_Units_Tech_0>Sabaoth_Fighter_Squadron, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Sabaoth_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Sabaoth_Frigate, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Sabaoth_Frigate, 3</Reserve_Spawned_Units_Tech_0>
+	
+		<Starting_Spawned_Units_Tech_0>Sabaoth_Hex_Deployer, 2</Starting_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Sabaoth_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>CIS_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+				
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Planet_Income_Gambling_Ability Name="Pirate_Activity">
+				<!-- choose a new income modifier every 30 seconds -->
+				<Evaluation_Interval_In_Secs>120.0</Evaluation_Interval_In_Secs>
+				<!-- worst losses are -20% of the base -->
+				<Min_Income_Modifier>-0.10</Min_Income_Modifier>
+				<!-- best positive income is +60% of the base -->
+				<Max_Income_Modifier>0.00</Max_Income_Modifier>
+				<!-- 80% of the time the income will be positive -->
+				<Chance_To_Win>0.80</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+		</Abilities>
+
+ 	</SpecialStructure>
+
+	<SpecialStructure Name="NewRep_Senate">
+
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_COMPANY_CIS_CAPITAL</Text_ID>
+		
+		<Encyclopedia_Text>
+		TEXT_COMPANY_CAPITAL_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_CAPITAL_CIS_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_CIS_1 
+		TEXT_TOOLTIP_CAPITAL_CIS_2
+		TEXT_TOOLTIP_CAPITAL_CIS_3
+		TEXT_TOOLTIP_CAPITAL_CIS_4
+		TEXT_TOOLTIP_CAPITAL_CIS_5
+		TEXT_TOOLTIP_CAPITAL_CIS_6
+		TEXT_TOOLTIP_CAPITAL_CIS_7
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CAPITAL_SHIPCREWS
+		TEXT_TOOLTIP_INFLUENCE_CAPITAL
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_CIS_CAPITAL.TGA</Icon_Name>
+		
+		<Land_Model_Name>RB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		
+		<Affiliation>Rebel</Affiliation>
+		
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_0>OOM_Security_Squad, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>OOM_Security_Squad, 15</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>STAP, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>STAP, 8</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Destroyer_Droid, 18</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>AAT, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AAT, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<!-- Era 2-4 -->
+		<Starting_Spawned_Units_Tech_1>B2_Droid_Deployed, 5</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>B2_Droid_Deployed, 15</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Elite_Guard_BX_Commando_Team_Deployed, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Elite_Guard_BX_Commando_Team_Deployed, 6</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Dwarf_Spider_Droid_Squad, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Dwarf_Spider_Droid_Squad, 6</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>GAT, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>GAT, 6</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>AAT, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>AAT, 4</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Magna_Tri, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Magna_Tri, 2</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>MAF, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>MAF, 2</Reserve_Spawned_Units_Tech_1>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="NewRep_SenatorsOffice">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_CORPORATEHQ</Text_ID>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SENATORSOFFICE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_CIS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_CIS_1
+		TEXT_TOOLTIP_OFFICE_CIS_2 
+		TEXT_TOOLTIP_OFFICE_CIS_3
+		TEXT_TOOLTIP_OFFICE_CIS_4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_OFFICE
+		</Encyclopedia_Text>
+		
+		<Icon_Name>I_BUTTON_CIS.TGA</Icon_Name>
+		
+		<Land_Model_Name>RB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		
+		<Affiliation>Rebel, Techno_Union, Trade_Federation, Commerce_Guild, Banking_Clan</Affiliation>
+		
+		<Tactical_Additional_Structure_Type>Generic_Power_Generator</Tactical_Additional_Structure_Type>
+		
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_0>OOM_Security_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>OOM_Security_Squad, 9</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>STAP, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>STAP, 8</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>AAT, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AAT, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<!-- Era 2-4 -->
+		<Starting_Spawned_Units_Tech_1>OOM_Security_Squad, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>OOM_Security_Squad, 6</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>STAP, 4</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>STAP, 8</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Crab_Droid_Squad, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Crab_Droid_Squad, 3</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Persuader, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Persuader, 2</Reserve_Spawned_Units_Tech_1>
+		
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+			
+			<Reduce_Production_Price_Ability Name="KDY_Corp_Discount">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> KDY_HQ </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.75</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="R_Ground_Barracks">
+	
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+		
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+<Build_Time_Seconds>5</Build_Time_Seconds>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_CIS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_CIS_1
+		TEXT_TOOLTIP_BARRACKS_CIS_2
+		TEXT_TOOLTIP_BARRACKS_CIS_3
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+
+		<Affiliation>Rebel, Techno_Union, Trade_Federation, Commerce_Guild, Banking_Clan</Affiliation>
+		
+		<Required_Special_Structures>NewRep_SenatorsOffice</Required_Special_Structures>
+		
+		<Tactical_Health>500</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Rebel,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Rebel,
+				B1_Droid_Squad,
+				Crab_Droid_Company,
+				CIS_STAP_Squad,
+				Dwarf_Spider_Droid_Company,
+				Destroyer_Droid_Company,
+				B2_Droid_Squad,
+				BX_Commando_Squad,
+				Destroyer_Droid_II_Company,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_0>OOM_Security_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>OOM_Security_Squad, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>STAP, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>STAP, 8</Reserve_Spawned_Units_Tech_0>
+		
+		<!-- Era 2-4 -->
+		<Starting_Spawned_Units_Tech_1>OOM_Security_Squad, 2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>OOM_Security_Squad, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>B2_Droid_Deployed, 1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>B2_Droid_Deployed, -1</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>Destroyer_Droid, 5</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Destroyer_Droid, 10</Reserve_Spawned_Units_Tech_1>
+	</SpecialStructure>
+
+	<SpecialStructure Name="R_Ground_Light_Vehicle_Factory">
+	
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Land_Model_Name>rb_lightvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_vehicle_factory.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_CIS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_CIS_1
+		TEXT_TOOLTIP_L_FACTORY_CIS_2
+		TEXT_TOOLTIP_L_FACTORY_CIS_3
+		</Encyclopedia_Text>
+		
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+		
+		<Obstacle_Proxy_Type> R_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Rebel, Techno_Union, Trade_Federation, Commerce_Guild, Banking_Clan</Affiliation>
+
+		<Required_Special_Structures>NewRep_SenatorsOffice</Required_Special_Structures>
+
+		<Tactical_Health>750</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Rebel,
+
+		</Tactical_Buildable_Objects_Campaign>
+
+	    <Tactical_Buildable_Objects_Multiplayer>
+			Rebel,
+				OG9_Company,
+				CIS_GAT_Group,
+				PAC_Company,
+				AAT_Company,
+				Hailfire_Company,
+				HAG_Company,
+				
+
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_0>STAP, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>STAP, 6</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>OG9, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>OG9, 6</Reserve_Spawned_Units_Tech_0>
+		
+		<!-- Era 2 -->
+		<Starting_Spawned_Units_Tech_1>STAP, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>STAP, 6</Reserve_Spawned_Units_Tech_1>
+		
+		<Starting_Spawned_Units_Tech_1>GAT, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>GAT, 6</Reserve_Spawned_Units_Tech_1>
+		
+		<!-- Era 3-4 -->
+		<Starting_Spawned_Units_Tech_2>STAP, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>STAP, 6</Reserve_Spawned_Units_Tech_2>
+		
+		<Starting_Spawned_Units_Tech_2>OG9, 3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>OG9, 6</Reserve_Spawned_Units_Tech_2>
+		
+	</SpecialStructure>
+
+	<SpecialStructure Name="R_Ground_Heavy_Vehicle_Factory">
+		
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_H_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_CIS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_CIS_1
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY</MP_Encyclopedia_Text>
+		
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_advanced_weapons.tga</Icon_Name>
+		<Obstacle_Proxy_Type> R_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+	
+		<Affiliation>Rebel, Techno_Union, Trade_Federation, Commerce_Guild, Banking_Clan</Affiliation>
+		
+		<Required_Special_Structures>NewRep_SenatorsOffice</Required_Special_Structures>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Rebel,
+
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Rebel,
+				CIS_MTT_Company,
+				CIS_MAF_Group,
+				HAML_Company,
+				Persuader_Company,
+				J1_Artillery_Corp,
+				HMP_Group,
+				Magna_Company,
+				Protodeka_Company,
+				
+				
+				
+				
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--<Tactical_Buildable_Objects_Multiplayer>
+			Rebel,
+				RL_T4B_Research_Upgrade,
+				Rebel_Heavy_Tank_Brigade,
+				RL_MPTL_Research_Upgrade,
+				Rebel_Artillery_Brigade,
+				RL_Heavy_Armor_L1_Upgrade,
+				RL_Heavy_Armor_L2_Upgrade,
+				RL_Improved_Treads_L1_Upgrade,
+				RL_Improved_Treads_L2_Upgrade,
+				RL_Improved_T4B_Damage_L1_Upgrade,
+				RL_Improved_T4B_Damage_L2_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>-->
+		
+		<!-- Era 1 -->
+		<Starting_Spawned_Units_Tech_0>AAT, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AAT, 4</Reserve_Spawned_Units_Tech_0>
+		
+		<!-- Era 2-4 -->
+		<Starting_Spawned_Units_Tech_1>AAT, 3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>AAT, 8</Reserve_Spawned_Units_Tech_1>
+	</SpecialStructure>
+
+</CIS_Structures>

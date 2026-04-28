@@ -1,0 +1,206 @@
+<?xml version="1.0" ?>
+<AITemplates>
+
+<Generic_AI_Default>
+
+	<Priority>1</Priority>
+	
+	<Trigger>One</Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>GenericOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>GenericMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Generic_AI_Default>
+
+<Generic_AI_Low_Offense>
+
+	<Priority>1</Priority>
+	
+	<Trigger>One</Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>GenericLowOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>GenericMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Generic_AI_Low_Offense>
+
+<Generic_AI_SmallGC>
+
+	<Priority>1</Priority>
+	
+	<Trigger>One</Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>GenericOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>GenericLowMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+</Generic_AI_SmallGC>
+
+<Generic_Space>
+	<Priority>1</Priority>
+	<Trigger>One</Trigger>
+	
+	<Budget>
+			<High_Priority>High</High_Priority>
+			<Map_Control>Medium_High</Map_Control>
+			<Med_Priority>Medium</Med_Priority>
+			<Tactical_Targeted>GenericSpaceTargetedOffensiveBudgetAllocation</Tactical_Targeted>
+			<Defensive>GenericSpaceDefensiveBudgetAllocation</Defensive>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+            <Category>Tactical_Targeted</Category>
+            <Category>Defensive</Category>
+			<Category>High_Priority</Category>
+			<Category>Med_Priority</Category>
+			<Category>Map_Control</Category>
+		</Goals>
+		
+		<Plans>
+            <Goal_Category>Tactical_Targeted</Goal_Category>
+            <Goal_Category>Defensive</Goal_Category>
+			<Goal_Category>High_Priority</Goal_Category>
+			<Goal_Category>Med_Priority</Goal_Category>
+			<Goal_Category>Map_Control</Goal_Category>
+		</Plans>
+	</Turn_On>
+
+</Generic_Space>
+
+<Generic_Land>
+	<Priority>1</Priority>
+	<Trigger>One</Trigger>
+	
+	<Budget>
+		<Hero>ReallyBig</Hero>
+		<High_Priority>High</High_Priority>
+		<Map_Control>Medium_High</Map_Control>
+		<Med_Priority>Medium</Med_Priority>
+		<Tactical_Targeted>GenericSpaceTargetedOffensiveBudgetAllocation</Tactical_Targeted>
+		<Defensive>GenericSpaceDefensiveBudgetAllocation</Defensive>
+		<Tactical_Untargeted>GenericSpaceUntargetedOffensiveBudgetAllocation</Tactical_Untargeted>
+	</Budget>
+	
+	<Turn_On>
+		<Goals>
+			<Category>Hero</Category>
+			<Category>Tactical_Targeted</Category>
+			<Category>Defensive</Category>
+			<Category>Tactical_Untargeted</Category>
+			<Category>High_Priority</Category>
+			<Category>Med_Priority</Category>
+			<Category>Map_Control</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Hero</Goal_Category>
+            <Goal_Category>Tactical_Targeted</Goal_Category>
+            <Goal_Category>Defensive</Goal_Category>
+            <Goal_Category>Tactical_Untargeted</Goal_Category>
+			<Goal_Category>High_Priority</Goal_Category>
+			<Goal_Category>Med_Priority</Goal_Category>
+			<Goal_Category>Map_Control</Goal_Category>
+		</Plans>
+	</Turn_On>
+
+</Generic_Land>
+
+<None_Infrastructure_Template>
+
+	<Priority>1</Priority>
+	
+	<Trigger>One</Trigger>
+	
+	<Budget>
+		<Infrastructure>One</Infrastructure>
+	</Budget>
+
+	<Turn_On>
+		<Goals>
+			<Category>Infrastructure</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Infrastructure</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+	<Turn_Off>
+		<Goals>
+			<Category>Defensive</Category>
+			<Category>Offensive</Category>
+			<Category>MajorItem</Category>
+			<Category>Always</Category>
+			<Goal_Type>Build_Base_Component_Barracks</Goal_Type>
+			<Goal_Type>Build_Base_Component_Advanced_Vehicle_Factory</Goal_Type>
+			<Goal_Type>Build_Base_Component_Heavy_Vehicle_Factory</Goal_Type>
+			<Goal_Type>Build_Base_Component_Light_Vehicle_Factory</Goal_Type>
+			<Goal_Type>Build_Initial_Groundbase_Only</Goal_Type>
+			<Goal_Type>Build_Tax_Agency</Goal_Type>
+			<Goal_Type>Build_Weapon</Goal_Type>
+			<Goal_Type>Build_Planetary_Shield</Goal_Type>
+			<Goal_Type>Build_Turbolasers</Goal_Type>
+		</Goals>
+	</Turn_Off>
+</None_Infrastructure_Template>
+
+</AITemplates>

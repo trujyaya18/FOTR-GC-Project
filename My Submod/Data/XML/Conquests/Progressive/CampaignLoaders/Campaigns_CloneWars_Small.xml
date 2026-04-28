@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Campaigns>
+	<Campaign Name="CloneWars_Small_Republic">
+		<Campaign_Set>CloneWars_Small</Campaign_Set>
+		
+		
+		<Sort_Order>003</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_CWSMALL </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_CWSMALL </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+			<Locations>
+		Known_Galaxy_Small
+</Locations>
+
+		<Trade_Routes>
+
+</Trade_Routes>
+
+		<Home_Location> Rebel, Muunilinst </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+	
+        <Starting_Active_Player> Empire </Starting_Active_Player>
+
+        <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+        	 
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Trade_Federation, None </AI_Player_Control> <!-- Trade Federation -->
+		<AI_Player_Control> Banking_Clan, None </AI_Player_Control> <!-- IGBC -->
+		<AI_Player_Control> Commerce_Guild, None </AI_Player_Control> <!-- Commerce Guild -->
+		<AI_Player_Control> Techno_Union, None </AI_Player_Control> <!-- Techno Union -->
+		<AI_Player_Control> Underworld, None </AI_Player_Control>
+		<AI_Player_Control> Rebel, None </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
+		<AI_Player_Control> Sector_Forces, None </AI_Player_Control>
+
+		<Markup_Filename>Sector_Forces, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Commerce_Guild, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Trade_Federation, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Techno_Union, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Banking_Clan, DefaultGalacticHints </Markup_Filename>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+		
+		<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+				<!-- Bilbringi Space Forces -->
+		<Starting_Forces> Rebel, Geonosis, Placement_Dummy </Starting_Forces>
+
+		
+	
+				<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+			<!-- Bastion Space Forces -->
+		<!-- Bastion Land Forces -->
+		<Starting_Forces> Empire, Coruscant, Placement_Dummy </Starting_Forces>
+		
+
+		<!-- ******************** FACTION: Trade Federation ************** -->
+						
+		<Starting_Credits> Trade_Federation,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Trade_Federation, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Trade_Federation, 5 </Max_Tech_Level>
+				
+		<Starting_Forces> Trade_Federation, Cato_Neimoidia, Placement_Dummy </Starting_Forces>
+
+			<!-- ******************** FACTION: Commerce Guild ************** -->
+								
+		<Starting_Credits> Commerce_Guild,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Commerce_Guild, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Commerce_Guild, 5 </Max_Tech_Level>
+
+		<Starting_Forces> Commerce_Guild, Felucia, Placement_Dummy </Starting_Forces>
+		
+		
+		<!-- ******************** FACTION: IGBC ************** -->
+				
+		<Starting_Credits> Banking_Clan,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Banking_Clan, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Banking_Clan, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Banking_Clan, Muunilinst, Placement_Dummy </Starting_Forces>
+		
+		
+		
+		<!-- ******************** FACTION: Techno Union ************** -->
+						
+		<Starting_Credits> Techno_Union,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Techno_Union, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Techno_Union, 5 </Max_Tech_Level>
+						
+		<Starting_Forces> Techno_Union, Foerost, Placement_Dummy </Starting_Forces>												
+	
+	</Campaign>
+	
+	
+	<Campaign Name="CloneWars_Small_CIS">
+		<Campaign_Set>CloneWars_Small</Campaign_Set>
+		
+		
+		<Sort_Order>003</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_CWSMALL</Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_CWSMALL </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+			<Locations>
+		Known_Galaxy_Small
+</Locations>
+
+		<Trade_Routes>
+
+</Trade_Routes>
+		<Home_Location> Rebel, Muunilinst </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+		<Home_Location> Banking_Clan, Entralla </Home_Location>
+		<Home_Location> Commerce_Guild, Centares </Home_Location>
+		<Home_Location> Techno_Union, Foerost </Home_Location>
+		<Home_Location> Trade_Federation, Serenno </Home_Location>
+	
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
+
+        <Underworld_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_Loader.xml</Underworld_Story_Name>
+ 
+        	 
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Trade_Federation, None </AI_Player_Control> <!-- Trade Federation -->
+		<AI_Player_Control> Banking_Clan, None </AI_Player_Control> <!-- IGBC -->
+		<AI_Player_Control> Commerce_Guild, None </AI_Player_Control> <!-- Commerce Guild -->
+		<AI_Player_Control> Techno_Union, None </AI_Player_Control> <!-- Techno Union -->
+		<AI_Player_Control> Underworld, None </AI_Player_Control>
+		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>		
+		<AI_Player_Control> Warlords, None </AI_Player_Control>
+		<AI_Player_Control> Independent_Forces, None </AI_Player_Control>
+		<AI_Player_Control> Sector_Forces, None </AI_Player_Control>
+
+		<Markup_Filename>Sector_Forces, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Warlords, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Independent_Forces, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Commerce_Guild, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Trade_Federation, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Techno_Union, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Banking_Clan, DefaultGalacticHints </Markup_Filename>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+		
+		<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+				<!-- Bilbringi Space Forces -->
+		<Starting_Forces> Rebel, Geonosis, Placement_Dummy </Starting_Forces>
+
+		
+	
+				<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+			<!-- Bastion Space Forces -->
+		<!-- Bastion Land Forces -->
+		<Starting_Forces> Empire, Coruscant, Placement_Dummy </Starting_Forces>
+				
+		<!-- ******************** FACTION: Trade Federation ************** -->
+						
+		<Starting_Credits> Trade_Federation,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Trade_Federation, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Trade_Federation, 5 </Max_Tech_Level>
+				
+		<Starting_Forces> Trade_Federation, Cato_Neimoidia, Placement_Dummy </Starting_Forces>
+
+			<!-- ******************** FACTION: Commerce Guild ************** -->
+								
+		<Starting_Credits> Commerce_Guild,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Commerce_Guild, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Commerce_Guild, 5 </Max_Tech_Level>
+
+		<Starting_Forces> Commerce_Guild, Felucia, Placement_Dummy </Starting_Forces>
+		
+		
+		<!-- ******************** FACTION: IGBC ************** -->
+				
+		<Starting_Credits> Banking_Clan,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Banking_Clan, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Banking_Clan, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Banking_Clan, Muunilinst, Placement_Dummy </Starting_Forces>
+		
+		
+		
+		<!-- ******************** FACTION: Techno Union ************** -->
+						
+		<Starting_Credits> Techno_Union,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Techno_Union, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Techno_Union, 5 </Max_Tech_Level>
+						
+		<Starting_Forces> Techno_Union, Foerost, Placement_Dummy </Starting_Forces>
+	
+	</Campaign>
+	
+	
+	
+</Campaigns>

@@ -1,0 +1,404 @@
+<?xml version="1.0" ?>
+<!--****************************************************-->
+<!--************** Rimward: Perfect Piracy *************-->
+<!--****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Disable_Autoresolve">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_AUTORESOLVE</Reward_Type>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Prevent_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Victory_Pirates">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PIRATE_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>INDEPENDENT_FORCES</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Dooku_Lighting_Ability_Remove">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_POWER_FROM_ALL</Reward_Type>
+		<Reward_Param1>Dooku</Reward_Param1>
+		<Reward_Param2>DOOKU_FORCE_LIGHTNING</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+    <Event Name="Dooku_Lighting_Ability_Restore">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>NEW_POWER_FOR_ALL</Reward_Type>
+		<Reward_Param1>Dooku</Reward_Param1>
+		<Reward_Param2>DOOKU_FORCE_LIGHTNING</Reward_Param2>
+		<Prereq>Victory_Pirates</Prereq>
+		<Prereq>Victory_CIS</Prereq>
+		<Prereq>Victory_Rep</Prereq>
+	</Event>
+
+
+	<Event Name="Trigger_Escape_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ESCAPE_REACHED</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Escaping</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Trigger_Reactor_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GENERATOR_REACHED</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Pirates_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TANK_REACHED</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Upgrade</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Trigger_Tank_Destroyed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TANK_DESTROYED</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Upgrade</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="Trigger_Base_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BASE_REACHED</Event_Param2>
+	</Event>
+
+
+	<Event Name="Anakin_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>ANAKIN</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_Act_I</Prereq>
+		<Branch>Escaping</Branch>
+	</Event>
+
+	<Event Name="Obi_Wan_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>OBI_WAN</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_Act_I</Prereq>
+		<Branch>Escaping</Branch>
+	</Event>
+
+	<Event Name="Dooku_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>DOOKU</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_Act_I</Prereq>
+		<Branch>Escaping</Branch>
+	</Event>
+
+	<Event Name="JarJar_I_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>JAR_JAR_BINKS</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_Act_II</Prereq>
+		<Branch>Upgrade</Branch>
+	</Event>
+
+
+	<Event Name="Intro_Crawl_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CINEMATIC_CRAWL_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_INTRO_01</Reward_Param1>
+		<Reward_Param2>9.4</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Intro_Crawl_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CINEMATIC_CRAWL_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_INTRO_02</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Intro_Crawl_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CINEMATIC_CRAWL_03</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_INTRO_03</Reward_Param1>
+		<Reward_Param2>8.0</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Heroes_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Anakin_Destroyed</Prereq>
+		<Prereq>Obi_Wan_Destroyed</Prereq>
+		<Prereq>Dooku_Destroyed</Prereq>
+		<Prereq>JarJar_I_Destroyed</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_I</Event_Param2>
+	</Event>
+
+	<Event Name="Goal_Trigger_Act_II">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_II</Event_Param2>
+	</Event>
+
+	<Event Name="Goal_Trigger_Act_III">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_III</Event_Param2>
+	</Event>
+
+
+	<Event Name="Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_01</Reward_Param1>
+		<Prereq>Goal_Trigger_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_02</Reward_Param1>
+		<Prereq>Goal_01</Prereq>
+	</Event>
+
+	<Event Name="Goal_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_03</Reward_Param1>
+		<Prereq>Goal_02</Prereq>
+	</Event>
+
+	<Event Name="Goal_04">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_04</Reward_Param1>
+		<Prereq>Goal_03</Prereq>
+	</Event>
+
+	<Event Name="Goal_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_05</Reward_Param1>
+		<Prereq>Goal_Trigger_Act_II</Prereq>
+	</Event>
+
+	<Event Name="Goal_06">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_06</Reward_Param1>
+		<Prereq>Goal_05</Prereq>
+	</Event>
+
+	<Event Name="Goal_07">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_07</Reward_Param1>
+		<Prereq>Goal_Trigger_Act_III</Prereq>
+	</Event>
+
+	<Event Name="Goal_08">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_08</Reward_Param1>
+		<Prereq>Goal_07</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_01</Reward_Param1>
+		<Prereq>Goal_01, Trigger_Escape_Reached</Prereq>
+	</Event>
+
+	<Event Name="Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_02</Reward_Param1>
+		<Prereq>Goal_02, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Goal_03_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_03</Reward_Param1>
+		<Prereq>Goal_03, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Goal_04_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_04</Reward_Param1>
+		<Prereq>Goal_04, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Goal_05_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_05</Reward_Param1>
+		<Prereq>Goal_05, Trigger_Reactor_Reached</Prereq>
+		<Prereq>Goal_05, Trigger_Pirates_Reached</Prereq>
+		<Prereq>Goal_05, Trigger_Base_Reached</Prereq>
+	</Event>
+
+	<Event Name="Goal_06_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_06</Reward_Param1>
+		<Prereq>Goal_06, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Goal_07_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_07</Reward_Param1>
+		<Prereq>Goal_07, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Goal_08_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_08</Reward_Param1>
+		<Prereq>Goal_08, Trigger_Base_Reached</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_01</Reward_Param1>
+		<Prereq>Goal_01, Victory_Pirates</Prereq>
+	</Event>
+
+	<Event Name="Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_02</Reward_Param1>
+		<Prereq>Goal_02, Anakin_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_03</Reward_Param1>
+		<Prereq>Goal_03, Obi_Wan_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Goal_04_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_04</Reward_Param1>
+		<Prereq>Goal_04, Dooku_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Goal_05_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_05</Reward_Param1>
+		<Prereq>Goal_05, Victory_Pirates</Prereq>
+	</Event>
+
+	<Event Name="Goal_06_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_06</Reward_Param1>
+		<Prereq>Goal_06, JarJar_I_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Goal_07_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_07</Reward_Param1>
+		<Prereq>Goal_07, Victory_Pirates</Prereq>
+	</Event>
+
+	<Event Name="Goal_08_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_PERFECT_PIRACY_OBJECTIVE_08</Reward_Param1>
+		<Prereq>Goal_08, Victory_Pirates</Prereq>
+	</Event>
+
+</Story>

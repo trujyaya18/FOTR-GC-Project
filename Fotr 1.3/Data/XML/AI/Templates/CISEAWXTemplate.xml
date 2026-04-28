@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<AITemplates>
+
+<CIS_Federation_Default>
+
+	<Priority>2</Priority>
+	
+	<Trigger>CIS_Federation_Trigger</Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>CISOffensiveBudgetAllocation</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>CISMajorItemBudgetAllocation</MajorItem>
+	</Budget>
+	
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+	<Turn_Off>
+		<Goals>
+			<Goal_Type>Defend_Planet</Goal_Type>
+		</Goals>
+	</Turn_Off>
+	
+</CIS_Federation_Default>
+
+<CIS_Federation_No_Offense>
+
+	<Priority>2</Priority>
+	
+	<Trigger>CIS_Federation_Trigger</Trigger>
+	
+	<Budget>
+		<Always>Zero</Always>
+		<Offensive>Zero</Offensive>
+		<Infrastructure>GenericInfrastructureBudgetAllocation</Infrastructure>
+		<MajorItem>Zero</MajorItem>
+	</Budget>
+	
+	<Turn_On>
+		<Goals>
+			<Category>Always</Category>
+			<Category>Offensive</Category>
+			<Category>Infrastructure</Category>
+			<Category>MajorItem</Category>
+		</Goals>
+		
+		<Plans>
+			<Goal_Category>Always</Goal_Category>
+			<Goal_Category>Offensive</Goal_Category>
+			<Goal_Category>Infrastructure</Goal_Category>
+			<Goal_Category>MajorItem</Goal_Category>
+		</Plans>
+	</Turn_On>
+	
+	<Turn_Off>
+		<Goals>
+			<Goal_Type>Defend_Planet</Goal_Type>
+		</Goals>
+	</Turn_Off>
+	
+</CIS_Federation_No_Offense>
+
+</AITemplates>

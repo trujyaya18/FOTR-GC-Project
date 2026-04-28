@@ -1,0 +1,1156 @@
+<?xml version="1.0"?>
+<Particles>
+
+	<!--*****************************************-->
+	<!--********** Tracks/Splash/Puffs **********-->
+	<!--*****************************************-->
+
+	<Particle Name="Track_Dust_Particles">
+		<Land_Model_Name>P_DUUST_TRACK.ALO</Land_Model_Name>
+		<Space_Model_Name>P_DUUST_TRACK.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Track_Snow_Particles">
+		<Land_Model_Name>P_IICE_TRACK.ALO</Land_Model_Name>
+		<Space_Model_Name>P_IICE_TRACK.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Lancet_Splash_Wake">
+		<Land_Model_Name>p_splash_lancet.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Lancet_Splash_Wake_Lava">
+		<Land_Model_Name>p_splash_lancet_lava.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Is_Editor_Placed>false</Is_Editor_Placed>
+	</Particle>
+	
+	<Particle Name="Lancet_Splash_Wake_Ice">
+		<Land_Model_Name>p_ice_lancet_puff.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+
+	<Particle Name="Hover_Particles">
+		<Land_Model_Name>p_hover_generic.alo</Land_Model_Name>
+		<Space_Model_Name>p_hover_generic.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Rain_Splash">
+		<Land_Model_Name>p_rain_splash.alo</Land_Model_Name>
+		<Space_Model_Name>p_rain_splash.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.6</No_Particle_Below_Detail_Level>
+	</Particle>
+
+	<Particle Name="Splash_Bullet">
+		<Land_Model_Name>p_splash_bullet.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Splash_Wake">
+		<Land_Model_Name>p_splash_wake.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Splash_Wake_Continuous">
+		<Land_Model_Name>p_splash_wake_continuous.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Splash_Wake_Lava">
+		<Land_Model_Name>p_splash_wake_lava.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Is_Editor_Placed>false</Is_Editor_Placed>
+	</Particle>
+	
+	<Particle Name="Splash_Wake_Ice">
+		<Land_Model_Name>p_ice_ground_puff.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Transport_Landing_Dust_Temperate">
+		<Land_Model_Name>p_landing_dust_temperate.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<!-- (gth) 1/19/2006 does not need particle behavior, TransportLandingBehavior manages these -->
+	</Particle>
+	
+	<Particle Name="Transport_Landing_Dust_Arctic">
+		<Land_Model_Name>p_landing_dust_snow.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<!-- (gth) 1/19/2006 does not need particle behavior, TransportLandingBehavior manages these -->
+	</Particle>
+	
+	<Particle Name="Transport_Landing_Dust_Desert">
+		<Land_Model_Name>p_landing_dust_desert.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<!-- (gth) 1/19/2006 does not need particle behavior, TransportLandingBehavior manages these -->
+	</Particle>
+	
+	<Particle Name="Transport_Landing_Dust_Forest">
+		<Land_Model_Name>p_landing_dust_Forest.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<!-- (gth) 1/19/2006 does not need particle behavior, TransportLandingBehavior manages these -->
+	</Particle>
+	
+	<Particle Name="Transport_Landing_Dust_Swamp">
+		<Land_Model_Name>p_landing_dust_swamp.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<!-- (gth) 1/19/2006 does not need particle behavior, TransportLandingBehavior manages these -->
+	</Particle>
+	
+	<Particle Name="Transport_Landing_Dust_Volcanic">
+		<Land_Model_Name>p_landing_dust_volcanic.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<!-- (gth) 1/19/2006 does not need particle behavior, TransportLandingBehavior manages these -->
+	</Particle>
+	
+	<Particle Name="Transport_Landing_Dust_Urban">
+		<Land_Model_Name>p_landing_dust_urban.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<!-- (gth) 1/19/2006 does not need particle behavior, TransportLandingBehavior manages these -->
+	</Particle>
+	
+	<Particle Name="AT_AA_FootPuff_Default">
+		<Land_Model_Name>p_ATAA_Footpuff_default.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="AT_AT_FootPuff_Dirt">
+		<Land_Model_Name>p_ATAT_Footpuff_dirt.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="AT_AT_FootPuff_Water">
+		<Land_Model_Name>p_splash_wake.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.6</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="AT_AT_FootPuff_Grass">
+		<Land_Model_Name>p_ATAT_Footpuff_grass.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="AT_AT_FootPuff_Snow">
+		<Land_Model_Name>p_ATAT_Footpuff_snow.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Dust_Infantry_Footstep">
+		<Land_Model_Name>p_dust_inf.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<!--*****************************************-->
+	<!--************* Explosions ****************-->
+	<!--*****************************************-->
+	
+	<Particle Name="Small_Explosion_Land">
+		<Land_Model_Name>p_explosion_small01.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_small01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Tiny_Explosion_Land">
+		<Land_Model_Name>p_explosion_tiny.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_tiny.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Rocket_Explosion_Land">
+		<Land_Model_Name>p_explosion_rocket.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_rocket.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Small_Explosion_Dirt">
+		<Land_Model_Name>p_explosion_small02.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_small02.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Missile_Explosion_Ground_Hit">
+		<Land_Model_Name>p_explosion_missile_ground01.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_missile_ground01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Empire_Bombing_Run_Explosion_Land">
+		<Land_Model_Name>p_bomblet.alo</Land_Model_Name>
+		<Space_Model_Name>p_bomblet.alo</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_HUGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Nuke_Explosion_Land">
+		<Land_Model_Name>p_nuke.alo</Land_Model_Name>
+		<Space_Model_Name>p_nuke.alo</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_HUGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Large_Explosion_Proton">
+		<Land_Model_Name>p_bomblet.alo</Land_Model_Name>
+		<Space_Model_Name>p_bomblet.alo</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_HUGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Explosion_MPTL">
+		<Land_Model_Name>P_EXPLOSION_MPTL.ALO</Land_Model_Name>
+		<Space_Model_Name>P_EXPLOSION_MPTL.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Underworld_Bombing_Run_Explosion_Land">
+		<Land_Model_Name>p_bomblet.alo</Land_Model_Name>
+		<Space_Model_Name>p_bomblet.alo</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_HUGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Rebel_Bombing_Run_Explosion_Land">
+		<Land_Model_Name>p_bomblet.alo</Land_Model_Name>
+		<Space_Model_Name>p_bomblet.alo</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_HUGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Medium_Explosion_Land">
+		<Land_Model_Name>p_explosion_med01.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_med01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Allow_Particle_Model_Culling>yes</Allow_Particle_Model_Culling>
+		<Behavior>PARTICLE, EXPLOSION</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Large_Explosion_Land">
+		<Land_Model_Name>p_explosion_big01.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_big01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Allow_Particle_Model_Culling>yes</Allow_Particle_Model_Culling>
+		<Behavior>PARTICLE, EXPLOSION</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Remote_bomb">
+		<Land_Model_Name>p_sab_bomb.alo</Land_Model_Name>
+		<Space_Model_Name>p_sab_bomb.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Allow_Particle_Model_Culling>yes</Allow_Particle_Model_Culling>
+		<Behavior>PARTICLE, EXPLOSION</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Ewok_Suicide_Bomb_Explosion">
+		<Land_Model_Name>p_ewok_suicide.alo</Land_Model_Name>
+		<Space_Model_Name>p_ewok_suicide.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Allow_Particle_Model_Culling>yes</Allow_Particle_Model_Culling>
+		<Behavior>PARTICLE, EXPLOSION</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Veers_Maximum_Firepower_Explosion_Land">
+		<Land_Model_Name>p_explosion_atat01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Allow_Particle_Model_Culling>yes</Allow_Particle_Model_Culling>
+		<Behavior>PARTICLE, EXPLOSION</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Huge_Explosion_Land">
+		<Land_Model_Name>p_explosion_huge01.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_huge01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Allow_Particle_Model_Culling>yes</Allow_Particle_Model_Culling>
+		<Behavior>PARTICLE, EXPLOSION</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>4</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_HUGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Artillery_Shell_Explosion">
+		<Land_Model_Name>P_Explosion_artillery.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>270</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Carbonite_Missile_Explosion">
+		<Land_Model_Name>p_carbonite_explosion.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>240</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark/>
+	</Particle>
+	
+	<Particle Name="Magnepulse_Explosion">
+		<Land_Model_Name>p_magna_explosion.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Thermal_Detonator_Explosion">
+		<Land_Model_Name>p_explosion_thermal_small00.ALO</Land_Model_Name>
+		<Space_Model_Name>p_explosion_thermal_small00.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="EMP_Detonator_Explosion">
+		<Land_Model_Name>p_explosion_emp_small00.ALO</Land_Model_Name>
+		<Space_Model_Name>p_explosion_emp_small00.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Pyro_Detonator_Explosion">
+		<Land_Model_Name>p_explosion_pyro_small00.ALO</Land_Model_Name>
+		<Space_Model_Name>p_explosion_pyro_small00.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Sonic_Detonator_Explosion">
+		<Land_Model_Name>P_Sonic_Grenade_Impact.ALO</Land_Model_Name>
+		<Space_Model_Name>P_Sonic_Grenade_Impact.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+
+	<Particle Name="Hailfire_Explosion">
+		<Land_Model_Name>p_explosion_fail01.ALO</Land_Model_Name>
+		<Space_Model_Name>p_explosion_fail01.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+
+	<Particle Name="Flak_Pod_Explosion">
+		<Land_Model_Name>p_explosion_flak01.ALO</Land_Model_Name>
+		<Space_Model_Name>p_explosion_flak01.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Flak_Explosion">
+		<Land_Model_Name>p_explosion_flak.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_flak.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark></Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="EMP_Blast">
+		<Land_Model_Name>p_garg_flare.ALO</Land_Model_Name>
+		<Space_Model_Name>p_garg_flare.ALO</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE,DYNAMIC_TRANSFORM</Behavior>
+		<Dynamic_Transform_Delay_Seconds>0.5</Dynamic_Transform_Delay_Seconds>
+		<Dynamic_Transform_Start_Scale>0.3</Dynamic_Transform_Start_Scale>
+		<Dynamic_Transform_End_Scale>1.0</Dynamic_Transform_End_Scale>
+		<Dynamic_Transform_Seconds>1</Dynamic_Transform_Seconds>
+		<Dynamic_Transform_Start_Color>6.0, 1.0, 1.0, 1.0</Dynamic_Transform_Start_Color>
+		<Dynamic_Transform_End_Color>1.0, 0.0, 0.0, 1.0</Dynamic_Transform_End_Color>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="EMP_Blast_Small">
+		<Land_Model_Name>p_garg_flare.ALO</Land_Model_Name>
+		<Space_Model_Name>p_garg_flare.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE,DYNAMIC_TRANSFORM</Behavior>
+		<Dynamic_Transform_Delay_Seconds>0.5</Dynamic_Transform_Delay_Seconds>
+		<Dynamic_Transform_Start_Scale>0.25</Dynamic_Transform_Start_Scale>
+		<Dynamic_Transform_End_Scale>0.5</Dynamic_Transform_End_Scale>
+		<Dynamic_Transform_Seconds>1</Dynamic_Transform_Seconds>
+		<Dynamic_Transform_Start_Color>6.0, 1.0, 1.0, 1.0</Dynamic_Transform_Start_Color>
+		<Dynamic_Transform_End_Color>1.0, 0.0, 0.0, 1.0</Dynamic_Transform_End_Color>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<!--*****************************************-->
+	<!--***************** Blood *****************-->
+	<!--*****************************************-->
+
+	<Particle Name="Jet_Trooper_Explosion_Land">
+		<Land_Model_Name>P_JETTROOPER_BLOODDEATH_RED.alo</Land_Model_Name>
+		<Space_Model_Name>P_JETTROOPER_BLOODDEATH_RED.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+
+	<Particle Name="Jet_Trooper_Explosion_Land_Cyan">
+		<Land_Model_Name>P_JETTROOPER_BLOODDEATH_CYAN.alo</Land_Model_Name>
+		<Space_Model_Name>P_JETTROOPER_BLOODDEATH_CYAN.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood">
+		<Land_Model_Name>P_BLOODSPLASH_RED.alo</Land_Model_Name>
+		<Space_Model_Name>P_BLOODSPLASH_RED.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE, SPAWN_SQUADRON</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_RED</Explosion_Scorch_Mark>
+
+		<Starting_Spawned_Units_Tech_0>Organic_Infantry_Blood_Spawn, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood_Alt">
+		<Land_Model_Name>p_explosion_tiny00_dud.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_tiny00_dud.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE, SPAWN_SQUADRON</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_RED</Explosion_Scorch_Mark>
+
+		<Starting_Spawned_Units_Tech_0>Organic_Infantry_Blood_Spawn, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood_Spawn">
+		<Land_Model_Name>P_BLOODSPLASH_RED.alo</Land_Model_Name>
+		<Space_Model_Name>P_BLOODSPLASH_RED.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_RED_ALT</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood_Cyan">
+		<Land_Model_Name>P_BLOODSPLASH_CYAN.alo</Land_Model_Name>
+		<Space_Model_Name>P_BLOODSPLASH_CYAN.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE, SPAWN_SQUADRON</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_CYAN</Explosion_Scorch_Mark>
+
+		<Starting_Spawned_Units_Tech_0>Organic_Infantry_Blood_Cyan_Spawn, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood_Cyan_Alt">
+		<Land_Model_Name>p_explosion_tiny00_dud.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_tiny00_dud.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE, SPAWN_SQUADRON</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_CYAN</Explosion_Scorch_Mark>
+
+		<Starting_Spawned_Units_Tech_0>Organic_Infantry_Blood_Cyan_Spawn, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood_Cyan_Spawn">
+		<Land_Model_Name>P_BLOODSPLASH_CYAN.alo</Land_Model_Name>
+		<Space_Model_Name>P_BLOODSPLASH_CYAN.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_CYAN_ALT</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood_Black">
+		<Land_Model_Name>P_BLOODSPLASH_BLACK.alo</Land_Model_Name>
+		<Space_Model_Name>P_BLOODSPLASH_BLACK.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE, SPAWN_SQUADRON</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_BLACK</Explosion_Scorch_Mark>
+
+		<Starting_Spawned_Units_Tech_0>Organic_Infantry_Blood_Black_Spawn, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood_Black_Alt">
+		<Land_Model_Name>p_explosion_tiny00_dud.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_tiny00_dud.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE, SPAWN_SQUADRON</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_BLACK</Explosion_Scorch_Mark>
+
+		<Starting_Spawned_Units_Tech_0>Organic_Infantry_Blood_Black_Spawn, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Blood_Black_Spawn">
+		<Land_Model_Name>P_BLOODSPLASH_BLACK.alo</Land_Model_Name>
+		<Space_Model_Name>P_BLOODSPLASH_BLACK.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_BLACK_ALT</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Ichor">
+		<Land_Model_Name>P_BLOODSPLASH_ICHOR.alo</Land_Model_Name>
+		<Space_Model_Name>P_BLOODSPLASH_ICHOR.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE, SPAWN_SQUADRON</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_ICHOR</Explosion_Scorch_Mark>
+
+		<Starting_Spawned_Units_Tech_0>Organic_Infantry_Ichor_Spawn, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Ichor_Alt">
+		<Land_Model_Name>p_explosion_tiny00_dud.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_tiny00_dud.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE, SPAWN_SQUADRON</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_ICHOR</Explosion_Scorch_Mark>
+
+		<Starting_Spawned_Units_Tech_0>Organic_Infantry_Ichor_Spawn, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+	</Particle>
+	
+	<Particle Name="Organic_Infantry_Ichor_Spawn">
+		<Land_Model_Name>P_BLOODSPLASH_ICHOR.alo</Land_Model_Name>
+		<Space_Model_Name>P_BLOODSPLASH_ICHOR.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>DEATH_BLOOD_SPLAT_MARK_ICHOR_ALT</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<!--*****************************************-->
+	<!--**************** Damage *****************-->
+	<!--*****************************************-->
+	
+	<Particle Name="Small_Damage_Land">
+		<Land_Model_Name>p_damage_small00.alo</Land_Model_Name>
+		<Space_Model_Name>p_damage_small00.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Medium_Damage_Land">
+		<Land_Model_Name>p_damage_med00.alo</Land_Model_Name>
+		<Space_Model_Name>p_damage_med00.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.6</No_Particle_Below_Detail_Level>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Large_Damage_Land">
+		<Land_Model_Name>p_damage_big01.alo</Land_Model_Name>
+		<Space_Model_Name>p_damage_big01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.5</No_Particle_Below_Detail_Level>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Spmat_Damage_Land">
+		<Land_Model_Name>p_spmat_splash.alo</Land_Model_Name>
+		<Space_Model_Name>p_spmat_splash.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.5</No_Particle_Below_Detail_Level>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+
+	<Particle Name="Smoke_Small_Land">
+		<Land_Model_Name>p_smoke_small01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Smoke_Small_Thick_Land">
+		<Land_Model_Name>p_smoke_small02.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Smoke_Medium_Land">
+		<Land_Model_Name>p_smoke_med01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Smoke_Big_Land">
+		<Land_Model_Name>p_smoke_big01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Force_Lightning_Smoke">
+		<Land_Model_Name>p_smoke_small01.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>105</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Shield_Sparks_Small">
+		<Land_Model_Name>p_shield_small01.alo</Land_Model_Name>
+		<Space_Model_Name>p_shield_small01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Shield_Sparks_Medium">
+		<Land_Model_Name>p_shield_med01.alo</Land_Model_Name>
+		<Space_Model_Name>p_shield_med01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Shield_Sparks_Large">
+		<Land_Model_Name>p_shield_large01.alo</Land_Model_Name>
+		<Space_Model_Name>p_shield_large01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Environmental_Fire_Damage_Particles">
+		<Land_Model_Name> p_fire_med01.alo </Land_Model_Name>
+		<Scale_Factor> 1.0 </Scale_Factor>
+		<Is_Decoration> No </Is_Decoration>
+		<Behavior> PARTICLE </Behavior>
+		<Particle_Lifetime_Frames> 10 </Particle_Lifetime_Frames>
+		<!-- Short fire effect to show the environmental damage -->
+		<In_Background> No </In_Background>
+		<!--<Exclude_From_Distance_Fade> No </Exclude_From_Distance_Fade>-->
+	</Particle>
+	
+	<Particle Name="Small_Damage_Land_Red">
+		<Land_Model_Name>p_lasersparks_red_g.alo</Land_Model_Name>
+		<Space_Model_Name>p_lasersparks_red_g.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Small_Damage_Land_Green">
+		<Land_Model_Name>p_lasersparks.alo</Land_Model_Name>
+		<Space_Model_Name>p_lasersparks.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Projectile_Dirt_Collide">
+		<Land_Model_Name>p_desert_ground_puff.alo</Land_Model_Name>
+		<Space_Model_Name>p_desert_ground_puff.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Projectile_Dirt_Collide_Red">
+		<Land_Model_Name>p_desert_ground_puff_red.alo</Land_Model_Name>
+		<Space_Model_Name>p_desert_ground_puff_red.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Projectile_Dirt_Collide_Green">
+		<Land_Model_Name>p_desert_ground_puff_green.alo</Land_Model_Name>
+		<Space_Model_Name>p_desert_ground_puff_green.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Ground_Turbo_Impact">
+		<Land_Model_Name>P_LASERSPARKS2_TURBO.ALO</Land_Model_Name>
+		<Space_Model_Name>P_LASERSPARKS2_TURBO.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Probe_Droid_Impact">
+		<Land_Model_Name>P_PROBEDROID.ALO</Land_Model_Name>
+		<Space_Model_Name>P_PROBEDROID.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Particle_Lifetime_Frames>75</Particle_Lifetime_Frames>
+		<Behavior>PARTICLE</Behavior>
+	</Particle>
+	
+	<Particle Name="Missile_Impact">
+		<Land_Model_Name>p_explosion_rocket.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_rocket.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<!--*****************************************-->
+	<!--***************** Other *****************-->
+	<!--*****************************************-->
+	
+	<Particle Name="Lancet_Lightning_Particle">
+		<Land_Model_Name>p_lancettesla_b.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+	</Particle>
+
+	<Particle Name="LAAT_Beam_Hit">
+		<Land_Model_Name>P_LASERSPARKS2_LONG.alo</Land_Model_Name>
+		<Space_Model_Name>P_LASERSPARKS2_LONG.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Saber_Sparks">
+		<Land_Model_Name>p_sabersparks.alo</Land_Model_Name>
+		<Space_Model_Name>p_sabersparks.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Large_LaserHit_Land">
+		<Land_Model_Name>p_damage_big02.alo</Land_Model_Name>
+		<Space_Model_Name>p_damage_big02.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.5</No_Particle_Below_Detail_Level>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Magnepulse_Chargeup_Particles">
+		<Land_Model_Name>p_magnespulse_buildup.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>240</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Beam_Impact">
+		<Land_Model_Name>P_LASERSPARKS2_LONG.ALO</Land_Model_Name>
+		<Space_Model_Name>P_LASERSPARKS2_LONG.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Sonic_Blaster_Impact">
+		<Land_Model_Name>P_Sonic_Blaster_Impact.alo</Land_Model_Name>
+		<Space_Model_Name>P_Sonic_Blaster_Impact.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+	<Particle Name="Stunned_Object">
+		<Land_Model_Name>p_magnepulse_damage00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>450</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Stunned_Object_Skirmish_Magnepulse">
+		<Land_Model_Name>p_magnepulse_damage00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>510</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Stunned_Object_Orbital_Consortium">
+		<Land_Model_Name>p_magnepulse_damage00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>210</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Stunned_Object_Orbital_Rebel">
+		<Land_Model_Name>p_magnepulse_damage00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>840</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Stunned_Particle_Effect">
+		<Land_Model_Name>p_dazed.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>270</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="empire_bombard">
+		<Land_Model_Name>p_greenglow.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>270</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="empire_bombard_explosion">
+		<Land_Model_Name>P_Explosion_bombard.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>270</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_HUGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="rebel_bombard">
+		<Land_Model_Name>p_blueglow.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>270</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="rebel_bombard_explosion">
+		<Land_Model_Name>P_ORBITAL_IMPACT_IONBURST.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>270</Particle_Lifetime_Frames>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="p_orbital_impact">
+		<Land_Model_Name>P_ORBITAL_IMPACT_EMIT4.alo</Land_Model_Name>
+		<Space_Model_Name>P_ORBITAL_IMPACT_EMIT4.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Allow_Particle_Model_Culling>yes</Allow_Particle_Model_Culling>
+		<Behavior>PARTICLE, EXPLOSION</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MASSIVE</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="p_orbital_impact_ion">
+		<Land_Model_Name>p_orbital_impact_ionburst.alo</Land_Model_Name>
+		<!--p_orbital_impact_ion.alo-->
+		<Space_Model_Name>p_orbital_impact_ionburst.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Allow_Particle_Model_Culling>yes</Allow_Particle_Model_Culling>
+		<Behavior>PARTICLE, EXPLOSION</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>3</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MASSIVE_DARK</Explosion_Scorch_Mark>
+	</Particle>
+	
+	<Particle Name="Bombard_Particle_Effect">
+		<Land_Model_Name>p_buildup.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>90</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Repulsor_Jammer_Effect">
+		<Land_Model_Name>p_repulsor_snare.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+	</Particle>
+	
+	<Particle Name="Credits_Gained_Particles">
+		<Land_Model_Name>W_PICK_UP_COINS.ALO</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Stunned_Infantry">
+		<Land_Model_Name>p_stun_fx.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>300</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Unit_Healed_Particles">
+		<Land_Model_Name>p_heal00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Distract_Particles">
+		<Land_Model_Name>p_force_distract.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Stun_Particles">
+		<Land_Model_Name>p_stun_fx.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>60</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Shield_Penetration_Effect_Particle">
+		<Land_Model_Name>p_Shield_Penetration_Generic.alo</Land_Model_Name>
+		<Space_Model_Name>p_Shield_Penetration_Generic.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<!-- (gth) 1/19/2006 does not need particle behavior, AffectedByShieldBehaviorClass manages these -->
+	</Particle>
+	
+	<Particle Name="Lava_Bubbles">
+		<Land_Model_Name>p_lava_bubbles.alo</Land_Model_Name>
+		<Space_Model_Name>p_lava_bubbles.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Small_Steam_Ground">
+		<Land_Model_Name>p_steam_small01.alo</Land_Model_Name>
+		<Space_Model_Name>p_steam_small01.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+	<Particle Name="Blast_Cannon_Effect">
+		<Land_Model_Name>P_BLASTCANNON.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+	
+</Particles>

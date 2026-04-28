@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<EnumDefinition>
+
+	<Offensive> 0 </Offensive>
+	<Defensive> 1 </Defensive>
+	<Infrastructure> 2 </Infrastructure>
+	<Tactical_Targeted> 3 </Tactical_Targeted>
+	<Tactical_Untargeted> 4 </Tactical_Untargeted>
+	<NoBudget> 5 </NoBudget>
+    <Hero> 6 </Hero>
+	<Always> 7 </Always>
+	<MajorItem> 8 </MajorItem>
+	<High_Priority> 9 </High_Priority>
+	<Med_Priority> 10 </Med_Priority>
+	<Map_Control> 11 </Map_Control>
+	
+</EnumDefinition>
+

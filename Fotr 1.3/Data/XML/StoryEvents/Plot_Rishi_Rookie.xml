@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!--****************************************************-->
+<!--*************** Rimward: Rishi Rookie **************-->
+<!--****************************************************-->
+
+<Story_Mode_Plots>
+	<Lua_Script>Story_Rishi_Rookie</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Rishi_Rookie.XML</Active_Plot>
+</Story_Mode_Plots>

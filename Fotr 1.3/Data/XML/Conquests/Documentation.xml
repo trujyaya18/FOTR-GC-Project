@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+
+	
+	<Event Name="Influence_Doc">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter04</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Story_Dialog>Documentation_Influence</Story_Dialog>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Influence_Doc_Tag</Story_Tag>
+	</Event>
+		
+	<Event Name="Influence_Doc_Close">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Influence_Doc_Tag</Reward_Param1>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Influence_Doc</Prereq>		
+	</Event>
+	
+	
+	<Event Name="Command_Bonuses">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter02</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Story_Dialog>Documentation_TiersAndTraits</Story_Dialog>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Bonuses_Doc_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Command_Bonuses_Close">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Bonuses_Doc_Tag</Reward_Param1>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Command_Bonuses</Prereq>		
+	</Event>
+	
+	<Event Name="Story_Events">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter03</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Story_Dialog>Documentation_StoryOverview</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>StoryOverview_Doc_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Story_Events_Close">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Perpetual>true</Perpetual>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>StoryOverview_Doc_Tag</Reward_Param1>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Story_Events</Prereq>		
+	</Event>
+
+</Story>

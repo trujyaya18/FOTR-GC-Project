@@ -1,0 +1,1361 @@
+<?xml version="1.0" ?>
+<Skirmish_Units>
+
+	<!--<GroundCompany Name="GROUNDWAR_COMPANY_TEMPLATE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation></Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>INSTANTACTION_Republic.tga</Icon_Name>
+		 
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Company_Units></Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+			
+		<MULTIPLAYER SKIRMISH VALUES BEGIN>
+		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>
+
+	</GroundCompany>-->
+	
+	<!-- ============================================================== Republic Units ============================================================== -->
+
+	
+	<GroundCompany Name="GROUNDWAR_Rep_PDF_Line">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_PDF_LINE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_PDF_LINE_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_PDF_LINE_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_PDF_LINE
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>I_BUTTON_SD6.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_Rep_PDF_Line</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>920</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+
+	<GroundCompany Name="GROUNDWAR_REP_PDF_ASSAULT">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_PDF_ASSAULT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_PDF_ASSAULT_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_PDF_ASSAULT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_PDF_ASSAULT
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>I_BUTTON_PDF.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_PDF_ASSAULT</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>880</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_RECON">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_RECON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_RECON_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_RECON_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_RECON
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_scout_trooper_rep.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_RECON</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>798</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_JEDI_STRIKE_TEAM">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_JEDI_STRIKE_TEAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_JEDI_STRIKE_TEAM_1
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_JEDI_STRIKE_TEAM
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_jedi.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_JEDI_STRIKE_TEAM</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_MANDO_MERCENARY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_MANDO_MERCENARY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_MANDO_MERCENARY_1
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_MANDO_MERCENARY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_ni_mandalorian.tga</Icon_Name> 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_MANDO_MERCENARY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>420</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_CLONE_COMPANY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_CLONE_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_COMPANY_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_COMPANY_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_COMPANY_3
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_COMPANY_4
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_CLONE_COMPANY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>I_BUTTON_CLONE_P1.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_CLONE_COMPANY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2550</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_SPECIAL_FORCES_TEAM">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_SPECIAL_FORCES_TEAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_SPECIAL_FORCES_TEAM_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_SPECIAL_FORCES_TEAM_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_SPECIAL_FORCES_TEAM_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_SPECIAL_FORCES_TEAM
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>I_BUTTON_CLONE_ARC_P1.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_SPECIAL_FORCES_TEAM</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1090</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_LIGHT_WALKER">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_LIGHT_WALKER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_LIGHT_WALKER_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_LIGHT_WALKER_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_LIGHT_WALKER
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_atxt.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_LIGHT_WALKER</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_CLONE_AIRLANDING">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_CLONE_AIRLANDING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_AIRLANDING_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_AIRLANDING_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_CLONE_AIRLANDING
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_laat.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_CLONE_AIRLANDING</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2740</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_LIGHT_MECHANISED">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_LIGHT_MECHANISED</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_LIGHT_MECHANISED_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_LIGHT_MECHANISED_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_LIGHT_MECHANISED
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_a4_juggernaut.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_LIGHT_MECHANISED</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2720</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_ANTI_AIR_BATTERY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_ANTI_AIR_BATTERY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_ANTI_AIR_BATTERY_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_ANTI_AIR_BATTERY_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_ANTI_AIR_BATTERY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_utaa.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_ANTI_AIR_BATTERY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		
+	</GroundCompany>
+
+	
+	<GroundCompany Name="GROUNDWAR_REP_PATHFINDERS">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_PATHFINDERS</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_PATHFINDERS_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_PATHFINDERS_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_PATHFINDERS_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_PATHFINDERS
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>I_BUTTON_CLONE_ARC_P2.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_PATHFINDERS</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>3</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1290</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_REPULSOR_ASSAULT">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_REPULSOR_ASSAULT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_REPULSOR_ASSAULT_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_REPULSOR_ASSAULT_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_REPULSOR_ASSAULT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_REPULSOR_ASSAULT
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_utat.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_REPULSOR_ASSAULT</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>3</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3520</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_HEAVY_WALKER">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_HEAVY_WALKER </Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_WALKER_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_WALKER_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_HEAVY_WALKER
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_atte.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_HEAVY_WALKER</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>6480</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_HEAVY_MECHANISED">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_HEAVY_MECHANISED</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_MECHANISED_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_MECHANISED_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_HEAVY_MECHANISED
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_a5_juggernaut.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_HEAVY_MECHANISED</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3940</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_ARTILLERY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_ARTILLERY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_ARTILLERY_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_ARTILLERY_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_ARTILLERY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_av7.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		<Company_Units>UNIT_GROUNDWAR_REP_ARTILLERY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>6330</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_CLONE_P2_COMPANY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_CLONE_P2_COMPANY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_P2_COMPANY_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_P2_COMPANY_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_P2_COMPANY_3
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_P2_COMPANY_4
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_CLONE_P2_COMPANY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>I_BUTTON_CLONE_P2.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_CLONE_P2_COMPANY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2630</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_COMBAT_AIR_PATROL">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_COMBAT_AIR_PATROL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_COMBAT_AIR_PATROL_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_COMBAT_AIR_PATROL_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_COMBAT_AIR_PATROL
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_flashblind.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_COMBAT_AIR_PATROL</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1450</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	
+	<GroundCompany Name="GROUNDWAR_REP_SPEARHEAD">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_SPEARHEAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_SPEARHEAD_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_SPEARHEAD_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_SPEARHEAD
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_a6_juggernaut.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_SPEARHEAD</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>5</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>8250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_REP_AIR_ASSAULT_BRIGADE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_REP_AIR_ASSAULT_BRIGADE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_AIR_ASSAULT_BRIGADE_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_AIR_ASSAULT_BRIGADE_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_AIR_ASSAULT_BRIGADE_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_REP_AIR_ASSAULT_BRIGADE
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_haet.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_REP_AIR_ASSAULT_BRIGADE</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>5</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3375</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<!-- ============================================================== CIS Units ============================================================== -->
+
+	
+	<GroundCompany Name="GROUNDWAR_CIS_B1_DETACHMENT">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_B1_DETACHMENT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_B1_DETACHMENT_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_B1_DETACHMENT_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_B1_DETACHMENT
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_b1.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_B1_DETACHMENT</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>984</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_RECON">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_RECON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_RECON_1
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_RECON
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>I_BUTTON_STAP_CIS.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		<Company_Units>UNIT_GROUNDWAR_CIS_RECON</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>915</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_HUNTER_KILLER">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_HUNTER_KILLER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_HUNTER_KILLER_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_HUNTER_KILLER_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_HUNTER_KILLER
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_droideka_cis.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		<Company_Units>UNIT_GROUNDWAR_CIS_HUNTER_KILLER</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>609</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_MANDO_MERCENARY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_MANDO_MERCENARY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_MANDO_MERCENARY_1
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_MANDO_MERCENARY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_ni_mandalorian.tga</Icon_Name> 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		<Company_Units>UNIT_GROUNDWAR_CIS_MANDO_MERCENARY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>1</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>420</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_HEAVY_INFANTRY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_HEAVY_INFANTRY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_HEAVY_INFANTRY_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_HEAVY_INFANTRY_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_HEAVY_INFANTRY_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_HEAVY_INFANTRY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_b2.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_HEAVY_INFANTRY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_INFILTRATION_TEAM">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_INFILTRATION_TEAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_INFILTRATION_TEAM_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_INFILTRATION_TEAM_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_INFILTRATION_TEAM_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_INFILTRATION_TEAM
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_bx_commando.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_INFILTRATION_TEAM</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2560</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_LIGHT_ARMOUR">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_LIGHT_ARMOUR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_LIGHT_ARMOUR_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_LIGHT_ARMOUR_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_LIGHT_ARMOUR_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_LIGHT_ARMOUR
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_gat.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_LIGHT_ARMOUR</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3268</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_TRADE_FED_INFANTRY_FORCE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_TRADE_FED_INFANTRY_FORCE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_TRADE_FED_INFANTRY_FORCE_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_TRADE_FED_INFANTRY_FORCE_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_TRADE_FED_INFANTRY_FORCE_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_TRADE_FED_INFANTRY_FORCE
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_mtt_cis.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_TRADE_FED_INFANTRY_FORCE</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>4343</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_ANTI_AIR_BATTERY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_ANTI_AIR_BATTERY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_ANTI_AIR_BATTERY_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_ANTI_AIR_BATTERY_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_ANTI_AIR_BATTERY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_haml.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_ANTI_AIR_BATTERY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>2</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>668</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_TRADE_FED_ARMOUR_FORCE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_TRADE_FED_ARMOUR_FORCE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_TRADE_FED_ARMOUR_FORCE_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_TRADE_FED_ARMOUR_FORCE_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_TRADE_FED_ARMOUR_FORCE
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_aat.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_TRADE_FED_ARMOUR_FORCE</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>3</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>7273</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_DEBT_COLLECTION_FORCE">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_DEBT_COLLECTION_FORCE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_DEBT_COLLECTION_FORCE_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_DEBT_COLLECTION_FORCE_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_DEBT_COLLECTION_FORCE_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_DEBT_COLLECTION_FORCE
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_hailfire.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_DEBT_COLLECTION_FORCE</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>3</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>4001</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_DESTROYER_FORMATION">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_DESTROYER_FORMATION</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_DESTROYER_FORMATION_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_DESTROYER_FORMATION_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_DESTROYER_FORMATION_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_DESTROYER_FORMATION
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_ui_droideka.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_DESTROYER_FORMATION</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>3</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>668</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_ARTILLERY">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_ARTILLERY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_ARTILLERY_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_ARTILLERY_2
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_ARTILLERY
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_hag.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_ARTILLERY</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>4470</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_AIR_RAIDER">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_AIR_RAIDER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_AIR_RAIDER_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_AIR_RAIDER_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_AIR_RAIDER_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_AIR_RAIDER
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_hmp.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_AIR_RAIDER</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>4400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_WALKER_ASSAULT">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_WALKER_ASSAULT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_WALKER_ASSAULT_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_WALKER_ASSAULT_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_WALKER_ASSAULT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_WALKER_ASSAULT
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_magnatri.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_WALKER_ASSAULT</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+			
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3587</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_MEDIUM_ARMOUR">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_MEDIUM_ARMOUR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_MEDIUM_ARMOUR_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_MEDIUM_ARMOUR_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_MEDIUM_ARMOUR_3
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_MEDIUM_ARMOUR_4
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_MEDIUM_ARMOUR
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_Persuader.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_MEDIUM_ARMOUR</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>4</Population_Value>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>4220</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+	<GroundCompany Name="GROUNDWAR_CIS_ARMOUR_ASSAULT">
+		<Variant_Of_Existing_Type>GroundWar_Spawner_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		
+		<Text_ID>TEXT_UNIT_GROUNDWAR_CIS_ARMOUR_ASSAULT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUP_SPAWNER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_ARMOUR_ASSAULT_1
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_ARMOUR_ASSAULT_2
+			TEXT_ENCYCLOPEDIA_GROUNDWAR_CIS_ARMOUR_ASSAULT_3
+			TEXT_TOOLTIP_SEPARATOR_FLUFF_BLOCK
+			TEXT_UNIT_FLUFF_CIS_ARMOUR_ASSAULT
+		</Encyclopedia_Text>
+		
+		 
+		<Icon_Name>i_button_protodeka.tga</Icon_Name>
+		 
+
+		<Lua_Script></Lua_Script>
+		<Tech_Level>99</Tech_Level>
+		
+		<Company_Units>UNIT_GROUNDWAR_CIS_ARMOUR_ASSAULT</Company_Units>
+		<Company_Transport_Unit>CR20_Landing_Craft_Light_Vehicles</Company_Transport_Unit>
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Population_Value>5</Population_Value>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>14730</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+
+	</GroundCompany>
+	
+</Skirmish_Units>

@@ -1,0 +1,1032 @@
+<?xml version="1.0"?>
+<MiscObjects>
+
+	<MiscObject Name="Demolition_Bomb">
+		<Text_ID>TEXT_OBJECT_BOMB</Text_ID>
+		<Land_Model_Name>w_smallbomb.alo</Land_Model_Name>
+		<LandBehavior>BOMB</LandBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Katarn_Building_Bomb_SFX</Death_SFXEvent_Start_Die>
+   </MiscObject>
+
+
+	<!--
+	Oksana [5/30/2005]:
+	Currect system can't target a position, only an object, so we
+	setup this dummy invisible object so that barrage mode can target it without having to rewrite entire hardpoint,
+	team and weapon targeting systems. -->
+	<MiscObject Name="Dummy_Barrage_Target">
+		<Model_Name>W_LASER_INVISIBLE.ALO</Model_Name>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<!-- <Scale_Factor>100.0</Scale_Factor> -->
+
+		<No_Colorization_Color/>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>5000</Shield_Points>
+		<Shield_Refresh_Rate>75</Shield_Refresh_Rate>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Tactical_Health>100000</Tactical_Health>
+
+		<Ship_Class>Corvette</Ship_Class>
+		<Ranking_In_Category>5</Ranking_In_Category>
+		<Formation_Priority>5</Formation_Priority>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Is_Escort>no</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+
+		<HardPoints>
+			W_Laser_Invisible_Hardpoint
+		</HardPoints>
+		
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+
+		<Target_Bones>Root</Target_Bones>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Ground_Vehicle_Turret_Target>no</Ground_Vehicle_Turret_Target>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<!-- <Space_Layer> Corvette </Space_Layer> -->
+		<Visible_On_Radar_When_Fogged>false</Visible_On_Radar_When_Fogged>
+
+		<Behavior> IDLE </Behavior>
+		<SpaceBehavior> DUMMY_STARSHIP </SpaceBehavior>
+		<LandBehavior> MARKER </LandBehavior>
+
+		<Property_Flags> NotOpportunityTarget </Property_Flags>
+
+		<CategoryMask> Corvette  </CategoryMask>
+
+   </MiscObject>
+
+
+   <MiscObject Name="Credit_Power_Up">
+		<Text_ID></Text_ID>
+		<Land_Model_Name>W_PICK_UP_COINS.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Is_Decoration>No</Is_Decoration>
+		<Scale_Factor>1.0</Scale_Factor>
+ 		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+ 		<Lua_Script>CreditPowerUp</Lua_Script>
+  </MiscObject>
+  
+  <MiscObject Name="Tech_Power_Up">
+		<Text_ID></Text_ID>
+		<Land_Model_Name>W_FLAG_MARKER_RED.ALO</Land_Model_Name>
+		<Is_Decoration>No</Is_Decoration>
+		<Scale_Factor>1.0</Scale_Factor>
+ 		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+ 		<Lua_Script>TechPowerUp</Lua_Script>
+  </MiscObject>
+  
+  
+	<MiscObject Name="R_Multiplayer_Beacon">
+		<Affiliation>Rebel</Affiliation>
+		<Text_ID>TEXT_MULTIPLAYER_BEACON</Text_ID>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_MULTIPLAYER_BEACON  </Encyclopedia_Text>
+		<Behavior>MULTIPLAYER_BEACON, IDLE</Behavior>
+		<Land_Model_Name>i_multiplayer_beacon.alo</Land_Model_Name>
+		<Space_Model_Name>i_multiplayer_beacon.alo</Space_Model_Name>
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>
+		<Radar_Icon_Name>i_icon_minimap_ping.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Tactical_Health> 100 </Tactical_Health>
+		<Beacon_Radar_Map_Event_Name> Default_Beacon_Placement </Beacon_Radar_Map_Event_Name>
+		<Beacon_Lifetime_In_Secs> 10.0 </Beacon_Lifetime_In_Secs>
+		<SFXEvent_Beacon_Placed>GUI_Toggle_Lure_On</SFXEvent_Beacon_Placed>
+	</MiscObject>
+	
+	<MiscObject Name="E_Multiplayer_Beacon">
+		<Variant_Of_Existing_Type>R_Multiplayer_Beacon</Variant_Of_Existing_Type>
+	</MiscObject>
+
+    <MiscObject Name="Radioactive_Contamination">
+        <Land_Model_Name>p_contamination_cloud.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</LandBehavior>
+		<Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+        <Unit_Abilities_Data SubObjectList="Yes">
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>18</Expiration_Seconds>
+				<Spawned_Object_Type> Small_Steam_Ground </Spawned_Object_Type>
+            </Unit_Ability>
+
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+
+            <Force_Healing_Ability Name="Radioactive_Contamination_Infantry">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>125.0</Heal_Range>
+                <Heal_Amount>-1.8</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>.10</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Infantry | Vehicle | Hero </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+            <!--<Force_Healing_Ability Name="Radioactive_Contamination_Vehicles">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-20.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Vehicle </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+            <Force_Healing_Ability Name="Radioactive_Contamination_Structures">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-1.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Structure </Applicable_Unit_Categories>
+            </Force_Healing_Ability>-->
+
+		</Abilities>
+    </MiscObject>
+
+    <MiscObject Name="Radioactive_Contamination_Speeder_Bomb">
+        <Land_Model_Name>p_contamination_cloud_speeder.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</LandBehavior>
+		<Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+        <Unit_Abilities_Data SubObjectList="Yes">
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+             	<Active_By_Default>Yes</Active_By_Default>
+                <Expiration_Seconds>5</Expiration_Seconds>
+		<Recharge_Seconds>5</Recharge_Seconds>
+		<Spawned_Object_Type> Small_Steam_Ground </Spawned_Object_Type>
+            </Unit_Ability>
+
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+
+            <Force_Healing_Ability Name="Radioactive_Contamination_Speeder">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>45.0</Heal_Range>
+                <Heal_Amount>-0.25</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>.10</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Infantry | Vehicle | Hero </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+
+		</Abilities>
+    </MiscObject>
+
+
+	<MiscObject Name="Proximity_Mine">
+		<Text_ID>TEXT_PROXIMITY_MINE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_PROXIMITY_MINE_DESC</Encyclopedia_Text>
+		<Land_Model_Name>W_landmine.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Loop_Idle_Anim_00>no</Loop_Idle_Anim_00>
+		<Mass>1.0</Mass>
+		<Tactical_Health>1</Tactical_Health>
+		<Collision_Box_Modifier>1.5</Collision_Box_Modifier>
+		<CategoryMask>Structure</CategoryMask>
+		<Influences_Capture_Point>false</Influences_Capture_Point>
+		<Is_Decoration>no</Is_Decoration>
+		<Not_Really_Selectable>true</Not_Really_Selectable>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Behavior>SELECTABLE, PROXIMITY_MINE</Behavior>
+		<LandBehavior>DAMAGE_TRACKING, HIDE_WHEN_FOGGED</LandBehavior>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<Collidable_By_Projectile_Living>yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proximity_Mine_Blast_Effect</Death_Explosions>
+		<IsDeathCloneObstacle>yes</IsDeathCloneObstacle>
+		<Remove_Upon_Death>yes</Remove_Upon_Death>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<CanCellStack>yes</CanCellStack>
+		<Avoidance_Disabled>yes</Avoidance_Disabled>
+		<Is_Visible_On_Radar>no</Is_Visible_On_Radar>
+	</MiscObject>
+
+	<MiscObject Name="Mine_Land_Prox_Antivehicle">
+		<Variant_Of_Existing_Type>Proximity_Mine</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_PROXIMITY_MINE_AV</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_PROXIMITY_MINE_AV_DESC</Encyclopedia_Text>
+		<Land_Model_Name>W_landmine_av.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Death_Explosions>Proximity_Mine_Blast_Effect_Proton</Death_Explosions>
+	</MiscObject>
+
+	<MiscObject Name="Mine_Land_Prox_Antipersonnel">
+		<Variant_Of_Existing_Type>Proximity_Mine</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_PROXIMITY_MINE_AP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_PROXIMITY_MINE_AP_DESC</Encyclopedia_Text>
+		<Land_Model_Name>W_landmine_ai.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Death_Explosions>Proximity_Mine_Blast_Effect_Concussion</Death_Explosions>
+	</MiscObject>
+
+	<MiscObject Name="Mine_Land_Prox_Fragmentation">
+		<Variant_Of_Existing_Type>Proximity_Mine</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_PROXIMITY_MINE_FRAG</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_PROXIMITY_MINE_FRAG_DESC</Encyclopedia_Text>
+		<Land_Model_Name>ap_mine.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Death_Explosions>Proximity_Mine_Blast_Effect_Fragmentation</Death_Explosions>
+	</MiscObject>
+
+
+    <MiscObject Name="Plasma_Grenade_Contamination">
+        <Land_Model_Name>p_contamination_cloud.alo</Land_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <LandBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</LandBehavior>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+        <Unit_Abilities_Data SubObjectList="Yes">
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>8</Expiration_Seconds>
+                <Spawned_Object_Type> Small_Steam_Ground </Spawned_Object_Type>
+            </Unit_Ability>
+
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+
+            <Force_Healing_Ability Name="Plasma_Grenade_Contamination_Infantry">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-10.0</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Infantry </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+            <Force_Healing_Ability Name="Plasma_Grenade_Contamination_Vehicles">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-5.0</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Vehicle </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+            <Force_Healing_Ability Name="Plasma_Grenade_Contamination_Structures">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>75.0</Heal_Range>
+                <Heal_Amount>-20.0</Heal_Amount> <!-- Negative damage means inflict pain on others -->
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Applicable_Unit_Categories> Structure </Applicable_Unit_Categories>
+            </Force_Healing_Ability>
+
+        </Abilities>
+    </MiscObject>
+
+	<MiscObject Name="Space_Special_Weapon_Source_Marker">
+		<Text_ID />
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Is_Decoration> No </Is_Decoration> <!-- Anything with a behavior other than IDLE can not be tagged as a decoration -->
+		<Is_Discardable> No </Is_Discardable>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior> DUMMY_SPECIAL_WEAPON_SOURCE </Behavior>
+		<Layer_Z_Adjust>-2500.0</Layer_Z_Adjust>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</MiscObject>
+	
+    <MiscObject Name="Trigit_Fighter_Decoy">
+		<Space_Model_Name>w_landmine.alo</Space_Model_Name>
+        <Scale_Factor>2.0</Scale_Factor>
+		<Behavior>SELECTABLE </Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, LURE, SELF_DESTRUCT, DAMAGE_TRACKING, HIDE_WHEN_FOGGED</SpaceBehavior>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<Death_Explosions> Tiny_Explosion_Space </Death_Explosions>
+		<Tactical_Health>2000</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>1.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask> Corvette </CategoryMask>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+		<!-- <Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class> -->
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>LURE</Type>
+				
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
+				     Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+				<Effective_Radius>1000</Effective_Radius>
+				
+<!-- Too many entires: Expr: db_value_text.size() >= sizeof( strtok_string_buffer )				
+				
+				<Target_Types>
+					TIE_Light_Duty,
+					TIE_Light_Duty_Squadron,
+					TIE_Light_Duty_Squadron_Double,
+					TIE_Light_Duty_Squadron_Half,
+					TIE_Fighter, 
+					TIE_Fighter_Squadron,
+					TIE_Fighter_Squadron_Double,
+					TIE_Fighter_Squadron_Half,
+					Shielded_TIE,
+					Shielded_TIE_Squadron,
+					Shielded_TIE_Squadron_Double,
+					Shielded_TIE_Squadron_Half,
+					Super_TIE,
+					Super_TIE_Squadron,
+					Super_TIE_Squadron_Double,
+					Super_TIE_Squadron_Half,
+					A9,
+					Scimitar_assault_bomber,
+					Shielded_Interceptor,
+					Howlrunner,
+					Preybird,
+					Drexl,
+					TIE_Droid,
+					TIE_Bomber,
+					TIE_gt,
+					Skipray_Blastboat,
+					Skipray_Squadron,
+					Skipray_Squadron_Double,
+					Skipray_Squadron_Half,
+					Advanced_Skipray_Blastboat,
+					Advanced_Skipray_Squadron,
+					Advanced_Skipray_Squadron_Double,
+					Advanced_Skipray_Squadron_Half,
+					ARC_170,
+					ARC_170_Squadron,
+					ARC_170_Squadron_Double,
+					ARC_170_Squadron_Half,
+					Torrent,
+					Torrent_Squadron,
+					Torrent_Squadron_Double,
+					Torrent_Squadron_Triple,
+					Torrent_Squadron_Half,
+					Twin_Ion_Engine_Starfighter,
+					Twin_Ion_Engine_Starfighter_Squadron,
+					Twin_Ion_Engine_Starfighter_Squadron_Double,
+					Twin_Ion_Engine_Starfighter_Squadron_Half,
+					Missile_TIE,
+					Missile_TIE_Squadron,
+					A-Wing,
+					Aggressor_Assault_Fighter,
+					B-Wing_E,
+					B-Wing,
+					Chirdaki,
+					Clutch,
+					Defender_Starfighter,
+					Die_Wing,
+					E-Wing,
+					HLAF,
+					IRD,
+					IRDA,
+					K-Wing,
+					Missile_Boat,
+					Rihkxyrk,
+					Shielded_Raptor,
+					StarViper_II,
+					StarViper,
+					Starwing,
+					T-Wing,
+					TIE_Aggressor,
+					TIE_Avenger,
+					TIE_Defender,
+					TIE_Heavy_Bomber,
+					TIE_Hunter,
+					TIE_Oppressor,
+					TIE_Punisher,
+					TIE_Raptor,
+					TIE_Sentinel,
+					TIE_Terror,
+					TIE_X2,
+					Trifoil,
+					V38_Assault_Fighter,
+					X_Ceptor,
+					X-TIE,
+					X-Wing,
+					Y-TIE,
+					Z-TIE,
+					A-Wing_Squadron_Double,
+					A-Wing_Squadron_Half,
+					A-Wing_Squadron,
+					A9_Squadron_Double,
+					A9_Squadron_Half,
+					A9_Squadron,
+					Aggressor_Assault_Fighter_Squadron_Double,
+					Aggressor_Assault_Fighter_Squadron_Half,
+					Aggressor_Assault_Fighter_Squadron,
+					B-Wing_E_Squadron_Double,
+					B-Wing_E_Squadron_Half,
+					B-Wing_E_Squadron,
+					B-Wing_Squadron_Double,
+					B-Wing_Squadron_Half,
+					B-Wing_Squadron,
+					Chirdaki_Squadron_Double,
+					Chirdaki_Squadron_Half,
+					Chirdaki_Squadron,
+					Clutch_Squadron_Double,
+					Clutch_Squadron_Half,
+					Clutch_Squadron,
+					CR90N_TIE_Fighter_Squadron,
+					CR90N_TIE_Raptor_Squadron,
+					Defender_Starfighter_Squadron_Double,
+					Defender_Starfighter_Squadron_Half,
+					Defender_Starfighter_Squadron,
+					Die_Wing_Squadron_Double,
+					Die_Wing_Squadron_Half,
+					Die_Wing_Squadron,
+					Drexl_Squadron_Double,
+					Drexl_Squadron_Half,
+					Drexl_Squadron,
+					E-Wing_Squadron_Double,
+					E-Wing_Squadron_Half,
+					E-Wing_Squadron,
+					HLAF_Squadron_Buildable,
+					HLAF_Squadron_Double,
+					HLAF_Squadron_Half,
+					HLAF_Squadron,
+					Howlrunner_Squadron_Double,
+					Howlrunner_Squadron_Half,
+					Howlrunner_Squadron,
+					IRD_Squadron_Double,
+					IRD_Squadron_Half,
+					IRD_Squadron,
+					IRDA_Squadron_Double,
+					IRDA_Squadron_Half,
+					IRDA_Squadron,
+					K-Wing_Squadron_Double,
+					K-Wing_Squadron_Half,
+					K-Wing_Squadron,
+					Missile_Boat_Squadron_Double,
+					Missile_Boat_Squadron_Half,
+					Missile_Boat_Squadron,
+					Mixed_Ugly_Squadron_Double,
+					Mixed_Ugly_Squadron_Half,
+					Mixed_Ugly_Squadron,
+					Preybird_Squadron_Double,
+					Preybird_Squadron_Half,
+					Preybird_Squadron,
+					Rebel_X-Wing_Squadron_Double,
+					Rebel_X-Wing_Squadron_Half,
+					Rebel_X-Wing_Squadron,
+					Rihkxyrk_Squadron_Double,
+					Rihkxyrk_Squadron_Half,
+					Rihkxyrk_Squadron,
+					Scimmy_Squadron_Double,
+					Scimmy_Squadron_Half,
+					Scimmy_Squadron,
+					Shielded_Interceptor_Squadron_Double,
+					Shielded_Interceptor_Squadron_Half,
+					Shielded_Interceptor_Squadron,
+					Shielded_Raptor_Squadron_Double,
+					Shielded_Raptor_Squadron_Half,
+					Shielded_Raptor_Squadron,
+					StarViper_II_Squadron_Double,
+					StarViper_II_Squadron_Half,
+					StarViper_II_Squadron,
+					StarViper_Squadron_Buildable,
+					StarViper_Squadron_Double,
+					StarViper_Squadron_Half,
+					StarViper_Squadron,
+					Starwing_Squadron_Double,
+					Starwing_Squadron_Half,
+					Starwing_Squadron,
+					T-Wing_Squadron_Double,
+					T-Wing_Squadron_Half,
+					T-Wing_Squadron,
+					TIE_Aggressor_Squadron_Double,
+					TIE_Aggressor_Squadron_Half,
+					TIE_Aggressor_Squadron,
+					TIE_Avenger_Squadron_Double,
+					TIE_Avenger_Squadron_Half,
+					TIE_Avenger_Squadron,
+					TIE_Bomber_Squadron_Double,
+					TIE_Bomber_Squadron_Half,
+					TIE_Bomber_Squadron,
+					TIE_Defender_Squadron_Double,
+					TIE_Defender_Squadron_Half,
+					TIE_Defender_Squadron,
+					TIE_Droid_Squadron_Double,
+					TIE_Droid_Squadron_Half,
+					TIE_Droid_Squadron,
+					TIE_gt_Squadron_Double,
+					TIE_gt_Squadron_Half,
+					TIE_gt_Squadron,
+					TIE_Heavy_Bomber_Squadron_Double,
+					TIE_Heavy_Bomber_Squadron_Half,
+					TIE_Heavy_Bomber_Squadron,
+					TIE_Hunter_Squadron_Double,
+					TIE_Hunter_Squadron_Half,
+					TIE_Hunter_Squadron,
+					TIE_Interceptor_Squadron_Double,
+					TIE_Interceptor_Squadron_Half,
+					TIE_Interceptor_Squadron,
+					TIE_Oppressor_Squadron_Double,
+					TIE_Oppressor_Squadron_Half,
+					TIE_Oppressor_Squadron,
+					TIE_Punisher_Squadron_Double,
+					TIE_Punisher_Squadron_Half,
+					TIE_Punisher_Squadron,
+					TIE_Raptor_Squadron_Double,
+					TIE_Raptor_Squadron_Half,
+					TIE_Raptor_Squadron,
+					TIE_Sentinel_Squadron_Double,
+					TIE_Sentinel_Squadron_Half,
+					TIE_Sentinel_Squadron,
+					TIE_Terror_Squadron_Double,
+					TIE_Terror_Squadron_Half,
+					TIE_Terror_Squadron,
+					TIE_X2_Squadron_Double,
+					TIE_X2_Squadron_Half,
+					TIE_X2_Squadron,
+					Trifoil_Squadron_Double,
+					Trifoil_Squadron_Half,
+					Trifoil_Squadron_Small,
+					Trifoil_Squadron_Triple,
+					Trifoil_Squadron,
+					V38_Squadron_Double,
+					V38_Squadron_Half,
+					V38_Squadron,
+					X_Ceptor_Squadron_Double,
+					X_Ceptor_Squadron_Half,
+					X_Ceptor_Squadron,
+					X-TIE_Squadron_Double,
+					X-TIE_Squadron_Half,
+					X-TIE_Squadron,
+					Y-TIE_Squadron_Double,
+					Y-TIE_Squadron_Half,
+					Y-TIE_Squadron,
+					Y-Wing_Squadron_Double,
+					Y-Wing_Squadron_Half,
+					Y-Wing_Squadron,
+					Z-TIE_Squadron_Double,
+					Z-TIE_Squadron_Half,
+					Z-TIE_Squadron,
+					Starviper,
+					StarViper_Squadron,			
+					Krsiss_Interceptor,
+					Krsiss_Interceptor_Squadron,
+					Krsiss_Interceptor_Squadron_Double,
+					Krsiss_Interceptor_Squadron_Half,
+					Syca_Bomber,
+					Syca_Bomber_Squadron,
+					Syca_Bomber_Squadron_Double,
+					Syca_Bomber_Squadron_Half,
+					Furion,
+					Furion_Squadron,
+					Furion_Squadron_Double,
+					Furion_Squadron_Half,
+					Nssiss_Clawcraft,
+					Clawcraft_Squadron,
+					Clawcraft_Squadron_Double,
+					Clawcraft_Squadron_Half,
+					Scarsiss,
+					Scarsiss_Squadron,
+					Scarsiss_Squadron_Double,
+					Scarsiss_Squadron_Half,
+					Miytil_Bomber,
+					Miytil_Fighter,
+					Patrol_Miytil_Fighter,
+					House_Miytil_Fighter,
+					Miytil_Fighter_Squadron,
+					Miytil_Fighter_Squadron_Double,
+					Miytil_Fighter_Squadron_Half,
+					Miytil_Fighter_Squadron_Buildable,
+					Patrol_Miytil_Fighter_Squadron,
+					Patrol_Miytil_Fighter_Squadron_Double,
+					Patrol_Miytil_Fighter_Squadron_Half,
+					House_Miytil_Fighter_Squadron,
+					House_Miytil_Fighter_Squadron_Double,
+					House_Miytil_Fighter_Squadron_Half,
+					Miytil_Bomber_Squadron,
+					Miytil_Bomber_Squadron_Double,
+					Miytil_Bomber_Squadron_Triple,
+					Miytil_Bomber_Squadron_Half,
+					Swarm_Droid,
+					Swarm_Squadron,
+					Swarm_Squadron_Double,
+					Swarm_Squadron_Triple,
+					Swarm_Squadron_Half,
+					E-Wing_Squadron_Buildable,
+					Defender_Starfighter_Squadron_Buildable,
+					B-Wing_Squadron_Buildable,
+					2_Warpod_Squadron_Buildable">,
+					A-Wing_Squadron_Buildable,
+					A9_Squadron_Buildable,
+					Advanced_Skipray_Squadron_Buildable,
+					Aggressor_Squadron_Buildable,
+					Avenger_Squadron_Buildable,
+					B-Wing_E_Squadron_Buildable,
+					B-Wing_Squadron_Buildable,
+					BTLB_Y-Wing_Squadron_Buildable,
+					Clawcraft_Squadron_Buildable,
+					Clutch_Squadron_Buildable,
+					Defender_Starfighter_Squadron_Buildable,
+					Die_Wing_Squadron_Buildable,
+					E-Wing_Squadron_Buildable,
+					Early_Skipray_Squadron_Buildable,
+					Furion_Squadron_Buildable,
+					Howlrunner_Squadron_Buildable,
+					IRD_Squadron_Buildable,
+					IRDA_Squadron_Buildable,
+					Krsiss_Interceptor_Squadron_Buildable,
+					Mankvim_Squadron_Buildable,
+					Missile_Boat_Squadron_Buildable,
+					Preybird_Squadron_Buildable,
+					Rebel_X-Wing_Squadron_Buildable,
+					Scarsiss_Squadron_Buildable,
+					Scimmy_Squadron_Buildable,
+					Sentinel_Squadron_Buildable,
+					Shielded_Interceptor_Squadron_Buildable,
+					Shielded_Raptor_Squadron_Buildable,
+					Skipray_Squadron_Buildable,
+					Skirmish_Decimator,
+					Starwing_Squadron_Buildable,
+					Super_TIE_Buildable,
+					Syca_Bomber_Squadron_Buildable,
+					T-Wing_Squadron_Buildable,
+					TIE_Bomber_Squadron_Buildable,
+					TIE_Defender_Squadron_Buildable,
+					TIE_Droid_Squadron_Buildable,
+					TIE_gt_Squadron_Buildable,
+					TIE_Heavy_Bomber_Squadron_Buildable,
+					TIE_Interceptor_Squadron_Buildable,
+					TIE_Oppressor_Squadron_Buildable,
+					TIE_Punisher_Squadron_Buildable,
+					TIE_Raptor_Squadron_Buildable,
+					TIE_Terror_Squadron_Buildable,
+					TIE_X2_Squadron_Buildable,
+					X_Ceptor_Squadron_Buildable,
+					X_TIE_Squadron_Buildable,
+					Y-TIE_Squadron_Buildable,
+					Y-Wing_Squadron_Buildable,
+					Z_TIE_Squadron_Buildable,
+					Z95_Squadron_Buildable,
+					Chirdaki_Squadron_Buildable,
+					K-Wing_Squadron_Buildable,
+					TIE_Fighter_Squadron_Buildable,
+					Skirmish_Gozanti_Cruiser_Squadron
+				</Target_Types> -->
+
+				<Active_By_Default>Yes</Active_By_Default>
+				<Expiration_Seconds>16</Expiration_Seconds>
+				
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Particle_Effect>Lure_Ability_Particle</Particle_Effect>
+	
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	1.0f</Mod_Multiplier><!-- Invulnerable -->
+			</Unit_Ability>
+			
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>16</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type> Tiny_Explosion_Space </Spawned_Object_Type>
+            </Unit_Ability>
+
+			
+		</Unit_Abilities_Data>
+    </MiscObject>
+	
+	<MiscObject Name="Sithspawn_Dummy">
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Scale_Factor>0.01</Scale_Factor>
+		<Behavior> </Behavior>
+        <LandBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT </LandBehavior>
+		
+		<Affiliation>Hostile</Affiliation>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<Death_Explosions />
+		<Tactical_Health>1</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>0.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>0</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask> Infantry </CategoryMask>
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+		
+		<!--<Death_Projectiles>Proj_Buff_Dummy_1</Death_Projectiles> -->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<!--<Spawned_Object_Type>Proj_Buff_Dummy_2</Spawned_Object_Type> -->
+				<Bomb_Countdown_Seconds></Bomb_Countdown_Seconds>  <!-- AI 8.12 -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Boba_Fett</SFXEvent_GUI_Unit_Ability_Activated>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>0.02</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+                <!-- <Spawned_Object_Type>Chrysalide</Spawned_Object_Type> -->
+            </Unit_Ability>
+			
+		</Unit_Abilities_Data>
+		
+		<Destruction_Survivors>
+			Chrysalide_Hostile, 1
+<!-- 			Chrysalide, .33
+			Chrysalide, .33 -->
+		</Destruction_Survivors>
+		
+		<Minimum_Destruction_Survivor_Count>1</Minimum_Destruction_Survivor_Count>
+		<Maximum_Destruction_Survivor_Count>1</Maximum_Destruction_Survivor_Count>
+		
+    </MiscObject>
+	
+	<MiscObject Name="Split_Personality_Dummy">
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Scale_Factor>2.0</Scale_Factor>
+		<Behavior>HIDE_WHEN_FOGGED </Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</SpaceBehavior>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<!-- <Death_Explosions /> -->
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Tactical_Health>1</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>1.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask> Corvette </CategoryMask>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+		<!-- <Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class> -->
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+		
+		<Destruction_Survivors>
+			Personality_Aggressive_Dummy, .5
+			Personality_Defensive_Dummy, .5
+		</Destruction_Survivors>
+		
+		<Minimum_Destruction_Survivor_Count>1</Minimum_Destruction_Survivor_Count>
+		<Maximum_Destruction_Survivor_Count>1</Maximum_Destruction_Survivor_Count>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>0.01</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+                <Spawned_Object_Type />
+            </Unit_Ability>
+			
+		</Unit_Abilities_Data>
+    </MiscObject>
+	
+	<MiscObject Name="Personality_Aggressive_Dummy">
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Scale_Factor>2.0</Scale_Factor>
+		<Behavior>HIDE_WHEN_FOGGED </Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</SpaceBehavior>
+		<Affiliation>Empire</Affiliation>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<Death_Explosions />
+		<Tactical_Health>1</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>1.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask> Wall </CategoryMask>
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+		
+		<Abilities SubObjectList="Yes">
+			<Enable_Ability Name="Harrsk_Personality_Aggressive_Bonus_Enabler">
+				<Ability_Name> Harrsk_Personality_Aggressive_Bonus </Ability_Name>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types> Shockwave_Star_Destroyer </Applicable_Unit_Types>
+				<Affects_All_Allies> No </Affects_All_Allies>
+			</Enable_Ability>
+		</Abilities>
+    </MiscObject>
+
+	<MiscObject Name="Personality_Defensive_Dummy">
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Scale_Factor>2.0</Scale_Factor>
+		<Behavior>HIDE_WHEN_FOGGED </Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</SpaceBehavior>
+		<Affiliation>Empire</Affiliation>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<Death_Explosions />
+		<Tactical_Health>1</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>1.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask> Wall </CategoryMask>
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+		
+		<Abilities SubObjectList="Yes">
+			<Enable_Ability Name="Harrsk_Personality_Defensive_Bonus_Enabler">
+				<Ability_Name> Harrsk_Personality_Defensive_Bonus </Ability_Name>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types> Shockwave_Star_Destroyer </Applicable_Unit_Types>
+				<Affects_All_Allies> No </Affects_All_Allies>
+			</Enable_Ability>
+		</Abilities>
+    </MiscObject>
+	
+	<MiscObject Name="Buff_Dummy_Misc_Object">
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Scale_Factor>0.01</Scale_Factor>
+		<Behavior> </Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT, SPAWN_SQUADRON</SpaceBehavior>
+		
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		
+		<HardPoints>
+			HP_CR90_Hangar
+		</HardPoints>
+		
+		<Affiliation>Hostile</Affiliation>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<Death_Explosions />
+		<Tactical_Health>1</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>0.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>0</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask> Fighter </CategoryMask>
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+		
+		<!--<Death_Projectiles>Proj_Buff_Dummy_1</Death_Projectiles> -->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<!--<Spawned_Object_Type>Proj_Buff_Dummy_2</Spawned_Object_Type> -->
+				<Bomb_Countdown_Seconds></Bomb_Countdown_Seconds>  <!-- AI 8.12 -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Boba_Fett</SFXEvent_GUI_Unit_Ability_Activated>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>0.02</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+                <!-- <Spawned_Object_Type>Proj_Buff_Dummy_3</Spawned_Object_Type> -->
+            </Unit_Ability>
+			
+		</Unit_Abilities_Data>
+    </MiscObject>
+	 
+	 <MiscObject Name="Fighter_Shield_Local_Buff_Misc_Object_1">
+		<Variant_Of_Existing_Type>Buff_Dummy_Misc_Object</Variant_Of_Existing_Type>
+		
+		<!--<Death_Projectiles>Proj_Fighter_Shield_Local_Buff_Mod_1</Death_Projectiles> -->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<!--<Spawned_Object_Type>Proj_Fighter_Shield_Local_Buff_Mod_2</Spawned_Object_Type> -->
+				<Bomb_Countdown_Seconds></Bomb_Countdown_Seconds>  <!-- AI 8.12 -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Boba_Fett</SFXEvent_GUI_Unit_Ability_Activated>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>0.02</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+                <!--<Spawned_Object_Type>Proj_Fighter_Shield_Local_Buff_Mod_3</Spawned_Object_Type>-->
+            </Unit_Ability>
+			
+		</Unit_Abilities_Data>
+		
+     </MiscObject>
+	 
+	 <MiscObject Name="EX_F_Explosion_Countdown_Dummy">
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Scale_Factor>2.0</Scale_Factor>
+		<Behavior>HIDE_WHEN_FOGGED </Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT</SpaceBehavior>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Decoration>No</Is_Decoration>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+		<!-- <Death_Explosions /> -->
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Tactical_Health>10000</Tactical_Health>
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+        <CanCellStack>yes</CanCellStack>
+        <Mass>1.0</Mass>
+        <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask> Corvette </CategoryMask>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+		<!-- <Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class> -->
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+        <Not_Really_Selectable>True</Not_Really_Selectable>
+		
+		<Affiliation>Hostile</Affiliation>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>8</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+                <!--<Spawned_Object_Type>Proj_EX_F_Explosion</Spawned_Object_Type> -->
+            </Unit_Ability>
+			
+		</Unit_Abilities_Data>
+    </MiscObject>
+	
+	<MiscObject Name="EX_F_Local_Buff_Misc_Object_1">
+		<Variant_Of_Existing_Type>Buff_Dummy_Misc_Object</Variant_Of_Existing_Type>
+		
+		<!--<Death_Projectiles>Proj_EX_F_Local_Buff_Mod_1</Death_Projectiles> -->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<!--<Spawned_Object_Type>Proj_EX_F_Local_Buff_Mod_2</Spawned_Object_Type> -->
+				<Bomb_Countdown_Seconds></Bomb_Countdown_Seconds>  <!-- AI 8.12 -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Boba_Fett</SFXEvent_GUI_Unit_Ability_Activated>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>0.05</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+               <!-- <Spawned_Object_Type>Proj_EX_F_Local_Buff_Mod_3</Spawned_Object_Type> -->
+            </Unit_Ability>
+			
+		</Unit_Abilities_Data>
+		
+     </MiscObject>
+	 
+	 <MiscObject Name="Art_of_War_Local_Buff_Misc_Object_1">
+		<Variant_Of_Existing_Type>Buff_Dummy_Misc_Object</Variant_Of_Existing_Type>
+		
+		<!--<Death_Projectiles>Proj_Art_of_War_Local_Buff_Mod_1</Death_Projectiles> -->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<!--<Spawned_Object_Type>Proj_Art_of_War_Local_Buff_Mod_2</Spawned_Object_Type> -->
+				<Bomb_Countdown_Seconds></Bomb_Countdown_Seconds>  <!-- AI 8.12 -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Boba_Fett</SFXEvent_GUI_Unit_Ability_Activated>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+
+            <Unit_Ability>
+                <Type>SELF_DESTRUCT</Type>
+                <Expiration_Seconds>0.02</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+                <!--<Spawned_Object_Type>Proj_Art_of_War_Local_Buff_Mod_3</Spawned_Object_Type> -->
+            </Unit_Ability>
+			
+		</Unit_Abilities_Data>
+		
+     </MiscObject>
+
+</MiscObjects>

@@ -1,0 +1,1098 @@
+﻿<?xml version="1.0" ?>
+
+<!--******************************************************-->
+<!--*****   Fall of the Republic: Rimward Campaign   *****-->
+<!--******************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_CIS_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Sora_Bulq">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Sora_Bulq_Team</Reward_Param1>
+		<Reward_Param2>Raxus_Second</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Merai">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Merai_Free_Dac</Reward_Param1>
+		<Reward_Param2>Murkhana</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Passel_Argente">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Argente_Team</Reward_Param1>
+		<Reward_Param2>Murkhana</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Yansu_Grjak">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Yansu_Grjak_Team</Reward_Param1>
+		<Reward_Param2>Quell</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Solenoid">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Solenoid_CR90</Reward_Param1>
+		<Reward_Param2>Ryloth</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!-- when/if asset is done -->
+	<!-- <Event Name="Spawn_Kul_Teska">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Kul_Teska_Team</Reward_Param1>
+		<Reward_Param2>Quell</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event> -->
+
+
+	<Event Name="CIS_Rimward_Campaign_Bounce_Speech_01">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Florrum, Ruusan</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_BOUNCE_SPEECH_01</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Bounce_Speech_02">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Rishi</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_BOUNCE_SPEECH_02</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="CIS_Florrum_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Florrum</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Rimward_Perfect_Piracy_Checker</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rodia_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Rodia</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Rimward_Campaign_Act_II_Completed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Quell_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Quell</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Venator_Venture_Epilogue</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<Event Name="CIS_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+
+	<Event Name="Lock_Invisible_Hand_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Grievous_Team_Providence_Munificent</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Lock_Invisible_Hand_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>GrievousRecu2IH</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Lock_Malevolence_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Grievous_Team_Malevolence_Providence</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Lock_Malevolence_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Grievous_Team_Malevolence_Recusant</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+	
+	<Event Name="CIS_Bothawui_Business_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Bothawui</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_BOTHAWUI_BUSINESS.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Bothawui_Business.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Bothawui_Business_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_01</Reward_Param1>
+		<Reward_Param2>12.3</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_02</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Rimward_Campaign_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>6</Event_Param1>
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Dialog_Popup>true</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_I</Story_Tag>
+		<Prereq>CIS_Rimward_Campaign_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_I_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ACT_I_PLANETS_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_I</Reward_Param1>
+	</Event>
+
+
+	<Event Name="CIS_Venator_Venture_Tactical">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Quell</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Quell</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_VENATOR_VENTURE.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Venator_Venture.xml</Reward_Param7>
+		<Reward_Param8>0</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>DESTROY_AI</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>CIS_Bothawui_Business_Epilogue</Prereq>
+	</Event>
+
+	<Event Name="CIS_Venator_Venture_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>CIS_Venator_Venture_Tactical</Prereq>
+	</Event>
+	
+	<Event Name="CIS_Venator_Venture_Epilogue_Speech">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_21</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+        <Reward_Param3 />
+        <Reward_Param4 />
+        <Reward_Param5 />
+        <Reward_Param6 />
+        <Reward_Param7 />
+        <Reward_Param8 />
+        <Reward_Param9 />
+        <Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Venator_Venture_Tactical</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Rimward_Rodia_Rendezvous_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>80</Event_Param1>
+		<Prereq>CIS_Rimward_Campaign_Act_I_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Rimward_Rodia_Rendezvous">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Rimward_Rodia_Rendezvous_Timer</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_RODIA_RENDEZVOUS_START</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_04</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Navik_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_05</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Gunray_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Rimward_Campaign_Speech_04</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_II</Story_Tag>
+		<Prereq>CIS_Rimward_Campaign_Speech_05</Prereq>
+	</Event>
+
+
+	<Event Name="Trigger_CIS_Gunray_Enter_Rodia">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Rodia</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>CIS_Rimward_Campaign_Act_II_Dialog</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_CIS_Gunray_Deploy_Rodia">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Rodia</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>CIS_Rimward_Campaign_Act_II_Dialog</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Rimward_Campaign_Speech_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_RODIA_RENDEZVOUS_DONE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_06</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Gunray_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_07">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_07</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Leia_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Rimward_Campaign_Speech_06</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_II_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_II</Reward_Param1>
+		<Prereq>CIS_Rimward_Campaign_Speech_07</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act III *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Rimward_Gunray_Rescue_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>40</Event_Param1>
+		<Prereq>CIS_Rimward_Campaign_Act_II_Completed</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Rimward_Gunray_Rescue">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Rimward_Gunray_Rescue_Timer</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_08">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_GUNRAY_RESCUE_START</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_08</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_III</Story_Tag>
+		<Prereq>CIS_Rimward_Campaign_Speech_08</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Venator_Ventress_Checker_I">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Venator_Ventress.xml</Event_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Venator_Ventress_Checker_II">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Venator_Tranquility</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Venator_Ventress_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Venator_Ventress_Checker_I</Prereq>
+		<Prereq>CIS_Venator_Ventress_Checker_II</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Rimward_Campaign_Speech_09_Trigger">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_GUNRAY_RESCUED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_09</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Gunray_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_09">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_09</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Gunray_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Rimward_Campaign_Speech_09_Trigger</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_III_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_III</Reward_Param1>		
+		<Prereq>CIS_Rimward_Campaign_Speech_09</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Rimward_Campaign_Speech_10_Trigger">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_GUNRAY_DIED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_10</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_10">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_10</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Rimward_Campaign_Speech_10_Trigger</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_III_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_III</Reward_Param1>		
+		<Prereq>CIS_Rimward_Campaign_Speech_10</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act IV **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Rimward_Pirate_Deal_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>600</Event_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Rimward_Pirate_Deal">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Rimward_Pirate_Deal_Timer</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Rimward_Campaign_Speech_11">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_RIMWARD_PIRACY_START</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_11</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_12">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_12</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Rimward_Campaign_Speech_11</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_IV_Dialog_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_IV_01</Story_Tag>
+		<Prereq>CIS_Rimward_Campaign_Speech_11</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Scouting_01">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param5>1</Event_Param5>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>CIS_DOOKU_SEARCH_RECON_01</Reward_Param1>
+		<Reward_Param2>REBEL</Reward_Param2>
+		<Prereq>CIS_Rimward_Campaign_Act_IV_Dialog_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_IV_Dialog_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_DOOKU_SEARCH_02</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_IV_01</Reward_Param1>		
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_IV_02</Story_Tag>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Scouting_02">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param5>1</Event_Param5>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>CIS_DOOKU_SEARCH_RECON_02</Reward_Param1>
+		<Reward_Param2>REBEL</Reward_Param2>
+		<Prereq>CIS_Rimward_Campaign_Act_IV_Dialog_02</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_IV_Dialog_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_DOOKU_SEARCH_03</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_IV_02</Reward_Param1>		
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_IV_03</Story_Tag>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Scouting_03">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param5>1</Event_Param5>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>CIS_DOOKU_SEARCH_RECON_03</Reward_Param1>
+		<Reward_Param2>REBEL</Reward_Param2>
+		<Prereq>CIS_Rimward_Campaign_Act_IV_Dialog_03</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_IV_Dialog_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_DOOKU_SEARCH_04</Event_Param2>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_IV_03</Reward_Param1>		
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_IV_04</Story_Tag>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Scouting_04">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param5>1</Event_Param5>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>CIS_DOOKU_SEARCH_RECON_04</Reward_Param1>
+		<Reward_Param2>REBEL</Reward_Param2>
+		<Prereq>CIS_Rimward_Campaign_Act_IV_Dialog_04</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_IV_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_DOOKU_SEARCH_DONE</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_IV_04</Reward_Param1>		
+	</Event>
+
+
+	<Event Name="CIS_Perfect_Piracy_Tactical">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Florrum</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_PERFECT_PIRACY.TED</Reward_Param4>
+		<Reward_Param5>Independent_Forces</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Perfect_Piracy.xml</Reward_Param7>
+		<Reward_Param8>0</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_PLAYER</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>CIS_Rimward_Campaign_Act_IV_Completed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Perfect_Piracy_Checker">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>CIS_Perfect_Piracy_Tactical</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act V ***************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Rimward_Campaign_Speech_13">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_PERFECT_PIRACY_DONE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_13</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_V_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_V</Story_Tag>
+		<Prereq>CIS_Rimward_Campaign_Speech_13</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Rimward_Campaign_Speech_14">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_FLORRUM_CONQUERED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_14</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_V_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+´		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_V</Reward_Param1>		
+		<Prereq>CIS_Rimward_Campaign_Speech_14</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act VI **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Rimward_Malevolence_Timer">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Pammant</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Rimward_Malevolence">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>40</Event_Param1>
+		<Prereq>CIS_Rimward_Malevolence_Timer</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_15">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_RIMWARD_MALEVOLENCE_START</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_15</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Quarren_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_VI_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>6</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_VI</Story_Tag>
+		<Prereq>CIS_Rimward_Campaign_Speech_15</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Malevolence_II_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Research_Malevolence_2_Recusant, Dummy_Research_Malevolence_2_Munificent</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_16">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_RIMWARD_MALEVOLENCE_DONE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_16</Reward_Param1>
+		<Reward_Param2>6</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_VI_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_VI</Reward_Param1>
+		<Prereq>CIS_Rimward_Campaign_Speech_16</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act VII *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Enter_Sector_Rishi">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Circumtore, Manda, Ukio</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>CIS_Rimward_Campaign_Act_I_Dialog</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_17">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_17</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Enter_Sector_Rishi</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_VII_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>7</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Rimward_Campaign_CIS_Act_VII</Story_Tag>
+		<Prereq>CIS_Rimward_Campaign_Speech_17</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Grievous_Enter_Rishi">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Rishi</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Rishi</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Rimward_Campaign_Speech_17</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rishi_Rookie_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<!--<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Rishi</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_RISHI_ROOKIE_CIS.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Rishi_Rookie.xml</Reward_Param7>
+		<Reward_Param8>0</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_AI</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>-->
+		<Prereq>CIS_Grievous_Enter_Rishi</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rishi_Rookie_Tactical_Checker">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Rishi_Rookie.xml</Event_Param1>
+		<Prereq>CIS_Rishi_Rookie_Tactical</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Rimward_Campaign_Speech_18">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Rishi</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_18</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_VII_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Rimward_Campaign_CIS_Act_VII</Reward_Param1>
+		<Prereq>CIS_Rimward_Campaign_Speech_18</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Kamino_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kamino</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_19">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_KAMINO_CONQUERED</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_19</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Ventress_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Speech_20">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_20</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Rimward_Campaign_Speech_19</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************* Act VIII *************-->
+	<!--************************************-->
+
+	<!-- Skytop Storyline -->
+
+	<!--************************************-->
+	<!--************** Act IX **************-->
+	<!--************************************-->
+
+	<!-- Toydaria Storyline or Maridun/Lurmen Storyline or Hutt Treaty Storyline -->
+
+	<!--************************************-->
+	<!--*************** Act X **************-->
+	<!--************************************-->
+
+	<!-- Honoghr Storyline -->
+
+	<!--************************************-->
+	<!--************** Act XI **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Rimward_Campaign_Speech_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5.0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_CIS_SPEECH_03</Reward_Param1>
+		<Reward_Param2>7</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Rimward_Campaign_Act_I_Completed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Rimward_Campaign_Act_XI_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Story_Dialog>Dialog_Rimward_Campaign_CIS</Story_Dialog>
+		<Story_Chapter>11</Story_Chapter>
+		<Story_Tag>Rimward_Campaign_CIS_Act_XI</Story_Tag>
+		<Prereq>CIS_Rimward_Campaign_Speech_03</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Unlock_GC_Progression_ODL">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>CIS_Rimward_Campaign_Speech_03</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ODL_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>GC_Progression_Dummy</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ODL_AU">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ODL_GC_PROGRESSION_AU</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_AU_DurgesLance_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ODL">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ODL_GC_PROGRESSION</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_DurgesLance_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+</Story>

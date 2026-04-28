@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!--   -->
+<FunctionSet>
+	
+	<Skynet_Unrestricted_Grab_Space>
+		<Goal>Skynet_Unrestricted_Grab_Space</Goal>
+		<Function>Skynet_Should_Perform_Unrestricted_Grab_Space</Function>
+	</Skynet_Unrestricted_Grab_Space>
+
+</FunctionSet>

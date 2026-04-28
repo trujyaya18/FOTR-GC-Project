@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<EnumDefinition>
+
+        <BombingRun> 0 </BombingRun>
+        <Flying> 1 </Flying>
+        <HeavyTrackedE> 2 </HeavyTrackedE>
+        <HeavyTrackedR> 3 </HeavyTrackedR>
+        <Hover> 4 </Hover>
+        <Infantry> 5 </Infantry>
+        <Lancet> 6 </Lancet>
+        <LargeHoverE> 7 </LargeHoverE>
+        <LargeHoverR> 8 </LargeHoverR>
+        <LargeWalker> 9 </LargeWalker>
+        <LargeWheels> 10 </LargeWheels>
+        <LightHover> 11 </LightHover>
+        <SmallWalker> 12 </SmallWalker>
+        <Space> 13 </Space>
+        <Spotter> 14 </Spotter>
+        <Tracked> 15 </Tracked>
+        <Walker> 16 </Walker>
+        <Wheeled> 17 </Wheeled>
+    
+</EnumDefinition>
+
+
+

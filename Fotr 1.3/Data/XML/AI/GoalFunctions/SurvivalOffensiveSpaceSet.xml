@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+	<Destroy_Unit>
+		<Goal>Destroy_Unit</Goal>
+		<Function>Unit_Needs_To_Be_Destroyed_Survival</Function>
+	</Destroy_Unit>
+
+	<Bomb_Unit>
+		<Goal>Bomb_Unit</Goal>
+		<Function>Unit_Needs_To_Be_Bombed</Function>
+	</Bomb_Unit>
+	
+	<Sweep_Area>
+		<Goal>Sweep_Area</Goal>
+		<Function>Area_Needs_Sweeping</Function>
+	</Sweep_Area>
+
+	<Space_Escort_Goal>
+		<Goal>Space_Escort_Goal</Goal>
+		<Function>Unit_Needs_Escort</Function>
+	</Space_Escort_Goal>
+	
+	<Space_Frigate_Escort_Goal>
+		<Goal>Space_Frigate_Escort_Goal</Goal>
+		<Function>Frigate_Needs_Escort</Function>
+	</Space_Frigate_Escort_Goal>
+
+	<Burn_Units_Space>
+		<Goal>Burn_Units_Space</Goal>
+		<Function>One</Function>
+	</Burn_Units_Space>
+	
+</FunctionSet>

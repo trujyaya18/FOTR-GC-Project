@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<Campaigns>
+
+	<Campaign Name="Sandbox_Test_Map">
+		<Campaign_Set> Sandbox_BattleTest_Map </Campaign_Set>
+		<Sort_Order>30</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_MAP_TESTING </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_MAP_TESTING </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		
+		<Is_Listed>false</Is_Listed>
+		<Tutorial>true</Tutorial>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Coruscant,
+				Test_Land,
+				Test_Space,
+		</Locations>
+
+		<Trade_Routes>
+			Coruscant_Test_Land,
+			Coruscant_Test_Space
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Test_Land </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+        
+        <Starting_Active_Player> Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name></Rebel_Story_Name>
+       	<Empire_Story_Name></Empire_Story_Name>
+
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	
+		<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel, 9000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<!-- <Starting_Forces> Rebel, Test_Space, Ground_Hypervelocity_Gun</Starting_Forces> -->
+		<Starting_Forces> Rebel, Test_Land, Ground_Ion_Cannon</Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, NewRepublic_Star_Base_2</Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, CIS_Shipyard_Level_One</Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, Generic_Colony_One </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, Generic_Colony_Two </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, Providence_Dreadnought</Starting_Forces>
+		
+		<Starting_Forces> Rebel, Test_Land, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Generic_Galactic_Turbolaser_Tower_Defenses </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Generic_Planetary_Shield </Starting_Forces>
+		
+		<Starting_Forces> Rebel, Test_Land, B1_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, B1_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, B2_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Crab_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, CIS_STAP_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Dwarf_Spider_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, OG9_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Persuader_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, CIS_MTT_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Magna_Company </Starting_Forces>
+		
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire, 9000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Clone_Jumptrooper_Phase_One_Company </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Clone_Jumptrooper_Phase_Two_Company </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser_Lasers </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser_Lasers </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+		
+		
+		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Trooper_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Trooper_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Trooper_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Kotas_Militia_Trooper_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Kotas_Militia_Trooper_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, ARC_Phase_One_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, ARC_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_BARC_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_BARC_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_XT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_XT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_XT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Gaba18_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Flashblind_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_TX130_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_TX130_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_TX130_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_UT_AA_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_UT_AA_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_OT_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_OT_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Jedi_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Senate_Commando_Platoon </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Senate_Commando_Platoon </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Senate_Commando_Platoon </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Senate_Commando_Platoon </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+	</Campaign>	
+
+	<Campaign Name="Sandbox_Test_Map_Defend">
+		<Campaign_Set> Sandbox_BattleTest_Map_Defend </Campaign_Set>
+		<Sort_Order>30</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_MAP_TESTING_DEFEND </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_MAP_TESTING </Description_Text>
+
+        <Camera_Shift_X> 40.0 </Camera_Shift_X>
+        <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+		
+		<Is_Listed>false</Is_Listed>
+		<Tutorial>true</Tutorial>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Coruscant,
+				Test_Land,
+				Test_Space
+		</Locations>
+
+		<Trade_Routes>
+			Coruscant_Test_Land,
+			Coruscant_Test_Space
+		</Trade_Routes> 	
+		
+        <Home_Location> Rebel, Test_Land </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+        
+        <Starting_Active_Player> Rebel </Starting_Active_Player>
+
+		<Rebel_Story_Name></Rebel_Story_Name>
+        	<Empire_Story_Name></Empire_Story_Name>
+        	       
+		<AI_Player_Control> Empire, SkynetAI </AI_Player_Control>
+						
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		
+				
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+        <!-- Special Case Planets for Cantinas and Hutt Palaces -->
+		
+		
+
+		<!-- Rebel Starting Forces -->
+
+		<Starting_Credits> Rebel, 900 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<!-- <Starting_Forces> Rebel, Test_Space, Ground_Hypervelocity_Gun</Starting_Forces> -->
+		<!--<Starting_Forces> Rebel, Test_Space, Ground_Ion_Cannon</Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, CIS_Shipyard_Level_Two</Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, NewRepublic_Star_Base_3</Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, Providence_Dreadnought</Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, Providence_Dreadnought</Starting_Forces>
+		<Starting_Forces> Rebel, Test_Space, Providence_Dreadnought</Starting_Forces> -->
+		
+		<Starting_Forces> Rebel, Test_Land, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, R_Ground_Heavy_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Generic_Galactic_Turbolaser_Tower_Defenses </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Generic_Planetary_Shield </Starting_Forces>
+		
+		<Starting_Forces> Rebel, Test_Land, B1_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, B1_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, B2_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Crab_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, CIS_STAP_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Dwarf_Spider_Droid_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, OG9_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Persuader_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, CIS_MTT_Company </Starting_Forces>
+		<Starting_Forces> Rebel, Test_Land, Magna_Company </Starting_Forces>
+		
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire, 900 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Arquitens </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser_Lasers </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser_Lasers </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser_Lasers </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Carrack_Cruiser_Lasers </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+		
+		
+		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Trooper_Team_Deployed </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Trooper_Team_Deployed </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Trooper_Team_Deployed </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Kotas_Militia_Trooper_Team_Deployed </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Kotas_Militia_Trooper_Team_Deployed </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, ARC_Phase_One_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, ARC_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_BARC_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_BARC_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_RT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_XT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_XT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_XT_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Gaba18_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Flashblind_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_TX130_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_TX130_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_TX130_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AV7_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_UT_AA_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_UT_AA_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_OT_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_OT_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+
+	</Campaign>	
+	
+ </Campaigns>

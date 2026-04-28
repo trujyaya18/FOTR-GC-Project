@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<Goals>
+	
+	<CIS_Fund_Subfactions>
+		<AIGoalApplicationFlags> Global </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> MajorItem </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 30.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+	</CIS_Fund_Subfactions>	
+	
+</Goals>

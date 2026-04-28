@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<FunctionSet>
+
+	<Remove_Corruption>
+		<Goal>Remove_Corruption</Goal>
+		<Function>Zero</Function>
+	</Remove_Corruption>
+
+</FunctionSet>

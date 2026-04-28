@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+	<Destroy_Unit>
+		<Goal>Destroy_Unit</Goal>
+		<Function>Unit_Needs_To_Be_Destroyed</Function>
+	</Destroy_Unit>
+
+	<Bomb_Unit>
+		<Goal>Bomb_Unit</Goal>
+		<Function>Unit_Needs_To_Be_Bombed</Function>
+	</Bomb_Unit>
+	
+	<Sweep_Area>
+		<Goal>Sweep_Area</Goal>
+		<Function>Area_Needs_Sweeping</Function>
+	</Sweep_Area>
+
+	<Space_Escort_Goal>
+		<Goal>Space_Escort_Goal</Goal>
+		<Function>Unit_Needs_Escort</Function>
+	</Space_Escort_Goal>
+	
+	<Space_Frigate_Escort_Goal>
+		<Goal>Space_Frigate_Escort_Goal</Goal>
+		<Function>Frigate_Needs_Escort</Function>
+	</Space_Frigate_Escort_Goal>
+
+	<Hide_Transports>
+		<Goal>Hide_Transports</Goal>
+		<Function>Need_To_Hide_Units</Function>
+	</Hide_Transports>
+	
+	<Space_Retreat>
+		<Goal>Space_Retreat</Goal>
+		<Function>Should_Retreat_From_Space</Function>
+	</Space_Retreat>
+
+	<Ground_To_Space_Damage>
+		<Goal>Ground_To_Space_Damage</Goal>
+		<Function>Needs_Hypervelocity_Shot</Function>
+	</Ground_To_Space_Damage>
+
+	<Ground_To_Space_Disable>
+		<Goal>Ground_To_Space_Disable</Goal>
+		<Function>Needs_Ion_Shot</Function>
+	</Ground_To_Space_Disable>
+
+	<Tactical_Multiplayer_Build_Space_Units_Generic>
+		<Goal>Tactical_Multiplayer_Build_Space_Units_Generic</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Generic_Space</Function>
+	</Tactical_Multiplayer_Build_Space_Units_Generic>
+
+	<Purchase_Space_Upgrades_Generic>
+		<Goal>Purchase_Space_Upgrades_Generic</Goal>
+		<Function>Should_Purchase_Ability_Generic_Space</Function>
+	</Purchase_Space_Upgrades_Generic>
+	
+	<Purchase_Space_Special_Weapon>
+		<Goal>Purchase_Space_Special_Weapon</Goal>
+		<Function>Should_Purchase_Special_Weapon_Space</Function>
+	</Purchase_Space_Special_Weapon>
+
+	<Secure_Build_Pad_Space>
+		<Goal>Secure_Build_Pad_Space</Goal>
+		<Function>Need_To_Secure_Contestable_Space</Function>
+	</Secure_Build_Pad_Space>
+
+	<Build_Structure_Space>
+		<Goal>Build_Structure_Space</Goal>
+		<Function>Need_To_Build_Structure_Space</Function>
+	</Build_Structure_Space>
+
+	<Build_Refinery_Space>
+		<Goal>Build_Refinery_Space</Goal>
+		<Function>Need_To_Build_Refinery_Space</Function>
+	</Build_Refinery_Space>
+
+	<Skirmish_Upgrade_Space_Station>
+		<Goal>Skirmish_Upgrade_Space_Station</Goal>
+		<Function>Skirmish_Needs_New_Space_Station_With_Multiplier</Function>
+	</Skirmish_Upgrade_Space_Station>
+	
+	<Burn_Units_Space>
+		<Goal>Burn_Units_Space</Goal>
+		<Function>Should_Burn_Units_Space</Function>
+	</Burn_Units_Space>
+	
+	<Move_Up_Fleet>
+		<Goal>Move_Up_Fleet</Goal>
+		<Function>Should_Move_Up_Fleet</Function>
+	</Move_Up_Fleet>
+	
+	<Tactical_Multiplayer_Build_Space_Units_Flagship>
+		<Goal>Tactical_Multiplayer_Build_Space_Units_Flagship</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Space_Units_Flagship</Function>
+	</Tactical_Multiplayer_Build_Space_Units_Flagship>
+	
+	<Reinforce_Flagship_Mode>
+		<Goal>Reinforce_Flagship_Mode</Goal>
+		<Function>Need_Reinforce_Flagship_Mode</Function>
+	</Reinforce_Flagship_Mode>
+
+	<Build_Flagship_Refinery_Space>
+		<Goal>Build_Flagship_Refinery_Space</Goal>
+		<Function>Need_To_Build_Flagship_Refinery_Space</Function>
+	</Build_Flagship_Refinery_Space>
+
+</FunctionSet>

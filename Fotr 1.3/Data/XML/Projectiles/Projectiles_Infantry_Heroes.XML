@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<Projectiles>
+
+
+<!-- ************************************************************************************** -->
+<!-- ********************                     Blasters                       ************** -->
+<!-- ************************************************************************************** -->
+
+
+	<Projectile Name="HeroProj_Rifle_Red">
+		<Variant_Of_Existing_Type>Proj_Rifle_Red</Variant_Of_Existing_Type>	
+		<Projectile_Damage>20</Projectile_Damage>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Carbine_Red">
+		<Variant_Of_Existing_Type>Proj_Carbine_Red</Variant_Of_Existing_Type>
+		<Projectile_Damage>10</Projectile_Damage>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Light_Repeater_Red">
+		<Variant_Of_Existing_Type>Proj_Light_Repeater_Red</Variant_Of_Existing_Type>
+		<Projectile_Damage>10</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Heavy_Repeater_Red">
+		<Variant_Of_Existing_Type>Proj_Heavy_Repeater_Red</Variant_Of_Existing_Type>
+		<Projectile_Damage>15</Projectile_Damage>
+	</Projectile>
+		
+	<Projectile Name="HeroProj_Sniper_AI_Blaster_Red">
+		<Variant_Of_Existing_Type>Proj_Sniper_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Projectile_Damage>75.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Rifle_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Rifle_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_Laser_Blue_Inf.ALO</Land_Model_Name>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Carbine_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Carbine_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_Laser_Blue_Inf.ALO</Land_Model_Name>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Light_Repeater_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Light_Repeater_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_Laser_Blue_Inf.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Heavy_Repeater_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Heavy_Repeater_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_Laser_Blue_Inf.ALO</Land_Model_Name>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Sniper_AI_Blaster_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Sniper_AI_Blaster_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_Laser_Blue_Inf.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Rifle_Green">
+		<Variant_Of_Existing_Type>HeroProj_Rifle_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_INF.ALO</Land_Model_Name>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Carbine_Green">
+		<Variant_Of_Existing_Type>HeroProj_Carbine_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_INF.ALO</Land_Model_Name>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Light_Repeater_Green">
+		<Variant_Of_Existing_Type>HeroProj_Light_Repeater_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_INF.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Heavy_Repeater_Green">
+		<Variant_Of_Existing_Type>HeroProj_Heavy_Repeater_Red</Variant_Of_Existing_Type>
+		<Land_Model_Name>PROJ_LASER_GREEN_INF.ALO</Land_Model_Name>
+	</Projectile>
+			
+
+
+<!-- ************************************************************************************** -->
+<!-- ********************                   Slugthrower                     ************** -->
+<!-- ************************************************************************************** -->
+	
+
+	<Projectile Name="HeroProj_Slug_Rifle">
+		<Variant_Of_Existing_Type>Proj_Slug_Rifle</Variant_Of_Existing_Type>
+		<Projectile_Damage>20</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Carbine">
+		<Variant_Of_Existing_Type>Proj_Slug_Carbine</Variant_Of_Existing_Type>
+		<Projectile_Damage>10</Projectile_Damage>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Slug_Light_Repeater">
+		<Variant_Of_Existing_Type>Proj_Slug_Light_Repeater</Variant_Of_Existing_Type>
+		<Projectile_Damage>10</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Heavy_Repeater">
+		<Variant_Of_Existing_Type>Proj_Slug_Heavy_Repeater</Variant_Of_Existing_Type>
+		<Projectile_Damage>15</Projectile_Damage>
+	</Projectile>
+		
+	<Projectile Name="HeroProj_Slug_Sniper">
+		<Variant_Of_Existing_Type>Proj_Slug_Sniper</Variant_Of_Existing_Type>
+		<Projectile_Damage>75.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Bowcaster">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Sniper</Variant_Of_Existing_Type>
+		<Damage_Type> DamageL_Slug </Damage_Type>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Rifle_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Rifle</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_blue.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Carbine_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Carbine</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_blue_small.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Light_Repeater_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Light_Repeater</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_blue_small.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Heavy_Repeater_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Heavy_Repeater</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_blue.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Sniper_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Sniper</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_blue_big.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Bowcaster_Blue">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Bowcaster</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_blue_big.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Rifle_Green">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Rifle</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_green.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Carbine_Green">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Carbine</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_green_small.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Light_Repeater_Green">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Light_Repeater</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_green_small.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Heavy_Repeater_Green">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Heavy_Repeater</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_green.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Sniper_Green">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Sniper</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_green_big.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Slug_Bowcaster_Green">
+		<Variant_Of_Existing_Type>HeroProj_Slug_Bowcaster</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_green_big.ALO</Land_Model_Name>
+	</Projectile>
+
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                     Explosives                     ************** -->
+<!-- ************************************************************************************** -->
+	
+	<Projectile Name="HeroProj_Rail_Detonator">
+		<Variant_Of_Existing_Type>Proj_Rail_Detonator</Variant_Of_Existing_Type>	
+		<Projectile_Damage>30</Projectile_Damage>
+		<Projectile_Blast_Area_Range> 10 </Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage> 20 </Projectile_Blast_Area_Damage>
+	</Projectile>
+	
+	<Projectile Name="HeroProj_Launch_Proton_Missile">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>30.0</Projectile_Blast_Area_Damage>
+
+		<!-- Extra range/turn for hero missile tracking -->
+		<Projectile_Max_Flight_Distance>1200.0</Projectile_Max_Flight_Distance>
+		<Max_Rate_Of_Turn>2.8</Max_Rate_Of_Turn>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Launch_Proton_Grenade">
+		<Variant_Of_Existing_Type>Proj_Proton_Grenade</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>12.5</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Launch_Concussion_Grenade">
+		<Variant_Of_Existing_Type>Proj_Concussion_Grenade</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>10.0</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+
+	<!-- Thrown infantry grenades are functionally the same as light grenades of same type, with arc movement -->
+	<!-- So far as hero options go they are the light variant with any launcher using heavier stuff above -->
+
+	<Projectile Name="HeroProj_Thrown_Concussion_Grenade">
+		<Variant_Of_Existing_Type>Proj_Light_Concussion_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>5.0</Projectile_Blast_Area_Damage>
+		<Projectile_Damage>10.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Thrown_Proton_Grenade">
+		<Variant_Of_Existing_Type>Proj_Light_Concussion_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>7.5</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>3.5</Projectile_Blast_Area_Range>
+		<Projectile_Damage>15.0</Projectile_Damage>
+		<Damage_Type> DamageL_ProtonWarhead </Damage_Type>
+		<Land_Model_Name>W_grenade_proton.ALO</Land_Model_Name>
+	</Projectile>
+	<!-- No nonheroic thrown proton greandes currently -->
+
+	<Projectile Name="HeroProj_Thrown_Thermal_Grenade">
+		<Variant_Of_Existing_Type>Proj_Light_Thermal_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>6.25</Projectile_Blast_Area_Damage>
+		<Projectile_Damage>12.5</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Thrown_Ion_Grenade">
+		<Variant_Of_Existing_Type>Proj_Light_Ion_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>7.5</Projectile_Blast_Area_Damage>
+		<Projectile_Damage>15.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Thrown_Flame_Grenade">
+		<Variant_Of_Existing_Type>Proj_Light_Flame_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>7.5</Projectile_Blast_Area_Damage>
+		<Projectile_Damage>15.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Thrown_Sonic_Grenade">
+		<Variant_Of_Existing_Type>Proj_Light_Sonic_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>7.5</Projectile_Blast_Area_Damage>
+		<Projectile_Damage>15.0</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Wrist_Rocket">
+		<Variant_Of_Existing_Type>Proj_Wrist_rocket</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>7.5</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                     Exotic                        ************** -->
+<!-- ************************************************************************************** -->
+	
+	<Projectile Name="HeroProj_Disruptor">
+		<Variant_Of_Existing_Type>Proj_Disruptor</Variant_Of_Existing_Type>	
+		<Projectile_Damage>60</Projectile_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Sonic_Blaster">
+		<Variant_Of_Existing_Type>Proj_Sonic_Blaster</Variant_Of_Existing_Type>	
+		<Projectile_Blast_Area_Damage> 20.0 </Projectile_Blast_Area_Damage>
+	</Projectile>
+
+	<Projectile Name="HeroProj_Concussion_Rifle">
+		<Variant_Of_Existing_Type>Proj_Concussion_Rifle</Variant_Of_Existing_Type>	
+		<Projectile_Blast_Area_Damage> 15 </Projectile_Blast_Area_Damage>
+	</Projectile>
+	
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                    Base Game                       ************** -->
+<!-- ************************************************************************************** -->
+	
+	<Projectile Name="Proj_Tyber_Zann_Blaster_Shotgun">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_InfantryBlaster </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>20.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>100.0</Projectile_Max_Flight_Distance>
+
+		<Projectile_Damage>0.0</Projectile_Damage>
+        <Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+        <Projectile_Blast_Area_Range>25.0</Projectile_Blast_Area_Range>
+        <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle />
+		<Projectile_Ground_Detonation_Particle />
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Object_Creation_Particle>Tyber_Shotgun_Effect</Projectile_Object_Creation_Particle>
+
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>100</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Urai_Cortosis_Blades">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_Lightsaber </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>12.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>25.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+        <Projectile_Blast_Area_Range>18.0</Projectile_Blast_Area_Range>
+        <Projectile_Blast_Area_Damage>90.0</Projectile_Blast_Area_Damage>
+        <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle />
+		<Projectile_Ground_Detonation_Particle />
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>100</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Lightsaber_Vader">
+		<Variant_Of_Existing_Type>Proj_Lightsaber</Variant_Of_Existing_Type>
+		<Projectile_Damage>100.0</Projectile_Damage>
+	</Projectile>
+
+</Projectiles>

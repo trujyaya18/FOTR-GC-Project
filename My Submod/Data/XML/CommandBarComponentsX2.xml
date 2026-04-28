@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<CommandBarComponents>
+	
+	<!-- Nuevos para Galactic Controls -->
+	
+	<CommandBarComponent Name="b_filters24">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_BOMBER</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_bombers.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_bombers_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter2.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+
+    <CommandBarComponent Name="b_filters25">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_LTCRUISERS</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_ltcruisers.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_ltcruisers_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter3.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>
+   
+	<CommandBarComponent Name="b_filters26">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_CARRIERS</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>i_button_command_bar_carriers.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>i_button_command_bar_carriers_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>	
+	
+	<CommandBarComponent Name="b_filters27">
+            <Type>Button</Type>
+            <Scale>0.60</Scale>
+			<Tooltip_Text>TEXT_FBUTTONS_NEWCANON</Tooltip_Text>
+            <Blank_Texture_Name>i_button_back_new.tga</Blank_Texture_Name>
+            <Icon_Texture_Name>I_BUTTON_COMMAND_BAR_NEWCANON.tga</Icon_Texture_Name>
+            <Mouse_Over_Texture_Name>i_button_command_bar_filter_over.tga</Mouse_Over_Texture_Name>
+            <Selected_Texture_Name>I_BUTTON_COMMAND_BAR_NEWCANON_press.tga</Selected_Texture_Name>
+            <Disabled_Texture_Name>i_button_command_bar_filter4.tga</Disabled_Texture_Name>
+            <Group>Filter_Tab_4</Group>
+            <Swap_Texture>False</Swap_Texture>
+            <Tab>True</Tab>
+            <Selected_Alpha>True</Selected_Alpha>
+            <Mouse_Over_SFX>GUI_Highlight_Mouse_Over</Mouse_Over_SFX>
+			<Click_SFX>GUI_Dial_Switch_SFX</Click_SFX>
+            <Toggle>True</Toggle>
+            <Click_Shift>True</Click_Shift>
+    </CommandBarComponent>		
+	
+	
+</CommandBarComponents>

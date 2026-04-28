@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<FunctionSet>
+
+	<Republic_Buy_Heroes>
+		<Goal>Republic_Buy_Heroes</Goal>
+		<Function> High </Function>
+	</Republic_Buy_Heroes>
+	
+</FunctionSet>

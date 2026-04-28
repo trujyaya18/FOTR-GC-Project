@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+
+<FunctionSet>
+
+	<Republic_Conquer_Pirate>
+		<Goal>Conquer_Pirate</Goal>
+		<Function> Republic_Should_Conquer_Pirate_Planet </Function>
+	</Republic_Conquer_Pirate>
+	
+	<Republic_Conquer_Opponent>
+		<Goal>Conquer_Opponent</Goal>
+		<Function>Republic_Should_Conquer_Opponent_Planet</Function>
+	</Republic_Conquer_Opponent>
+
+	<Republic_Conquer_to_Reconnect>
+		<Goal>Conquer_to_Reconnect</Goal>
+		<Function>Republic_Should_Reconnect_Islands</Function>
+	</Republic_Conquer_to_Reconnect>
+	
+	<Republic_Defend_Planet>
+		<Goal>Defend_Planet</Goal>
+		<Function>Needs_Defensive_Fleet</Function>
+	</Republic_Defend_Planet>
+		
+	<Republic_Build_Space_Forces>
+		<Goal>Build_Space_Forces</Goal>
+		<Function>Allow_Blind_Space_Production</Function>
+	</Republic_Build_Space_Forces>
+	
+	<Republic_Build_Ground_Forces>
+		<Goal>Build_Ground_Forces</Goal>
+		<Function>Allow_Blind_Ground_Production</Function>
+	</Republic_Build_Ground_Forces>
+
+	<Republic_GrowTowardDistantSystem>
+		<Goal>Distant_System_Path_Bonus</Goal>
+		<Function>One</Function>
+	</Republic_GrowTowardDistantSystem>
+	
+	<Republic_Flush_MajorItem_Budget>
+		<Goal>Flush_MajorItem_Budget</Goal>
+		<Function>Flush_MajorItem_Budget</Function>
+	</Republic_Flush_MajorItem_Budget>
+	
+	<Republic_Crush_Opponent>
+		<Goal>Crush_Opponent</Goal>
+		<Function>Republic_Should_Crush_Opponent_Planet</Function>
+	</Republic_Crush_Opponent>
+	
+	<Republic_Build_SuperCapital>
+		<Goal>Build_SuperCapital</Goal>
+		<Function>Allow_SuperCapital_Production</Function>
+	</Republic_Build_SuperCapital>
+	
+	<Republic_Unrestricted_Grab_Space>
+		<Goal>Unrestricted_Grab_Space</Goal>
+		<Function>Republic_Should_Perform_Unrestricted_Grab_Space</Function>
+	</Republic_Unrestricted_Grab_Space>
+	
+	<Republic_Unrestricted_Grab_Land>
+		<Goal>Unrestricted_Grab_Land</Goal>
+		<Function>Republic_Should_Perform_Unrestricted_Grab_Land</Function>
+	</Republic_Unrestricted_Grab_Land>
+	
+	<Republic_Rescue_Trapped_Fleet>
+		<Goal>Rescue_Trapped_Fleet</Goal>
+		<Function>Republic_Trapped_Fleet</Function>
+	</Republic_Rescue_Trapped_Fleet>	
+
+	<Republic_LiftBlockade>
+		<Goal>Lift_Blockade</Goal>
+		<Function>Needs_Blockade_Lifted</Function>
+	</Republic_LiftBlockade>
+	
+	<Republic_Defend_Major_Planet>
+		<Goal>Defend_Major_Planet</Goal>
+		<Function>Major_Defensive_World</Function>
+	</Republic_Defend_Major_Planet>
+
+</FunctionSet>

@@ -1,0 +1,373 @@
+<?xml version="1.0" ?>
+<LandSecondarySkydomes>
+
+<!-- These 4 skys are now obsolite and should not be used   G.C. -->
+	
+	<LandSecondarySkydome Name="Day_Blue_Horizon_Sky">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skyorange_horizon_evening.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+	
+	<LandSecondarySkydome Name="Telos_Glow">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skydome_telos_glow.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Day_Desert_Horizon_Sky">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skyorange_horizon_evening.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Evening_Blue_Horizon_Sky">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skyorange_horizon_evening.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Evening_Desert_Horizon_Sky">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_skyorange_horizon_evening.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+
+
+
+<!-- Below sky props are good to use   G.C. -->
+
+	<LandSecondarySkydome Name="Urban_Traffic00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_sky_urban_traffic00.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>300.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Cloudy_Distance">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_SKYORANGE_HORIZON.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Layer_Z_Adjust>-50.0</Layer_Z_Adjust>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Cloudy_Distance_x120%">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_SKYORANGE_HORIZON.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Behavior></Behavior>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Layer_Z_Adjust>-60.0</Layer_Z_Adjust>
+	</LandSecondarySkydome>
+	
+	<LandSecondarySkydome Name="Cloudy_Distance_x140%">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_SKYORANGE_HORIZON.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.4</Scale_Factor>
+		<Behavior></Behavior>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Layer_Z_Adjust>-70.0</Layer_Z_Adjust>
+	</LandSecondarySkydome>
+	
+	<LandSecondarySkydome Name="Cloudy_Distance_x160%">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_SKYORANGE_HORIZON.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.6</Scale_Factor>
+		<Behavior></Behavior>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Layer_Z_Adjust>-80.0</Layer_Z_Adjust>
+	</LandSecondarySkydome>
+	
+	<LandSecondarySkydome Name="Cloudy_Distance_x200%">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_SKYORANGE_HORIZON.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Behavior></Behavior>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+	</LandSecondarySkydome>
+	
+	<LandSecondarySkydome Name="Cloudy_Distance_x240%">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_SKYORANGE_HORIZON.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>2.4</Scale_Factor>
+		<Behavior></Behavior>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Layer_Z_Adjust>-120.0</Layer_Z_Adjust>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Planet_Rings00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_sky_rings00.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Planet_Rings_larger00">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_sky_rings01.alo</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+	
+<!-- TR space -->
+
+	<LandSecondarySkydome Name="Planet_Backdrop_Low_Orbit_Death_Star_Hull">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>EB_DeathStar_Flat_A.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Planet_Backdrop_Low_Orbit_Continental_One">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>w_Planet_LowOrbit_ContinentalOne.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Planet_Backdrop_Low_Orbit_Ecumenopolis_One">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>w_Planet_LowOrbit_EcumenopolisOne.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Star_Backdrop_TR_NEBULA_ASC02">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_STARS_NEBULA_Asc2.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Star_Backdrop_TR_NEBULA_ASC05">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_STARS_NEBULA_Asc5.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Star_Backdrop_TR_NEBULA_ASC07">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_STARS_NEBULA_Asc7.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+	
+	<LandSecondarySkydome Name="Star_Backdrop_TR_NEBULA_ASC08">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_STARS_NEBULA_Asc8.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Star_Backdrop_TR_NEBULA_ASC09">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_STARS_NEBULA_ASC9.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+	<LandSecondarySkydome Name="Star_Backdrop_TR_Nebula_ASC10">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_STARS_NEBULA_Asc10.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+	
+	<LandSecondarySkydome Name="Star_Backdrop_TR_NEBULA_ASC12">
+		<Text_ID />
+		<Galactic_Model_Name></Galactic_Model_Name>
+		<Land_Model_Name>W_STARS_NEBULA_TWELVE.ALO</Land_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+       <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Scale_Factor>6.0</Scale_Factor>
+		<Behavior></Behavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<In_Background>no</In_Background>
+		<No_Reflection_Below_Detail_Level>0</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+	</LandSecondarySkydome>
+
+</LandSecondarySkydomes>	

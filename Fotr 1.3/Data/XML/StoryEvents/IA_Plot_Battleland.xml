@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+	<Lua_Script>Battle_Remnant</Lua_Script>
+	<Active_Plot>StoryEvents\IA_Tactical_Battleland.xml</Active_Plot>
+</Story_Mode_Plots>

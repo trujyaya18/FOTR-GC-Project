@@ -1,0 +1,182 @@
+<?xml version="1.0" ?>
+<!-- Equations that define perception functions -->
+<Equations>
+	<Tax_Count>
+		Variable_Self.StructureCount {Parameter_Type = "Tax_Agency", 
+									Parameter_Only_Consider_Complete = 1.0}
+	</Tax_Count>
+	
+	<Mines_Count>
+		Variable_Self.StructureCount {Parameter_Type = "Mining_Facility", 
+									Parameter_Only_Consider_Complete = 1.0}
+	</Mines_Count>
+	
+	<Barracks_Count>
+		Variable_Self.StructureCount {Parameter_Type = "E_Ground_Barracks", 
+									Parameter_Type = "A_Ground_Barracks", 			
+									Parameter_Type = "T_Ground_Barracks", 
+									Parameter_Type = "Z_Ground_Barracks",	
+									Parameter_Type = "P_Ground_Barracks",
+									Parameter_Type = "R_Ground_Barracks",
+									Parameter_Type = "C_Ground_Barracks",
+									Parameter_Type = "U_Ground_Barracks", 
+									Parameter_Type = "HC_Ground_Barracks",
+									Parameter_Type = "M_Ground_Barracks",
+									Parameter_Only_Consider_Complete = 1.0}
+	</Barracks_Count>
+	
+	<GovernedPlanet_Count>
+		Variable_Self.StructureCount {Parameter_Type = "Empire_MoffPalace", 
+									Parameter_Type = "Maldrood_MoffPalace",
+									Parameter_Type = "Zsinj_MoffPalace",
+									Parameter_Type = "Eriadu_MoffPalace",
+									Parameter_Type = "Pentastar_MoffPalace",
+									Parameter_Type = "Hand_GovernorOffice",
+									Parameter_Type = "NewRep_SenatorsOffice",
+									Parameter_Type = "CSA_LocalOffice",
+									Parameter_Type = "House_Royal",
+									Parameter_Type = "Mando_Palace",
+									Parameter_Only_Consider_Complete = 1.0}
+	</GovernedPlanet_Count>	
+	
+	<PilotAcademy_Count>
+		Variable_Self.StructureCount {Parameter_Type = "Pilot_Academy", Parameter_Only_Consider_Complete = 1.0}
+	</PilotAcademy_Count>
+	
+	<NavalAcademy_Count>
+		Variable_Self.StructureCount {Parameter_Type = "Naval_Academy",
+									Parameter_Type = "Remnant_Capital",
+									Parameter_Type = "PA_Capital",
+									Parameter_Type = "Maldrood_Capital",
+									Parameter_Type = "Eriadu_Capital",
+									Parameter_Type = "NewRep_Senate",
+									Parameter_Type = "Rancor_Base",
+									Parameter_Type = "CSA_Capital",
+									Parameter_Type = "U_Ground_Palace",
+									Parameter_Type = "Hapan_Palace",
+									Parameter_Type = "Mando_Palace",
+									Parameter_Type = "Carida_Academy",
+									Parameter_Type = "Anaxes_War_College",
+									Parameter_Type = "Tactical_Droid_Factory",
+									Parameter_Only_Consider_Complete = 1.0}
+	</NavalAcademy_Count>
+	
+	<CloningFacility_Count>
+		Variable_Self.StructureCount {Parameter_Type = "Cloning_HQ", Parameter_Only_Consider_Complete = 1.0}
+	</CloningFacility_Count>
+	
+	<LightFactory_Count>
+		Variable_Self.StructureCount {Parameter_Type = "E_Ground_Light_Vehicle_Factory", 
+									Parameter_Type = "A_Ground_Light_Vehicle_Factory",
+									Parameter_Type = "T_Ground_Light_Vehicle_Factory",
+									Parameter_Type = "Z_Ground_Light_Vehicle_Factory",					
+									Parameter_Type = "P_Ground_Light_Vehicle_Factory",
+									Parameter_Type = "R_Ground_Light_Vehicle_Factory", 
+									Parameter_Type = "C_Ground_Light_Vehicle_Factory",
+									Parameter_Type = "U_Ground_Vehicle_Factory",
+									Parameter_Type = "HC_Ground_Light_Vehicle_Factory",
+									Parameter_Type = "M_Ground_Light_Vehicle_Factory",
+									Parameter_Only_Consider_Complete = 1.0}
+	</LightFactory_Count>
+	
+	<HeavyFactory_Count>
+		Variable_Self.StructureCount {Parameter_Type = "E_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "A_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "T_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "Z_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "P_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "R_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "C_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "U_Ground_Droid_Works",
+									Parameter_Type = "HC_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "M_Ground_Heavy_Vehicle_Factory",
+									Parameter_Type = "E_Ground_Advanced_Vehicle_Factory",
+									Parameter_Type = "A_Ground_Advanced_Vehicle_Factory",
+									Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
+									Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
+									Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
+									Parameter_Only_Consider_Complete = 1.0}
+	</HeavyFactory_Count>
+	
+	<Tradestation_Count>
+		Variable_Self.StructureCount {Parameter_Type = "Generic_Tradestation", Parameter_Only_Consider_Complete = 1.0}
+	</Tradestation_Count>
+	
+	<Resource_Trade_Hub>
+0.0
+<!-- Trade Hub -->
++ Variable_Target.Type.IsType {Parameter_Type = "Abregado_Rae"}
++ Variable_Target.Type.IsType {Parameter_Type = "Atchorb"}
++ Variable_Target.Type.IsType {Parameter_Type = "Atzerri"}
++ Variable_Target.Type.IsType {Parameter_Type = "Bazaar"}
++ Variable_Target.Type.IsType {Parameter_Type = "Bimmisaari"}
++ Variable_Target.Type.IsType {Parameter_Type = "Bothawui"}
++ Variable_Target.Type.IsType {Parameter_Type = "Brentaal"}
++ Variable_Target.Type.IsType {Parameter_Type = "Byblos"}
++ Variable_Target.Type.IsType {Parameter_Type = "Celanon"}
++ Variable_Target.Type.IsType {Parameter_Type = "Chazwa"}
++ Variable_Target.Type.IsType {Parameter_Type = "Columex"}
++ Variable_Target.Type.IsType {Parameter_Type = "Elrood"}
++ Variable_Target.Type.IsType {Parameter_Type = "Enarc"}
++ Variable_Target.Type.IsType {Parameter_Type = "Entralla"}
++ Variable_Target.Type.IsType {Parameter_Type = "Eriadu"}
++ Variable_Target.Type.IsType {Parameter_Type = "Feriae_Junction"}
++ Variable_Target.Type.IsType {Parameter_Type = "Filve"}
++ Variable_Target.Type.IsType {Parameter_Type = "Formos"}
++ Variable_Target.Type.IsType {Parameter_Type = "Halmad"}
++ Variable_Target.Type.IsType {Parameter_Type = "Hollastin"}
++ Variable_Target.Type.IsType {Parameter_Type = "Iphigin"}
++ Variable_Target.Type.IsType {Parameter_Type = "Kafrene"}
++ Variable_Target.Type.IsType {Parameter_Type = "Ketaris"}
++ Variable_Target.Type.IsType {Parameter_Type = "Lantillies"}
++ Variable_Target.Type.IsType {Parameter_Type = "Lioan"}
++ Variable_Target.Type.IsType {Parameter_Type = "Mrlsst"}
++ Variable_Target.Type.IsType {Parameter_Type = "Nar_Haaska"}
++ Variable_Target.Type.IsType {Parameter_Type = "Ord_Mantell"}
++ Variable_Target.Type.IsType {Parameter_Type = "Randon"}
++ Variable_Target.Type.IsType {Parameter_Type = "Rduba"}
++ Variable_Target.Type.IsType {Parameter_Type = "Ringo_Vinda"}
++ Variable_Target.Type.IsType {Parameter_Type = "Sanrafsix"}
++ Variable_Target.Type.IsType {Parameter_Type = "Sleheyron"}
++ Variable_Target.Type.IsType {Parameter_Type = "Stivic"}
++ Variable_Target.Type.IsType {Parameter_Type = "Svivren"}
++ Variable_Target.Type.IsType {Parameter_Type = "Taanab"}
++ Variable_Target.Type.IsType {Parameter_Type = "Talcene"}
++ Variable_Target.Type.IsType {Parameter_Type = "The_Wheel"}
++ Variable_Target.Type.IsType {Parameter_Type = "Vondarc"}
++ Variable_Target.Type.IsType {Parameter_Type = "Wroona"}
++ Variable_Target.Type.IsType {Parameter_Type = "Yaga_Minor"}
++ Variable_Target.Type.IsType {Parameter_Type = "Zyzek"}
+	</Resource_Trade_Hub>
+	
+	<Infrastructure_Score>
+		(
+			Function_GroundbaseLevel.Evaluate
+			-
+			Function_Open_Ground_Structure_Slots.Evaluate
+		)
+		+
+		(
+			2 * Function_StarbaseLevel.Evaluate
+			-
+			Function_MaxStarbaseLevel.Evaluate
+		)
+		+
+		(
+			Function_Planet_Has_Shipyard.Evaluate
+			+
+			Function_Planet_Has_Company.Evaluate
+			+
+			Function_Planet_Has_Local_Infrastructure_Building.Evaluate
+		)
+	</Infrastructure_Score>
+	
+	<Total_Slots>
+		Function_MaxGroundbaseLevel.Evaluate + Function_MaxStarbaseLevel.Evaluate
+	</Total_Slots>
+	
+	<Open_Slots>
+		Function_Open_Ground_Structure_Slots.Evaluate + Function_MaxStarbaseLevel.Evaluate - Function_StarbaseLevel.Evaluate
+	</Open_Slots>
+	
+</Equations>

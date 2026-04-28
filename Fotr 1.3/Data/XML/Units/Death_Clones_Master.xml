@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Death_Clones_Space>
+
+	<Death_Clone Name="Shipyard_Level_One_Death_Clone">
+		<Space_Model_Name>Light_Shipyard_D.alo</Space_Model_Name>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+		<Scale_Factor>0.75</Scale_Factor>
+		<Layer_Z_Adjust> -150 </Layer_Z_Adjust>
+	</Death_Clone>
+	
+	<Death_Clone Name="Shipyard_Level_Two_Death_Clone">
+		<Space_Model_Name>NV_HeavyShipyard_D.alo</Space_Model_Name>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+		<Scale_Factor>0.75</Scale_Factor>
+		<Layer_Z_Adjust> -150 </Layer_Z_Adjust>
+	</Death_Clone>
+	
+	<Death_Clone Name="Shipyard_Level_Three_Death_Clone">
+		<Space_Model_Name>NV_CapitalShipyard_D.alo</Space_Model_Name>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+		<Scale_Factor>0.75</Scale_Factor>
+		<Layer_Z_Adjust> -200 </Layer_Z_Adjust>
+	</Death_Clone>
+	
+	<Death_Clone Name="Shipyard_Level_Four_Death_Clone">
+		<Space_Model_Name>NV_DreadShipyard_D.alo</Space_Model_Name>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+		<Scale_Factor>0.75</Scale_Factor>
+		<Layer_Z_Adjust> -200 </Layer_Z_Adjust>
+	</Death_Clone>
+	
+	<Death_Clone Name="XQ5_Platform_Death_Clone">
+		<Space_Model_Name>XQ5_platform_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Golan_One_Death_Clone">
+		<Space_Model_Name>NV_GolanOne_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Golan_Two_Death_Clone">
+		<Space_Model_Name>NV_GolanTwo_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Golan_Three_Death_Clone">
+		<Space_Model_Name>NV_GolanThree_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Golan_Colony_One_Death_Clone">
+		<Space_Model_Name>Golan1Colony_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="N_Gravity_Well_Station_Death_Clone">
+		<Space_Model_Name>NB_CommJamStation_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+
+	<Death_Clone Name="Skirmish_Hutt_Asteroid_Base_Death_Clone">
+		<Space_Model_Name>NB_APBase_D.alo</Space_Model_Name>
+		<Scale_Factor>0.85</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="E_Gravity_Well_Station_Death_Clone">
+		<VarIant_Of_Existing_Type>N_Gravity_Well_Station_Death_Clone</VarIant_Of_Existing_Type>
+	</Death_Clone>
+
+	<Death_Clone Name="Template_Planetary_Shield_Death_Clone">
+		<Land_Model_Name>nb_planetary_shield_dc.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Remove_Upon_Death>false</Remove_Upon_Death>		
+		<Bombing_Run_Prevention_Radius>0</Bombing_Run_Prevention_Radius>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Disruptor_Death_Clone_00">
+		<Land_Model_Name>W_DISRUPTOR_DEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.075</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Disruptor_Death_Clone_01">
+		<Land_Model_Name>W_DISRUPTOR_DEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.075</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Short_Disruptor_Death_Clone_00">
+		<Land_Model_Name>W_DISRUPTOR_DEATH.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Short_Disruptor_Death_Clone_01">
+		<Land_Model_Name>W_DISRUPTOR_DEATH.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Disruptor_Death_Clone_00">
+		<Land_Model_Name>W_DISRUPTOR_DEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.45</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Disruptor_Death_Clone_01">
+		<Land_Model_Name>W_DISRUPTOR_DEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.45</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Fire_Death_Clone_00">
+		<Land_Model_Name>W_FLAMEDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.075</Scale_Factor>
+		<Death_Persistence_Duration> 5 </Death_Persistence_Duration>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Fire_Death_Clone_01">
+		<Land_Model_Name>W_FLAMEDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.075</Scale_Factor>
+		<Death_Persistence_Duration> 5 </Death_Persistence_Duration>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+
+	<Death_Clone Name="Infantry_Short_Fire_Death_Clone_00">
+		<Land_Model_Name>W_FLAMEDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Short_Fire_Death_Clone_01">
+		<Land_Model_Name>W_FLAMEDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Fire_Death_Clone_00">
+		<Land_Model_Name>W_FLAMEDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.45</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Fire_Death_Clone_01">
+		<Land_Model_Name>W_FLAMEDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.45</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Electric_Death_Clone_00">
+		<Land_Model_Name>W_ELECTRICDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.075</Scale_Factor>
+		<Death_Persistence_Duration> 5 </Death_Persistence_Duration>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Electric_Death_Clone_01">
+		<Land_Model_Name>W_ELECTRICDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.075</Scale_Factor>
+		<Death_Persistence_Duration> 5 </Death_Persistence_Duration>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+
+	<Death_Clone Name="Infantry_Short_Electric_Death_Clone_00">
+		<Land_Model_Name>W_ELECTRICDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Short_Electric_Death_Clone_01">
+		<Land_Model_Name>W_ELECTRICDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Electric_Death_Clone_00">
+		<Land_Model_Name>W_ELECTRICDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.45</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Electric_Death_Clone_01">
+		<Land_Model_Name>W_ELECTRICDEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.45</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+
+	<Death_Clone Name="Infantry_Melt_Death_Clone_00">
+		<Land_Model_Name>w_infect.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<Death_SFXEvent_Start_Die>Unit_Infantry_Infected_Death</Death_SFXEvent_Start_Die>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Short_Melt_Death_Clone_00">
+		<Land_Model_Name>w_infect.alo</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<Death_SFXEvent_Start_Die>Unit_Infantry_Infected_Death</Death_SFXEvent_Start_Die>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Melt_Death_Clone_00">
+		<Land_Model_Name>w_infect.alo</Land_Model_Name>
+		<Scale_Factor>1.4</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<Death_SFXEvent_Start_Die>Unit_Infantry_Infected_Death</Death_SFXEvent_Start_Die>
+	</Death_Clone>
+
+	<!-- Plasma death uses fire one for current placeholder -->
+
+	<Death_Clone Name="Infantry_Plasma_Death_Clone_00">
+		<Land_Model_Name>W_PLASMADEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.075</Scale_Factor>
+		<Death_Persistence_Duration> 5 </Death_Persistence_Duration>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Plasma_Death_Clone_01">
+		<Land_Model_Name>W_PLASMADEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.075</Scale_Factor>
+		<Death_Persistence_Duration> 5 </Death_Persistence_Duration>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+
+	<Death_Clone Name="Infantry_Short_Plasma_Death_Clone_00">
+		<Land_Model_Name>W_PLASMADEATH.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Short_Plasma_Death_Clone_01">
+		<Land_Model_Name>W_PLASMADEATH.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Plasma_Death_Clone_00">
+		<Land_Model_Name>W_PLASMADEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.45</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Infantry_Tall_Plasma_Death_Clone_01">
+		<Land_Model_Name>W_PLASMADEATH.ALO</Land_Model_Name>
+		<Scale_Factor>1.45</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+
+</Death_Clones_Space>

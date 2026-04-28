@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--****************	Clone swap overhead **************-->
+<!--******************************************************-->
+
+
+
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="GC_Progress_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+	
+	<Event Name="Unlock_Clone_Trooper_II">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Clonetrooper_Phase_Two_Team</Reward_Param1>
+		<Prereq>GC_Progress_03</Prereq>
+	</Event>
+	
+	<Event Name="Lock_Phase_One">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Clonetrooper_Phase_One_Team</Reward_Param1>
+		<Prereq>GC_Progress_03</Prereq>
+	</Event>
+	
+	<Event Name="Lock_Speeder">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Republic_74Z_Bike_Company</Reward_Param1>
+		<Prereq>GC_Progress_03</Prereq>
+	</Event>
+	
+	<Event Name="Unlock_BARC">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Republic_BARC_Company</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+		<Prereq>GC_Progress_03</Prereq>
+	</Event>
+
+	<Event Name="Unlock_ARC_Trooper_II">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>ARC_Phase_Two_Team</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+		<Prereq>GC_Progress_03</Prereq>
+	</Event>
+	
+	<Event Name="Lock_ARC_Phase_One">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>ARC_Phase_One_Team</Reward_Param1>
+		<Prereq>Unlock_ARC_Trooper_II</Prereq>
+		<Prereq>GC_Progress_03</Prereq>
+	</Event>
+	
+</Story>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--****************************************************-->
+<!--************ Rimward: Bothawui Business ************-->
+<!--****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Bothawui_Business</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Bothawui_Business.XML</Active_Plot>
+
+</Story_Mode_Plots>

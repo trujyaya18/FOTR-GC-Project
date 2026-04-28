@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+ <Lua_Script>VictoryPointHandler</Lua_Script>
+ <Active_Plot>Conquests\GroundTactical\Tactical_GroundBattles.XML</Active_Plot>
+
+ 
+</Story_Mode_Plots>

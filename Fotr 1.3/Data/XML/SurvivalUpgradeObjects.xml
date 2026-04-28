@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UpgradeObjects>
+
+	<!-- CIS SURVIVAL BASE UPGRADES-->
+    <UpgradeObject Name="Survival_CIS_Level_2_Starbase_Upgrade">
+        <Behavior>DUMMY_UPGRADE</Behavior>
+        <Affiliation>Rebel</Affiliation>
+		
+        <Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>2880</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites> Survival_CIS_Starbase </Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+        <Previous_Upgrade_Level_Type />
+        <Next_Upgrade_Level_Type />
+        <Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+        <Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<Icon_Name>i_button_xq_platform_starbase.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SURVIVAL_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_XQ5_UPGRADE_CIS
+		</Encyclopedia_Text>
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="Survival_CIS_Level_2_Starbase_Upgrade_Effect">
+                <Activation_Style>Space_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>        
+        <CategoryMask>Wall</CategoryMask>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Survival_CIS_Level_3_Starbase_Upgrade">
+        <Behavior>DUMMY_UPGRADE</Behavior>
+        <Affiliation>Rebel</Affiliation>
+		
+        <Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>4320</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites> Survival_CIS_Starbase_2 </Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+        <Previous_Upgrade_Level_Type />
+        <Next_Upgrade_Level_Type />
+        <Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+        <Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+        <Icon_Name>i_button_golan_one_starbase.tga</Icon_Name>
+		
+		<Text_ID>TEXT_UNIT_SURVIVAL_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_GOLAN_ONE_UPGRADE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="Survival_CIS_Level_3_Starbase_Upgrade_Effect">
+                <Activation_Style>Space_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>        
+        <CategoryMask>Wall</CategoryMask>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Survival_CIS_Level_4_Starbase_Upgrade">
+        <Behavior>DUMMY_UPGRADE</Behavior>
+        <Affiliation>Rebel</Affiliation>
+		
+        <Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>6480</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 150 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites> Survival_CIS_Starbase_3 </Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+        <Previous_Upgrade_Level_Type />
+        <Next_Upgrade_Level_Type />
+        <Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+        <Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+        <Icon_Name>i_button_golan_two_starbase.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SURVIVAL_UPGRADE</Text_ID>
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_GOLAN_TWO_UPGRADE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="Survival_CIS_Level_4_Starbase_Upgrade_Effect">
+                <Activation_Style>Space_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>        
+        <CategoryMask>Wall</CategoryMask>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Survival_CIS_Level_5_Starbase_Upgrade">
+        <Behavior>DUMMY_UPGRADE</Behavior>
+        <Affiliation>Rebel</Affiliation>
+		
+        <Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>8640</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 180 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites> Survival_CIS_Starbase_4 </Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+        <Previous_Upgrade_Level_Type />
+        <Next_Upgrade_Level_Type />
+        <Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+        <Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+        <Icon_Name>i_button_igbc_gun_platform_starbase.tga</Icon_Name>
+		
+		<Text_ID>TEXT_UNIT_SURVIVAL_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GUN_PLATFORM_UPGRADE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="Survival_CIS_Level_5_Starbase_Upgrade_Effect">
+                <Activation_Style>Space_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>        
+        <CategoryMask>Wall</CategoryMask>
+    </UpgradeObject>
+
+	<!-- REPUBLIC SURVIVAL BASE UPGRADES-->
+	<UpgradeObject Name="Survival_REP_Level_2_Starbase_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		
+		<Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>2880</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Survival_Republic_Starbase </Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+
+		<Icon_Name>i_button_xq_platform_starbase.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SURVIVAL_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_XQ5_UPGRADE_GAR
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<Abilities SubObjectList="Yes">
+			<Starbase_Upgrade_Ability Name="Survival_REP_Level_2_Starbase_Upgrade_Effect">
+				<Activation_Style>Space_Automatic</Activation_Style>
+			</Starbase_Upgrade_Ability>
+		</Abilities>        
+		<CategoryMask>Wall</CategoryMask>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Survival_REP_Level_3_Starbase_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		
+		<Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>4320</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Survival_Republic_Starbase_2 </Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+
+		<Icon_Name>i_button_golan_one_starbase.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SURVIVAL_UPGRADE</Text_ID>
+
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_GOLAN_ONE_UPGRADE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<Abilities SubObjectList="Yes">
+			<Starbase_Upgrade_Ability Name="Survival_REP_Level_3_Starbase_Upgrade_Effect">
+				<Activation_Style>Space_Automatic</Activation_Style>
+			</Starbase_Upgrade_Ability>
+		</Abilities>        
+		<CategoryMask>Wall</CategoryMask>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Survival_REP_Level_4_Starbase_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		
+		<Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>6480</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>150</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Survival_Republic_Starbase_3 </Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+
+		<Icon_Name>i_button_golan_two_starbase.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SURVIVAL_UPGRADE</Text_ID>
+
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_GOLAN_TWO_UPGRADE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<Abilities SubObjectList="Yes">
+			<Starbase_Upgrade_Ability Name="Survival_REP_Level_4_Starbase_Upgrade_Effect">
+				<Activation_Style>Space_Automatic</Activation_Style>
+			</Starbase_Upgrade_Ability>
+		</Abilities>        
+		<CategoryMask>Wall</CategoryMask>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="Survival_REP_Level_5_Starbase_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		
+		<Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>8640</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>180</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Survival_Republic_Starbase_4 </Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+
+		<Icon_Name>i_button_valor_starbase.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SURVIVAL_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VALOR_UPGRADE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<Abilities SubObjectList="Yes">
+			<Starbase_Upgrade_Ability Name="Survival_REP_Level_5_Starbase_Upgrade_Effect">
+				<Activation_Style>Space_Automatic</Activation_Style>
+			</Starbase_Upgrade_Ability>
+		</Abilities>        
+		<CategoryMask>Wall</CategoryMask>
+	</UpgradeObject>
+	
+</UpgradeObjects>

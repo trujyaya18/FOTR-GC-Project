@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--****************************************************-->
+<!--******* Outer Rim Sieges: Cato Castle Clash ********-->
+<!--****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Cato_Castle_Clash</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Cato_Castle_Clash.XML</Active_Plot>
+
+</Story_Mode_Plots>

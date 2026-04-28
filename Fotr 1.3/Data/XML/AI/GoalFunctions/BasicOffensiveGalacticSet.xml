@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!--   -->
+<FunctionSet>
+
+	<Build_Space_Forces>
+		<Goal>Build_Space_Forces</Goal>
+		<Function>Allow_Blind_Space_Production</Function>
+	</Build_Space_Forces>
+	
+	<Build_SuperCapital>
+		<Goal>Build_SuperCapital</Goal>
+		<Function>Allow_SuperCapital_Production</Function>
+	</Build_SuperCapital>
+
+	<Build_Ground_Forces>
+		<Goal>Build_Ground_Forces</Goal>
+		<Function>Allow_Blind_Ground_Production</Function>
+	</Build_Ground_Forces>
+
+	<Conquer_Pirate>
+		<Goal>Conquer_Pirate</Goal>
+		<Function> Should_Conquer_Pirate_Planet </Function>
+	</Conquer_Pirate>
+
+	<Conquer_To_Reconnect>
+		<Goal>Conquer_To_Reconnect</Goal>
+		<Function>Need_To_Reconnect_Islands</Function>
+	</Conquer_To_Reconnect>	
+	
+	<Rescue_Trapped_Fleet>
+		<Goal>Rescue_Trapped_Fleet</Goal>
+		<Function>Trapped_Fleet</Function>
+	</Rescue_Trapped_Fleet>	
+
+	<GrowTowardDistantSystem>
+		<Goal>Distant_System_Path_Bonus</Goal>
+		<Function>One</Function>
+	</GrowTowardDistantSystem>
+	
+	<Conquer_Opponent>
+		<Goal>Conquer_Opponent</Goal>
+		<Function>Should_Conquer_Opponent_Planet</Function>
+	</Conquer_Opponent>
+	
+	<Unrestricted_Grab_Space>
+		<Goal>Unrestricted_Grab_Space</Goal>
+		<Function>Should_Perform_Unrestricted_Grab_Space</Function>
+	</Unrestricted_Grab_Space>
+	
+	<Unrestricted_Grab_Land>
+		<Goal>Unrestricted_Grab_Land</Goal>
+		<Function>Should_Perform_Unrestricted_Grab_Land</Function>
+	</Unrestricted_Grab_Land>
+
+	<Flush_MajorItem_Budget>
+		<Goal>Flush_MajorItem_Budget</Goal>
+		<Function>Flush_MajorItem_Budget</Function>
+	</Flush_MajorItem_Budget>
+
+	<Crush_Opponent>
+		<Goal>Crush_Opponent</Goal>
+		<Function>Should_Crush_Opponent_Planet</Function>
+	</Crush_Opponent>
+	
+	<Build_Special_Item>
+		<Goal>Build_Special_Item</Goal>
+		<Function>Medium</Function>
+	</Build_Special_Item>
+	
+</FunctionSet>

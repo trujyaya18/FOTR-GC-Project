@@ -1,0 +1,1388 @@
+﻿<?xml version="1.0" ?>
+
+<!--*****************************************************-->
+<!--********  Campaign: Operation Durge's Lance  ********-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_CIS_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Ventress">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Ventress_Team</Reward_Param1>
+		<Reward_Param2>Devaron</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Sora_Bulq">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Sora_Bulq_Team</Reward_Param1>
+		<Reward_Param2>Thyferra</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Shonn_Volta">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Shonn_Recusant</Reward_Param1>
+		<Reward_Param2>Ord_Vaug</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Durge">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Durge_Team</Reward_Param1>
+		<Reward_Param2>Devaron</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Solenoid">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Solenoid_CR90</Reward_Param1>
+		<Reward_Param2>Empress_Teta</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Kuat_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Kuat</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Shipyard_Showdown_Tactical_Completed</Prereq>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Duro_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Duro</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Duro_Defence_Tactical_Epilogue</Prereq>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Byss_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Byss</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Holo_Hunt_Tactical</Prereq>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Humbarine_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Humbarine</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Holo_Hunt_Tactical</Prereq>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Kaikielius_Unlocked">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Kaikielius</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Holo_Hunt_Tactical</Prereq>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Lock_Autoresolve_Kaikielius">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>RESTRICT_AUTORESOLVE</Reward_Type>
+		<Reward_Param1>Kaikielius</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Unlock_Autoresolve_Kaikielius">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESTRICT_AUTORESOLVE</Reward_Type>
+		<Reward_Param1>Kaikielius</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+		<Prereq>CIS_Kaikielius_Conquest</Prereq>
+	</Event>
+
+	<Event Name="CIS_Lock_Autoresolve_Duro">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESTRICT_AUTORESOLVE</Reward_Type>
+		<Reward_Param1>Duro</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Unlock_Autoresolve_Duro">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESTRICT_AUTORESOLVE</Reward_Type>
+		<Reward_Param1>Duro</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+		<Prereq>CIS_Duro_Conquest</Prereq>
+	</Event>
+
+	<Event Name="CIS_Kuat_Lockdown">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_AND_ENEMY</Event_Param3>
+		<Event_Param4>Balmorra, Humbarine, Sarapin</Event_Param4>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Durges_Lance_Speech_03">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Duro, Humbarine</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_03</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Speech_04">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Kuat</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_04</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<Event Name="CIS_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+
+	<Event Name="Lock_Malevolence_I">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Grievous_Team_Malevolence_Providence</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Lock_Malevolence_II">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Grievous_Team_Malevolence_Recusant</Reward_Param1>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Laughing_Lance_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Moorja</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_LAUGHING_LANCE.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Laughing_Lance.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_01</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_02</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Durges_Lance_Speech_01</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Durges_Lance_CIS_Act_I</Story_Tag>
+		<Prereq>CIS_Durges_Lance_Speech_02</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Camera_Jump_Duro">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Duro</Reward_Param1>
+		<Reward_Param2>0, 0, 0</Reward_Param2>
+		<Prereq>CIS_Durges_Lance_Speech_01</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Flash_Duro">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Duro</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Duro_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Durges_Lance_Speech_01</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Duro">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Duro_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Duro</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Flash_Humbarine">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Humbarine</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Humbarine_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Durges_Lance_Speech_01</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Humbarine">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Humbarine_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Humbarine</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Flash_Kaikielius">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Kaikielius</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Kaikielius_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Durges_Lance_Speech_01</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Kaikielius">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Kaikielius_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Humbarine</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Flash_Byss">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Byss</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Byss_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Durges_Lance_Speech_01</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Byss">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Byss_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Byss</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Grievous_Entry_Duro">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Duro</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Prereq>CIS_Duro_Defence_Tactical_Failed</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Duro_Defence_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Duro</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_DURO_DEFENCE.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Duro_Defence.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Prereq>CIS_Grievous_Entry_Duro</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Duro_Defence_Retry_Log</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Duro_Defence_Retry_Log_Disabler">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Duro_Defence_Retry_Log</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>CIS_Duro_Defence_Tactical</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Duro_Defence_Tactical_Failed">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Duro_Defence.XML</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Duro_Defence_Retry_Log</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Duro_Defence_Tactical_Completed">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Event_Param4>Duro</Event_Param4>
+		<Prereq>CIS_Duro_Defence_Tactical</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Duro_Defence_Tactical_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>CIS_Duro_Defence_Tactical_Completed</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Jyvus_Joyride_Tactical_Failed">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Jyvus_Joyride.XML</Event_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Duro_Bounce_Speech_01">
+		<Event_Type>STORY_INVASION_BOUNCED</Event_Type>
+		<Event_Param1>Duro</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_03</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Trigger_CIS_Duro_Drama">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_DURO_DRAMA</Event_Param2>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Grievous_Invading_Duro">
+		<Event_Type>STORY_LAND_ON</Event_Type>
+		<Event_Param1>Duro</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>Trigger_CIS_Duro_Drama</Prereq>
+		<Prereq>CIS_Duro_Defence_Tactical_Failed</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Duro_Drama_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Duro</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_DURO_DRAMA_CIS.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Duro_Drama.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Reward_Param12>DESTROY_AI</Reward_Param12>
+		<Prereq>CIS_Grievous_Invading_Duro</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Duro_Drama_Retry_Log</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="CIS_Duro_Drama_Tactical_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>CIS_Duro_Drama_Tactical</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Duro_Drama_Retry_Log</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Duro_Drama_Retry_Log_Disabler">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Duro_Drama_Retry_Log</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>CIS_Duro_Conquest</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Duro_Drama_Tactical_Failed">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Duro_Drama.XML</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Duro_Drama_Retry_Log</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Duro_Drama_Retry_Log</Branch>
+	</Event>
+
+	<Event Name="CIS_Duro_Drama_Tactical_Completed">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>LAND</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Event_Param4>Duro</Event_Param4>
+		<Prereq>CIS_Duro_Drama_Tactical</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="Trigger_CIS_New_Ally">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_NEW_ALLY</Event_Param2>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Duro_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Duro</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Speech_05">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_05</Reward_Param1>
+		<Reward_Param2>14</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Duro_Conquest</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Duro_Bombing_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Duro_Conquest</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act III *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Crazy_Clone_Tactical">
+		<Event_Type>STORY_LAND_ON</Event_Type>
+		<Event_Param1>Kaikielius</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Kaikielius</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_CRAZY_CLONE.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Crazy_Clone.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Reward_Param12>RETREAT_PLAYER</Reward_Param12>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Grievous_Invading_Kaikielius">
+		<Event_Type>STORY_LAND_ON</Event_Type>
+		<Event_Param1>Kaikielius</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>CIS_Crazy_Clone_Tactical</Prereq>
+		<Prereq>CIS_Killing_Kaikielius_Tactical_Failed</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Killing_Kaikielius_Retry_Log</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Killing_Kaikielius_Tactical_Map_ALT">
+		<Event_Type>STORY_LOAD_TACTICAL_MAP</Event_Type>
+		<Event_Param1>Kaikielius</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>LAND</Event_Param3>
+		<Reward_Type>SET_TACTICAL_MAP</Reward_Type>
+		<Reward_Param1>_FOTG_LAND_KILLING_KAIKIELIUS.TED</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>EMPIRE</Reward_Param3>
+		<Prereq>CIS_Crazy_Clone_Tactical</Prereq>
+		<Prereq>CIS_Grievous_Invading_Kaikielius</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Killing_Kaikielius_Retry_Log</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Killing_Kaikielius_Tactical_ALT">
+		<Event_Type>STORY_LAND_TACTICAL</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Killing_Kaikielius.XML</Event_Param1>
+		<Event_Param2>Kaikielius</Event_Param2>
+		<Prereq>CIS_Crazy_Clone_Tactical</Prereq>
+		<Prereq>CIS_Grievous_Invading_Kaikielius</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Killing_Kaikielius_Retry_Log</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Killing_Kaikielius_Tactical_Failed">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Killing_Kaikielius.XML</Event_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Kaikielius_Conquest">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>LAND</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Event_Param4>Kaikielius</Event_Param4>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Killing_Kaikielius_Retry_Log</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>CIS_Grievous_Invading_Kaikielius</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Mad_Clone_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Kaikielius_Conquest</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Disable_Killing_Kaikielius">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Killing_Kaikielius_Retry_Log</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>CIS_Mad_Clone_Checker</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Speech_09">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_MAD_CLONE</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_09</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Flash_YagDhul">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>YagDhul</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>YagDhul_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Durges_Lance_Speech_09</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_YagDhul">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>YagDhul_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_YagDhul</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Camera_Jump_YagDhul">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>YagDhul</Reward_Param1>
+		<Reward_Param2>0, 0, 0</Reward_Param2>
+		<Prereq>CIS_Durges_Lance_Speech_09</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Durges_Lance_CIS_Act_III</Story_Tag>
+		<Prereq>CIS_Durges_Lance_Speech_09</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Mad_Clone_YagDhul">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>YagDhul</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Mad_Clone_Munificent</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Mad_Clone_Munificent</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_III_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Durges_Lance_CIS_Act_III</Reward_Param1>
+		<Prereq>CIS_Mad_Clone_YagDhul</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Durges_Lance_Speech_10">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_10</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Mad_Clone_YagDhul</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_IV_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Durges_Lance_CIS_Act_IV</Story_Tag>
+		<Prereq>CIS_Durges_Lance_Speech_10</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Unlock_Mad_Clone_Virus">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Mad_Clone_Virus</Reward_Param1>
+		<Prereq>CIS_Durges_Lance_Speech_10</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Mad_Clone_Virus_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Mad_Clone_Virus</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Mad_Clone_Virus</Reward_Param1>
+		<Prereq>CIS_Unlock_Mad_Clone_Virus</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Lock_Clone_Trooper_Company">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Clonetrooper_Phase_One_Team</Reward_Param1>
+		<Prereq>CIS_Mad_Clone_Virus_Research</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Lock_ARC_Trooper_Company">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>ARC_Phase_One_Team</Reward_Param1>
+		<Prereq>CIS_Mad_Clone_Virus_Research</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+	
+	<Event Name="CIS_Lock_Clone_Commando_Company">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Clone_Commando_Team</Reward_Param1>
+		<Prereq>CIS_Mad_Clone_Virus_Research</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Unlock_Republic_Trooper_Company">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Republic_Trooper_Team</Reward_Param1>
+		<Prereq>CIS_Mad_Clone_Virus_Research</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_IV_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Durges_Lance_CIS_Act_IV</Reward_Param1>
+		<Prereq>CIS_Mad_Clone_Virus_Research</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act IV **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Grievous_Entry_HoloNet">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1></Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>CIS_Durges_Lance_Act_I_Dialog</Prereq>
+		<Prereq>CIS_Holo_Hunt_Tactical_Failed</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Holo_Hunt_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_HOLO_HUNT.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Holo_Hunt.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Reward_Param12>RETREAT_PLAYER</Reward_Param12>
+		<Prereq>CIS_Grievous_Entry_HoloNet</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Holo_Hunt_Retry_Log</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Holo_Hunt_Retry_Log_Disabler">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Holo_Hunt_Retry_Log</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>CIS_Holo_Hunt_Tactical</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Holo_Hunt_Tactical_Failed">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Holo_Hunt.XML</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Holo_Hunt_Retry_Log</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Holo_Hunt_Tactical_Completed">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Event_Param4></Event_Param4>
+		<Prereq>CIS_Holo_Hunt_Tactical</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act V ***************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Byss_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Byss</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Humbarine_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Humbarine</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act VI **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Durges_Lance_Act_I_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_PLANETS_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Durges_Lance_CIS_Act_I</Reward_Param1>
+	</Event>
+
+
+	<Event Name="CIS_Durges_Lance_Speech_08">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_08</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Grievous_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Durges_Lance_Act_I_Completed, CIS_Kuat_Lockdown</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Camera_Jump_Kuat">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Kuat</Reward_Param1>
+		<Reward_Param2>0, 0, 0</Reward_Param2>
+		<Prereq>CIS_Durges_Lance_Speech_08</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Flash_Kuat">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Kuat</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Kuat_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Durges_Lance_Speech_08</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Kuat">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Kuat_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Kuat</Prereq>
+		<Branch>Grievous_Lance</Branch>
+   </Event>
+
+	<Event Name="CIS_Durges_Lance_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Durges_Lance_CIS_Act_II</Story_Tag>
+		<Prereq>CIS_Durges_Lance_Speech_08</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Shipyard_Struggle_Tactical">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Kuat</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Kuat</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_SHIPYARD_STRUGGLE.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Shipyard_Struggle.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>CIS_Durges_Lance_Speech_08</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Shipyard_Showdown_Tactical_Epilogue">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Shipyard_Struggle.XML</Event_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Grievous_Entry_Kuat">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Kuat</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>CIS_Shipyard_Showdown_Tactical_Epilogue</Prereq>
+		<Prereq>CIS_Shipyard_Showdown_Tactical_Failed</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Shipyard_Showdown_Retry_Log</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Shipyard_Showdown_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Kuat</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_SHIPYARD_SHOWDOWN.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Shipyard_Showdown.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_AI</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Branch>Grievous_Lance</Branch>
+		<Branch>Shipyard_Showdown_Retry_Log</Branch>
+		<Prereq>CIS_Grievous_Entry_Kuat</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="CIS_Shipyard_Showdown_Tactical_Failed">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Shipyard_Showdown.XML</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Shipyard_Showdown_Retry_Log</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="CIS_Shipyard_Showdown_Tactical_Completed">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Event_Param4>Kuat</Event_Param4>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Shipyard_Showdown_Retry_Log</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>CIS_Durges_Lance_Speech_08</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Kuat_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kuat</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Durges_Lance_Act_II_Completed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Durges_Lance_CIS_Act_II</Reward_Param1>
+		<Prereq>CIS_Kuat_Conquest</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Speech_11">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_11</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Emperor_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Durges_Lance_Act_II_Completed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Speech_12">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_12</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Emperor_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Durges_Lance_Speech_11</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_V_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Tag>Durges_Lance_CIS_Act_V</Story_Tag>
+		<Prereq>CIS_Durges_Lance_Speech_12</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Unlock_GC_Progression">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>CIS_Durges_Lance_Speech_12</Prereq>
+		<Prereq>CIS_Durges_Lance_Speech_13</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>GC_Progression_Dummy</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_Foerost">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_FOEROST_GC_PROGRESSION</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Foerost_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ORS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ORS_GC_PROGRESSION</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_OuterRimSieges_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ORS_AU_1">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ORS_GC_PROGRESSION_ALT_01</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_AU_1_OuterRimSieges_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_ORS_AU_2">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ORS_GC_PROGRESSION_ALT_02</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_AU_2_OuterRimSieges_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--************* Act VII **************-->
+	<!--************************************-->
+
+	<Event Name="Trigger_CIS_Grievous_Destroyed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_GRIEVOUS_DEAD</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Grievous_Lance</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Speech_13">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_DURGES_LANCE_CIS_SPEECH_13</Reward_Param1>
+		<Reward_Param2>14</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_I_Failed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Durges_Lance_CIS_Act_I</Reward_Param1>
+		<Prereq>CIS_Durges_Lance_Speech_13</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_II_Failed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Durges_Lance_CIS_Act_II</Reward_Param1>
+		<Prereq>CIS_Durges_Lance_Speech_13</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_V_Failed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Durges_Lance_CIS_Act_V</Reward_Param1>
+		<Prereq>CIS_Durges_Lance_Speech_13</Prereq>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_Act_VI_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>6</Story_Chapter>
+		<Story_Tag>Durges_Lance_CIS_Act_VI</Story_Tag>
+		<Prereq>CIS_Durges_Lance_Speech_13</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************ Intermezzo ************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Durges_Lance_ShadowFeed_Report_Act_00">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>10</Story_Chapter>
+		<Story_Tag>ShadowFeed_Report_Act_00</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_ShadowFeed_Report_Act_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>11</Story_Chapter>
+		<Story_Tag>ShadowFeed_Report_Act_01</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+		<Prereq>CIS_Duro_Conquest</Prereq>
+		<Branch>Grievous_Lance</Branch>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_ShadowFeed_Report_Act_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_SHADOWFEED_ACT_02</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>12</Story_Chapter>
+		<Story_Tag>ShadowFeed_Report_Act_02</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_ShadowFeed_Report_Act_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_SHADOWFEED_ACT_03</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>13</Story_Chapter>
+		<Story_Tag>ShadowFeed_Report_Act_03</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_ShadowFeed_Report_Act_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_SHADOWFEED_ACT_04</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>14</Story_Chapter>
+		<Story_Tag>ShadowFeed_Report_Act_04</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_ShadowFeed_Report_Act_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_SHADOWFEED_ACT_05</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>15</Story_Chapter>
+		<Story_Tag>ShadowFeed_Report_Act_05</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_ShadowFeed_Report_Act_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_SHADOWFEED_ACT_06</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>16</Story_Chapter>
+		<Story_Tag>ShadowFeed_Report_Act_06</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+	<Event Name="CIS_Durges_Lance_ShadowFeed_Report_Act_07">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_SHADOWFEED_ACT_07</Event_Param2>
+		<Story_Dialog>Dialog_Durges_Lance_CIS</Story_Dialog>
+		<Story_Chapter>17</Story_Chapter>
+		<Story_Tag>ShadowFeed_Report_Act_07</Story_Tag>
+		<Story_Dialog_Popup>False</Story_Dialog_Popup>
+	</Event>
+
+</Story>

@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!-- Equations that define perception functions -->
+<Equations>
+	
+	<!-- Attacks as often as possible, retreats only when necessary -->
+	<Aggressive_Personality>
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+		+
+		Variable_Human.IsFaction {Parameter_Faction = "Empire"}
+		*
+		Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Hard]}
+		*
+		(
+			Variable_Self.IsFaction {Parameter_Faction = "Trade_Federation"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Techno_Union"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Banking_Clan"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		)
+	</Aggressive_Personality>
+	
+	<!-- Attacks weak targets, retreats somewhat early -->
+	<Cautious_Personality>                      
+		0.0
+	</Cautious_Personality>
+	
+	<!-- Attacks only very weak targets, retreats ASAP -->
+	<!-- Always wants to outnumber the enemy -->
+	<Cowardly_Personality>
+		Variable_Self.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Techno_Union"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Commerce_Guild"}
+	</Cowardly_Personality>
+	
+	<!-- Does not attack. Defends strongly -->
+	<Isolationist_Personality>
+		Variable_Self.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+
+		Variable_Human.IsFaction {Parameter_Faction = "Rebel"}
+		*
+		(
+			Variable_Self.IsFaction {Parameter_Faction = "Trade_Federation"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Techno_Union"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Banking_Clan"}
+			+
+			Variable_Self.IsFaction {Parameter_Faction = "Commerce_Guild"}
+		)
+	</Isolationist_Personality>
+	
+	<!-- Only cares about money -->
+	<Economic_Personality>
+		Variable_Self.IsFaction {Parameter_Faction = "Trade_Federation"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Techno_Union"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Banking_Clan"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Commerce_Guild"}
+	</Economic_Personality>
+	
+	
+</Equations>

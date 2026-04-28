@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<Goals>
+	<Empty>
+		<AIGoalApplicationFlags> Friendly</AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> NoBudget </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>0</Build_Time_Delay_Tolerance>
+	</Empty>
+
+</Goals>

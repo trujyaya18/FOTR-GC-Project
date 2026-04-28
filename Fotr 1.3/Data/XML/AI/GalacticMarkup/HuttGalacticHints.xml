@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+	<Planets HintSet="Galactic_Hints">
+		<!-- Hutt Planets (Should mainly focus on defending their home) -->
+		<Nal_Hutta>
+			<Chokepoint>3.0</Chokepoint>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Nal_Hutta>
+
+		<Nar_Shaddaa>
+			<Chokepoint>3.0</Chokepoint>
+			<PriorityTarget>5.0</PriorityTarget>
+		</Nar_Shaddaa>
+
+		<Ubrikkia>
+			<Chokepoint>5.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Ubrikkia>
+	</Planets>
+</Galactic_Markup>

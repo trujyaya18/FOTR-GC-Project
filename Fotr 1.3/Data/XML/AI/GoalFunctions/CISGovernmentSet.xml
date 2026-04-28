@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<FunctionSet>
+
+	<CIS_Fund_Subfactions>
+		<Goal>CIS_Fund_Subfactions</Goal>
+		<Function> High </Function>
+	</CIS_Fund_Subfactions>
+	
+</FunctionSet>

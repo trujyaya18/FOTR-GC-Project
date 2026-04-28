@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Fractured Empire (Isard) *****-->
+<!--******************************************************-->
+
+
+
+<Story>
+
+	<Event Name="Universal_Raid_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<!-- PLANETS -->
+	
+	<Event Name="STORY_SPACE_TACTICAL_Raid">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>Conquests\InvadingFleet_Plot_File.xml</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Prereq>Universal_Raid_Start</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

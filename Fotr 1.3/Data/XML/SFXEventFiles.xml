@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<SFXEvent_Files>
+
+    <!-- Presets must go first -->
+    <File> SFX\SFXEventPresets.xml </File>
+
+    <!-- Non-Preset Events come after presets -->
+	<File> SFX\SFXEvents_Master.xml</File>	
+	<File> SFX\SFXEvents_Coresaga.xml </File>
+	<File> SFX\SFXEvents_FotR.xml </File>
+	
+</SFXEvent_Files>

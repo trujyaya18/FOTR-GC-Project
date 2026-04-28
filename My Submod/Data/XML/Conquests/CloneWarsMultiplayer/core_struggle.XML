@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Campaigns>
+  <Campaign Name="Core_Struggle_Rebel">
+    <Campaign_Set>Clone_Wars_Multiplayer</Campaign_Set>
+    <Sort_Order>3</Sort_Order>
+    <Is_Listed>True</Is_Listed>
+    <Supports_Custom_Settings>False</Supports_Custom_Settings>
+    <Show_Completed_Tab>True</Show_Completed_Tab>
+    <Text_ID>Core Struggle</Text_ID>
+    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_CWSMALL</Description_Text>
+    <Era_Start>2</Era_Start>
+    <Use_Default_Forces>True</Use_Default_Forces>
+    <Camera_Shift_X>0.0</Camera_Shift_X>
+    <Camera_Shift_Y>0.0</Camera_Shift_Y>
+    <Camera_Distance>1000.0</Camera_Distance>
+    <Locations>
+			Abregado_Rae,
+			Alderaan,
+			Anaxes,
+			Arkania,
+			Balmorra,
+			Burlok,
+			Carida,
+			Cato_Neimoidia,
+			Corellia,
+			Coruscant,
+			Deko_Neimoidia,
+			Denon,
+			Devaron,
+			Foerost,
+			Fondor,
+			Humbarine,
+			Kaikielius,
+			Kuat,
+			Mimban,
+			Onderon,
+			Rendili,
+			Umbara,
+</Locations>
+    <Trade_Routes>
+			Abregado_Rae_Corellia,
+			Abregado_Rae_Fondor,
+			Abregado_Rae_Kaikielius,
+			Alderaan_Coruscant,
+			Alderaan_Kaikielius,
+			Alderaan_Kuat,
+			Alderaan_Rendili,
+			Anaxes_Arkania,
+			Anaxes_Barlok,
+			Anaxes_Coruscant,
+			Arkania_Barlok,
+			Arkania_Carida,
+			Balmorra_Carida,
+			Balmorra_Deko_Neimoidia,
+			Balmorra_Kuat,
+			Balmorra_Onderon,
+			Carida_Corsin,
+			Carida_Coruscant,
+			Cato_Neimoidia_Deko_Neimoidia,
+			Cato_Neimoidia_Denon,
+			Cato_Neimoidia_Humbarine,
+			Cato_Neimoidia_Rendili,
+			Charros_Kashyyyk,
+			Corellia_Denon,
+			Corellia_Devaron,
+			Corellia_Kaikielius,
+			Corellia_Rendili,
+			Coruscant_Foerost,
+			Deko_Neimoidia_Mimban,
+			Deko_Neimoidia_Onderon,
+			Denon_Devaron,
+			Denon_Mimban,
+			Devaron_Fondor,
+			Foerost_Kaikielius,
+			Humbarine_Kuat,
+			Humbarine_Rendili,
+			Mimban_Umbara,
+			Onderon_Umbara,
+</Trade_Routes>
+    <Starting_Active_Player>Empire</Starting_Active_Player>
+    <Is_Multiplayer> Yes </Is_Multiplayer>
+   
+    <Markup_Filename>Empire, DefaultGalacticHints</Markup_Filename>
+    <Markup_Filename>Rebel, DefaultGalacticHints</Markup_Filename>
+    
+    <Human_Victory_Conditions>Galactic_All_Planets_Controlled</Human_Victory_Conditions>
+    <AI_Victory_Conditions>Galactic_All_Planets_Controlled</AI_Victory_Conditions>
+	
+     <Rebel_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_CloneWars_CIS.xml</Rebel_Story_Name>
+       <Empire_Story_Name>Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml</Empire_Story_Name>
+
+    <Starting_Credits>Empire, 100000</Starting_Credits>
+    <Starting_Tech_Level>Empire, 2</Starting_Tech_Level>
+    <Max_Tech_Level>Empire, 5</Max_Tech_Level>
+    <Starting_Credits>Rebel, 100000</Starting_Credits>
+    <Starting_Tech_Level>Rebel, 2</Starting_Tech_Level>
+    <Max_Tech_Level>Rebel, 5</Max_Tech_Level> 
+	
+	
+	<Starting_Forces>Empire, Coruscant, Empire_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Republic_Shipyard_Level_One</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Generic_TradeStation</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Secondary_Golan_One</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Class_C_Frigate</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Class_C_Support</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, LAC</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, LAC</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Remnant_Capital</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Empire_MoffPalace</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Generic_Planetary_Shield</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Tax_Agency</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, E_Ground_Barracks</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, E_Ground_Light_Vehicle_Factory</Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Rex_Team </Starting_Forces>
+	<Starting_Forces>Empire, Coruscant, Ahsoka_Delta_Team </Starting_Forces>
+	<Starting_Forces>Empire, Coruscant, Anakin_Delta_Team </Starting_Forces>
+	<Starting_Forces>Empire, Coruscant, Fordo_Team </Starting_Forces>
+	<Starting_Forces>Empire, Coruscant, Padme_Amidala_Team </Starting_Forces>
+    <Starting_Forces>Empire, Coruscant, Senate_Commando_Platoon</Starting_Forces>
+	<Starting_Forces>Empire, Coruscant, Pestage_Team</Starting_Forces>
+	<Starting_Forces>Empire, Coruscant, Yoda_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Coruscant, Mace_Windu_Delta_Team</Starting_Forces>
+	<Starting_Forces>Empire, Coruscant, Kit_Fisto_Delta_Team</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, CIS_Shipyard_Level_One</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, Secondary_Golan_One</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, Lucid_Voice</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, Grievous_Team_Malevolence</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, Recusant</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, NewRep_Senate</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, R_Ground_Barracks</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, R_Ground_Light_Vehicle_Factory</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, Ground_Ion_Cannon</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, B1_Droid_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, B1_Droid_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, B1_Droid_Marine_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, BX_Commando_Squad</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, PAC_Company</Starting_Forces>
+    <Starting_Forces>Rebel, Fondor, GAT_Group</Starting_Forces>
+	<Starting_Forces>Rebel, Fondor, Dooku_Team</Starting_Forces>
+	<Starting_Forces>Rebel, Fondor, Trench_Invincible</Starting_Forces>
+	<Starting_Forces>Rebel, Fondor, Ventress_Team</Starting_Forces>
+	<Starting_Forces>Rebel, Fondor, Durge_Team</Starting_Forces>
+	<Starting_Forces>Rebel,Dathomir, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Dathomir, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Dathomir, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Arkania, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Arkania, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Arkania, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Anaxes, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Anaxes, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Anaxes, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Carida, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Carida, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Carida, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Foerost, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Foerost, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Foerost, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Kaikielius, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Kaikielius, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Kaikielius, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Alderaan, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Alderaan, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Alderaan, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Rendili, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Rendili, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Rendili, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Corellia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Corellia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Corellia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Kuat, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Kuat, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Kuat, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Humbarine, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Humbarine, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Humbarine, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Cato_Neimoidia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Cato_Neimoidia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Cato_Neimoidia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Denon, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Denon, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Denon, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Empire,Balmorra, Empire_Star_Base_1</Starting_Forces>
+	<Starting_Forces>Empire,Balmorra, Empire_MoffPalace</Starting_Forces>
+	<Starting_Forces>Empire,Balmorra, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Deko_Neimoidia, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Deko_Neimoidia, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Deko_Neimoidia, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Abregado_Rae, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Abregado_Rae, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Abregado_Rae, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Devaron, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Devaron, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Devaron, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Umbara, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Umbara, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Umbara, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Onderon, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Onderon, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Onderon, Tax_Agency</Starting_Forces>
+	<Starting_Forces>Rebel,Mimban, NewRep_SenatorsOffice</Starting_Forces>
+    <Starting_Forces>Rebel,Mimban, NewRepublic_Star_Base_1</Starting_Forces>
+    <Starting_Forces>Rebel,Mimban, Tax_Agency</Starting_Forces>
+  </Campaign>
+</Campaigns>

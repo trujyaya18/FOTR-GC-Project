@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" ?>
+
+<!--******************************************************-->
+<!--********  Campaign: Hunt for the Malevolence  ********-->
+<!--******************************************************-->
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_CIS_Player_Checker">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Grievous">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Grievous_Malevolence_Hunt_Campaign</Reward_Param1>
+		<Reward_Param2>Abregado_Rae</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Lorz_Geptun">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Lorz_Geptun_Team</Reward_Param1>
+		<Reward_Param2>Haruun_Kal</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Cruel_AI_Activated">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Option_Cruel_On</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Perpetual></Perpetual>
+	</Event>
+
+	<Event Name="CIS_Cruel_AI_Deactivated">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Option_Cruel_Off</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Perpetual></Perpetual>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Tech Handler ***********-->
+	<!--************************************-->
+
+	<Event Name="CIS_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+	<Event Name="CIS_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Abregado_Ambush_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Abregado_Rae</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_ABREGADO_AMBUSH.TED</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param7>StoryEvents\Plot_Abregado_Ambush.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param12>RETREAT_AI</Reward_Param12>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Plo_Koon_Checker">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Malevolence_Hunt_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_CIS_SPEECH_01</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Malevolence_Hunt_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_CIS</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_CIS_Act_I</Story_Tag>
+		<Prereq>CIS_Malevolence_Hunt_Speech_01</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Pelta_Persue_Tactical">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Pelta_Persue.XML</Event_Param1>
+		<Prereq>CIS_Malevolence_Hunt_Speech_01</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="CIS_Malevolence_Hunt_Act_I_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_PELTA_PERSUE_COMPLETED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Malevolence_Hunt_CIS_Act_I</Reward_Param1>
+	</Event>
+
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Malevolence_Hunt_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>30</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_CIS_SPEECH_02</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Malevolence_Hunt_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Jump_Camera_Kaliida_Nebula">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Kaliida_Nebula</Reward_Param1>
+		<Reward_Param2>0,0,0</Reward_Param2>
+		<Prereq>CIS_Malevolence_Hunt_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="CIS_Flash_Kaliida_Nebula">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+        <Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+        <Reward_Param1>Kaliida_Nebula</Reward_Param1>
+        <Reward_Param2>FLASH_PLANET</Reward_Param2>
+        <Reward_Param4>Kaliida_Nebula_GUI_Flash</Reward_Param4>
+        <Reward_Param5>True</Reward_Param5>
+        <Prereq>CIS_Jump_Camera_Kaliida_Nebula</Prereq>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Kaliida_Nebula">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>10</Event_Param1>
+        <Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+        <Reward_Param1>Kaliida_Nebula_GUI_Flash</Reward_Param1>
+        <Prereq>CIS_Flash_Kaliida_Nebula</Prereq>
+	</Event>
+
+	<Event Name="CIS_Malevolence_Hunt_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>14</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_CIS</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_CIS_Act_II</Story_Tag>
+		<Prereq>CIS_Malevolence_Hunt_Speech_02</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Malevolence_Hunt_Speech_03">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Kaliida_Nebula</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_CIS_SPEECH_03</Reward_Param1>
+		<Reward_Param2>14</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="CIS_Pelta_Persue_Disable">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Kaliida_Nebula</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Event_Param3>Grievous_Malevolence_Hunt_Campaign</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>CIS_Pelta_Persue_Tactical</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Medical_Madness_Tactical">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Kaliida_Nebula</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Event_Param3>Grievous_Malevolence_Hunt_Campaign</Event_Param3>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Kaliida_Nebula</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_MEDICAL_MADNESS.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6>Grievous_Malevolence_Hunt_Campaign</Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Medical_Madness.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Reward_Param12>DESTROY_AI</Reward_Param12>
+		<Prereq>CIS_Malevolence_Hunt_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="CIS_Kaliida_Nebula_Unrestricted">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Kaliida_Nebula</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Medical_Madness_Tactical</Prereq>
+		<Prereq>CIS_Grievous_Malevolence_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Kaliida_Nebula_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kaliida_Nebula</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Malevolence_Hunt_Speech_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_KALIIDA_CONQUEST</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_CIS_SPEECH_04</Reward_Param1>
+		<Reward_Param2>14</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Malevolence_Hunt_Act_II_Completed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>14</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Malevolence_Hunt_CIS_Act_II</Reward_Param1>
+		<Prereq>CIS_Malevolence_Hunt_Speech_04</Prereq>
+	</Event>
+
+	<Event Name="CIS_Malevolence_Hunt_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>14</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_CIS</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_CIS_Act_III</Story_Tag>
+		<Prereq>CIS_Malevolence_Hunt_Speech_04</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Malevolence_Destroyed_Checker">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Kaliida_Nebula</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_AND_ENEMY</Event_Param2>
+		<Event_Param3>Grievous_Malevolence_Hunt_Campaign</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>CIS_Grievous_Malevolence_Destroyed</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Grievous_Malevolence_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Grievous_Malevolence_Hunt_Campaign</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Event_Param3>1</Event_Param3>
+		<Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+		<Reward_Param1>CIS_Medical_Madness_Tactical</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Reward_Param3>1</Reward_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Grievous_Dead_Trigger">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_RIMWARD_GC</Event_Param2>
+	</Event>
+
+	<Event Name="CIS_Malevolence_Hunt_Act_II_Failed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Malevolence_Hunt_CIS_Act_II</Reward_Param1>
+		<Prereq>CIS_Grievous_Malevolence_Destroyed</Prereq>
+		<Prereq>CIS_Grievous_Dead_Trigger</Prereq>
+	</Event>
+
+	<Event Name="CIS_Malevolence_Hunt_Speech_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_CIS_SPEECH_05</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Grievous_Malevolence_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Malevolence_Hunt_Act_IV_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_CIS</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_CIS_Act_IV</Story_Tag>
+		<Prereq>CIS_Malevolence_Hunt_Speech_05</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act III *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Unlock_GC_Progression_Rimward">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>CIS_Malevolence_Hunt_Speech_04</Prereq>
+		<Prereq>CIS_Malevolence_Hunt_Speech_05</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_Rimward_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>GC_Progression_Dummy</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_Rimward_AU">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RIMWARD_GC_PROGRESSION_AU</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_AU_Rimward_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_Rimward">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RIMWARD_GC_PROGRESSION</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Sandbox_Rimward_CIS</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+
+	<!-- Corporate Alliance Storyline -->
+
+	<!--************************************-->
+	<!--************** Act V *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Malevolence_Hunt_Moorja_Speech">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>45</Event_Param1>
+        <Reward_Type>MULTIMEDIA</Reward_Type>
+        <Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_CIS_SPEECH_MOORJA_01</Reward_Param1>
+        <Reward_Param2>13</Reward_Param2>
+        <Reward_Param3 />
+        <Reward_Param4 />
+        <Reward_Param5 />
+        <Reward_Param6 />
+        <Reward_Param7 />
+        <Reward_Param8 />
+        <Reward_Param9>Tonith_Loop</Reward_Param9>
+        <Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Malevolence_Hunt_Speech_02</Prereq>
+	</Event>
+	
+	<Event Name="CIS_Malevolence_Hunt_Moorja_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>13</Event_Param1>
+		<Story_Dialog>Dialog_Malevolence_Hunt_CIS</Story_Dialog>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Tag>Malevolence_Hunt_CIS_Moorja</Story_Tag>
+		<Prereq>CIS_Malevolence_Hunt_Moorja_Speech</Prereq>
+	</Event>
+	
+	<Event Name="CIS_Malevolence_Hunt_Moorja_Speech_Complete">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_MOORJA_CONQUEST</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_MALEVOLENCE_HUNT_CIS_SPEECH_MOORJA_02</Reward_Param1>
+		<Reward_Param2>13</Reward_Param2>
+        <Reward_Param3 />
+        <Reward_Param4 />
+        <Reward_Param5 />
+        <Reward_Param6 />
+        <Reward_Param7 />
+        <Reward_Param8 />
+        <Reward_Param9>Tonith_Loop</Reward_Param9>
+        <Reward_Param10>0</Reward_Param10>
+	</Event>
+	
+	<Event Name="CIS_Malevolence_Hunt_Moorja_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Malevolence_Hunt_CIS_Moorja</Reward_Param1>
+		<Prereq>CIS_Malevolence_Hunt_Moorja_Speech_Complete</Prereq>
+	</Event>
+	
+</Story>

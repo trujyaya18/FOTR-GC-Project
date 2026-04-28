@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--******** Foerost Campaign: Carida Cataclysm *********-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Carida_Cataclysm</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Carida_Cataclysm.XML</Active_Plot>
+
+</Story_Mode_Plots>

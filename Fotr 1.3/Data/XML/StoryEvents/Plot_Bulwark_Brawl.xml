@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--********** Foerost Campaign: Bulwark Brawl **********-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Bulwark_Brawl</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Bulwark_Brawl.XML</Active_Plot>
+
+</Story_Mode_Plots>

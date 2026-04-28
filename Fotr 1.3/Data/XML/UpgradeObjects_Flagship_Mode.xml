@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<UpgradeObjects_Flagship_Mode>
+
+
+ <UpgradeObject Name="Flagship_Level_Two_Starbase_Upgrade">
+        <Behavior>DUMMY_UPGRADE</Behavior>
+      <Affiliation>Neutral, Rebel, Empire, Underworld, EmpireoftheHand, Pentastar, Eriadu_Authority, Greater_Maldrood, Zsinj_Empire, Warlords, Independent_Forces, Corporate_Sector, Hapes_Consortium </Affiliation>
+		
+        <Tactical_Build_Cost_Multiplayer> 4000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>  </Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Tactical_Build_Increments_Tech_Level> Yes </Tactical_Build_Increments_Tech_Level>
+        <Previous_Upgrade_Level_Type />
+        <Next_Upgrade_Level_Type />
+        <Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+        <Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+        <Icon_Name>i_button_e_tech_upgrade_2.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UPGRADE_TECHNOLOGY_LEVEL_TWO  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_LEVEL_TWO_COMMAND_CENTER</Text_ID>
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="EC_Level_Two_Starbase_Upgrade_Effect">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>        
+        <CategoryMask>Upgrade</CategoryMask>
+    </UpgradeObject>
+	
+	 <UpgradeObject Name="Flagship_Level_Three_Starbase_Upgrade">
+        <Behavior>DUMMY_UPGRADE</Behavior>
+       <Affiliation>Neutral, Rebel, Empire, Underworld, EmpireoftheHand, Pentastar, Eriadu_Authority, Greater_Maldrood, Zsinj_Empire, Warlords, Independent_Forces, Corporate_Sector, Hapes_Consortium </Affiliation>
+		
+        <Tactical_Build_Cost_Multiplayer> 6000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>  </Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Tactical_Build_Increments_Tech_Level> Yes </Tactical_Build_Increments_Tech_Level>
+        <Previous_Upgrade_Level_Type />
+        <Next_Upgrade_Level_Type />
+        <Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+        <Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+       <Icon_Name>i_button_e_tech_upgrade_3.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UPGRADE_TECHNOLOGY_LEVEL_THREE  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_LEVEL_THREE_COMMAND_CENTER</Text_ID>
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="EC_Level_Three_Starbase_Upgrade_Effect">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>        
+        <CategoryMask>Upgrade</CategoryMask>
+    </UpgradeObject>
+	
+	 <UpgradeObject Name="Flagship_Level_Four_Starbase_Upgrade">
+        <Behavior>DUMMY_UPGRADE</Behavior>
+        <Affiliation>Neutral, Rebel, Empire, Underworld, EmpireoftheHand, Pentastar, Eriadu_Authority, Greater_Maldrood, Zsinj_Empire, Warlords, Independent_Forces, Corporate_Sector, Hapes_Consortium </Affiliation>
+		
+        <Tactical_Build_Cost_Multiplayer> 8000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 70 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>  </Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Tactical_Build_Increments_Tech_Level> Yes </Tactical_Build_Increments_Tech_Level>
+        <Previous_Upgrade_Level_Type />
+        <Next_Upgrade_Level_Type />
+        <Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+        <Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+        <Icon_Name>i_button_e_tech_upgrade_4.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UPGRADE_TECHNOLOGY_LEVEL_FOUR  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_LEVEL_FOUR_COMMAND_CENTER</Text_ID>
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="EC_Level_Four_Starbase_Upgrade_Effect">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>        
+        <CategoryMask>Upgrade</CategoryMask>
+    </UpgradeObject>
+	
+	 <UpgradeObject Name="Flagship_Level_Five_Starbase_Upgrade">
+        <Behavior>DUMMY_UPGRADE</Behavior>
+        <Affiliation>Neutral, Rebel, Empire, Underworld, EmpireoftheHand, Pentastar, Eriadu_Authority, Greater_Maldrood, Zsinj_Empire, Warlords, Independent_Forces, Corporate_Sector, Hapes_Consortium </Affiliation>
+		
+        <Tactical_Build_Cost_Multiplayer> 10000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 90 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>  </Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Tactical_Build_Increments_Tech_Level> Yes </Tactical_Build_Increments_Tech_Level>
+        <Previous_Upgrade_Level_Type />
+        <Next_Upgrade_Level_Type />
+        <Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+        <Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Is_Community_Property>Yes</Is_Community_Property>
+        <Icon_Name>i_button_e_tech_upgrade_5.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UPGRADE_TECHNOLOGY_LEVEL_FIVE  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_LEVEL_FIVE_COMMAND_CENTER</Text_ID>
+		
+		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="EC_Level_Five_Starbase_Upgrade_Effect">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>        
+        <CategoryMask>Upgrade</CategoryMask>
+    </UpgradeObject>
+	
+</UpgradeObjects_Flagship_Mode>

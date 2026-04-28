@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Corporate_Sector)	******-->
+<!--******************************************************-->
+
+<Story>
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Load_Another_GC">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>LOAD_CAMPAIGN_EVENT</Event_Param2>
+		<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+		<Reward_Param1>Full_Galaxy_Medium_Rebel_Era_1</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+</Story>

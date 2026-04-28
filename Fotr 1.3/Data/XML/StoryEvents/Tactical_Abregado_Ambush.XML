@@ -1,0 +1,504 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--***** Hunt for the Malevolence: Abregado Ambush *****-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Disable_Autoresolve">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Prevent_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicMissionAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="They_Fly_Now_Start_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>FLYING_NOW_01</Event_Param2>
+	</Event>
+
+	<Event Name="They_Fly_Now_Start_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>FLYING_NOW_02</Event_Param2>
+	</Event>
+
+	<Event Name="They_Fly_Now_Start_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>FLYING_NOW_03</Event_Param2>
+	</Event>
+
+	<Event Name="They_Fly_Now_Start_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>FLYING_NOW_04</Event_Param2>
+	</Event>
+
+
+	<Event Name="Trigger_Phase_One">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PHASE_ONE</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Phase_Two">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PHASE_TWO</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Phase_Three">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PHASE_THREE</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Phase_Four">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PHASE_FOUR</Event_Param2>
+	</Event>
+
+
+	<Event Name="Trigger_Plo_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PLO_DEATH</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Pods_Death_Lua">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PODS_DEATH</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Pods_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Trigger_Pods_Death_Lua</Prereq>
+		<Prereq>CIS_Goal_03_Complete</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Escape_Reached">
+		<Event_Type>STORY_UNIT_PROXIMITY</Event_Type>
+		<Event_Param1>Twilight</Event_Param1>
+		<Event_Param2>REVEAL_MARKER_01</Event_Param2>
+		<Event_Param3>600</Event_Param3>
+		<Prereq>Goal_Trigger_Rep_Act_III</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_III</Prereq>
+		<Prereq>They_Fly_Now_Start_06</Prereq>
+	</Event>
+
+
+	<Event Name="Venators_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>GENERIC_VENATOR</Event_Param1>
+		<Event_Param3>3</Event_Param3>
+		<Prereq>Goal_Trigger_Rep_Act_I</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Fleet_Destroyed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Prereq>Venators_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Twilight_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Twilight</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_Rep_Act_II</Prereq>
+		<Prereq>Goal_Trigger_Rep_Act_III</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_III</Prereq>
+	</Event>
+
+	<Event Name="Pod_1_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Republic_Escape_Pod</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Pod_2_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Republic_Escape_Pod</Event_Param1>
+		<Event_Param3>2</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Pod_3_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Republic_Escape_Pod</Event_Param1>
+		<Event_Param3>3</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Pod_4_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Republic_Escape_Pod</Event_Param1>
+		<Event_Param3>4</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Pod_5_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Republic_Escape_Pod</Event_Param1>
+		<Event_Param3>5</Event_Param3>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Cinematic_Intro_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CINEMATIC_INTRO</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_INTRO_01</Reward_Param1>
+		<Reward_Param2>9.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Cinematic_Intro_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_INTRO_02</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Cinematic_Intro_01</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_Rep_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_I</Event_Param2>
+	</Event>
+
+	<Event Name="Goal_Trigger_Rep_Act_II">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_II</Event_Param2>
+	</Event>
+
+	<Event Name="Goal_Trigger_Rep_Act_III">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_III</Event_Param2>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_II</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_04">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_04</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_II</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_05</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_III</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_01, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Rep_Goal_03, Goal_Trigger_Rep_Act_III</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_04_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_04</Reward_Param1>
+		<Prereq>Rep_Goal_04, Trigger_Escape_Reached</Prereq>
+		<Prereq>Rep_Goal_04, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_05_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_05</Reward_Param1>
+		<Prereq>Rep_Goal_05, Trigger_Escape_Reached</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_01, Fleet_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Fleet_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Rep_Goal_03, Twilight_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_04_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_04</Reward_Param1>
+		<Prereq>Rep_Goal_04, Twilight_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_05_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_REP_05</Reward_Param1>
+		<Prereq>Rep_Goal_05, Twilight_Destroyed</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_CIS_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_I</Event_Param2>
+	</Event>
+
+	<Event Name="Goal_Trigger_CIS_Act_II">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_II</Event_Param2>
+	</Event>
+
+	<Event Name="Goal_Trigger_CIS_Act_III">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_III</Event_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_1</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_II</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_1</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_2</Reward_Param2>
+		<Prereq>CIS_Goal_03_1, Pod_1_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_2</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_3</Reward_Param2>
+		<Prereq>CIS_Goal_03_2, Pod_2_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_3</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_4</Reward_Param2>
+		<Prereq>CIS_Goal_03_3, Pod_3_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_4</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_5</Reward_Param2>
+		<Prereq>CIS_Goal_03_4, Pod_4_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_6">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_5</Reward_Param1>
+		<Reward_Param2>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_6</Reward_Param2>
+		<Prereq>CIS_Goal_03_5, Pod_5_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_04">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_04</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS_Act_III</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Fleet_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_02, Fleet_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_Complete">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.5</Event_Param1>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_6</Reward_Param1>
+		<Prereq>CIS_Goal_03_6</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_04_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_04</Reward_Param1>
+		<Prereq>CIS_Goal_04, Twilight_Destroyed</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_02</Reward_Param1>
+		<Prereq>CIS_Goal_02, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_03_6</Reward_Param1>
+		<Prereq>CIS_Goal_03_1, Victory_Rep</Prereq>
+		<Prereq>CIS_Goal_03_2, Victory_Rep</Prereq>
+		<Prereq>CIS_Goal_03_3, Victory_Rep</Prereq>
+		<Prereq>CIS_Goal_03_4, Victory_Rep</Prereq>
+		<Prereq>CIS_Goal_03_5, Victory_Rep</Prereq>
+		<Prereq>CIS_Goal_03_6, Victory_Rep</Prereq>
+	</Event>
+
+	<Event Name="CIS_Goal_04_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_ABREGADO_AMBUSH_OBJECTIVE_CIS_04</Reward_Param1>
+		<Prereq>CIS_Goal_04, Trigger_Escape_Reached</Prereq>
+	</Event>
+
+</Story>

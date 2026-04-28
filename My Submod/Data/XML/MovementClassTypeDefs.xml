@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<MovementClassType>
+
+        <BombingRun> Clear | EmpireWall | Impassable | InfantryOnly | Obstacle | RebelWall | Shield | Steep | Water</BombingRun>
+        <Flying> Clear | EmpireWall | InfantryOnly | Obstacle | RebelWall | Shield | Steep | Water </Flying>
+        <HeavyTrackedE> Clear | RebelWall | Shield </HeavyTrackedE>
+        <HeavyTrackedR> Clear | EmpireWall | Shield </HeavyTrackedR>
+        <Hover> Clear | Shield | Water </Hover>
+        <Infantry> Clear | InfantryOnly | Shield </Infantry>
+        <Lancet> Clear | EmpireWall | InfantryOnly | RebelWall | Shield | Steep | Water</Lancet>
+        <LargeHoverE> Clear | RebelWall | Shield | Water </LargeHoverE>
+        <LargeHoverR> Clear | EmpireWall | Shield | Water </LargeHoverR>
+        <LargeWalker> Clear | RebelWall | Shield </LargeWalker>
+        <LargeWheels> Clear | RebelWall | Shield </LargeWheels>
+        <LightHover> Clear | InfantryOnly | Shield | Water </LightHover>
+        <SmallWalker> Clear | InfantryOnly | Shield </SmallWalker>
+        <Space> Clear | EmpireWall | InfantryOnly | Obstacle | RebelWall | Shield | Steep | Water </Space>
+        <Spotter> Clear | InfantryOnly | Shield | Water </Spotter>
+        <Tracked> Clear | Shield </Tracked>
+        <Walker> Clear | Shield </Walker>
+	<Wheeled> Clear | Shield </Wheeled>
+
+</MovementClassType>
+
+

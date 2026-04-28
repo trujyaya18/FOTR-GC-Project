@@ -1,0 +1,492 @@
+<?xml version="1.0" ?>
+<Skirmish_Units>
+	
+	
+	<!-- ========================================== Republic Squadrons ========================================== -->
+	
+	<SpaceUnit Name="Template_Flagship_ARC_170_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>71</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		ARC_170_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_BTLB_Y_Wing_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>79</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		BTLB_Y-Wing_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+		
+	<SpaceUnit Name="Template_Flagship_Cloakshape_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>36</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Cloakshape_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+		
+	<SpaceUnit Name="Template_Flagship_Citadel_Cruiser_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>76</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Skirmish_Citadel_Cruiser_Squadron, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Delta6_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Delta6_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+			
+	<SpaceUnit Name="Template_Flagship_Delta7_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Delta7_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Early_Skipray_Blastboat">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>114</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Early_Skipray_Blastboat_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Eta2_Actis_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>26</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Eta2_Actis_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_H60_Tempest_Squadron_Buildable">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		H60_Tempest_Squadron, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Torrent_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>23</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Torrent_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Twin_Ion_Engine_Starfighter_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>21</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Twin_Ion_Engine_Starfighter_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Missile_TIE_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Missile_TIE_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>	
+	
+	<SpaceUnit Name="Template_Flagship_N1_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		N1_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_NTB_630_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		NTB_630_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+		
+	<SpaceUnit Name="Template_Flagship_V_Wing_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>23</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		V-Wing_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Z95_Headhunter_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Z95_Headhunter_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Generic_Z95_Bomber_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Generic_Z95_Bomber_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+		
+	<SpaceUnit Name="Template_Flagship_Republic_Z95_Headhunter_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>47</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Republic_Z95_Headhunter_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	
+	
+	<!-- ========================================== CIS Squadrons ========================================== -->
+	
+	<SpaceUnit Name="Template_Flagship_Belbullab22_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Belbullab22_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Belbullab24_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Belbullab24_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Ginivex_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>56</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Ginivex_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>	
+	
+	<SpaceUnit Name="Template_Flagship_Gozanti_Cruiser_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>123</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Gozanti_Cruiser_Squadron, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Hyena_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>56</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Hyena_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Komrk_Gunship_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Komrk_Gunship_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Mankvim_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>31</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Mankvim_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Nantex_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>23</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Nantex_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Pursuer_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Skirmish_Pursuer_Enforcement_Ship_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+			
+	<SpaceUnit Name="Template_Flagship_Scarab_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>25</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Scarab_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Sabaoth_Fighter_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Sabaoth_Fighter_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+		
+	<SpaceUnit Name="Template_Flagship_Sabaoth_Bomber_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power></AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Sabaoth_Bomber_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_TriFighter_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>36</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		TriFighter_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Template_Flagship_Vulture_Squadron">
+	
+		<Variant_Of_Existing_Type>Template_Spawner</Variant_Of_Existing_Type>
+		
+		
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>14</AI_Combat_Power>
+
+		
+		<Destruction_Survivors> 
+		Vulture_Squadron_Buildable, 1
+		</Destruction_Survivors>
+		
+	</SpaceUnit>
+	
+
+</Skirmish_Units>

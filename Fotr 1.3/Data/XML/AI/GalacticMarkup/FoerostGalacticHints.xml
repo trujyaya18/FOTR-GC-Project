@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+	<Planets HintSet="Galactic_Hints">
+		<!-- CIS Planets -->
+		<Foerost>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Foerost>
+
+		<!-- Republic Planets -->
+		<Anaxes>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Anaxes>
+
+		<Rendili>
+			<Chokepoint>2.0</Chokepoint>
+			<PriorityTarget>3.0</PriorityTarget>
+		</Rendili>
+	</Planets>
+</Galactic_Markup>

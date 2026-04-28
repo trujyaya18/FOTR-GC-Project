@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name>RepublicSectorAI</Name>
+
+	<GoalSetExtensionSize>3</GoalSetExtensionSize>
+
+	<Personality>
+		<Focus> 1.0 </Focus>
+		<Aggressiveness> 1.0</Aggressiveness>
+	</Personality>
+	
+    <GalacticFreeStoreScript></GalacticFreeStoreScript>
+    <SpaceFreeStoreScript>BusyTacticalFreeStore</SpaceFreeStoreScript>
+    <LandFreeStoreScript>LandTacticalFreeStore</LandFreeStoreScript>
+	
+	<GoalProposalFunctionSets>
+		BasicInfrastructureGalacticSet
+		BasicOffensiveSpaceSet
+		BasicLandGoalSet
+	</GoalProposalFunctionSets>
+	
+	<Templates>
+        <Space>
+            Generic_Space
+        </Space>
+        <Land>
+            Generic_Land
+        </Land>
+		<Galactic>
+			Republic_Sector_Forces_Default
+		</Galactic>
+	</Templates>
+
+	<Difficulty_Adjustments>
+		<Easy>Hard_Default</Easy>
+		<Normal>Normal_Default</Normal>
+		<Hard>Easy_Default</Hard>
+	</Difficulty_Adjustments>
+	
+</AIPlayerType>

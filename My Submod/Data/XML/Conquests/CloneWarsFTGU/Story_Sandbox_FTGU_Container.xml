@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+
+
+
+<!--******************************************************-->
+<!--******	Campaign: Rim World Conflict (Empire)	******-->
+<!--******************************************************-->
+
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="CIS_Level_Four">
+  		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_CIS_TECH</Event_Param2>
+ 		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>		
+	</Event>
+	
+	<Event Name="Rep_Level_Four">
+  		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>SET_REP_TECH</Event_Param2>
+ 		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+  		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>		
+	</Event>	
+	
+</Story>

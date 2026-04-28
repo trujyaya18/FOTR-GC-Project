@@ -1,0 +1,3297 @@
+<?xml version="1.0"?>
+<Ground_Structures>
+
+	<!-- Template -->
+
+	<Indigenous_Structure Name="Template_Indigenous_Structure">
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Size_Value>50</Size_Value>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_Swamp_hut.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Tactical_Health>500</Tactical_Health>
+
+		<CategoryMask> Structure </CategoryMask>
+		<Property_Flags>InBase</Property_Flags>
+		<Base_Position>In_Base</Base_Position>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Is_Dummy>No</Is_Dummy>
+
+        <Affiliation>Neutral</Affiliation>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+
+		<Target_Bones> Point01, Point02, Point03, Point04, Point05, Point06,
+		Point07, Point08, Point09, Point10, Point11, Point11, Point12,
+		Point13, Point14, Point15, Point16 </Target_Bones>
+
+		<GUI_Row>0</GUI_Row>
+		<Political_Control>0</Political_Control>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Override_Bounty_SP>500</Override_Bounty_SP>
+		<Override_Bounty_MP>500</Override_Bounty_MP>
+		<Sabotage_Cost_Credits>1600</Sabotage_Cost_Credits>
+		<Score_Cost_Credits> 8000 </Score_Cost_Credits>
+
+		<Behavior>DUMMY_GROUND_STRUCTURE, SELECTABLE</Behavior>
+        <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, IDLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, GARRISON_STRUCTURE, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, EARTHQUAKE_TARGET</LandBehavior>
+
+        <Garrison_Category> Infantry </Garrison_Category>
+        <Garrison_Exit_Dist>50</Garrison_Exit_Dist>
+        <Num_Garrison_Slots>2</Num_Garrison_Slots>
+        <Garrison_Bone_Names>ROOT</Garrison_Bone_Names>
+        <Garrison_Enter_Dist>50</Garrison_Enter_Dist>
+        <Garrison_Radius>50</Garrison_Radius>
+        <Num_Garrison_Guns>4</Num_Garrison_Guns>
+
+		<Property_Flags> CanContainGarrison | GarrisonCanFire </Property_Flags>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>180.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Spawned_Indigenous_Units_Type>Twilek_Female</Spawned_Indigenous_Units_Type>
+        <Spawned_Indigenous_Units_Delay_Seconds>999.0</Spawned_Indigenous_Units_Delay_Seconds>
+        <Spawned_Indigenous_Units_Quantity>0</Spawned_Indigenous_Units_Quantity>
+        <Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+        <Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+        <Spawn_Indigenous_Units_Chance>0.0f</Spawn_Indigenous_Units_Chance>
+        <Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Twilek_Raiding_Party</Spawned_Indigenous_Pack_Type>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_Clone_Is_Obstacle>true</Death_Clone_Is_Obstacle>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack> EHD_Academy_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost/>
+
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>true</Initial_State_Visible_Under_FOW>
+		<Reveal_During_Setup_Phase>true</Reveal_During_Setup_Phase>
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<Lua_Script>IndigenousHandler</Lua_Script>
+	</Indigenous_Structure>
+
+  	<GroundStructure Name="Template_Tactical_Wall">
+		<Land_Model_Name>EB_BaseWall-mid.alo</Land_Model_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior />
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<LandBehavior>IDLE, WALL, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, DAMAGE_TRACKING</LandBehavior>
+
+		<OverridePassability> Obstacle </OverridePassability>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+        <Always_Side_With_Defender>true</Always_Side_With_Defender>
+        <Property_Flags> NotOpportunityTarget </Property_Flags>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+   </GroundStructure>
+
+	<!-- Heterogenous Spawn Structures -->
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Urban">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_W_Urban_CorBuild_A.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>W_Urban_CorBuild_A.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			W_Urban_CorBuild_A.ALO,
+			Urban, 				W_Urban_CorBuild_A.ALO,
+			Arctic, 			W_Urban_CorBuild_A.ALO,
+			Volcanic, 			W_Urban_CorBuild_A.ALO,
+			Desert, 			W_Urban_CorBuild_A.ALO,
+			Forest, 			W_Urban_CorBuild_A.ALO,
+			Swamp, 				W_Urban_CorBuild_A.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.5</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Industrial">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_twilek_building.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_twilek_building.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			EB_CHECKPOINTSTRUCTURE.ALO,
+			Urban, 				EB_CHECKPOINTSTRUCTURE.ALO,
+			Arctic, 			EB_CHECKPOINTSTRUCTURE.ALO,
+			Volcanic, 			EB_CHECKPOINTSTRUCTURE.ALO,
+			Desert, 			NB_twilek_building.ALO,
+			Forest, 			EB_CHECKPOINTSTRUCTURE.ALO,
+			Swamp, 				NB_twilek_building.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Spawned_Indigenous_Units_Type>Twilek_Female</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>12</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>80.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance>1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Twilek_Raiding_Party</Spawned_Indigenous_Pack_Type>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Treehouse">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_wookiee_tree.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_wookiee_tree.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_wookiee_tree.ALO,
+			Urban, 				NB_wookiee_tree.ALO,
+			Arctic, 			NB_wookiee_tree.ALO,
+			Volcanic, 			NB_wookiee_tree.ALO,
+			Desert, 			NB_wookiee_tree.ALO,
+			Forest, 			NB_wookiee_tree.ALO,
+			Swamp, 				NB_wookiee_tree.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Palace">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_W_Hutt_Spawnbuilding.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>W_Hutt_Spawnbuilding.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			W_Hutt_Spawnbuilding.ALO,
+			Urban, 				W_Hutt_Spawnbuilding.ALO,
+			Arctic, 			W_Hutt_Spawnbuilding.ALO,
+			Volcanic, 			W_Hutt_Spawnbuilding.ALO,
+			Desert, 			W_Hutt_Spawnbuilding.ALO,
+			Forest, 			W_Hutt_Spawnbuilding.ALO,
+			Swamp, 				W_Hutt_Spawnbuilding.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Cave_Entry">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Sullest_cave.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Sullest_cave.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Sullest_cave.ALO,
+			Urban, 				NB_Sullest_cave.ALO,
+			Arctic, 			NB_Sullest_cave.ALO,
+			Volcanic, 			NB_Sullest_cave.ALO,
+			Desert, 			NB_Sullest_cave.ALO,
+			Forest, 			NB_Sullest_cave.ALO,
+			Swamp, 				NB_Sullest_cave.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.2</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Aquatic">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_moncal_bu.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_moncal_building.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_moncal_building.ALO,
+			Urban, 				NB_moncal_building.ALO,
+			Arctic, 			NB_moncal_building.ALO,
+			Volcanic, 			NB_moncal_building.ALO,
+			Desert, 			NB_moncal_building.ALO,
+			Forest, 			NB_moncal_building.ALO,
+			Swamp, 				NB_moncal_building.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.3</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Farm">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_TCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_TCH.ALO,
+			Arctic, 			NB_TCH.ALO,
+			Volcanic, 			NB_TCH.ALO,
+			Desert, 			NB_TCH.ALO,
+			Forest, 			NB_TCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Temperate">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_VCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_VCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_VCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_VCH.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Desert">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_DCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_DCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_DCH.ALO,
+			Urban, 				NB_DCH.ALO,
+			Arctic, 			NB_DCH.ALO,
+			Volcanic, 			NB_DCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_DCH.ALO,
+			Swamp, 				NB_DCH.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Swamp">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Swamp_hut.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Swamp_hut.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Swamp_hut.ALO,
+			Urban, 				NB_Swamp_hut.ALO,
+			Arctic, 			NB_Swamp_hut.ALO,
+			Volcanic, 			NB_Swamp_hut.ALO,
+			Desert, 			NB_Swamp_hut.ALO,
+			Forest, 			NB_Swamp_hut.ALO,
+			Swamp, 				NB_Swamp_hut.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>2.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Cantina">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_W_CANTINATAT.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>W_CANTINATAT.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			W_CANTINATAT.ALO,
+			Urban, 				W_CANTINATAT.ALO,
+			Arctic, 			W_CANTINATAT.ALO,
+			Volcanic, 			W_CANTINATAT.ALO,
+			Desert, 			W_CANTINATAT.ALO,
+			Forest, 			W_CANTINATAT.ALO,
+			Swamp, 				W_CANTINATAT.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mixed_Arena">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MIXED</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MIXED
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_GrandArena.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MIXED_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_GrandArena.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_GrandArena.ALO,
+			Urban, 				NB_GrandArena.ALO,
+			Arctic, 			NB_GrandArena.ALO,
+			Volcanic, 			NB_GrandArena.ALO,
+			Desert, 			NB_GrandArena.ALO,
+			Forest, 			NB_GrandArena.ALO,
+			Swamp, 				NB_GrandArena.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<!-- Homogenous Spawn Structures -->
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Human_Urban">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_HUMAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_HUMAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_W_Urban_CorBuild_A.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_HUMAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_HUMAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>W_Urban_CorBuild_A.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			W_Urban_CorBuild_A.ALO,
+			Urban, 				W_Urban_CorBuild_A.ALO,
+			Arctic, 			W_Urban_CorBuild_A.ALO,
+			Volcanic, 			W_Urban_CorBuild_A.ALO,
+			Desert, 			W_Urban_CorBuild_A.ALO,
+			Forest, 			W_Urban_CorBuild_A.ALO,
+			Swamp, 				W_Urban_CorBuild_A.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.5</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Human_Swamp">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_HUMAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_HUMAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Swamp_hut.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_HUMAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_HUMAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Swamp_hut.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Swamp_hut.ALO,
+			Urban, 				NB_Swamp_hut.ALO,
+			Arctic, 			NB_Swamp_hut.ALO,
+			Volcanic, 			NB_Swamp_hut.ALO,
+			Desert, 			NB_Swamp_hut.ALO,
+			Forest, 			NB_Swamp_hut.ALO,
+			Swamp, 				NB_Swamp_hut.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>2.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Human">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_HUMAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_HUMAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_HUMAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_HUMAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Rodian">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_RODIAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_RODIAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Gunga_Building.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_RODIAN_FRIENDLY</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_RODIAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Gunga_Building.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Gunga_Building.ALO,
+			Urban, 				NB_Gunga_Building.ALO,
+			Arctic, 			NB_Gunga_Building.ALO,
+			Volcanic, 			NB_Gunga_Building.ALO,
+			Desert, 			NB_Gunga_Building.ALO,
+			Forest, 			NB_Gunga_Building.ALO,
+			Swamp, 				NB_Gunga_Building.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.3</Scale_Factor>
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Rodian_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Rodian_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mon_Calamari">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MON_CALAMARI</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MON_CALAMARI
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_moncal_bu.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MONCAL_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MONCAL_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_moncal_building.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_moncal_building.ALO,
+			Urban, 				NB_moncal_building.ALO,
+			Arctic, 			NB_moncal_building.ALO,
+			Volcanic, 			NB_moncal_building.ALO,
+			Desert, 			NB_moncal_building.ALO,
+			Forest, 			NB_moncal_building.ALO,
+			Swamp, 				NB_moncal_building.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.3</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>50.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Gungan">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_GUNGAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_GUNGAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Gunga_Building.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_GUNGAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_GUNGAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Gunga_Building.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Gunga_Building.ALO,
+			Urban, 				NB_Gunga_Building.ALO,
+			Arctic, 			NB_Gunga_Building.ALO,
+			Volcanic, 			NB_Gunga_Building.ALO,
+			Desert, 			NB_Gunga_Building.ALO,
+			Forest, 			NB_Gunga_Building.ALO,
+			Swamp, 				NB_Gunga_Building.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.3</Scale_Factor>
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Naboo_Gungan_Warrior_Troop, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Naboo_Gungan_Warrior_Troop, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Bothan">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_BOTHAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_BOTHAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Bothan_building.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_BOTHAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_BOTHAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Bothan_building.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Bothan_building.ALO,
+			Urban, 				NB_Bothan_building.ALO,
+			Arctic, 			NB_Bothan_building.ALO,
+			Volcanic, 			NB_Bothan_building.ALO,
+			Desert, 			NB_Bothan_building.ALO,
+			Forest, 			NB_Bothan_building.ALO,
+			Swamp, 				NB_Bothan_building.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>50.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Bothan_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Bothan_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Twilek">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_TWILEK</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_TWILEK
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_twilek_building.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_TWILEK_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_TWILEK_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_twilek_building.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			EB_CHECKPOINTSTRUCTURE.ALO,
+			Urban, 				EB_CHECKPOINTSTRUCTURE.ALO,
+			Arctic, 			EB_CHECKPOINTSTRUCTURE.ALO,
+			Volcanic, 			EB_CHECKPOINTSTRUCTURE.ALO,
+			Desert, 			NB_twilek_building.ALO,
+			Forest, 			EB_CHECKPOINTSTRUCTURE.ALO,
+			Swamp, 				NB_twilek_building.ALO
+		</Land_Terrain_Model_Mapping>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Twilek_Raiding_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Twilek_Raiding_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Hutt">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_HUTT</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_HUTT
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_W_Hutt_Spawnbuilding.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_HUTT_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_HUTT_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>W_Hutt_Spawnbuilding.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			W_Hutt_Spawnbuilding.ALO,
+			Urban, 				W_Hutt_Spawnbuilding.ALO,
+			Arctic, 			W_Hutt_Spawnbuilding.ALO,
+			Volcanic, 			W_Hutt_Spawnbuilding.ALO,
+			Desert, 			W_Hutt_Spawnbuilding.ALO,
+			Forest, 			W_Hutt_Spawnbuilding.ALO,
+			Swamp, 				W_Hutt_Spawnbuilding.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.5</Scale_Factor>
+		<GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mixed_Civilians_Team_Hutts, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Sullustan">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_SULLUSTAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_SULLUSTAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Sullest_cave.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_SULLUSTAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_SULLUSTAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Sullest_cave.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Sullest_cave.ALO,
+			Urban, 				NB_Sullest_cave.ALO,
+			Arctic, 			NB_Sullest_cave.ALO,
+			Volcanic, 			NB_Sullest_cave.ALO,
+			Desert, 			NB_Sullest_cave.ALO,
+			Forest, 			NB_Sullest_cave.ALO,
+			Swamp, 				NB_Sullest_cave.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.2</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Sullustan_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Sullustan_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Pyngani">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_PYNGANI</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_PYNGANI
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_PYNGANI_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_PYNGANI_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Civilian_Urban_Usable_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mustafarian">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MUSTAFARIAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MUSTAFARIAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_nb_mustmushroom.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MUSTAFARIAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MUSTAFARIAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_mustmushroom.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_mustmushroom.ALO,
+			Urban, 				NB_mustmushroom.ALO,
+			Arctic, 			NB_mustmushroom.ALO,
+			Volcanic, 			NB_mustmushroom.ALO,
+			Desert, 			NB_mustmushroom.ALO,
+			Forest, 			NB_mustmushroom.ALO,
+			Swamp, 				NB_mustmushroom.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>ALT0</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mustafarian_Indigenous_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mustafarian_Indigenous_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Mandalorian">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_MANDALORIAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_MANDALORIAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_r_officer_academy.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MANDALORIAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_MANDALORIAN_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>RB_BARRACKS_SMALL.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			RB_BARRACKS_SMALL.ALO,
+			Urban, 				RB_BARRACKS_SMALL.ALO,
+			Arctic, 			RB_BARRACKS_SMALL.ALO,
+			Volcanic, 			RB_BARRACKS_SMALL.ALO,
+			Desert, 			RB_BARRACKS_SMALL.ALO,
+			Forest, 			RB_BARRACKS_SMALL.ALO,
+			Swamp, 				RB_BARRACKS_SMALL.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>0.75</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mandalorian_Indigenous_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mandalorian_Indigenous_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Nightsister">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_NIGHTSISTER</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_NIGHTSISTER
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_NightSis_Hut.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_NIGHTSISTERS_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_NIGHTSISTERS_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_NightSis_Hut.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_NightSis_Hut.ALO,
+			Urban, 				NB_NightSis_Hut.ALO,
+			Arctic, 			NB_NightSis_Hut.ALO,
+			Volcanic, 			NB_NightSis_Hut.ALO,
+			Desert, 			NB_NightSis_Hut.ALO,
+			Forest, 			NB_NightSis_Hut.ALO,
+			Swamp, 				NB_NightSis_Hut.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Nightsister_Indigenous_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Nightsister_Indigenous_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Duros">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_DUROS</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_DUROS
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_DUROS_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_DUROS_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Duros_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Duros_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Chiss">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_CHISS</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_CHISS
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_CHISS_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_CHISS_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Talortai">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_TALORTAI</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_TALORTAI
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_CHISS_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_CHISS_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Weequay">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_WEEQUAY</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_WEEQUAY
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_WEEQUAY_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_WEEQUAY_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Vodran">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_VODRAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_VODRAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_VODRAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_VODRAN_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Trandoshan">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_TRANDOSHAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_TRANDOSHAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_TRANDOSHAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_TRANDOSHAN_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Nikto">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_NIKTO</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_NIKTO
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_NIKTO_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_NIKTO_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Klatooinian">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_KLATOOINIAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_KLATOOINIAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_KLATOOINIAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_KLATOOINIAN_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Falleen">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_FALLEEN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_FALLEEN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_FALLEEN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_FALLEEN_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_SsiRuuk">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_SSIRUUK</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_SSIRUUK
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_SSIRUUK_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_SSIRUUK_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Yevethan">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_YEVETHA</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_YEVETHA
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_YEVETHAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_YEVETHAN_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Killik">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_KILLIK</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_KILLIK
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_KILLIK_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_KILLIK_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Cathar">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_CATHAR</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_CATHAR
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_VCH.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_CATHAR_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_CATHAR_ENEMY  </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_VCH.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_TCH.ALO,
+			Urban, 				NB_VCH.ALO,
+			Arctic, 			NB_SCH.ALO,
+			Volcanic, 			NB_VCH.ALO,
+			Desert, 			NB_DCH.ALO,
+			Forest, 			NB_VCH.ALO,
+			Swamp, 				NB_TCH.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Wookiee">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_WOOKIEE</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_WOOKIEE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_wookiee_tree.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_WOOKIEE_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_WOOKIEE_ENEMY</Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_wookiee_tree.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_wookiee_tree.ALO,
+			Urban, 				NB_wookiee_tree.ALO,
+			Arctic, 			NB_wookiee_tree.ALO,
+			Volcanic, 			NB_wookiee_tree.ALO,
+			Desert, 			NB_wookiee_tree.ALO,
+			Forest, 			NB_wookiee_tree.ALO,
+			Swamp, 				NB_wookiee_tree.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>POINT02</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>SPAWN_01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Kashyyyk_Wookie_War_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Kashyyyk_Wookie_War_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Tusken">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_TUSKEN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_TUSKEN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Sandpeople_Tent.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_TUSKEN_RAIDER_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_TUSKEN_RAIDER_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Sandpeople_Tent.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Sandpeople_Tent.ALO,
+			Urban, 				NB_Sandpeople_Tent.ALO,
+			Arctic, 			NB_Sandpeople_Tent.ALO,
+			Volcanic, 			NB_Sandpeople_Tent.ALO,
+			Desert, 			NB_Sandpeople_Tent.ALO,
+			Forest, 			NB_Sandpeople_Tent.ALO,
+			Swamp, 				NB_Sandpeople_Tent.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.4</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>SPAWN_01</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Sandpeople_War_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Sandpeople_War_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Ewok">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_EWOK</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_EWOK
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Ewok_tree.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_EWOK_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>  TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_EWOK_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Ewok_tree.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Ewok_tree.ALO,
+			Urban, 				NB_Ewok_tree.ALO,
+			Arctic, 			NB_Ewok_tree.ALO,
+			Volcanic, 			NB_Ewok_tree.ALO,
+			Desert, 			NB_Ewok_tree.ALO,
+			Forest, 			NB_Ewok_tree.ALO,
+			Swamp, 				NB_Ewok_tree.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Endor_Ewok_Hunting_Party, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Endor_Ewok_Hunting_Party, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Geonosian">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_GEONOSIAN</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_GEONOSIAN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_w_Geonosis_Tower01.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_GEONOSIAN_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_GEONOSIAN_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>w_Geonosis_Tower01.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			w_Geonosis_Tower01.ALO,
+			Urban, 				w_Geonosis_Tower01.ALO,
+			Arctic, 			w_Geonosis_Tower01.ALO,
+			Volcanic, 			w_Geonosis_Tower01.ALO,
+			Desert, 			w_Geonosis_Tower01.ALO,
+			Forest, 			w_Geonosis_Tower01.ALO,
+			Swamp, 				w_Geonosis_Tower01.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Geonosian_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Geonosian_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Noghri">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_NOGHRI</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_NOGHRI
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_nb_noghri_hut.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_NOGHRI_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_NOGHRI_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Noghri_Hut.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Noghri_Hut.ALO,
+			Urban, 				NB_Noghri_Hut.ALO,
+			Arctic, 			NB_Noghri_Hut.ALO,
+			Volcanic, 			NB_Noghri_Hut.ALO,
+			Desert, 			NB_Noghri_Hut.ALO,
+			Forest, 			NB_Noghri_Hut.ALO,
+			Swamp, 				NB_Noghri_Hut.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>2.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Spawn_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Noghri_Indigenous_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Noghri_Indigenous_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Cultists">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_CULTISTS</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_CULTISTS
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_mandalorian_barracks.tga</Icon_Name>
+
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_NOGHRI_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_NOGHRI_ENEMY </Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_mandalorian_barracks.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_mandalorian_barracks.ALO,
+			Urban, 				NB_mandalorian_barracks.ALO,
+			Arctic, 			NB_mandalorian_barracks.ALO,
+			Volcanic, 			NB_mandalorian_barracks.ALO,
+			Desert, 			NB_mandalorian_barracks.ALO,
+			Forest, 			NB_mandalorian_barracks.ALO,
+			Swamp, 				NB_mandalorian_barracks.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>2.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Sith_Cultist_Team_Hostile, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Sith_Cultist_Team_Hostile, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Jawa_Sandcrawler">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_JAWA_SANDCRAWLER</Text_ID>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_JAWA_FRIENDLY </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>  TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_JAWA_ENEMY </Enemy_Spawn_Text>
+		<Land_Model_Name>NV_SAND_CRAWLER.ALO</Land_Model_Name>
+		<Icon_Name>i_button_NV_SAND_CRAWLER.tga</Icon_Name>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP</LandBehavior>
+
+		<Spawned_Indigenous_Units_Type>Jawa_Scout</Spawned_Indigenous_Units_Type>
+		<Spawned_Indigenous_Units_Delay_Seconds>20.0</Spawned_Indigenous_Units_Delay_Seconds>
+		<Spawned_Indigenous_Units_Quantity>10</Spawned_Indigenous_Units_Quantity>
+		<Spawn_Indigenous_Units_In_Packs>Yes</Spawn_Indigenous_Units_In_Packs>
+		<Spawn_Indigenous_Units_Radius>90.0f</Spawn_Indigenous_Units_Radius>
+		<Spawn_Indigenous_Units_Chance> 1.0f</Spawn_Indigenous_Units_Chance>
+		<Max_Distance_From_Spawner>150</Max_Distance_From_Spawner>
+		<Spawned_Indigenous_Pack_Type>Tatooine_Jawa_Scout_Team</Spawned_Indigenous_Pack_Type>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.15</Radar_Icon_Size>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Is_Branched_Map_Discardable>False</Is_Branched_Map_Discardable>
+
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Loads_When_Faction_Present> True </Loads_When_Faction_Present>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Ranged_Target_Z_Adjust>40.0</Ranged_Target_Z_Adjust>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+
+		<Lua_Script>SandCrawler</Lua_Script>
+
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_JAWA_SPAWNER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+
+		<Garrison_Bone_Names>root</Garrison_Bone_Names>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+        <Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<!-- Non-Sentient Homogenous Spawn Structures -->
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Wampa">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_WAMPA</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_WAMPA
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_AI_WampaCave.tga</Icon_Name>
+
+		<Friendly_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_WAMPA_FRIENDLY</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_WAMPA_ENEMY</Enemy_Spawn_Text>
+
+		<Land_Model_Name>AI_WampaCave.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Rancor_cave.ALO,
+			Urban, 				NB_Rancor_cave.ALO,
+			Arctic, 			AI_WampaCave.ALO,
+			Volcanic, 			NB_Rancor_cave.ALO,
+			Desert, 			NB_Rancor_cave.ALO,
+			Forest, 			NB_Rancor_cave.ALO,
+			Swamp, 				NB_Rancor_cave.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, IDLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, EARTHQUAKE_TARGET</LandBehavior>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Starting_Spawned_Units_Tech_0>Wampa, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Wampa, 1</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Terentatek">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_TERENTATEK</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_TERENTATEK
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Rancor_cave.tga</Icon_Name>
+
+		<Friendly_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_TERENTATEK_FRIENDLY</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_TERENTATEK_ENEMY</Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Rancor_cave.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Rancor_cave.ALO,
+			Urban, 				NB_Rancor_cave.ALO,
+			Arctic, 			AI_WampaCave.ALO,
+			Volcanic, 			NB_Rancor_cave.ALO,
+			Desert, 			NB_Rancor_cave.ALO,
+			Forest, 			NB_Rancor_cave.ALO,
+			Swamp, 				NB_Rancor_cave.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, IDLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, EARTHQUAKE_TARGET</LandBehavior>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Starting_Spawned_Units_Tech_0>Rancor, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rancor, 1</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Rancor">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_RANCOR</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_RANCOR
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_Rancor_cave.tga</Icon_Name>
+
+		<Friendly_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_RANCOR_FRIENDLY</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_RANCOR_ENEMY</Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_Rancor_cave.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_Rancor_cave.ALO,
+			Urban, 				NB_Rancor_cave.ALO,
+			Arctic, 			AI_WampaCave.ALO,
+			Volcanic, 			NB_Rancor_cave.ALO,
+			Desert, 			NB_Rancor_cave.ALO,
+			Forest, 			NB_Rancor_cave.ALO,
+			Swamp, 				NB_Rancor_cave.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, IDLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, EARTHQUAKE_TARGET</LandBehavior>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Starting_Spawned_Units_Tech_0>Rancor, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rancor, 1</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Vornskr">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_VORNSKR</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_VORNSKR
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_vornskr_den.tga</Icon_Name>
+
+		<Friendly_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_VORNSKR_FRIENDLY</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_VORNSKR_ENEMY</Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_vornskr_den.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_vornskr_den.ALO,
+			Urban, 				NB_vornskr_den.ALO,
+			Arctic, 			NB_vornskr_den.ALO,
+			Volcanic, 			NB_vornskr_den.ALO,
+			Desert, 			NB_vornskr_den.ALO,
+			Forest, 			NB_vornskr_den.ALO,
+			Swamp, 				NB_vornskr_den.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+        <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, IDLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, EARTHQUAKE_TARGET</LandBehavior>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Starting_Spawned_Units_Tech_0>Vornskr_Wolf, 6</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Vornskr_Wolf, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<Indigenous_Structure Name="Indigenous_Dwelling_Kath">
+		<Variant_Of_Existing_Type>Template_Indigenous_Structure</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_STRUCTURE_INDIGENOUS_DWELLING_KATH</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_INDIGENOUS_DWELLING_SPAWN1_KATH
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_NB_vornskr_den.tga</Icon_Name>
+
+		<Friendly_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_KATH_FRIENDLY</Friendly_Spawn_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_INDIGENOUS_OBJECTIVE_KATH_ENEMY</Enemy_Spawn_Text>
+
+		<Land_Model_Name>NB_vornskr_den.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			NB_vornskr_den.ALO,
+			Urban, 				NB_vornskr_den.ALO,
+			Arctic, 			NB_vornskr_den.ALO,
+			Volcanic, 			NB_vornskr_den.ALO,
+			Desert, 			NB_vornskr_den.ALO,
+			Forest, 			NB_vornskr_den.ALO,
+			Swamp, 				NB_vornskr_den.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+
+        <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, IDLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, SPAWN_INDIGENOUS_UNITS, DUMMY_TOOLTIP, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, EARTHQUAKE_TARGET</LandBehavior>
+
+		<Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>0.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Starting_Spawned_Units_Tech_0>Vornskr_Wolf, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Vornskr_Wolf, 6</Reserve_Spawned_Units_Tech_0>
+	</Indigenous_Structure>
+
+	<!-- Walls (Defender Aligned) -->
+
+	<GroundStructure Name="Tactical_Heavy_Wall_x1">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle> false </Death_Clone_Is_Obstacle>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Heavy_Wall_Corner_x1">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_BaseWall-crn.alo</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Heavy_Wall_Inside_Corner_x1">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_BaseWall-inside-crn.alo</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Light_Wall_x1">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>RB_BASEWALL-MID.ALO</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Light_Wall_Corner_x1">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>RB_BASEWALL-corn.ALO</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Light_Wall_Inside_Corner_x1">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>RB_BASEWALL-Inside-crn.ALO</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Heavy_Wall_x2">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Death_Clone_Is_Obstacle> false </Death_Clone_Is_Obstacle>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Heavy_Wall_Corner_x2">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Land_Model_Name>EB_BaseWall-crn.alo</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Heavy_Wall_Inside_Corner_x2">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Land_Model_Name>EB_BaseWall-inside-crn.alo</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Light_Wall_x2">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Land_Model_Name>RB_BASEWALL-MID.ALO</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Light_Wall_Corner_x2">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Land_Model_Name>RB_BASEWALL-corn.ALO</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Tactical_Light_Wall_Inside_Corner_x2">
+		<Variant_Of_Existing_Type>Template_Tactical_Wall</Variant_Of_Existing_Type>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Land_Model_Name>RB_BASEWALL-Inside-crn.ALO</Land_Model_Name>
+	</GroundStructure>
+
+<!--													   -->
+<!--	Walls and other Rebel/Empire decorative structures -->
+<!--													   -->
+
+  	<GroundStructure Name="Empire_Wall">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_BaseWall-mid.alo</Land_Model_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<OverridePassability> EmpireWall </OverridePassability>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+   </GroundStructure>
+
+	<GroundStructure Name="Empire_Wall_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_BaseWall-crn.alo</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<OverridePassability> EmpireWall </OverridePassability>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+   </GroundStructure>
+
+	<GroundStructure Name="Empire_Wall__Inside_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_BaseWall-inside-crn.alo</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<OverridePassability> EmpireWall </OverridePassability>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+   </GroundStructure>
+
+	<GroundStructure Name="Empire_Landing_Platform">
+		<Text_ID>TEXT_STRUCTURE_LANDING_PAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name> EB_ICC_landingpad.alo </Land_Model_Name>
+		<Behavior />
+		<LandBehavior>IDLE,LAND_OBSTACLE,REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.2</Radar_Icon_Size>
+
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+  		<Obstacle_Width>160.0</Obstacle_Width>
+		<Obstacle_Height>100.0</Obstacle_Height>
+		<Obstacle_X_Offset>-80.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-50.0</Obstacle_Y_Offset>
+
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<GUI_Bracket_Width>50</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Empire_Landing_Platform_2X">
+
+		<Variant_Of_Existing_Type> Empire_Landing_Platform </Variant_Of_Existing_Type>
+		<LandBehavior>IDLE, REVEAL</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+
+	</GroundStructure>
+
+<!-- Rebel Structures -->
+
+	<GroundStructure Name="Wall">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-MID.ALO</Land_Model_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<OverridePassability> RebelWall </OverridePassability>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Wall_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-corn.ALO</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<OverridePassability> RebelWall </OverridePassability>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Wall_Inside_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-Inside-crn.ALO</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<OverridePassability> RebelWall </OverridePassability>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Abstract_Sensor_Array">
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SENSOR_NODE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SENSOR_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS_CAPABILITY
+		</Encyclopedia_Text>
+		<Land_Model_Name>NB_SensorNode.alo</Land_Model_Name>
+		<Icon_Name>i_button_sensor_node.tga</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+		<SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Sensor_Array_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
+		<LandBehavior> IDLE, REVEAL, HIDE_WHEN_FOGGED, LAND_OBSTACLE </LandBehavior>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+
+		<Land_FOW_Reveal_Range>1100.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale>50</Select_Box_Scale>
+
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<GUI_Bracket_Width>20</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+  </GroundStructure>
+
+	<GroundStructure Name="Sensor_Array">
+
+ 		<Variant_Of_Existing_Type> Abstract_Sensor_Array </Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_STRUCTURE_SENSOR_REBEL</Text_ID>
+
+		<Tactical_Sell_Credits> 500 </Tactical_Sell_Credits>
+		<SFXEvent_Sold_Tactical> RHD_Sensor_Node_Sold </SFXEvent_Sold_Tactical>
+
+		<Required_Special_Structures>Generic_Communications_Array</Required_Special_Structures>
+
+		<Affiliation>Rebel, Empire</Affiliation>
+
+		<Obstacle_Proxy_Type> Rebel_Build_Pad </Obstacle_Proxy_Type>
+  </GroundStructure>
+
+	<GroundStructure Name="Grounded_Xwing">
+		<Text_ID>TEXT_UNIT_X_WING</Text_ID>
+		<Land_Model_Name>rv_xwing_mission01.alo</Land_Model_Name>
+		<Icon_Name>i_button_x_wing.tga</Icon_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>IDLE,LAND_OBSTACLE</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> Armor_Vehicle_LT </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+	</GroundStructure>
+
+	<GroundStructure Name="Captureable_Xwing">
+      <Variant_Of_Existing_Type>Grounded_Xwing</Variant_Of_Existing_Type>
+		<Land_Model_Name>rv_xwing_mission01.alo</Land_Model_Name>
+		<Affiliation>Neutral</Affiliation>
+		<No_Colorization_Color> 200, 104, 59, 255 </No_Colorization_Color>
+   </GroundStructure>
+
+<!-- PIRATE STRUCTURES -->
+
+	<GroundStructure Name="Pirate_Wall">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-MID.ALO</Land_Model_Name>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Pirates</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+ 		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Pirate_Wall_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-corn.ALO</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Pirates</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+	<GroundStructure Name="Pirate_Wall_Inside_Corner">
+		<Text_ID>TEXT_STRUCTURE_WALL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>RB_BASEWALL-Inside-crn.ALO</Land_Model_Name>
+		<Behavior />
+		<LandBehavior>WALL</LandBehavior>
+		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Pirates</Affiliation>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Proj_Wall_Destruction</Death_Explosions>
+		<CategoryMask>Wall</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</GroundStructure>
+
+<!-- Test structures - used for planning required base area; DO NOT use on final maps -->
+
+	<GroundStructure Name="Test_Base_Hector">
+		<Text_ID>TEXT_STRUCTURE_PRODUCTION_01</Text_ID>
+		<Land_Model_Name>ALTTEST.ALO</Land_Model_Name>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE,DUMMY_LAND_BASE_LEVEL_COMPONENT</Behavior>
+		<LandBehavior>IDLE,LAND_OBSTACLE,REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1000</Tactical_Health>
+		<Autoresolve_Health>1000</Autoresolve_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Armor_Type> Armor_Wall </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+ <!--
+  		<Obstacle_Width>260.0</Obstacle_Width>
+		<Obstacle_Height>380.0</Obstacle_Height>
+		<Obstacle_X_Offset>-170.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-190.0</Obstacle_Y_Offset>
+-->
+		<GUI_Bracket_Width>60</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+   </GroundStructure>
+
+	<GroundStructure Name="Invisible_Reveal_Object">
+		<Text_ID />
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Behavior />
+		<LandBehavior> REVEAL</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>999999</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask>Wall</CategoryMask>
+	</GroundStructure>
+
+	<GroundStructure Name="Gallofree_Stationary">
+		<Text_ID />
+		<Land_Model_Name>RV_gr75.ALO</Land_Model_Name>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Behavior />
+		<LandBehavior>IDLE, LAND_OBSTACLE</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>999999</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Neutral</Affiliation>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<CategoryMask>Wall</CategoryMask>
+	</GroundStructure>
+
+	<GroundStructure Name="Imperial_Observation_Bunker">
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_EMPIRE_BUNKER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EB_TEstbunker.alo</Land_Model_Name>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+		<Behavior>SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>IDLE, LAND_OBSTACLE, SPACE_OBSTACLE, REVEAL</LandBehavior>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Autoresolve_Health>500</Autoresolve_Health>
+
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<!--<Base_Level_Available>1</Base_Level_Available>-->
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+		<Space_Layer> Frigate | Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 500 </Score_Cost_Credits>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Landed_Empire_Shuttle">
+		<Text_ID> TEXT_UNIT_TYDERIUM_SHUTTLE </Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Land_Model_Name>EV_LAMBDASHUTTLE.ALO</Land_Model_Name>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>IDLE, LAND_OBSTACLE, UNIT_AI</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask>Structure</CategoryMask>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+	</GroundStructure>
+
+	<GroundStructure Name="Droid_Interface_Station">
+		<Text_ID>TEXT_STRUCTURE_DROID_INTERFACE_STATION</Text_ID>
+		<Land_Model_Name>W_R2_Terminal.alo</Land_Model_Name>
+		<Select_Box_Scale>30</Select_Box_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.8</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask>Structure</CategoryMask>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+
+	</GroundStructure>
+
+	<GroundStructure Name="Droid_Interface_Station_Empire">
+		<Variant_Of_Existing_Type>Droid_Interface_Station</Variant_Of_Existing_Type>
+		<Land_Model_Anim_Override_Name>W_R2_Terminal.alo</Land_Model_Anim_Override_Name>
+
+		<Land_Model_Name>W_R2_Terminal_Empire.alo</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Droid_Interface_Station_Rebel">
+		<Variant_Of_Existing_Type>Droid_Interface_Station</Variant_Of_Existing_Type>
+		<Land_Model_Anim_Override_Name>W_R2_Terminal.alo</Land_Model_Anim_Override_Name>
+
+		<Land_Model_Name>W_R2_Terminal_Rebel.alo</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Droid_Interface_Station_Republic">
+		<Variant_Of_Existing_Type>Droid_Interface_Station</Variant_Of_Existing_Type>
+		<Land_Model_Anim_Override_Name>W_R2_Terminal.alo</Land_Model_Anim_Override_Name>
+
+		<Land_Model_Name>W_R2_Terminal_Republic.alo</Land_Model_Name>
+	</GroundStructure>
+
+	<GroundStructure Name="Droid_Interface_Station_CIS">
+		<Variant_Of_Existing_Type>Droid_Interface_Station</Variant_Of_Existing_Type>
+		<Land_Model_Anim_Override_Name>W_R2_Terminal.alo</Land_Model_Anim_Override_Name>
+
+		<Land_Model_Name>W_R2_Terminal_CIS.alo</Land_Model_Name>
+	</GroundStructure>
+
+	<!-- Other interface faction types not needed currently but exist in asset and prop form-->
+
+	<GroundStructure Name="Uplink_Station">
+		<Icon_Name>i_button_uplink_station.tga</Icon_Name>
+		<GUI_Bounds_Scale>0.15</GUI_Bounds_Scale>
+		<Text_ID>TEXT_STRUCTURE_UPLINK_STATION</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>w_uplink_station.alo</Land_Model_Name>
+		<Select_Box_Scale>30</Select_Box_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>LAND_OBSTACLE, EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<!--<Base_Level_Available>0</Base_Level_Available>-->
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<CategoryMask>Structure</CategoryMask>
+		<AI_Combat_Power> 5 </AI_Combat_Power>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+	</GroundStructure>
+
+
+	<GroundStructure Name="Uplink_Station_Abandoned">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_uplink_station_abandon.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</GroundStructure>
+
+	<GroundStructure Name="Empire_Gate_Large">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<!--<Land_Model_Name>EB_BaseWall-mid.alo</Land_Model_Name>-->
+
+		<Text_ID>TEXT_STRUCTURE_GATE</Text_ID>
+
+		<CategoryMask>Structure</CategoryMask>
+		<Behavior> SELECTABLE </Behavior>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, DUMMY_TOOLTIP, DAMAGE_TRACKING,</LandBehavior>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<GUI_Hide_Health_Bar>false</GUI_Hide_Health_Bar>
+
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Select>Null</SFXEvent_Select>
+		<Death_Clone>Damage_Normal, Empire_Gate_Large_Death_Clone</Death_Clone>
+		<Death_Clone_Is_Obstacle> false </Death_Clone_Is_Obstacle>
+   </GroundStructure>
+
+	<UniqueUnit Name="Empire_Gate_Large_Death_Clone">
+		<Land_Model_Name>EB_CIN_Basewall-mid_D.alo</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Affiliation>Neutral</Affiliation>
+	</UniqueUnit>
+
+
+	<GroundStructure Name="Empire_Gate_Large_Dest">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>EB_BaseWall-mid_dest.alo</Land_Model_Name>
+		<Scale_Factor>4.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 	
+   </GroundStructure>
+ 
+	<GroundStructure Name="Empire_Gate_Medium_Dest">
+		<Variant_Of_Existing_Type>Empire_Gate_Large_Dest</Variant_Of_Existing_Type>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Affiliation>Neutral</Affiliation>
+   </GroundStructure>
+
+	<GroundStructure Name="Empire_Gate_Large_Animated">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_CIN_BaseWall-mid.alo</Land_Model_Name>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+		<Land_Damage_Thresholds>1.0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0</Land_Damage_Alternates>
+		<Land_Damage_SFX>null</Land_Damage_SFX>
+   </GroundStructure>
+
+	<GroundStructure Name="Empire_Gate_Medium_Animated">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_CIN_BaseWall-mid.alo</Land_Model_Name>
+		<LandBehavior>IDLE, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+		<Land_Damage_Thresholds>1.0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0</Land_Damage_Alternates>
+		<Land_Damage_SFX>null</Land_Damage_SFX>
+   </GroundStructure>
+
+	<GroundStructure Name="Empire_Gate_Medium_Threshold">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_CIN_BaseWall-thresh.alo</Land_Model_Name>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL</LandBehavior>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+		<Land_Damage_Thresholds>1.0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0</Land_Damage_Alternates>
+		<Land_Damage_SFX>null</Land_Damage_SFX>
+    </GroundStructure>
+
+	<GroundStructure Name="Empire_Gate_Large_Threshold">
+		<Variant_Of_Existing_Type>Empire_Wall</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_CIN_BaseWall-thresh.alo</Land_Model_Name>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL</LandBehavior>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Affiliation>Empire</Affiliation>
+		<Land_Damage_Thresholds>1.0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0</Land_Damage_Alternates>
+		<Land_Damage_SFX>null</Land_Damage_SFX>
+    </GroundStructure>
+
+	<GroundStructure Name="Empire_Checkpoint">
+		<Land_Model_Name>EB_CheckPointStructure.alo</Land_Model_Name><!--jdg updated model 7/13/06 was NB_twilek_building.alo-->
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+   </GroundStructure>
+
+</Ground_Structures>

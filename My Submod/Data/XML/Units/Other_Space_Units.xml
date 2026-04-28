@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Other_Space_Units>
+	<SpaceUnit Name="Gozanti_Cruiser_Raider">
+		<Variant_Of_Existing_Type>Template_Gozanti_Cruiser</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_GOZANTI_CRUISER_RAIDER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOZANTI_CRUISER_HULL
+		TEXT_TOOLTIP_GOZANTI_CRUISER_SHIELD
+		TEXT_TOOLTIP_GOZANTI_CRUISER_MOVE
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER_WEAP1
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER_WEAP2
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER_WEAP3
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_gozanti_raider.tga</Icon_Name>
+		
+		<HardPoints>
+			HP_Gozanti_Raider_00, HP_Gozanti_Raider_01, HP_Gozanti_Raider_02, HP_Gozanti_Raider_03, HP_Gozanti_Raider_04, HP_Gozanti_Raider_05
+		</HardPoints>
+		
+		<AI_Combat_Power>34</AI_Combat_Power>
+		
+		<CategoryMask> Corvette | AntiFighter </CategoryMask>
+		
+	</SpaceUnit>
+
+	<Squadron Name="Gozanti_Cruiser_Raider_Squadron">
+
+		<Text_ID>TEXT_GOZANTI_CRUISER_RAIDER_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP_HEAVY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER_SQUADRON
+		TEXT_TOOLTIP_GOZANTI_CRUISER_HULL
+		TEXT_TOOLTIP_GOZANTI_CRUISER_SHIELD
+		TEXT_TOOLTIP_GOZANTI_CRUISER_MOVE 
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER_WEAP1
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER_WEAP2
+		TEXT_TOOLTIP_GOZANTI_CRUISER_RAIDER_WEAP3
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_gozanti_raider.tga</Icon_Name>
+
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Damage>25</Damage>
+		
+		<Property_Flags> SmallShip </Property_Flags>
+		<Formation_Priority>1</Formation_Priority>
+		<FormationOrder>1</FormationOrder>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline/>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Political_Control>0</Political_Control>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>240</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories>yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Bribe_Cost>1</Tactical_Bribe_Cost>
+		<Piracy_Value_Credits>1</Piracy_Value_Credits>
+		<Score_Cost_Credits> 420</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		
+		<Lua_Script/>
+
+		<Max_Squad_Size> 3 </Max_Squad_Size>
+		<Create_Team_Type>Gozanti_Cruiser_Raider_Squadron_Container</Create_Team_Type>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,40.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-40.0,0.0</Squadron_Offsets>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move/>
+
+		<Is_Visible_On_Radar>no</Is_Visible_On_Radar>
+
+		<Squadron_Formation_Error_Tolerance>100.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>1200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>500.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>1200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Squadron_Units>Gozanti_Cruiser_Raider, Gozanti_Cruiser_Raider, Gozanti_Cruiser_Raider</Squadron_Units>
+	</Squadron>
+
+	<Squadron Name="Komrk_Gunship_Squadron">
+
+		<Text_ID>TEXT_UNIT_KOMRK_GUNSHIP_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_KOMRK_GUNSHIP
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_SQUADRON
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_HULL
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_SHIELD
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_MOVE
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_WEAP1
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_komrk_gunship.tga</Icon_Name>
+
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Damage>25</Damage>
+		
+		<Property_Flags> SmallShip </Property_Flags>
+		<Formation_Priority>1</Formation_Priority>
+		<FormationOrder>1</FormationOrder>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline/>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Political_Control>0</Political_Control>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>200</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Slice_Cost_Credits/>
+		<Required_Special_Structures/>
+		<Build_Time_Reduced_By_Multiple_Factories>yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Bribe_Cost>1</Tactical_Bribe_Cost>
+		<Piracy_Value_Credits>1</Piracy_Value_Credits>
+		<Score_Cost_Credits> 420</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		
+		<Lua_Script/>
+
+		<Max_Squad_Size> 4 </Max_Squad_Size>
+		<Create_Team_Type>Komrk_Gunship_Squadron_Container</Create_Team_Type>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,40.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-40.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,0.0,0.0</Squadron_Offsets>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Boba_Fett</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move/>
+
+		<Is_Visible_On_Radar>no</Is_Visible_On_Radar>
+		<Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
+
+		<Squadron_Formation_Error_Tolerance>100.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>1200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>500.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>1200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Squadron_Units>Komrk_Gunship, Komrk_Gunship, Komrk_Gunship, Komrk_Gunship</Squadron_Units>
+	</Squadron>
+
+	<SpaceUnit Name="IPV1_System_Patrol_Craft">
+		<Variant_Of_Existing_Type>Template_IPV1</Variant_Of_Existing_Type>
+		<Affiliation>Warlords, Independent_Forces, Sector_Forces</Affiliation>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		SF_Shipyard_Level_One | SF_Shipyard_Level_Two | SF_Shipyard_Level_Three | SF_Shipyard_Level_Four,
+		
+		</Required_Special_Structures>
+		<Lua_Script>GenericGameObject</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Super_Transport_VI">
+		<Variant_Of_Existing_Type>Template_Super_Transport_VI</Variant_Of_Existing_Type>
+		<Affiliation>  </Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+		
+		<Starting_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron_Half, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron_Half, 2</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>2_Warpod_Squadron_Half, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2_Warpod_Squadron_Half, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Super_Transport_VII">
+		<Variant_Of_Existing_Type>Template_Super_Transport_VII</Variant_Of_Existing_Type>
+		<Affiliation>  </Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+		
+		<Starting_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron_Half, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron_Half, 2</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>2_Warpod_Squadron_Half, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2_Warpod_Squadron_Half, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Super_Transport_XI">
+		<Variant_Of_Existing_Type>Template_Super_Transport_XI</Variant_Of_Existing_Type>
+		<Affiliation>  </Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+		
+		<Starting_Spawned_Units_Tech_0>2_Warpod_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Vulture_Brown_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2_Warpod_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Vulture_Brown_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Super_Transport_XI_Modified">
+		<Variant_Of_Existing_Type>Template_Super_Transport_XI_Modified</Variant_Of_Existing_Type>
+		<Affiliation>  </Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+		
+		<Starting_Spawned_Units_Tech_0>2_Warpod_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Vulture_Brown_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2_Warpod_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Vulture_Brown_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+	</SpaceUnit>
+
+
+
+	<SpaceUnit Name="Super_Transport_XI_Convoy">
+		<Variant_Of_Existing_Type>Template_Super_Transport_XI_Cargo</Variant_Of_Existing_Type>
+		<Affiliation>Rebel, Empire, Commerce_Guild, Trade_Federation, Techno_Union, Banking_Clan</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+		
+		<HardPoints>
+			Dummy_HP_Super_Transport_XI_Engines,
+			Dummy_HP_Super_Transport_XI_Hangar_01,
+			Dummy_HP_Super_Transport_XI_Hangar_02
+		</HardPoints>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Space_ARC_Cruiser">
+		<Variant_Of_Existing_Type>Template_Space_ARC_Cruiser</Variant_Of_Existing_Type>
+		<Affiliation>Rebel,Empire</Affiliation>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		
+		<Required_Special_Structures>
+		CIS_Shipyard_Level_Three | CIS_Shipyard_Level_Four | Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four,
+			
+		</Required_Special_Structures>
+		
+		<Starting_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Cloakshape_Stock_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="Calamari_Cruiser_Liner">
+		<Variant_Of_Existing_Type>Template_Calamari_Cruiser_Liner</Variant_Of_Existing_Type>
+		<Affiliation>Warlords, Independent_Forces</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		
+		<Required_Special_Structures>
+		Republic_Shipyard_Level_Two | Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four,
+		
+		</Required_Special_Structures>
+		
+		<Starting_Spawned_Units_Tech_0>2_Warpod_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2_Warpod_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+
+	</SpaceUnit>
+
+
+	<SpaceUnit Name="Home_One_Type_Liner">
+		<Variant_Of_Existing_Type>Template_Home_One_Type_Liner</Variant_Of_Existing_Type>
+		<Affiliation>rebel, Independent_Forces</Affiliation>
+		<Tech_Level>4</Tech_Level>
+		<Required_Special_Structures>
+		CIS_Shipyard_Level_Four
+		
+		</Required_Special_Structures>
+		
+		<Starting_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>2_Warpod_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2_Warpod_Squadron_Double, 1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Cloakshape_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Lua_Script>GenericGameObject</Lua_Script>
+		
+	</SpaceUnit>
+
+	<SpaceUnit Name="Generic_Tagge_Battlecruiser">
+		<Variant_Of_Existing_Type>Template_Tagge_Battlecruiser</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords, Independent_Forces, Sector_Forces,Rebel</Affiliation>
+		<Tech_Level>4</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		
+		<Required_Special_Structures>
+		CIS_Shipyard_Level_Four,
+				
+		</Required_Special_Structures>
+		
+		<Required_Planets/>
+
+		<Starting_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Cloakshape_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>2_Warpod_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
+		<Reserve_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron_Double, 4</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Cloakshape_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2_Warpod_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+	</SpaceUnit>
+</Other_Space_Units>

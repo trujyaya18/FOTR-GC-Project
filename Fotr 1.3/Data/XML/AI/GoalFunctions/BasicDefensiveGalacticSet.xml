@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--   -->
+<FunctionSet>
+	
+	<LiftBlockade>
+		<Goal>Lift_Blockade</Goal>
+		<Function>Needs_Blockade_Lifted</Function>
+	</LiftBlockade>
+
+	<Defend_Planet>
+		<Goal>Defend_Planet</Goal>
+		<Function>Needs_Defensive_Fleet</Function>
+	</Defend_Planet>
+	
+	<Defend_Major_Planet>
+		<Goal>Defend_Major_Planet</Goal>
+		<Function>Major_Defensive_World</Function>
+	</Defend_Major_Planet>
+	
+</FunctionSet>
+

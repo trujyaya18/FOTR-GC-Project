@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+
+<FunctionSet>
+
+	<CIS_Federation_Conquer_Pirate>
+		<Goal>CIS_Federation_Conquer_Pirate</Goal>
+		<Function> CIS_Federation_Should_Conquer_Pirate_Planet </Function>
+	</CIS_Federation_Conquer_Pirate>
+	
+	<CIS_Federation_Conquer_Opponent>
+		<Goal>CIS_Federation_Conquer_Opponent</Goal>
+		<Function>CIS_Federation_Should_Conquer_Opponent_Planet</Function>
+	</CIS_Federation_Conquer_Opponent>
+
+	<CIS_Federation_Conquer_to_Reconnect>
+		<Goal>CIS_Federation_Conquer_to_Reconnect</Goal>
+		<Function>CIS_Federation_Should_Reconnect_Islands</Function>
+	</CIS_Federation_Conquer_to_Reconnect>
+	
+	<CIS_Federation_Defend_Planet>
+		<Goal>CIS_Federation_Defend_Planet</Goal>
+		<Function>CIS_Federation_Needs_Defensive_Fleet</Function>
+	</CIS_Federation_Defend_Planet>
+		
+	<CIS_Build_Space_Forces>
+		<Goal>Build_Space_Forces</Goal>
+		<Function>Allow_Blind_Space_Production_CISFederation</Function>
+	</CIS_Build_Space_Forces>
+	
+	<CIS_Build_Ground_Forces>
+		<Goal>Build_Ground_Forces</Goal>
+		<Function>Allow_Blind_Ground_Production_CISFederation</Function>
+	</CIS_Build_Ground_Forces>
+
+	<CIS_GrowTowardDistantSystem>
+		<Goal>Distant_System_Path_Bonus</Goal>
+		<Function>One</Function>
+	</CIS_GrowTowardDistantSystem>
+	
+	<CIS_Flush_MajorItem_Budget>
+		<Goal>Flush_MajorItem_Budget</Goal>
+		<Function>Flush_MajorItem_Budget</Function>
+	</CIS_Flush_MajorItem_Budget>
+	
+	<CIS_Crush_Opponent>
+		<Goal>Crush_Opponent</Goal>
+		<Function>CIS_Federation_Should_Crush_Opponent_Planet</Function>
+	</CIS_Crush_Opponent>
+	
+	<CIS_Build_SuperCapital>
+		<Goal>Build_SuperCapital</Goal>
+		<Function>Allow_SuperCapital_Production</Function>
+	</CIS_Build_SuperCapital>
+	
+	<CIS_Unrestricted_Grab_Space>
+		<Goal>Unrestricted_Grab_Space</Goal>
+		<Function>CIS_Federation_Should_Perform_Unrestricted_Grab_Space</Function>
+	</CIS_Unrestricted_Grab_Space>
+	
+	<CIS_Unrestricted_Grab_Land>
+		<Goal>Unrestricted_Grab_Land</Goal>
+		<Function>CIS_Federation_Should_Perform_Unrestricted_Grab_Land</Function>
+	</CIS_Unrestricted_Grab_Land>
+	
+	<CIS_Rescue_Trapped_Fleet>
+		<Goal>Rescue_Trapped_Fleet</Goal>
+		<Function>CIS_Federation_Trapped_Fleet</Function>
+	</CIS_Rescue_Trapped_Fleet>	
+
+</FunctionSet>

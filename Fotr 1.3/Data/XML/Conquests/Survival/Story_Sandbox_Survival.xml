@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Survival_Lore_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Survival_Lore</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Survival_Popup</Story_Tag>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+	</Event>
+	
+	<Event Name="Story_Box_Closed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Perpetual>True</Perpetual>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Set_Flag_Battle_Over">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_FLAG</Reward_Type>
+		<Reward_Param1>BATTLE_OVER</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="SurvivalBattle">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param2>START_SURVIVAL</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Survivaland</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_MOD_SURVIVAL.ted</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>Conquests\Survival\Survival_Plot_Space.XML</Reward_Param7>
+		<Reward_Param8>0</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+		<Prereq>Story_Box_Closed</Prereq>
+	</Event>
+
+	<Event Name="STORY_FLAG_Battle_Over">
+		<Event_Type>STORY_FLAG</Event_Type>
+		<Event_Param1>BATTLE_OVER</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>EQUAL_TO</Event_Param3>
+	</Event>
+
+	<Event Name="Set_Victor_Hostile">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>MODE_END</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Warlords</Reward_Param1>
+	</Event>
+
+	<Event Name="Show_Wave_Dialog">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DIALOG</Event_Param2>
+		<Story_Dialog>Dialog_Survival</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Dialog_Popup>True</Story_Dialog_Popup>
+		<Story_Tag>Wave_Count</Story_Tag>
+		<Prereq>STORY_FLAG_Battle_Over</Prereq>
+	</Event>
+
+</Story>

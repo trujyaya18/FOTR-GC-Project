@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--***** Operation Durge's Lance: Shipyard Showdown ****-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Shipyard_Showdown</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Shipyard_Showdown.XML</Active_Plot>
+
+</Story_Mode_Plots>

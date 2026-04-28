@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<Goals>
+	
+	<Hunt_Malevolence>
+		<AIGoalApplicationFlags> Enemy | Neutral | Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 240.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.3</Build_Time_Delay_Tolerance>
+		<Is_Like>Conquer_To_Reconnect, Conquer_Opponent</Is_Like>			
+		<Activation_Tracking_Duration>120</Activation_Tracking_Duration>
+		<Per_Activation_Failure_Desire_Adjust>-8.0</Per_Activation_Failure_Desire_Adjust>
+		<Tracking_Duration>300</Tracking_Duration>
+	</Hunt_Malevolence>	
+	
+</Goals>

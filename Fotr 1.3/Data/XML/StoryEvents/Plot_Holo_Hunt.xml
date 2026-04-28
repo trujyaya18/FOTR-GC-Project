@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--******** Operation Durge's Lance: Holo Hunt *********-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Holo_Hunt</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Holo_Hunt.XML</Active_Plot>
+
+</Story_Mode_Plots>

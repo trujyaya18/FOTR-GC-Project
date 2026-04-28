@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--**** Operation Durge's Lance: Killing Kaikielius ****-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Killing_Kaikielius</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Killing_Kaikielius.XML</Active_Plot>
+
+</Story_Mode_Plots>

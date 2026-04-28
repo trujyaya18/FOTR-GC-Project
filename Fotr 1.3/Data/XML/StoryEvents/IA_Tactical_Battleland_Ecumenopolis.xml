@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Set_Flag_Battle_Over">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SET_FLAG</Reward_Type>
+		<Reward_Param1>BATTLE_OVER</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+	</Event>
+
+	<Event Name="LINK_TACTICAL_BattleLand">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>BattleLand</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_MOD_BATTLEMAP_ECUMENOPOLIS.ted</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\IA_Plot_Battleland.XML</Reward_Param7>
+		<Reward_Param8>0</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+	</Event>
+
+	<Event Name="STORY_FLAG_Battle_Over">
+		<Event_Type>STORY_FLAG</Event_Type>
+		<Event_Param1>BATTLE_OVER</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>EQUAL_TO</Event_Param3>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+	</Event>
+
+</Story>

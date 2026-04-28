@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<!-- Equations that define perception functions -->
+<Equations>
+	
+	<NR_Vassal_Trigger>
+		0.0
+	</NR_Vassal_Trigger>
+	
+	<CIS_Federation_Trigger>
+		0.0
+	</CIS_Federation_Trigger>
+	
+	<Influence_Modifier>
+		Function_Planet_Has_Capital_Building.Evaluate * 3.0
+		- Function_Planet_Has_Tax_Agency.Evaluate * 2.0
+		- Function_Planet_Has_Prison.Evaluate * 2.0
+		+ Function_Planet_Has_Company.Evaluate * 1.0
+		+ Function_Planet_Has_Local_Government_Building.Evaluate * 1.0
+		+ Function_Planet_Has_Local_Infrastructure_Building.Evaluate * 2.0
+		+ (Function_Open_Ground_Structure_Slots.Evaluate == 0) * 1.0
+		+ (Function_Space_Slots_Full.Evaluate > 0) * 1.0
+		+ Function_Planet_Has_Black_Fifteen.Evaluate * 2.0
+		+ Function_Planet_Has_Slayn_Korpil.Evaluate * 2.0
+	</Influence_Modifier>
+	
+	<Influence_Modifier_NewCapture>
+		Function_Planet_Has_Capital_Building.Evaluate * 3.0
+		- Function_Planet_Has_Tax_Agency.Evaluate *2.0
+		- Function_Planet_Has_Prison.Evaluate * 2.0
+		+ Function_Planet_Has_Company.Evaluate * 1.0
+		+ Function_Planet_Has_Local_Government_Building.Evaluate * 1.0
+		+ Function_Planet_Has_Local_Infrastructure_Building.Evaluate * 2.0
+		+ (Function_Open_Ground_Structure_Slots.Evaluate == 0)
+		+ Function_Space_Slots_Full.Evaluate * 1.0
+		+ Function_Planet_Has_Black_Fifteen.Evaluate * 2.0
+		+ Function_Planet_Has_Slayn_Korpil.Evaluate * 2.0
+	</Influence_Modifier_NewCapture>
+	
+	<Tax_Level>
+		Function_Planet_Has_Tax_Agency.Evaluate
+	</Tax_Level>
+	
+	<ElectionResultInfluenceFor>
+		Variable_Self.StructureCount {Parameter_Type = "INFLUENCE_TEN",
+									Parameter_Type = "INFLUENCE_NINE",
+									Parameter_Type = "INFLUENCE_EIGHT",
+									Parameter_Type = "INFLUENCE_SEVEN",
+									Parameter_Type = "INFLUENCE_SIX",
+									Parameter_Type = "INFLUENCE_FIVE",
+									Parameter_Only_Consider_Complete = 1.0}
+	</ElectionResultInfluenceFor>
+	
+	<ElectionResultInfluenceAgainst>
+		Variable_Self.StructureCount {Parameter_Type = "INFLUENCE_ONE",
+									Parameter_Type = "INFLUENCE_TWO",
+									Parameter_Type = "INFLUENCE_THREE",
+									Parameter_Type = "INFLUENCE_FOUR",
+									Parameter_Only_Consider_Complete = 1.0}
+	</ElectionResultInfluenceAgainst>
+	
+	<Planet_Influence_Value>
+		Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_ONE"}
+		+
+		2.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_TWO"}
+		+
+		3.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_THREE"}
+		+
+		4.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_FOUR"}
+		+
+		5.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_FIVE"}
+		+
+		6.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_SIX"}
+		+
+		7.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_SEVEN"}
+		+
+		8.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_EIGHT"}
+		+
+		9.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_NINE"}
+		+
+		10.0 * Variable_Target.HasStructure {Parameter_Type = "INFLUENCE_TEN"}
+	</Planet_Influence_Value>
+	
+</Equations>

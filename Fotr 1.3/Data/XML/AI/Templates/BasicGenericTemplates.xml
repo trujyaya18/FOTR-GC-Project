@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<AITemplates>
+
+<None_Template>
+
+	<Priority>1</Priority>
+	
+	<Trigger>One</Trigger>
+	
+	<Budget>
+		<Offensive>One</Offensive>
+		<Defensive>Zero</Defensive>
+	</Budget>
+	
+ 
+	<Tactical_Budget_Allowance>
+		<Offensive>0.0</Offensive>
+		<Defensive>0.0</Defensive>
+	</Tactical_Budget_Allowance>
+
+	 <Turn_Off>
+		  <Goals>
+				<Category>Infrastructure</Category>
+				<Category>Defensive</Category>
+				<Category>Offensive</Category>
+		  </Goals>
+	 </Turn_Off>
+</None_Template>
+
+<Test_Space>
+
+	<Priority>1</Priority>
+	
+	<Trigger>One</Trigger>
+	
+	<Budget>
+		<Offensive>One</Offensive>
+		<Defensive>Zero</Defensive>
+	</Budget>
+	
+ 
+	<Tactical_Budget_Allowance>
+		<Offensive>0.0</Offensive>
+		<Defensive>0.0</Defensive>
+	</Tactical_Budget_Allowance>
+
+	 <Turn_Off>
+		  <Goals>
+				<Category>Infrastructure</Category>
+				<Category>Defensive</Category>
+				<Category>Offensive</Category>
+		  </Goals>
+	 </Turn_Off>
+</Test_Space>
+
+</AITemplates>

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+	<Lua_Script>SurvivalScriptGC</Lua_Script>
+	<Active_Plot>Conquests\HistoricalBattles\Story_Sandbox_HB_Christophsis_Clash.XML</Active_Plot>
+
+	<!-- <Lua_Script>GCStatDisplay</Lua_Script>
+	<Active_Plot>GCStatDisplay.xml</Active_Plot> -->
+
+	<Lua_Script>GCGovernmentDisplayFotR</Lua_Script>
+	<Active_Plot>GCGovernmentDisplay.xml</Active_Plot>
+
+	<Lua_Script>GCUtilityDetectCancels</Lua_Script>
+	<Active_Plot>Conquests\Filter_Force_Click.xml</Active_Plot>
+	<Active_Plot>Conquests\Documentation.xml</Active_Plot>
+
+	<Active_Plot>Conquests\GroundTactical\Story_Sandbox_GroundBattles.xml</Active_Plot>
+	<Suspended_Plot>Conquests\GroundTactical\Tactical_GroundBattles.xml</Suspended_Plot>
+
+	<Active_Plot>Conquests\Story_Sandbox_Raids.xml</Active_Plot>
+	<Suspended_Plot>Conquests\Tactical_Raids.xml</Suspended_Plot>
+
+</Story_Mode_Plots>

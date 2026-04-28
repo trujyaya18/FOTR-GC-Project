@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<Equations>
+
+	<!-- Utility equations -->
+	<Defensive_Structure_Count>
+		Variable_Self.StructureCount {	Parameter_Type = "Generic_Planetary_Shield"
+									,Parameter_Type = "Generic_Galactic_Turbolaser_Tower_Defenses"
+									,Parameter_Type = "Ground_Ion_Cannon"
+									,Parameter_Type = "Ground_Hypervelocity_Gun"
+									} 
+	</Defensive_Structure_Count>
+
+	<!-- Have we met the desired ratio of defensive structures to planets controlled?
+	-->
+	<Has_Enough_Defensive_Structures>
+		(0.3 + 0.2 * (Function_Cowardly_Personality.Evaluate + Function_Isolationist_Personality.Evaluate) - (Function_Defensive_Structure_Count.Evaluate / clamp(Variable_Self.PlanetsControlledUnnormalized, 1, 500) ))
+		> 0.0
+	</Has_Enough_Defensive_Structures>
+	
+	<!-- This is 1 unless FoW is on for the AI -->
+	<GenericSpaceTargetedOffensiveBudgetAllocation>
+		Game.ForceVisibility
+	</GenericSpaceTargetedOffensiveBudgetAllocation>
+	
+	<GenericSpaceDefensiveBudgetAllocation>
+		0.5
+	</GenericSpaceDefensiveBudgetAllocation>
+	
+	<!-- This is 0 unless FoW is on for the AI -->
+	<GenericSpaceUntargetedOffensiveBudgetAllocation>
+		1.0 - Game.ForceVisibility
+	</GenericSpaceUntargetedOffensiveBudgetAllocation>
+
+	<!-- Used to determine the funds to be spent from the galactic budget on a land tactical game.
+		We like to spend more on planets that are:
+			valuable
+			have a large ground force investment
+			have a large ground infrastructure investment
+			scale by a magic number
+		NOTE: we're not scaling by the number of open build pads, because if we can't build, the
+		over-allocated money simply wont be spent.
+	 -->
+	<Land_Tactical_Budget>
+		(
+			1 * Function_GenericPlanetValue.Evaluate + 
+			2 * Variable_Target.FriendlyForce.GroundTotal + 
+			3 * Variable_Target.GroundbaseLevel +
+			1 * Function_Cowardly_Personality.Evaluate +
+			2 * Function_Isolationist_Personality.Evaluate
+		) / 6
+		* 2000
+		+
+		500 * (1 + 3 * Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Hard]})
+	</Land_Tactical_Budget>
+
+	<Land_Tactical_Budget_Clamped>
+		clamp(	Function_Land_Tactical_Budget.Evaluate,
+					0,
+					Function_Current_Credits.Evaluate / (Variable_Self.PlanetsControlled + 1)
+				)
+	</Land_Tactical_Budget_Clamped>
+
+	<!-- Offense-oriented budget. The below usually evaluates to ~13 -->
+	<GenericOffensiveBudgetAllocation>
+		7.2 + Variable_Self.PlanetsControlled
+		+
+		(6.0 * (1.0 - Function_Has_Enough_Space_Force_Globally.Evaluate))
+	</GenericOffensiveBudgetAllocation>
+	
+	<GenericLowOffensiveBudgetAllocation>
+		0.1 * Function_GenericOffensiveBudgetAllocation.Evaluate
+	</GenericLowOffensiveBudgetAllocation>
+	
+	<!-- Infrastructure budget. Usually evaluates to ~6 -->
+	<GenericInfrastructureBudgetAllocation>
+		5.0 
+		* 
+		(3.0 - Function_Maxed_Shipyards.Evaluate - Variable_Self.MaxedGroundbases - Variable_Self.MaxedStarbases) 
+		*
+		(
+			1.0 
+			+ 
+			(Variable_Self.PlanetsControlledUnnormalized > 10)
+			*
+			(15 > Variable_Self.StructureCount {Parameter_Type = "Tax_Agency", Parameter_Type = "Generic_Tradestation" })
+		)
+	</GenericInfrastructureBudgetAllocation>
+	
+	<!-- Clean out the MajorItem budget if it gets bloated and isn't being used, or if we don't own many planets -->
+	<Flush_MajorItem_Budget>
+		(Variable_Self.ActiveGoals {Parameter_Category = AIGoalCategoryType[MajorItem]} == 0)
+		*
+		(
+			(Variable_Self.BudgetAllocation{Parameter_Category = AIGoalCategoryType[MajorItem]} * Function_Current_Credits.Evaluate > 10000)
+			*
+			(1 - Function_Allow_SuperCapital_Production.Evaluate)
+			+
+			(0.1 > Variable_Self.PlanetsControlled)
+		)
+	</Flush_MajorItem_Budget>
+	
+	
+	<!-- Trickle funds into the major item budget -->
+	<!-- Increase if we want to build our capital but don't have the funds -->
+	<!-- Increase if we want to build a company -->
+	<!-- Increase if we can build super stations -->
+	<!-- Usually evaluates to ~6 -->
+	<GenericMajorItemBudgetAllocation>
+		Variable_Self.PlanetsControlled
+		+
+		(
+			(1 - Function_Player_Has_Capital_Building.Evaluate)
+			* 
+			10
+			+
+			(1 - Function_Player_Has_Company.Evaluate)
+			*
+			2
+			+
+			(1.0 - Variable_Self.HasStarbaseOfLevel {Parameter_Level = 5, Parameter_Count = 1})
+			*
+			2
+			+
+			Function_Allow_SuperCapital_Production.Evaluate
+			*
+			3
+		)
+	</GenericMajorItemBudgetAllocation>
+	
+	<!-- For smaller GCs we want a lower major item budget, otherwise saving up takes a long time -->
+	<GenericLowMajorItemBudgetAllocation>
+		Variable_Self.PlanetsControlled
+		+
+		(
+			(1 - Function_Player_Has_Capital_Building.Evaluate)
+			* 
+			10
+			+
+			(1.0 - Variable_Self.HasStarbaseOfLevel {Parameter_Level = 5, Parameter_Count = 1})
+			*
+			2
+		)
+	</GenericLowMajorItemBudgetAllocation>
+	
+	
+</Equations>

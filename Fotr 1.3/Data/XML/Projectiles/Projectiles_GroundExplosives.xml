@@ -1,0 +1,1156 @@
+<?xml version="1.0"?>
+<Projectiles>
+
+
+<!-- ************************************************************************************** -->
+<!-- ********************                    Missiles                        ************** -->
+<!-- ************************************************************************************** -->
+
+	
+	
+	<Projectile Name="Proj_Concussion_Missile">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_missile_g.alo</Land_Model_Name>
+		<Scale_Factor>0.075</Scale_Factor>
+		<Damage_Type>DamageL_ConcussionWarhead</Damage_Type>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Missile</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>0.0</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>0.0</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0.0</Projectile_Rocket_Straight_Distance>
+		<Projectile_Target_Point_On_Terrain>False</Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>800.0</Projectile_Max_Flight_Distance>
+		<Explode_When_Reached_Target_Radius>Yes</Explode_When_Reached_Target_Radius>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Blast_Area_Range>25.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>10.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Object_Detonation_Particle>Missile_Impact</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Missile_Impact</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Missile_Impact</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Missile_Impact</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle />
+		<Projectile_SFXEvent_Detonate>SFX_Plex_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>Unit_Anti_Air_Small_Explosion_SFX</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>10.0</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Light_Concussion_Missile">
+		<Variant_Of_Existing_Type>Proj_Concussion_Missile</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>5.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>15.0</Projectile_Blast_Area_Range>
+		<Scale_Factor>0.05</Scale_Factor>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_Concussion_Missile">
+		<Variant_Of_Existing_Type>Proj_Concussion_Missile</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+		<Scale_Factor>0.15</Scale_Factor>
+	</Projectile>
+
+	<Projectile Name="Proj_Wrist_rocket">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_concussion_wrist.alo</Land_Model_Name>
+		<Scale_Factor>0.02</Scale_Factor>
+		<Damage_Type> DamageL_ConcussionWarhead </Damage_Type>
+		<Max_Speed>12.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>ROCKET</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>20</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>10</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0</Projectile_Rocket_Straight_Distance>
+		<Projectile_Target_Point_On_Terrain> False </Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>320.0</Projectile_Max_Flight_Distance>
+		<Explode_When_Reached_Target_Radius> Yes </Explode_When_Reached_Target_Radius>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Blast_Area_Range>5.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>3.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Plex_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Rocket_Explosion_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Missile_Impact</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Small</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>3</AI_Combat_Power>
+	</Projectile>
+	
+	
+	<Projectile Name="Proj_Proton_Missile">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_rocket.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type>DamageL_ProtonWarhead</Damage_Type>
+		<Max_Speed>9.0</Max_Speed>
+		<Max_Rate_Of_Turn>1.4</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Missile</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>3.0</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>0.0</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0.0</Projectile_Rocket_Straight_Distance>
+		<Projectile_Target_Point_On_Terrain>False</Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>800.0</Projectile_Max_Flight_Distance>
+		<Explode_When_Reached_Target_Radius>Yes</Explode_When_Reached_Target_Radius>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Blast_Area_Range>20.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>15.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Rocket_Explosion_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Rocket_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle />
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>Unit_Anti_Air_Small_Explosion_SFX</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>15.0</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Light_Proton_Missile">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>12.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>5.0</Projectile_Blast_Area_Range>
+		<Scale_Factor>0.8</Scale_Factor>
+		<AI_Combat_Power>12</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_VeryLight_Proton_Missile">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>8.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>2.5</Projectile_Blast_Area_Range>
+		<Scale_Factor>0.6</Scale_Factor>
+		<AI_Combat_Power>12</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Heavy_Proton_Missile">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Land_Model_Name>w_proton_projectile.alo</Land_Model_Name>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>25.0</Projectile_Blast_Area_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+		<AI_Combat_Power>20</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Proton_Missile_Hailfire">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_FailRocket.ALO</Land_Model_Name>
+		<Scale_Factor>0.075</Scale_Factor>
+		<Damage_Type> DamageL_ProtonWarhead </Damage_Type>
+		<Max_Speed>8.0</Max_Speed>
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn>
+		<Projectile_Category>MPTL_Rocket</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>30</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>40</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0</Projectile_Rocket_Straight_Distance>
+		<Explode_When_Reached_Target_Radius> True </Explode_When_Reached_Target_Radius>
+		<Projectile_Target_Point_On_Terrain> True </Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>720.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>700.0</Projectile_Max_Scan_Range>
+	</Projectile>
+	
+	<Projectile Name="Proj_Proton_Missile_MPTL">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Projectile_Category>MPTL_Rocket</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>50</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>7</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>100</Projectile_Rocket_Straight_Distance>
+		<Explode_When_Reached_Target_Radius> True </Explode_When_Reached_Target_Radius>
+		<Projectile_Target_Point_On_Terrain> True </Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>3600.0</Projectile_Max_Flight_Distance>
+	</Projectile>
+
+	<Projectile Name="Proj_Flak_Missile">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_rocket_white.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type>DamageL_FLAK</Damage_Type>
+		<Max_Speed>15.0</Max_Speed>
+		<Max_Rate_Of_Turn>6.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Missile</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>3.0</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>0.0</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0.0</Projectile_Rocket_Straight_Distance>
+		<Projectile_Target_Point_On_Terrain>False</Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>1800.0</Projectile_Max_Flight_Distance>
+		<Explode_When_Reached_Target_Radius>Yes</Explode_When_Reached_Target_Radius>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Blast_Area_Range>25.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>15.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Rocket_Explosion_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Rocket_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle />
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>Unit_Anti_Air_Small_Explosion_SFX</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>15.0</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Light_Flak_Missile">
+		<Variant_Of_Existing_Type>Proj_Flak_Missile</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Range>7.5</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>12.0</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+	<Projectile Name="Proj_Rail_Detonator">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>P_ROCKETSMALL.alo</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Damage_Type> DamageL_ThermalWarhead </Damage_Type>
+		<Max_Speed>11.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Grenade_Gravity>0.0</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>0.0</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 10 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 2.5 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Rocket_Explosion_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Rocket_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Thermal_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+	</Projectile>
+	
+	<Projectile Name="Proj_EMP_Launcher">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>P_ROCKET_BLUE.ALO</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Damage_Type> DamageL_Ion </Damage_Type>
+		<Max_Speed>11.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Grenade_Gravity>0.0</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>0.0</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Damage>20.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 3.0 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 20.0 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Rocket_Explosion_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Rocket_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Thermal_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+	</Projectile>
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                Mass Drivers                        ************** -->
+<!-- ************************************************************************************** -->
+	
+
+	<Projectile Name="Proj_Vehicle_Slugthrower">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>P_flechette_red_big.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_Slug </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>30.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>12.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Small_Damage_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Tiny_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Projectile_Dirt_Collide</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Small</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>40</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Infantry_Blaster_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> Unit_Projectile_Infantry_Ricochet </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+
+	<Projectile Name="Proj_Vehicle_Slugthrower_Blue">
+		<Variant_Of_Existing_Type>Proj_Vehicle_Slugthrower</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_blue_big.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Vehicle_Slugthrower_Green">
+		<Variant_Of_Existing_Type>Proj_Vehicle_Slugthrower</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_flechette_green_big.ALO</Land_Model_Name>
+	</Projectile>
+
+
+	<Projectile Name="Proj_Mass_Driver">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>P_massdriver_red_medium.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type>DamageL_MassDriver</Damage_Type>
+		<Max_Speed>45.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>1200.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>40.0</Projectile_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Blast_Area_Damage>0.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>0.0</Projectile_Blast_Area_Range>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Object_Detonation_Particle>Ground_Turbo_Impact</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Ground_Turbo_Impact</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Large_Damage_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Absorbed_By_Shields_Particle />
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE</Projectile_Ground_Detonation_SurfaceFX>
+		<Projectile_SFXEvent_Detonate>SFX_Land_Blaster_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>SFX_Small_Damage_Detonation</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>40</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Mass_Driver_Blue">
+		<Variant_Of_Existing_Type>Proj_Mass_Driver</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_massdriver_blue_medium.alo</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Mass_Driver_Green">
+		<Variant_Of_Existing_Type>Proj_Mass_Driver</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_massdriver_green_medium.alo</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_Mass_Driver">
+		<Variant_Of_Existing_Type>Proj_Mass_Driver</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_massdriver_red_big.alo</Land_Model_Name>
+		<Projectile_Damage>60.0</Projectile_Damage>
+		<AI_Combat_Power>60</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_Mass_Driver_Blue">
+		<Variant_Of_Existing_Type>Proj_Heavy_Mass_Driver</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_massdriver_blue_big.alo</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_Mass_Driver_Green">
+		<Variant_Of_Existing_Type>Proj_Heavy_Mass_Driver</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_massdriver_green_big.alo</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Light_Mass_Driver">
+		<Variant_Of_Existing_Type>Proj_Mass_Driver</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_massdriver_red_small.alo</Land_Model_Name>
+		<Projectile_Damage>20.0</Projectile_Damage>
+		<AI_Combat_Power>20</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Light_Mass_Driver_Blue">
+		<Variant_Of_Existing_Type>Proj_Light_Mass_Driver</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_massdriver_blue_small.alo</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Light_Mass_Driver_Green">
+		<Variant_Of_Existing_Type>Proj_Light_Mass_Driver</Variant_Of_Existing_Type>
+		<Land_Model_Name>P_massdriver_green_small.alo</Land_Model_Name>
+	</Projectile>
+	
+
+	
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                    Grenades                        ************** -->
+<!-- ************************************************************************************** -->
+	
+	<Projectile Name="Proj_Concussion_Grenade">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_grenade.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Damage_Type> DamageL_ConcussionWarhead </Damage_Type>
+		<Max_Speed>10.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Grenade_Gravity>0.1</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>0.1</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Damage>8.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 4 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 18 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Thermal_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+	</Projectile>
+
+	<Projectile Name="Proj_Proton_Grenade">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_grenade_proton.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Damage_Type> DamageL_ProtonWarhead </Damage_Type>
+		<Max_Speed>10.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Grenade_Gravity>0.1</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>0.1</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Damage>10.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 5 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 8 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Rocket_Explosion_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Rocket_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Thermal_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+
+
+	</Projectile>
+
+	<Projectile Name="Proj_Light_Proton_Grenade">
+		<Variant_Of_Existing_Type>Proj_Proton_Grenade</Variant_Of_Existing_Type>
+		<Projectile_Damage>6.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>3.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>3.5</Projectile_Blast_Area_Range>
+		<Scale_Factor>0.8</Scale_Factor>
+		<AI_Combat_Power>3</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Vape_Charge">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_smallbomb.ALO</Land_Model_Name>
+		<Space_Model_Name>w_smallbomb.ALO</Space_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<!-- AJA - Max_Speed and Projectile_Grenade_Gravity interact together to determine -->
+		<!-- the shape of the grenade's lobbing arc. A side-effect of adjusting these values -->
+		<!-- is the maximum distance the grenade can travel! Be aware of that while adjusting -->
+		<!-- these values! Projectile_Grenade_Gravity_Lob_Mod is just a multiplier on Projectile_Grenade_Gravity. -->
+		<Max_Speed>15.0</Max_Speed>
+		<Projectile_Grenade_Gravity>1.0</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>1.0</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<Damage_Type>DamageL_ThermalWarhead</Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, BOMB</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Blast_Area_Range>40.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>300.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>yes</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>3</Projectile_Blast_Area_Dropoff_Tiers>
+		<!--  <Projectile_Max_Flight_Distance>30000.0</Projectile_Max_Flight_Distance> -->
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<!-- Oksana: give it a few minutes... generally, it will die of collision. -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Thermal_Detonator_Explosion </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Katarn_Building_Bomb_SFX </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>300</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Gungan_Energy_Grenade">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_GUNGAN_PROJECTILE.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> DamageL_ConcussionWarhead </Damage_Type>
+		<Max_Speed>7.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>
+		<Projectile_Grenade_Gravity>0.5</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>0.5</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<Projectile_Max_Flight_Distance>100.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>100.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>2.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Blast_Area_Damage> 2.0 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 15 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Thermal_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+		<!--<Lua_Script>FriendlyFire_Gungnade</Lua_Script>-->
+	</Projectile>
+	
+	<!-- Thrown infantry grenades are functionally the same as light grenades of same type, with arc movement -->
+	
+	<Projectile Name="Proj_Light_Concussion_Grenade_Infantry">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_grenade.ALO</Land_Model_Name>
+		<Scale_Factor>0.8</Scale_Factor> <!-- 1.2 -->
+		<Damage_Type> DamageL_ConcussionWarhead </Damage_Type>
+		<Max_Speed>10.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Grenade_Gravity>0.5</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>0.69</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Damage>4.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 2 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 6 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Object_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Thermal_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+	</Projectile>
+
+	<Projectile Name="Proj_Light_Thermal_Grenade_Infantry">
+		<Variant_Of_Existing_Type>Proj_Light_Concussion_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_grenade_thermal.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_ThermalWarhead </Damage_Type>
+		<Projectile_Damage>4.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 2.5 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 4.75 </Projectile_Blast_Area_Range>
+		<Projectile_Object_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Thermal_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+	</Projectile>
+
+	<Projectile Name="Proj_Light_Ion_Grenade_Infantry">
+		<Variant_Of_Existing_Type>Proj_Light_Concussion_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_grenade_emp.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_Ion </Damage_Type>
+		<Projectile_Damage>6.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 3.0 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 6.0 </Projectile_Blast_Area_Range>
+		<Projectile_Object_Detonation_Particle>EMP_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>EMP_Detonator_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>EMP_Detonator_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>EMP_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Stun_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+	</Projectile>
+
+	<Projectile Name="Proj_Light_Flame_Grenade_Infantry">
+		<Variant_Of_Existing_Type>Proj_Light_Concussion_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_grenade_pyro.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_Flamer </Damage_Type>
+		<Projectile_Damage>6.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 3.0 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 6.0 </Projectile_Blast_Area_Range>
+		<Projectile_Object_Detonation_Particle>Pyro_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Pyro_Detonator_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Pyro_Detonator_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Pyro_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Stun_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+	</Projectile>
+
+	<Projectile Name="Proj_Light_Sonic_Grenade_Infantry">
+		<Variant_Of_Existing_Type>Proj_Light_Concussion_Grenade_Infantry</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_grenade_sonic.ALO</Land_Model_Name>
+		<Damage_Type> DamageL_Sonic </Damage_Type>
+		<Projectile_Damage>6.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 3.0 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 8.0 </Projectile_Blast_Area_Range>
+		<Projectile_Object_Detonation_Particle>Sonic_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Sonic_Detonator_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Sonic_Detonator_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Sonic_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>Unit_Geonosian_Fire</Projectile_SFXEvent_Detonate>
+	</Projectile>
+
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                     Bombs                          ************** -->
+<!-- ************************************************************************************** -->
+
+	<!-- Yellow model for concussion damage -->
+	<Projectile Name="Proj_Speeder_Bomb_Concussion">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_smallbomb_yellow.ALO</Land_Model_Name>
+		<Space_Model_Name>W_smallbomb_yellow.ALO</Space_Model_Name>
+		<Land_Model_Anim_Override_Name>w_smallbomb.ALO</Land_Model_Anim_Override_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>0.0</Max_Speed>
+		<Damage_Type> DamageL_ConcussionWarhead </Damage_Type>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, BOMB</Behavior>
+		<Projectile_Category>STATIC_BOMB</Projectile_Category>
+		<Projectile_Blast_Area_Range>60.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>25.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>no</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Blast_Area_Dropoff_Tiers>3</Projectile_Blast_Area_Dropoff_Tiers>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Thermal_Detonator_Explosion </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Katarn_Building_Bomb_SFX </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>300</AI_Combat_Power>
+	</Projectile>
+
+	<!-- Orange model for thermal damage -->
+	<Projectile Name="Proj_Speeder_Bomb_Thermal">
+		<Variant_Of_Existing_Type>Proj_Speeder_Bomb_Concussion</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_smallbomb_orange.ALO</Land_Model_Name>
+		<Space_Model_Name>W_smallbomb_orange.ALO</Space_Model_Name>
+		<Land_Model_Anim_Override_Name>w_smallbomb.ALO</Land_Model_Anim_Override_Name>
+
+		<Damage_Type> DamageL_ThermalWarhead </Damage_Type>
+
+		<Projectile_Blast_Area_Range>40.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>32.5</Projectile_Blast_Area_Damage>
+
+		<Death_Explosions> Thermal_Detonator_Explosion </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Katarn_Building_Bomb_SFX </Death_SFXEvent_Start_Die>
+	</Projectile>
+
+	<!-- Default Red model for proton damage -->
+	<Projectile Name="Proj_Speeder_Bomb_Proton">
+		<Variant_Of_Existing_Type>Proj_Speeder_Bomb_Concussion</Variant_Of_Existing_Type>
+		<Land_Model_Name>w_smallbomb.ALO</Land_Model_Name>
+		<Space_Model_Name>w_smallbomb.ALO</Space_Model_Name>
+
+		<Damage_Type> DamageL_ProtonWarhead </Damage_Type>
+
+		<Projectile_Blast_Area_Range>30.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>37.5</Projectile_Blast_Area_Damage>
+
+		<Death_Explosions> Thermal_Detonator_Explosion </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Katarn_Building_Bomb_SFX </Death_SFXEvent_Start_Die>
+	</Projectile>
+
+	<!-- 5x Damage and 10% larger splash radius for hero ones -->
+
+	<Projectile Name="Proj_Speeder_Bomb_Concussion_Hero">
+		<Variant_Of_Existing_Type>Proj_Speeder_Bomb_Concussion</Variant_Of_Existing_Type>
+
+		<Projectile_Blast_Area_Range>66.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>125.0</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+	<Projectile Name="Proj_Speeder_Bomb_Thermal_Hero">
+		<Variant_Of_Existing_Type>Proj_Speeder_Bomb_Thermal</Variant_Of_Existing_Type>
+
+		<Projectile_Blast_Area_Range>44.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>162.5</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+	<Projectile Name="Proj_Speeder_Bomb_Proton_Hero">
+		<Variant_Of_Existing_Type>Proj_Speeder_Bomb_Proton</Variant_Of_Existing_Type>
+
+		<Projectile_Blast_Area_Range>33.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>187.5</Projectile_Blast_Area_Damage>
+	</Projectile>
+
+	<Projectile Name="Proj_Speeder_Bomb_Radiation">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_smallbomb_green.ALO</Land_Model_Name>
+		<Space_Model_Name>W_smallbomb_green.ALO</Space_Model_Name>
+		<Land_Model_Anim_Override_Name>w_smallbomb.ALO</Land_Model_Anim_Override_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>0.0</Max_Speed>
+		<Damage_Type> DamageL_Sonic </Damage_Type>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, BOMB</Behavior>
+		<Projectile_Category>STATIC_BOMB</Projectile_Category>
+		<Projectile_Blast_Area_Range>1.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>1.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>no</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Radioactive_Contamination_Speeder_Bomb </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Katarn_Building_Bomb_SFX </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>300</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Sticky_Bomb">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_smallbomb.ALO</Land_Model_Name>
+		<Space_Model_Name>w_smallbomb.ALO</Space_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<!-- AJA - Max_Speed and Projectile_Grenade_Gravity interact together to determine -->
+		<!-- the shape of the grenade's lobbing arc. A side-effect of adjusting these values -->
+		<!-- is the maximum distance the grenade can travel! Be aware of that while adjusting -->
+		<!-- these values! Projectile_Grenade_Gravity_Lob_Mod is just a multiplier on Projectile_Grenade_Gravity. -->
+		<Max_Speed>15.0</Max_Speed>
+		<Projectile_Grenade_Gravity>1.0</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>1.0</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<Damage_Type>DamageL_ThermalWarhead</Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, BOMB</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Blast_Area_Range>20.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>yes</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>3</Projectile_Blast_Area_Dropoff_Tiers>
+		<!--  <Projectile_Max_Flight_Distance>30000.0</Projectile_Max_Flight_Distance> -->
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<!-- Oksana: give it a few minutes... generally, it will die of collision. -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Thermal_Detonator_Explosion </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Katarn_Building_Bomb_SFX </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>300</AI_Combat_Power>
+		<!--<Lua_Script>FriendlyFire_Stickybomb</Lua_Script>-->
+	</Projectile>
+	
+	<Projectile Name="Proj_Hero_Sticky_Bomb">
+		<Variant_Of_Existing_Type>Proj_Sticky_Bomb</Variant_Of_Existing_Type>
+		<Damage_Type>DamageL_ProtonWarhead</Damage_Type>
+		<Projectile_Blast_Area_Range>40.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>100.0</Projectile_Blast_Area_Damage>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Katarn_Building_Bomb_SFX </Death_SFXEvent_Start_Die>
+		<!--<Lua_Script>FriendlyFire_Kylebomb</Lua_Script>-->
+	</Projectile>
+
+	<Projectile Name="Proj_Hero_Disruptor_Bomb">
+		<Variant_Of_Existing_Type>Proj_Sticky_Bomb</Variant_Of_Existing_Type>
+		<Damage_Type>DamageL_Disruptor</Damage_Type>
+		<Projectile_Blast_Area_Range>50.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+		<Death_Explosions>Artillery_Shell_Explosion</Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Disruptor_Fire </Death_SFXEvent_Start_Die>
+		<!--<Lua_Script>FriendlyFire_Kylebomb</Lua_Script>-->
+	</Projectile>
+	
+	<Projectile Name="Remote_Bomb_Blast_Effect">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<!-- Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<!-- Not used - area_blast damage override this -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<!-- Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Blast_Area_Range>120.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>250.0</Projectile_Blast_Area_Damage>
+		<Damage_Type>DamageL_ProtonWarhead</Damage_Type>
+		<Internal_Damage_Type>Damage_Remote_Bomb</Internal_Damage_Type>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Max_Lifetime>60.0</Projectile_Max_Lifetime>
+		<Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>3</Projectile_Blast_Area_Dropoff_Tiers>
+		<Projectile_Lifetime_Detonation_Particle>Remote_bomb</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Object_Detonation_Particle>Remote_bomb</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Remote_bomb</Projectile_Ground_Detonation_Particle>
+		<!--<Lua_Script>FriendlyFire_Rembomb</Lua_Script>-->
+	</Projectile>
+
+	<!-- Placeholder damage type until .3 -->
+	
+	<Projectile Name="Proximity_Mine_Blast_Effect">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<!-- Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<!-- Not used - area_blast damage override this -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<!-- Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Blast_Area_Range>30.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+		<Damage_Type>DamageL_MassDriver</Damage_Type>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Plex_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Small_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Small_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<!--<Lua_Script>FriendlyFire_Mine</Lua_Script>-->
+	</Projectile>
+
+	<Projectile Name="Proximity_Mine_Blast_Effect_Proton">
+		<Variant_Of_Existing_Type>Proximity_Mine_Blast_Effect</Variant_Of_Existing_Type>
+
+		<Projectile_Blast_Area_Range>5.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>18.0</Projectile_Blast_Area_Damage>
+		<Damage_Type>DamageL_ProtonWarhead</Damage_Type>
+
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Rocket_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+	</Projectile>
+
+	<Projectile Name="Proximity_Mine_Blast_Effect_Concussion">
+		<Variant_Of_Existing_Type>Proximity_Mine_Blast_Effect</Variant_Of_Existing_Type>
+
+		<Projectile_Blast_Area_Range>15.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>10.0</Projectile_Blast_Area_Damage>
+		<Damage_Type>DamageL_ConcussionWarhead</Damage_Type>
+
+		<Projectile_Object_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Lifetime_Detonation_Particle>
+	</Projectile>
+
+	<Projectile Name="Proximity_Mine_Blast_Effect_Fragmentation">
+		<Variant_Of_Existing_Type>Proximity_Mine_Blast_Effect</Variant_Of_Existing_Type>
+
+		<Projectile_Blast_Area_Range>25.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>3.0</Projectile_Blast_Area_Damage>
+		<Damage_Type>DamageL_Slug</Damage_Type>
+
+		<Projectile_Object_Detonation_Particle>Small_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Small_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+	</Projectile>
+	
+	<Projectile Name="Ground_Tank_Self_Destruct_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<!-- Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<!-- Not used - area_blast damage override this -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<!-- Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Blast_Area_Range>125.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>150.0</Projectile_Blast_Area_Damage>
+		<Damage_Type>DamageL_ThermalWarhead</Damage_Type>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Plex_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<!-- Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Lifetime_Detonation_Particle>Pulse_Cannon_Tank_Self_Destruct_Explosion</Projectile_Lifetime_Detonation_Particle>
+		<!--<Lua_Script>FriendlyFire_MZselfdstrct</Lua_Script>-->
+	</Projectile>
+
+	<Projectile Name="Ground_Droid_Self_Destruct_Blast">
+		<Variant_Of_Existing_Type>Ground_Tank_Self_Destruct_Blast</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Range>62.5.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+		<!--<Lua_Script>FriendlyFire_MZselfdstrct</Lua_Script>-->
+	</Projectile>
+	
+	<Projectile Name="Droid_Bomb_Self_Destruct_Blast">
+		<Variant_Of_Existing_Type>Ground_Tank_Self_Destruct_Blast</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Range>200.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>100.0</Projectile_Blast_Area_Damage>
+		<Damage_Type>Damage_StarBase_Self_Destruct</Damage_Type>
+		<Projectile_Lifetime_Detonation_Particle>Medium_Explosion_Space</Projectile_Lifetime_Detonation_Particle>
+		<!--<Lua_Script>FriendlyFire_Vengselfdstrct</Lua_Script>-->
+	</Projectile>
+	
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                   Artillery                        ************** -->
+<!-- ************************************************************************************** -->
+
+	<Projectile Name="Proj_Thermal_Artillery">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_artyshell.ALO</Land_Model_Name>
+		<!-- This should be blue -->
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> DamageL_ThermalWarhead </Damage_Type>
+		<Max_Speed>55.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Grenade_Gravity>1.636363636</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>1.0</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<!--  <Projectile_Max_Flight_Distance>30000.0</Projectile_Max_Flight_Distance> -->
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<!-- Oksana: give it a few minutes... generally, it will die of collision. -->
+		<Projectile_Damage>90.0</Projectile_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Blast_Area_Damage>90.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>50.0</Projectile_Blast_Area_Range>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>artillery_shell_explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>artillery_shell_explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>artillery_shell_explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<AI_Combat_Power>600</AI_Combat_Power>
+		<!--<Lua_Script>FriendlyFire_Imparty</Lua_Script>-->
+	</Projectile>
+
+	<Projectile Name="Proj_Thermal_Artillery_Blue">
+		<Variant_Of_Existing_Type>Proj_Thermal_Artillery</Variant_Of_Existing_Type>
+		<Land_Model_Name>p_artyshell_blue.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Thermal_Light_Artillery">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_artyshell_light.ALO</Land_Model_Name>
+		<!-- This should be blue -->
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> DamageL_ThermalWarhead </Damage_Type>
+		<Max_Speed>55.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Grenade_Gravity>1.636363636</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>1.0</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<!--  <Projectile_Max_Flight_Distance>30000.0</Projectile_Max_Flight_Distance> -->
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<!-- Oksana: give it a few minutes... generally, it will die of collision. -->
+		<Projectile_Damage>45.0</Projectile_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Blast_Area_Damage>45.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>40.0</Projectile_Blast_Area_Range>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>artillery_shell_explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>artillery_shell_explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>artillery_shell_explosion</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<AI_Combat_Power>600</AI_Combat_Power>
+		<!--<Lua_Script>FriendlyFire_Imparty</Lua_Script>-->
+	</Projectile>
+
+	<Projectile Name="Proj_Thermal_Light_Artillery_Blue">
+		<Variant_Of_Existing_Type>Proj_Thermal_Light_Artillery</Variant_Of_Existing_Type>
+		<Land_Model_Name>p_artyshell_blue_light.ALO</Land_Model_Name>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ground_Mortar">
+		<Variant_Of_Existing_Type>Proj_Thermal_Artillery</Variant_Of_Existing_Type>
+		<Land_Model_Name>p_mortarfire.ALO</Land_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Magnepulse_Blob">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_magnepulse_shot.alo</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Damage_Type> DamageL_ThermalWarhead </Damage_Type>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Max_Speed>40</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>GRENADE</Projectile_Category>
+		<Projectile_Grenade_Gravity>0.5</Projectile_Grenade_Gravity>
+		<Projectile_Grenade_Gravity_Lob_Mod>0.5</Projectile_Grenade_Gravity_Lob_Mod>
+		<Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+		<!--  <Projectile_Max_Flight_Distance>30000.0</Projectile_Max_Flight_Distance> -->
+		<Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+		<!-- Oksana: give it a few minutes... generally, it will die of collision. -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Magnepulse_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Magnepulse_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Magnepulse_Explosion</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<!-- Stun specifics -->
+		<Projectile_Stun_On_Detonation>yes</Projectile_Stun_On_Detonation>
+		<Projectile_Stun_Duration_Frames>450</Projectile_Stun_Duration_Frames>
+		<Projectile_Stun_Radius>200</Projectile_Stun_Radius>
+		<Projectile_Stun_Spawn_Effect>Stunned_Object_Skirmish_Magnepulse</Projectile_Stun_Spawn_Effect>
+		<Projectile_Stun_Victims_Category_Mask> Vehicle </Projectile_Stun_Victims_Category_Mask>
+		<Projectile_Stun_Victims_Unit_Types/>
+		<Projectile_SFXEvent_Detonate>SFX_Magnepulse_Detonation</Projectile_SFXEvent_Detonate>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>SFX_Land_Blaster_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<!--<Lua_Script>FriendlyFire_Mgpulse</Lua_Script>-->
+	</Projectile>
+	
+	<Projectile Name="Magnepulse_Blob_Skirmish">
+		<Variant_Of_Existing_Type>Magnepulse_Blob</Variant_Of_Existing_Type>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>Yes</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Stun_Duration_Frames>510</Projectile_Stun_Duration_Frames>
+	</Projectile>
+	
+	<Projectile Name="Proj_Exploding_Land_Barrel_Detonation">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<!-- Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Lifetime>0.0</Projectile_Max_Lifetime>
+		<!-- Not used - area_blast damage override this -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Blast_Area_Range>80.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>200.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<!-- <Projectile_Blast_Area_Max_Victims>1.0</Projectile_Blast_Area_Max_Victims> //to create a delay/chain effect, only damage one at a time -->
+		<Projectile_Blast_Area_Immune_Faction> Underworld </Projectile_Blast_Area_Immune_Faction>
+		<Damage_Type>Damage_Exploding_Barrel</Damage_Type>
+		<Projectile_Damage_Delay_Secs>.5</Projectile_Damage_Delay_Secs>
+		<Projectile_SFXEvent_Detonate>SFX_Plex_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Missile_Explosion_Ground_Hit</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Missile_Explosion_Ground_Hit</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Missile_Explosion_Ground_Hit</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Missile_Explosion_Ground_Hit</Projectile_Absorbed_By_Shields_Particle>
+	</Projectile>
+
+
+	
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                  Bombing Runs                      ************** -->
+<!-- ************************************************************************************** -->
+
+	<Projectile Name="TIE_Bomber_Bombing_Run_Bomb">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>P_PROTONBOMB.ALO</Land_Model_Name>
+		<Scale_Factor>5.0</Scale_Factor>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Damage_Type> DamageL_ProtonWarhead </Damage_Type>
+		<Max_Speed>2.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED, REVEAL</Behavior>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<!-- REVEAL for FOW -->
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<!-- REVEAL for FOW -->
+		<Projectile_Category>BOMB</Projectile_Category>
+		<Projectile_Bomb_Fall_Accel_Rate> 0.20 </Projectile_Bomb_Fall_Accel_Rate>
+		<Projectile_Blast_Area_Damage> 500.0 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>75</Projectile_Blast_Area_Range>
+		<Projectile_Max_Flight_Distance>10000.0</Projectile_Max_Flight_Distance>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Damage>1000.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Large_Explosion_Proton </Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle> Large_Explosion_Proton </Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle> Large_Explosion_Proton </Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_SFXEvent_Detonate>Unit_TIE_Run_Bomb_SFX</Projectile_SFXEvent_Detonate>
+		<AI_Combat_Power>80</AI_Combat_Power>
+		<!--<Lua_Script>FriendlyFire_Impbomb2</Lua_Script>-->
+	</Projectile>
+	
+	<Projectile Name="Y_Wing_Bombing_Run_Bomb">
+		<Variant_Of_Existing_Type>TIE_Bomber_Bombing_Run_Bomb</Variant_Of_Existing_Type>
+		<Land_Model_Name>p_protonbomb_white.alo</Land_Model_Name>
+	</Projectile>
+	
+	
+</Projectiles>
